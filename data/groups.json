@@ -5,49 +5,49 @@
       "id": "toys",
       "ankcGroupId": 1,
       "name": "Toys",
-      "description": "Small companion breeds bred to be lap dogs, like the Cavalier, Pug and Maltese."
+      "description": "Small companion breeds bred to be lap dogs."
     },
     {
       "id": "terriers",
       "ankcGroupId": 2,
       "name": "Terriers",
-      "description": "Feisty, energetic dogs first bred to hunt vermin, like the Jack Russell, Staffy and Westie."
+      "description": "Feisty, energetic dogs first bred to hunt vermin."
     },
     {
       "id": "gundogs",
       "ankcGroupId": 3,
       "name": "Gundogs",
-      "description": "Bred to find and retrieve game for hunters, like the Labrador, Golden Retriever and spaniels."
+      "description": "Bred to find and retrieve game for hunters."
     },
     {
       "id": "hounds",
       "ankcGroupId": 4,
       "name": "Hounds",
-      "description": "Hunters by scent or sight, like the Beagle, Dachshund, Greyhound and Whippet."
+      "description": "Hunters by scent or sight."
     },
     {
       "id": "working-dogs",
       "ankcGroupId": 5,
       "name": "Working Dogs",
-      "description": "The herding and droving breeds, like the Border Collie, Kelpie and Cattle Dog."
+      "description": "The herding and droving breeds."
     },
     {
       "id": "utility",
       "ankcGroupId": 6,
       "name": "Utility",
-      "description": "Guarding, sledding and other jobs, like the Rottweiler, Boxer and Siberian Husky."
+      "description": "Guarding, sledding and other jobs."
     },
     {
       "id": "non-sporting",
       "ankcGroupId": 7,
       "name": "Non Sporting",
-      "description": "Companion breeds that don't fit elsewhere, like the Poodle, French Bulldog and Great Dane."
+      "description": "Companion breeds that don't fit elsewhere."
     },
     {
       "id": "bonus",
       "ankcGroupId": null,
       "name": "Bonus",
-      "description": "Popular dogs that Dogs Australia doesn't recognise, like the Cavoodle, Groodle and Mini Foxie."
+      "description": "Popular dogs that Dogs Australia doesn't recognise."
     }
   ]
 }
