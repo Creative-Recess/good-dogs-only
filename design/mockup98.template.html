@@ -138,7 +138,7 @@
   .icon:focus .label, .icon:hover .label { background: var(--navy); color: var(--white); outline: 1px dotted #ffff7f; }
   .icon .no { position: absolute; top: 5px; left: calc(50% - 30px); background: var(--g); color: #fff; font-size: 9px; line-height: 1; padding: 2px 3px; box-shadow: 1px 1px #000; }
   .icon .tick { position: absolute; top: 3px; right: calc(50% - 34px); width: 15px; height: 15px; background: #fff; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; display: grid; place-items: center; }
-  .icon .tick svg { width: 12px; height: 12px; }
+  .icon .tick svg { width: 9px; height: 9px; }
   .empty { padding: 20px 6px; text-align: center; font: 11px/1.6 var(--body-font); }
   .sample-note { text-align: center; color: #333; margin: 2px 0 6px; font-size: 10px; }
 
@@ -455,7 +455,7 @@
       const m = this.q('.modal')
       m.innerHTML = `<div class="window dialog" role="alertdialog" aria-label="${esc(title)}">
         <div class="title-bar"><div class="title-bar-text">${esc(title)}</div><div class="title-bar-controls"><button aria-label="Close" data-act="dialog-ok"></button></div></div>
-        <div class="window-body"><div class="msg">${kind === 'warn' ? icons.warn : icons.infoBig}<span>${esc(text)}</span></div><div class="btns"><button type="button" class="default" data-act="dialog-ok">OK</button></div></div>
+        <div class="window-body"><div class="msg">${kind === 'none' ? '' : kind === 'warn' ? icons.warn : icons.infoBig}<span>${esc(text)}</span></div><div class="btns"><button type="button" class="default" data-act="dialog-ok">OK</button></div></div>
       </div>`
       m.hidden = false
       m.querySelector('.default').focus()
@@ -527,7 +527,7 @@
       return `<button type="button" class="icon${c ? ' is-caught' : ''}" data-act="open" data-id="${b.id}" style="--g:${groupColour[b.groupId]}">
         <span class="pic"><img src="${b.img.grid}" alt=""></span>
         <span class="no">${b.dexNo}</span>
-        ${c ? `<span class="tick" aria-label="Spotted">${icons.eyes}</span>` : ''}
+        ${c ? `<span class="tick" aria-label="Spotted">${icons.tick}</span>` : ''}
         <span class="label">${esc(b.name)}</span>
       </button>`
     }
@@ -615,8 +615,8 @@
     renderMore() {
       this.panels.more.innerHTML = `
         <fieldset class="panel-box" id="about-${this.uid}"><legend>About</legend>
-          <div class="about-head">${icons.bigPaw}<span><b>Good Dogs Only 98</b><span>Version 1.0 (mockup)</span></span></div>
-          <p>The official list is the ${officialTotal} breeds recognised by Dogs Australia, in its 7 groups (checked 1 Oct 2026), plus ${group.bonus.total} popular bonus breeds it doesn't recognise. Photos come from Wikimedia Commons.</p>
+          <div class="about-head">${icons.bigPaw}<span><b>Good Dogs Only</b><span>Version 1.0 (mockup)</span></span></div>
+          <p>The official list is the ${officialTotal} breeds recognised by Dogs Australia, in its 7 groups (checked 1 Oct 2026), plus ${group.bonus.total} popular bonus breeds it doesn't recognise.</p>
         </fieldset>
         <fieldset class="panel-box" id="home-${this.uid}"><legend>Add to Home Screen</legend>
           <ol><li>Open Good Dogs Only in <b>Safari</b></li><li>Tap <b>Share</b>, then <b>Add to Home Screen</b></li><li>Open it from the new icon. It runs full screen, like an app.</li></ol>
@@ -634,7 +634,7 @@
     persist()
     refreshAll()
     const b = byId[id]
-    from.dialog('Good Dogs Only', `You spotted a ${b.name}! That's ${officialCaught()} of ${officialTotal} official breeds${b.tier === 'unofficial' ? `, plus ${caughtIn('bonus')} bonus` : ''}.`, 'info')
+    from.dialog('Spotted', `That's ${officialCaught()} of ${officialTotal} official breeds${b.tier === 'unofficial' ? `, plus ${caughtIn('bonus')} bonus` : ''}.`, 'none')
   }
   function refreshAll() { phones.forEach((p) => p.refresh()) }
 
