@@ -1,0 +1,185 @@
+{
+  "about": "Where to look for photo candidates when the Wikidata Commons category is wrong or too broad, keyed by dex id. categories: Commons categories searched including subcategories. searches: free-text Commons searches (CirrusSearch syntax). Entries not listed use the Commons category from data/wiki-map.json.",
+  "breeds": {
+    "akita": {
+      "categories": [
+        "American Akita"
+      ]
+    },
+    "akita-japanese": {
+      "categories": [
+        "Akita Inu"
+      ]
+    },
+    "aussiedoodle": {
+      "categories": [],
+      "searches": [
+        "Aussiedoodle",
+        "Australian Shepherd Poodle mix"
+      ]
+    },
+    "australasian-bosdog": {
+      "categories": [],
+      "searches": []
+    },
+    "australian-kelpie": {
+      "categories": [],
+      "searches": [
+        "incategory:\"Australian Kelpie\" -\"Red Dog\" -Koko -premiere",
+        "\"Australian Kelpie\" -\"Red Dog\" -Koko -statue",
+        "kelpie dog -\"Red Dog\" -Koko -statue -geograph"
+      ]
+    },
+    "bernedoodle": {
+      "categories": [
+        "Bernedoodle"
+      ]
+    },
+    "bordoodle": {
+      "categories": [
+        "Bordoodle"
+      ]
+    },
+    "cavachon": {
+      "categories": [
+        "Cavachon"
+      ]
+    },
+    "chihuahua-long-coat": {
+      "categories": [],
+      "searches": [
+        "deepcat:\"Chihuahua (dog)\" long-haired",
+        "deepcat:\"Chihuahua (dog)\" \"long hair\""
+      ]
+    },
+    "chihuahua-smooth-coat": {
+      "categories": [],
+      "searches": [
+        "deepcat:\"Chihuahua (dog)\" smooth",
+        "deepcat:\"Chihuahua (dog)\" short-haired"
+      ]
+    },
+    "dachshund": {
+      "categories": [
+        "Smooth Standard Dachshund",
+        "Long-Haired Standard Dachshund",
+        "Wire-Haired Standard Dachshund",
+        "Smooth Miniature Dachshund",
+        "Long-Haired Miniature Dachshund",
+        "Wire-Haired Miniature Dachshund"
+      ]
+    },
+    "german-shepherd-dog-long-stock-coat": {
+      "categories": [],
+      "searches": [
+        "deepcat:\"German Shepherd Dog\" long-haired",
+        "long-haired German Shepherd dog"
+      ]
+    },
+    "german-spitz": {
+      "categories": [
+        "Mittelspitz",
+        "Kleinspitz"
+      ]
+    },
+    "jug": {
+      "categories": [],
+      "searches": [
+        "\"Jug dog\"",
+        "Jack Russell Pug mix"
+      ]
+    },
+    "maltese-x-shih-tzu": {
+      "categories": [],
+      "searches": [
+        "Malshi",
+        "Maltese Shih Tzu dog"
+      ]
+    },
+    "moodle": {
+      "categories": [
+        "Maltipoo"
+      ]
+    },
+    "murray-river-retriever": {
+      "categories": [],
+      "searches": [
+        "Murray River Curly Coated Retriever",
+        "\"Murray River Retriever\""
+      ]
+    },
+    "poodle-miniature": {
+      "categories": [
+        "Miniature Poodle"
+      ]
+    },
+    "poodle-standard": {
+      "categories": [
+        "Standard Poodle"
+      ]
+    },
+    "poodle-toy": {
+      "categories": [
+        "Toy Poodle"
+      ]
+    },
+    "pugalier": {
+      "categories": [
+        "Pugalier"
+      ],
+      "searches": [
+        "Pug Cavalier mix dog"
+      ]
+    },
+    "rabbit-dachshund": {
+      "categories": [
+        "Smooth Rabbit Dachshund",
+        "Long-Haired Rabbit Dachshund",
+        "Wire-Haired Rabbit Dachshund"
+      ]
+    },
+    "russian-toy-long-haired": {
+      "categories": [],
+      "searches": [
+        "deepcat:\"Russkiy Toy\" long-haired",
+        "deepcat:\"Russkiy Toy\" longhaired"
+      ]
+    },
+    "russian-toy-smooth-haired": {
+      "categories": [],
+      "searches": [
+        "deepcat:\"Russkiy Toy\" smooth",
+        "deepcat:\"Russkiy Toy\" short-haired"
+      ]
+    },
+    "schnoodle": {
+      "categories": [
+        "Schnoodle"
+      ]
+    },
+    "sheepadoodle": {
+      "categories": [],
+      "searches": [
+        "Sheepadoodle"
+      ]
+    },
+    "shih-poo": {
+      "categories": [],
+      "searches": [
+        "Shih poo",
+        "Shihpoo"
+      ]
+    },
+    "siberian-husky": {
+      "categories": [],
+      "searches": [
+        "intitle:\"Siberian Husky\" -sled -team -race -mushing -puppy -puppies"
+      ]
+    },
+    "weimaraner-longhair": {
+      "categories": [
+        "Long-haired Weimaraner"
+      ]
+    }
+  }
+}

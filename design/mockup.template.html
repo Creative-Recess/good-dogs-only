@@ -1,0 +1,937 @@
+<title>Dogdex</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap">
+<style>
+  /* ---------- Review board (the page around the phones) ---------- */
+  :root {
+    --page-bg: #e9eee6;
+    --page-ink: #17231b;
+    --page-muted: #59685e;
+    --page-line: #cfd9cb;
+    --page-chip: #f6f8f3;
+    --font-display: 'Bricolage Grotesque', ui-rounded, 'SF Pro Rounded', system-ui, sans-serif;
+    --font-body: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', -apple-system, system-ui, sans-serif;
+    --font-mono: 'DM Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page-bg: #0c120e;
+      --page-ink: #e3eae3;
+      --page-muted: #93a297;
+      --page-line: #24302a;
+      --page-chip: #141c17;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg: #0c120e;
+    --page-ink: #e3eae3;
+    --page-muted: #93a297;
+    --page-line: #24302a;
+    --page-chip: #141c17;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--page-bg);
+    color: var(--page-ink);
+    font-family: var(--font-body);
+    padding-inline: 24px;
+    padding-block: 28px 64px;
+  }
+  .board-head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 32px;
+    align-items: end;
+    justify-content: space-between;
+    max-width: 1760px;
+    margin: 0 auto 28px;
+  }
+  .board-head h1 {
+    font-family: var(--font-display);
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0;
+    line-height: 1;
+  }
+  .board-head p { margin: 8px 0 0; color: var(--page-muted); max-width: 62ch; line-height: 1.5; font-size: 15px; }
+  .seg-wrap { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--page-muted); }
+  .seg { display: inline-flex; border: 1px solid var(--page-line); border-radius: 999px; padding: 3px; background: var(--page-chip); }
+  .seg button {
+    font: 500 13px var(--font-body);
+    color: var(--page-muted);
+    background: none;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  .seg button[aria-pressed="true"] { background: var(--page-ink); color: var(--page-bg); }
+  .seg button:focus-visible { outline: 2px solid var(--page-ink); outline-offset: 2px; }
+  .phones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 36px;
+    justify-content: center;
+    max-width: 1760px;
+    margin: 0 auto;
+  }
+  .phone-wrap { display: grid; gap: 12px; justify-items: center; }
+  .phone-label {
+    font: 500 12px var(--font-mono);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--page-muted);
+  }
+  .phone {
+    width: 402px;
+    height: 874px;
+    max-width: 100%;
+    border-radius: 58px;
+    border: 11px solid #0b0f0d;
+    box-shadow: 0 0 0 1px #2a332e, 0 30px 60px -20px rgba(10, 20, 14, 0.45);
+    overflow: hidden;
+    position: relative;
+    background: #0b0f0d;
+  }
+  .board-foot { max-width: 70ch; margin: 40px auto 0; color: var(--page-muted); font-size: 13px; line-height: 1.6; text-align: center; }
+
+  /* ---------- The app ---------- */
+  .app {
+    --bg: #f3f5ef;
+    --surface: #ffffff;
+    --surface-2: #e7ece3;
+    --ink: #17231b;
+    --muted: #5d6c62;
+    --line: #dbe2d6;
+    --primary: #2e5e46;
+    --on-primary: #ffffff;
+    --wattle: #f2b705;
+    --wattle-ink: #3a2a00;
+    --tag-ink: #ffffff;
+    --shadow: 0 1px 2px rgba(23, 35, 27, 0.08), 0 4px 14px -6px rgba(23, 35, 27, 0.18);
+    --g-toys: #b8476a;
+    --g-terriers: #a64e26;
+    --g-gundogs: #5c7020;
+    --g-hounds: #7a4f33;
+    --g-working-dogs: #2f5f99;
+    --g-utility: #5b49a0;
+    --g-non-sporting: #1c716c;
+    --g-bonus: #8f6400;
+    color-scheme: light;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 15px;
+    overflow: hidden;
+  }
+  .app.dark {
+    --bg: #0f1612;
+    --surface: #17211b;
+    --surface-2: #1f2b24;
+    --ink: #e6ede6;
+    --muted: #9aa99f;
+    --line: #2a372f;
+    --primary: #8ccba6;
+    --on-primary: #0d1d14;
+    --wattle: #f5c435;
+    --wattle-ink: #2a1f00;
+    --tag-ink: #0f1612;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 18px -8px rgba(0, 0, 0, 0.6);
+    --g-toys: #e68aa3;
+    --g-terriers: #e08a5f;
+    --g-gundogs: #a9c05a;
+    --g-hounds: #c99872;
+    --g-working-dogs: #7aa8e0;
+    --g-utility: #a594e0;
+    --g-non-sporting: #62c2ba;
+    --g-bonus: #f0be3a;
+    color-scheme: dark;
+  }
+  .app button { font: inherit; color: inherit; }
+  .app :focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+  .statusbar {
+    flex: none;
+    height: 50px;
+    padding: 16px 30px 0 34px;
+    display: flex;
+    justify-content: space-between;
+    font: 600 16px -apple-system, system-ui, sans-serif;
+    position: relative;
+    z-index: 5;
+  }
+  .statusbar::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 11px;
+    width: 122px;
+    height: 34px;
+    margin-left: -61px;
+    border-radius: 20px;
+    background: #000;
+  }
+  .statusbar svg { height: 13px; }
+  .screens { flex: 1; position: relative; overflow: hidden; }
+  .screen { position: absolute; inset: 0; overflow-y: auto; overscroll-behavior: contain; padding-bottom: 110px; }
+  .screen[hidden] { display: none; }
+
+  /* Dex header */
+  .dex-head {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    padding: 8px 16px 10px;
+    display: grid;
+    gap: 10px;
+    border-bottom: 1px solid transparent;
+  }
+  .title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .wordmark { font: 800 30px/1 var(--font-display); letter-spacing: -0.03em; margin: 0; }
+  .wordmark span { color: var(--wattle); -webkit-text-stroke: 0; }
+  .counter {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 12px 5px 6px;
+    border-radius: 999px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    font: 500 13px var(--font-mono);
+    border: 0;
+    cursor: pointer;
+  }
+  .ring { width: 26px; height: 26px; transform: rotate(-90deg); }
+  .ring circle { fill: none; stroke-width: 4; }
+  .ring .track { stroke: var(--surface-2); }
+  .ring .fill { stroke: var(--wattle); stroke-linecap: round; transition: stroke-dashoffset 0.5s; }
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 0 12px;
+    box-shadow: var(--shadow);
+  }
+  .search svg { width: 18px; height: 18px; color: var(--muted); flex: none; }
+  .search input {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    background: none;
+    font: 16px var(--font-body);
+    color: var(--ink);
+    padding: 12px 0;
+    outline: none;
+  }
+  .search input::placeholder { color: var(--muted); }
+  .clear { border: 0; background: var(--surface-2); border-radius: 999px; width: 22px; height: 22px; display: grid; place-items: center; cursor: pointer; }
+  .clear svg { width: 12px; height: 12px; }
+  .chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin: 0 -16px; padding: 2px 16px; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    font: 500 13px var(--font-body);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--g); }
+  .chip small { font: 12px var(--font-mono); color: var(--muted); }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .chip[aria-pressed="true"] small { color: inherit; opacity: 0.75; }
+  .filters { display: flex; gap: 4px; background: var(--surface-2); border-radius: 10px; padding: 3px; }
+  .filters button {
+    flex: 1;
+    border: 0;
+    background: none;
+    border-radius: 8px;
+    padding: 6px 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .filters button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
+
+  .results { padding: 4px 16px 0; display: grid; gap: 22px; }
+  .group-head { display: grid; gap: 2px; margin-bottom: 10px; }
+  .group-head h3 {
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font: 700 19px var(--font-display);
+    letter-spacing: -0.01em;
+  }
+  .group-head h3::before { content: ''; width: 10px; height: 10px; border-radius: 3px; background: var(--g); transform: translateY(-1px); }
+  .group-head h3 small { margin-left: auto; font: 12px var(--font-mono); color: var(--muted); font-weight: 400; }
+  .group-head p { margin: 0; font-size: 13px; color: var(--muted); line-height: 1.4; }
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 10px; }
+  .card { border: 0; background: none; padding: 0; text-align: left; cursor: pointer; display: grid; gap: 6px; position: relative; }
+  .card .photo { display: block; aspect-ratio: 1; border-radius: 14px; overflow: hidden; background: var(--surface-2); box-shadow: var(--shadow); }
+  .card img { width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(1) contrast(0.92) brightness(1.04); opacity: 0.72; transition: filter 0.5s, opacity 0.5s; }
+  .app.dark .card img { filter: grayscale(1) brightness(0.8); opacity: 0.6; }
+  .card.is-caught img { filter: none; opacity: 1; }
+  .card .name { font-size: 13px; font-weight: 500; line-height: 1.25; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .card.is-caught .name { color: var(--ink); font-weight: 700; }
+  .tag {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 6px 2px 5px;
+    border-radius: 5px 8px 8px 5px;
+    background: var(--g);
+    color: var(--tag-ink);
+    font: 500 10.5px/1.4 var(--font-mono);
+    letter-spacing: 0.02em;
+  }
+  .tag::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--bg); opacity: 0.9; }
+  .rosette {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--wattle);
+    color: var(--wattle-ink);
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 0 2px var(--surface), 0 2px 6px rgba(0, 0, 0, 0.25);
+  }
+  .rosette svg { width: 14px; height: 14px; }
+  .empty { padding: 30px 8px; text-align: center; color: var(--muted); line-height: 1.5; }
+  .empty b { color: var(--ink); }
+  .sample-note { font: 11.5px/1.5 var(--font-mono); color: var(--muted); text-align: center; padding: 6px 0 8px; }
+
+  /* Breed page */
+  .detail {
+    position: absolute;
+    inset: 0;
+    background: var(--bg);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    transform: translateX(100%);
+    transition: transform 0.32s cubic-bezier(0.3, 0.8, 0.3, 1);
+    z-index: 6;
+    padding-bottom: 110px;
+    visibility: hidden;
+  }
+  .detail.open { transform: none; visibility: visible; }
+  .hero { position: relative; background: var(--surface-2); max-width: 100%; }
+  .hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .round-btn {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 0;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.82);
+    color: #17231b;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  }
+  .round-btn svg { width: 20px; height: 20px; }
+  .back { top: 12px; left: 12px; }
+  .info { bottom: 12px; right: 12px; width: 32px; height: 32px; }
+  .info svg { width: 17px; height: 17px; }
+  .hero .tag { top: auto; bottom: 14px; left: 14px; font-size: 13px; padding: 3px 9px 3px 7px; }
+  .credit {
+    margin: 0;
+    padding: 10px 16px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--muted);
+    background: var(--surface-2);
+  }
+  .credit a { color: inherit; }
+  .d-body { padding: 18px 16px 0; display: grid; gap: 14px; }
+  .group-chip {
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font: 500 12px var(--font-mono);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--g);
+  }
+  .group-chip::before { content: ''; width: 8px; height: 8px; border-radius: 2px; background: var(--g); }
+  .d-name { margin: -6px 0 0; font: 800 32px/1.02 var(--font-display); letter-spacing: -0.025em; text-wrap: balance; }
+  .d-sub { margin: -6px 0 0; font-size: 14px; color: var(--muted); line-height: 1.45; }
+  .d-sub b { color: var(--ink); font-weight: 500; }
+  .forms { display: flex; flex-wrap: wrap; gap: 6px; }
+  .forms span { font-size: 12.5px; padding: 4px 9px; border-radius: 6px; background: var(--surface-2); }
+  .catch { background: var(--surface); border-radius: 18px; padding: 16px; box-shadow: var(--shadow); display: grid; gap: 12px; }
+  .btn-catch {
+    border: 0;
+    border-radius: 14px;
+    padding: 16px;
+    background: var(--primary);
+    color: var(--on-primary) !important;
+    font: 700 18px var(--font-display) !important;
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  .btn-catch svg { width: 22px; height: 22px; }
+  .btn-catch:active { transform: scale(0.98); }
+  .hint { margin: -4px 0 0; text-align: center; font-size: 12.5px; color: var(--muted); }
+  .caught-row { display: flex; align-items: center; gap: 14px; }
+  .stamp {
+    flex: none;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    border: 3px solid var(--wattle);
+    outline: 1.5px dashed var(--wattle);
+    outline-offset: -9px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: var(--ink);
+    transform: rotate(-8deg);
+    background: color-mix(in srgb, var(--wattle) 16%, transparent);
+  }
+  .stamp span { font: 800 15px/1 var(--font-display); letter-spacing: 0.08em; }
+  .stamp b { font: 500 10.5px/1.6 var(--font-mono); letter-spacing: 0.04em; }
+  .stamp.pop { animation: pop 0.42s cubic-bezier(0.2, 0.9, 0.3, 1.25); }
+  @keyframes pop { from { transform: scale(1.9) rotate(-22deg); opacity: 0; } to { transform: scale(1) rotate(-8deg); opacity: 1; } }
+  .caught-copy { display: grid; gap: 2px; }
+  .caught-copy strong { font: 700 17px var(--font-display); }
+  .caught-copy span { font-size: 13px; color: var(--muted); }
+  .field { display: grid; gap: 4px; font-size: 12.5px; color: var(--muted); font-weight: 500; }
+  .field input, .field textarea {
+    font: 15px var(--font-body);
+    color: var(--ink);
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 9px 10px;
+    resize: none;
+  }
+  .btn-text { justify-self: start; border: 0; background: none; padding: 4px 0; color: var(--muted) !important; font-size: 13px !important; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+  .ankc { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px; border-radius: 14px; border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-size: 14px; }
+  .ankc small { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .ankc svg { width: 16px; height: 16px; flex: none; color: var(--muted); }
+
+  /* Progress */
+  .page-head { padding: 8px 16px 6px; }
+  .page-head h2 { margin: 0; font: 800 30px/1 var(--font-display); letter-spacing: -0.03em; }
+  .p-hero { margin: 8px 16px 0; padding: 18px; border-radius: 20px; background: var(--primary); color: var(--on-primary); display: grid; gap: 10px; }
+  .p-big { display: flex; align-items: baseline; gap: 10px; }
+  .p-big b { font: 800 64px/0.9 var(--font-display); letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
+  .p-big span { font-size: 15px; line-height: 1.3; opacity: 0.9; }
+  .bar { height: 8px; border-radius: 99px; background: var(--surface-2); overflow: hidden; }
+  .bar i { display: block; height: 100%; border-radius: inherit; background: var(--g, var(--wattle)); transition: width 0.5s; }
+  .p-hero .bar { background: color-mix(in srgb, var(--on-primary) 22%, transparent); }
+  .p-hero .bar i { background: var(--wattle); }
+  .p-hero p { margin: 0; font-size: 13px; opacity: 0.9; }
+  .section-title { margin: 22px 16px 8px; font: 500 12px var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .rows { list-style: none; margin: 0 16px; padding: 0; background: var(--surface); border-radius: 16px; box-shadow: var(--shadow); }
+  .rows li + li { border-top: 1px solid var(--line); }
+  .g-row { width: 100%; border: 0; background: none; padding: 12px 14px; display: grid; grid-template-columns: 1fr auto; gap: 7px 10px; text-align: left; cursor: pointer; }
+  .g-row .g-name { display: flex; align-items: center; gap: 8px; font-weight: 500; }
+  .g-row .g-name::before { content: ''; width: 10px; height: 10px; border-radius: 3px; background: var(--g); }
+  .g-row small { font: 13px var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+  .g-row .bar { grid-column: 1 / -1; height: 6px; }
+  .recent { display: grid; grid-template-columns: 44px 1fr auto; gap: 12px; align-items: center; padding: 10px 14px; width: 100%; border: 0; background: none; text-align: left; cursor: pointer; }
+  .recent img { width: 44px; height: 44px; border-radius: 10px; object-fit: cover; }
+  .recent b { display: block; font-weight: 500; }
+  .recent span { font-size: 12.5px; color: var(--muted); }
+  .recent time { font: 12px var(--font-mono); color: var(--muted); }
+
+  /* More */
+  .m-card { margin: 8px 16px 0; padding: 16px; border-radius: 18px; background: var(--surface); box-shadow: var(--shadow); display: grid; gap: 10px; }
+  .m-card h3 { margin: 0; font: 700 18px var(--font-display); }
+  .m-card p { margin: 0; font-size: 14px; line-height: 1.5; color: var(--muted); }
+  .warn { justify-self: start; font: 500 12px var(--font-mono); padding: 3px 8px; border-radius: 6px; background: color-mix(in srgb, var(--wattle) 22%, transparent); color: var(--ink); }
+  .btn { border: 0; border-radius: 12px; padding: 12px; font-weight: 700 !important; cursor: pointer; }
+  .btn.primary { background: var(--primary); color: var(--on-primary) !important; }
+  .btn.secondary { background: var(--surface-2); }
+  .steps { margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.6; color: var(--muted); }
+  .steps b { color: var(--ink); font-weight: 500; }
+  .credits { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 12.5px; line-height: 1.45; color: var(--muted); }
+  .credits b { color: var(--ink); font-weight: 500; }
+  .credits a { color: inherit; }
+
+  /* Tab bar and toast */
+  .tabbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 8;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 8px 18px 28px;
+    background: color-mix(in srgb, var(--surface) 97%, transparent);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid var(--line);
+  }
+  .tabbar button { border: 0; background: none; display: grid; justify-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 500; color: var(--muted); cursor: pointer; }
+  .tabbar svg { width: 25px; height: 25px; }
+  .tabbar button[aria-current="page"] { color: var(--primary); }
+  .toast {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 96px;
+    z-index: 9;
+    padding: 12px 14px;
+    border-radius: 14px;
+    background: var(--ink);
+    color: var(--bg);
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.2s, transform 0.2s;
+    pointer-events: none;
+  }
+  .toast.show { opacity: 1; transform: none; }
+  .toast i { width: 22px; height: 22px; border-radius: 50%; background: var(--wattle); color: var(--wattle-ink); display: grid; place-items: center; flex: none; }
+  .toast svg { width: 13px; height: 13px; }
+
+  /* On a phone the page becomes the app itself: one full-screen instance, no device frame. */
+  @media (max-width: 560px) {
+    body { padding-inline: 0; padding-block: 0; }
+    .board-head { margin: 0; padding: 10px 16px; gap: 8px; align-items: center; border-bottom: 1px solid var(--page-line); }
+    .board-head h1 { font-size: 17px; }
+    .board-head p, .seg-wrap > span { display: none; }
+    .seg button { padding: 4px 9px; font-size: 12px; }
+    .phones { display: block; }
+    .phone-wrap:not(:first-child), .phone-label, .board-foot { display: none; }
+    .phone { width: 100%; height: calc(100dvh - 53px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); border: 0; border-radius: 0; box-shadow: none; }
+    .statusbar { display: none; }
+    .tabbar { padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px)); }
+    .toast { bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .detail, .card img, .bar i, .ring .fill, .toast { transition: none; }
+    .stamp.pop { animation: none; }
+  }
+</style>
+
+<header class="board-head">
+  <div>
+    <h1>Dogdex mockup</h1>
+    <p>Tap anything: it works like the app, with a sample of 28 breeds and some example catches. To suggest a change, leave a comment on the part you mean, then tell Claude in chat.</p>
+  </div>
+  <div class="seg-wrap">
+    <span>App theme</span>
+    <div class="seg" role="group" aria-label="App theme">
+      <button type="button" data-scheme="system" aria-pressed="true">System</button>
+      <button type="button" data-scheme="light" aria-pressed="false">Light</button>
+      <button type="button" data-scheme="dark" aria-pressed="false">Dark</button>
+    </div>
+  </div>
+</header>
+<main class="phones" id="phones"></main>
+<p class="board-foot">Photos: Wikimedia Commons, credited on each breed page (tap the i on the photo). Breed list and groups: Dogs Australia. Mockup only, so catches here are saved in this browser and nowhere else.</p>
+
+<script>const DATA = __DOGDEX_DATA__;</script>
+<script>
+(() => {
+  const icons = {
+    search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.6-4.6"/></svg>',
+    x: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+    check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+    back: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',
+    info: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><circle cx="12" cy="7.5" r="0.6" fill="currentColor"/></svg>',
+    ext: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5M19 5l-8 8M18 14v5H5V6h5"/></svg>',
+    paw: '<svg viewBox="0 0 24 24" fill="currentColor"><ellipse cx="6" cy="10" rx="2.2" ry="2.8"/><ellipse cx="10" cy="6.2" rx="2.2" ry="2.9"/><ellipse cx="14.6" cy="6.2" rx="2.2" ry="2.9"/><ellipse cx="18.4" cy="10" rx="2.2" ry="2.8"/><path d="M12.3 11.2c-2.9 0-6.3 4.3-6.3 6.6 0 1.8 1.4 2.6 3 2.6 1.4 0 2.1-.7 3.3-.7s1.9.7 3.3.7c1.6 0 3-.8 3-2.6 0-2.3-3.4-6.6-6.3-6.6z"/></svg>',
+    tabDex: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="7" height="7" rx="2"/><rect x="13.5" y="13.5" width="7" height="7" rx="2"/></svg>',
+    tabProgress: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="9" r="5.5"/><path d="M9 13.6L7.5 21l4.5-2.4 4.5 2.4-1.5-7.4"/><path d="M9.8 9.2l1.6 1.6 3-3.2"/></svg>',
+    tabMore: '<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>',
+  }
+
+  const { groups, breeds } = DATA
+  const group = Object.fromEntries(groups.map((g) => [g.id, g]))
+  const official = groups.filter((g) => g.id !== 'bonus')
+  const officialTotal = official.reduce((n, g) => n + g.total, 0)
+  const byId = Object.fromEntries(breeds.map((b) => [b.id, b]))
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`)
+
+  // Catches: example data first, then whatever this browser saved.
+  const KEY = 'dogdex-mockup-v1'
+  let caught = { ...DATA.demoCaught }
+  try {
+    const saved = localStorage.getItem(KEY)
+    if (saved) caught = JSON.parse(saved)
+  } catch {}
+  const persist = () => {
+    try { localStorage.setItem(KEY, JSON.stringify(caught)) } catch {}
+  }
+
+  const pad = (n) => String(n).padStart(2, '0')
+  const todayIso = () => { const d = new Date(); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}` }
+  const fmt = (iso, opts = { day: 'numeric', month: 'short', year: 'numeric' }) => new Date(`${iso}T00:00:00`).toLocaleDateString('en-AU', opts)
+  const caughtIn = (gid) => breeds.filter((b) => b.groupId === gid && caught[b.id]).length
+  const officialCaught = () => breeds.filter((b) => b.tier === 'ankc' && caught[b.id]).length
+
+  // Search: same rules as the app (src/lib/search.ts): exact, prefix, word prefix, then substring.
+  const norm = (t) => t.normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim()
+  const rank = (name, q) => (name === q ? 0 : name.startsWith(q) ? 1 : ` ${name}`.includes(` ${q}`) ? 2 : name.includes(q) ? 3 : null)
+  function search(list, query) {
+    const q = norm(query)
+    if (!q) return list
+    return list
+      .map((b, i) => {
+        const ranks = [b.name, b.officialName || '', ...b.aliases, ...b.forms].filter(Boolean).map((n) => rank(norm(n), q)).filter((r) => r !== null)
+        return ranks.length ? { b, r: Math.min(...ranks), i } : null
+      })
+      .filter(Boolean)
+      .sort((x, y) => x.r - y.r || x.i - y.i)
+      .map((x) => x.b)
+  }
+
+  const phones = []
+  class Phone {
+    constructor(host, initial) {
+      this.host = host
+      this.s = { tab: 'dex', group: 'all', filter: 'all', q: '', detail: null, credit: false, ...initial }
+      this.uid = phones.length
+      host.innerHTML = `
+        <div class="app">
+          <div class="statusbar" aria-hidden="true"><span>9:41</span><svg viewBox="0 0 64 13" fill="currentColor"><rect x="0" y="8" width="3" height="5" rx="1"/><rect x="5" y="5.5" width="3" height="7.5" rx="1"/><rect x="10" y="3" width="3" height="10" rx="1"/><rect x="15" y="0" width="3" height="13" rx="1"/><path d="M30 3.2a10 10 0 0 1 13.5 0l-1.4 1.5a8 8 0 0 0-10.7 0zM33 6.3a5.6 5.6 0 0 1 7.5 0l-1.4 1.5a3.6 3.6 0 0 0-4.7 0zM36.75 9.4l1.6 1.7-1.6 1.7-1.6-1.7z"/><rect x="48" y="1" width="14" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.2"/><rect x="50" y="3" width="10" height="7" rx="1.5"/></svg></div>
+          <div class="screens">
+            <section class="screen" data-screen="dex"></section>
+            <section class="screen" data-screen="progress" hidden></section>
+            <section class="screen" data-screen="more" hidden></section>
+            <section class="detail" aria-label="Breed"></section>
+          </div>
+          <div class="toast" role="status" aria-live="polite"></div>
+          <nav class="tabbar" aria-label="Sections">
+            <button type="button" data-act="tab" data-tab="dex">${icons.tabDex}Dex</button>
+            <button type="button" data-act="tab" data-tab="progress">${icons.tabProgress}Progress</button>
+            <button type="button" data-act="tab" data-tab="more">${icons.tabMore}More</button>
+          </nav>
+        </div>`
+      this.app = host.querySelector('.app')
+      this.el = Object.fromEntries([...host.querySelectorAll('[data-screen]')].map((n) => [n.dataset.screen, n]))
+      this.detailEl = host.querySelector('.detail')
+      this.toastEl = host.querySelector('.toast')
+      host.addEventListener('click', (e) => this.onClick(e))
+      host.addEventListener('input', (e) => this.onInput(e))
+      host.addEventListener('change', (e) => this.onChange(e))
+      this.renderDexShell()
+      this.refresh()
+      if (this.s.detail) this.openDetail(this.s.detail, false)
+      this.showTab(this.s.tab)
+    }
+
+    onClick(e) {
+      const t = e.target.closest('[data-act]')
+      if (!t) return
+      const { act } = t.dataset
+      if (act === 'tab') { this.closeDetail(); this.showTab(t.dataset.tab) }
+      if (act === 'open') this.openDetail(t.dataset.id)
+      if (act === 'back') this.closeDetail()
+      if (act === 'group') { this.s.group = t.dataset.group; this.refresh(); this.el.dex.scrollTop = 0 }
+      if (act === 'filter') { this.s.filter = t.dataset.filter; this.refresh() }
+      if (act === 'clear') { this.s.q = ''; const input = this.el.dex.querySelector('input'); input.value = ''; input.focus(); this.refresh() }
+      if (act === 'go-group') { this.s.group = t.dataset.group; this.s.filter = 'all'; this.showTab('dex'); this.refresh(); this.el.dex.scrollTop = 0 }
+      if (act === 'to-progress') this.showTab('progress')
+      if (act === 'credit') { this.s.credit = !this.s.credit; this.renderDetail() }
+      if (act === 'catch') catchBreed(t.dataset.id, this)
+      if (act === 'undo') { delete caught[t.dataset.id]; persist(); refreshAll() }
+      if (act === 'backup') this.toast('In the app, this opens the iPhone share sheet so you can save the file to Files or iCloud Drive.')
+      if (act === 'restore') this.toast('In the app, this lets you pick a backup file to restore. Catches merge, nothing is lost.')
+    }
+    onInput(e) {
+      if (e.target.matches('[data-role="q"]')) { this.s.q = e.target.value; this.refreshResults() }
+      if (e.target.matches('[data-role="note"]')) { const c = caught[e.target.dataset.id]; if (c) { c.note = e.target.value; persist() } }
+    }
+    onChange(e) {
+      if (e.target.matches('[data-role="date"]') && e.target.value) {
+        const c = caught[e.target.dataset.id]
+        if (c) { c.date = e.target.value; persist(); refreshAll() }
+      }
+    }
+
+    showTab(tab) {
+      this.s.tab = tab
+      for (const [name, node] of Object.entries(this.el)) node.hidden = name !== tab
+      this.host.querySelectorAll('.tabbar button').forEach((b) => (b.dataset.tab === tab ? b.setAttribute('aria-current', 'page') : b.removeAttribute('aria-current')))
+    }
+
+    toast(text, withCheck) {
+      this.toastEl.innerHTML = `${withCheck ? `<i>${icons.check}</i>` : ''}<span>${esc(text)}</span>`
+      this.toastEl.classList.add('show')
+      clearTimeout(this.toastTimer)
+      this.toastTimer = setTimeout(() => this.toastEl.classList.remove('show'), withCheck ? 2400 : 3600)
+    }
+
+    refresh() {
+      this.refreshResults()
+      this.renderProgress()
+      this.renderMore()
+      if (this.s.detail) this.renderDetail()
+    }
+
+    // Dex: the header (search box) renders once so typing never loses focus; results re-render.
+    renderDexShell() {
+      this.el.dex.innerHTML = `
+        <div class="dex-head">
+          <div class="title-row">
+            <h2 class="wordmark">Dogdex</h2>
+            <button type="button" class="counter" data-act="to-progress" aria-label="Progress"></button>
+          </div>
+          <label class="search">${icons.search}
+            <input type="search" id="q-${this.uid}" data-role="q" placeholder="Search breeds or nicknames" autocomplete="off" enterkeyhint="search">
+            <button type="button" class="clear" data-act="clear" aria-label="Clear search" hidden>${icons.x}</button>
+          </label>
+          <div class="chips" role="group" aria-label="Group"></div>
+          <div class="filters" role="group" aria-label="Show">
+            <button type="button" data-act="filter" data-filter="all">All</button>
+            <button type="button" data-act="filter" data-filter="caught">Caught</button>
+            <button type="button" data-act="filter" data-filter="todo">Still to find</button>
+          </div>
+        </div>
+        <div class="results"></div>`
+    }
+
+    refreshResults() {
+      const s = this.s
+      const dex = this.el.dex
+      const n = officialCaught()
+      const r = 10
+      const circ = 2 * Math.PI * r
+      dex.querySelector('.counter').innerHTML = `<svg class="ring" viewBox="0 0 26 26"><circle class="track" cx="13" cy="13" r="${r}"/><circle class="fill" cx="13" cy="13" r="${r}" stroke-dasharray="${circ}" stroke-dashoffset="${circ * (1 - n / officialTotal)}"/></svg>${n} / ${officialTotal}`
+      dex.querySelector('.clear').hidden = !s.q
+      dex.querySelector('.chips').innerHTML =
+        `<button type="button" class="chip" data-act="group" data-group="all" aria-pressed="${s.group === 'all'}">All groups</button>` +
+        groups.map((g) => `<button type="button" class="chip" data-act="group" data-group="${g.id}" aria-pressed="${s.group === g.id}" style="--g:var(--g-${g.id})"><span class="dot"></span>${esc(g.name)} <small>${caughtIn(g.id)}/${g.total}</small></button>`).join('')
+      dex.querySelectorAll('.filters button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.filter === s.filter)))
+
+      let list = breeds
+      if (s.group !== 'all') list = list.filter((b) => b.groupId === s.group)
+      if (s.filter === 'caught') list = list.filter((b) => caught[b.id])
+      if (s.filter === 'todo') list = list.filter((b) => !caught[b.id])
+      const results = dex.querySelector('.results')
+
+      if (s.q) {
+        const found = search(list, s.q)
+        results.innerHTML = found.length
+          ? `<div class="grid">${found.map((b) => this.card(b)).join('')}</div>`
+          : `<p class="empty">No breeds match <b>${esc(s.q)}</b>.<br>Try a nickname like "staffy", "heeler" or "sausage dog".</p>`
+        return
+      }
+      const shown = s.group === 'all' ? groups : [group[s.group]]
+      const sections = shown
+        .map((g) => {
+          const items = list.filter((b) => b.groupId === g.id)
+          if (!items.length) return ''
+          return `<section style="--g:var(--g-${g.id})">
+            <div class="group-head"><h3>${esc(g.name)}<small>${caughtIn(g.id)} of ${g.total}</small></h3><p>${esc(g.description)}</p></div>
+            <div class="grid">${items.map((b) => this.card(b)).join('')}</div>
+          </section>`
+        })
+        .join('')
+      results.innerHTML = (sections || `<p class="empty">Nothing here yet. Get to the park!</p>`) + `<p class="sample-note">Mockup sample: ${breeds.length} of ${DATA.totalEntries} entries</p>`
+    }
+
+    card(b) {
+      const c = caught[b.id]
+      return `<button type="button" class="card${c ? ' is-caught' : ''}" data-act="open" data-id="${b.id}" style="--g:var(--g-${b.groupId})">
+        <span class="photo"><img src="${b.img.grid}" alt=""></span>
+        <span class="tag">${b.dexNo}</span>
+        ${c ? `<span class="rosette" aria-label="Caught">${icons.check}</span>` : ''}
+        <span class="name">${esc(b.name)}</span>
+      </button>`
+    }
+
+    openDetail(id, animate = true) {
+      this.s.detail = id
+      this.s.credit = false
+      this.renderDetail()
+      this.detailEl.scrollTop = 0
+      if (!animate) this.detailEl.style.transition = 'none'
+      this.detailEl.classList.add('open')
+      if (!animate) requestAnimationFrame(() => (this.detailEl.style.transition = ''))
+    }
+    closeDetail() {
+      this.s.detail = null
+      this.detailEl.classList.remove('open')
+    }
+
+    renderDetail(popStamp) {
+      const b = byId[this.s.detail]
+      if (!b) return
+      const g = group[b.groupId]
+      const c = caught[b.id]
+      const [fx, fy] = b.focus
+      const aka = b.aliases.filter((a) => !b.name.toLowerCase().includes(a.toLowerCase())).slice(0, 4)
+      const sub = []
+      if (b.officialName) sub.push(`Dogs Australia name: <b>${esc(b.officialName)}</b>`)
+      if (b.parents) sub.push(`A cross of the <b>${esc(b.parents[0])}</b> and <b>${esc(b.parents[1])}</b>. Not recognised by Dogs Australia.`)
+      if (b.about) sub.push(`${esc(b.about)} Not recognised by Dogs Australia.`)
+      if (aka.length) sub.push(`Also called ${aka.map((a) => `<b>${esc(a)}</b>`).join(', ')}`)
+      const credit = b.credit
+      const catchBlock = c
+        ? `<div class="caught-row">
+             <div class="stamp${popStamp ? ' pop' : ''}"><span>CAUGHT</span><b>${esc(fmt(c.date, { day: 'numeric', month: 'short' }).toUpperCase())}</b><b>${c.date.slice(0, 4)}</b></div>
+             <div class="caught-copy"><strong>In your dex</strong><span>First spotted ${esc(fmt(c.date))}</span></div>
+           </div>
+           <label class="field">Date seen<input type="date" id="date-${this.uid}-${b.id}" data-role="date" data-id="${b.id}" value="${c.date}" max="${todayIso()}"></label>
+           <label class="field">Note<textarea id="note-${this.uid}-${b.id}" rows="2" data-role="note" data-id="${b.id}" placeholder="Where, what colour, the dog's name...">${esc(c.note || '')}</textarea></label>
+           <button type="button" class="btn-text" data-act="undo" data-id="${b.id}">Undo catch</button>`
+        : `<button type="button" class="btn-catch" data-act="catch" data-id="${b.id}">${icons.paw}I spotted one</button>
+           <p class="hint">Saves today's date. You can change it after.</p>`
+      this.detailEl.innerHTML = `
+        <div class="hero" style="--g:var(--g-${b.groupId});aspect-ratio:${Math.min(Math.max(b.img.w / b.img.h, 0.8), 1.34)}">
+          <img src="${b.img.detail}" alt="${esc(b.name)}" style="object-position:${fx * 100}% ${fy * 100}%">
+          <button type="button" class="round-btn back" data-act="back" aria-label="Back">${icons.back}</button>
+          <span class="tag">${b.dexNo}</span>
+          <button type="button" class="round-btn info" data-act="credit" aria-label="Photo credit" aria-expanded="${this.s.credit}">${icons.info}</button>
+        </div>
+        ${this.s.credit ? `<p class="credit">Photo: ${esc(credit.author)}, <a href="${esc(credit.licenceUrl || credit.sourceUrl)}" target="_blank" rel="noopener">${esc(credit.licence)}</a>, via <a href="${esc(credit.sourceUrl)}" target="_blank" rel="noopener">Wikimedia Commons</a>. Resized and cropped.</p>` : ''}
+        <div class="d-body" style="--g:var(--g-${b.groupId})">
+          <span class="group-chip">${esc(g.name)}</span>
+          <h2 class="d-name">${esc(b.name)}</h2>
+          ${sub.map((x) => `<p class="d-sub">${x}</p>`).join('')}
+          ${b.forms.length ? `<div class="forms">${b.forms.map((f) => `<span>${esc(f)}</span>`).join('')}</div>` : ''}
+          <div class="catch">${catchBlock}</div>
+          ${b.ankcUrl ? `<a class="ankc" href="${esc(b.ankcUrl)}" target="_blank" rel="noopener"><span>See the official standard<small>Photo and breed standard on Dogs Australia</small></span>${icons.ext}</a>` : ''}
+        </div>`
+    }
+
+    renderProgress() {
+      const n = officialCaught()
+      const pct = Math.round((n / officialTotal) * 100)
+      const bonus = group.bonus
+      const recent = breeds.filter((b) => caught[b.id]).sort((a, b) => caught[b.id].date.localeCompare(caught[a.id].date)).slice(0, 6)
+      this.el.progress.innerHTML = `
+        <div class="page-head"><h2>Progress</h2></div>
+        <div class="p-hero">
+          <div class="p-big"><b>${n}</b><span>of ${officialTotal} official<br>breeds caught</span></div>
+          <div class="bar"><i style="width:${Math.max(pct, 1)}%"></i></div>
+          <p>Plus ${caughtIn('bonus')} of ${bonus.total} bonus dogs</p>
+        </div>
+        <h3 class="section-title">By group</h3>
+        <ul class="rows">${groups
+          .map((g) => {
+            const k = caughtIn(g.id)
+            return `<li><button type="button" class="g-row" data-act="go-group" data-group="${g.id}" style="--g:var(--g-${g.id})"><span class="g-name">${esc(g.name)}</span><small>${k} / ${g.total}</small><span class="bar"><i style="width:${(k / g.total) * 100}%"></i></span></button></li>`
+          })
+          .join('')}</ul>
+        <h3 class="section-title">Recent catches</h3>
+        <ul class="rows">${recent
+          .map((b) => `<li><button type="button" class="recent" data-act="open" data-id="${b.id}"><img src="${b.img.grid}" alt=""><span><b>${esc(b.name)}</b><span>${esc(group[b.groupId].name)}</span></span><time>${esc(fmt(caught[b.id].date, { day: 'numeric', month: 'short' }))}</time></button></li>`)
+          .join('')}</ul>`
+    }
+
+    renderMore() {
+      this.el.more.innerHTML = `
+        <div class="page-head"><h2>More</h2></div>
+        <div class="m-card">
+          <h3>Backup</h3>
+          <p>Your catches are saved on this phone only. Save a backup now and then so a lost or new phone doesn't mean a lost dex.</p>
+          <span class="warn">Last backup: never</span>
+          <button type="button" class="btn primary" data-act="backup">Save a backup</button>
+          <button type="button" class="btn secondary" data-act="restore">Restore from a backup</button>
+        </div>
+        <div class="m-card">
+          <h3>Put Dogdex on your Home Screen</h3>
+          <ol class="steps"><li>Open Dogdex in <b>Safari</b></li><li>Tap <b>Share</b>, then <b>Add to Home Screen</b></li><li>Open it from the new icon. It runs full screen, like an app.</li></ol>
+        </div>
+        <div class="m-card">
+          <h3>About</h3>
+          <p>The official list is the ${officialTotal} breeds recognised by Dogs Australia, in its 7 groups (checked 1 Oct 2026), plus ${group.bonus.total} popular bonus dogs it doesn't recognise. Photos come from Wikimedia Commons.</p>
+        </div>
+        <div class="m-card">
+          <h3>Photo credits</h3>
+          <ul class="credits">${breeds
+            .slice(0, 6)
+            .map((b) => `<li><b>${esc(b.name)}</b>: ${esc(b.credit.author)}, <a href="${esc(b.credit.sourceUrl)}" target="_blank" rel="noopener">${esc(b.credit.licence)}</a></li>`)
+            .join('')}<li>...and one for every photo in the app.</li></ul>
+        </div>`
+    }
+  }
+
+  function catchBreed(id, from) {
+    caught[id] = { date: todayIso() }
+    persist()
+    for (const p of phones) {
+      p.refresh()
+      if (p === from) p.renderDetail(true)
+    }
+    const b = byId[id]
+    from.toast(`Caught! ${b.name}. ${officialCaught()} of ${officialTotal}${b.tier === 'unofficial' ? ` (+${caughtIn('bonus')} bonus)` : ''}`, true)
+  }
+  function refreshAll() { phones.forEach((p) => p.refresh()) }
+
+  // Four screens side by side on a big screen; on a phone only the first one shows, full screen.
+  const screens = [
+    { label: 'Dex', state: {} },
+    { label: 'Breed page', state: { detail: 'staffordshire-bull-terrier' } },
+    { label: 'Progress', state: { tab: 'progress' } },
+    { label: 'More', state: { tab: 'more' } },
+  ]
+  const host = document.getElementById('phones')
+  for (const sc of screens) {
+    const wrap = document.createElement('div')
+    wrap.className = 'phone-wrap'
+    wrap.innerHTML = `<span class="phone-label">${sc.label}</span><div class="phone"></div>`
+    host.append(wrap)
+    phones.push(new Phone(wrap.querySelector('.phone'), sc.state))
+  }
+
+  // App theme: follow the viewer (system or the host's theme toggle) unless Light or Dark is picked.
+  let scheme = 'system'
+  try { scheme = localStorage.getItem('dogdex-mockup-scheme') || 'system' } catch {}
+  const media = matchMedia('(prefers-color-scheme: dark)')
+  function applyScheme() {
+    const t = document.documentElement.dataset.theme
+    const dark = scheme === 'dark' || (scheme === 'system' && (t ? t === 'dark' : media.matches))
+    document.querySelectorAll('.app').forEach((a) => a.classList.toggle('dark', dark))
+    document.querySelectorAll('.seg button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.scheme === scheme)))
+  }
+  document.querySelector('.seg').addEventListener('click', (e) => {
+    const b = e.target.closest('button')
+    if (!b) return
+    scheme = b.dataset.scheme
+    try { localStorage.setItem('dogdex-mockup-scheme', scheme) } catch {}
+    applyScheme()
+  })
+  media.addEventListener('change', applyScheme)
+  new MutationObserver(applyScheme).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] })
+  applyScheme()
+})()
+</script>

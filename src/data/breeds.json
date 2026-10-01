@@ -1,0 +1,6260 @@
+{
+ "groups": [
+  {
+   "id": "toys",
+   "name": "Toys",
+   "description": "Small companion breeds bred to be lap dogs, like the Cavalier, Pug and Maltese."
+  },
+  {
+   "id": "terriers",
+   "name": "Terriers",
+   "description": "Feisty, energetic dogs first bred to hunt vermin, like the Jack Russell, Staffy and Westie."
+  },
+  {
+   "id": "gundogs",
+   "name": "Gundogs",
+   "description": "Bred to find and retrieve game for hunters, like the Labrador, Golden Retriever and spaniels."
+  },
+  {
+   "id": "hounds",
+   "name": "Hounds",
+   "description": "Hunters by scent or sight, like the Beagle, Dachshund, Greyhound and Whippet."
+  },
+  {
+   "id": "working-dogs",
+   "name": "Working Dogs",
+   "description": "The herding and droving breeds, like the Border Collie, Kelpie and Cattle Dog."
+  },
+  {
+   "id": "utility",
+   "name": "Utility",
+   "description": "Guarding, sledding and other jobs, like the Rottweiler, Boxer and Siberian Husky."
+  },
+  {
+   "id": "non-sporting",
+   "name": "Non Sporting",
+   "description": "Companion breeds that don't fit elsewhere, like the Poodle, French Bulldog and Great Dane."
+  },
+  {
+   "id": "bonus",
+   "name": "Bonus",
+   "description": "Popular dogs that Dogs Australia doesn't recognise, like the Cavoodle, Groodle and Mini Foxie."
+  }
+ ],
+ "breeds": [
+  {
+   "id": "affenpinscher",
+   "dexNo": "001",
+   "name": "Affenpinscher",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Affen",
+    "Monkey Dog"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Affenpinscher",
+   "image": {
+    "grid": "/breeds/affenpinscher-6f93fa91-grid.webp",
+    "detail": "/breeds/affenpinscher-6f93fa91.webp",
+    "width": 1200,
+    "height": 1280
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Affenmonkeyterrier2.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "australian-silky-terrier",
+   "dexNo": "002",
+   "name": "Australian Silky Terrier",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Silky",
+    "Silky Terrier"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australian-Silky-Terrier",
+   "image": {
+    "grid": "/breeds/australian-silky-terrier-0cf98a6e-grid.webp",
+    "detail": "/breeds/australian-silky-terrier-0cf98a6e.webp",
+    "width": 1132,
+    "height": 996
+   },
+   "credit": {
+    "author": "Dagur Brynjólfsson",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:01_Australian_Silky_Terrier.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bichon-frise",
+   "dexNo": "003",
+   "name": "Bichon Frise",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Bichon"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bichon-Frise",
+   "image": {
+    "grid": "/breeds/bichon-frise-5296f712-grid.webp",
+    "detail": "/breeds/bichon-frise-5296f712.webp",
+    "width": 1200,
+    "height": 866
+   },
+   "credit": {
+    "author": "Heike Andres",
+    "licence": "CC BY-SA 3.0 de",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bichon_Fris%C3%A9_-_studdogbichon.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "biewer-terrier",
+   "dexNo": "004",
+   "name": "Biewer Terrier",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Biewer-Terrier",
+   "image": {
+    "grid": "/breeds/biewer-terrier-14d47bfe-grid.webp",
+    "detail": "/breeds/biewer-terrier-14d47bfe.webp",
+    "width": 1200,
+    "height": 797
+   },
+   "credit": {
+    "author": "Detlef Breiting",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BiewerH%C3%BCndin.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bolognese",
+   "dexNo": "005",
+   "name": "Bolognese",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bolognese",
+   "image": {
+    "grid": "/breeds/bolognese-adc2f9f5-grid.webp",
+    "detail": "/breeds/bolognese-adc2f9f5.webp",
+    "width": 1179,
+    "height": 1027
+   },
+   "credit": {
+    "author": "Mrtibbs1999",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Male_adult_bolognese_dog_(cropped).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "cavalier-king-charles-spaniel",
+   "dexNo": "006",
+   "name": "Cavalier King Charles Spaniel",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Cavalier",
+    "Cav"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cavalier-King-Charles-Spaniel",
+   "image": {
+    "grid": "/breeds/cavalier-king-charles-spaniel-e9782178-grid.webp",
+    "detail": "/breeds/cavalier-king-charles-spaniel-e9782178.webp",
+    "width": 1200,
+    "height": 765
+   },
+   "credit": {
+    "author": "Filip B",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dog_In_The_Grass.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "chihuahua-long-coat",
+   "dexNo": "007",
+   "name": "Chihuahua (Long Coat)",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Long-haired Chihuahua",
+    "Long Hair Chihuahua"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chihuahua-(Long-Coat)",
+   "image": {
+    "grid": "/breeds/chihuahua-long-coat-2ade33af-grid.webp",
+    "detail": "/breeds/chihuahua-long-coat-2ade33af.webp",
+    "width": 1091,
+    "height": 1014
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chihuahua_long-haired_black_%26_tan.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "chihuahua-smooth-coat",
+   "dexNo": "008",
+   "name": "Chihuahua (Smooth Coat)",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Short-haired Chihuahua",
+    "Short Hair Chihuahua"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chihuahua-(Smooth-Coat)",
+   "image": {
+    "grid": "/breeds/chihuahua-smooth-coat-c30833cf-grid.webp",
+    "detail": "/breeds/chihuahua-smooth-coat-c30833cf.webp",
+    "width": 1000,
+    "height": 1500
+   },
+   "credit": {
+    "author": "sirraychen",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chihuahua_sitting.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "chinese-crested-dog",
+   "dexNo": "009",
+   "name": "Chinese Crested Dog",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Chinese Crested"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chinese-Crested-Dog",
+   "image": {
+    "grid": "/breeds/chinese-crested-dog-108f622a-grid.webp",
+    "detail": "/breeds/chinese-crested-dog-108f622a.webp",
+    "width": 1200,
+    "height": 798
+   },
+   "credit": {
+    "author": "Tommy Gildseth",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IndyStands.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "coton-de-tulear",
+   "dexNo": "010",
+   "name": "Coton de Tulear",
+   "groupId": "toys",
+   "tier": "ankc",
+   "officialName": "Coton De Tulear",
+   "forms": [],
+   "aliases": [
+    "Coton"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Coton-De-Tulear",
+   "image": {
+    "grid": "/breeds/coton-de-tulear-cf366d09-grid.webp",
+    "detail": "/breeds/coton-de-tulear-cf366d09.webp",
+    "width": 1200,
+    "height": 803
+   },
+   "credit": {
+    "author": "CamilleVila",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coton_de_Tulear_193.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "english-toy-terrier-black-and-tan",
+   "dexNo": "011",
+   "name": "English Toy Terrier (Black & Tan)",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "English Toy Terrier",
+    "Toy Manchester Terrier"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/English-Toy-Terrier-(Black-&-Tan)",
+   "image": {
+    "grid": "/breeds/english-toy-terrier-black-and-tan-fcdb0bfb-grid.webp",
+    "detail": "/breeds/english-toy-terrier-black-and-tan-fcdb0bfb.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Svenska Mässan from Sweden",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ENGLISH_TOY_TERRIER,_NO_JV-14_NO_UCH_X-Pected_Dine_Mites_X-Factor_(23995274170).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "griffon-bruxellois",
+   "dexNo": "012",
+   "name": "Griffon Bruxellois",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Brussels Griffon",
+    "Griff"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Griffon-Bruxellois-",
+   "image": {
+    "grid": "/breeds/griffon-bruxellois-d4ee5ae6-grid.webp",
+    "detail": "/breeds/griffon-bruxellois-d4ee5ae6.webp",
+    "width": 1040,
+    "height": 800
+   },
+   "credit": {
+    "author": "The original uploader was Dan9186 at English Wikipedia .",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brussels_Griffon_Rembrant.png",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "havanese",
+   "dexNo": "013",
+   "name": "Havanese",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Havanese",
+   "image": {
+    "grid": "/breeds/havanese-c5a4a32b-grid.webp",
+    "detail": "/breeds/havanese-c5a4a32b.webp",
+    "width": 1200,
+    "height": 938
+   },
+   "credit": {
+    "author": "QHuge",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_havanese_dog.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "italian-greyhound",
+   "dexNo": "014",
+   "name": "Italian Greyhound",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Iggy",
+    "IG"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Italian-Greyhound",
+   "image": {
+    "grid": "/breeds/italian-greyhound-1b6b8ded-grid.webp",
+    "detail": "/breeds/italian-greyhound-1b6b8ded.webp",
+    "width": 1127,
+    "height": 1500
+   },
+   "credit": {
+    "author": "christina",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Italian_Greyhound_standing_gray_(cropped).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "japanese-chin",
+   "dexNo": "015",
+   "name": "Japanese Chin",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Japanese-Chin",
+   "image": {
+    "grid": "/breeds/japanese-chin-f1f8d8c5-grid.webp",
+    "detail": "/breeds/japanese-chin-f1f8d8c5.webp",
+    "width": 1200,
+    "height": 1232
+   },
+   "credit": {
+    "author": "Joliot",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chin_posing.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "king-charles-spaniel",
+   "dexNo": "016",
+   "name": "King Charles Spaniel",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "English Toy Spaniel"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/King-Charles-Spaniel",
+   "image": {
+    "grid": "/breeds/king-charles-spaniel-638315fb-grid.webp",
+    "detail": "/breeds/king-charles-spaniel-638315fb.webp",
+    "width": 1200,
+    "height": 1495
+   },
+   "credit": {
+    "author": "Pleple2000 10:18, 5 April 2006 (UTC)",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:King_Charles_Spaniel_200.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "lowchen-little-lion-dog",
+   "dexNo": "017",
+   "name": "Lowchen (Little Lion Dog)",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Löwchen",
+    "Little Lion Dog"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Lowchen-(Little-Lion-Dog)",
+   "image": {
+    "grid": "/breeds/lowchen-little-lion-dog-7b9b6136-grid.webp",
+    "detail": "/breeds/lowchen-little-lion-dog-7b9b6136.webp",
+    "width": 1200,
+    "height": 898
+   },
+   "credit": {
+    "author": "Томасина",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Little_lion_Koira_2013.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "maltese",
+   "dexNo": "018",
+   "name": "Maltese",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Maltese",
+   "image": {
+    "grid": "/breeds/maltese-1fe23a66-grid.webp",
+    "detail": "/breeds/maltese-1fe23a66.webp",
+    "width": 600,
+    "height": 600
+   },
+   "credit": {
+    "author": "Sannse",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maltese_600.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "miniature-pinscher",
+   "dexNo": "019",
+   "name": "Miniature Pinscher",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Min Pin",
+    "Mini Pinscher"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Miniature-Pinscher-",
+   "image": {
+    "grid": "/breeds/miniature-pinscher-8744c8f9-grid.webp",
+    "detail": "/breeds/miniature-pinscher-8744c8f9.webp",
+    "width": 1200,
+    "height": 1200
+   },
+   "credit": {
+    "author": "Kpt vernunft",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zwergpinscher.Denzo-vom-Reichsgraf-zu-Herrenheim_1500X1500.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "papillon",
+   "dexNo": "020",
+   "name": "Papillon",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Papillon",
+   "image": {
+    "grid": "/breeds/papillon-eddf6155-grid.webp",
+    "detail": "/breeds/papillon-eddf6155.webp",
+    "width": 1200,
+    "height": 937
+   },
+   "credit": {
+    "author": "Gvdmoort",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Outdoor_Continental_Toy_Spaniel_Papillon.jpeg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "pekingese",
+   "dexNo": "021",
+   "name": "Pekingese",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Peke"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pekingese",
+   "image": {
+    "grid": "/breeds/pekingese-156e5a8d-grid.webp",
+    "detail": "/breeds/pekingese-156e5a8d.webp",
+    "width": 1200,
+    "height": 820
+   },
+   "credit": {
+    "author": "SheltieBoy",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1AKC_Pekingese_Dog_Show_2011.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "pomeranian",
+   "dexNo": "022",
+   "name": "Pomeranian",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Pom"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pomeranian",
+   "image": {
+    "grid": "/breeds/pomeranian-7d17ed2a-grid.webp",
+    "detail": "/breeds/pomeranian-7d17ed2a.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Nikolai Bulykin",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Spirit_of_Tengri,_1_%D0%B4%D0%B5%D0%BD%D1%8C,_%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0_(1).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "prague-ratter",
+   "dexNo": "023",
+   "name": "Prague Ratter",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Prazsky Krysarik"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Prague-Ratter",
+   "image": {
+    "grid": "/breeds/prague-ratter-3f5d899b-grid.webp",
+    "detail": "/breeds/prague-ratter-3f5d899b.webp",
+    "width": 1200,
+    "height": 899
+   },
+   "credit": {
+    "author": "Tomáš Čepička",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prague_Ratter.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "pug",
+   "dexNo": "024",
+   "name": "Pug",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pug",
+   "image": {
+    "grid": "/breeds/pug-96c3d05b-grid.webp",
+    "detail": "/breeds/pug-96c3d05b.webp",
+    "width": 1200,
+    "height": 1049
+   },
+   "credit": {
+    "author": "Abuk SABUK",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2.5-year-old_fawn_male_pug.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "russian-toy-long-haired",
+   "dexNo": "025",
+   "name": "Russian Toy (Long Haired)",
+   "groupId": "toys",
+   "tier": "ankc",
+   "officialName": "Russian Toy (Russkiy Toy) (Long Haired)",
+   "forms": [],
+   "aliases": [
+    "Russkiy Toy"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Russian-Toy-(Russkiy-Toy)-(Long-Haired)",
+   "image": {
+    "grid": "/breeds/russian-toy-long-haired-c1cfb409-grid.webp",
+    "detail": "/breeds/russian-toy-long-haired-c1cfb409.webp",
+    "width": 1125,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Shannon Huthsteiner",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_long-haired_Russkiy_Toy.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "russian-toy-smooth-haired",
+   "dexNo": "026",
+   "name": "Russian Toy (Smooth Haired)",
+   "groupId": "toys",
+   "tier": "ankc",
+   "officialName": "Russian Toy (Russkiy Toy) (Smooth Haired)",
+   "forms": [],
+   "aliases": [
+    "Russkiy Toy"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Russian-Toy-(Russkiy-Toy)-(Smooth-Haired)",
+   "image": {
+    "grid": "/breeds/russian-toy-smooth-haired-98d7263e-grid.webp",
+    "detail": "/breeds/russian-toy-smooth-haired-98d7263e.webp",
+    "width": 1200,
+    "height": 1193
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Venajantoylkfawn.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "tibetan-spaniel",
+   "dexNo": "027",
+   "name": "Tibetan Spaniel",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Tibbie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tibetan-Spaniel",
+   "image": {
+    "grid": "/breeds/tibetan-spaniel-13927f59-grid.webp",
+    "detail": "/breeds/tibetan-spaniel-13927f59.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Magne Tor Ingvald Aga",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Melfjorden_20060824_DSCN1985.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "yorkshire-terrier",
+   "dexNo": "028",
+   "name": "Yorkshire Terrier",
+   "groupId": "toys",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Yorkie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Yorkshire-Terrier",
+   "image": {
+    "grid": "/breeds/yorkshire-terrier-5052feca-grid.webp",
+    "detail": "/breeds/yorkshire-terrier-5052feca.webp",
+    "width": 1125,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Frank Schulenburg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sundance_Film_Festival_2024_-_Porcelain_War_-_Frodo-104A2108.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "airedale-terrier",
+   "dexNo": "029",
+   "name": "Airedale Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Airedale-Terrier",
+   "image": {
+    "grid": "/breeds/airedale-terrier-a1a65cf0-grid.webp",
+    "detail": "/breeds/airedale-terrier-a1a65cf0.webp",
+    "width": 1200,
+    "height": 1008
+   },
+   "credit": {
+    "author": "Zuni1520",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Airedale-terrier-charles14m.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "american-hairless-terrier",
+   "dexNo": "030",
+   "name": "American Hairless Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/American-Hairless-Terrier",
+   "image": {
+    "grid": "/breeds/american-hairless-terrier-26c2c433-grid.webp",
+    "detail": "/breeds/american-hairless-terrier-26c2c433.webp",
+    "width": 1200,
+    "height": 1028
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aht-sable%26white3.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "american-staffordshire-terrier",
+   "dexNo": "031",
+   "name": "American Staffordshire Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Amstaff",
+    "Am Staff"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/American-Staffordshire-Terrier",
+   "image": {
+    "grid": "/breeds/american-staffordshire-terrier-0ea94684-grid.webp",
+    "detail": "/breeds/american-staffordshire-terrier-0ea94684.webp",
+    "width": 1200,
+    "height": 952
+   },
+   "credit": {
+    "author": "Carroy47",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:(2)American_Staffordshire_Terrier_Mumford.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "australian-terrier",
+   "dexNo": "032",
+   "name": "Australian Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Aussie Terrier"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australian-Terrier",
+   "image": {
+    "grid": "/breeds/australian-terrier-53201009-grid.webp",
+    "detail": "/breeds/australian-terrier-53201009.webp",
+    "width": 1200,
+    "height": 867
+   },
+   "credit": {
+    "author": "Lilly M",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Australian_Terrier_002_U.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bedlington-terrier",
+   "dexNo": "033",
+   "name": "Bedlington Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bedlington-Terrier",
+   "image": {
+    "grid": "/breeds/bedlington-terrier-f1d516b8-grid.webp",
+    "detail": "/breeds/bedlington-terrier-f1d516b8.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "David Owsiany",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boutchie_apres_championnat_004.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "border-terrier",
+   "dexNo": "034",
+   "name": "Border Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Border-Terrier",
+   "image": {
+    "grid": "/breeds/border-terrier-8c27e4d5-grid.webp",
+    "detail": "/breeds/border-terrier-8c27e4d5.webp",
+    "width": 1200,
+    "height": 801
+   },
+   "credit": {
+    "author": "Samuel Cockman",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1_Border_Terrier.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bull-terrier",
+   "dexNo": "035",
+   "name": "Bull Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "English Bull Terrier"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bull-Terrier",
+   "image": {
+    "grid": "/breeds/bull-terrier-f2354fa5-grid.webp",
+    "detail": "/breeds/bull-terrier-f2354fa5.webp",
+    "width": 1200,
+    "height": 1071
+   },
+   "credit": {
+    "author": "Lilly M",
+    "licence": "CC BY-SA 2.5",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bullterier_089_LM.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bull-terrier-miniature",
+   "dexNo": "036",
+   "name": "Bull Terrier (Miniature)",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Mini Bull Terrier",
+    "Miniature Bull Terrier"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bull-Terrier-(Miniature)",
+   "image": {
+    "grid": "/breeds/bull-terrier-miniature-0b63324a-grid.webp",
+    "detail": "/breeds/bull-terrier-miniature-0b63324a.webp",
+    "width": 1200,
+    "height": 1076
+   },
+   "credit": {
+    "author": "Unknown author (see source page)",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Champion_Miniature_Bull_Terrier1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "cairn-terrier",
+   "dexNo": "037",
+   "name": "Cairn Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cairn-Terrier",
+   "image": {
+    "grid": "/breeds/cairn-terrier-473ca84c-grid.webp",
+    "detail": "/breeds/cairn-terrier-473ca84c.webp",
+    "width": 1200,
+    "height": 798
+   },
+   "credit": {
+    "author": "Bitjungle",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cairn_Terrier_-_001.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "cesky-terrier",
+   "dexNo": "038",
+   "name": "Cesky Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cesky-Terrier",
+   "image": {
+    "grid": "/breeds/cesky-terrier-35cdc0dd-grid.webp",
+    "detail": "/breeds/cesky-terrier-35cdc0dd.webp",
+    "width": 1200,
+    "height": 1019
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Terier_czeski_suka_2009_pl2.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "dandie-dinmont-terrier",
+   "dexNo": "039",
+   "name": "Dandie Dinmont Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Dandie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dandie-Dinmont-Terrier",
+   "image": {
+    "grid": "/breeds/dandie-dinmont-terrier-deb1bd87-grid.webp",
+    "detail": "/breeds/dandie-dinmont-terrier-deb1bd87.webp",
+    "width": 1200,
+    "height": 798
+   },
+   "credit": {
+    "author": "Pets Adviser from Brooklyn, USA",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dandie_Dinmont_Terrier_-_GCH_King%27s_Mtn._Angelina_Ballerina_(15982121364).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "fox-terrier-smooth",
+   "dexNo": "040",
+   "name": "Fox Terrier (Smooth)",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Smooth Fox Terrier"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Fox-Terrier-(Smooth)",
+   "image": {
+    "grid": "/breeds/fox-terrier-smooth-83a29785-grid.webp",
+    "detail": "/breeds/fox-terrier-smooth-83a29785.webp",
+    "width": 1171,
+    "height": 1314
+   },
+   "credit": {
+    "author": "Piet ter Beek",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fox_terrier_smooth_in_action.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "fox-terrier-wire",
+   "dexNo": "041",
+   "name": "Fox Terrier (Wire)",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Wire Fox Terrier",
+    "Wire Fox"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Fox-Terrier-(Wire)",
+   "image": {
+    "grid": "/breeds/fox-terrier-wire-9e8d7fc9-grid.webp",
+    "detail": "/breeds/fox-terrier-wire-9e8d7fc9.webp",
+    "width": 1200,
+    "height": 862
+   },
+   "credit": {
+    "author": "State Farm",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:01_Wire_Fox_terrier.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "german-hunting-terrier",
+   "dexNo": "042",
+   "name": "German Hunting Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Jagdterrier"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Hunting-Terrier",
+   "image": {
+    "grid": "/breeds/german-hunting-terrier-0959fa19-grid.webp",
+    "detail": "/breeds/german-hunting-terrier-0959fa19.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Svenska Mässan from Sweden",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grupp_3,_TYSK_JAKTTERRIER,_Stollfors_Larionov_(23942381219).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "glen-of-imaal-terrier",
+   "dexNo": "043",
+   "name": "Glen of Imaal Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "officialName": "Glen Of Imaal Terrier",
+   "forms": [],
+   "aliases": [
+    "Glen"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Glen-Of-Imaal-Terrier",
+   "image": {
+    "grid": "/breeds/glen-of-imaal-terrier-064a1d0f-grid.webp",
+    "detail": "/breeds/glen-of-imaal-terrier-064a1d0f.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Irish-Terrier-2023",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_Brindle_Adult_Glen_of_Imaal_Terrier.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "irish-terrier",
+   "dexNo": "044",
+   "name": "Irish Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Irish-Terrier",
+   "image": {
+    "grid": "/breeds/irish-terrier-95598d3b-grid.webp",
+    "detail": "/breeds/irish-terrier-95598d3b.webp",
+    "width": 1125,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Andrew Clark",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IrishTerrierSydenhamHillWoods.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "jack-russell-terrier",
+   "dexNo": "045",
+   "name": "Jack Russell Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Jack Russell",
+    "JRT",
+    "Jack"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Jack-Russell-Terrier",
+   "image": {
+    "grid": "/breeds/jack-russell-terrier-ce17a5f8-grid.webp",
+    "detail": "/breeds/jack-russell-terrier-ce17a5f8.webp",
+    "width": 1000,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Plank",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jack_Russell_Terrier_1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "kerry-blue-terrier",
+   "dexNo": "046",
+   "name": "Kerry Blue Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Kerry Blue"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Kerry-Blue-Terrier",
+   "image": {
+    "grid": "/breeds/kerry-blue-terrier-87d69a61-grid.webp",
+    "detail": "/breeds/kerry-blue-terrier-87d69a61.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Eponimm",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kerry_blue_terrier_062009.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "lakeland-terrier",
+   "dexNo": "047",
+   "name": "Lakeland Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Lakeland-Terrier",
+   "image": {
+    "grid": "/breeds/lakeland-terrier-79dab302-grid.webp",
+    "detail": "/breeds/lakeland-terrier-79dab302.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Svenska Mässan from Sweden",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grupp_3,_LAKELANDTERRIER,_JEUW-15_Big_Lady%E2%80%99s_Micro-Nikita_(23681983414).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "manchester-terrier",
+   "dexNo": "048",
+   "name": "Manchester Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Manchester-Terrier",
+   "image": {
+    "grid": "/breeds/manchester-terrier-872b7fbe-grid.webp",
+    "detail": "/breeds/manchester-terrier-872b7fbe.webp",
+    "width": 1200,
+    "height": 1088
+   },
+   "credit": {
+    "author": "Томасина",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manchester_terrier_Koira_2013.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "norfolk-terrier",
+   "dexNo": "049",
+   "name": "Norfolk Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Norfolk-Terrier",
+   "image": {
+    "grid": "/breeds/norfolk-terrier-3b4b91b6-grid.webp",
+    "detail": "/breeds/norfolk-terrier-3b4b91b6.webp",
+    "width": 1125,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Pingugu",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Picture_of_Norfolk_Terrier.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "norwich-terrier",
+   "dexNo": "050",
+   "name": "Norwich Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Norwich-Terrier",
+   "image": {
+    "grid": "/breeds/norwich-terrier-77f79ff9-grid.webp",
+    "detail": "/breeds/norwich-terrier-77f79ff9.webp",
+    "width": 1200,
+    "height": 846
+   },
+   "credit": {
+    "author": "Helene Gisin Hgisin",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norwich_Terrier_2.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "parson-russell-terrier",
+   "dexNo": "051",
+   "name": "Parson Russell Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Parson Jack Russell"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Parson-Russell-Terrier",
+   "image": {
+    "grid": "/breeds/parson-russell-terrier-65ad43a4-grid.webp",
+    "detail": "/breeds/parson-russell-terrier-65ad43a4.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Alephalpha",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:05052842_PRT_braun_glatt.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "scottish-terrier",
+   "dexNo": "052",
+   "name": "Scottish Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Scottie",
+    "Scotty"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Scottish-Terrier",
+   "image": {
+    "grid": "/breeds/scottish-terrier-f1b69f52-grid.webp",
+    "detail": "/breeds/scottish-terrier-f1b69f52.webp",
+    "width": 700,
+    "height": 700
+   },
+   "credit": {
+    "author": "Mider",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scotish_terrier_burleska_2005.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "sealyham-terrier",
+   "dexNo": "053",
+   "name": "Sealyham Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Sealyham-Terrier",
+   "image": {
+    "grid": "/breeds/sealyham-terrier-b343a21e-grid.webp",
+    "detail": "/breeds/sealyham-terrier-b343a21e.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Dr. Sabine Schumann",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SealyhamTerrier01.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "skye-terrier",
+   "dexNo": "054",
+   "name": "Skye Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Skye-Terrier",
+   "image": {
+    "grid": "/breeds/skye-terrier-0213a1e9-grid.webp",
+    "detail": "/breeds/skye-terrier-0213a1e9.webp",
+    "width": 1200,
+    "height": 888
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skye_terrier_800.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "soft-coated-wheaten-terrier",
+   "dexNo": "055",
+   "name": "Soft Coated Wheaten Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Wheaten",
+    "Wheatie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Soft-Coated-Wheaten-Terrier",
+   "image": {
+    "grid": "/breeds/soft-coated-wheaten-terrier-c694b01a-grid.webp",
+    "detail": "/breeds/soft-coated-wheaten-terrier-c694b01a.webp",
+    "width": 600,
+    "height": 671
+   },
+   "credit": {
+    "author": "sannse",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soft_Coated_Wheaten_Terrier_600.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "staffordshire-bull-terrier",
+   "dexNo": "056",
+   "name": "Staffordshire Bull Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Staffy",
+    "Staffie",
+    "Stafford"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Staffordshire-Bull-Terrier",
+   "image": {
+    "grid": "/breeds/staffordshire-bull-terrier-1f47fed8-grid.webp",
+    "detail": "/breeds/staffordshire-bull-terrier-1f47fed8.webp",
+    "width": 1039,
+    "height": 1500
+   },
+   "credit": {
+    "author": "No machine-readable author provided. Aixeneta assumed (based on copyright claims).",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Staffie.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "tenterfield-terrier",
+   "dexNo": "057",
+   "name": "Tenterfield Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Tenterfield"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tenterfield-Terrier",
+   "image": {
+    "grid": "/breeds/tenterfield-terrier-1778bf9a-grid.webp",
+    "detail": "/breeds/tenterfield-terrier-1778bf9a.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "David Nemirovsky",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosie_the_Champion_Tenterfield_Terrier.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "welsh-terrier",
+   "dexNo": "058",
+   "name": "Welsh Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Welsh-Terrier",
+   "image": {
+    "grid": "/breeds/welsh-terrier-687b2607-grid.webp",
+    "detail": "/breeds/welsh-terrier-687b2607.webp",
+    "width": 1200,
+    "height": 1139
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wystawa_ps%C3%B3w_Rybnik_terier_walijski_04.10.2009_pl.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "west-highland-white-terrier",
+   "dexNo": "059",
+   "name": "West Highland White Terrier",
+   "groupId": "terriers",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Westie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/West-Highland-White-Terrier",
+   "image": {
+    "grid": "/breeds/west-highland-white-terrier-98f9983f-grid.webp",
+    "detail": "/breeds/west-highland-white-terrier-98f9983f.webp",
+    "width": 908,
+    "height": 761
+   },
+   "credit": {
+    "author": "Christopher Walker from Krakow, Poland",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:West_Highland_White_Terrier_Krakow.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bracco-italiano",
+   "dexNo": "060",
+   "name": "Bracco Italiano",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bracco-Italiano",
+   "image": {
+    "grid": "/breeds/bracco-italiano-b1c7d659-grid.webp",
+    "detail": "/breeds/bracco-italiano-b1c7d659.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Svenska Mässan from Sweden",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BIR_Grupp_7-_BRACCO_ITALIANO,_Nuits_Di_Montemassi_(23866391829).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "brittany",
+   "dexNo": "061",
+   "name": "Brittany",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Brittany Spaniel"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Brittany",
+   "image": {
+    "grid": "/breeds/brittany-1f75557a-grid.webp",
+    "detail": "/breeds/brittany-1f75557a.webp",
+    "width": 1200,
+    "height": 883
+   },
+   "credit": {
+    "author": "Pharaoh Hound",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_Brittany_standing.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "chesapeake-bay-retriever",
+   "dexNo": "062",
+   "name": "Chesapeake Bay Retriever",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Chessie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chesapeake-Bay-Retriever",
+   "image": {
+    "grid": "/breeds/chesapeake-bay-retriever-f95c8558-grid.webp",
+    "detail": "/breeds/chesapeake-bay-retriever-f95c8558.webp",
+    "width": 1200,
+    "height": 919
+   },
+   "credit": {
+    "author": "Original uploader was Keith Rousseau at en.wikipedia",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chesapeake_Bay_Retriever1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "clumber-spaniel",
+   "dexNo": "063",
+   "name": "Clumber Spaniel",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Clumber-Spaniel",
+   "image": {
+    "grid": "/breeds/clumber-spaniel-9ac2e4ff-grid.webp",
+    "detail": "/breeds/clumber-spaniel-9ac2e4ff.webp",
+    "width": 1200,
+    "height": 1090
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clumber_spaniel_rybnik_kamien_pppl.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "cocker-spaniel",
+   "dexNo": "064",
+   "name": "Cocker Spaniel",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "English Cocker Spaniel",
+    "English Cocker"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cocker-Spaniel",
+   "image": {
+    "grid": "/breeds/cocker-spaniel-c3ad8b35-grid.webp",
+    "detail": "/breeds/cocker-spaniel-c3ad8b35.webp",
+    "width": 1000,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Fantanaranja",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cocker_spaniel_called_Tony.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "cocker-spaniel-american",
+   "dexNo": "065",
+   "name": "Cocker Spaniel (American)",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "American Cocker Spaniel",
+    "American Cocker"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cocker-Spaniel-(American)",
+   "image": {
+    "grid": "/breeds/cocker-spaniel-american-e0c0ae98-grid.webp",
+    "detail": "/breeds/cocker-spaniel-american-e0c0ae98.webp",
+    "width": 1200,
+    "height": 798
+   },
+   "credit": {
+    "author": "Pets Adviser from Brooklyn, USA",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parti-Color_Cocker_Spaniel-16-GCH-Gems_Hot_Little_Liar_CGC_02_(16583592611).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "curly-coated-retriever",
+   "dexNo": "066",
+   "name": "Curly Coated Retriever",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Curly"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Curly-Coated-Retriever",
+   "image": {
+    "grid": "/breeds/curly-coated-retriever-880c98a8-grid.webp",
+    "detail": "/breeds/curly-coated-retriever-880c98a8.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Mattias Agar",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Curly_coated_retriever6.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "english-setter",
+   "dexNo": "067",
+   "name": "English Setter",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/English-Setter",
+   "image": {
+    "grid": "/breeds/english-setter-9a9ab99f-grid.webp",
+    "detail": "/breeds/english-setter-9a9ab99f.webp",
+    "width": 1200,
+    "height": 867
+   },
+   "credit": {
+    "author": "Томасина",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:English_Setter_in_Tallinn_2.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "english-springer-spaniel",
+   "dexNo": "068",
+   "name": "English Springer Spaniel",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Springer",
+    "Springer Spaniel"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/English-Springer-Spaniel",
+   "image": {
+    "grid": "/breeds/english-springer-spaniel-3b80e0ee-grid.webp",
+    "detail": "/breeds/english-springer-spaniel-3b80e0ee.webp",
+    "width": 1200,
+    "height": 867
+   },
+   "credit": {
+    "author": "Томасина",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:English_Springer_Spaniel_in_Tallinn.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "field-spaniel",
+   "dexNo": "069",
+   "name": "Field Spaniel",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Field-Spaniel",
+   "image": {
+    "grid": "/breeds/field-spaniel-11ba27b5-grid.webp",
+    "detail": "/breeds/field-spaniel-11ba27b5.webp",
+    "width": 1200,
+    "height": 1244
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Field_spaniel_581.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "flat-coated-retriever",
+   "dexNo": "070",
+   "name": "Flat Coated Retriever",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Flatcoat",
+    "Flattie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Flat-Coated-Retriever",
+   "image": {
+    "grid": "/breeds/flat-coated-retriever-c92d1ece-grid.webp",
+    "detail": "/breeds/flat-coated-retriever-c92d1ece.webp",
+    "width": 1200,
+    "height": 771
+   },
+   "credit": {
+    "author": "Fesoj-wr",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flat_Coated_Retriever.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "german-shorthaired-pointer",
+   "dexNo": "071",
+   "name": "German Shorthaired Pointer",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "GSP"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Shorthaired-Pointer",
+   "image": {
+    "grid": "/breeds/german-shorthaired-pointer-65237d04-grid.webp",
+    "detail": "/breeds/german-shorthaired-pointer-65237d04.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Горбунова М.С.",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9A%D1%83%D1%80%D1%86%D1%85%D0%B0%D0%B0%D1%80.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "german-wirehaired-pointer",
+   "dexNo": "072",
+   "name": "German Wirehaired Pointer",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "GWP"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Wirehaired-Pointer",
+   "image": {
+    "grid": "/breeds/german-wirehaired-pointer-99495284-grid.webp",
+    "detail": "/breeds/german-wirehaired-pointer-99495284.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Nero2006",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:German_Wirehaired_Pointer.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "golden-retriever",
+   "dexNo": "073",
+   "name": "Golden Retriever",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Golden-Retriever",
+   "image": {
+    "grid": "/breeds/golden-retriever-c2518875-grid.webp",
+    "detail": "/breeds/golden-retriever-c2518875.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Barras",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Golden_Retriever-9_(Barras).JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "gordon-setter",
+   "dexNo": "074",
+   "name": "Gordon Setter",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Gordon-Setter",
+   "image": {
+    "grid": "/breeds/gordon-setter-ec2a2782-grid.webp",
+    "detail": "/breeds/gordon-setter-ec2a2782.webp",
+    "width": 800,
+    "height": 642
+   },
+   "credit": {
+    "author": "Unknown author (see source page)",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orrvilas_enska_w800px.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "hungarian-vizsla",
+   "dexNo": "075",
+   "name": "Hungarian Vizsla",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Vizsla"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Hungarian-Vizsla",
+   "image": {
+    "grid": "/breeds/hungarian-vizsla-9ac6c570-grid.webp",
+    "detail": "/breeds/hungarian-vizsla-9ac6c570.webp",
+    "width": 1200,
+    "height": 1261
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wy%C5%BCe%C5%82_w%C4%99gierski_g%C5%82adkow%C5%82osy_500.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "hungarian-wirehaired-vizsla",
+   "dexNo": "076",
+   "name": "Hungarian Wirehaired Vizsla",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Wirehaired Vizsla"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Hungarian-Wirehaired-Vizsla",
+   "image": {
+    "grid": "/breeds/hungarian-wirehaired-vizsla-9c143b46-grid.webp",
+    "detail": "/breeds/hungarian-wirehaired-vizsla-9c143b46.webp",
+    "width": 800,
+    "height": 600
+   },
+   "credit": {
+    "author": "Noveczki Katalin",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dr%C3%B3tosvizsla_vadat_%C3%A1ll.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "irish-red-and-white-setter",
+   "dexNo": "077",
+   "name": "Irish Red and White Setter",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Irish-Red-and-White-Setter",
+   "image": {
+    "grid": "/breeds/irish-red-and-white-setter-ad6457bc-grid.webp",
+    "detail": "/breeds/irish-red-and-white-setter-ad6457bc.webp",
+    "width": 1200,
+    "height": 893
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rzesz%C3%B3w_Irish_Red_and_White_Setter_3pl.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "irish-setter",
+   "dexNo": "078",
+   "name": "Irish Setter",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Red Setter"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Irish-Setter",
+   "image": {
+    "grid": "/breeds/irish-setter-3c596667-grid.webp",
+    "detail": "/breeds/irish-setter-3c596667.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Luis Miguel Bugallo Sánchez ( Lmbuga Commons )( Lmbuga Galipedia ) Publicada por/ Publish by : Luis Miguel Bugallo Sá...",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Can_Setter_dog_GFDL.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "irish-water-spaniel",
+   "dexNo": "079",
+   "name": "Irish Water Spaniel",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "IWS"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Irish-Water-Spaniel",
+   "image": {
+    "grid": "/breeds/irish-water-spaniel-335572a7-grid.webp",
+    "detail": "/breeds/irish-water-spaniel-335572a7.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Roete002",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ierse_Water_Spaniel.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "italian-spinone",
+   "dexNo": "080",
+   "name": "Italian Spinone",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Spinone"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Italian-Spinone",
+   "image": {
+    "grid": "/breeds/italian-spinone-0366ace0-grid.webp",
+    "detail": "/breeds/italian-spinone-0366ace0.webp",
+    "width": 1200,
+    "height": 1028
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Italianspino2.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "labrador-retriever",
+   "dexNo": "081",
+   "name": "Labrador Retriever",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Lab"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Labrador-Retriever",
+   "image": {
+    "grid": "/breeds/labrador-retriever-ee31ea34-grid.webp",
+    "detail": "/breeds/labrador-retriever-ee31ea34.webp",
+    "width": 1200,
+    "height": 1459
+   },
+   "credit": {
+    "author": "Skansken",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Labrador_Retriever_-_Yellow.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "lagotto-romagnolo",
+   "dexNo": "082",
+   "name": "Lagotto Romagnolo",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Lagotto"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Lagotto-Romagnolo",
+   "image": {
+    "grid": "/breeds/lagotto-romagnolo-19a6282a-grid.webp",
+    "detail": "/breeds/lagotto-romagnolo-19a6282a.webp",
+    "width": 1200,
+    "height": 923
+   },
+   "credit": {
+    "author": "Entheta",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bellalagotto4.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "large-munsterlander",
+   "dexNo": "083",
+   "name": "Large Munsterlander",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Large-Munsterlander",
+   "image": {
+    "grid": "/breeds/large-munsterlander-c1391a17-grid.webp",
+    "detail": "/breeds/large-munsterlander-c1391a17.webp",
+    "width": 1200,
+    "height": 1064
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Largemunsterlandervorsteh1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "murray-river-retriever",
+   "dexNo": "084",
+   "name": "Murray River Retriever",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Murray River Curly Coated Retriever",
+    "MRR"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Murray-River-Retriever",
+   "image": {
+    "grid": "/breeds/murray-river-retriever-9caf4c18-grid.webp",
+    "detail": "/breeds/murray-river-retriever-9caf4c18.webp",
+    "width": 960,
+    "height": 720
+   },
+   "credit": {
+    "author": "D mentias",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Murray_River_Curly_Coated_Retriever,_Stella.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "nova-scotia-duck-tolling-retriever",
+   "dexNo": "085",
+   "name": "Nova Scotia Duck Tolling Retriever",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Toller"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Nova-Scotia-Duck-Tolling-Retriever",
+   "image": {
+    "grid": "/breeds/nova-scotia-duck-tolling-retriever-54fd7260-grid.webp",
+    "detail": "/breeds/nova-scotia-duck-tolling-retriever-54fd7260.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "kallerna",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Viljo_koirarannalla_16.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "pointer",
+   "dexNo": "086",
+   "name": "Pointer",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "English Pointer"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pointer",
+   "image": {
+    "grid": "/breeds/pointer-95401770-grid.webp",
+    "detail": "/breeds/pointer-95401770.webp",
+    "width": 1200,
+    "height": 812
+   },
+   "credit": {
+    "author": "Томасина",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:English_Pointer_in_Riga_2.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "spanish-water-dog",
+   "dexNo": "087",
+   "name": "Spanish Water Dog",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "SWD"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Spanish-Water-Dog",
+   "image": {
+    "grid": "/breeds/spanish-water-dog-9096193f-grid.webp",
+    "detail": "/breeds/spanish-water-dog-9096193f.webp",
+    "width": 1200,
+    "height": 867
+   },
+   "credit": {
+    "author": "Томасина",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Perro_de_Agua_Espa%C3%B1ol_in_Tallinn.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "sussex-spaniel",
+   "dexNo": "088",
+   "name": "Sussex Spaniel",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Sussex-Spaniel",
+   "image": {
+    "grid": "/breeds/sussex-spaniel-58ca7894-grid.webp",
+    "detail": "/breeds/sussex-spaniel-58ca7894.webp",
+    "width": 1200,
+    "height": 843
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sussexinspa2.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "weimaraner",
+   "dexNo": "089",
+   "name": "Weimaraner",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Weim",
+    "Weimy"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Weimaraner",
+   "image": {
+    "grid": "/breeds/weimaraner-cd6a08d8-grid.webp",
+    "detail": "/breeds/weimaraner-cd6a08d8.webp",
+    "width": 1200,
+    "height": 1452
+   },
+   "credit": {
+    "author": "Rufus46",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Weimaraner_Freika-2.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "weimaraner-longhair",
+   "dexNo": "090",
+   "name": "Weimaraner (Longhair)",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Longhaired Weimaraner",
+    "Long-haired Weimaraner"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Weimaraner-(Longhair)",
+   "image": {
+    "grid": "/breeds/weimaraner-longhair-e0ed5669-grid.webp",
+    "detail": "/breeds/weimaraner-longhair-e0ed5669.webp",
+    "width": 1200,
+    "height": 988
+   },
+   "credit": {
+    "author": "Dr. Peter Klamser, Klostersiedlung 49, 39435 Egeln, klamser@gmail.com",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Langhaarweimaraner_Borne.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "welsh-springer-spaniel",
+   "dexNo": "091",
+   "name": "Welsh Springer Spaniel",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Welshie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Welsh-Springer-Spaniel",
+   "image": {
+    "grid": "/breeds/welsh-springer-spaniel-be03b8d4-grid.webp",
+    "detail": "/breeds/welsh-springer-spaniel-be03b8d4.webp",
+    "width": 1200,
+    "height": 890
+   },
+   "credit": {
+    "author": "Udo Tjalsma",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Welsh_Springer_Spaniel_1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "wirehaired-slovakian-pointer",
+   "dexNo": "092",
+   "name": "Wirehaired Slovakian Pointer",
+   "groupId": "gundogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Slovakian Rough-haired Pointer"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Wirehaired-Slovakian-Pointer",
+   "image": {
+    "grid": "/breeds/wirehaired-slovakian-pointer-ca304fe4-grid.webp",
+    "detail": "/breeds/wirehaired-slovakian-pointer-ca304fe4.webp",
+    "width": 1200,
+    "height": 1024
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wyzel_slowacki_szorstkowlosy_rybnik-kamien_pl.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "afghan-hound",
+   "dexNo": "093",
+   "name": "Afghan Hound",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Afghan-Hound",
+   "image": {
+    "grid": "/breeds/afghan-hound-20da9978-grid.webp",
+    "detail": "/breeds/afghan-hound-20da9978.webp",
+    "width": 1200,
+    "height": 1034
+   },
+   "credit": {
+    "author": "SheltieBoy",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:AKC_Helena_Fall_Dog_Show_2011.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "azawakh",
+   "dexNo": "094",
+   "name": "Azawakh",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Azawakh",
+   "image": {
+    "grid": "/breeds/azawakh-7f0966c7-grid.webp",
+    "detail": "/breeds/azawakh-7f0966c7.webp",
+    "width": 1200,
+    "height": 1200
+   },
+   "credit": {
+    "author": "Cristian.vantu",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bistrita_2015_(22).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "basenji",
+   "dexNo": "095",
+   "name": "Basenji",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Basenji",
+   "image": {
+    "grid": "/breeds/basenji-05fe5fde-grid.webp",
+    "detail": "/breeds/basenji-05fe5fde.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Niko Herlin",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008-05-01_a_Basenji_03.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "basset-fauve-de-bretagne",
+   "dexNo": "096",
+   "name": "Basset Fauve de Bretagne",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "officialName": "Basset Fauve De Bretagne",
+   "forms": [],
+   "aliases": [
+    "Fauve"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Basset-Fauve-De-Bretagne",
+   "image": {
+    "grid": "/breeds/basset-fauve-de-bretagne-e661f4d4-grid.webp",
+    "detail": "/breeds/basset-fauve-de-bretagne-e661f4d4.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Baslerfauves",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Basset_Fauve_de_Bretagne_(male).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "basset-hound",
+   "dexNo": "097",
+   "name": "Basset Hound",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Basset-Hound",
+   "image": {
+    "grid": "/breeds/basset-hound-f9fcd4ed-grid.webp",
+    "detail": "/breeds/basset-hound-f9fcd4ed.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Eda",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Basset_hound_splendide.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bavarian-mountain-scent-hound",
+   "dexNo": "098",
+   "name": "Bavarian Mountain Scent Hound",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Bavarian Mountain Hound"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bavarian-Mountain-Scent-Hound",
+   "image": {
+    "grid": "/breeds/bavarian-mountain-scent-hound-7c3ef83b-grid.webp",
+    "detail": "/breeds/bavarian-mountain-scent-hound-7c3ef83b.webp",
+    "width": 1200,
+    "height": 982
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baijerinvvk4.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "beagle",
+   "dexNo": "099",
+   "name": "Beagle",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Beagle",
+   "image": {
+    "grid": "/breeds/beagle-85ab6e73-grid.webp",
+    "detail": "/breeds/beagle-85ab6e73.webp",
+    "width": 1200,
+    "height": 798
+   },
+   "credit": {
+    "author": "Jonatan De Geest",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:MiloSmet.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "black-and-tan-coonhound",
+   "dexNo": "100",
+   "name": "Black and Tan Coonhound",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Coonhound"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Black-and-Tan-Coonhound",
+   "image": {
+    "grid": "/breeds/black-and-tan-coonhound-066e8b09-grid.webp",
+    "detail": "/breeds/black-and-tan-coonhound-066e8b09.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Krysta",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_And_Tan_Coonhound.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bloodhound",
+   "dexNo": "101",
+   "name": "Bloodhound",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bloodhound",
+   "image": {
+    "grid": "/breeds/bloodhound-3a36885c-grid.webp",
+    "detail": "/breeds/bloodhound-3a36885c.webp",
+    "width": 1200,
+    "height": 849
+   },
+   "credit": {
+    "author": "User:Erland22",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bloodhound_Erland22.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bluetick-coonhound",
+   "dexNo": "102",
+   "name": "Bluetick Coonhound",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Bluetick"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bluetick-Coonhound",
+   "image": {
+    "grid": "/breeds/bluetick-coonhound-82bb95c1-grid.webp",
+    "detail": "/breeds/bluetick-coonhound-82bb95c1.webp",
+    "width": 1079,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Jan",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BluetickCoonhoundDog.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "borzoi",
+   "dexNo": "103",
+   "name": "Borzoi",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Russian Wolfhound"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Borzoi",
+   "image": {
+    "grid": "/breeds/borzoi-0b801c1e-grid.webp",
+    "detail": "/breeds/borzoi-0b801c1e.webp",
+    "width": 1200,
+    "height": 1043
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chart_rosyjski_borzoj_rybnik-kamien_pl.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "cirneco-dell-etna",
+   "dexNo": "104",
+   "name": "Cirneco dell'Etna",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "officialName": "Cirneco Dell'Etna",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cirneco-Dell'Etna",
+   "image": {
+    "grid": "/breeds/cirneco-dell-etna-c49c3c03-grid.webp",
+    "detail": "/breeds/cirneco-dell-etna-c49c3c03.webp",
+    "width": 850,
+    "height": 808
+   },
+   "credit": {
+    "author": "de:Benutzer:Jan Eduard , contrast Pleple2000",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cirneco_dell_Etna_611.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "dachshund",
+   "dexNo": "105",
+   "name": "Dachshund",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "officialName": "Dachshund - Standard Long, Standard Smooth, Standard Wire, Miniature Long, Miniature Smooth, Miniature Wire",
+   "forms": [
+    "Standard Long",
+    "Standard Smooth",
+    "Standard Wire",
+    "Miniature Long",
+    "Miniature Smooth",
+    "Miniature Wire"
+   ],
+   "aliases": [
+    "Sausage Dog",
+    "Doxie",
+    "Wiener Dog",
+    "Mini Dachshund",
+    "Miniature Dachshund",
+    "Dachsie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dachshund---Standard-Long,-Standard-Smooth,-Standard-Wire,-Miniature-Long,-Miniature-Smooth,-Miniature-Wire",
+   "image": {
+    "grid": "/breeds/dachshund-5d397c3a-grid.webp",
+    "detail": "/breeds/dachshund-5d397c3a.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "DALIBRI",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:G%C3%B6gglbach_SAD_-004.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "deerhound",
+   "dexNo": "106",
+   "name": "Deerhound",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Scottish Deerhound"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Deerhound",
+   "image": {
+    "grid": "/breeds/deerhound-1780a7c5-grid.webp",
+    "detail": "/breeds/deerhound-1780a7c5.webp",
+    "width": 1200,
+    "height": 798
+   },
+   "credit": {
+    "author": "Sisteskrik",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karrie.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "finnish-spitz",
+   "dexNo": "107",
+   "name": "Finnish Spitz",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Finnish-Spitz",
+   "image": {
+    "grid": "/breeds/finnish-spitz-fed43558-grid.webp",
+    "detail": "/breeds/finnish-spitz-fed43558.webp",
+    "width": 600,
+    "height": 600
+   },
+   "credit": {
+    "author": "Unknown author (see source page)",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Finnish_Spitz_600.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "foxhound",
+   "dexNo": "108",
+   "name": "Foxhound",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Foxhound",
+   "image": {
+    "grid": "/breeds/foxhound-ab06bdd8-grid.webp",
+    "detail": "/breeds/foxhound-ab06bdd8.webp",
+    "width": 1200,
+    "height": 1082
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Englanninkettu1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "grand-basset-griffon-vendeen",
+   "dexNo": "109",
+   "name": "Grand Basset Griffon Vendeen",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "GBGV"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Grand-Basset-Griffon-Vendeen",
+   "image": {
+    "grid": "/breeds/grand-basset-griffon-vendeen-ea3bc1bb-grid.webp",
+    "detail": "/breeds/grand-basset-griffon-vendeen-ea3bc1bb.webp",
+    "width": 1200,
+    "height": 867
+   },
+   "credit": {
+    "author": "Томасина",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grand_Basset_Griffon_Vend%C3%A9en_in_Tallinn_6.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "greyhound",
+   "dexNo": "110",
+   "name": "Greyhound",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Greyhound",
+   "image": {
+    "grid": "/breeds/greyhound-a152f2a5-grid.webp",
+    "detail": "/breeds/greyhound-a152f2a5.webp",
+    "width": 1024,
+    "height": 768
+   },
+   "credit": {
+    "author": "Neurodoc",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:GraceTheGreyhound.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "hamiltonstovare",
+   "dexNo": "111",
+   "name": "Hamiltonstovare",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Hamilton Hound"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Hamiltonstovare",
+   "image": {
+    "grid": "/breeds/hamiltonstovare-dd83025e-grid.webp",
+    "detail": "/breeds/hamiltonstovare-dd83025e.webp",
+    "width": 931,
+    "height": 877
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hamiltoninajokoira3.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "harrier",
+   "dexNo": "112",
+   "name": "Harrier",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Harrier",
+   "image": {
+    "grid": "/breeds/harrier-1a2e596f-grid.webp",
+    "detail": "/breeds/harrier-1a2e596f.webp",
+    "width": 540,
+    "height": 500
+   },
+   "credit": {
+    "author": "Smcmilla (edited by Pharaoh Hound )",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harrier_tricolour.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "ibizan-hound",
+   "dexNo": "113",
+   "name": "Ibizan Hound",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Ibizan-Hound",
+   "image": {
+    "grid": "/breeds/ibizan-hound-a24e6fe1-grid.webp",
+    "detail": "/breeds/ibizan-hound-a24e6fe1.webp",
+    "width": 800,
+    "height": 712
+   },
+   "credit": {
+    "author": "Jan Eduard , corrected by Pleple2000",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Podenco_z_ibizy_645.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "irish-wolfhound",
+   "dexNo": "114",
+   "name": "Irish Wolfhound",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Wolfhound"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Irish-Wolfhound",
+   "image": {
+    "grid": "/breeds/irish-wolfhound-d7843c15-grid.webp",
+    "detail": "/breeds/irish-wolfhound-d7843c15.webp",
+    "width": 1200,
+    "height": 984
+   },
+   "credit": {
+    "author": "Camillo 60",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irish_wolfhound_giaccomo.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "norwegian-elkhound",
+   "dexNo": "115",
+   "name": "Norwegian Elkhound",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Elkhound"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Norwegian-Elkhound",
+   "image": {
+    "grid": "/breeds/norwegian-elkhound-aa51c254-grid.webp",
+    "detail": "/breeds/norwegian-elkhound-aa51c254.webp",
+    "width": 1200,
+    "height": 798
+   },
+   "credit": {
+    "author": "Dmitry Guskov",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norwegian_Elkhound_1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "otterhound",
+   "dexNo": "116",
+   "name": "Otterhound",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Otterhound",
+   "image": {
+    "grid": "/breeds/otterhound-b5d17c30-grid.webp",
+    "detail": "/breeds/otterhound-b5d17c30.webp",
+    "width": 1200,
+    "height": 1107
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Otter-liver%26tan4.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "petit-basset-griffon-vendeen",
+   "dexNo": "117",
+   "name": "Petit Basset Griffon Vendeen",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "PBGV"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Petit-Basset-Griffon-Vendeen",
+   "image": {
+    "grid": "/breeds/petit-basset-griffon-vendeen-2a2c03fd-grid.webp",
+    "detail": "/breeds/petit-basset-griffon-vendeen-2a2c03fd.webp",
+    "width": 1200,
+    "height": 803
+   },
+   "credit": {
+    "author": "Nathan150",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petit_Basset_Griffon_Vend%C3%A9en.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "pharaoh-hound",
+   "dexNo": "118",
+   "name": "Pharaoh Hound",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pharaoh-Hound",
+   "image": {
+    "grid": "/breeds/pharaoh-hound-74a7c309-grid.webp",
+    "detail": "/breeds/pharaoh-hound-74a7c309.webp",
+    "width": 1200,
+    "height": 1200
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pies_faraona_e34.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "porcelaine",
+   "dexNo": "119",
+   "name": "Porcelaine",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Porcelaine",
+   "image": {
+    "grid": "/breeds/porcelaine-c33d2379-grid.webp",
+    "detail": "/breeds/porcelaine-c33d2379.webp",
+    "width": 1200,
+    "height": 1157
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porcelaine_Hound.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "portuguese-podengo",
+   "dexNo": "120",
+   "name": "Portuguese Podengo",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "officialName": "Portuguese Podengo - Small Medium Large Smooth Haired - Small Medium Large Wire Haired",
+   "forms": [
+    "Small Smooth Haired",
+    "Medium Smooth Haired",
+    "Large Smooth Haired",
+    "Small Wire Haired",
+    "Medium Wire Haired",
+    "Large Wire Haired"
+   ],
+   "aliases": [
+    "Podengo"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Portuguese-Podengo---Small-Medium-Large-Smooth-Haired---Small-Medium-Large-Wire-Haired",
+   "image": {
+    "grid": "/breeds/portuguese-podengo-e6c14fb6-grid.webp",
+    "detail": "/breeds/portuguese-podengo-e6c14fb6.webp",
+    "width": 1200,
+    "height": 1048
+   },
+   "credit": {
+    "author": "UsernameDrama0909",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portuguese_Podengo_Pequeno_Smooth_Coat_.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "rabbit-dachshund",
+   "dexNo": "121",
+   "name": "Rabbit Dachshund",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "officialName": "Dachshund Rabbit Long, Dachshund Rabbit Smooth, Dachshund Rabbit Wire",
+   "forms": [
+    "Long",
+    "Smooth",
+    "Wire"
+   ],
+   "aliases": [
+    "Kaninchen Dachshund",
+    "Kaninchen",
+    "Sausage Dog"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dachshund-Rabbit-Long,-Dachshund-Rabbit-Smooth,-Dachshund-Rabbit-Wire",
+   "image": {
+    "grid": "/breeds/rabbit-dachshund-9910ab6c-grid.webp",
+    "detail": "/breeds/rabbit-dachshund-9910ab6c.webp",
+    "width": 1200,
+    "height": 710
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jamnik_kr%C3%B3liczy_b777.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "rhodesian-ridgeback",
+   "dexNo": "122",
+   "name": "Rhodesian Ridgeback",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Ridgeback"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Rhodesian-Ridgeback",
+   "image": {
+    "grid": "/breeds/rhodesian-ridgeback-c3089435-grid.webp",
+    "detail": "/breeds/rhodesian-ridgeback-c3089435.webp",
+    "width": 1200,
+    "height": 888
+   },
+   "credit": {
+    "author": "Jérémy Toma",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rhodesian_Ridgeback_(6_years).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "saluki",
+   "dexNo": "123",
+   "name": "Saluki",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Saluki",
+   "image": {
+    "grid": "/breeds/saluki-738b479c-grid.webp",
+    "detail": "/breeds/saluki-738b479c.webp",
+    "width": 1200,
+    "height": 976
+   },
+   "credit": {
+    "author": "r.",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Smooth_Saluki.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "sloughi",
+   "dexNo": "124",
+   "name": "Sloughi",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Sloughi",
+   "image": {
+    "grid": "/breeds/sloughi-99943a7b-grid.webp",
+    "detail": "/breeds/sloughi-99943a7b.webp",
+    "width": 1200,
+    "height": 912
+   },
+   "credit": {
+    "author": "Sabine.schlenkrich",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Djebel_Mahanajim_rotsandfarbener_Sloughi_R%C3%BCde.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "whippet",
+   "dexNo": "125",
+   "name": "Whippet",
+   "groupId": "hounds",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Whippet",
+   "image": {
+    "grid": "/breeds/whippet-ddb30010-grid.webp",
+    "detail": "/breeds/whippet-ddb30010.webp",
+    "width": 1200,
+    "height": 962
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whippet_2018_6.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "australian-cattle-dog",
+   "dexNo": "126",
+   "name": "Australian Cattle Dog",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Blue Heeler",
+    "Red Heeler",
+    "Heeler",
+    "Queensland Heeler",
+    "ACD"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australian-Cattle-Dog",
+   "image": {
+    "grid": "/breeds/australian-cattle-dog-7115258b-grid.webp",
+    "detail": "/breeds/australian-cattle-dog-7115258b.webp",
+    "width": 800,
+    "height": 640
+   },
+   "credit": {
+    "author": "Zingpix",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ACD-blue-spud.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "australian-kelpie",
+   "dexNo": "127",
+   "name": "Australian Kelpie",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Kelpie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australian-Kelpie",
+   "image": {
+    "grid": "/breeds/australian-kelpie-988accf9-grid.webp",
+    "detail": "/breeds/australian-kelpie-988accf9.webp",
+    "width": 1200,
+    "height": 1283
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Australian_Kelpie_chocolate_brown.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "australian-shepherd",
+   "dexNo": "128",
+   "name": "Australian Shepherd",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Aussie",
+    "Aussie Shepherd"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australian-Shepherd",
+   "image": {
+    "grid": "/breeds/australian-shepherd-aefcb5a4-grid.webp",
+    "detail": "/breeds/australian-shepherd-aefcb5a4.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Trickdog-Fina",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Australian_Shepherd_red_bi.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "australian-stumpy-tail-cattle-dog",
+   "dexNo": "129",
+   "name": "Australian Stumpy Tail Cattle Dog",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Stumpy",
+    "Stumpy Tail",
+    "Stumpy Tail Heeler"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australian-Stumpy-Tail-Cattle-Dog",
+   "image": {
+    "grid": "/breeds/australian-stumpy-tail-cattle-dog-4b2c42a0-grid.webp",
+    "detail": "/breeds/australian-stumpy-tail-cattle-dog-4b2c42a0.webp",
+    "width": 1200,
+    "height": 795
+   },
+   "credit": {
+    "author": "Wendy Hodges",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Australian_Stumpy_Tail_Cattle_Dog.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bearded-collie",
+   "dexNo": "130",
+   "name": "Bearded Collie",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Beardie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bearded-Collie",
+   "image": {
+    "grid": "/breeds/bearded-collie-4dd9cb43-grid.webp",
+    "detail": "/breeds/bearded-collie-4dd9cb43.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "marbla123",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bearded_Collie.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "beauceron-berger-de-beauce",
+   "dexNo": "131",
+   "name": "Beauceron (Berger de Beauce)",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Beauceron-(Berger-de-Beauce)",
+   "image": {
+    "grid": "/breeds/beauceron-berger-de-beauce-424112ab-grid.webp",
+    "detail": "/breeds/beauceron-berger-de-beauce-424112ab.webp",
+    "width": 1200,
+    "height": 953
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Owczarek_francuski_beauceron_009pl.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "belgian-shepherd-dog",
+   "dexNo": "132",
+   "name": "Belgian Shepherd Dog",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "officialName": "Belgian Shepherd Dog (Groenendael, Tervueren, Laekenois, Malinois)",
+   "forms": [
+    "Groenendael",
+    "Tervueren",
+    "Laekenois",
+    "Malinois"
+   ],
+   "aliases": [
+    "Malinois",
+    "Belgian Malinois",
+    "Groenendael",
+    "Tervuren",
+    "Tervueren",
+    "Laekenois"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Belgian-Shepherd-Dog-(Groenendael,-Tervueren,-Laekenois,-Malinois)",
+   "image": {
+    "grid": "/breeds/belgian-shepherd-dog-6c3eb17d-grid.webp",
+    "detail": "/breeds/belgian-shepherd-dog-6c3eb17d.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I wou...",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malinois_Obedience_Dog_Show_Ooty_May26_A7CR_10734.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bergamasco-shepherd-dog",
+   "dexNo": "133",
+   "name": "Bergamasco Shepherd Dog",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bergamasco-Shepherd-Dog",
+   "image": {
+    "grid": "/breeds/bergamasco-shepherd-dog-a377acf9-grid.webp",
+    "detail": "/breeds/bergamasco-shepherd-dog-a377acf9.webp",
+    "width": 1200,
+    "height": 918
+   },
+   "credit": {
+    "author": "Luigi Guidobono Cavalchini ( Josephine06 )",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ortensia_di_Valle_Scrivia_(cropped).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "berger-picard",
+   "dexNo": "134",
+   "name": "Berger Picard",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Berger-Picard-",
+   "image": {
+    "grid": "/breeds/berger-picard-cdc5d34c-grid.webp",
+    "detail": "/breeds/berger-picard-cdc5d34c.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Shana",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IMG_2209Cheyenne.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "border-collie",
+   "dexNo": "135",
+   "name": "Border Collie",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Border-Collie",
+   "image": {
+    "grid": "/breeds/border-collie-3228dbcb-grid.webp",
+    "detail": "/breeds/border-collie-3228dbcb.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Rebeccakhawk",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Border_Collie_at_beach.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bouvier-des-flandres",
+   "dexNo": "136",
+   "name": "Bouvier des Flandres",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "officialName": "Bouvier Des Flandres",
+   "forms": [],
+   "aliases": [
+    "Bouvier"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bouvier-Des-Flandres",
+   "image": {
+    "grid": "/breeds/bouvier-des-flandres-838dec0a-grid.webp",
+    "detail": "/breeds/bouvier-des-flandres-838dec0a.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Yorick39",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bouvier_des_Flandres036.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "briard",
+   "dexNo": "137",
+   "name": "Briard",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Briard",
+   "image": {
+    "grid": "/breeds/briard-208a93d7-grid.webp",
+    "detail": "/breeds/briard-208a93d7.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Birgit Balzer, Deutschland (uploaded by Caronna 17:00, 10 Feb 2005 (UTC))",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Briard_fauve.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "collie-rough",
+   "dexNo": "138",
+   "name": "Collie (Rough)",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Rough Collie",
+    "Lassie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Collie-(Rough)",
+   "image": {
+    "grid": "/breeds/collie-rough-ef0eb132-grid.webp",
+    "detail": "/breeds/collie-rough-ef0eb132.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Yasu w",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rough-Collie-japan08_(cropped).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "collie-smooth",
+   "dexNo": "139",
+   "name": "Collie (Smooth)",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Smooth Collie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Collie-(Smooth)",
+   "image": {
+    "grid": "/breeds/collie-smooth-f0004586-grid.webp",
+    "detail": "/breeds/collie-smooth-f0004586.webp",
+    "width": 1200,
+    "height": 1106
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skcollie-soopeli1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "dutch-shepherd-dog",
+   "dexNo": "140",
+   "name": "Dutch Shepherd Dog",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Dutch Shepherd",
+    "Hollandse Herder"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dutch-Shepherd-Dog",
+   "image": {
+    "grid": "/breeds/dutch-shepherd-dog-b0213a97-grid.webp",
+    "detail": "/breeds/dutch-shepherd-dog-b0213a97.webp",
+    "width": 1200,
+    "height": 1050
+   },
+   "credit": {
+    "author": "CaroleField",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Luna-orig-modified.Feb_2019.DSC_4339-SharpenAI-Softness.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "finnish-lapphund",
+   "dexNo": "141",
+   "name": "Finnish Lapphund",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Lappie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Finnish-Lapphund",
+   "image": {
+    "grid": "/breeds/finnish-lapphund-5f79ad2f-grid.webp",
+    "detail": "/breeds/finnish-lapphund-5f79ad2f.webp",
+    "width": 757,
+    "height": 669
+   },
+   "credit": {
+    "author": "Apdevries [2]",
+    "licence": "CC BY-SA 2.5",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Finnish_Lapphund_Glenchess_Revontuli.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "german-shepherd-dog",
+   "dexNo": "142",
+   "name": "German Shepherd Dog",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "German Shepherd",
+    "Alsatian",
+    "GSD"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Shepherd-Dog",
+   "image": {
+    "grid": "/breeds/german-shepherd-dog-9485a8de-grid.webp",
+    "detail": "/breeds/german-shepherd-dog-9485a8de.webp",
+    "width": 1200,
+    "height": 797
+   },
+   "credit": {
+    "author": "Jakub Hałun",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20110425_German_Shepherd_Dog_8505.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "german-shepherd-dog-long-stock-coat",
+   "dexNo": "143",
+   "name": "German Shepherd Dog (Long Stock Coat)",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Long-haired German Shepherd",
+    "Long Coat German Shepherd",
+    "Alsatian"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Shepherd-Dog-(Long-Stock-Coat)",
+   "image": {
+    "grid": "/breeds/german-shepherd-dog-long-stock-coat-78319647-grid.webp",
+    "detail": "/breeds/german-shepherd-dog-long-stock-coat-78319647.webp",
+    "width": 1200,
+    "height": 798
+   },
+   "credit": {
+    "author": "Primrose2017",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Long-haired_German_shepherd_dog.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "icelandic-sheepdog",
+   "dexNo": "144",
+   "name": "Icelandic Sheepdog",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Icelandic-Sheepdog",
+   "image": {
+    "grid": "/breeds/icelandic-sheepdog-60438ead-grid.webp",
+    "detail": "/breeds/icelandic-sheepdog-60438ead.webp",
+    "width": 1200,
+    "height": 1186
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Icelandicsheepdog-longhair1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "komondor",
+   "dexNo": "145",
+   "name": "Komondor",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Komondor",
+   "image": {
+    "grid": "/breeds/komondor-62e54132-grid.webp",
+    "detail": "/breeds/komondor-62e54132.webp",
+    "width": 941,
+    "height": 1030
+   },
+   "credit": {
+    "author": "Photo taken by Flickr user whartonds . Edit (cropped) by Pharaoh Hound .",
+    "licence": "CC BY-SA 2.5",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Komondor_Westminster_Dog_Show_crop.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "kuvasz",
+   "dexNo": "146",
+   "name": "Kuvasz",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Kuvasz",
+   "image": {
+    "grid": "/breeds/kuvasz-a6d53bfc-grid.webp",
+    "detail": "/breeds/kuvasz-a6d53bfc.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Svenska Mässan from Sweden",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:KUVASZ,_FI_UCH_NO_UCH_SV_UCH_WW-14_Czaruso_Brian_Little_(24290879035).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "maremma-sheepdog",
+   "dexNo": "147",
+   "name": "Maremma Sheepdog",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Maremma"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Maremma-Sheepdog",
+   "image": {
+    "grid": "/breeds/maremma-sheepdog-d2da8fd6-grid.webp",
+    "detail": "/breeds/maremma-sheepdog-d2da8fd6.webp",
+    "width": 1200,
+    "height": 908
+   },
+   "credit": {
+    "author": "Justlettersandnumbers",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pastore_Maremmano-Abruzzese,_young_dog_(cropped).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "miniature-american-shepherd",
+   "dexNo": "148",
+   "name": "Miniature American Shepherd",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Mini Aussie",
+    "Miniature Australian Shepherd",
+    "Mini Australian Shepherd"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Miniature-American-Shepherd",
+   "image": {
+    "grid": "/breeds/miniature-american-shepherd-197554dc-grid.webp",
+    "detail": "/breeds/miniature-american-shepherd-197554dc.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Jugabe3b",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miniature_American_Shepherd_red_merle.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "mudi",
+   "dexNo": "149",
+   "name": "Mudi",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Mudi",
+   "image": {
+    "grid": "/breeds/mudi-5b265de7-grid.webp",
+    "detail": "/breeds/mudi-5b265de7.webp",
+    "width": 1200,
+    "height": 1067
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mudibrown1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "norwegian-buhund",
+   "dexNo": "150",
+   "name": "Norwegian Buhund",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Buhund"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Norwegian-Buhund",
+   "image": {
+    "grid": "/breeds/norwegian-buhund-d2f5251c-grid.webp",
+    "detail": "/breeds/norwegian-buhund-d2f5251c.webp",
+    "width": 600,
+    "height": 600
+   },
+   "credit": {
+    "author": "Unknown author (see source page)",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norwegian_Buhund_600.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "old-english-sheepdog",
+   "dexNo": "151",
+   "name": "Old English Sheepdog",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "OES",
+    "Dulux Dog"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Old-English-Sheepdog",
+   "image": {
+    "grid": "/breeds/old-english-sheepdog-d7d8a144-grid.webp",
+    "detail": "/breeds/old-english-sheepdog-d7d8a144.webp",
+    "width": 1200,
+    "height": 882
+   },
+   "credit": {
+    "author": "AKS.9955",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_English_Sheepdog_(side).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "polish-lowland-sheepdog",
+   "dexNo": "152",
+   "name": "Polish Lowland Sheepdog",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "PON"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Polish-Lowland-Sheepdog",
+   "image": {
+    "grid": "/breeds/polish-lowland-sheepdog-38f72169-grid.webp",
+    "detail": "/breeds/polish-lowland-sheepdog-38f72169.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Beltapar",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Storalvens_Dione.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "puli",
+   "dexNo": "153",
+   "name": "Puli",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Puli",
+   "image": {
+    "grid": "/breeds/puli-5564c3ad-grid.webp",
+    "detail": "/breeds/puli-5564c3ad.webp",
+    "width": 1200,
+    "height": 1178
+   },
+   "credit": {
+    "author": "Steve Jurvetson",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PuliDog.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "pumi",
+   "dexNo": "154",
+   "name": "Pumi",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pumi",
+   "image": {
+    "grid": "/breeds/pumi-4204e73a-grid.webp",
+    "detail": "/breeds/pumi-4204e73a.webp",
+    "width": 1200,
+    "height": 1055
+   },
+   "credit": {
+    "author": "No machine-readable author provided. Caronna assumed (based on copyright claims).",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pumi_2.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "pyrenean-sheepdog-longhaired",
+   "dexNo": "155",
+   "name": "Pyrenean Sheepdog Longhaired",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pyrenean-Sheepdog-Longhaired",
+   "image": {
+    "grid": "/breeds/pyrenean-sheepdog-longhaired-82b43a7f-grid.webp",
+    "detail": "/breeds/pyrenean-sheepdog-longhaired-82b43a7f.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "A. Köppl",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berger_des_Pyr%C3%A9n%C3%A9es_Ilja_vom_Lechnix.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "shetland-sheepdog",
+   "dexNo": "156",
+   "name": "Shetland Sheepdog",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Sheltie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Shetland-Sheepdog",
+   "image": {
+    "grid": "/breeds/shetland-sheepdog-74653688-grid.webp",
+    "detail": "/breeds/shetland-sheepdog-74653688.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Koefbac",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mi%C4%99dzynarowa_Wystawa_Ps%C3%B3w_Rasowych_w_Poznaniu_2018_-_34.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "swedish-lapphund",
+   "dexNo": "157",
+   "name": "Swedish Lapphund",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Swedish-Lapphund",
+   "image": {
+    "grid": "/breeds/swedish-lapphund-7a35e575-grid.webp",
+    "detail": "/breeds/swedish-lapphund-7a35e575.webp",
+    "width": 1200,
+    "height": 1120
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SwedishLapp1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "swedish-vallhund",
+   "dexNo": "158",
+   "name": "Swedish Vallhund",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Vallhund"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Swedish-Vallhund",
+   "image": {
+    "grid": "/breeds/swedish-vallhund-1c176e61-grid.webp",
+    "detail": "/breeds/swedish-vallhund-1c176e61.webp",
+    "width": 1200,
+    "height": 798
+   },
+   "credit": {
+    "author": "TS Eriksson",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:V%C3%A4stg%C3%B6taspets_hane_5_%C3%A5r.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "tatra-shepherd-dog",
+   "dexNo": "159",
+   "name": "Tatra Shepherd Dog",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tatra-Shepherd-Dog",
+   "image": {
+    "grid": "/breeds/tatra-shepherd-dog-71a7ded9-grid.webp",
+    "detail": "/breeds/tatra-shepherd-dog-71a7ded9.webp",
+    "width": 1200,
+    "height": 923
+   },
+   "credit": {
+    "author": "K.Karpiel",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Polski_Owczarek_Podhala%C5%84ski_30.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "welsh-corgi-cardigan",
+   "dexNo": "160",
+   "name": "Welsh Corgi (Cardigan)",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Cardigan Corgi",
+    "Corgi"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Welsh-Corgi-(Cardigan)",
+   "image": {
+    "grid": "/breeds/welsh-corgi-cardigan-b44f89c5-grid.webp",
+    "detail": "/breeds/welsh-corgi-cardigan-b44f89c5.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "FatFairfax",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Welsh_Corgi_Cardigan_Dog_Rocks.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "welsh-corgi-pembroke",
+   "dexNo": "161",
+   "name": "Welsh Corgi (Pembroke)",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Pembroke Corgi",
+    "Corgi"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Welsh-Corgi-(Pembroke)",
+   "image": {
+    "grid": "/breeds/welsh-corgi-pembroke-6650da44-grid.webp",
+    "detail": "/breeds/welsh-corgi-pembroke-6650da44.webp",
+    "width": 1200,
+    "height": 899
+   },
+   "credit": {
+    "author": "Dog breed facts",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Welsh_Pembroke_Corgi.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "white-swiss-shepherd-dog",
+   "dexNo": "162",
+   "name": "White Swiss Shepherd Dog",
+   "groupId": "working-dogs",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "White Shepherd",
+    "Berger Blanc Suisse"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/White-Swiss-Shepherd-Dog",
+   "image": {
+    "grid": "/breeds/white-swiss-shepherd-dog-990adea8-grid.webp",
+    "detail": "/breeds/white-swiss-shepherd-dog-990adea8.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Durdur31",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_Swiss_Shepherd_Dog_Djinn_(cropped).JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "akita",
+   "dexNo": "163",
+   "name": "Akita",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "American Akita"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Akita",
+   "image": {
+    "grid": "/breeds/akita-f105ba91-grid.webp",
+    "detail": "/breeds/akita-f105ba91.webp",
+    "width": 1200,
+    "height": 1300
+   },
+   "credit": {
+    "author": "Mel Pet & Co",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:KRAV_ADDICT_SUNSET_ON_THE_BEACH_%22SHELBY%22_1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "akita-japanese",
+   "dexNo": "164",
+   "name": "Akita (Japanese)",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Akita Inu",
+    "Japanese Akita"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Akita-(Japanese)",
+   "image": {
+    "grid": "/breeds/akita-japanese-deaedfb5-grid.webp",
+    "detail": "/breeds/akita-japanese-deaedfb5.webp",
+    "width": 1200,
+    "height": 801
+   },
+   "credit": {
+    "author": "Biser Yanev",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Akita_Inu_dog.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "alaskan-malamute",
+   "dexNo": "165",
+   "name": "Alaskan Malamute",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Mal"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Alaskan-Malamute",
+   "image": {
+    "grid": "/breeds/alaskan-malamute-03c1d724-grid.webp",
+    "detail": "/breeds/alaskan-malamute-03c1d724.webp",
+    "width": 1200,
+    "height": 798
+   },
+   "credit": {
+    "author": "waga11",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alaskan_Malamute_-_panoramio.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "anatolian-shepherd-dog",
+   "dexNo": "166",
+   "name": "Anatolian Shepherd Dog",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Anatolian"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Anatolian-Shepherd-Dog",
+   "image": {
+    "grid": "/breeds/anatolian-shepherd-dog-dbfb6899-grid.webp",
+    "detail": "/breeds/anatolian-shepherd-dog-dbfb6899.webp",
+    "width": 1008,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Zeynel Cebeci",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anatolian_Shepherd_Dog_-_Kangal_k%C3%B6pe%C4%9Fi_01.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bernese-mountain-dog",
+   "dexNo": "167",
+   "name": "Bernese Mountain Dog",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Berner",
+    "Bernese"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bernese-Mountain-Dog",
+   "image": {
+    "grid": "/breeds/bernese-mountain-dog-63b08fac-grid.webp",
+    "detail": "/breeds/bernese-mountain-dog-63b08fac.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "FriendlyToaster",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:3-BerneseMountainDogInGrass.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "boxer",
+   "dexNo": "168",
+   "name": "Boxer",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Boxer",
+   "image": {
+    "grid": "/breeds/boxer-66c7ca3a-grid.webp",
+    "detail": "/breeds/boxer-66c7ca3a.webp",
+    "width": 1200,
+    "height": 884
+   },
+   "credit": {
+    "author": "Mood210",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Male_fawn_Boxer_undocked.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bullmastiff",
+   "dexNo": "169",
+   "name": "Bullmastiff",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bullmastiff",
+   "image": {
+    "grid": "/breeds/bullmastiff-dae069ad-grid.webp",
+    "detail": "/breeds/bullmastiff-dae069ad.webp",
+    "width": 1200,
+    "height": 1045
+   },
+   "credit": {
+    "author": "Fausto Moreno",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bullmastiff_edited.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "canadian-eskimo-dog",
+   "dexNo": "170",
+   "name": "Canadian Eskimo Dog",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Canadian-Eskimo-Dog",
+   "image": {
+    "grid": "/breeds/canadian-eskimo-dog-d4525b02-grid.webp",
+    "detail": "/breeds/canadian-eskimo-dog-d4525b02.webp",
+    "width": 1200,
+    "height": 1047
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanadaneskimo1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "cane-corso",
+   "dexNo": "171",
+   "name": "Cane Corso",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Corso",
+    "Italian Mastiff"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cane-Corso",
+   "image": {
+    "grid": "/breeds/cane-corso-4863e037-grid.webp",
+    "detail": "/breeds/cane-corso-4863e037.webp",
+    "width": 1200,
+    "height": 939
+   },
+   "credit": {
+    "author": "Topmoretta",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anita_Cane_Corso_Italiano_allevato_in_Italia.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "caucasian-shepherd-dog",
+   "dexNo": "172",
+   "name": "Caucasian Shepherd Dog",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Caucasian Ovcharka"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Caucasian-Shepherd-Dog",
+   "image": {
+    "grid": "/breeds/caucasian-shepherd-dog-e42ba7b0-grid.webp",
+    "detail": "/breeds/caucasian-shepherd-dog-e42ba7b0.webp",
+    "width": 1200,
+    "height": 1001
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Owczarek_kaukaski_65556.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "central-asian-shepherd-dog",
+   "dexNo": "173",
+   "name": "Central Asian Shepherd Dog",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Alabai"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Central-Asian-Shepherd-Dog",
+   "image": {
+    "grid": "/breeds/central-asian-shepherd-dog-5c37605e-grid.webp",
+    "detail": "/breeds/central-asian-shepherd-dog-5c37605e.webp",
+    "width": 1200,
+    "height": 951
+   },
+   "credit": {
+    "author": "Halalosirambankiskecskek",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2.CAO_in_Hungary.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "dobermann",
+   "dexNo": "174",
+   "name": "Dobermann",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Doberman",
+    "Dobie",
+    "Doberman Pinscher"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dobermann",
+   "image": {
+    "grid": "/breeds/dobermann-1b03e091-grid.webp",
+    "detail": "/breeds/dobermann-1b03e091.webp",
+    "width": 1200,
+    "height": 984
+   },
+   "credit": {
+    "author": "Unknown author (see source page)",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:HiramvonNemesis2.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "dogue-de-bordeaux",
+   "dexNo": "175",
+   "name": "Dogue de Bordeaux",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "French Mastiff",
+    "DDB"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dogue-de-Bordeaux",
+   "image": {
+    "grid": "/breeds/dogue-de-bordeaux-6a7cd101-grid.webp",
+    "detail": "/breeds/dogue-de-bordeaux-6a7cd101.webp",
+    "width": 1200,
+    "height": 803
+   },
+   "credit": {
+    "author": "DJT at Dutch Wikipedia ( Original text: DJT )",
+    "licence": "CC BY-SA 2.5",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:DJT_0086.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "estrela-mountain-dog",
+   "dexNo": "176",
+   "name": "Estrela Mountain Dog",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Estrela-Mountain-Dog",
+   "image": {
+    "grid": "/breeds/estrela-mountain-dog-5aebcf93-grid.webp",
+    "detail": "/breeds/estrela-mountain-dog-5aebcf93.webp",
+    "width": 1200,
+    "height": 999
+   },
+   "credit": {
+    "author": "gailhampshire from Cradley, Malvern, U.K",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Estrela_Mountain_Dog_(20843800936).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "german-pinscher",
+   "dexNo": "177",
+   "name": "German Pinscher",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Pinscher",
+   "image": {
+    "grid": "/breeds/german-pinscher-33d2de30-grid.webp",
+    "detail": "/breeds/german-pinscher-33d2de30.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Unknown author (see source page)",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:German_Pinscher.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "great-swiss-mountain-dog",
+   "dexNo": "178",
+   "name": "Great Swiss Mountain Dog",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Swissy"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Great-Swiss-Mountain-Dog",
+   "image": {
+    "grid": "/breeds/great-swiss-mountain-dog-ddd71452-grid.webp",
+    "detail": "/breeds/great-swiss-mountain-dog-ddd71452.webp",
+    "width": 1200,
+    "height": 898
+   },
+   "credit": {
+    "author": "KIKKUZZO88",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Swissy.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "kangal-shepherd-dog",
+   "dexNo": "179",
+   "name": "Kangal Shepherd Dog",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Kangal"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Kangal-Shepherd-Dog",
+   "image": {
+    "grid": "/breeds/kangal-shepherd-dog-91a2ae4f-grid.webp",
+    "detail": "/breeds/kangal-shepherd-dog-91a2ae4f.webp",
+    "width": 1200,
+    "height": 1040
+   },
+   "credit": {
+    "author": "Kangalshepherddog",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kangal_front_on.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "landseer-european-continental-type",
+   "dexNo": "180",
+   "name": "Landseer (European Continental Type)",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Landseer ECT"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Landseer-(European-Continental-Type)",
+   "image": {
+    "grid": "/breeds/landseer-european-continental-type-ce8d6808-grid.webp",
+    "detail": "/breeds/landseer-european-continental-type-ce8d6808.webp",
+    "width": 1200,
+    "height": 1285
+   },
+   "credit": {
+    "author": "Elevage des Pandas Des Terres Rouges",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pandas_des_terres_rouges.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "leonberger",
+   "dexNo": "181",
+   "name": "Leonberger",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Leo"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Leonberger",
+   "image": {
+    "grid": "/breeds/leonberger-a6533a8d-grid.webp",
+    "detail": "/breeds/leonberger-a6533a8d.webp",
+    "width": 1200,
+    "height": 775
+   },
+   "credit": {
+    "author": "Wojciech Pędzich",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonberger_2021_02.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "mastiff",
+   "dexNo": "182",
+   "name": "Mastiff",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "English Mastiff"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Mastiff",
+   "image": {
+    "grid": "/breeds/mastiff-b9fe9908-grid.webp",
+    "detail": "/breeds/mastiff-b9fe9908.webp",
+    "width": 1200,
+    "height": 960
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:English_Mastiff_fawn_male_4.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "neapolitan-mastiff",
+   "dexNo": "183",
+   "name": "Neapolitan Mastiff",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Neo",
+    "Mastino"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Neapolitan-Mastiff",
+   "image": {
+    "grid": "/breeds/neapolitan-mastiff-9135718c-grid.webp",
+    "detail": "/breeds/neapolitan-mastiff-9135718c.webp",
+    "width": 1107,
+    "height": 1500
+   },
+   "credit": {
+    "author": "user:przykuta",
+    "licence": "CC BY-SA 2.5",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mastino_napoletano_67576.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "newfoundland",
+   "dexNo": "184",
+   "name": "Newfoundland",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Newfie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Newfoundland",
+   "image": {
+    "grid": "/breeds/newfoundland-189c2754-grid.webp",
+    "detail": "/breeds/newfoundland-189c2754.webp",
+    "width": 1000,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Flickr user DanDee Shots",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Newfoundland_dog_Smoky.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "portuguese-water-dog",
+   "dexNo": "185",
+   "name": "Portuguese Water Dog",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Portie",
+    "PWD"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Portuguese-Water-Dog",
+   "image": {
+    "grid": "/breeds/portuguese-water-dog-5b10b8f2-grid.webp",
+    "detail": "/breeds/portuguese-water-dog-5b10b8f2.webp",
+    "width": 1000,
+    "height": 854
+   },
+   "credit": {
+    "author": "Silke Hollje-Schumacher",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:C%C3%A3o_de_agua_Portugu%C3%AAs_2.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "pyrenean-mastiff",
+   "dexNo": "186",
+   "name": "Pyrenean Mastiff",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pyrenean-Mastiff",
+   "image": {
+    "grid": "/breeds/pyrenean-mastiff-96ed5f39-grid.webp",
+    "detail": "/breeds/pyrenean-mastiff-96ed5f39.webp",
+    "width": 1200,
+    "height": 803
+   },
+   "credit": {
+    "author": "Jacekjarz",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pirenej.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "pyrenean-mountain-dog",
+   "dexNo": "187",
+   "name": "Pyrenean Mountain Dog",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Great Pyrenees",
+    "Pyr"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pyrenean-Mountain-Dog",
+   "image": {
+    "grid": "/breeds/pyrenean-mountain-dog-3cef5c5b-grid.webp",
+    "detail": "/breeds/pyrenean-mountain-dog-3cef5c5b.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "HeartSpoon",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Pyrenees_Mountain_Dog_2.png",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "rottweiler",
+   "dexNo": "188",
+   "name": "Rottweiler",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Rottie",
+    "Rotty"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Rottweiler",
+   "image": {
+    "grid": "/breeds/rottweiler-0bbdf8ae-grid.webp",
+    "detail": "/breeds/rottweiler-0bbdf8ae.webp",
+    "width": 1200,
+    "height": 797
+   },
+   "credit": {
+    "author": "Kreuzbube64",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rottweilerh%C3%BCndin_Ziva_(DSC6787)_1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "russian-black-terrier",
+   "dexNo": "189",
+   "name": "Russian Black Terrier",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Black Russian Terrier",
+    "BRT"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Russian-Black-Terrier",
+   "image": {
+    "grid": "/breeds/russian-black-terrier-93167494-grid.webp",
+    "detail": "/breeds/russian-black-terrier-93167494.webp",
+    "width": 1200,
+    "height": 850
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wystawa_Rybnik_02.10.2011_czarny_terier_rosyjski_2pl.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "samoyed",
+   "dexNo": "190",
+   "name": "Samoyed",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Sammy",
+    "Sammie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Samoyed",
+   "image": {
+    "grid": "/breeds/samoyed-81f05735-grid.webp",
+    "detail": "/breeds/samoyed-81f05735.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Dllu",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samoyed_dog_two_year_old_female_dllu.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "schnauzer",
+   "dexNo": "191",
+   "name": "Schnauzer",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Standard Schnauzer"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Schnauzer",
+   "image": {
+    "grid": "/breeds/schnauzer-5538f841-grid.webp",
+    "detail": "/breeds/schnauzer-5538f841.webp",
+    "width": 1200,
+    "height": 901
+   },
+   "credit": {
+    "author": "Standardschnauzer1",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Docked_Pepper_%26_Salt_Standard_Schnauzer_American_Champion.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "schnauzer-giant",
+   "dexNo": "192",
+   "name": "Schnauzer (Giant)",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Giant Schnauzer"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Schnauzer-(Giant)",
+   "image": {
+    "grid": "/breeds/schnauzer-giant-7560b814-grid.webp",
+    "detail": "/breeds/schnauzer-giant-7560b814.webp",
+    "width": 1087,
+    "height": 967
+   },
+   "credit": {
+    "author": "No machine-readable author provided. Kkrzysiu o2 assumed (based on copyright claims).",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stablemaster%27s_NORTHERN_HOPE(Poznan2006).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "schnauzer-miniature",
+   "dexNo": "193",
+   "name": "Schnauzer (Miniature)",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Miniature Schnauzer",
+    "Mini Schnauzer"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Schnauzer-(Miniature)",
+   "image": {
+    "grid": "/breeds/schnauzer-miniature-a5743f42-grid.webp",
+    "detail": "/breeds/schnauzer-miniature-a5743f42.webp",
+    "width": 1200,
+    "height": 883
+   },
+   "credit": {
+    "author": "Zorik07",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B8%D1%82%D0%BE%D0%BC%D0%BD%D0%B8%D0%BA_%22%D0%90%D1%81%D1%81%D0%BE%D0%BD_%D0%90%D1%80%D0%B8%22_%D0%A6%D0%B2%D0%B5%D1%80%D0%B3%D1%88%D0%BD%D0%B0%D1%83%D1%86%D0%B5%D1%80%D1%8B_%D0%B1%D0%B5%D0%BB%D1%8B%D0%B5_%D0%B8_%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B5_%D1%81_%D1%81%D0%B5%D1%80%D0%B5%D0%B1%D1%80%D0%BE%D0%BC_12.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "shiba-inu",
+   "dexNo": "194",
+   "name": "Shiba Inu",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Shiba"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Shiba-Inu",
+   "image": {
+    "grid": "/breeds/shiba-inu-c96907d3-grid.webp",
+    "detail": "/breeds/shiba-inu-c96907d3.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Takashiba at English Wikipedia",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taka_Shiba.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "shikoku",
+   "dexNo": "195",
+   "name": "Shikoku",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Shikoku",
+   "image": {
+    "grid": "/breeds/shikoku-e292489a-grid.webp",
+    "detail": "/breeds/shikoku-e292489a.webp",
+    "width": 1200,
+    "height": 1099
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shikokunkoira1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "siberian-husky",
+   "dexNo": "196",
+   "name": "Siberian Husky",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Husky"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Siberian-Husky",
+   "image": {
+    "grid": "/breeds/siberian-husky-82688372-grid.webp",
+    "detail": "/breeds/siberian-husky-82688372.webp",
+    "width": 1125,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Stockstill, Tiffany",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lol_A_Domesticated_Siberian_Husky_Louisiana.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "spanish-mastiff",
+   "dexNo": "197",
+   "name": "Spanish Mastiff",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Spanish-Mastiff",
+   "image": {
+    "grid": "/breeds/spanish-mastiff-b3c36845-grid.webp",
+    "detail": "/breeds/spanish-mastiff-b3c36845.webp",
+    "width": 1200,
+    "height": 890
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mastif_hiszpa%C5%84ski_7512.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "st-bernard",
+   "dexNo": "198",
+   "name": "St Bernard",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Saint Bernard"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/St-Bernard",
+   "image": {
+    "grid": "/breeds/st-bernard-4a6a1da5-grid.webp",
+    "detail": "/breeds/st-bernard-4a6a1da5.webp",
+    "width": 1200,
+    "height": 1219
+   },
+   "credit": {
+    "author": "Rafael Dominguez Rodriguez",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rey_nieve.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "tibetan-mastiff",
+   "dexNo": "199",
+   "name": "Tibetan Mastiff",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tibetan-Mastiff",
+   "image": {
+    "grid": "/breeds/tibetan-mastiff-3f694765-grid.webp",
+    "detail": "/breeds/tibetan-mastiff-3f694765.webp",
+    "width": 1200,
+    "height": 1217
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mongolianbankhar3.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "tornjak",
+   "dexNo": "200",
+   "name": "Tornjak",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tornjak",
+   "image": {
+    "grid": "/breeds/tornjak-b50577c3-grid.webp",
+    "detail": "/breeds/tornjak-b50577c3.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Tomasz Waśko",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:TornjakPL2.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "yakutian-laika",
+   "dexNo": "201",
+   "name": "Yakutian Laika",
+   "groupId": "utility",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Laika"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Yakutian-Laika",
+   "image": {
+    "grid": "/breeds/yakutian-laika-b4a3307d-grid.webp",
+    "detail": "/breeds/yakutian-laika-b4a3307d.webp",
+    "width": 1200,
+    "height": 1028
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jakutianlaika1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "yugoslavian-shepherd-dog-sharplanina",
+   "dexNo": "202",
+   "name": "Yugoslavian Shepherd Dog (Sharplanina)",
+   "groupId": "utility",
+   "tier": "ankc",
+   "officialName": "Yugoslavian Shepherd Dog - Sharplanina",
+   "forms": [],
+   "aliases": [
+    "Sharplanina",
+    "Sarplaninac"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Yugoslavian-Shepherd-Dog---Sharplanina",
+   "image": {
+    "grid": "/breeds/yugoslavian-shepherd-dog-sharplanina-ff98295d-grid.webp",
+    "detail": "/breeds/yugoslavian-shepherd-dog-sharplanina-ff98295d.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Sakal33",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sarplaninac_male_dog_Muri-Em%C3%ADr_2_years_old.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "australasian-bosdog",
+   "dexNo": "203",
+   "name": "Australasian Bosdog",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Bosdog"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australasian-Bosdog"
+  },
+  {
+   "id": "boston-terrier",
+   "dexNo": "204",
+   "name": "Boston Terrier",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Boston-Terrier",
+   "image": {
+    "grid": "/breeds/boston-terrier-2eca6773-grid.webp",
+    "detail": "/breeds/boston-terrier-2eca6773.webp",
+    "width": 1033,
+    "height": 882
+   },
+   "credit": {
+    "author": "Svenska Mässan from Sweden",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BOSTON_TERRIER,_Ving%C3%A5rdens_Essi_von_Richards_(23995273800).2.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "british-bulldog",
+   "dexNo": "205",
+   "name": "British Bulldog",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Bulldog",
+    "English Bulldog"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/British-Bulldog",
+   "image": {
+    "grid": "/breeds/british-bulldog-61762061-grid.webp",
+    "detail": "/breeds/british-bulldog-61762061.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Pleple2000",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Racib%C3%B3rz_2007_082.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "canaan-dog",
+   "dexNo": "206",
+   "name": "Canaan Dog",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Canaan-Dog",
+   "image": {
+    "grid": "/breeds/canaan-dog-8563a71d-grid.webp",
+    "detail": "/breeds/canaan-dog-8563a71d.webp",
+    "width": 1200,
+    "height": 904
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canaandogfawn.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "chow-chow",
+   "dexNo": "207",
+   "name": "Chow Chow",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Chow"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chow-Chow",
+   "image": {
+    "grid": "/breeds/chow-chow-c324e172-grid.webp",
+    "detail": "/breeds/chow-chow-c324e172.webp",
+    "width": 1200,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Prayitno/more than 2.5 millions views: thank you!",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:01_Chow_Chow.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "dalmatian",
+   "dexNo": "208",
+   "name": "Dalmatian",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Dally"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dalmatian",
+   "image": {
+    "grid": "/breeds/dalmatian-5cd8eafa-grid.webp",
+    "detail": "/breeds/dalmatian-5cd8eafa.webp",
+    "width": 1000,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Mark Berbezier",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daisy_the_Dalmatian.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "eurasier",
+   "dexNo": "209",
+   "name": "Eurasier",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Eurasier",
+   "image": {
+    "grid": "/breeds/eurasier-d9836bd5-grid.webp",
+    "detail": "/breeds/eurasier-d9836bd5.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Jörg Heimann",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eurasier_wolfsgrau.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "french-bulldog",
+   "dexNo": "210",
+   "name": "French Bulldog",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Frenchie",
+    "Frenchy"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/French-Bulldog",
+   "image": {
+    "grid": "/breeds/french-bulldog-ea8db269-grid.webp",
+    "detail": "/breeds/french-bulldog-ea8db269.webp",
+    "width": 1200,
+    "height": 982
+   },
+   "credit": {
+    "author": "Reinhold Möller Ermell",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Franz%C3%B6sische_Bulldogge_in_Paris-20060505-RM-100032.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "german-spitz",
+   "dexNo": "211",
+   "name": "German Spitz",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "officialName": "German Spitz (Mittel & Klein)",
+   "forms": [
+    "Mittel",
+    "Klein"
+   ],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Spitz-(Mittel-&-Klein)",
+   "image": {
+    "grid": "/breeds/german-spitz-89261435-grid.webp",
+    "detail": "/breeds/german-spitz-89261435.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Tsaag Valren",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mittelspitz_1_year_(3).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "great-dane",
+   "dexNo": "212",
+   "name": "Great Dane",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Dane"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Great-Dane",
+   "image": {
+    "grid": "/breeds/great-dane-8f3da9b1-grid.webp",
+    "detail": "/breeds/great-dane-8f3da9b1.webp",
+    "width": 1200,
+    "height": 1164
+   },
+   "credit": {
+    "author": "Lilly M",
+    "licence": "CC BY-SA 2.5",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dog_niemiecki_%C5%BC%C3%B3%C5%82ty_LM980.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "japanese-spitz",
+   "dexNo": "213",
+   "name": "Japanese Spitz",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Japanese-Spitz",
+   "image": {
+    "grid": "/breeds/japanese-spitz-66d25aea-grid.webp",
+    "detail": "/breeds/japanese-spitz-66d25aea.webp",
+    "width": 1200,
+    "height": 936
+   },
+   "credit": {
+    "author": "Brindis320 , based on a previos image created by Birit",
+    "licence": "CC BY 2.5",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spitz_japones.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "karelian-bear-dog",
+   "dexNo": "214",
+   "name": "Karelian Bear Dog",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Karelian-Bear-Dog",
+   "image": {
+    "grid": "/breeds/karelian-bear-dog-e2c2aa6d-grid.webp",
+    "detail": "/breeds/karelian-bear-dog-e2c2aa6d.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Fraczek.marcin",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karelski_pies_na_nied%C5%BAwiedzie_sylwetka.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "keeshond",
+   "dexNo": "215",
+   "name": "Keeshond",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Keeshie"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Keeshond",
+   "image": {
+    "grid": "/breeds/keeshond-128a0dc4-grid.webp",
+    "detail": "/breeds/keeshond-128a0dc4.webp",
+    "width": 1161,
+    "height": 1064
+   },
+   "credit": {
+    "author": "dancing with wolves",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Keeshond_Majic_standing_cropped.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "lhasa-apso",
+   "dexNo": "216",
+   "name": "Lhasa Apso",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Lhasa"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Lhasa-Apso",
+   "image": {
+    "grid": "/breeds/lhasa-apso-b53396ae-grid.webp",
+    "detail": "/breeds/lhasa-apso-b53396ae.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "Svenska Mässan from Sweden",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grupp_9,_LHASA_APSO,_DK_JV-13_DK_V-14_DK_V-15_NO_UCH_NO_V-15_SE_UCH_Chic_Choix_Some_Like_It_Chic_(24014621720).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "peruvian-hairless-dog-large",
+   "dexNo": "217",
+   "name": "Peruvian Hairless Dog (Large)",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Peruvian Inca Orchid",
+    "Inca Orchid"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Peruvian-Hairless-Dog-(Large)",
+   "image": {
+    "grid": "/breeds/peruvian-hairless-dog-large-37359b19-grid.webp",
+    "detail": "/breeds/peruvian-hairless-dog-large-37359b19.webp",
+    "width": 1200,
+    "height": 995
+   },
+   "credit": {
+    "author": "Luna capreza",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chien_du_p%C3%A9rou_vari%C3%A9t%C3%A9_nue.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "peruvian-hairless-dog-medium",
+   "dexNo": "218",
+   "name": "Peruvian Hairless Dog (Medium)",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Peruvian Inca Orchid",
+    "Inca Orchid"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Peruvian-Hairless-Dog-(Medium)",
+   "image": {
+    "grid": "/breeds/peruvian-hairless-dog-medium-69aaf6f8-grid.webp",
+    "detail": "/breeds/peruvian-hairless-dog-medium-69aaf6f8.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "PsamatheM",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:11-Peruvian_Hairless_Dog-nX-10.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "peruvian-hairless-dog-small",
+   "dexNo": "219",
+   "name": "Peruvian Hairless Dog (Small)",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Peruvian Inca Orchid",
+    "Inca Orchid"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Peruvian-Hairless-Dog-(Small)",
+   "image": {
+    "grid": "/breeds/peruvian-hairless-dog-small-1bd49050-grid.webp",
+    "detail": "/breeds/peruvian-hairless-dog-small-1bd49050.webp",
+    "width": 1125,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Ajor933",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chien_peruvien.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "poodle-miniature",
+   "dexNo": "220",
+   "name": "Poodle (Miniature)",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Miniature Poodle",
+    "Mini Poodle"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Poodle-(Miniature)",
+   "image": {
+    "grid": "/breeds/poodle-miniature-b87e38e1-grid.webp",
+    "detail": "/breeds/poodle-miniature-b87e38e1.webp",
+    "width": 1125,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Dorian Wallender from Lake Havasu City, Arizona, USA",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BELLA_ON_COUCH_(43000573050).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "poodle-standard",
+   "dexNo": "221",
+   "name": "Poodle (Standard)",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Standard Poodle"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Poodle-(Standard)",
+   "image": {
+    "grid": "/breeds/poodle-standard-2b1b7dd1-grid.webp",
+    "detail": "/breeds/poodle-standard-2b1b7dd1.webp",
+    "width": 1200,
+    "height": 800
+   },
+   "credit": {
+    "author": "John Leslie from London, UK",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Standard_Poodle_cream_standing.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "poodle-toy",
+   "dexNo": "222",
+   "name": "Poodle (Toy)",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Toy Poodle"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Poodle-(Toy)",
+   "image": {
+    "grid": "/breeds/poodle-toy-e1f5b1b8-grid.webp",
+    "detail": "/breeds/poodle-toy-e1f5b1b8.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Choikwangmo9",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-03-11_21.55.24_poodle_ggomi.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "schipperke",
+   "dexNo": "223",
+   "name": "Schipperke",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Schipperke",
+   "image": {
+    "grid": "/breeds/schipperke-8c0864a1-grid.webp",
+    "detail": "/breeds/schipperke-8c0864a1.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "JezevecStendencíLouhovatČaj",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schipperkehpg002.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "shar-pei",
+   "dexNo": "224",
+   "name": "Shar Pei",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Sharpei",
+    "Chinese Shar-Pei"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Shar-Pei",
+   "image": {
+    "grid": "/breeds/shar-pei-5ae4ccdb-grid.webp",
+    "detail": "/breeds/shar-pei-5ae4ccdb.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Flickr: M.Peinado Commons: M.Peinado",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gorda_-_100.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "shih-tzu",
+   "dexNo": "225",
+   "name": "Shih Tzu",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [
+    "Shitzu"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Shih-Tzu",
+   "image": {
+    "grid": "/breeds/shih-tzu-587d9450-grid.webp",
+    "detail": "/breeds/shih-tzu-587d9450.webp",
+    "width": 1200,
+    "height": 718
+   },
+   "credit": {
+    "author": "claralieu",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shih_Tzu_Reference_-12.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "tibetan-terrier",
+   "dexNo": "226",
+   "name": "Tibetan Terrier",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [],
+   "aliases": [],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tibetan-Terrier",
+   "image": {
+    "grid": "/breeds/tibetan-terrier-f46fd1e7-grid.webp",
+    "detail": "/breeds/tibetan-terrier-f46fd1e7.webp",
+    "width": 1026,
+    "height": 1112
+   },
+   "credit": {
+    "author": "Mr407SW",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tibet_Terrier_Bennie_(cropped).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "xoloitzcuintle",
+   "dexNo": "227",
+   "name": "Xoloitzcuintle",
+   "groupId": "non-sporting",
+   "tier": "ankc",
+   "forms": [
+    "Standard",
+    "Intermediate",
+    "Miniature"
+   ],
+   "aliases": [
+    "Xolo",
+    "Mexican Hairless Dog"
+   ],
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Xoloitzcuintle",
+   "image": {
+    "grid": "/breeds/xoloitzcuintle-8d3a92e3-grid.webp",
+    "detail": "/breeds/xoloitzcuintle-8d3a92e3.webp",
+    "width": 1200,
+    "height": 1008
+   },
+   "credit": {
+    "author": "Canarian",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:XoloLarge1.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "cavoodle",
+   "dexNo": "B01",
+   "name": "Cavoodle",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Cavapoo",
+    "Cavadoodle"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Cavalier King Charles Spaniel",
+    "Poodle"
+   ],
+   "image": {
+    "grid": "/breeds/cavoodle-fa588114-grid.webp",
+    "detail": "/breeds/cavoodle-fa588114.webp",
+    "width": 1200,
+    "height": 1361
+   },
+   "credit": {
+    "author": "Rhododendrites",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cavapoo_male_(90675).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "groodle",
+   "dexNo": "B02",
+   "name": "Groodle",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Goldendoodle",
+    "Golden Doodle"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Golden Retriever",
+    "Poodle"
+   ],
+   "image": {
+    "grid": "/breeds/groodle-df92c81c-grid.webp",
+    "detail": "/breeds/groodle-df92c81c.webp",
+    "width": 1200,
+    "height": 1079
+   },
+   "credit": {
+    "author": "Gullpavon",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Golden_Doodle_Standing_(HD).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "labradoodle",
+   "dexNo": "B03",
+   "name": "Labradoodle",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Australian Labradoodle",
+    "Cobberdog"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Labrador Retriever",
+    "Poodle"
+   ],
+   "image": {
+    "grid": "/breeds/labradoodle-90a062f8-grid.webp",
+    "detail": "/breeds/labradoodle-90a062f8.webp",
+    "width": 1200,
+    "height": 999
+   },
+   "credit": {
+    "author": "Anton Porsche",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Labradoodle-Brown-Male-SideFace.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "spoodle",
+   "dexNo": "B04",
+   "name": "Spoodle",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Cockapoo",
+    "Cockerpoo",
+    "Cockerdoodle"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Cocker Spaniel",
+    "Poodle"
+   ],
+   "image": {
+    "grid": "/breeds/spoodle-12c7c655-grid.webp",
+    "detail": "/breeds/spoodle-12c7c655.webp",
+    "width": 1125,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Lukebudworth",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonard,_a_F1B_cockapoo_at_2_years_and_7_months.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "moodle",
+   "dexNo": "B05",
+   "name": "Moodle",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Maltipoo",
+    "Maltepoo",
+    "Maltese Poodle"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Maltese",
+    "Poodle"
+   ],
+   "image": {
+    "grid": "/breeds/moodle-a9bb5f0d-grid.webp",
+    "detail": "/breeds/moodle-a9bb5f0d.webp",
+    "width": 1200,
+    "height": 1200
+   },
+   "credit": {
+    "author": "Nan4471",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%EB%A7%90%ED%8B%B0%EC%A6%88%EC%99%80_%ED%91%B8%EB%93%A4.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "maltese-x-shih-tzu",
+   "dexNo": "B06",
+   "name": "Maltese x Shih Tzu",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Malshi",
+    "Maltshi",
+    "Mal-Shi",
+    "Shih Tzu x Maltese",
+    "Maltese cross"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Maltese",
+    "Shih Tzu"
+   ],
+   "image": {
+    "grid": "/breeds/maltese-x-shih-tzu-64467f67-grid.webp",
+    "detail": "/breeds/maltese-x-shih-tzu-64467f67.webp",
+    "width": 1200,
+    "height": 1023
+   },
+   "credit": {
+    "author": "W.carter",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dog_at_N%C3%B8rre_Vorup%C3%B8r_Strand.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "schnoodle",
+   "dexNo": "B07",
+   "name": "Schnoodle",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Schnauzer x Poodle"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Schnauzer",
+    "Poodle"
+   ],
+   "image": {
+    "grid": "/breeds/schnoodle-b494646a-grid.webp",
+    "detail": "/breeds/schnoodle-b494646a.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Henryp013",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dog_schnoodle.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bernedoodle",
+   "dexNo": "B08",
+   "name": "Bernedoodle",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Bernese Poodle"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Bernese Mountain Dog",
+    "Poodle"
+   ],
+   "image": {
+    "grid": "/breeds/bernedoodle-9c42cae2-grid.webp",
+    "detail": "/breeds/bernedoodle-9c42cae2.webp",
+    "width": 1125,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Missvain",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Laurent-Perrier_Pop-Up_in_Sonoma_-_Sarah_Stierch_06.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "sheepadoodle",
+   "dexNo": "B09",
+   "name": "Sheepadoodle",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Sheepdoodle"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Old English Sheepdog",
+    "Poodle"
+   ],
+   "image": {
+    "grid": "/breeds/sheepadoodle-9f4bef1b-grid.webp",
+    "detail": "/breeds/sheepadoodle-9f4bef1b.webp",
+    "width": 1125,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Hallereese",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pebbles_the_Sheepadoodle.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bordoodle",
+   "dexNo": "B10",
+   "name": "Bordoodle",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Borderdoodle",
+    "Border Doodle"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Border Collie",
+    "Poodle"
+   ],
+   "image": {
+    "grid": "/breeds/bordoodle-7280de3e-grid.webp",
+    "detail": "/breeds/bordoodle-7280de3e.webp",
+    "width": 1000,
+    "height": 1500
+   },
+   "credit": {
+    "author": "Allboutdogs321",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bordoodle,_Australian.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "aussiedoodle",
+   "dexNo": "B11",
+   "name": "Aussiedoodle",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Aussiepoo",
+    "Aussie Doodle"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Australian Shepherd",
+    "Poodle"
+   ],
+   "image": {
+    "grid": "/breeds/aussiedoodle-dda0ffe1-grid.webp",
+    "detail": "/breeds/aussiedoodle-dda0ffe1.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "F. D. Richards from Clinton, MI",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thor,_2021_(51256377380).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "shih-poo",
+   "dexNo": "B12",
+   "name": "Shih-poo",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Shihpoo",
+    "Shoodle",
+    "Pooshi"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Shih Tzu",
+    "Poodle"
+   ],
+   "image": {
+    "grid": "/breeds/shih-poo-4133ea52-grid.webp",
+    "detail": "/breeds/shih-poo-4133ea52.webp",
+    "width": 1200,
+    "height": 960
+   },
+   "credit": {
+    "author": "Maryland GovPics",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Annapolis_St._Patrick%27s_Day_Parade_(53595594074).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "cavachon",
+   "dexNo": "B13",
+   "name": "Cavachon",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Cav-a-chon"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Cavalier King Charles Spaniel",
+    "Bichon Frise"
+   ],
+   "image": {
+    "grid": "/breeds/cavachon-19ed5dcb-grid.webp",
+    "detail": "/breeds/cavachon-19ed5dcb.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Inkiw at English Wikipedia",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Watson_the_Cavachon.JPG",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "pugalier",
+   "dexNo": "B14",
+   "name": "Pugalier",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Cavapug",
+    "Pug x Cavalier"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Pug",
+    "Cavalier King Charles Spaniel"
+   ],
+   "image": {
+    "grid": "/breeds/pugalier-0765c42d-grid.webp",
+    "detail": "/breeds/pugalier-0765c42d.webp",
+    "width": 497,
+    "height": 502
+   },
+   "credit": {
+    "author": "No machine-readable author provided. Casliber assumed (based on copyright claims).",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pugalier_bunbury2_email.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "puggle",
+   "dexNo": "B15",
+   "name": "Puggle",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Pug x Beagle"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Beagle",
+    "Pug"
+   ],
+   "image": {
+    "grid": "/breeds/puggle-f67c2ccb-grid.webp",
+    "detail": "/breeds/puggle-f67c2ccb.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "FaithlessAngel",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Puggle_Naya_12_Monate_stehend.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "jug",
+   "dexNo": "B16",
+   "name": "Jug",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Jack Russell x Pug",
+    "Pug x Jack Russell"
+   ],
+   "kind": "cross",
+   "parents": [
+    "Jack Russell Terrier",
+    "Pug"
+   ],
+   "image": {
+    "grid": "/breeds/jug-268982c4-grid.webp",
+    "detail": "/breeds/jug-268982c4.webp",
+    "width": 1200,
+    "height": 900
+   },
+   "credit": {
+    "author": "Unknown author (see source page)",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Munna_full_wiki.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "miniature-fox-terrier",
+   "dexNo": "B17",
+   "name": "Miniature Fox Terrier",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Mini Foxie",
+    "Mini Fox Terrier",
+    "Foxie"
+   ],
+   "kind": "breed",
+   "about": "An Australian breed descended from Fox Terriers, kept as a ratter and companion.",
+   "image": {
+    "grid": "/breeds/miniature-fox-terrier-bd6c7208-grid.webp",
+    "detail": "/breeds/miniature-fox-terrier-bd6c7208.webp",
+    "width": 1200,
+    "height": 899
+   },
+   "credit": {
+    "author": "Mruserbox1",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miniature_Fox_Terrier.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "koolie",
+   "dexNo": "B18",
+   "name": "Koolie",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "German Koolie",
+    "Australian Koolie"
+   ],
+   "kind": "breed",
+   "about": "An Australian working sheepdog, often merle, with its own breed club rather than Dogs Australia recognition.",
+   "image": {
+    "grid": "/breeds/koolie-5c5cd506-grid.webp",
+    "detail": "/breeds/koolie-5c5cd506.webp",
+    "width": 714,
+    "height": 750
+   },
+   "credit": {
+    "author": "Koolie",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Merle_Koolie.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "american-bully",
+   "dexNo": "B19",
+   "name": "American Bully",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Bully",
+    "Pocket Bully",
+    "XL Bully"
+   ],
+   "kind": "breed",
+   "about": "A muscular companion breed developed in the US in the 1990s from bull-type terriers.",
+   "image": {
+    "grid": "/breeds/american-bully-d5f5b1b5-grid.webp",
+    "detail": "/breeds/american-bully-d5f5b1b5.webp",
+    "width": 1200,
+    "height": 951
+   },
+   "credit": {
+    "author": "Juan. botti",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:(2x_ch_GRAN_DALI)_BOTTIcelli_.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  },
+  {
+   "id": "bull-arab",
+   "dexNo": "B20",
+   "name": "Bull Arab",
+   "groupId": "bonus",
+   "tier": "unofficial",
+   "forms": [],
+   "aliases": [
+    "Australian Bull Arab"
+   ],
+   "kind": "breed",
+   "about": "An Australian pig-hunting dog developed from bull terrier, pointer and sighthound lines.",
+   "image": {
+    "grid": "/breeds/bull-arab-f1b5cd94-grid.webp",
+    "detail": "/breeds/bull-arab-f1b5cd94.webp",
+    "width": 480,
+    "height": 613
+   },
+   "credit": {
+    "author": "Wa.railfan",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bullarab_named_Wizzer.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
+   }
+  }
+ ]
+}

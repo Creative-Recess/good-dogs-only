@@ -1,0 +1,2471 @@
+{
+  "about": "Chosen Wikimedia Commons photo per dex entry. focus = [x, y] fractions of the photo to centre the square grid crop on. by: who chose it.",
+  "picks": {
+    "affenpinscher": {
+      "file": "File:Affenmonkeyterrier2.jpg",
+      "focus": [
+        0.55,
+        0.53
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "single adult standing, whole body, face visible, plain floor"
+    },
+    "afghan-hound": {
+      "file": "File:AKC Helena Fall Dog Show 2011.jpg",
+      "focus": [
+        0.57,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter, clean background"
+    },
+    "airedale-terrier": {
+      "file": "File:Airedale-terrier-charles14m.jpg",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "classic side stance, whole body, grass"
+    },
+    "akita": {
+      "file": "File:KRAV ADDICT SUNSET ON THE BEACH \"SHELBY\" 1.jpg",
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "American type, black mask, whole dog, no people"
+    },
+    "akita-japanese": {
+      "file": "File:Akita Inu dog.jpg",
+      "focus": [
+        0.54,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "Akita Inu red, whole dog, featured picture; differs from Akita"
+    },
+    "alaskan-malamute": {
+      "file": "File:Alaskan Malamute - panoramio.jpg",
+      "focus": [
+        0.34,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "whole grey-white dog three-quarter, face clear, plume tail"
+    },
+    "american-bully": {
+      "file": "File:(2x ch GRAN DALI) BOTTIcelli .jpg",
+      "focus": [
+        0.55,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "blue tri champion standing three-quarter, sharp"
+    },
+    "american-hairless-terrier": {
+      "file": "File:Aht-sable&white3.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "hairless, whole-body side show stance, no people in frame"
+    },
+    "american-staffordshire-terrier": {
+      "file": "File:(2)American Staffordshire Terrier Mumford.jpg",
+      "focus": [
+        0.58,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "fawn adult side view, whole body, natural ears; harness"
+    },
+    "anatolian-shepherd-dog": {
+      "file": "File:Anatolian Shepherd Dog - Kangal köpeği 01.jpg",
+      "focus": [
+        0.5,
+        0.51
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "Anatolian-labelled; pool identical to Kangal, tile 2 left for Kangal"
+    },
+    "aussiedoodle": {
+      "file": "File:Thor, 2021 (51256377380).jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "grey merle-ish wavy adult, head and forequarters only"
+    },
+    "australasian-bosdog": {
+      "file": null,
+      "by": "claude-review",
+      "confidence": "low",
+      "note": "no candidates found; no sheet generated"
+    },
+    "australian-cattle-dog": {
+      "file": "File:ACD-blue-spud.jpg",
+      "focus": [
+        0.44,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "blue heeler standing three-quarter; tiles 1, 6 are mixes"
+    },
+    "australian-kelpie": {
+      "file": "File:Australian Kelpie chocolate brown.jpg",
+      "focus": [
+        0.62,
+        0.55
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "classic red and tan, whole dog standing, side-on"
+    },
+    "australian-shepherd": {
+      "file": "File:Australian Shepherd red bi.JPG",
+      "focus": [
+        0.4,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "kept: red bi side view; others headshots or distant"
+    },
+    "australian-silky-terrier": {
+      "file": "File:01 Australian Silky Terrier.jpg",
+      "focus": [
+        0.54,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "side stance, whole body, silky coat and prick ears clear"
+    },
+    "australian-stumpy-tail-cattle-dog": {
+      "file": "File:Australian Stumpy Tail Cattle Dog.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side profile, natural"
+    },
+    "australian-terrier": {
+      "file": "File:Australian Terrier 002 U.jpg",
+      "focus": [
+        0.44,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "red Aussie terrier, side view, whole body on grass"
+    },
+    "azawakh": {
+      "file": "File:Bistrita 2015 (22).jpg",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view, square photo"
+    },
+    "basenji": {
+      "file": "File:2008-05-01 a Basenji 03.jpg",
+      "focus": [
+        0.48,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view, curled tail visible"
+    },
+    "basset-fauve-de-bretagne": {
+      "file": "File:Basset Fauve de Bretagne (male).jpg",
+      "focus": [
+        0.45,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view in grass, wiry fawn coat, no people"
+    },
+    "basset-hound": {
+      "file": "File:Basset hound splendide.jpg",
+      "focus": [
+        0.6,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "lying adult, long ears, droopy face, body clear"
+    },
+    "bavarian-mountain-scent-hound": {
+      "file": "File:Baijerinvvk4.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view, plain backdrop"
+    },
+    "beagle": {
+      "file": "File:MiloSmet.JPG",
+      "focus": [
+        0.36,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "classic tricolour standing three-quarter, whole dog, sharp"
+    },
+    "bearded-collie": {
+      "file": "File:Bearded Collie.jpg",
+      "focus": [
+        0.49,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter, natural"
+    },
+    "beauceron-berger-de-beauce": {
+      "file": "File:Owczarek francuski beauceron 009pl.jpg",
+      "focus": [
+        0.56,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "adult side view; busy crowd background"
+    },
+    "bedlington-terrier": {
+      "file": "File:Boutchie apres championnat 004.JPG",
+      "focus": [
+        0.48,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "single adult, whole body, three-quarter, garden"
+    },
+    "belgian-shepherd-dog": {
+      "file": "File:Malinois Obedience Dog Show Ooty May26 A7CR 10734.jpg",
+      "focus": [
+        0.53,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "Malinois trotting side view; tile 3 is a collage"
+    },
+    "bergamasco-shepherd-dog": {
+      "file": "File:Ortensia di Valle Scrivia (cropped).jpg",
+      "focus": [
+        0.53,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "adult with flocks, whole dog, natural"
+    },
+    "berger-picard": {
+      "file": "File:IMG 2209Cheyenne.jpg",
+      "focus": [
+        0.46,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter, fits square; tile 1 also good"
+    },
+    "bernedoodle": {
+      "file": "File:2019 Laurent-Perrier Pop-Up in Sonoma - Sarah Stierch 06.jpg",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "black, tan and white curly adult sitting"
+    },
+    "bernese-mountain-dog": {
+      "file": "File:3-BerneseMountainDogInGrass.jpg",
+      "focus": [
+        0.43,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter on grass, sharp"
+    },
+    "bichon-frise": {
+      "file": "File:Bichon Frisé - studdogbichon.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "classic groomed Bichon, whole body, three-quarter view"
+    },
+    "biewer-terrier": {
+      "file": "File:BiewerHündin.jpg",
+      "focus": [
+        0.54,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "tricolour Biewer sitting, whole dog, clean studio background"
+    },
+    "black-and-tan-coonhound": {
+      "file": "File:Black And Tan Coonhound.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter, natural setting"
+    },
+    "bloodhound": {
+      "file": "File:Bloodhound Erland22.jpg",
+      "focus": [
+        0.62,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "single adult, whole body side view in snow"
+    },
+    "bluetick-coonhound": {
+      "file": "File:BluetickCoonhoundDog.jpg",
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter, clear ticking; tile 1 is head only"
+    },
+    "bolognese": {
+      "file": "File:Male adult bolognese dog (cropped).jpg",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "single adult on grass, whole body, three-quarter"
+    },
+    "border-collie": {
+      "file": "File:Border Collie at beach.jpg",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "standing three-quarter, classic black and white, clean background"
+    },
+    "border-terrier": {
+      "file": "File:1 Border Terrier.jpg",
+      "focus": [
+        0.37,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog lying, otter head clear, dark studio"
+    },
+    "bordoodle": {
+      "file": "File:Bordoodle, Australian.jpg",
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "adult sitting, studio shot, whole body"
+    },
+    "borzoi": {
+      "file": "File:Chart rosyjski borzoj rybnik-kamien pl.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "single adult, whole body side view, natural setting"
+    },
+    "boston-terrier": {
+      "file": "File:BOSTON TERRIER, Vingårdens Essi von Richards (23995273800).2.jpg",
+      "focus": [
+        0.51,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "textbook black-white, face visible; lower res"
+    },
+    "bouvier-des-flandres": {
+      "file": "File:Bouvier des Flandres036.JPG",
+      "focus": [
+        0.48,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "black, whole dog side view on grass, clean background"
+    },
+    "boxer": {
+      "file": "File:Male fawn Boxer undocked.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "fawn side stack, natural ears and tail, clean"
+    },
+    "bracco-italiano": {
+      "file": "File:BIR Grupp 7- BRACCO ITALIANO, Nuits Di Montemassi (23866391829).jpg",
+      "focus": [
+        0.48,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "show side view, whole dog, clean backdrop"
+    },
+    "briard": {
+      "file": "File:Briard fauve.JPG",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view, natural"
+    },
+    "british-bulldog": {
+      "file": "File:Racibórz 2007 082.jpg",
+      "focus": [
+        0.55,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "red and white adult standing three-quarter view"
+    },
+    "brittany": {
+      "file": "File:American Brittany standing.jpg",
+      "focus": [
+        0.54,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog standing three-quarter, sharp"
+    },
+    "bull-arab": {
+      "file": "File:Bullarab named Wizzer.jpg",
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "best match but low-res; others have pig or two dogs"
+    },
+    "bull-terrier": {
+      "file": "File:Bullterier 089 LM.jpg",
+      "focus": [
+        0.49,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "white, whole body, egg head profile; legs behind"
+    },
+    "bull-terrier-miniature": {
+      "file": "File:Champion Miniature Bull Terrier1.jpg",
+      "focus": [
+        0.49,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "brindle and white, side view, whole body"
+    },
+    "bullmastiff": {
+      "file": "File:Bullmastiff edited.JPG",
+      "focus": [
+        0.53,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole fawn dog side stack outdoors"
+    },
+    "cairn-terrier": {
+      "file": "File:Cairn Terrier - 001.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "single adult, whole-body side stance, plain studio backdrop"
+    },
+    "canaan-dog": {
+      "file": "File:Canaandogfawn.jpg",
+      "focus": [
+        0.42,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "sandy show dog, clear side profile"
+    },
+    "canadian-eskimo-dog": {
+      "file": "File:Kanadaneskimo1.jpg",
+      "focus": [
+        0.49,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "whole dog side stack; handler legs behind"
+    },
+    "cane-corso": {
+      "file": "File:Anita Cane Corso Italiano allevato in Italia.jpg",
+      "focus": [
+        0.44,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "black side view, natural ears, whole dog"
+    },
+    "caucasian-shepherd-dog": {
+      "file": "File:Owczarek kaukaski 65556.jpg",
+      "focus": [
+        0.45,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole adult three-quarter, typical heavy grey coat"
+    },
+    "cavachon": {
+      "file": "File:Watson the Cavachon.JPG",
+      "focus": [
+        0.48,
+        0.55
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "white with tan ears sitting, whole body; flash eyeshine"
+    },
+    "cavalier-king-charles-spaniel": {
+      "file": "File:Dog In The Grass.jpg",
+      "focus": [
+        0.55,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "classic Blenheim, face clear but lying; ruby tiles may be cavapoos"
+    },
+    "cavoodle": {
+      "file": "File:Cavapoo male (90675).jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "apricot wavy cavapoo walking, whole body, quality image"
+    },
+    "central-asian-shepherd-dog": {
+      "file": "File:2.CAO in Hungary.jpg",
+      "focus": [
+        0.49,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "white adult side view, face to camera, whole dog"
+    },
+    "cesky-terrier": {
+      "file": "File:Terier czeski suka 2009 pl2.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "groomed grey Cesky, whole body, three-quarter"
+    },
+    "chesapeake-bay-retriever": {
+      "file": "File:Chesapeake Bay Retriever1.jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog in grass, wavy coat visible"
+    },
+    "chihuahua-long-coat": {
+      "file": "File:Chihuahua long-haired black & tan.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "long coat black and tan standing, whole dog; slightly soft"
+    },
+    "chihuahua-smooth-coat": {
+      "file": "File:Chihuahua sitting.jpg",
+      "focus": [
+        0.5,
+        0.47
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "smooth coat sitting, whole dog, three-quarter, clean background"
+    },
+    "chinese-crested-dog": {
+      "file": "File:IndyStands.jpg",
+      "focus": [
+        0.53,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "hairless variety, side view, whole body on grass"
+    },
+    "chow-chow": {
+      "file": "File:01 Chow Chow.jpg",
+      "focus": [
+        0.5,
+        0.46
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "red chow standing, face and coat clear"
+    },
+    "cirneco-dell-etna": {
+      "file": "File:Cirneco dell Etna 611.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "classic side profile, whole dog; handler kneeling behind"
+    },
+    "clumber-spaniel": {
+      "file": "File:Clumber spaniel rybnik kamien pppl.jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter, fits square crop"
+    },
+    "cocker-spaniel": {
+      "file": "File:Cocker spaniel called Tony.jpg",
+      "focus": [
+        0.5,
+        0.39
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "English type, sitting whole dog, sharp"
+    },
+    "cocker-spaniel-american": {
+      "file": "File:Parti-Color Cocker Spaniel-16-GCH-Gems Hot Little Liar CGC 02 (16583592611).jpg",
+      "focus": [
+        0.45,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "parti-colour champion, side profile shows coat and head"
+    },
+    "collie-rough": {
+      "file": "File:Rough-Collie-japan08 (cropped).jpg",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "sable rough collie, whole dog side view"
+    },
+    "collie-smooth": {
+      "file": "File:Skcollie-soopeli1.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "sable smooth side view; handler hand at neck"
+    },
+    "coton-de-tulear": {
+      "file": "File:Coton de Tulear 193.jpg",
+      "focus": [
+        0.68,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "adult cotton coat, whole dog on grass; face partly hidden"
+    },
+    "curly-coated-retriever": {
+      "file": "File:Curly coated retriever6.jpg",
+      "focus": [
+        0.43,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog standing, curls clear"
+    },
+    "dachshund": {
+      "file": "File:Gögglbach SAD -004.JPG",
+      "focus": [
+        0.49,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "adult standard wire, whole body three-quarter"
+    },
+    "dalmatian": {
+      "file": "File:Daisy the Dalmatian.jpg",
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "single adult sitting, clear spots, clean park"
+    },
+    "dandie-dinmont-terrier": {
+      "file": "File:Dandie Dinmont Terrier - GCH King's Mtn. Angelina Ballerina (15982121364).jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "side view shows long body and topknot; busy show background"
+    },
+    "deerhound": {
+      "file": "File:Karrie.JPG",
+      "focus": [
+        0.48,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view, natural, sharp"
+    },
+    "dobermann": {
+      "file": "File:HiramvonNemesis2.jpg",
+      "focus": [
+        0.48,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "natural ears and tail as in Australia; brown not black-tan"
+    },
+    "dogue-de-bordeaux": {
+      "file": "File:DJT 0086.jpg",
+      "focus": [
+        0.525,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "side stack on beach, clean; tail cropped in square"
+    },
+    "dutch-shepherd-dog": {
+      "file": "File:Luna-orig-modified.Feb 2019.DSC 4339-SharpenAI-Softness.jpg",
+      "focus": [
+        0.44,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "brindle side profile, natural"
+    },
+    "english-setter": {
+      "file": "File:English Setter in Tallinn 2.JPG",
+      "focus": [
+        0.46,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog show stack, handler behind"
+    },
+    "english-springer-spaniel": {
+      "file": "File:English Springer Spaniel in Tallinn.JPG",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "typical show stance, whole dog; handler legs behind"
+    },
+    "english-toy-terrier-black-and-tan": {
+      "file": "File:ENGLISH TOY TERRIER, NO JV-14 NO UCH X-Pected Dine Mites X-Factor (23995274170).jpg",
+      "focus": [
+        0.54,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "side profile, whole body, candle-flame ears; faint backdrop logos"
+    },
+    "estrela-mountain-dog": {
+      "file": "File:Estrela Mountain Dog (20843800936).jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "long-coat fawn with mask, sitting side view, clean"
+    },
+    "eurasier": {
+      "file": "File:Eurasier wolfsgrau.jpg",
+      "focus": [
+        0.66,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "wolf-grey adult standing three-quarter, forest"
+    },
+    "field-spaniel": {
+      "file": "File:Field spaniel 581.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "liver, whole dog three-quarter, near-square"
+    },
+    "finnish-lapphund": {
+      "file": "File:Finnish Lapphund Glenchess Revontuli.jpg",
+      "focus": [
+        0.48,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "kept: typical colours, whole dog; others busier or less typical"
+    },
+    "finnish-spitz": {
+      "file": "File:Finnish Spitz 600.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter, curled tail; only 600px"
+    },
+    "flat-coated-retriever": {
+      "file": "File:Flat Coated Retriever.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "liver flatcoat, whole dog, clear; tile 5 is yellow"
+    },
+    "fox-terrier-smooth": {
+      "file": "File:Fox terrier smooth in action.jpg",
+      "focus": [
+        0.5,
+        0.52
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "only clear smooth coat without sweater; front view walking"
+    },
+    "fox-terrier-wire": {
+      "file": "File:01 Wire Fox terrier.jpg",
+      "focus": [
+        0.44,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "classic wire coat, side stance, whole body"
+    },
+    "foxhound": {
+      "file": "File:Englanninkettu1.jpg",
+      "focus": [
+        0.48,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "English type show stack, whole dog; handler behind"
+    },
+    "french-bulldog": {
+      "file": "File:Französische Bulldogge in Paris-20060505-RM-100032.jpg",
+      "focus": [
+        0.46,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "pied adult sitting, bat ears clear"
+    },
+    "german-hunting-terrier": {
+      "file": "File:Grupp 3, TYSK JAKTTERRIER, Stollfors Larionov (23942381219).jpg",
+      "focus": [
+        0.54,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "typical black-and-tan, side show stance, sharp; rosettes and backdrop logos"
+    },
+    "german-pinscher": {
+      "file": "File:German Pinscher.JPG",
+      "focus": [
+        0.54,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "black and tan, whole-body side profile, no people"
+    },
+    "german-shepherd-dog": {
+      "file": "File:20110425 German Shepherd Dog 8505.jpg",
+      "focus": [
+        0.58,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "kept: lying but clear; standing options blurred or cluttered"
+    },
+    "german-shepherd-dog-long-stock-coat": {
+      "file": "File:Long-haired German shepherd dog.jpg",
+      "focus": [
+        0.42,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "long coat clear, whole dog standing three-quarter"
+    },
+    "german-shorthaired-pointer": {
+      "file": "File:Курцхаар.jpg",
+      "focus": [
+        0.57,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "typical liver ticked coat, whole side view; head down"
+    },
+    "german-spitz": {
+      "file": "File:Mittelspitz 1 year (3).jpg",
+      "focus": [
+        0.48,
+        0.62
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "whole Mittelspitz standing, a bit small in frame"
+    },
+    "german-wirehaired-pointer": {
+      "file": "File:German Wirehaired Pointer.JPG",
+      "focus": [
+        0.54,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view, no people; tile 1 greyscale"
+    },
+    "glen-of-imaal-terrier": {
+      "file": "File:Blue Brindle Adult Glen of Imaal Terrier.jpg",
+      "focus": [
+        0.35,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "blue brindle adult, side view, whole body"
+    },
+    "golden-retriever": {
+      "file": "File:A Golden Retriever-9 (Barras).JPG",
+      "focus": [
+        0.53,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "whole adult lying, head up, clear on green grass"
+    },
+    "gordon-setter": {
+      "file": "File:Orrvilas enska w800px.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter, clear colours"
+    },
+    "grand-basset-griffon-vendeen": {
+      "file": "File:Grand Basset Griffon Vendéen in Tallinn 6.JPG",
+      "focus": [
+        0.56,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view; handler holds tail"
+    },
+    "great-dane": {
+      "file": "File:Dog niemiecki żółty LM980.jpg",
+      "focus": [
+        0.48,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "fawn adult standing side view, whole body, sharp"
+    },
+    "great-swiss-mountain-dog": {
+      "file": "File:Swissy.JPG",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "tricolour side view, no people; tail tip may crop"
+    },
+    "greyhound": {
+      "file": "File:GraceTheGreyhound.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog standing on grass, no jacket or people"
+    },
+    "griffon-bruxellois": {
+      "file": "File:Brussels Griffon Rembrant.png",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "red rough coat, face and beard clear, whole dog; older scan"
+    },
+    "groodle": {
+      "file": "File:Golden Doodle Standing (HD).jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "golden wavy doodle standing three-quarter, whole body; youngish"
+    },
+    "hamiltonstovare": {
+      "file": "File:Hamiltoninajokoira3.jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "kept: clean side stack; tiles 2-3 same dog, less side-on"
+    },
+    "harrier": {
+      "file": "File:Harrier tricolour.jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "kept: whole tricolour dog; larger options cluttered, wide or legs hidden"
+    },
+    "havanese": {
+      "file": "File:A havanese dog.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "white curly Havanese standing, whole body three-quarter"
+    },
+    "hungarian-vizsla": {
+      "file": "File:Wyżeł węgierski gładkowłosy 500.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view, people legs behind"
+    },
+    "hungarian-wirehaired-vizsla": {
+      "file": "File:Drótosvizsla vadat áll.jpg",
+      "focus": [
+        0.46,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter, natural, clear"
+    },
+    "ibizan-hound": {
+      "file": "File:Podenco z ibizy 645.jpg",
+      "focus": [
+        0.51,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "classic smooth red-and-white side profile; 800px"
+    },
+    "icelandic-sheepdog": {
+      "file": "File:Icelandicsheepdog-longhair1.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter, face, curled tail; handler leg edge"
+    },
+    "irish-red-and-white-setter": {
+      "file": "File:Rzeszów Irish Red and White Setter 3pl.jpg",
+      "focus": [
+        0.44,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view, clear markings"
+    },
+    "irish-setter": {
+      "file": "File:Can Setter dog GFDL.jpg",
+      "focus": [
+        0.51,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter, excellent"
+    },
+    "irish-terrier": {
+      "file": "File:IrishTerrierSydenhamHillWoods.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog standing, red wiry coat; wears harness"
+    },
+    "irish-water-spaniel": {
+      "file": "File:Ierse Water Spaniel.jpg",
+      "focus": [
+        0.53,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view in grass"
+    },
+    "irish-wolfhound": {
+      "file": "File:Irish wolfhound giaccomo.JPG",
+      "focus": [
+        0.45,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view, natural"
+    },
+    "italian-greyhound": {
+      "file": "File:Italian Greyhound standing gray (cropped).jpg",
+      "focus": [
+        0.5,
+        0.48
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole body standing on grass, clear"
+    },
+    "italian-spinone": {
+      "file": "File:Italianspino2.jpg",
+      "focus": [
+        0.51,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "orange roan side view; tile 2 not a Spinone"
+    },
+    "jack-russell-terrier": {
+      "file": "File:Jack Russell Terrier 1.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog standing on grass, three-quarter"
+    },
+    "japanese-chin": {
+      "file": "File:Chin posing.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "black and white adult, whole body, three-quarter"
+    },
+    "japanese-spitz": {
+      "file": "File:Spitz japones.jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "single white spitz standing three-quarter on rocks, whole body"
+    },
+    "jug": {
+      "file": "File:Munna full wiki.jpg",
+      "focus": [
+        0.43,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "standing side view, plain background, pug mask visible"
+    },
+    "kangal-shepherd-dog": {
+      "file": "File:Kangal front on.jpg",
+      "focus": [
+        0.56,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "classic dun with black mask, whole dog, no people"
+    },
+    "karelian-bear-dog": {
+      "file": "File:Karelski pies na niedźwiedzie sylwetka.JPG",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "black and white adult standing side view on grass"
+    },
+    "keeshond": {
+      "file": "File:Keeshond Majic standing cropped.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "true keeshond standing, whole body; tiles 3-8 are Mittelspitz"
+    },
+    "kerry-blue-terrier": {
+      "file": "File:Kerry blue terrier 062009.JPG",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "blue coat, side view, whole body, no handler"
+    },
+    "king-charles-spaniel": {
+      "file": "File:King Charles Spaniel 200.jpg",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "only true KCS; short face, black and tan, head raised"
+    },
+    "komondor": {
+      "file": "File:Komondor Westminster Dog Show crop.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "corded adult, whole dog"
+    },
+    "koolie": {
+      "file": "File:Black Merle Koolie.jpg",
+      "focus": [
+        0.5,
+        0.476
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "merle koolie standing three-quarter; small watermark cropped"
+    },
+    "kuvasz": {
+      "file": "File:KUVASZ, FI UCH NO UCH SV UCH WW-14 Czaruso Brian Little (24290879035).jpg",
+      "focus": [
+        0.49,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view; sponsor backdrop"
+    },
+    "labradoodle": {
+      "file": "File:Labradoodle-Brown-Male-SideFace.jpg",
+      "focus": [
+        0.58,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "chocolate labradoodle standing side view, whole body"
+    },
+    "labrador-retriever": {
+      "file": "File:Labrador Retriever - Yellow.JPG",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "yellow lab sitting, whole dog, clear"
+    },
+    "lagotto-romagnolo": {
+      "file": "File:Bellalagotto4.jpg",
+      "focus": [
+        0.44,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "typical curly coat, whole dog side view"
+    },
+    "lakeland-terrier": {
+      "file": "File:Grupp 3, LAKELANDTERRIER, JEUW-15 Big Lady’s Micro-Nikita (23681983414).jpg",
+      "focus": [
+        0.56,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "wheaten, clean side show stance; faint backdrop logos"
+    },
+    "landseer-european-continental-type": {
+      "file": "File:Pandas des terres rouges.jpg",
+      "focus": [
+        0.5,
+        0.53
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "leggy ECT type, standing front view, clean background"
+    },
+    "large-munsterlander": {
+      "file": "File:Largemunsterlandervorsteh1.jpg",
+      "focus": [
+        0.48,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "black-white, whole dog; tile 2 wrong colour"
+    },
+    "leonberger": {
+      "file": "File:Leonberger 2021 02.jpg",
+      "focus": [
+        0.4,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "masked adult trotting side view, sharp; handler leg edge"
+    },
+    "lhasa-apso": {
+      "file": "File:Grupp 9, LHASA APSO, DK JV-13 DK V-14 DK V-15 NO UCH NO V-15 SE UCH Chic Choix Some Like It Chic (24014621720).jpg",
+      "focus": [
+        0.66,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "full show coat side view; crop excludes rosettes"
+    },
+    "lowchen-little-lion-dog": {
+      "file": "File:Little lion Koira 2013.JPG",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "gold lion clip, side stance, head up; handler behind"
+    },
+    "maltese": {
+      "file": "File:Maltese 600.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "classic long white show coat, whole dog; only 600px"
+    },
+    "maltese-x-shih-tzu": {
+      "file": "File:Dog at Nørre Vorupør Strand.jpg",
+      "focus": [
+        0.55,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "plausible mal-shi sitting; most others are Dorgis"
+    },
+    "manchester-terrier": {
+      "file": "File:Manchester terrier Koira 2013.JPG",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog standing three-quarter, plain blue floor, sharp"
+    },
+    "maremma-sheepdog": {
+      "file": "File:Pastore Maremmano-Abruzzese, young dog (cropped).jpg",
+      "focus": [
+        0.53,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter, natural; young but grown"
+    },
+    "mastiff": {
+      "file": "File:English Mastiff fawn male 4.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "fawn with black mask, show stance, handler behind"
+    },
+    "miniature-american-shepherd": {
+      "file": "File:Miniature American Shepherd red merle.jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "red merle, whole dog side profile, sharp"
+    },
+    "miniature-fox-terrier": {
+      "file": "File:Miniature Fox Terrier.jpg",
+      "focus": [
+        0.49,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "white and tan, upright ears, sitting on lawn"
+    },
+    "miniature-pinscher": {
+      "file": "File:Zwergpinscher.Denzo-vom-Reichsgraf-zu-Herrenheim 1500X1500.jpg",
+      "focus": [
+        0.55,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "black and tan, side view, whole body, natural setting"
+    },
+    "moodle": {
+      "file": "File:말티즈와 푸들.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "adult curly maltipoo lying; very poodle-like; 6 puppy, others jacketed"
+    },
+    "mudi": {
+      "file": "File:Mudibrown1.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "same dog as before, head level, ears pricked"
+    },
+    "murray-river-retriever": {
+      "file": "File:Murray River Curly Coated Retriever, Stella.jpg",
+      "focus": [
+        0.45,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "low",
+      "note": "leaping shot; only single-dog colour option"
+    },
+    "neapolitan-mastiff": {
+      "file": "File:Mastino napoletano 67576.jpg",
+      "focus": [
+        0.5,
+        0.44
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "very typical wrinkled head, lying front view"
+    },
+    "newfoundland": {
+      "file": "File:Newfoundland dog Smoky.jpg",
+      "focus": [
+        0.5,
+        0.44
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "black adult sitting, clear coat and head"
+    },
+    "norfolk-terrier": {
+      "file": "File:Picture of Norfolk Terrier.jpg",
+      "focus": [
+        0.5,
+        0.6
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole adult sitting on grass, drop ears clear"
+    },
+    "norwegian-buhund": {
+      "file": "File:Norwegian Buhund 600.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter, curled tail; only 600px"
+    },
+    "norwegian-elkhound": {
+      "file": "File:Norwegian Elkhound 1.jpg",
+      "focus": [
+        0.58,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter, curled tail, sharp"
+    },
+    "norwich-terrier": {
+      "file": "File:Norwich Terrier 2.jpg",
+      "focus": [
+        0.54,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "prick ears, whole dog on grass, small in frame"
+    },
+    "nova-scotia-duck-tolling-retriever": {
+      "file": "File:Viljo koirarannalla 16.jpg",
+      "focus": [
+        0.62,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "side view running in water, markings visible"
+    },
+    "old-english-sheepdog": {
+      "file": "File:Old English Sheepdog (side).jpg",
+      "focus": [
+        0.45,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view, classic grey and white; rear cropped"
+    },
+    "otterhound": {
+      "file": "File:Otter-liver&tan4.jpg",
+      "focus": [
+        0.48,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "kept: whole dog side view; alternatives handler-held or two dogs"
+    },
+    "papillon": {
+      "file": "File:Outdoor Continental Toy Spaniel Papillon.jpeg",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole body, butterfly ears clear, grass"
+    },
+    "parson-russell-terrier": {
+      "file": "File:05052842 PRT braun glatt.jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "smooth coat, whole dog side stance, clear"
+    },
+    "pekingese": {
+      "file": "File:1AKC Pekingese Dog Show 2011.jpg",
+      "focus": [
+        0.43,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "classic coated Peke on table, face and coat clear"
+    },
+    "peruvian-hairless-dog-large": {
+      "file": "File:Chien du pérou variété nue.jpg",
+      "focus": [
+        0.54,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "described as large size; copper, standing side view"
+    },
+    "peruvian-hairless-dog-medium": {
+      "file": "File:11-Peruvian Hairless Dog-nX-10.jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "low",
+      "note": "correct breed, lying side view; size variety unverifiable"
+    },
+    "peruvian-hairless-dog-small": {
+      "file": "File:Chien peruvien.jpg",
+      "focus": [
+        0.5,
+        0.53
+      ],
+      "by": "claude-review",
+      "confidence": "low",
+      "note": "correct breed, sitting with crest; size variety unverifiable"
+    },
+    "petit-basset-griffon-vendeen": {
+      "file": "File:Petit Basset Griffon Vendéen.jpg",
+      "focus": [
+        0.49,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter in snow; snowy muzzle"
+    },
+    "pharaoh-hound": {
+      "file": "File:Pies faraona e34.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side profile, natural"
+    },
+    "pointer": {
+      "file": "File:English Pointer in Riga 2.JPG",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "orange-white side show stance; busy background, people legs"
+    },
+    "polish-lowland-sheepdog": {
+      "file": "File:Storalvens Dione.JPG",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view, typical coat, natural background"
+    },
+    "pomeranian": {
+      "file": "File:The Spirit of Tengri, 1 день, собака (1).jpg",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "orange Pom standing, plumed tail clear; face in profile, legs behind"
+    },
+    "poodle-miniature": {
+      "file": "File:BELLA ON COUCH (43000573050).jpg",
+      "focus": [
+        0.5,
+        0.38
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "silver mini poodle standing, clear face; rear off frame"
+    },
+    "poodle-standard": {
+      "file": "File:Standard Poodle cream standing.jpg",
+      "focus": [
+        0.6,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "white standard standing three-quarter, whole body, sharp"
+    },
+    "poodle-toy": {
+      "file": "File:2021-03-11 21.55.24 poodle ggomi.jpg",
+      "focus": [
+        0.56,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "lying on cushion, face clear; others in clothes or crowded"
+    },
+    "porcelaine": {
+      "file": "File:Porcelaine Hound.jpg",
+      "focus": [
+        0.54,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "only single-dog tile; whole body side view"
+    },
+    "portuguese-podengo": {
+      "file": "File:Portuguese Podengo Pequeno Smooth Coat .jpg",
+      "focus": [
+        0.49,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "small smooth, clean side profile on white"
+    },
+    "portuguese-water-dog": {
+      "file": "File:Cão de agua Português 2.jpg",
+      "focus": [
+        0.485,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "curly black side view; low res, handler behind"
+    },
+    "prague-ratter": {
+      "file": "File:Prague Ratter.jpg",
+      "focus": [
+        0.53,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "black and tan, whole body, three-quarter, clear"
+    },
+    "pug": {
+      "file": "File:2.5-year-old fawn male pug.jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "fawn adult, whole body, three-quarter on grass"
+    },
+    "pugalier": {
+      "file": "File:Pugalier bunbury2 email.jpg",
+      "focus": [
+        0.7,
+        0.45
+      ],
+      "by": "claude-review",
+      "confidence": "low",
+      "note": "only option: low-res, head halter, children's hands"
+    },
+    "puggle": {
+      "file": "File:Puggle Naya 12 Monate stehend.jpg",
+      "focus": [
+        0.53,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "adult standing side view, whole body, harness"
+    },
+    "puli": {
+      "file": "File:PuliDog.jpg",
+      "focus": [
+        0.55,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "single corded adult, whole dog, plain background"
+    },
+    "pumi": {
+      "file": "File:Pumi 2.jpg",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "grey side view, face and tipped ears clear; tail hidden"
+    },
+    "pyrenean-mastiff": {
+      "file": "File:Pirenej.JPG",
+      "focus": [
+        0.465,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "white with black patches, whole dog, no people"
+    },
+    "pyrenean-mountain-dog": {
+      "file": "File:Great Pyrenees Mountain Dog 2.png",
+      "focus": [
+        0.505,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "white adult side view in forest, sharp"
+    },
+    "pyrenean-sheepdog-longhaired": {
+      "file": "File:Berger des Pyrénées Ilja vom Lechnix.jpg",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "long-haired type, whole dog on grass; tiles 5-9 smooth-faced"
+    },
+    "rabbit-dachshund": {
+      "file": "File:Jamnik króliczy b777.jpg",
+      "focus": [
+        0.67,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "smooth, natural side view; long body exceeds square"
+    },
+    "rhodesian-ridgeback": {
+      "file": "File:Rhodesian Ridgeback (6 years).jpg",
+      "focus": [
+        0.57,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side profile, clean background"
+    },
+    "rottweiler": {
+      "file": "File:Rottweilerhündin Ziva (DSC6787) 1.jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "typical markings, sitting front; dog smallish in frame"
+    },
+    "russian-black-terrier": {
+      "file": "File:Wystawa Rybnik 02.10.2011 czarny terier rosyjski 2pl.jpg",
+      "focus": [
+        0.42,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "show stance side view, head up; handler behind"
+    },
+    "russian-toy-long-haired": {
+      "file": "File:A long-haired Russkiy Toy.jpg",
+      "focus": [
+        0.5,
+        0.43
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "long-haired, fringed ears clear, whole dog sitting"
+    },
+    "russian-toy-smooth-haired": {
+      "file": "File:Venajantoylkfawn.jpg",
+      "focus": [
+        0.48,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "smooth fawn, side view whole body, plain background"
+    },
+    "saluki": {
+      "file": "File:Red Smooth Saluki.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog trotting side view; smooth variety"
+    },
+    "samoyed": {
+      "file": "File:Samoyed dog two year old female dllu.jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "single adult standing, featured picture; flag false"
+    },
+    "schipperke": {
+      "file": "File:Schipperkehpg002.jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "standing side view on grass, whole body, bright"
+    },
+    "schnauzer": {
+      "file": "File:Docked Pepper & Salt Standard Schnauzer American Champion.jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "pepper-salt show stance; docked tail, handler behind"
+    },
+    "schnauzer-giant": {
+      "file": "File:Stablemaster's NORTHERN HOPE(Poznan2006).jpg",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "typical groomed black giant; low res, banner, handler"
+    },
+    "schnauzer-miniature": {
+      "file": "File:Питомник \"Ассон Ари\" Цвергшнауцеры белые и черные с серебром 12.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "black-silver, crisp side profile, natural tail"
+    },
+    "schnoodle": {
+      "file": "File:Dog schnoodle.jpg",
+      "focus": [
+        0.53,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "wavy grey schnoodle standing in snow, whole body"
+    },
+    "scottish-terrier": {
+      "file": "File:Scotish terrier burleska 2005.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "lying but ears, beard, body clear; only 700px"
+    },
+    "sealyham-terrier": {
+      "file": "File:SealyhamTerrier01.jpg",
+      "focus": [
+        0.43,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "clean side profile, whole dog"
+    },
+    "shar-pei": {
+      "file": "File:Gorda - 100.jpg",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "fawn adult standing three-quarter, wrinkles visible"
+    },
+    "sheepadoodle": {
+      "file": "File:Pebbles the Sheepadoodle.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "young dog (all real options young); rest are Dorgis"
+    },
+    "shetland-sheepdog": {
+      "file": "File:Międzynarowa Wystawa Psów Rasowych w Poznaniu 2018 - 34.jpg",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "whole sable dog frontal at show; no clean side view"
+    },
+    "shiba-inu": {
+      "file": "File:Taka Shiba.jpg",
+      "focus": [
+        0.53,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "red shiba, whole-body side view, curled tail"
+    },
+    "shih-poo": {
+      "file": "File:Annapolis St. Patrick's Day Parade (53595594074).jpg",
+      "focus": [
+        0.53,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "grey curly adult standing side view, whole body"
+    },
+    "shih-tzu": {
+      "file": "File:Shih Tzu Reference -12.jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "single long-coated adult standing three-quarter, face visible"
+    },
+    "shikoku": {
+      "file": "File:Shikokunkoira1.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "sesame coat side view, handler out of frame"
+    },
+    "siberian-husky": {
+      "file": "File:Lol A Domesticated Siberian Husky Louisiana.jpg",
+      "focus": [
+        0.5,
+        0.62
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "classic black and white, blue eyes, whole dog standing"
+    },
+    "skye-terrier": {
+      "file": "File:Skye terrier 800.jpg",
+      "focus": [
+        0.42,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "only live dog; others are Greyfriars Bobby statues"
+    },
+    "sloughi": {
+      "file": "File:Djebel Mahanajim rotsandfarbener Sloughi Rüde.JPG",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "sandy black-masked, whole dog three-quarter, natural"
+    },
+    "soft-coated-wheaten-terrier": {
+      "file": "File:Soft Coated Wheaten Terrier 600.jpg",
+      "focus": [
+        0.5,
+        0.47
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "only true wheaten, whole dog show stance; low-res, handler behind"
+    },
+    "spanish-mastiff": {
+      "file": "File:Mastif hiszpański 7512.jpg",
+      "focus": [
+        0.41,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "brindle adult side view, loose skin; handler legs"
+    },
+    "spanish-water-dog": {
+      "file": "File:Perro de Agua Español in Tallinn.JPG",
+      "focus": [
+        0.49,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view, handler legs behind"
+    },
+    "spoodle": {
+      "file": "File:Leonard, a F1B cockapoo at 2 years and 7 months.jpg",
+      "focus": [
+        0.55,
+        0.53
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "F1B cockapoo adult sitting, whole body, harness"
+    },
+    "st-bernard": {
+      "file": "File:Rey nieve.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter in snow, fits square"
+    },
+    "staffordshire-bull-terrier": {
+      "file": "File:Staffie.jpg",
+      "focus": [
+        0.5,
+        0.39
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "red staffy, front three-quarter, very clear"
+    },
+    "sussex-spaniel": {
+      "file": "File:Sussexinspa2.jpg",
+      "focus": [
+        0.43,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "side show stance, head raised; handler behind, crop trims tail"
+    },
+    "swedish-lapphund": {
+      "file": "File:SwedishLapp1.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole black dog side view, grass, fits square"
+    },
+    "swedish-vallhund": {
+      "file": "File:Västgötaspets hane 5 år.jpg",
+      "focus": [
+        0.435,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "typical low-set grey sable, whole dog, face clear"
+    },
+    "tatra-shepherd-dog": {
+      "file": "File:Polski Owczarek Podhalański 30.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "white side stack outdoors; handler hand only"
+    },
+    "tenterfield-terrier": {
+      "file": "File:Rosie the Champion Tenterfield Terrier.jpg",
+      "focus": [
+        0.47,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view, clean background"
+    },
+    "tibetan-mastiff": {
+      "file": "File:Mongolianbankhar3.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "black and tan, mane, plumed tail; handler kneeling"
+    },
+    "tibetan-spaniel": {
+      "file": "File:Melfjorden 20060824 DSCN1985.jpg",
+      "focus": [
+        0.51,
+        0.46
+      ],
+      "by": "claude-review",
+      "confidence": "low",
+      "note": "gold sable whole dog sitting; top-down, small in busy frame"
+    },
+    "tibetan-terrier": {
+      "file": "File:Tibet Terrier Bennie (cropped).jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "full coat standing in snow, whole body"
+    },
+    "tornjak": {
+      "file": "File:TornjakPL2.jpg",
+      "focus": [
+        0.46,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole-body side view in field, no people"
+    },
+    "weimaraner": {
+      "file": "File:Weimaraner Freika-2.jpg",
+      "focus": [
+        0.5,
+        0.54
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog three-quarter, sharp, natural"
+    },
+    "weimaraner-longhair": {
+      "file": "File:Langhaarweimaraner Borne.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "longhair whole dog in snow; tile 4 wrong colour"
+    },
+    "welsh-corgi-cardigan": {
+      "file": "File:Welsh Corgi Cardigan Dog Rocks.jpg",
+      "focus": [
+        0.58,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "brindle and white, whole dog incl. long tail"
+    },
+    "welsh-corgi-pembroke": {
+      "file": "File:Welsh Pembroke Corgi.jpg",
+      "focus": [
+        0.51,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole red and white dog three-quarter, face clear"
+    },
+    "welsh-springer-spaniel": {
+      "file": "File:Welsh Springer Spaniel 1.jpg",
+      "focus": [
+        0.48,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "red-white whole dog side view, no people"
+    },
+    "welsh-terrier": {
+      "file": "File:Wystawa psów Rybnik terier walijski 04.10.2009 pl.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "three-quarter whole dog, square-friendly framing"
+    },
+    "west-highland-white-terrier": {
+      "file": "File:West Highland White Terrier Krakow.jpg",
+      "focus": [
+        0.48,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog standing, three-quarter, clear"
+    },
+    "whippet": {
+      "file": "File:Whippet 2018 6.jpg",
+      "focus": [
+        0.46,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "brindle show stance side view; handler legs behind"
+    },
+    "white-swiss-shepherd-dog": {
+      "file": "File:White Swiss Shepherd Dog Djinn (cropped).JPG",
+      "focus": [
+        0.44,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view in snow, clean background"
+    },
+    "wirehaired-slovakian-pointer": {
+      "file": "File:Wyzel slowacki szorstkowlosy rybnik-kamien pl.jpg",
+      "focus": [
+        0.52,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "whole dog side view, typical grey coat"
+    },
+    "xoloitzcuintle": {
+      "file": "File:XoloLarge1.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "black hairless standard standing side view, grass"
+    },
+    "yakutian-laika": {
+      "file": "File:Jakutianlaika1.jpg",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "black-white show stance side view, minimal handler"
+    },
+    "yorkshire-terrier": {
+      "file": "File:Sundance Film Festival 2024 - Porcelain War - Frodo-104A2108.jpg",
+      "focus": [
+        0.5,
+        0.42
+      ],
+      "by": "claude-review",
+      "confidence": "medium",
+      "note": "whole dog sitting, pet clip, sharp; partial backdrop logo"
+    },
+    "yugoslavian-shepherd-dog-sharplanina": {
+      "file": "File:Sarplaninac male dog Muri-Emír 2 years old.jpg",
+      "focus": [
+        0.44,
+        0.5
+      ],
+      "by": "claude-review",
+      "confidence": "high",
+      "note": "iron-grey adult standing side view, sharp"
+    }
+  }
+}
