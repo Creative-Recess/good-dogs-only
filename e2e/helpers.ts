@@ -1,10 +1,10 @@
 import { expect, type Page } from '@playwright/test'
 
-/** Opens the app past the launch screen, ready on the Breeds tab. */
+/** Opens the app past the launch screen, ready on the Dogdex tab. */
 export async function launch(page: Page) {
   await page.goto('/')
   await page.getByRole('button', { name: /Tap to launch/ }).click()
-  await expect(page.getByRole('tab', { name: 'Breeds' })).toBeVisible()
+  await expect(page.getByRole('tab', { name: 'Dogdex' })).toBeVisible()
   await expect(page.getByRole('button', { name: /Tap to launch/ })).toBeHidden()
 }
 

@@ -1,14 +1,14 @@
 // Progress: the overall count, a row per group, and the most recent spots.
 import { breedById, breeds, GROUP_COLOUR, groups, TOTAL } from '../data/catalogue.ts'
 import { formatDay } from '../lib/dates.ts'
-import type { Spot } from '../lib/sightings.ts'
+import { newestFirst, type Spot } from '../lib/sightings.ts'
 import { ProgressBar } from './ProgressBar.tsx'
 
 type Props = { spots: Map<string, Spot>; onGroup: (groupId: string) => void; onOpen: (id: string) => void }
 
 export function ProgressTab({ spots, onGroup, onOpen }: Props) {
   const n = spots.size
-  const recent = [...spots.values()].sort((a, b) => b.firstSeen.localeCompare(a.firstSeen)).slice(0, 6)
+  const recent = [...spots.values()].sort(newestFirst).slice(0, 6)
   return (
     <>
       <div className="big-progress">

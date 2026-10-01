@@ -16,7 +16,7 @@ import { ProgressTab } from './ProgressTab.tsx'
 
 type Tab = 'breeds' | 'park' | 'progress' | 'help'
 const TABS: { id: Tab; label: string }[] = [
-  { id: 'breeds', label: 'Breeds' },
+  { id: 'breeds', label: 'Dogdex' },
   { id: 'park', label: 'Park' },
   { id: 'progress', label: 'Progress' },
   { id: 'help', label: 'Help' },

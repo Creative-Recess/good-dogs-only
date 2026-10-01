@@ -1,7 +1,7 @@
 // The Park canvas, for the Park tab and the screensaver.
 import { useEffect, useRef, useState } from 'react'
 import { breeds } from '../data/catalogue.ts'
-import type { Spot } from '../lib/sightings.ts'
+import { newestFirst, type Spot } from '../lib/sightings.ts'
 import { Park } from '../park/Park.ts'
 
 type Props = { spots: Map<string, Spot>; onOpen?: (id: string) => void; caption?: boolean }
@@ -31,8 +31,8 @@ export function ParkView({ spots, onOpen, caption = true }: Props) {
   }, [])
 
   useEffect(() => {
-    const newestFirst = [...spots.values()].sort((a, b) => b.firstSeen.localeCompare(a.firstSeen)).map((s) => s.breedId)
-    parkRef.current?.setSpotted(breeds.filter((b) => spots.has(b.id)), newestFirst)
+    const newest = [...spots.values()].sort(newestFirst).map((s) => s.breedId)
+    parkRef.current?.setSpotted(breeds.filter((b) => spots.has(b.id)), newest)
   }, [spots])
 
   return (

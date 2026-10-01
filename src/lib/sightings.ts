@@ -24,13 +24,16 @@ export const db = new Dexie('good-dogs-only') as Dexie & {
 db.version(1).stores({ sightings: 'id, breedId, updatedAt', meta: 'key' })
 
 /** One spotted breed, as the screens show it. */
-export type Spot = { breedId: string; firstSeen: string; note: string; sightingId: string }
+export type Spot = { breedId: string; firstSeen: string; note: string; sightingId: string; createdAt: string }
+
+/** Most recent spot first: by the day seen, then by when it was recorded. */
+export const newestFirst = (a: Spot, b: Spot) => b.firstSeen.localeCompare(a.firstSeen) || b.createdAt.localeCompare(a.createdAt)
 
 /** Spotted breeds by id, from the earliest live sighting of each. */
 export function toSpots(sightings: Sighting[]): Map<string, Spot> {
   const spots = new Map<string, Spot>()
   const live = sightings.filter((s) => !s.deletedAt).sort((a, b) => a.seenAt.localeCompare(b.seenAt) || a.createdAt.localeCompare(b.createdAt))
-  for (const s of live) if (!spots.has(s.breedId)) spots.set(s.breedId, { breedId: s.breedId, firstSeen: s.seenAt, note: s.note ?? '', sightingId: s.id })
+  for (const s of live) if (!spots.has(s.breedId)) spots.set(s.breedId, { breedId: s.breedId, firstSeen: s.seenAt, note: s.note ?? '', sightingId: s.id, createdAt: s.createdAt })
   return spots
 }
 

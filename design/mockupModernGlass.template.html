@@ -868,7 +868,7 @@
               <div class="window-body">
                 <section class="tabs">
                   <menu role="tablist" aria-label="Screens">
-                    <li role="tab" data-act="tab" data-tab="dex"><a>${icons.tbBreeds}<span>Breeds</span></a></li>
+                    <li role="tab" data-act="tab" data-tab="dex"><a>${icons.tbBreeds}<span>Dogdex</span></a></li>
                     <li role="tab" data-act="tab" data-tab="park"><a>${icons.tbPark}<span>Park</span></a></li>
                     <li role="tab" data-act="tab" data-tab="progress"><a>${icons.tbProgress}<span>Progress</span></a></li>
                     <li role="tab" data-act="tab" data-tab="more"><a>${icons.tbHelp}<span>Help</span></a></li>
@@ -937,7 +937,7 @@
       this.host.querySelectorAll('[data-panel]').forEach((p) => (p.hidden = p.dataset.panel !== tab))
       this.host.querySelectorAll('[role="tab"]').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === tab)))
       // A modern app shows the screen's name as a big title.
-      const titleEl = this.q('.main .title-bar-text'); if (titleEl) titleEl.lastChild.textContent = { dex: 'Breeds', park: 'Park', progress: 'Progress', more: 'Help' }[tab]
+      const titleEl = this.q('.main .title-bar-text'); if (titleEl) titleEl.lastChild.textContent = { dex: 'Dogdex', park: 'Park', progress: 'Progress', more: 'Help' }[tab]
       this.panels[tab].parentElement.scrollTop = 0
       fillBars(this.panels[tab])
       if (tab === 'park') { this.park ??= new Park(this, this.panels.park); this.park.start() } else this.park?.stop()

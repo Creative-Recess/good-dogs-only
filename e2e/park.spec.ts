@@ -7,7 +7,7 @@ test('each spotted breed appears in the Park, and tapping it opens the breed', a
   await launch(page)
   await page.getByRole('tab', { name: 'Park' }).click()
   await expect(page.locator('.park-hint')).toHaveText(/^No dogs yet · /)
-  await page.getByRole('tab', { name: 'Breeds' }).click()
+  await page.getByRole('tab', { name: 'Dogdex' }).click()
   await spotBreed(page, 'Dalmatian')
   await page.getByRole('tab', { name: 'Park' }).click()
   await expect(page.locator('.park-hint')).toHaveText(/^1 dog · (Daytime|Dawn|Golden hour|Night)$/)
@@ -31,7 +31,7 @@ test('Minimise shows the Park as a screensaver until you tap', async ({ page }) 
   await expect(saver).toBeVisible()
   await saver.click()
   await expect(saver).toBeHidden()
-  await expect(page.getByRole('tab', { name: 'Breeds' })).toBeVisible()
+  await expect(page.getByRole('tab', { name: 'Dogdex' })).toBeVisible()
 })
 
 test('Close goes back to the launch screen', async ({ page }) => {
