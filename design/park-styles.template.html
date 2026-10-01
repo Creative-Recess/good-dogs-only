@@ -28,12 +28,12 @@
 
 <header>
   <h1>Park styles</h1>
-  <p>Three softer, rounded takes on the Park tab, each with the same dogs you've spotted in the mockup. Tap a dog to see its name. Leave a comment on the one you like (or the bits you like from each).</p>
+  <p>Meadow plus two new takes on the Park tab, each with the same dogs you've spotted in the mockup. Tap a dog to see its name. Leave a comment on the one you like (or the bits you like from each).</p>
 </header>
 <main class="grid">
-  <section class="card"><h2>1 · Plaza <span>bright and calm</span></h2><p>Pale sky, gentle hills and a round paved plaza. Dogs stroll, stop to look at you and hop when they meet.</p><canvas id="plaza" aria-label="Plaza style park"></canvas></section>
-  <section class="card"><h2>2 · Meadow <span>sunny and busy</span></h2><p>Lollipop trees, flowers, a pond and a picnic blanket where dogs flop down for a rest.</p><canvas id="meadow" aria-label="Meadow style park"></canvas></section>
-  <section class="card"><h2>3 · Tiny Planet <span>playful</span></h2><p>A little round world that slowly turns, with your dogs trotting around it under twinkling stars.</p><canvas id="planet" aria-label="Tiny planet style park"></canvas></section>
+  <section class="card"><h2>1 · Meadow <span>your pick so far</span></h2><p>Lollipop trees, flowers, a pond and a picnic blanket where dogs flop down for a rest.</p><canvas id="meadow" aria-label="Meadow style park"></canvas></section>
+  <section class="card"><h2>2 · Snowy Island <span>in the spirit of Club Penguin</span></h2><p>A snowy island by the sea, with igloos and falling snow. Chunky outlines and flat, bold colours.</p><canvas id="snow" aria-label="Snowy island style park"></canvas></section>
+  <section class="card"><h2>3 · Pet World <span>in the spirit of Neopets</span></h2><p>A bright fantasy land: candy sky, giant mushrooms, crystals and sparkles. Dogs get big shiny eyes.</p><canvas id="petworld" aria-label="Pet world style park"></canvas></section>
 </main>
 
 <script>const DATA = __DOGDEX_DATA__;</script>
@@ -79,7 +79,7 @@
   // A chibi dog: big round head, dot eyes, rosy cheeks, short legs, wagging tail. Drawn facing right at (0,0) = feet.
   function drawDog(x, d, t) {
     if (!d.col) return
-    const s = d.size * d.scale, { body, patch } = d.col, outline = shade(body, 0.62)
+    const s = d.size * d.scale, { body, patch } = d.col, look = d.look ?? {}, outline = look.outline ? [20, 20, 30] : shade(body, 0.62), lw = look.outline ?? 1.4, eye = look.eye ?? 1
     const walk = d.state === 'walk' || d.state === 'run'
     const bob = walk ? Math.abs(Math.sin(t * (d.state === 'run' ? 16 : 9) + d.seed)) * 2.2 * s : 0
     const hop = d.hop > 0 ? Math.sin(d.hop * Math.PI) * 14 * s : 0
@@ -87,7 +87,7 @@
     x.scale(d.dir, 1)
     x.fillStyle = 'rgba(30,50,40,0.14)'; x.beginPath(); x.ellipse(0, 0, 15 * s, 3.2 * s, 0, 0, Math.PI * 2); x.fill()
     x.translate(0, -bob - hop)
-    x.lineWidth = 1.4; x.strokeStyle = css(outline)
+    x.lineWidth = lw; x.strokeStyle = css(outline)
     // legs
     const legPhase = walk ? Math.sin(t * (d.state === 'run' ? 16 : 9) + d.seed) * 2 * s : 0
     x.fillStyle = css(shade(body, 0.92))
@@ -96,7 +96,7 @@
     const wag = Math.sin(t * (d.state === 'idle' || d.state === 'sit' ? 11 : 6) + d.seed) * 0.5
     x.strokeStyle = css(shade(body, 0.85)); x.lineWidth = 3.4 * s; x.lineCap = 'round'
     x.beginPath(); x.moveTo(-12 * s, -13 * s); x.quadraticCurveTo(-19 * s, -18 * s, -17 * s + wag * 6 * s, -25 * s); x.stroke()
-    x.lineWidth = 1.4; x.strokeStyle = css(outline)
+    x.lineWidth = lw; x.strokeStyle = css(outline)
     // body
     x.fillStyle = css(body); x.beginPath(); x.ellipse(0, -13 * s, 14 * s, 8.5 * s, 0, 0, Math.PI * 2); x.fill(); x.stroke()
     x.fillStyle = css(patch, 0.95); x.beginPath(); x.ellipse(3 * s, -9.5 * s, 7 * s, 4 * s, 0, 0, Math.PI * 2); x.fill()
@@ -114,8 +114,9 @@
     x.fillStyle = css(patch); x.beginPath(); x.ellipse(hx + 6 * s, hy + 3.5 * s, 5.5 * s, 4.2 * s, 0, 0, Math.PI * 2); x.fill()
     x.fillStyle = '#2b2b33'; x.beginPath(); x.ellipse(hx + 10 * s, hy + 1.6 * s, 2.1 * s, 1.6 * s, 0, 0, Math.PI * 2); x.fill()
     const blink = (Math.sin(t * 0.9 + d.seed * 3) > 0.985) ? 0.15 : 1
-    x.beginPath(); x.ellipse(hx + 3.5 * s, hy - 2.5 * s, 1.6 * s, 2.1 * s * blink, 0, 0, Math.PI * 2); x.fill()
-    x.fillStyle = '#fff'; x.beginPath(); x.arc(hx + 4 * s, hy - 3.3 * s, 0.6 * s, 0, Math.PI * 2); x.fill()
+    x.beginPath(); x.ellipse(hx + 3.5 * s, hy - 2.5 * s, 1.6 * s * eye, 2.1 * s * blink * eye, 0, 0, Math.PI * 2); x.fill()
+    x.fillStyle = '#fff'; x.beginPath(); x.arc(hx + 4 * s * (eye > 1 ? 1.05 : 1), hy - 3.3 * s * eye, 0.6 * s * eye, 0, Math.PI * 2); x.fill()
+    if (eye > 1) { x.beginPath(); x.arc(hx + 2.8 * s, hy - 1.4 * s, 0.35 * s * eye, 0, Math.PI * 2); x.fill() }
     x.fillStyle = 'rgba(255,120,140,0.45)'; x.beginPath(); x.ellipse(hx + 1 * s, hy + 3 * s, 2.4 * s, 1.5 * s, 0, 0, Math.PI * 2); x.fill()
     if (d.happy > 0) { x.fillStyle = '#e8506a'; x.beginPath(); x.ellipse(hx + 7.5 * s, hy + 7 * s, 1.6 * s, 2.2 * s, 0, 0, Math.PI * 2); x.fill() }
     x.restore()
@@ -137,7 +138,7 @@
   // Shared behaviour: wander, pause, sit, and run over to play.
   function makeDogs(scene) {
     return spotted.map((b, i) => {
-      const d = { b, seed: i * 1.7 + 0.3, dir: i % 2 ? 1 : -1, state: 'idle', timer: Math.random() * 2, hop: 0, happy: 0, tag: 0, size: BIG[b.id] ?? SIZE[b.groupId] ?? 1, scale: 1, ears: POINTY.has(b.id) ? 'pointy' : LONG_EARS.has(b.id) ? 'long' : 'floppy' }
+      const d = { look: scene.look, b, seed: i * 1.7 + 0.3, dir: i % 2 ? 1 : -1, state: 'idle', timer: Math.random() * 2, hop: 0, happy: 0, tag: 0, size: BIG[b.id] ?? SIZE[b.groupId] ?? 1, scale: 1, ears: POINTY.has(b.id) ? 'pointy' : LONG_EARS.has(b.id) ? 'long' : 'floppy' }
       scene.place(d, i)
       colours(b).then((c) => (d.col = c))
       return d
@@ -209,21 +210,6 @@
   const blob = (x, cx, cy, r, col) => { x.fillStyle = col; x.beginPath(); x.arc(cx, cy, r, 0, Math.PI * 2); x.fill() }
   const cloud = (x, cx, cy, k) => { x.fillStyle = 'rgba(255,255,255,0.95)'; [[0, 0, 16], [16, 4, 13], [-16, 5, 12], [6, -9, 12]].forEach(([dx, dy, r]) => { x.beginPath(); x.arc(cx + dx * k, cy + dy * k, r * k, 0, Math.PI * 2); x.fill() }) }
 
-  // 1. Plaza: bright, calm, airy.
-  setup('plaza', groundScene({
-    top: 0.5, bottom: 0.92,
-    paint(x, w, h, t) {
-      const g = x.createLinearGradient(0, 0, 0, h * 0.5); g.addColorStop(0, '#f7fbff'); g.addColorStop(1, '#d6eaf8'); x.fillStyle = g; x.fillRect(0, 0, w, h)
-      cloud(x, ((t * 8) % (w + 120)) - 60, h * 0.12, 1.1); cloud(x, ((t * 5 + w * 0.6) % (w + 120)) - 60, h * 0.22, 0.8)
-      x.fillStyle = '#c9e7b4'; x.beginPath(); x.ellipse(w * 0.2, h * 0.47, w * 0.55, h * 0.12, 0, 0, Math.PI * 2); x.fill()
-      x.fillStyle = '#b9dfa0'; x.beginPath(); x.ellipse(w * 0.85, h * 0.48, w * 0.5, h * 0.11, 0, 0, Math.PI * 2); x.fill()
-      const gg = x.createLinearGradient(0, h * 0.44, 0, h); gg.addColorStop(0, '#a6d98a'); gg.addColorStop(1, '#8ccd6f'); x.fillStyle = gg; x.beginPath(); x.ellipse(w / 2, h * 1.05, w * 0.95, h * 0.6, 0, Math.PI, 0); x.lineTo(w, h); x.lineTo(0, h); x.fill()
-      x.fillStyle = '#eef1f4'; x.beginPath(); x.ellipse(w / 2, h * 0.72, w * 0.36, h * 0.09, 0, 0, Math.PI * 2); x.fill()
-      x.strokeStyle = '#dde3ea'; x.lineWidth = 3; x.beginPath(); x.ellipse(w / 2, h * 0.72, w * 0.26, h * 0.06, 0, 0, Math.PI * 2); x.stroke()
-      ;[[0.12, 0.5], [0.88, 0.52]].forEach(([fx, fy]) => { x.fillStyle = '#9b7653'; x.fillRect(w * fx - 3, h * fy - 6, 6, 18); blob(x, w * fx, h * fy - 16, 20, '#7cc262'); blob(x, w * fx - 9, h * fy - 10, 13, '#86c96b') })
-    },
-  }))
-
   // 2. Meadow: warm, sunny, lots to look at; dogs gather on the picnic blanket.
   let mw = 0, mh = 0
   const flowers = Array.from({ length: 26 }, (_, i) => [((i * 0.618) % 1), 0.55 + ((i * 0.37) % 1) * 0.42, ['#ff8fab', '#ffd166', '#ffffff', '#c3a6ff'][i % 4]])
@@ -249,40 +235,49 @@
     },
   }))
 
-  // 3. Tiny planet: dogs walk around a small round world that slowly turns.
-  let PW = 0, PH = 0
-  const stars = Array.from({ length: 40 }, (_, i) => [((i * 0.731) % 1), ((i * 0.417) % 0.55), (i % 3) + 1])
-  setup('planet', {
-    resize(w, h) { PW = w; PH = h },
-    get R() { return Math.min(PW, PH) * 0.36 },
-    get C() { return [PW / 2, PH * 0.6] },
-    place(d, i) { d.a = (i / spotted.length) * Math.PI * 2; d.speed = 0 },
-    pickTarget(d) { d.ta = d.a + (Math.random() - 0.5) * 2.2 },
-    move(d, dt) {
-      if (d.state === 'run' && d.friend) d.ta = d.friend.a
-      if (d.state === 'walk' || d.state === 'run') {
-        const diff = Math.atan2(Math.sin(d.ta - d.a), Math.cos(d.ta - d.a)), sp = (d.state === 'run' ? 1.1 : 0.32) * dt
-        if (Math.abs(diff) < (d.state === 'run' ? 0.22 : 0.02)) { if (d.state === 'run') { d.hop = 1; d.happy = 2 } d.state = 'idle'; d.timer = 1.5 + Math.random() * 2 }
-        else { d.a += Math.sign(diff) * Math.min(sp, Math.abs(diff)); d.dir = diff > 0 ? 1 : -1 }
-      }
-    },
-    screen(d) { const rot = this.rot ?? 0, [cx, cy] = this.C, r = this.R, a = d.a + rot - Math.PI / 2; return [cx + Math.cos(a) * r, cy + Math.sin(a) * r] },
-    draw(x, w, h, t, dogs) {
-      const g = x.createLinearGradient(0, 0, 0, h); g.addColorStop(0, '#2e3a78'); g.addColorStop(0.55, '#9b7fd4'); g.addColorStop(1, '#ffc9a8'); x.fillStyle = g; x.fillRect(0, 0, w, h)
-      for (const [sx, sy, k] of stars) { x.globalAlpha = 0.4 + 0.6 * Math.abs(Math.sin(t * 1.5 + sx * 20)); blob(x, sx * w, sy * h, k * 0.8, '#fff') }
-      x.globalAlpha = 1
-      this.rot = still ? 0 : t * 0.05
-      const [cx, cy] = this.C, R = this.R
-      blob(x, cx, cy, R + 10, 'rgba(255,255,255,0.12)')
-      const pg = x.createRadialGradient(cx - R * 0.35, cy - R * 0.4, R * 0.1, cx, cy, R); pg.addColorStop(0, '#a8e08c'); pg.addColorStop(1, '#5aa954'); x.fillStyle = pg; x.beginPath(); x.arc(cx, cy, R, 0, Math.PI * 2); x.fill()
-      x.save(); x.translate(cx, cy); x.rotate(this.rot)
-      ;[[0.4, '#7cc8ef', 0.22], [2.6, '#4f9a48', 0.16]].forEach(([a, col, k]) => { x.fillStyle = col; x.beginPath(); x.ellipse(Math.cos(a) * R * 0.45, Math.sin(a) * R * 0.45, R * k, R * k * 0.6, a, 0, Math.PI * 2); x.fill() })
-      ;[1.2, 3.4, 5.1].forEach((a) => { x.save(); x.rotate(a); x.translate(0, -R); x.fillStyle = '#9b7653'; x.fillRect(-3, -16, 6, 16); blob(x, 0, -24, 13, '#4fae4c'); x.restore() })
-      x.save(); x.rotate(4.3); x.translate(0, -R); x.fillStyle = '#fff4e0'; x.fillRect(-12, -18, 24, 18); x.fillStyle = '#ff6b6b'; x.beginPath(); x.moveTo(-15, -18); x.lineTo(0, -31); x.lineTo(15, -18); x.fill(); x.fillStyle = '#9b7653'; x.fillRect(-4, -10, 8, 10); x.restore()
-      x.restore()
-      for (const d of dogs) { const a = d.a + this.rot; x.save(); x.translate(cx, cy); x.rotate(a); x.translate(0, -R + 1); drawDog(x, d, t); x.restore() }
-      for (const d of dogs) { const [sx, sy] = this.screen(d); nameTag(x, d, sx, sy) }
+  // 2. Snowy island: chunky outlines, flat colours, igloos and falling snow.
+  let sw = 0, sh = 0
+  const flakes = Array.from({ length: 60 }, (_, i) => [((i * 0.618) % 1), ((i * 0.381) % 1), 1 + (i % 3)])
+  const snow = groundScene({
+    top: 0.55, bottom: 0.92,
+    resize(w, h) { sw = w; sh = h },
+    spot: () => [sw * 0.3, sh * 0.62, sw * 0.12, sh * 0.03],
+    paint(x, w, h, t) {
+      x.lineJoin = 'round'
+      const g = x.createLinearGradient(0, 0, 0, h * 0.4); g.addColorStop(0, '#6fc8f2'); g.addColorStop(1, '#bfe9ff'); x.fillStyle = g; x.fillRect(0, 0, w, h)
+      x.fillStyle = '#2f7fc4'; x.fillRect(0, h * 0.36, w, h * 0.2)
+      x.strokeStyle = '#8fd0f5'; x.lineWidth = 2; for (let i = 0; i < 6; i++) { const y = h * (0.39 + i * 0.03); x.beginPath(); for (let k = 0; k <= w; k += 12) x.lineTo(k, y + Math.sin(k / 18 + t * 2 + i) * 1.5); x.stroke() }
+      x.fillStyle = '#ffffff'; x.strokeStyle = '#1b2733'; x.lineWidth = 3
+      x.beginPath(); x.moveTo(0, h * 0.5); x.bezierCurveTo(w * 0.25, h * 0.44, w * 0.7, h * 0.46, w, h * 0.5); x.lineTo(w, h); x.lineTo(0, h); x.closePath(); x.fill(); x.stroke()
+      x.fillStyle = '#d5ecfa'; x.beginPath(); x.ellipse(w * 0.75, h * 0.85, w * 0.3, h * 0.05, 0, 0, Math.PI * 2); x.fill(); x.beginPath(); x.ellipse(w * 0.2, h * 0.72, w * 0.22, h * 0.035, 0, 0, Math.PI * 2); x.fill()
+      const igloo = (cx, cy, r) => { x.fillStyle = '#ffffff'; x.strokeStyle = '#1b2733'; x.lineWidth = 3; x.beginPath(); x.arc(cx, cy, r, Math.PI, 0); x.closePath(); x.fill(); x.stroke(); x.lineWidth = 1.5; x.strokeStyle = '#9cc7e2'; for (let k = 1; k < 3; k++) { x.beginPath(); x.arc(cx, cy, r, Math.PI + 0.15, -0.15); x.stroke(); x.beginPath(); x.moveTo(cx - r, cy - (r * k) / 3); x.lineTo(cx + r, cy - (r * k) / 3); x.stroke() } x.fillStyle = '#5a7f99'; x.strokeStyle = '#1b2733'; x.lineWidth = 2.5; x.beginPath(); x.arc(cx + r * 0.35, cy, r * 0.3, Math.PI, 0); x.fill(); x.stroke() }
+      igloo(w * 0.78, h * 0.54, w * 0.13); igloo(w * 0.16, h * 0.53, w * 0.09)
+      ;[[0.45, 0.5], [0.6, 0.49], [0.04, 0.6]].forEach(([fx, fy]) => { const px = w * fx, py = h * fy; x.fillStyle = '#2e8b57'; x.strokeStyle = '#1b2733'; x.lineWidth = 2.5; for (let k = 0; k < 3; k++) { x.beginPath(); x.moveTo(px - 14 + k * 3, py - k * 10); x.lineTo(px, py - 22 - k * 10); x.lineTo(px + 14 - k * 3, py - k * 10); x.closePath(); x.fill(); x.stroke() } x.fillStyle = '#fff'; x.beginPath(); x.moveTo(px - 5, py - 40); x.lineTo(px, py - 52); x.lineTo(px + 5, py - 40); x.fill() })
+      x.fillStyle = '#ffffff'; for (const [fx, fy, k] of flakes) { const y = ((fy * h + t * (12 + k * 8)) % h), xx = fx * w + Math.sin(t + fy * 10) * 6; x.beginPath(); x.arc(xx, y, k * 0.9, 0, Math.PI * 2); x.fill() }
     },
   })
+  snow.look = { outline: 2.4, eye: 1.1 }
+  setup('snow', snow)
+
+  // 3. Pet world: saturated fantasy land, giant mushrooms, crystals, sparkles, big shiny eyes.
+  const sparkles = Array.from({ length: 24 }, (_, i) => [((i * 0.7171) % 1), ((i * 0.293) % 0.8)])
+  const pet = groundScene({
+    top: 0.56, bottom: 0.9,
+    paint(x, w, h, t) {
+      const g = x.createLinearGradient(0, 0, 0, h * 0.6); g.addColorStop(0, '#7b4cc9'); g.addColorStop(0.55, '#ff7eb6'); g.addColorStop(1, '#ffcf7a'); x.fillStyle = g; x.fillRect(0, 0, w, h)
+      x.lineWidth = 7; ['#ff5d5d', '#ffb347', '#fff275', '#7be07b', '#5fc6ff', '#a98bff'].forEach((c, i) => { x.strokeStyle = c; x.globalAlpha = 0.55; x.beginPath(); x.arc(w * 0.5, h * 0.62, w * 0.62 - i * 7, Math.PI, 0); x.stroke() }); x.globalAlpha = 1
+      const isl = (cx, cy, rw) => { x.fillStyle = '#8a5a3c'; x.beginPath(); x.moveTo(cx - rw, cy); x.quadraticCurveTo(cx, cy + rw * 1.1, cx + rw, cy); x.fill(); x.fillStyle = '#6ee07a'; x.beginPath(); x.ellipse(cx, cy, rw, rw * 0.22, 0, 0, Math.PI * 2); x.fill() }
+      isl(w * 0.2, h * 0.2 + Math.sin(t) * 3, w * 0.12); isl(w * 0.8, h * 0.28 + Math.sin(t + 2) * 3, w * 0.09)
+      x.fillStyle = '#4fd36b'; x.beginPath(); x.moveTo(0, h * 0.54); x.bezierCurveTo(w * 0.3, h * 0.47, w * 0.65, h * 0.5, w, h * 0.53); x.lineTo(w, h); x.lineTo(0, h); x.fill()
+      x.fillStyle = '#44c060'; x.beginPath(); x.ellipse(w * 0.5, h * 0.98, w * 0.7, h * 0.12, 0, 0, Math.PI * 2); x.fill()
+      const shroom = (cx, cy, r, col) => { x.fillStyle = '#fff6e8'; x.beginPath(); x.roundRect(cx - r * 0.25, cy - r * 0.9, r * 0.5, r * 0.9, r * 0.2); x.fill(); x.fillStyle = col; x.beginPath(); x.arc(cx, cy - r * 0.9, r, Math.PI, 0); x.closePath(); x.fill(); x.fillStyle = '#fff'; [[-0.5, -0.35], [0.1, -0.65], [0.55, -0.3]].forEach(([dx, dy]) => { x.beginPath(); x.arc(cx + dx * r, cy - r * 0.9 + dy * r, r * 0.16, 0, Math.PI * 2); x.fill() }) }
+      shroom(w * 0.12, h * 0.6, w * 0.11, '#ff4d6d'); shroom(w * 0.9, h * 0.62, w * 0.09, '#9b5de5'); shroom(w * 0.58, h * 0.55, w * 0.06, '#ff8c42')
+      const crystal = (cx, cy, k, col) => { x.fillStyle = col; x.beginPath(); x.moveTo(cx, cy - 26 * k); x.lineTo(cx + 7 * k, cy - 8 * k); x.lineTo(cx, cy); x.lineTo(cx - 7 * k, cy - 8 * k); x.closePath(); x.fill(); x.fillStyle = 'rgba(255,255,255,0.55)'; x.beginPath(); x.moveTo(cx, cy - 26 * k); x.lineTo(cx + 3 * k, cy - 9 * k); x.lineTo(cx, cy - 4 * k); x.fill() }
+      crystal(w * 0.35, h * 0.58, 1, '#5ce1e6'); crystal(w * 0.39, h * 0.585, 0.7, '#c77dff'); crystal(w * 0.75, h * 0.57, 0.8, '#ffd60a')
+      for (const [fx, fy] of sparkles) { const a = Math.abs(Math.sin(t * 2 + fx * 30)), px = fx * w, py = fy * h * 0.75; x.fillStyle = `rgba(255,255,255,${a})`; x.beginPath(); x.moveTo(px, py - 4); x.lineTo(px + 1.2, py - 1.2); x.lineTo(px + 4, py); x.lineTo(px + 1.2, py + 1.2); x.lineTo(px, py + 4); x.lineTo(px - 1.2, py + 1.2); x.lineTo(px - 4, py); x.lineTo(px - 1.2, py - 1.2); x.fill() }
+    },
+  })
+  pet.look = { eye: 1.6 }
+  setup('petworld', pet)
 })()
 </script>
