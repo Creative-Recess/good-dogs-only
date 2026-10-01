@@ -25,7 +25,7 @@ async function card(b: Breed, full: boolean) {
   if (!full) return `<figure class="tile"><img src="${await img(b.image!.grid, 220)}" alt=""><figcaption><b>${esc(b.name)}</b><small>${meta}</small></figcaption></figure>`
   const c = b.credit!, note = picks[b.id]?.note ?? ''
   return `<article class="card" id="${b.id}">
-    <img src="${await img(b.image!.detail, 640)}" alt="${esc(b.name)}">
+    <img src="${await img(b.image!.detail, 640)}" alt="${esc(b.name)}" style="object-position:${b.image!.focus[0] * 100}% ${b.image!.focus[1] * 100}%">
     <div class="body">
       <h3>${esc(b.name)}</h3>
       <p class="meta">${meta}${b.tier === 'unofficial' ? '&nbsp;&middot; not an official breed' : '&nbsp;&middot; not on Dogs Australia browse pages'}</p>
@@ -78,7 +78,7 @@ const html = `<title>Breed Photo Audit</title>
   </section>
   <section id="other">
     <h2>Other photos&nbsp;&middot; ${other.length}</h2>
-    <p>${other.filter((b) => b.tier !== 'unofficial').length} official breeds that Dogs Australia's browse pages don't have, and the ${other.filter((b) => b.tier === 'unofficial').length} bonus breeds. All from Wikimedia Commons. Shown at the breed page's shape, with the note from when each one was picked.</p>
+    <p>${other.filter((b) => b.tier !== 'unofficial').length} official breeds that Dogs Australia's browse pages don't have, and the ${other.filter((b) => b.tier === 'unofficial').length} bonus breeds. All from Wikimedia Commons. Shown cropped exactly as on the breed page, with the note from when each one was picked.</p>
     <div class="cards">${(await Promise.all(other.map((b) => card(b, true)))).join('')}</div>
   </section>
 </main>`
