@@ -10,6 +10,30 @@ export type GroupId =
   | 'non-sporting'
   | 'bonus'
 
+/** The fixed list of 16 temperament traits, each with its own icon. */
+export const TRAITS = [
+  'Brave', 'Friendly', 'Clever', 'Energetic', 'Alert', 'Affectionate', 'Hard-working', 'Calm',
+  'Loyal', 'Dignified', 'Reserved', 'Trainable', 'Protective', 'Independent', 'Gentle', 'Playful',
+] as const
+export type Trait = (typeof TRAITS)[number]
+
+export type Rgb = [number, number, number]
+
+/** Side-on cartoon proportions for the Park's drawn dog (data/dog-shapes.json). */
+export type DogShape = {
+  /** Body length; also sets overall size (Labrador 28). */
+  len: number
+  h: number
+  leg: number
+  head: number
+  /** Muzzle length: 1 flat-faced to 10 long. */
+  snout: number
+  ears: 'floppy' | 'long' | 'pointy' | 'bat' | 'rose' | 'tipped'
+  tail: 'straight' | 'plume' | 'curl' | 'stub' | 'up'
+  /** 0 smooth to 1 very fluffy. */
+  fluff?: number
+}
+
 export type Group = {
   id: GroupId
   name: string
@@ -23,6 +47,10 @@ export type BreedImage = {
   detail: string
   width: number
   height: number
+  /** Where the dog is in the detail photo (0-1), for cropping it into the 770:540 frame. */
+  focus: [number, number]
+  /** Body and patch colours from the photo, for the Park's drawn dog. */
+  colours: { body: Rgb; patch: Rgb }
 }
 
 export type PhotoCredit = {
@@ -58,6 +86,10 @@ export type Breed = {
   kind?: 'cross' | 'breed'
   parents?: string[]
   about?: string
+  /** 3 traits from TRAITS, and one line in our own words. */
+  traits: Trait[]
+  text: string
+  shape: DogShape
   image?: BreedImage
   credit?: PhotoCredit
 }

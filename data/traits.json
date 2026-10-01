@@ -1,5 +1,5 @@
 {
- "about": "3 temperament traits per entry from the fixed list of 16, keyed by Dogs Australia name (official breeds) or bonus name. source: 'standard' = derived from the Dogs Australia standard's Temperament/Characteristics wording (the text itself is not stored); 'research' = gaps filled from other standard sections, Wikipedia and breed guides. text: our own one-line description where written.",
+ "about": "3 temperament traits and one line of text per entry, keyed by Dogs Australia name (official breeds) or bonus name. Traits come from the fixed list of 16. source: 'standard' = derived from the Dogs Australia standard's Temperament/Characteristics wording (the standard text itself is not stored); 'research' = gaps filled from other standard sections, Wikipedia and breed guides. text: our own words, never copied from a standard.",
  "traits": [
   "Brave",
   "Friendly",
@@ -25,7 +25,8 @@
     "Dignified",
     "Loyal"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A monkey-faced little dog with a serious air about it. Fond of its family and fiercely loyal."
   },
   "Afghan Hound": {
    "traits": [
@@ -42,7 +43,8 @@
     "Dignified",
     "Brave"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "The largest of the terriers. Friendly and confident, with a proud bearing and real courage."
   },
   "Akita": {
    "traits": [
@@ -50,7 +52,8 @@
     "Brave",
     "Reserved"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A powerful Japanese dog with a curled tail and a quiet, noble manner. Loyal to family but aloof with strangers and other dogs."
   },
   "Akita (Japanese)": {
    "traits": [
@@ -67,7 +70,8 @@
     "Loyal",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A big, strong Arctic sled dog with a friendly, outgoing nature. Loves its people, though it can be a handful to train."
   },
   "American Bully": {
    "traits": [
@@ -84,7 +88,8 @@
     "Alert",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A lively, smart terrier that's mostly bald. Keen-eyed, playful and always ready for action."
   },
   "American Staffordshire Terrier": {
    "traits": [
@@ -101,7 +106,8 @@
     "Calm",
     "Hard-working"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A large Turkish flock guardian, steady and self-assured. Quietly watchful and built for long days on the job."
   },
   "Aussiedoodle": {
    "traits": [
@@ -118,7 +124,8 @@
     "Friendly",
     "Affectionate"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "An Aussie-developed bulldog breed, stocky and strong. Loyal and affectionate, and friendly with people of all ages."
   },
   "Australian Cattle Dog": {
    "traits": [
@@ -126,7 +133,8 @@
     "Alert",
     "Protective"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Smart, tough and protective of its people. Bred to work all day, so it needs a job and lots of exercise."
   },
   "Australian Kelpie": {
    "traits": [
@@ -134,7 +142,8 @@
     "Hard-working",
     "Alert"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "The classic Aussie sheepdog with endless drive. Loyal, sharp-eyed and happiest with work to do."
   },
   "Australian Shepherd": {
    "traits": [
@@ -142,7 +151,8 @@
     "Hard-working",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A brainy, tireless herder, often with striking merle coats and eyes. Needs plenty to keep it busy."
   },
   "Australian Silky Terrier": {
    "traits": [
@@ -159,7 +169,8 @@
     "Trainable",
     "Affectionate"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A lean Aussie cattle dog born with a stumpy tail. Watchful and quick to learn, devoted to family."
   },
   "Australian Terrier": {
    "traits": [
@@ -167,7 +178,8 @@
     "Loyal",
     "Affectionate"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A tough little Aussie worker bred to deal with snakes and rats. Devoted and loving with its family."
   },
   "Azawakh": {
    "traits": [
@@ -175,7 +187,8 @@
     "Alert",
     "Gentle"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A tall, ultra-lean sighthound from the Sahel. Gentle with family, aloof with strangers and very watchful."
   },
   "Basenji": {
    "traits": [
@@ -183,7 +196,8 @@
     "Independent",
     "Affectionate"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "The barkless dog, known to yodel instead. Clever and cat-like, with a strong mind of its own."
   },
   "Basset Fauve De Bretagne": {
    "traits": [
@@ -191,7 +205,8 @@
     "Friendly",
     "Affectionate"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A small, wiry, fawn hound from Brittany. Cheerful, loving and tireless on a scent trail."
   },
   "Basset Hound": {
    "traits": [
@@ -199,7 +214,8 @@
     "Affectionate",
     "Brave"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Long ears, short legs and a nose that never quits. Laid-back and loving, but no pushover."
   },
   "Bavarian Mountain Scent Hound": {
    "traits": [
@@ -207,7 +223,8 @@
     "Loyal",
     "Reserved"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A German tracking specialist. Calm and devoted to its owner, though reserved with strangers."
   },
   "Beagle": {
    "traits": [
@@ -215,7 +232,8 @@
     "Alert",
     "Brave"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A sociable pack hound led by its nose. Food-mad and vocal, with a famous baying howl."
   },
   "Bearded Collie": {
    "traits": [
@@ -223,7 +241,8 @@
     "Calm",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A shaggy, bouncy herder with a happy-go-lucky streak. Bright and full of beans outdoors, then settles nicely at home."
   },
   "Beauceron (Berger de Beauce)": {
    "traits": [
@@ -240,7 +259,8 @@
     "Brave",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Looks like a little lamb but has a terrier's pluck. Sweet with its people and happy to say hello."
   },
   "Belgian Shepherd Dog (Groenendael, Tervueren, Laekenois, Malinois)": {
    "traits": [
@@ -248,7 +268,8 @@
     "Alert",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Sharp, watchful and always ready to work. Fiercely devoted to its family and needs plenty of exercise and a job to do."
   },
   "Bergamasco Shepherd Dog": {
    "traits": [
@@ -265,7 +286,8 @@
     "Trainable",
     "Brave"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A scruffy French sheepdog with big upright ears. Even-tempered and quick to learn, with a brave, steady nature."
   },
   "Bernedoodle": {
    "traits": [
@@ -282,7 +304,8 @@
     "Alert",
     "Calm"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A gentle giant that's devoted to its family. Easygoing at home and loves cool weather."
   },
   "Bichon Frise": {
    "traits": [
@@ -290,7 +313,8 @@
     "Energetic",
     "Alert"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Cheerful, bouncy and keen to meet everyone. A white powder puff that still notices every new arrival."
   },
   "Biewer Terrier": {
    "traits": [
@@ -298,7 +322,8 @@
     "Affectionate",
     "Playful"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Small, silky and full of fun. Sticks close to its people and loves a game followed by a cuddle."
   },
   "Black and Tan Coonhound": {
    "traits": [
@@ -306,7 +331,8 @@
     "Hard-working",
     "Reserved"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A big American scent hound with a booming bay. Easygoing with people, but focused on the trail."
   },
   "Bloodhound": {
    "traits": [
@@ -341,7 +367,8 @@
     "Trainable",
     "Loyal"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Often called the smartest breed. Needs daily work, play or training to stay happy."
   },
   "Border Terrier": {
    "traits": [
@@ -349,7 +376,8 @@
     "Brave",
     "Hard-working"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A scruffy, otter-headed worker that's game for anything. Plenty of energy and grit for its size."
   },
   "Bordoodle": {
    "traits": [
@@ -366,7 +394,8 @@
     "Reserved",
     "Brave"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A tall, elegant Russian sighthound bred to course wolves. Quiet and aloof, but quick off the mark."
   },
   "Boston Terrier": {
    "traits": [
@@ -374,7 +403,8 @@
     "Energetic",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Dapper in its tuxedo markings. A bright, friendly little dog with plenty of bounce and a playful sense of fun."
   },
   "Bouvier Des Flandres": {
    "traits": [
@@ -382,7 +412,8 @@
     "Hard-working",
     "Calm"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A big, bearded Belgian farm dog built for herding and hauling. Smart and steady, happiest with a job to do."
   },
   "Boxer": {
    "traits": [
@@ -390,7 +421,8 @@
     "Clever",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Bouncy and fun-loving, a great family dog. Stays puppyish for years and loves a romp."
   },
   "Bracco Italiano": {
    "traits": [
@@ -398,7 +430,8 @@
     "Hard-working",
     "Calm"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "An old Italian pointing dog with droopy ears and a gentle face. Calm at home and keen to work."
   },
   "Briard": {
    "traits": [
@@ -406,7 +439,8 @@
     "Clever",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A bold, shaggy French herder with a long beard. Clever, lively and loyal, with a strong instinct to watch over its family."
   },
   "British Bulldog": {
    "traits": [
@@ -423,7 +457,8 @@
     "Brave",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A lively, compact bird dog with heaps of stamina. Friendly, game and happiest with a job to do."
   },
   "Bull Arab": {
    "traits": [
@@ -440,7 +475,8 @@
     "Friendly",
     "Playful"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A comic, strong-willed dog that loves people. Needs firm, fun training and lots of exercise."
   },
   "Bull Terrier (Miniature)": {
    "traits": [
@@ -457,7 +493,8 @@
     "Alert",
     "Loyal"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Bred to help gamekeepers catch poachers. Big and loyal, it stays alert but usually prefers a short walk and a long nap."
   },
   "Cairn Terrier": {
    "traits": [
@@ -474,7 +511,8 @@
     "Loyal",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "An ancient desert dog from the Middle East. Alert and quick to sound the alarm, loyal to family and friendly once settled."
   },
   "Canadian Eskimo Dog": {
    "traits": [
@@ -482,7 +520,8 @@
     "Affectionate",
     "Gentle"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A rugged Arctic sled dog bred to haul in harsh conditions. Hard-working, but gentle and affectionate with its people."
   },
   "Cane Corso": {
    "traits": [
@@ -490,7 +529,8 @@
     "Energetic",
     "Trainable"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A muscular Italian guardian that needs firm, consistent training and an active life. Loves to have a job to do."
   },
   "Caucasian Shepherd Dog": {
    "traits": [
@@ -498,7 +538,8 @@
     "Calm",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A massive, thick-coated livestock guardian. Calm and dignified most of the time, but quick to act if it senses a threat."
   },
   "Cavachon": {
    "traits": [
@@ -515,7 +556,8 @@
     "Affectionate",
     "Brave"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Friendly with everyone, dogs included. Happy on the couch or on a walk."
   },
   "Cavoodle": {
    "traits": [
@@ -532,7 +574,8 @@
     "Dignified",
     "Independent"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "An ancient, giant flock guardian with a calm, self-assured nature. Independent and thinks for itself, so not for beginners."
   },
   "Cesky Terrier": {
    "traits": [
@@ -540,7 +583,8 @@
     "Trainable",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A laid-back terrier from Czechia with a long, low build. Easygoing, friendly and keen to please."
   },
   "Chesapeake Bay Retriever": {
    "traits": [
@@ -548,7 +592,8 @@
     "Friendly",
     "Brave"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A tough duck dog with an oily, wavy coat built for icy water. Smart, friendly and bold."
   },
   "Chihuahua (Long Coat)": {
    "traits": [
@@ -565,7 +610,8 @@
     "Clever",
     "Alert"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Tiny but confident, often bonding closely with one person. Quick to bark at strangers."
   },
   "Chinese Crested Dog": {
    "traits": [
@@ -582,7 +628,8 @@
     "Loyal",
     "Reserved"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A lion-like dog with a blue-black tongue. Proud and loyal to its family, but aloof and reserved with strangers."
   },
   "Cirneco Dell'Etna": {
    "traits": [
@@ -590,7 +637,8 @@
     "Hard-working",
     "Independent"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A sleek Sicilian hunting hound with big upright ears. Loving at home but thinks for itself."
   },
   "Clumber Spaniel": {
    "traits": [
@@ -598,7 +646,8 @@
     "Friendly",
     "Dignified"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A heavy, gentle spaniel that likes to take its time. Calm, friendly and quietly dignified."
   },
   "Cocker Spaniel": {
    "traits": [
@@ -606,7 +655,8 @@
     "Affectionate",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A happy, tail-wagging gundog that loves to sniff and explore. Gentle and keen to please."
   },
   "Cocker Spaniel (American)": {
    "traits": [
@@ -650,7 +700,8 @@
     "Brave",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Covered in tight curls and built for water work. Confident and friendly, with a proud bearing."
   },
   "Dachshund - Standard Long, Standard Smooth, Standard Wire, Miniature Long, Miniature Smooth, Miniature Wire": {
    "traits": [
@@ -658,7 +709,8 @@
     "Loyal",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Brave and curious, with a big bark for its size. Loves to burrow, sniff and be with its people."
   },
   "Dachshund Rabbit Long, Dachshund Rabbit Smooth, Dachshund Rabbit Wire": {
    "traits": [
@@ -684,7 +736,8 @@
     "Clever",
     "Affectionate"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Long and low, with a fluffy topknot. Thinks for itself but is a loving, clever companion."
   },
   "Deerhound": {
    "traits": [
@@ -692,7 +745,8 @@
     "Friendly",
     "Calm"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A huge, shaggy sighthound with a gentle soul. Calm and friendly, happy to lounge after a run."
   },
   "Dobermann": {
    "traits": [
@@ -700,7 +754,8 @@
     "Alert",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Sleek, athletic and sharp as a tack. Fearless and watchful, yet often a real softie with its own family."
   },
   "Dogue de Bordeaux": {
    "traits": [
@@ -708,7 +763,8 @@
     "Calm",
     "Protective"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A huge-headed French mastiff with a big heart. Calm and loving at home, and naturally protective of its family."
   },
   "Dutch Shepherd Dog": {
    "traits": [
@@ -716,7 +772,8 @@
     "Loyal",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A brindle all-rounder that loves to work. Alert, eager and deeply loyal, it needs lots of exercise and mental challenge."
   },
   "English Setter": {
    "traits": [
@@ -724,7 +781,8 @@
     "Energetic",
     "Brave"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A speckled, sweet-natured bird dog. Friendly and full of energy, it loves a good long run."
   },
   "English Springer Spaniel": {
    "traits": [
@@ -732,7 +790,8 @@
     "Trainable",
     "Brave"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Bred to flush game and loves to be busy. Friendly and eager to learn, it's never far from the action."
   },
   "English Toy Terrier (Black & Tan)": {
    "traits": [
@@ -749,7 +808,8 @@
     "Loyal",
     "Protective"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A large Portuguese guardian from the Estrela mountains. Loving and loyal with family, but protective of its territory."
   },
   "Eurasier": {
    "traits": [
@@ -757,7 +817,8 @@
     "Alert",
     "Reserved"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A fluffy, even-tempered spitz-type companion. Calm and watchful, close with family but reserved with strangers."
   },
   "Field Spaniel": {
    "traits": [
@@ -765,7 +826,8 @@
     "Energetic",
     "Independent"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Mellow at home but lively in the field. A thoughtful spaniel that likes to do things its own way."
   },
   "Finnish Lapphund": {
    "traits": [
@@ -773,7 +835,8 @@
     "Clever",
     "Brave"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A fluffy reindeer herder from Lapland. Gentle and calm at home, but clever and brave when there's work to be done."
   },
   "Finnish Spitz": {
    "traits": [
@@ -781,7 +844,8 @@
     "Energetic",
     "Independent"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A fox-red bird dog that barks to mark its quarry. Bold, energetic and fond of doing its own thing."
   },
   "Flat Coated Retriever": {
    "traits": [
@@ -798,7 +862,8 @@
     "Brave",
     "Alert"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Bred to bolt foxes and still keen as mustard. Sociable and bold, missing very little around it."
   },
   "Fox Terrier (Wire)": {
    "traits": [
@@ -806,7 +871,8 @@
     "Brave",
     "Alert"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Wiry-coated and full of beans. Friendly and plucky, with ears pricked for anything happening nearby."
   },
   "Foxhound": {
    "traits": [
@@ -823,7 +889,8 @@
     "Affectionate",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A cheerful companion that's happy in an apartment. Needs only short walks and dislikes the heat."
   },
   "German Hunting Terrier": {
    "traits": [
@@ -840,7 +907,8 @@
     "Energetic",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A sleek, medium-sized ratter with plenty of zip. Watchful and lively, and friendly once it knows you."
   },
   "German Shepherd Dog": {
    "traits": [
@@ -848,7 +916,8 @@
     "Hard-working",
     "Trainable"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Steady, protective and very trainable. Bonds closely with its family and is wary of strangers."
   },
   "German Shepherd Dog (Long Stock Coat)": {
    "traits": [
@@ -874,7 +943,8 @@
     "Clever",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A fluffy, fox-faced spitz with a curled tail. Bright, friendly and lively, it loves being part of the action."
   },
   "German Wirehaired Pointer": {
    "traits": [
@@ -891,7 +961,8 @@
     "Brave",
     "Gentle"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A sturdy Irish terrier that's quieter than most. Gentle at home but gutsy and active outdoors."
   },
   "Golden Retriever": {
    "traits": [
@@ -899,7 +970,8 @@
     "Dignified",
     "Trainable"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Patient and friendly, great with children. Thrives on company and a daily retrieve."
   },
   "Gordon Setter": {
    "traits": [
@@ -907,7 +979,8 @@
     "Brave",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A striking black and tan setter from Scotland. Bright, friendly and bold, with loads of stamina."
   },
   "Grand Basset Griffon Vendeen": {
    "traits": [
@@ -915,7 +988,8 @@
     "Hard-working",
     "Independent"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A rough-coated French scent hound with a lot of drive. Brave and tireless, with its own agenda."
   },
   "Great Dane": {
    "traits": [
@@ -923,7 +997,8 @@
     "Alert",
     "Dignified"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A towering dog with a gentle, friendly nature. Watchful at the door, but carries itself with real elegance."
   },
   "Great Swiss Mountain Dog": {
    "traits": [
@@ -931,7 +1006,8 @@
     "Alert",
     "Brave"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A big tricolour Swiss farm dog bred to pull carts and guard. Confident and watchful, with a stately presence."
   },
   "Greyhound": {
    "traits": [
@@ -939,7 +1015,8 @@
     "Gentle",
     "Affectionate"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A gentle couch potato that loves a quick sprint. Affectionate, quiet and smarter than you'd think."
   },
   "Griffon Bruxellois": {
    "traits": [
@@ -947,7 +1024,8 @@
     "Alert",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Bearded, bright-eyed and busy, with an almost human expression. Clever, lively and watchful."
   },
   "Groodle": {
    "traits": [
@@ -982,7 +1060,8 @@
     "Friendly",
     "Playful"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Sociable and happy-go-lucky, with a soft, silky coat. Quick to learn tricks and loves to play."
   },
   "Hungarian Vizsla": {
    "traits": [
@@ -990,7 +1069,8 @@
     "Energetic",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Known as a velcro dog: it sticks close to its people. Needs lots of running every day."
   },
   "Hungarian Wirehaired Vizsla": {
    "traits": [
@@ -998,7 +1078,8 @@
     "Affectionate",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A bearded, rust-coloured hunting dog. Clever and dignified, but a real softie with its family."
   },
   "Ibizan Hound": {
    "traits": [
@@ -1006,7 +1087,8 @@
     "Reserved",
     "Dignified"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A leggy, big-eared hunter with a famous springy leap. Lively outdoors, elegant and aloof indoors."
   },
   "Icelandic Sheepdog": {
    "traits": [
@@ -1014,7 +1096,8 @@
     "Friendly",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A cheerful spitz with a curly tail and a warm welcome for everyone. Keen, busy and happiest when it's on the move."
   },
   "Irish Red and White Setter": {
    "traits": [
@@ -1022,7 +1105,8 @@
     "Affectionate",
     "Trainable"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Sweet-natured and affectionate, with a patchy red and white coat. Friendly and keen to please."
   },
   "Irish Setter": {
    "traits": [
@@ -1048,7 +1132,8 @@
     "Affectionate",
     "Calm"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Curly-coated, with a distinctive rat-like tail. Loving and calm with family, wary of new faces."
   },
   "Irish Wolfhound": {
    "traits": [
@@ -1065,7 +1150,8 @@
     "Affectionate",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A slim, affectionate sighthound that loves warmth and a sprint. Can be shy with strangers."
   },
   "Italian Spinone": {
    "traits": [
@@ -1073,7 +1159,8 @@
     "Clever",
     "Gentle"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A shaggy, bearded hunting dog with a soft heart. Gentle, loyal and smarter than it looks."
   },
   "Jack Russell Terrier": {
    "traits": [
@@ -1081,7 +1168,8 @@
     "Energetic",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Small, tireless and always busy. Loves chasing and digging, and needs plenty to do."
   },
   "Japanese Chin": {
    "traits": [
@@ -1089,7 +1177,8 @@
     "Gentle",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Gentle and sweet-tempered, with a cat-like streak. Bright, friendly and happiest near its people."
   },
   "Japanese Spitz": {
    "traits": [
@@ -1097,7 +1186,8 @@
     "Alert",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A fluffy white companion with a big smile. Loving with family, bright and quick to let you know someone's coming."
   },
   "Jug": {
    "traits": [
@@ -1114,7 +1204,8 @@
     "Calm",
     "Brave"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A powerful Turkish guardian with a black mask, bred to protect sheep from wolves. Calm and composed, but fearless."
   },
   "Karelian Bear Dog": {
    "traits": [
@@ -1122,7 +1213,8 @@
     "Hard-working",
     "Dignified"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A bold black-and-white Finnish hunting dog, bred to face down bears. Brave, tireless and self-assured."
   },
   "Keeshond": {
    "traits": [
@@ -1130,7 +1222,8 @@
     "Brave",
     "Alert"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A fluffy Dutch barge dog with spectacle-like markings. Alert and quick to sound the alarm, and protective of its family."
   },
   "Kerry Blue Terrier": {
    "traits": [
@@ -1147,7 +1240,8 @@
     "Gentle",
     "Affectionate"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Soft-natured and devoted at home, though a bit shy with new people. A quiet, loving lap dog."
   },
   "Komondor": {
    "traits": [
@@ -1155,7 +1249,8 @@
     "Protective",
     "Reserved"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Instantly recognisable by its long white cords. Bred to guard flocks alone, so it's brave, protective and wary of strangers."
   },
   "Koolie": {
    "traits": [
@@ -1172,7 +1267,8 @@
     "Dignified",
     "Loyal"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A large white Hungarian guardian with a noble bearing. Devoted to its own people and fearless when it senses a threat."
   },
   "Labradoodle": {
    "traits": [
@@ -1189,7 +1285,8 @@
     "Clever",
     "Trainable"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Gentle, food-motivated and keen to please. Loves water, fetch and nearly everyone it meets."
   },
   "Lagotto Romagnolo": {
    "traits": [
@@ -1197,7 +1294,8 @@
     "Affectionate",
     "Trainable"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A curly Italian dog famous for sniffing out truffles. Loving, trainable and happiest when working."
   },
   "Lakeland Terrier": {
    "traits": [
@@ -1205,7 +1303,8 @@
     "Brave",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Self-assured and spirited, with a proud little swagger. Friendly with people and brave to a fault."
   },
   "Landseer (European Continental Type)": {
    "traits": [
@@ -1222,7 +1321,8 @@
     "Affectionate",
     "Hard-working"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A black and white German hunting dog. Devoted to its people and happiest with a job to do."
   },
   "Leonberger": {
    "traits": [
@@ -1230,7 +1330,8 @@
     "Playful",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A gentle giant with a lion-like mane. Friendly with everyone and playful, yet carries itself with quiet dignity."
   },
   "Lhasa Apso": {
    "traits": [
@@ -1247,7 +1348,8 @@
     "Affectionate",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Often clipped like a tiny lion. Bright, friendly and loving, it thrives on company and attention."
   },
   "Maltese": {
    "traits": [
@@ -1273,7 +1375,8 @@
     "Loyal",
     "Alert"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Sleek and black and tan, once a champion ratter. Watchful and devoted, but cool with strangers."
   },
   "Maremma Sheepdog": {
    "traits": [
@@ -1281,7 +1384,8 @@
     "Brave",
     "Dignified"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A big white Italian flock guardian, used on Aussie farms to protect livestock. Calm, dignified and fiercely protective."
   },
   "Mastiff": {
    "traits": [
@@ -1289,7 +1393,8 @@
     "Affectionate",
     "Hard-working"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "One of the heaviest breeds around. Calm and gentle, very affectionate with family and happy to lean on your legs."
   },
   "Miniature American Shepherd": {
    "traits": [
@@ -1297,7 +1402,8 @@
     "Loyal",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Like a pocket-sized Aussie Shepherd. Quick to learn, keen to work and closely bonded to its family."
   },
   "Miniature Fox Terrier": {
    "traits": [
@@ -1314,7 +1420,8 @@
     "Alert",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Small but fearless, strutting about like it owns the place. Lively, alert and always on the go."
   },
   "Moodle": {
    "traits": [
@@ -1331,7 +1438,8 @@
     "Energetic",
     "Brave"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A rare, wavy-coated Hungarian herder. Watchful, full of energy and bold, it thrives on activity and dog sports."
   },
   "Murray River Retriever": {
    "traits": [
@@ -1339,7 +1447,8 @@
     "Clever",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A curly, liver-coloured Aussie duck dog from the Murray. Bright, friendly and quietly proud."
   },
   "Neapolitan Mastiff": {
    "traits": [
@@ -1347,7 +1456,8 @@
     "Loyal",
     "Protective"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Famous for its loose, heavy wrinkles and jowls. Calm and devoted at home, and a serious guardian of its family."
   },
   "Newfoundland": {
    "traits": [
@@ -1373,7 +1483,8 @@
     "Energetic",
     "Calm"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A sturdy Nordic farm dog with a curled tail. Lively and fearless outdoors, yet easygoing and relaxed at home."
   },
   "Norwegian Elkhound": {
    "traits": [
@@ -1381,7 +1492,8 @@
     "Clever",
     "Independent"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A sturdy grey spitz bred to hunt moose. Friendly and smart, but likes to make its own decisions."
   },
   "Norwich Terrier": {
    "traits": [
@@ -1398,7 +1510,8 @@
     "Clever",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "The smallest retriever, bred to lure ducks with playful antics. Smart, keen and full of energy."
   },
   "Old English Sheepdog": {
    "traits": [
@@ -1424,7 +1537,8 @@
     "Alert",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Named for its butterfly ears. Sharp as a tack and observant, yet settles happily at home."
   },
   "Parson Russell Terrier": {
    "traits": [
@@ -1432,7 +1546,8 @@
     "Friendly",
     "Hard-working"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A busy, bold hunting terrier that loves a job to do. Friendly, tireless and needs plenty of exercise."
   },
   "Pekingese": {
    "traits": [
@@ -1440,7 +1555,8 @@
     "Loyal",
     "Reserved"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Bred for Chinese royalty and still acts the part. Brave and loyal, but keeps strangers at a distance."
   },
   "Peruvian Hairless Dog (Large)": {
    "traits": [
@@ -1448,7 +1564,8 @@
     "Affectionate",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A sleek, mostly hairless dog with ancient Peruvian roots. Graceful and lively, and affectionate with its family."
   },
   "Peruvian Hairless Dog (Medium)": {
    "traits": [
@@ -1474,7 +1591,8 @@
     "Brave",
     "Calm"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A shaggy, happy little French hound. Bold and busy on a scent, but easygoing at home."
   },
   "Pharaoh Hound": {
    "traits": [
@@ -1482,7 +1600,8 @@
     "Hard-working",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A sleek, tan hound known to blush when excited. Sharp, alert and quick to spot movement."
   },
   "Pointer": {
    "traits": [
@@ -1490,7 +1609,8 @@
     "Dignified",
     "Alert"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Famous for freezing mid-step to point at game. Dignified and friendly, always scanning the horizon."
   },
   "Polish Lowland Sheepdog": {
    "traits": [
@@ -1498,7 +1618,8 @@
     "Clever",
     "Trainable"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A shaggy, medium-sized herder with a sharp mind and a good memory. Watchful with strangers and very trainable."
   },
   "Pomeranian": {
    "traits": [
@@ -1524,7 +1645,8 @@
     "Clever",
     "Calm"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "The original poodle, bred to retrieve from water. Very smart and athletic, yet calm and well-mannered at home."
   },
   "Poodle (Toy)": {
    "traits": [
@@ -1559,7 +1681,8 @@
     "Independent",
     "Trainable"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A curly-coated fisherman's helper that loves a swim. Full of energy, quick to learn, with a mind of its own."
   },
   "Prague Ratter": {
    "traits": [
@@ -1567,7 +1690,8 @@
     "Affectionate",
     "Calm"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "One of the smallest breeds around. Gentle, calm and affectionate, it loves curling up with its people."
   },
   "Pug": {
    "traits": [
@@ -1575,7 +1699,8 @@
     "Friendly",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A sociable lap dog that loves people and attention. Snores, snuffles and rarely wants a long run."
   },
   "Pugalier": {
    "traits": [
@@ -1601,7 +1726,8 @@
     "Reserved",
     "Hard-working"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Known for its dreadlock-like cords that bounce as it moves. A tireless worker, lively with family but reserved with strangers."
   },
   "Pumi": {
    "traits": [
@@ -1609,7 +1735,8 @@
     "Energetic",
     "Brave"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A curly-coated Hungarian herder with perky, tipped ears. Busy, bold and full of energy, it loves having a job to do."
   },
   "Pyrenean Mastiff": {
    "traits": [
@@ -1617,7 +1744,8 @@
     "Friendly",
     "Calm"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A huge Spanish guardian with a gentle face. Calm and friendly with family, carrying its size with quiet dignity."
   },
   "Pyrenean Mountain Dog": {
    "traits": [
@@ -1634,7 +1762,8 @@
     "Loyal",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A small, scruffy mountain herder from the Pyrenees. Quick-witted and courageous, and very devoted to its person."
   },
   "Rhodesian Ridgeback": {
    "traits": [
@@ -1642,7 +1771,8 @@
     "Clever",
     "Reserved"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Calm and reserved with strangers, devoted at home. Strong and athletic, with a mind of its own."
   },
   "Rottweiler": {
    "traits": [
@@ -1650,7 +1780,8 @@
     "Calm",
     "Loyal"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A strong, confident guardian that's calm and steady when well raised. Loyal to its family and responds well to training."
   },
   "Russian Black Terrier": {
    "traits": [
@@ -1658,7 +1789,8 @@
     "Energetic",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Not really a terrier but a big, bearded working dog bred as a guard. Self-assured, lively and friendly with its people."
   },
   "Russian Toy (Russkiy Toy) (Long Haired)": {
    "traits": [
@@ -1675,7 +1807,8 @@
     "Friendly",
     "Loyal"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Tiny, leggy and lively, with a cheerful outlook. Forms a strong bond with its owner."
   },
   "Saluki": {
    "traits": [
@@ -1701,7 +1834,8 @@
     "Clever",
     "Loyal"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A small black Belgian barge dog with a fox-like face. Clever, curious and loyal, it loves to keep watch."
   },
   "Schnauzer": {
    "traits": [
@@ -1709,7 +1843,8 @@
     "Alert",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A bearded, medium-sized farm dog with bushy eyebrows. Lively, watchful and clever, it makes a keen little guard dog."
   },
   "Schnauzer (Giant)": {
    "traits": [
@@ -1717,7 +1852,8 @@
     "Brave",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "The biggest of the schnauzers, originally a cattle and guard dog. Bold, tireless and needs plenty of work and exercise."
   },
   "Schnauzer (Miniature)": {
    "traits": [
@@ -1725,7 +1861,8 @@
     "Alert",
     "Affectionate"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Bright and chatty, a keen watchdog. Small, sturdy and happy to join any activity."
   },
   "Schnoodle": {
    "traits": [
@@ -1742,7 +1879,8 @@
     "Loyal",
     "Dignified"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Short-legged and serious, with a proud, independent air. Brave and deeply loyal to its own people."
   },
   "Sealyham Terrier": {
    "traits": [
@@ -1750,7 +1888,8 @@
     "Alert",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A low, white Welsh terrier with a big beard. Bold and watchful, but friendly once it knows you."
   },
   "Shar Pei": {
    "traits": [
@@ -1758,7 +1897,8 @@
     "Independent",
     "Affectionate"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Instantly known by its deep wrinkles and hippo-like muzzle. Calm and independent, but affectionate with its own family."
   },
   "Sheepadoodle": {
    "traits": [
@@ -1775,7 +1915,8 @@
     "Trainable",
     "Reserved"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Looks like a mini Rough Collie. Gentle and loving with family, quick to learn, but often shy with strangers."
   },
   "Shiba Inu": {
    "traits": [
@@ -1783,7 +1924,8 @@
     "Alert",
     "Hard-working"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A small, fox-like Japanese hunter with a curled tail. Alert and loyal, but famously independent and cat-like."
   },
   "Shih Tzu": {
    "traits": [
@@ -1791,7 +1933,8 @@
     "Independent",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A little lion dog with a flowing coat. Friendly and outgoing with a cheeky independent streak, made for companionship."
   },
   "Shih-poo": {
    "traits": [
@@ -1808,7 +1951,8 @@
     "Alert",
     "Hard-working"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A rare Japanese hunting dog with a wolfish look. Energetic and alert, with plenty of stamina for long outings."
   },
   "Siberian Husky": {
    "traits": [
@@ -1816,7 +1960,8 @@
     "Trainable",
     "Hard-working"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A sled dog with striking eyes and a love of running. Friendly to all, but needs lots of exercise and loves to talk."
   },
   "Skye Terrier": {
    "traits": [
@@ -1833,7 +1978,8 @@
     "Loyal",
     "Affectionate"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A graceful North African sighthound. Proud and reserved, but deeply devoted to its family."
   },
   "Soft Coated Wheaten Terrier": {
    "traits": [
@@ -1841,7 +1987,8 @@
     "Friendly",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Bouncy and affectionate, famous for its exuberant greetings. Loves people and has energy to burn."
   },
   "Spanish Mastiff": {
    "traits": [
@@ -1849,7 +1996,8 @@
     "Clever",
     "Affectionate"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A giant, easygoing Spanish livestock guardian. Clever and affectionate with family, protective of its home."
   },
   "Spanish Water Dog": {
    "traits": [
@@ -1857,7 +2005,8 @@
     "Trainable",
     "Hard-working"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A woolly herding and water dog from Spain. Loyal and quick to learn, it loves a job to do."
   },
   "Spoodle": {
    "traits": [
@@ -1874,7 +2023,8 @@
     "Calm",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "The famous Alpine rescue dog. A big, friendly softie that's calm indoors and still enjoys a good romp outside."
   },
   "Staffordshire Bull Terrier": {
    "traits": [
@@ -1882,7 +2032,8 @@
     "Clever",
     "Affectionate"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Muscular but soft-hearted, famously devoted to its family. Full of energy and keen on a game."
   },
   "Sussex Spaniel": {
    "traits": [
@@ -1899,7 +2050,8 @@
     "Trainable",
     "Energetic"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A fluffy, usually black spitz once used to herd reindeer. Hard-working, keen to learn and full of stamina."
   },
   "Swedish Vallhund": {
    "traits": [
@@ -1907,7 +2059,8 @@
     "Friendly",
     "Alert"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A short-legged Viking cattle dog with a wolfish coat. Cheerful and friendly, always watching what's going on."
   },
   "Tatra Shepherd Dog": {
    "traits": [
@@ -1915,7 +2068,8 @@
     "Clever",
     "Alert"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A big white Polish mountain guardian. Calm and sensible by nature, but always alert to anything unusual on its patch."
   },
   "Tenterfield Terrier": {
    "traits": [
@@ -1923,7 +2077,8 @@
     "Dignified",
     "Loyal"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A small Aussie terrier, proud and plucky. Fiercely loyal to its family and fearless for its size."
   },
   "Tibetan Mastiff": {
    "traits": [
@@ -1931,7 +2086,8 @@
     "Protective",
     "Calm"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A massive, heavily maned guardian from the Himalayas. Calm and aloof with strangers, and very protective of its home."
   },
   "Tibetan Spaniel": {
    "traits": [
@@ -1948,7 +2104,8 @@
     "Alert",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Not a true terrier but a shaggy Himalayan companion. Friendly and clever, and watchful of newcomers."
   },
   "Tornjak": {
    "traits": [
@@ -1956,7 +2113,8 @@
     "Calm",
     "Friendly"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A large mountain guardian from the Balkans. Calm and friendly with its family and responds well to training."
   },
   "Weimaraner": {
    "traits": [
@@ -1964,7 +2122,8 @@
     "Trainable",
     "Calm"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "The sleek silver-grey ghost of the dog park. Calm at home but needs plenty of work and exercise."
   },
   "Weimaraner (Longhair)": {
    "traits": [
@@ -1972,7 +2131,8 @@
     "Trainable",
     "Calm"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A rarer, feathery-coated version of the silver hunting dog. Calm, trainable and loves to work."
   },
   "Welsh Corgi (Cardigan)": {
    "traits": [
@@ -1980,7 +2140,8 @@
     "Clever",
     "Calm"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "The corgi with the long, bushy tail. A steady, clever cattle herder that keeps a watchful eye on everything."
   },
   "Welsh Corgi (Pembroke)": {
    "traits": [
@@ -2006,7 +2167,8 @@
     "Friendly",
     "Affectionate"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Cheerful and spirited, with a classic black and tan coat. Brave outdoors and loving at home."
   },
   "West Highland White Terrier": {
    "traits": [
@@ -2014,7 +2176,8 @@
     "Alert",
     "Independent"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A bright little terrier with a big personality. Independent, but happy to be in the thick of things."
   },
   "Whippet": {
    "traits": [
@@ -2031,7 +2194,8 @@
     "Calm",
     "Alert"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A white shepherd with a softer nature than many of its cousins. Active and alert outdoors, gentle and calm at home."
   },
   "Wirehaired Slovakian Pointer": {
    "traits": [
@@ -2048,7 +2212,8 @@
     "Friendly",
     "Alert"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "The ancient hairless dog of Mexico, in three sizes. Calm and friendly at home, and alert to anything new."
   },
   "Yakutian Laika": {
    "traits": [
@@ -2056,7 +2221,8 @@
     "Friendly",
     "Brave"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "A striking Siberian sled and hunting dog. Lively and friendly with people, with a bold, hardy spirit."
   },
   "Yorkshire Terrier": {
    "traits": [
@@ -2064,7 +2230,8 @@
     "Alert",
     "Clever"
    ],
-   "source": "standard"
+   "source": "standard",
+   "text": "Big terrier attitude packed into a silky little body. Bright, busy and quick to sound the alarm."
   },
   "Yugoslavian Shepherd Dog - Sharplanina": {
    "traits": [

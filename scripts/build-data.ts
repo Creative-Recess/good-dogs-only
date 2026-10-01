@@ -6,6 +6,7 @@ import { createHash } from 'node:crypto'
 import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
 import sharp from 'sharp'
 import type { Breed, PhotoCredit } from '../src/data/types.ts'
+import { photoColours } from './lib/colours.ts'
 import { buildBreedList, groups } from './lib/dataset.ts'
 import { cachedDownload } from './lib/downloads.ts'
 import { politeFetchJson } from './lib/http.ts'
@@ -112,9 +113,10 @@ for (const b of buildBreedList()) {
     .toFile(new URL(detailName, outDir).pathname)
   written.add(gridName).add(detailName)
 
+  const colours = await photoColours(new URL(gridName, outDir).pathname)
   breeds.push({
     ...b,
-    image: { grid: `/breeds/${gridName}`, detail: `/breeds/${detailName}`, width: detail.width, height: detail.height },
+    image: { grid: `/breeds/${gridName}`, detail: `/breeds/${detailName}`, width: detail.width, height: detail.height, focus: [fx, fy], colours },
     credit,
   })
 }

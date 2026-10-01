@@ -2,7 +2,7 @@
 // breeds and photos, inlined as data URIs so it publishes as a single self-contained page.
 // Output: .cache/design/<name>.html
 // Usage: node design/make-mockup.ts [template=mockup] [output=dogdex-mockup]
-//   e.g. node design/make-mockup.ts mockup98 dogdex-98   (the Windows 98 variant; inlines design/vendor/98css)
+//   e.g. node design/make-mockup.ts mockup98 dogdex-98   (the Windows 98 variant; inlines src/vendor/98css)
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import sharp from 'sharp'
 import { buildBreedList, groups } from '../scripts/lib/dataset.ts'
@@ -37,7 +37,6 @@ const DEMO_CAUGHT: Record<string, { date: string; note?: string }> = {
 
 const root = new URL('../', import.meta.url)
 const readJson = async <T>(p: string): Promise<T> => JSON.parse(await readFile(new URL(p, root), 'utf8')) as T
-const temperament = (await readJson<{ breeds: Record<string, { traits: string[]; text: string }> }>('data/temperament.json')).breeds
 const traitsData = (await readJson<{ breeds: Record<string, { traits: string[]; text?: string }> }>('data/traits.json')).breeds
 const picks = (await readJson<{ picks: Record<string, PhotoPick> }>('data/photo-picks.json')).picks
 const dataUri = (buf: Buffer) => `data:image/webp;base64,${buf.toString('base64')}`
@@ -59,7 +58,7 @@ for (const id of SAMPLE) {
     ...b,
     focus: picks[id]?.focus ?? [0.5, 0.5],
     // Traits from the approved list (data/traits.json); our own one-line text where written.
-    temperament: { traits: traitsData[b.officialName ?? b.name].traits, text: temperament[id]?.text ?? traitsData[b.officialName ?? b.name].text ?? '' },
+    temperament: { traits: traitsData[b.officialName ?? b.name].traits, text: traitsData[b.officialName ?? b.name].text ?? '' },
     img: { grid: dataUri(grid), tiny: dataUri(grid), detail: dataUri(detailOut.data), w: detailOut.info.width, h: detailOut.info.height },
     credit: built.credit,
   })
@@ -75,13 +74,7 @@ const data = {
 const [templateName = 'mockup', outName = 'dogdex-mockup'] = process.argv.slice(2)
 let template = await readFile(new URL(`design/${templateName}.template.html`, root), 'utf8')
 if (template.includes('/*__98CSS__*/')) {
-  // 98.css loads its pixel fonts by relative URL; the artifact allows no external files, so inline them.
-  const vendor = new URL('design/vendor/98css/', root)
-  let css = await readFile(new URL('98.css', vendor), 'utf8')
-  for (const font of ['ms_sans_serif', 'ms_sans_serif_bold']) {
-    const woff2 = (await readFile(new URL(`${font}.woff2`, vendor))).toString('base64')
-    css = css.replace(new RegExp(`url\\(${font}\\.woff2\\)`, 'g'), `url(data:font/woff2;base64,${woff2})`).replace(new RegExp(`,?\\s*url\\(${font}\\.woff\\)\\s*format\\("woff"\\)`, 'g'), '')
-  }
+  const css = await readFile(new URL('src/vendor/98css/98.css', root), 'utf8')
   template = template.replace('/*__98CSS__*/', () => `/*! 98.css 0.1.21, MIT, (c) Jordan Scales */\n${css}`)
 }
 await mkdir(new URL('.cache/design/', root), { recursive: true })
