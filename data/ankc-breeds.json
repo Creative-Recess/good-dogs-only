@@ -1,0 +1,1400 @@
+{
+  "source": "Dogs Australia (ANKC) breed standards group pages",
+  "sourceUrl": "https://dogsaustralia.org.au/members/Breed/Index/1",
+  "fetchedAt": "2026-10-01",
+  "fetchedWith": "Dogdex/0.1 (https://github.com/justinlew25; personal non-commercial project) Node.js/22.21.1",
+  "groups": [
+    {
+      "id": 1,
+      "name": "Toys"
+    },
+    {
+      "id": 2,
+      "name": "Terriers"
+    },
+    {
+      "id": 3,
+      "name": "Gundogs"
+    },
+    {
+      "id": 4,
+      "name": "Hounds"
+    },
+    {
+      "id": 5,
+      "name": "Working Dogs"
+    },
+    {
+      "id": 6,
+      "name": "Utility"
+    },
+    {
+      "id": 7,
+      "name": "Non Sporting"
+    }
+  ],
+  "breeds": [
+    {
+      "ankcName": "Affenpinscher",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Affenpinscher",
+      "standardLastUpdated": "09 Oct 2012"
+    },
+    {
+      "ankcName": "Australian Silky Terrier",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australian-Silky-Terrier",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Bichon Frise",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bichon-Frise",
+      "standardLastUpdated": "23 Jan 2015"
+    },
+    {
+      "ankcName": "Biewer Terrier",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Biewer-Terrier",
+      "standardLastUpdated": "27 Jun 2022"
+    },
+    {
+      "ankcName": "Bolognese",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bolognese",
+      "standardLastUpdated": "25 Sep 2020"
+    },
+    {
+      "ankcName": "Cavalier King Charles Spaniel",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cavalier-King-Charles-Spaniel",
+      "standardLastUpdated": "03 Aug 2008"
+    },
+    {
+      "ankcName": "Chihuahua (Long Coat)",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chihuahua-(Long-Coat)",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "Chihuahua (Smooth Coat)",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chihuahua-(Smooth-Coat)",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Chinese Crested Dog",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chinese-Crested-Dog",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Coton De Tulear",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Coton-De-Tulear",
+      "standardLastUpdated": "09 Dec 2015"
+    },
+    {
+      "ankcName": "English Toy Terrier (Black & Tan)",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/English-Toy-Terrier-(Black-&-Tan)",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Griffon Bruxellois",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Griffon-Bruxellois-",
+      "standardLastUpdated": "16 Feb 2010"
+    },
+    {
+      "ankcName": "Havanese",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Havanese",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Italian Greyhound",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Italian-Greyhound",
+      "standardLastUpdated": "23 Jan 2015"
+    },
+    {
+      "ankcName": "Japanese Chin",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Japanese-Chin",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "King Charles Spaniel",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/King-Charles-Spaniel",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Lowchen (Little Lion Dog)",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Lowchen-(Little-Lion-Dog)",
+      "standardLastUpdated": "22 Feb 2017"
+    },
+    {
+      "ankcName": "Maltese",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Maltese",
+      "standardLastUpdated": "15 May 2010"
+    },
+    {
+      "ankcName": "Miniature Pinscher",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Miniature-Pinscher-",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Papillon",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Papillon",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "Pekingese",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pekingese",
+      "standardLastUpdated": "22 Feb 2017"
+    },
+    {
+      "ankcName": "Pomeranian",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pomeranian",
+      "standardLastUpdated": "30 Oct 2014"
+    },
+    {
+      "ankcName": "Prague Ratter",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Prague-Ratter",
+      "standardLastUpdated": "10 Aug 2022"
+    },
+    {
+      "ankcName": "Pug",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pug",
+      "standardLastUpdated": "07 Feb 2013"
+    },
+    {
+      "ankcName": "Russian Toy (Russkiy Toy) (Long Haired)",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Russian-Toy-(Russkiy-Toy)-(Long-Haired)",
+      "standardLastUpdated": "22 Dec 2017"
+    },
+    {
+      "ankcName": "Russian Toy (Russkiy Toy) (Smooth Haired)",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Russian-Toy-(Russkiy-Toy)-(Smooth-Haired)",
+      "standardLastUpdated": "31 May 2018"
+    },
+    {
+      "ankcName": "Tibetan Spaniel",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tibetan-Spaniel",
+      "standardLastUpdated": "22 Feb 2017"
+    },
+    {
+      "ankcName": "Yorkshire Terrier",
+      "groupId": 1,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Yorkshire-Terrier",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Airedale Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Airedale-Terrier",
+      "standardLastUpdated": "21 Mar 2016"
+    },
+    {
+      "ankcName": "American Hairless Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/American-Hairless-Terrier",
+      "standardLastUpdated": "12 Jan 2017"
+    },
+    {
+      "ankcName": "American Staffordshire Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/American-Staffordshire-Terrier",
+      "standardLastUpdated": "01 Dec 1997"
+    },
+    {
+      "ankcName": "Australian Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australian-Terrier",
+      "standardLastUpdated": "18 Oct 2012"
+    },
+    {
+      "ankcName": "Bedlington Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bedlington-Terrier",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "Border Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Border-Terrier",
+      "standardLastUpdated": "03 Aug 2008"
+    },
+    {
+      "ankcName": "Bull Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bull-Terrier",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Bull Terrier (Miniature)",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bull-Terrier-(Miniature)",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Cairn Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cairn-Terrier",
+      "standardLastUpdated": "16 Feb 2015"
+    },
+    {
+      "ankcName": "Cesky Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cesky-Terrier",
+      "standardLastUpdated": "08 Mar 2018"
+    },
+    {
+      "ankcName": "Dandie Dinmont Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dandie-Dinmont-Terrier",
+      "standardLastUpdated": "22 Feb 2017"
+    },
+    {
+      "ankcName": "Fox Terrier (Smooth)",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Fox-Terrier-(Smooth)",
+      "standardLastUpdated": "05 Nov 2015"
+    },
+    {
+      "ankcName": "Fox Terrier (Wire)",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Fox-Terrier-(Wire)",
+      "standardLastUpdated": "16 Jul 2009"
+    },
+    {
+      "ankcName": "German Hunting Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Hunting-Terrier",
+      "standardLastUpdated": "25 Aug 2016"
+    },
+    {
+      "ankcName": "Glen Of Imaal Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Glen-Of-Imaal-Terrier",
+      "standardLastUpdated": "03 Oct 2012"
+    },
+    {
+      "ankcName": "Irish Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Irish-Terrier",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Jack Russell Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Jack-Russell-Terrier",
+      "standardLastUpdated": "16 Oct 2021"
+    },
+    {
+      "ankcName": "Kerry Blue Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Kerry-Blue-Terrier",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Lakeland Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Lakeland-Terrier",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Manchester Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Manchester-Terrier",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Norfolk Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Norfolk-Terrier",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Norwich Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Norwich-Terrier",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Parson Russell Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Parson-Russell-Terrier",
+      "standardLastUpdated": "22 Feb 2017"
+    },
+    {
+      "ankcName": "Scottish Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Scottish-Terrier",
+      "standardLastUpdated": "14 Sep 2011"
+    },
+    {
+      "ankcName": "Sealyham Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Sealyham-Terrier",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Skye Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Skye-Terrier",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Soft Coated Wheaten Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Soft-Coated-Wheaten-Terrier",
+      "standardLastUpdated": "04 May 2010"
+    },
+    {
+      "ankcName": "Staffordshire Bull Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Staffordshire-Bull-Terrier",
+      "standardLastUpdated": "26 Mar 2015"
+    },
+    {
+      "ankcName": "Tenterfield Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tenterfield-Terrier",
+      "standardLastUpdated": "17 Apr 2019"
+    },
+    {
+      "ankcName": "Welsh Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Welsh-Terrier",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "West Highland White Terrier",
+      "groupId": 2,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/West-Highland-White-Terrier",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Bracco Italiano",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bracco-Italiano",
+      "standardLastUpdated": "12 Nov 2014"
+    },
+    {
+      "ankcName": "Brittany",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Brittany",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "Chesapeake Bay Retriever",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chesapeake-Bay-Retriever",
+      "standardLastUpdated": "16 Aug 2010"
+    },
+    {
+      "ankcName": "Clumber Spaniel",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Clumber-Spaniel",
+      "standardLastUpdated": "14 Sep 2011"
+    },
+    {
+      "ankcName": "Cocker Spaniel",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cocker-Spaniel",
+      "standardLastUpdated": "09 Oct 2012"
+    },
+    {
+      "ankcName": "Cocker Spaniel (American)",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cocker-Spaniel-(American)",
+      "standardLastUpdated": "01 Mar 2018"
+    },
+    {
+      "ankcName": "Curly Coated Retriever",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Curly-Coated-Retriever",
+      "standardLastUpdated": "23 Jan 2015"
+    },
+    {
+      "ankcName": "English Setter",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/English-Setter",
+      "standardLastUpdated": "26 Oct 2011"
+    },
+    {
+      "ankcName": "English Springer Spaniel",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/English-Springer-Spaniel",
+      "standardLastUpdated": "10 May 2010"
+    },
+    {
+      "ankcName": "Field Spaniel",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Field-Spaniel",
+      "standardLastUpdated": "30 Oct 2014"
+    },
+    {
+      "ankcName": "Flat Coated Retriever",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Flat-Coated-Retriever",
+      "standardLastUpdated": "03 Aug 2008"
+    },
+    {
+      "ankcName": "German Shorthaired Pointer",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Shorthaired-Pointer",
+      "standardLastUpdated": "02 Aug 2016"
+    },
+    {
+      "ankcName": "German Wirehaired Pointer",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Wirehaired-Pointer",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "Golden Retriever",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Golden-Retriever",
+      "standardLastUpdated": "23 Jan 2015"
+    },
+    {
+      "ankcName": "Gordon Setter",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Gordon-Setter",
+      "standardLastUpdated": "09 Jul 2015"
+    },
+    {
+      "ankcName": "Hungarian Vizsla",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Hungarian-Vizsla",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "Hungarian Wirehaired Vizsla",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Hungarian-Wirehaired-Vizsla",
+      "standardLastUpdated": "13 May 2013"
+    },
+    {
+      "ankcName": "Irish Red and White Setter",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Irish-Red-and-White-Setter",
+      "standardLastUpdated": "26 Feb 2013"
+    },
+    {
+      "ankcName": "Irish Setter",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Irish-Setter",
+      "standardLastUpdated": "23 Jan 2015"
+    },
+    {
+      "ankcName": "Irish Water Spaniel",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Irish-Water-Spaniel",
+      "standardLastUpdated": "03 Aug 2008"
+    },
+    {
+      "ankcName": "Italian Spinone",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Italian-Spinone",
+      "standardLastUpdated": "16 Jul 2009"
+    },
+    {
+      "ankcName": "Labrador Retriever",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Labrador-Retriever",
+      "standardLastUpdated": "01 Apr 2025"
+    },
+    {
+      "ankcName": "Lagotto Romagnolo",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Lagotto-Romagnolo",
+      "standardLastUpdated": "08 Mar 2018"
+    },
+    {
+      "ankcName": "Large Munsterlander",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Large-Munsterlander",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Murray River Retriever",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Murray-River-Retriever",
+      "standardLastUpdated": "30 Jun 2022"
+    },
+    {
+      "ankcName": "Nova Scotia Duck Tolling Retriever",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Nova-Scotia-Duck-Tolling-Retriever",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "Pointer",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pointer",
+      "standardLastUpdated": "03 Aug 2008"
+    },
+    {
+      "ankcName": "Spanish Water Dog",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Spanish-Water-Dog",
+      "standardLastUpdated": "01 May 2018"
+    },
+    {
+      "ankcName": "Sussex Spaniel",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Sussex-Spaniel",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Weimaraner",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Weimaraner",
+      "standardLastUpdated": "09 Jul 2015"
+    },
+    {
+      "ankcName": "Weimaraner (Longhair)",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Weimaraner-(Longhair)",
+      "standardLastUpdated": "09 Jul 2015"
+    },
+    {
+      "ankcName": "Welsh Springer Spaniel",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Welsh-Springer-Spaniel",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Wirehaired Slovakian Pointer",
+      "groupId": 3,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Wirehaired-Slovakian-Pointer",
+      "standardLastUpdated": "08 Aug 2018"
+    },
+    {
+      "ankcName": "Afghan Hound",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Afghan-Hound",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Azawakh",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Azawakh",
+      "standardLastUpdated": "15 Oct 2019"
+    },
+    {
+      "ankcName": "Basenji",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Basenji",
+      "standardLastUpdated": "23 Jan 2015"
+    },
+    {
+      "ankcName": "Basset Fauve De Bretagne",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Basset-Fauve-De-Bretagne",
+      "standardLastUpdated": "01 May 2009"
+    },
+    {
+      "ankcName": "Basset Hound",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Basset-Hound",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Bavarian Mountain Scent Hound",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bavarian-Mountain-Scent-Hound",
+      "standardLastUpdated": "01 Apr 2025"
+    },
+    {
+      "ankcName": "Beagle",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Beagle",
+      "standardLastUpdated": "12 Mar 2012"
+    },
+    {
+      "ankcName": "Black and Tan Coonhound",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Black-and-Tan-Coonhound",
+      "standardLastUpdated": "16 Jan 2015"
+    },
+    {
+      "ankcName": "Bloodhound",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bloodhound",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "Bluetick Coonhound",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bluetick-Coonhound",
+      "standardLastUpdated": "24 Mar 2017"
+    },
+    {
+      "ankcName": "Borzoi",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Borzoi",
+      "standardLastUpdated": "22 Feb 2017"
+    },
+    {
+      "ankcName": "Cirneco Dell'Etna",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cirneco-Dell'Etna",
+      "standardLastUpdated": "22 Jun 2020"
+    },
+    {
+      "ankcName": "Dachshund - Standard Long, Standard Smooth, Standard Wire, Miniature Long, Miniature Smooth, Miniature Wire",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dachshund---Standard-Long,-Standard-Smooth,-Standard-Wire,-Miniature-Long,-Miniature-Smooth,-Miniature-Wire",
+      "standardLastUpdated": "01 Dec 2025"
+    },
+    {
+      "ankcName": "Dachshund Rabbit Long, Dachshund Rabbit Smooth, Dachshund Rabbit Wire",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dachshund-Rabbit-Long,-Dachshund-Rabbit-Smooth,-Dachshund-Rabbit-Wire",
+      "standardLastUpdated": "21 Jan 2021"
+    },
+    {
+      "ankcName": "Deerhound",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Deerhound",
+      "standardLastUpdated": "17 Nov 2009"
+    },
+    {
+      "ankcName": "Finnish Spitz",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Finnish-Spitz",
+      "standardLastUpdated": "03 Jun 2016"
+    },
+    {
+      "ankcName": "Foxhound",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Foxhound",
+      "standardLastUpdated": "24 Jan 2009"
+    },
+    {
+      "ankcName": "Grand Basset Griffon Vendeen",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Grand-Basset-Griffon-Vendeen",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Greyhound",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Greyhound",
+      "standardLastUpdated": "02 Mar 2010"
+    },
+    {
+      "ankcName": "Hamiltonstovare",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Hamiltonstovare",
+      "standardLastUpdated": "23 Feb 2010"
+    },
+    {
+      "ankcName": "Harrier",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Harrier",
+      "standardLastUpdated": "01 Jan 2001"
+    },
+    {
+      "ankcName": "Ibizan Hound",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Ibizan-Hound",
+      "standardLastUpdated": "03 Aug 2008"
+    },
+    {
+      "ankcName": "Irish Wolfhound",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Irish-Wolfhound",
+      "standardLastUpdated": "23 Feb 2017"
+    },
+    {
+      "ankcName": "Norwegian Elkhound",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Norwegian-Elkhound",
+      "standardLastUpdated": "23 Jan 2015"
+    },
+    {
+      "ankcName": "Otterhound",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Otterhound",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Petit Basset Griffon Vendeen",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Petit-Basset-Griffon-Vendeen",
+      "standardLastUpdated": "10 Dec 2009"
+    },
+    {
+      "ankcName": "Pharaoh Hound",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pharaoh-Hound",
+      "standardLastUpdated": "02 Mar 2010"
+    },
+    {
+      "ankcName": "Porcelaine",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Porcelaine",
+      "standardLastUpdated": "14 Mar 2024"
+    },
+    {
+      "ankcName": "Portuguese Podengo - Small Medium Large Smooth Haired - Small Medium Large Wire Haired",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Portuguese-Podengo---Small-Medium-Large-Smooth-Haired---Small-Medium-Large-Wire-Haired",
+      "standardLastUpdated": "11 Feb 2011"
+    },
+    {
+      "ankcName": "Rhodesian Ridgeback",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Rhodesian-Ridgeback",
+      "standardLastUpdated": "02 Oct 2000"
+    },
+    {
+      "ankcName": "Saluki",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Saluki",
+      "standardLastUpdated": "23 Jan 2015"
+    },
+    {
+      "ankcName": "Sloughi",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Sloughi",
+      "standardLastUpdated": "03 Aug 2008"
+    },
+    {
+      "ankcName": "Whippet",
+      "groupId": 4,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Whippet",
+      "standardLastUpdated": "01 Dec 2018"
+    },
+    {
+      "ankcName": "Australian Cattle Dog",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australian-Cattle-Dog",
+      "standardLastUpdated": "14 Dec 2009"
+    },
+    {
+      "ankcName": "Australian Kelpie",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australian-Kelpie",
+      "standardLastUpdated": "01 Jan 1994"
+    },
+    {
+      "ankcName": "Australian Shepherd",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australian-Shepherd",
+      "standardLastUpdated": "14 Sep 2011"
+    },
+    {
+      "ankcName": "Australian Stumpy Tail Cattle Dog",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australian-Stumpy-Tail-Cattle-Dog",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "Bearded Collie",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bearded-Collie",
+      "standardLastUpdated": "23 Jan 2015"
+    },
+    {
+      "ankcName": "Beauceron (Berger de Beauce)",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Beauceron-(Berger-de-Beauce)",
+      "standardLastUpdated": "25 Sep 2020"
+    },
+    {
+      "ankcName": "Belgian Shepherd Dog (Groenendael, Tervueren, Laekenois, Malinois)",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Belgian-Shepherd-Dog-(Groenendael,-Tervueren,-Laekenois,-Malinois)",
+      "standardLastUpdated": "30 Apr 2014"
+    },
+    {
+      "ankcName": "Bergamasco Shepherd Dog",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bergamasco-Shepherd-Dog",
+      "standardLastUpdated": "29 Apr 2016"
+    },
+    {
+      "ankcName": "Berger Picard",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Berger-Picard-",
+      "standardLastUpdated": "24 Jul 2026"
+    },
+    {
+      "ankcName": "Border Collie",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Border-Collie",
+      "standardLastUpdated": "19 Jul 2018"
+    },
+    {
+      "ankcName": "Bouvier Des Flandres",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bouvier-Des-Flandres",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "Briard",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Briard",
+      "standardLastUpdated": "03 Aug 2008"
+    },
+    {
+      "ankcName": "Collie (Rough)",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Collie-(Rough)",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Collie (Smooth)",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Collie-(Smooth)",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Dutch Shepherd Dog",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dutch-Shepherd-Dog",
+      "standardLastUpdated": "07 Aug 2013"
+    },
+    {
+      "ankcName": "Finnish Lapphund",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Finnish-Lapphund",
+      "standardLastUpdated": "22 Feb 2017"
+    },
+    {
+      "ankcName": "German Shepherd Dog",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Shepherd-Dog",
+      "standardLastUpdated": "08 Oct 2015"
+    },
+    {
+      "ankcName": "German Shepherd Dog (Long Stock Coat)",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Shepherd-Dog-(Long-Stock-Coat)",
+      "standardLastUpdated": "08 Oct 2015"
+    },
+    {
+      "ankcName": "Icelandic Sheepdog",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Icelandic-Sheepdog",
+      "standardLastUpdated": "09 Jul 2018"
+    },
+    {
+      "ankcName": "Komondor",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Komondor",
+      "standardLastUpdated": "01 Sep 2000"
+    },
+    {
+      "ankcName": "Kuvasz",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Kuvasz",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "Maremma Sheepdog",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Maremma-Sheepdog",
+      "standardLastUpdated": "07 Aug 2013"
+    },
+    {
+      "ankcName": "Miniature American Shepherd",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Miniature-American-Shepherd",
+      "standardLastUpdated": "01 Aug 2022"
+    },
+    {
+      "ankcName": "Mudi",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Mudi",
+      "standardLastUpdated": "15 Aug 2023"
+    },
+    {
+      "ankcName": "Norwegian Buhund",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Norwegian-Buhund",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "Old English Sheepdog",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Old-English-Sheepdog",
+      "standardLastUpdated": "13 Nov 2014"
+    },
+    {
+      "ankcName": "Polish Lowland Sheepdog",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Polish-Lowland-Sheepdog",
+      "standardLastUpdated": "22 Feb 2017"
+    },
+    {
+      "ankcName": "Puli",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Puli",
+      "standardLastUpdated": "19 Dec 2014"
+    },
+    {
+      "ankcName": "Pumi",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pumi",
+      "standardLastUpdated": "14 May 2010"
+    },
+    {
+      "ankcName": "Pyrenean Sheepdog Longhaired",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pyrenean-Sheepdog-Longhaired",
+      "standardLastUpdated": "16 May 2012"
+    },
+    {
+      "ankcName": "Shetland Sheepdog",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Shetland-Sheepdog",
+      "standardLastUpdated": "29 Jun 2010"
+    },
+    {
+      "ankcName": "Swedish Lapphund",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Swedish-Lapphund",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "Swedish Vallhund",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Swedish-Vallhund",
+      "standardLastUpdated": "09 Jul 2015"
+    },
+    {
+      "ankcName": "Tatra Shepherd Dog",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tatra-Shepherd-Dog",
+      "standardLastUpdated": "12 Jan 2015"
+    },
+    {
+      "ankcName": "Welsh Corgi (Cardigan)",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Welsh-Corgi-(Cardigan)",
+      "standardLastUpdated": "02 Dec 2015"
+    },
+    {
+      "ankcName": "Welsh Corgi (Pembroke)",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Welsh-Corgi-(Pembroke)",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "White Swiss Shepherd Dog",
+      "groupId": 5,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/White-Swiss-Shepherd-Dog",
+      "standardLastUpdated": "11 Dec 2015"
+    },
+    {
+      "ankcName": "Akita",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Akita",
+      "standardLastUpdated": "22 Feb 2017"
+    },
+    {
+      "ankcName": "Akita (Japanese)",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Akita-(Japanese)",
+      "standardLastUpdated": "07 Feb 2013"
+    },
+    {
+      "ankcName": "Alaskan Malamute",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Alaskan-Malamute",
+      "standardLastUpdated": "21 May 2009"
+    },
+    {
+      "ankcName": "Anatolian Shepherd Dog",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Anatolian-Shepherd-Dog",
+      "standardLastUpdated": "15 Nov 2018"
+    },
+    {
+      "ankcName": "Bernese Mountain Dog",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bernese-Mountain-Dog",
+      "standardLastUpdated": "09 Dec 2015"
+    },
+    {
+      "ankcName": "Boxer",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Boxer",
+      "standardLastUpdated": "23 Jul 2015"
+    },
+    {
+      "ankcName": "Bullmastiff",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bullmastiff",
+      "standardLastUpdated": "10 Mar 2017"
+    },
+    {
+      "ankcName": "Canadian Eskimo Dog",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Canadian-Eskimo-Dog",
+      "standardLastUpdated": "15 Sep 2015"
+    },
+    {
+      "ankcName": "Cane Corso",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cane-Corso",
+      "standardLastUpdated": "29 Apr 2016"
+    },
+    {
+      "ankcName": "Caucasian Shepherd Dog",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Caucasian-Shepherd-Dog",
+      "standardLastUpdated": "24 Jul 2018"
+    },
+    {
+      "ankcName": "Central Asian Shepherd Dog",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Central-Asian-Shepherd-Dog",
+      "standardLastUpdated": "28 Feb 2011"
+    },
+    {
+      "ankcName": "Dobermann",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dobermann",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Dogue de Bordeaux",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dogue-de-Bordeaux",
+      "standardLastUpdated": "01 Jan 2009"
+    },
+    {
+      "ankcName": "Estrela Mountain Dog",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Estrela-Mountain-Dog",
+      "standardLastUpdated": "14 Sep 2015"
+    },
+    {
+      "ankcName": "German Pinscher",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Pinscher",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Great Swiss Mountain Dog",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Great-Swiss-Mountain-Dog",
+      "standardLastUpdated": "30 Jun 2022"
+    },
+    {
+      "ankcName": "Kangal Shepherd Dog",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Kangal-Shepherd-Dog",
+      "standardLastUpdated": "25 Jun 2018"
+    },
+    {
+      "ankcName": "Landseer (European Continental Type)",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Landseer-(European-Continental-Type)",
+      "standardLastUpdated": "24 Jul 2018"
+    },
+    {
+      "ankcName": "Leonberger",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Leonberger",
+      "standardLastUpdated": "26 Oct 2011"
+    },
+    {
+      "ankcName": "Mastiff",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Mastiff",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Neapolitan Mastiff",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Neapolitan-Mastiff",
+      "standardLastUpdated": "22 Feb 2017"
+    },
+    {
+      "ankcName": "Newfoundland",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Newfoundland",
+      "standardLastUpdated": "25 May 2009"
+    },
+    {
+      "ankcName": "Portuguese Water Dog",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Portuguese-Water-Dog",
+      "standardLastUpdated": "02 Dec 2015"
+    },
+    {
+      "ankcName": "Pyrenean Mastiff",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pyrenean-Mastiff",
+      "standardLastUpdated": "11 Dec 2015"
+    },
+    {
+      "ankcName": "Pyrenean Mountain Dog",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pyrenean-Mountain-Dog",
+      "standardLastUpdated": "06 Jul 2011"
+    },
+    {
+      "ankcName": "Rottweiler",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Rottweiler",
+      "standardLastUpdated": "24 Jul 2018"
+    },
+    {
+      "ankcName": "Russian Black Terrier",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Russian-Black-Terrier",
+      "standardLastUpdated": "21 Jan 2011"
+    },
+    {
+      "ankcName": "Samoyed",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Samoyed",
+      "standardLastUpdated": "21 May 2009"
+    },
+    {
+      "ankcName": "Schnauzer",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Schnauzer",
+      "standardLastUpdated": "22 May 2009"
+    },
+    {
+      "ankcName": "Schnauzer (Giant)",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Schnauzer-(Giant)",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "Schnauzer (Miniature)",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Schnauzer-(Miniature)",
+      "standardLastUpdated": "02 Dec 2015"
+    },
+    {
+      "ankcName": "Shiba Inu",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Shiba-Inu",
+      "standardLastUpdated": "22 Feb 2017"
+    },
+    {
+      "ankcName": "Shikoku",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Shikoku",
+      "standardLastUpdated": "10 Aug 2022"
+    },
+    {
+      "ankcName": "Siberian Husky",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Siberian-Husky",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "Spanish Mastiff",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Spanish-Mastiff",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "St Bernard",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/St-Bernard",
+      "standardLastUpdated": "03 Jun 2016"
+    },
+    {
+      "ankcName": "Tibetan Mastiff",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tibetan-Mastiff",
+      "standardLastUpdated": "03 Aug 2008"
+    },
+    {
+      "ankcName": "Tornjak",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tornjak",
+      "standardLastUpdated": "01 Jul 2020"
+    },
+    {
+      "ankcName": "Yakutian Laika",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Yakutian-Laika",
+      "standardLastUpdated": "26 May 2020"
+    },
+    {
+      "ankcName": "Yugoslavian Shepherd Dog - Sharplanina",
+      "groupId": 6,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Yugoslavian-Shepherd-Dog---Sharplanina",
+      "standardLastUpdated": "20 Nov 2023"
+    },
+    {
+      "ankcName": "Australasian Bosdog",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australasian-Bosdog",
+      "standardLastUpdated": "30 Jun 2022"
+    },
+    {
+      "ankcName": "Boston Terrier",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Boston-Terrier",
+      "standardLastUpdated": "21 May 2009"
+    },
+    {
+      "ankcName": "British Bulldog",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/British-Bulldog",
+      "standardLastUpdated": "02 Apr 2020"
+    },
+    {
+      "ankcName": "Canaan Dog",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Canaan-Dog",
+      "standardLastUpdated": "01 Jun 1999"
+    },
+    {
+      "ankcName": "Chow Chow",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chow-Chow",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Dalmatian",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dalmatian",
+      "standardLastUpdated": "11 Apr 2013"
+    },
+    {
+      "ankcName": "Eurasier",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Eurasier",
+      "standardLastUpdated": "02 Jul 2009"
+    },
+    {
+      "ankcName": "French Bulldog",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/French-Bulldog",
+      "standardLastUpdated": "01 Dec 2021"
+    },
+    {
+      "ankcName": "German Spitz (Mittel & Klein)",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Spitz-(Mittel-&-Klein)",
+      "standardLastUpdated": "22 Feb 2017"
+    },
+    {
+      "ankcName": "Great Dane",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Great-Dane",
+      "standardLastUpdated": "29 Apr 2016"
+    },
+    {
+      "ankcName": "Japanese Spitz",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Japanese-Spitz",
+      "standardLastUpdated": "24 Jan 2009"
+    },
+    {
+      "ankcName": "Karelian Bear Dog",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Karelian-Bear-Dog",
+      "standardLastUpdated": "08 Aug 2019"
+    },
+    {
+      "ankcName": "Keeshond",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Keeshond",
+      "standardLastUpdated": "24 Feb 2015"
+    },
+    {
+      "ankcName": "Lhasa Apso",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Lhasa-Apso",
+      "standardLastUpdated": "03 Aug 2008"
+    },
+    {
+      "ankcName": "Peruvian Hairless Dog (Large)",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Peruvian-Hairless-Dog-(Large)",
+      "standardLastUpdated": "29 Jan 2014"
+    },
+    {
+      "ankcName": "Peruvian Hairless Dog (Medium)",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Peruvian-Hairless-Dog-(Medium)",
+      "standardLastUpdated": "29 Jan 2014"
+    },
+    {
+      "ankcName": "Peruvian Hairless Dog (Small)",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Peruvian-Hairless-Dog-(Small)",
+      "standardLastUpdated": "29 Jan 2014"
+    },
+    {
+      "ankcName": "Poodle (Miniature)",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Poodle-(Miniature)",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Poodle (Standard)",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Poodle-(Standard)",
+      "standardLastUpdated": "10 Mar 2010"
+    },
+    {
+      "ankcName": "Poodle (Toy)",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Poodle-(Toy)",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Schipperke",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Schipperke",
+      "standardLastUpdated": "05 Aug 2009"
+    },
+    {
+      "ankcName": "Shar Pei",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Shar-Pei",
+      "standardLastUpdated": "09 Oct 2012"
+    },
+    {
+      "ankcName": "Shih Tzu",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Shih-Tzu",
+      "standardLastUpdated": "22 Feb 2017"
+    },
+    {
+      "ankcName": "Tibetan Terrier",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tibetan-Terrier",
+      "standardLastUpdated": "22 Feb 2017"
+    },
+    {
+      "ankcName": "Xoloitzcuintle",
+      "groupId": 7,
+      "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Xoloitzcuintle",
+      "standardLastUpdated": "05 Nov 2014"
+    }
+  ]
+}
