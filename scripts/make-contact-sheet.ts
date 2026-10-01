@@ -37,7 +37,7 @@ const sections = groups
   })
   .join('')
 
-const html = `<!doctype html><meta charset="utf-8"><title>Dogdex photo review</title>
+const html = `<!doctype html><meta charset="utf-8"><title>Good Dogs Only photo review</title>
 <style>
   body { font: 14px/1.4 -apple-system, system-ui, sans-serif; margin: 0 24px 160px; background: #f6f5f2; color: #222 }
   h1 { margin: 24px 0 4px } h2 { margin: 32px 0 8px; border-bottom: 2px solid #1a3d2b }
@@ -63,7 +63,7 @@ const html = `<!doctype html><meta charset="utf-8"><title>Dogdex photo review</t
   #changes { position: fixed; left: 0; right: 0; bottom: 0; background: #1a3d2b; color: #fff; padding: 12px 24px; display: flex; gap: 12px; align-items: center }
   #changes textarea { flex: 1; height: 64px; font: 12px ui-monospace, monospace }
 </style>
-<h1>Dogdex photo review</h1>
+<h1>Good Dogs Only photo review</h1>
 <nav class="tabs" role="tablist">
   <button type="button" data-tab="review" aria-selected="true">Please review <span></span></button>
   <button type="button" data-tab="dodgy" aria-selected="false">A bit dodgy <span></span></button>

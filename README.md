@@ -1,4 +1,4 @@
-# Dogdex
+# Good Dogs Only
 
 A Pokedex-style phone app for ticking off dog breeds spotted at the park.
 The main list is every Dogs Australia (ANKC) breed standard, sorted into its 7 groups, plus a bonus section of common unofficial breeds and crosses.
