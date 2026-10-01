@@ -173,10 +173,10 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bichon-Frise",
    "traits": [
     "Friendly",
-    "Energetic",
-    "Alert"
+    "Playful",
+    "Affectionate"
    ],
-   "text": "Cheerful, bouncy and keen to meet everyone. A white powder puff that still notices every new arrival.",
+   "text": "Cheerful, bouncy and keen to meet everyone. A white powder puff that loves a game and a cuddle.",
    "shape": {
     "len": 19,
     "h": 10,
@@ -345,7 +345,7 @@
    "traits": [
     "Friendly",
     "Affectionate",
-    "Brave"
+    "Gentle"
    ],
    "text": "Friendly with everyone, dogs included. Happy on the couch or on a walk.",
    "shape": {
@@ -463,9 +463,9 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chihuahua-(Smooth-Coat)",
    "shortName": "Chihuahua (Smooth)",
    "traits": [
-    "Energetic",
-    "Clever",
-    "Alert"
+    "Alert",
+    "Brave",
+    "Loyal"
    ],
    "text": "Tiny but confident, often bonding closely with one person. Quick to bark at strangers.",
    "shape": {
@@ -813,9 +813,9 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Italian-Greyhound",
    "traits": [
-    "Clever",
     "Affectionate",
-    "Energetic"
+    "Gentle",
+    "Reserved"
    ],
    "text": "A slim, affectionate sighthound that loves warmth and a sprint. Can be shy with strangers.",
    "shape": {
@@ -1157,11 +1157,11 @@
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Papillon",
    "traits": [
-    "Calm",
-    "Alert",
-    "Clever"
+    "Clever",
+    "Trainable",
+    "Energetic"
    ],
-   "text": "Named for its butterfly ears. Sharp as a tack and observant, yet settles happily at home.",
+   "text": "Named for its butterfly ears. Sharp as a tack, lively and quick to learn, it shines at tricks and agility.",
    "shape": {
     "len": 18,
     "h": 8,
@@ -1331,11 +1331,11 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Prague-Ratter",
    "traits": [
-    "Gentle",
-    "Affectionate",
-    "Calm"
+    "Energetic",
+    "Alert",
+    "Affectionate"
    ],
-   "text": "One of the smallest breeds around. Gentle, calm and affectionate, it loves curling up with its people.",
+   "text": "One of the smallest breeds around. Lively and alert, but loves curling up with its people after a busy day.",
    "shape": {
     "len": 16,
     "h": 7,
@@ -1386,9 +1386,9 @@
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pug",
    "traits": [
-    "Calm",
     "Friendly",
-    "Energetic"
+    "Affectionate",
+    "Playful"
    ],
    "text": "A sociable lap dog that loves people and attention. Snores, snuffles and rarely wants a long run.",
    "shape": {
@@ -2482,9 +2482,9 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Glen-Of-Imaal-Terrier",
    "shortName": "Glen of Imaal",
    "traits": [
-    "Energetic",
     "Brave",
-    "Gentle"
+    "Gentle",
+    "Calm"
    ],
    "text": "A sturdy Irish terrier that's quieter than most. Gentle at home but gutsy and active outdoors.",
    "shape": {
@@ -3227,8 +3227,8 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Staffordshire-Bull-Terrier",
    "traits": [
     "Brave",
-    "Clever",
-    "Affectionate"
+    "Affectionate",
+    "Playful"
    ],
    "text": "Muscular but soft-hearted, famously devoted to its family. Full of energy and keen on a game.",
    "shape": {
@@ -3284,10 +3284,10 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tenterfield-Terrier",
    "traits": [
     "Brave",
-    "Dignified",
+    "Alert",
     "Loyal"
    ],
-   "text": "A small Aussie terrier, proud and plucky. Fiercely loyal to its family and fearless for its size.",
+   "text": "A small Aussie terrier, watchful and plucky. Fiercely loyal to its family and fearless for its size.",
    "shape": {
     "len": 20,
     "h": 9,
@@ -3511,7 +3511,7 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Brittany",
    "traits": [
     "Hard-working",
-    "Brave",
+    "Energetic",
     "Friendly"
    ],
    "text": "A lively, compact bird dog with heaps of stamina. Friendly, game and happiest with a job to do.",
@@ -3569,11 +3569,11 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chesapeake-Bay-Retriever",
    "shortName": "Chesapeake Bay",
    "traits": [
-    "Clever",
-    "Friendly",
-    "Brave"
+    "Hard-working",
+    "Loyal",
+    "Protective"
    ],
-   "text": "A tough duck dog with an oily, wavy coat built for icy water. Smart, friendly and bold.",
+   "text": "A tough duck dog with an oily, wavy coat built for icy water. Devoted, protective and bolder than most retrievers.",
    "shape": {
     "len": 29,
     "h": 12,
@@ -3805,9 +3805,9 @@
    "traits": [
     "Dignified",
     "Brave",
-    "Friendly"
+    "Independent"
    ],
-   "text": "Covered in tight curls and built for water work. Confident and friendly, with a proud bearing.",
+   "text": "Covered in tight curls and built for water work. Confident and independent, with a proud bearing.",
    "shape": {
     "len": 30,
     "h": 12,
@@ -3861,7 +3861,7 @@
    "traits": [
     "Friendly",
     "Energetic",
-    "Brave"
+    "Gentle"
    ],
    "text": "A speckled, sweet-natured bird dog. Friendly and full of energy, it loves a good long run.",
    "shape": {
@@ -3921,7 +3921,7 @@
    "traits": [
     "Friendly",
     "Trainable",
-    "Brave"
+    "Energetic"
    ],
    "text": "Bred to flush game and loves to be busy. Friendly and eager to learn, it's never far from the action.",
    "shape": {
@@ -4093,11 +4093,11 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Shorthaired-Pointer",
    "shortName": "German Shorthaired",
    "traits": [
-    "Calm",
     "Energetic",
-    "Hard-working"
+    "Hard-working",
+    "Friendly"
    ],
-   "text": "A balanced, reliable gundog with tonnes of stamina. Steady at home if it gets plenty of exercise.",
+   "text": "A versatile gundog with tonnes of stamina. Friendly and keen to work, it needs plenty of exercise every day.",
    "shape": {
     "len": 29,
     "h": 12,
@@ -4152,10 +4152,10 @@
    "shortName": "German Wirehaired",
    "traits": [
     "Hard-working",
-    "Calm",
+    "Energetic",
     "Loyal"
    ],
-   "text": "A tough, versatile hunting dog with a steady head. Bonds closely with its family.",
+   "text": "A tough, versatile hunting dog with energy to spare. Bonds closely with its family and can be wary of strangers.",
    "shape": {
     "len": 29,
     "h": 12,
@@ -4208,7 +4208,7 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Golden-Retriever",
    "traits": [
     "Friendly",
-    "Dignified",
+    "Gentle",
     "Trainable"
    ],
    "text": "Patient and friendly, great with children. Thrives on company and a daily retrieve.",
@@ -4323,7 +4323,7 @@
    "traits": [
     "Hard-working",
     "Energetic",
-    "Friendly"
+    "Affectionate"
    ],
    "text": "Known as a velcro dog: it sticks close to its people. Needs lots of running every day.",
    "shape": {
@@ -4554,9 +4554,9 @@
    "traits": [
     "Reserved",
     "Affectionate",
-    "Calm"
+    "Playful"
    ],
-   "text": "Curly-coated, with a distinctive rat-like tail. Loving and calm with family, wary of new faces.",
+   "text": "Curly-coated, with a distinctive rat-like tail. A playful clown with its family but wary of new faces.",
    "shape": {
     "len": 28,
     "h": 12,
@@ -4841,11 +4841,11 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Murray-River-Retriever",
    "shortName": "Murray River",
    "traits": [
-    "Dignified",
     "Clever",
-    "Friendly"
+    "Loyal",
+    "Energetic"
    ],
-   "text": "A curly, liver-coloured Aussie duck dog from the Murray. Bright, friendly and quietly proud.",
+   "text": "A curly, liver-coloured Aussie duck dog from the Murray. Bright, loyal and full of energy for a swim or a run.",
    "shape": {
     "len": 26,
     "h": 11,
@@ -5130,11 +5130,11 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Weimaraner",
    "traits": [
+    "Energetic",
     "Hard-working",
-    "Trainable",
-    "Calm"
+    "Affectionate"
    ],
-   "text": "The sleek silver-grey ghost of the dog park. Calm at home but needs plenty of work and exercise.",
+   "text": "The sleek silver-grey ghost of the dog park. Bursting with energy, loves to work and sticks close to its people.",
    "shape": {
     "len": 30,
     "h": 12,
@@ -5188,11 +5188,11 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Weimaraner-(Longhair)",
    "traits": [
+    "Energetic",
     "Hard-working",
-    "Trainable",
-    "Calm"
+    "Affectionate"
    ],
-   "text": "A rarer, feathery-coated version of the silver hunting dog. Calm, trainable and loves to work.",
+   "text": "A rarer, feathery-coated version of the silver hunting dog. Energetic, loving and happiest with a job to do.",
    "shape": {
     "len": 30,
     "h": 12,
@@ -5590,9 +5590,9 @@
    "traits": [
     "Calm",
     "Affectionate",
-    "Brave"
+    "Independent"
    ],
-   "text": "Long ears, short legs and a nose that never quits. Laid-back and loving, but no pushover.",
+   "text": "Long ears, short legs and a nose that never quits. Laid-back and loving, with a famously stubborn streak.",
    "shape": {
     "len": 34,
     "h": 12,
@@ -5702,8 +5702,8 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Beagle",
    "traits": [
     "Friendly",
-    "Alert",
-    "Brave"
+    "Energetic",
+    "Independent"
    ],
    "text": "A sociable pack hound led by its nose. Food-mad and vocal, with a famous baying howl.",
    "shape": {
@@ -5761,7 +5761,7 @@
    "traits": [
     "Friendly",
     "Hard-working",
-    "Reserved"
+    "Calm"
    ],
    "text": "A big American scent hound with a booming bay. Easygoing with people, but focused on the trail.",
    "shape": {
@@ -5928,9 +5928,9 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Borzoi",
    "traits": [
-    "Alert",
-    "Reserved",
-    "Brave"
+    "Dignified",
+    "Calm",
+    "Reserved"
    ],
    "text": "A tall, elegant Russian sighthound bred to course wolves. Quiet and aloof, but quick off the mark.",
    "shape": {
@@ -6055,9 +6055,9 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dachshund---Standard-Long,-Standard-Smooth,-Standard-Wire,-Miniature-Long,-Miniature-Smooth,-Miniature-Wire",
    "traits": [
-    "Hard-working",
+    "Brave",
     "Loyal",
-    "Friendly"
+    "Independent"
    ],
    "text": "Brave and curious, with a big bark for its size. Loves to burrow, sniff and be with its people.",
    "shape": {
@@ -6112,7 +6112,7 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Deerhound",
    "traits": [
-    "Trainable",
+    "Gentle",
     "Friendly",
     "Calm"
    ],
@@ -6338,11 +6338,11 @@
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Greyhound",
    "traits": [
-    "Clever",
     "Gentle",
+    "Calm",
     "Affectionate"
    ],
-   "text": "A gentle couch potato that loves a quick sprint. Affectionate, quiet and smarter than you'd think.",
+   "text": "A gentle couch potato that loves a quick sprint. Affectionate, quiet and happy to snooze the day away.",
    "shape": {
     "len": 32,
     "h": 11,
@@ -6735,11 +6735,11 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Petit-Basset-Griffon-Vendeen",
    "shortName": "Petit Basset Griffon",
    "traits": [
-    "Hard-working",
+    "Playful",
     "Brave",
-    "Calm"
+    "Independent"
    ],
-   "text": "A shaggy, happy little French hound. Bold and busy on a scent, but easygoing at home.",
+   "text": "A shaggy, merry little French hound. Bold and busy on a scent, and happy to do things its own way.",
    "shape": {
     "len": 22,
     "h": 9,
@@ -7493,7 +7493,7 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bearded-Collie",
    "traits": [
     "Energetic",
-    "Calm",
+    "Playful",
     "Clever"
    ],
    "text": "A shaggy, bouncy herder with a happy-go-lucky streak. Bright and full of beans outdoors, then settles nicely at home.",
@@ -7789,7 +7789,7 @@
    "traits": [
     "Clever",
     "Trainable",
-    "Loyal"
+    "Energetic"
    ],
    "text": "Often called the smartest breed. Needs daily work, play or training to stay happy.",
    "shape": {
@@ -8196,8 +8196,8 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Shepherd-Dog",
    "shortName": "German Shepherd",
    "traits": [
-    "Calm",
-    "Hard-working",
+    "Loyal",
+    "Protective",
     "Trainable"
    ],
    "text": "Steady, protective and very trainable. Bonds closely with its family and is wary of strangers.",
@@ -8656,11 +8656,11 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Norwegian-Buhund",
    "traits": [
-    "Brave",
     "Energetic",
-    "Calm"
+    "Friendly",
+    "Alert"
    ],
-   "text": "A sturdy Nordic farm dog with a curled tail. Lively and fearless outdoors, yet easygoing and relaxed at home.",
+   "text": "A sturdy Nordic farm dog with a curled tail. Lively, cheerful and watchful, and quick to bark at anything new.",
    "shape": {
     "len": 23,
     "h": 10,
@@ -9350,7 +9350,7 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/White-Swiss-Shepherd-Dog",
    "shortName": "White Swiss Shepherd",
    "traits": [
-    "Energetic",
+    "Gentle",
     "Calm",
     "Alert"
    ],
@@ -9526,8 +9526,8 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Alaskan-Malamute",
    "traits": [
     "Affectionate",
-    "Loyal",
-    "Friendly"
+    "Friendly",
+    "Independent"
    ],
    "text": "A big, strong Arctic sled dog with a friendly, outgoing nature. Loves its people, though it can be a handful to train.",
    "shape": {
@@ -9584,9 +9584,9 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Anatolian-Shepherd-Dog",
    "shortName": "Anatolian Shepherd",
    "traits": [
-    "Dignified",
+    "Protective",
     "Calm",
-    "Hard-working"
+    "Dignified"
    ],
    "text": "A large Turkish flock guardian, steady and self-assured. Quietly watchful and built for long days on the job.",
    "shape": {
@@ -9644,8 +9644,8 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bernese-Mountain-Dog",
    "shortName": "Bernese Mountain",
    "traits": [
-    "Dignified",
-    "Alert",
+    "Gentle",
+    "Affectionate",
     "Calm"
    ],
    "text": "A gentle giant that's devoted to its family. Easygoing at home and loves cool weather.",
@@ -9700,8 +9700,8 @@
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Boxer",
    "traits": [
-    "Brave",
-    "Clever",
+    "Playful",
+    "Energetic",
     "Friendly"
    ],
    "text": "Bouncy and fun-loving, a great family dog. Stays puppyish for years and loves a romp.",
@@ -9755,8 +9755,8 @@
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bullmastiff",
    "traits": [
-    "Energetic",
-    "Alert",
+    "Calm",
+    "Protective",
     "Loyal"
    ],
    "text": "Bred to help gamekeepers catch poachers. Big and loyal, it stays alert but usually prefers a short walk and a long nap.",
@@ -9869,9 +9869,9 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cane-Corso",
    "traits": [
-    "Hard-working",
-    "Energetic",
-    "Trainable"
+    "Protective",
+    "Loyal",
+    "Hard-working"
    ],
    "text": "A muscular Italian guardian that needs firm, consistent training and an active life. Loves to have a job to do.",
    "shape": {
@@ -9927,9 +9927,9 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Caucasian-Shepherd-Dog",
    "shortName": "Caucasian Shepherd",
    "traits": [
-    "Dignified",
     "Calm",
-    "Energetic"
+    "Dignified",
+    "Protective"
    ],
    "text": "A massive, thick-coated livestock guardian. Calm and dignified most of the time, but quick to act if it senses a threat.",
    "shape": {
@@ -10218,7 +10218,7 @@
    "traits": [
     "Alert",
     "Energetic",
-    "Friendly"
+    "Clever"
    ],
    "text": "A sleek, medium-sized ratter with plenty of zip. Watchful and lively, and friendly once it knows you.",
    "shape": {
@@ -10331,7 +10331,7 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Kangal-Shepherd-Dog",
    "shortName": "Kangal Shepherd",
    "traits": [
-    "Dignified",
+    "Protective",
     "Calm",
     "Brave"
    ],
@@ -10507,7 +10507,7 @@
    "traits": [
     "Calm",
     "Affectionate",
-    "Hard-working"
+    "Gentle"
    ],
    "text": "One of the heaviest breeds around. Calm and gentle, very affectionate with family and happy to lean on your legs.",
    "shape": {
@@ -10854,7 +10854,7 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Rottweiler",
    "traits": [
-    "Trainable",
+    "Protective",
     "Calm",
     "Loyal"
    ],
@@ -10914,8 +10914,8 @@
    "shortName": "Russian Black",
    "traits": [
     "Dignified",
-    "Energetic",
-    "Friendly"
+    "Protective",
+    "Energetic"
    ],
    "text": "Not really a terrier but a big, bearded working dog bred as a guard. Self-assured, lively and friendly with its people.",
    "shape": {
@@ -10973,7 +10973,7 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Samoyed",
    "traits": [
     "Clever",
-    "Alert",
+    "Friendly",
     "Affectionate"
    ],
    "text": "A fluffy white sled dog with a trademark smile. Smart, lively and famously affectionate towards everyone.",
@@ -11207,7 +11207,7 @@
    "traits": [
     "Loyal",
     "Alert",
-    "Hard-working"
+    "Independent"
    ],
    "text": "A small, fox-like Japanese hunter with a curled tail. Alert and loyal, but famously independent and cat-like.",
    "shape": {
@@ -11319,7 +11319,7 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Siberian-Husky",
    "traits": [
     "Friendly",
-    "Trainable",
+    "Energetic",
     "Hard-working"
    ],
    "text": "A sled dog with striking eyes and a love of running. Friendly to all, but needs lots of exercise and loves to talk.",
@@ -11375,10 +11375,10 @@
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Spanish-Mastiff",
    "traits": [
     "Protective",
-    "Clever",
+    "Calm",
     "Affectionate"
    ],
-   "text": "A giant, easygoing Spanish livestock guardian. Clever and affectionate with family, protective of its home.",
+   "text": "A giant, easygoing Spanish livestock guardian. Calm and affectionate with family, and protective of its home.",
    "shape": {
     "len": 39,
     "h": 16,
@@ -11434,7 +11434,7 @@
    "traits": [
     "Friendly",
     "Calm",
-    "Energetic"
+    "Gentle"
    ],
    "text": "The famous Alpine rescue dog. A big, friendly softie that's calm indoors and still enjoys a good romp outside.",
    "shape": {
@@ -11544,11 +11544,11 @@
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tornjak",
    "traits": [
-    "Trainable",
+    "Protective",
     "Calm",
-    "Friendly"
+    "Loyal"
    ],
-   "text": "A large mountain guardian from the Balkans. Calm and friendly with its family and responds well to training.",
+   "text": "A large mountain guardian from the Balkans. Calm and devoted with family, and protective of its flock and home.",
    "shape": {
     "len": 33,
     "h": 14,
@@ -12118,9 +12118,9 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/French-Bulldog",
    "traits": [
-    "Energetic",
     "Affectionate",
-    "Clever"
+    "Playful",
+    "Friendly"
    ],
    "text": "A cheerful companion that's happy in an apartment. Needs only short walks and dislikes the heat.",
    "shape": {
@@ -12404,11 +12404,11 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Keeshond",
    "traits": [
-    "Protective",
-    "Brave",
+    "Friendly",
+    "Affectionate",
     "Alert"
    ],
-   "text": "A fluffy Dutch barge dog with spectacle-like markings. Alert and quick to sound the alarm, and protective of its family.",
+   "text": "A fluffy Dutch barge dog with spectacle-like markings. Friendly and loving with family, and quick to sound the alarm.",
    "shape": {
     "len": 23,
     "h": 11,
@@ -12868,7 +12868,7 @@
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Schipperke",
    "traits": [
-    "Friendly",
+    "Alert",
     "Clever",
     "Loyal"
    ],
@@ -12986,7 +12986,7 @@
    "traits": [
     "Friendly",
     "Independent",
-    "Clever"
+    "Affectionate"
    ],
    "text": "A little lion dog with a flowing coat. Friendly and outgoing with a cheeky independent streak, made for companionship.",
    "shape": {
