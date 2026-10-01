@@ -3,12 +3,11 @@
 // Output: .cache/design/<name>.html
 // Usage: node design/make-mockup.ts [template=mockup] [output=dogdex-mockup]
 //   e.g. node design/make-mockup.ts mockup98 dogdex-98   (the Windows 98 variant; inlines design/vendor/98css)
-import { existsSync } from 'node:fs'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import sharp from 'sharp'
 import { buildBreedList, groups } from '../scripts/lib/dataset.ts'
-import { cachedDownload } from '../scripts/lib/downloads.ts'
-import { plainText, type Candidate, type PhotoPick } from '../scripts/lib/photos.ts'
+import type { PhotoPick } from '../scripts/lib/photos.ts'
+import type { Breed } from '../src/data/types.ts'
 
 /** Common Sydney park breeds across every group, plus three bonus dogs. */
 const SAMPLE = [
@@ -40,59 +39,29 @@ const root = new URL('../', import.meta.url)
 const readJson = async <T>(p: string): Promise<T> => JSON.parse(await readFile(new URL(p, root), 'utf8')) as T
 const temperament = (await readJson<{ breeds: Record<string, { traits: string[]; text: string }> }>('data/temperament.json')).breeds
 const picks = (await readJson<{ picks: Record<string, PhotoPick> }>('data/photo-picks.json')).picks
-const pools: Record<string, Candidate[]>[] = [await readJson('.cache/photo-candidates.json')]
-if (existsSync(new URL('.cache/photo-candidates.r1.json', root))) pools.push(await readJson('.cache/photo-candidates.r1.json'))
-
-/** Wikimedia only serves standard thumbnail widths; 960 is plenty for a phone-width mockup. */
-function sourceUrl(c: Candidate): string {
-  const u = new URL(c.thumb330)
-  u.search = ''
-  if (!u.pathname.includes('/thumb/')) return u.href // already the original (narrower than 330px)
-  if (c.width > 960) {
-    u.pathname = u.pathname.replace('/330px-', '/960px-')
-    return u.href
-  }
-  // Originals live on upload.wikimedia.org: drop "/thumb" and the trailing "330px-..." segment.
-  u.host = 'upload.wikimedia.org'
-  u.pathname = u.pathname.replace('/thumb/', '/').replace(/\/[^/]+$/, '')
-  return u.href
-}
 const dataUri = (buf: Buffer) => `data:image/webp;base64,${buf.toString('base64')}`
 
 const all = buildBreedList()
+const shipped = (await readJson<{ breeds: Breed[] }>('src/data/breeds.json')).breeds
 const total = (groupId: string) => all.filter((b) => b.groupId === groupId).length
 const sample = []
 for (const id of SAMPLE) {
   const b = all.find((x) => x.id === id)
   if (!b) throw new Error(`Unknown sample id ${id}`)
-  const pick = picks[id]
-  const pool = pools.map((p) => p[id] ?? []).flat()
-  const c = (pick?.file && pool.find((x) => x.file === pick.file)) || pool[0]
-  if (!c) throw new Error(`No photo for ${id}`)
-  const local = await cachedDownload(sourceUrl(c), new URL('.cache/mockup-src/', root), '.img')
-  const [fx, fy] = pick?.focus ?? [0.5, 0.5]
-  const meta = await sharp(local).rotate().metadata()
-  const [w, h] = meta.orientation && meta.orientation >= 5 ? [meta.height!, meta.width!] : [meta.width!, meta.height!]
-  const side = Math.min(w, h)
-  const left = Math.round(Math.min(Math.max(fx * w - side / 2, 0), w - side))
-  const top = Math.round(Math.min(Math.max(fy * h - side / 2, 0), h - side))
-  const grid = await sharp(local).rotate().extract({ left, top, width: side, height: side }).resize(300, 300).webp({ quality: 72 }).toBuffer()
-  const tiny = await sharp(local).rotate().extract({ left, top, width: side, height: side }).resize(32, 32).webp({ quality: 80 }).toBuffer()
-  const detailOut = await sharp(local).rotate().resize({ width: 800, withoutEnlargement: true }).webp({ quality: 70 }).toBuffer({ resolveWithObject: true })
-  const detail = detailOut.data
+  // Use the app's own built images and credits (src/data/breeds.json + public/breeds) so the mockup matches the app.
+  const built = shipped.find((x) => x.id === id)
+  if (!built?.image || !built.credit) throw new Error(`No built photo for ${id}`)
+  const read = (p: string) => readFile(new URL(`public${p}`, root))
+  const grid = await sharp(await read(built.image.grid)).resize(300, 300).webp({ quality: 72 }).toBuffer()
+  const detailOut = await sharp(await read(built.image.detail)).resize({ width: 800, withoutEnlargement: true }).webp({ quality: 70 }).toBuffer({ resolveWithObject: true })
   sample.push({
     ...b,
-    focus: [fx, fy],
+    focus: picks[id]?.focus ?? [0.5, 0.5],
     temperament: temperament[id] ?? null,
-    img: { grid: dataUri(grid), tiny: dataUri(tiny), detail: dataUri(detail), w: detailOut.info.width, h: detailOut.info.height },
-    credit: {
-      author: plainText(c.artistHtml) || plainText(c.credit) || 'Unknown author',
-      licence: c.licence,
-      licenceUrl: c.licenceUrl,
-      sourceUrl: c.descriptionUrl,
-    },
+    img: { grid: dataUri(grid), tiny: dataUri(grid), detail: dataUri(detailOut.data), w: detailOut.info.width, h: detailOut.info.height },
+    credit: built.credit,
   })
-  console.log(`${b.dexNo} ${b.name}: ${c.file}`)
+  console.log(`${b.dexNo} ${b.name}: ${built.credit.sourceUrl}`)
 }
 
 const data = {

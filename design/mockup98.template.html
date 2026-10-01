@@ -12,7 +12,6 @@
     --ink: #000000;
     --white: #ffffff;
     --dark: #808080;
-    --tooltip: #ffffe1;
     /* One smooth period face everywhere (Verdana ships on iPhone, Mac and Windows) instead of the pixel font. */
     --body-font: Verdana, Tahoma, Geneva, sans-serif;
     --pixel: Verdana, Tahoma, Geneva, sans-serif;
@@ -22,6 +21,7 @@
      (16 x 0.6875 = 11px), with negative margins so the layout keeps the scaled size. */
   .nz { font-size: 16px !important; width: 145.4545% !important; height: 30px !important; transform: scale(0.6875); transform-origin: 0 0; margin: 0 -45.4545% -9.375px 0 !important; }
   .nz-area { height: 64px !important; margin-bottom: -20px !important; }
+  select.nz { background-size: 24px 100% !important; background-position: right center !important; }
   /* Safari draws both start and end arrow pairs from 98.css; keep one arrow at each end. */
   ::-webkit-scrollbar-button:vertical:start:increment, ::-webkit-scrollbar-button:vertical:end:decrement, ::-webkit-scrollbar-button:horizontal:start:increment, ::-webkit-scrollbar-button:horizontal:end:decrement { display: none; }
   /* 98.css sets its pixel font on many elements; use one smooth face for every element. */
@@ -147,14 +147,11 @@
   .props[hidden] { display: none; }
   .props > .window-body { grid-template-columns: minmax(0, 1fr); overflow-x: hidden; flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 0; padding-bottom: 20px !important; padding: 4px 4px 8px; display: grid; gap: 8px; align-content: start; }
   .photo-frame { position: relative; padding: 3px; background: #fff; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; }
-  .photo-frame img { display: block; width: 100%; height: 165px; object-fit: contain; background: #fff; }
+  /* Dogs Australia breed photos are 770 x 540; every breed photo uses that frame so the page never jumps. */
+  .photo-frame img { display: block; width: 100%; height: auto; aspect-ratio: 770 / 540; object-fit: cover; background: #fff; }
   .photo-strip { position: absolute; left: 3px; right: 3px; bottom: 3px; display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 3px 6px; background: rgba(0, 0, 128, 0.82); color: #fff; font-size: 11px; font-weight: bold; }
   .photo-strip > span:first-child { display: flex; align-items: center; gap: 5px; }
   .photo-strip .swatch { box-shadow: 0 0 0 1px #fff; }
-  .photo-frame .credit-btn { position: absolute; right: 7px; bottom: 7px; min-width: 0; min-height: 0; width: 22px; height: 22px; padding: 0; display: grid; place-items: center; }
-  .photo-frame .credit-btn svg { width: 14px; height: 14px; }
-  .tooltip { background: var(--tooltip); border: 1px solid #000; padding: 4px 6px; font: 11px/1.5 var(--body-font); }
-  .tooltip a { color: var(--navy); }
   .title-block h2 { margin: 2px 0 2px; font: bold 17px/1.15 var(--pixel); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .title-block p { margin: 0; font-size: 11px; color: #222; }
   .box { margin: 0; padding: 6px 6px 8px; min-width: 0; }
@@ -328,7 +325,7 @@
 
   const { groups, breeds } = DATA
   const group = Object.fromEntries(groups.map((g) => [g.id, g]))
-  const officialTotal = groups.filter((g) => g.id !== 'bonus').reduce((n, g) => n + g.total, 0)
+  const total = groups.reduce((n, g) => n + g.total, 0)
   const byId = Object.fromEntries(breeds.map((b) => [b.id, b]))
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`)
 
@@ -340,7 +337,7 @@
   const todayIso = () => { const d = new Date(); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}` }
   const fmt = (iso) => new Date(`${iso}T00:00:00`).toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' })
   const caughtIn = (gid) => breeds.filter((b) => b.groupId === gid && caught[b.id]).length
-  const officialCaught = () => breeds.filter((b) => b.tier === 'ankc' && caught[b.id]).length
+  const spottedCount = () => breeds.filter((b) => caught[b.id]).length
 
   // Same search rules as the app: exact, prefix, word prefix, then substring, over names, nicknames and varieties.
   const norm = (t) => t.normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim()
@@ -369,7 +366,7 @@
     constructor(host, initial) {
       this.host = host
       this.uid = phones.length
-      this.s = { tab: 'dex', group: 'all', filter: 'all', q: '', detail: null, credit: false, ...initial }
+      this.s = { tab: 'dex', group: 'all', filter: 'all', q: '', detail: null, ...initial }
       host.innerHTML = `
         <div class="stage">
           <div class="notch" aria-hidden="true"></div>
@@ -392,7 +389,7 @@
                   <div class="window panel" role="tabpanel" data-panel="more" hidden><div class="window-body"></div></div>
                 </section>
               </div>
-              <div class="status-bar"><p class="status-bar-field" data-status="count"></p><p class="status-bar-field" data-status="bonus"></p></div>
+              <div class="status-bar"><p class="status-bar-field" data-status="count"></p></div>
             </div>
             <div class="window props" hidden></div>
             <div class="modal" hidden></div>
@@ -421,7 +418,6 @@
       if (act === 'tab') { this.closeProps(); this.showTab(t.dataset.tab) }
       if (act === 'open') this.openProps(t.dataset.id)
       if (act === 'close-props') this.closeProps()
-      if (act === 'credit') { this.s.credit = !this.s.credit; this.renderProps() }
       if (act === 'catch') catchBreed(t.dataset.id, this)
       if (act === 'undo') { delete caught[t.dataset.id]; persist(); refreshAll() }
       if (act === 'clear') { this.s.q = ''; const input = this.q('[data-role="q"]'); input.value = ''; input.focus(); this.refreshResults() }
@@ -479,8 +475,7 @@
       if (this.s.detail) this.renderProps()
     }
     fillStatus() {
-      this.host.querySelectorAll('[data-status="count"]').forEach((el) => (el.textContent = `${officialCaught()}/${officialTotal} official`))
-      this.host.querySelectorAll('[data-status="bonus"]').forEach((el) => (el.textContent = `${caughtIn('bonus')}/${group.bonus.total} bonus`))
+      this.host.querySelectorAll('[data-status="count"]').forEach((el) => (el.textContent = `${spottedCount()} of ${total} breeds spotted (${pct(spottedCount() / total)})`))
     }
 
     renderDexShell() {
@@ -534,7 +529,6 @@
 
     openProps(id) {
       this.s.detail = id
-      this.s.credit = false
       this.renderProps()
       const p = this.q('.props')
       p.hidden = false
@@ -565,14 +559,13 @@
       p.innerHTML = `
         <div class="title-bar">
           <div class="title-bar-text one-line">${icons.dog}<span>${esc(b.name)}</span></div>
-          <div class="title-bar-controls"><button aria-label="Help" data-act="credit" title="Photo credit"></button><button aria-label="Close" data-act="close-props"></button></div>
+          <div class="title-bar-controls"><button aria-label="Close" data-act="close-props"></button></div>
         </div>
         <div class="window-body">
           <div class="photo-frame">
-            <img src="${b.img.detail}" alt="${esc(b.name)}" >
+            <img src="${b.img.detail}" alt="${esc(b.name)}" style="object-position:${b.focus[0] * 100}% ${b.focus[1] * 100}%">
             <span class="photo-strip"><span><span class="swatch" style="background:${groupColour[b.groupId]}"></span>${esc(g.name)}</span><span>#${b.dexNo}</span></span>
           </div>
-          ${this.s.credit ? `<div class="tooltip">Photo: ${esc(b.credit.author)}, <a href="${esc(b.credit.licenceUrl || b.credit.sourceUrl)}" target="_blank" rel="noopener">${esc(b.credit.licence)}</a>, via <a href="${esc(b.credit.sourceUrl)}" target="_blank" rel="noopener">Wikimedia Commons</a>. Resized and cropped.</div>` : ''}
           <div class="title-block">
             <h2>${esc(b.name)}</h2>
             ${aka.length ? `<p>Also called ${aka.map(esc).join(', ')}</p>` : ''}
@@ -587,7 +580,7 @@
           ${b.forms.length ? `<fieldset><legend>Varieties</legend><div class="forms">${b.forms.map((f) => `<span>${esc(f)}</span>`).join('')}</div></fieldset>` : ''}
           <fieldset><legend>Status</legend>${status}</fieldset>
         </div>
-        <div class="status-bar"><p class="status-bar-field" data-status="count"></p><p class="status-bar-field" data-status="bonus"></p></div>`
+        <div class="status-bar"><p class="status-bar-field" data-status="count"></p></div>`
       this.fillStatus()
       // Shrink the breed name until it fits on one line (min 11px), then let it ellipsis.
       const h = p.querySelector('.title-block h2')
@@ -595,13 +588,12 @@
     }
 
     renderProgress() {
-      const n = officialCaught()
+      const n = spottedCount()
       const recent = breeds.filter((b) => caught[b.id]).sort((a, b) => caught[b.id].date.localeCompare(caught[a.id].date)).slice(0, 6)
       this.panels.progress.innerHTML = `
         <div class="big-progress">
-          <span class="figure">${n} of ${officialTotal} official breeds</span>
-          ${bar(n / officialTotal)}
-          <span>Plus ${caughtIn('bonus')} of ${group.bonus.total} bonus breeds</span>
+          <span class="figure">${n} of ${total} breeds</span>
+          ${bar(n / total)}
         </div>
         <div class="sunken-panel group-list">${groups.map((g) => { const k = caughtIn(g.id); return `<button type="button" class="g-row" data-act="go-group" data-group="${g.id}"><span class="g-top"><span><span class="swatch" style="display:inline-block;vertical-align:-1px;margin-right:5px;background:${groupColour[g.id]}"></span>${esc(g.name)}</span><span>${k}/${g.total} &middot; ${pct(k / g.total)}</span></span></button>` }).join('')}</div>
         <p style="margin:10px 0 4px"><b>Recently spotted</b></p>
@@ -616,7 +608,7 @@
       this.panels.more.innerHTML = `
         <fieldset class="panel-box" id="about-${this.uid}"><legend>About</legend>
           <div class="about-head">${icons.bigPaw}<span><b>Good Dogs Only</b><span>Version 1.0 (mockup)</span></span></div>
-          <p>The official list is the ${officialTotal} breeds recognised by Dogs Australia, in its 7 groups (checked 1 Oct 2026), plus ${group.bonus.total} popular bonus breeds it doesn't recognise.</p>
+          <p>${total} breeds: all ${total - group.bonus.total} recognised by Dogs Australia (checked 1 Oct 2026), plus ${group.bonus.total} popular dogs it doesn't, in their own Bonus group.</p>
         </fieldset>
         <fieldset class="panel-box" id="home-${this.uid}"><legend>Add to Home Screen</legend>
           <ol><li>Open Good Dogs Only in <b>Safari</b></li><li>Tap <b>Share</b>, then <b>Add to Home Screen</b></li><li>Open it from the new icon. It runs full screen, like an app.</li></ol>
@@ -634,7 +626,7 @@
     persist()
     refreshAll()
     const b = byId[id]
-    from.dialog('Spotted', `That's ${officialCaught()} of ${officialTotal} official breeds${b.tier === 'unofficial' ? `, plus ${caughtIn('bonus')} bonus` : ''}.`, 'none')
+    from.dialog('Spotted', `That's ${spottedCount()} of ${total} breeds.`, 'none')
   }
   function refreshAll() { phones.forEach((p) => p.refresh()) }
 
