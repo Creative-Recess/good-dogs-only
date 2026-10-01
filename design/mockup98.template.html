@@ -560,7 +560,7 @@
            <div class="field-row-stacked"><label for="d98-${this.uid}-${b.id}">Date seen:</label><input id="d98-${this.uid}-${b.id}" class="nz" type="date" data-role="date" data-id="${b.id}" value="${c.date}" max="${todayIso()}"></div>
            <div class="field-row-stacked"><label for="n98-${this.uid}-${b.id}">Note:</label><textarea id="n98-${this.uid}-${b.id}" class="nz nz-area" rows="2" data-role="note" data-id="${b.id}" placeholder="Where, what colour, the dog's name...">${esc(c.note || '')}</textarea></div>
            <button type="button" data-act="undo" data-id="${b.id}">Undo</button>`
-        : `<button type="button" class="catch-btn default" data-act="catch" data-id="${b.id}">${icons.eyes}I spotted one!</button>`
+        : `<button type="button" class="catch-btn default" data-act="catch" data-id="${b.id}">${icons.eyes}Spotted</button>`
       const p = this.q('.props')
       p.innerHTML = `
         <div class="title-bar">
