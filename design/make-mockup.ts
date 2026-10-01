@@ -1,7 +1,8 @@
 // Builds the clickable design mockup (step 9 of the plan): design/mockup.template.html plus a sample of real
 // breeds and photos, inlined as data URIs so it publishes as a single self-contained page.
-// Output: .cache/design/dogdex-mockup.html
-// Usage: node design/make-mockup.ts
+// Output: .cache/design/<name>.html
+// Usage: node design/make-mockup.ts [template=mockup] [output=dogdex-mockup]
+//   e.g. node design/make-mockup.ts mockup98 dogdex-98   (the Windows 98 variant; inlines design/vendor/98css)
 import { existsSync } from 'node:fs'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import sharp from 'sharp'
@@ -76,13 +77,14 @@ for (const id of SAMPLE) {
   const left = Math.round(Math.min(Math.max(fx * w - side / 2, 0), w - side))
   const top = Math.round(Math.min(Math.max(fy * h - side / 2, 0), h - side))
   const grid = await sharp(local).rotate().extract({ left, top, width: side, height: side }).resize(300, 300).webp({ quality: 72 }).toBuffer()
+  const tiny = await sharp(local).rotate().extract({ left, top, width: side, height: side }).resize(32, 32).webp({ quality: 80 }).toBuffer()
   const detailOut = await sharp(local).rotate().resize({ width: 800, withoutEnlargement: true }).webp({ quality: 70 }).toBuffer({ resolveWithObject: true })
   const detail = detailOut.data
   sample.push({
     ...b,
     focus: [fx, fy],
     temperament: temperament[id] ?? null,
-    img: { grid: dataUri(grid), detail: dataUri(detail), w: detailOut.info.width, h: detailOut.info.height },
+    img: { grid: dataUri(grid), tiny: dataUri(tiny), detail: dataUri(detail), w: detailOut.info.width, h: detailOut.info.height },
     credit: {
       author: plainText(c.artistHtml) || plainText(c.credit) || 'Unknown author',
       licence: c.licence,
@@ -99,8 +101,19 @@ const data = {
   demoCaught: DEMO_CAUGHT,
   totalEntries: all.length,
 }
-const template = await readFile(new URL('design/mockup.template.html', root), 'utf8')
+const [templateName = 'mockup', outName = 'dogdex-mockup'] = process.argv.slice(2)
+let template = await readFile(new URL(`design/${templateName}.template.html`, root), 'utf8')
+if (template.includes('/*__98CSS__*/')) {
+  // 98.css loads its pixel fonts by relative URL; the artifact allows no external files, so inline them.
+  const vendor = new URL('design/vendor/98css/', root)
+  let css = await readFile(new URL('98.css', vendor), 'utf8')
+  for (const font of ['ms_sans_serif', 'ms_sans_serif_bold']) {
+    const woff2 = (await readFile(new URL(`${font}.woff2`, vendor))).toString('base64')
+    css = css.replace(new RegExp(`url\\(${font}\\.woff2\\)`, 'g'), `url(data:font/woff2;base64,${woff2})`).replace(new RegExp(`,?\\s*url\\(${font}\\.woff\\)\\s*format\\("woff"\\)`, 'g'), '')
+  }
+  template = template.replace('/*__98CSS__*/', () => `/*! 98.css 0.1.21, MIT, (c) Jordan Scales */\n${css}`)
+}
 await mkdir(new URL('.cache/design/', root), { recursive: true })
-const out = new URL('.cache/design/dogdex-mockup.html', root)
-await writeFile(out, template.replace('__DOGDEX_DATA__', JSON.stringify(data)))
+const out = new URL(`.cache/design/${outName}.html`, root)
+await writeFile(out, template.replace('__DOGDEX_DATA__', () => JSON.stringify(data)))
 console.log(`Wrote ${out.pathname} (${Math.round(JSON.stringify(data).length / 1024)} KB of data)`)

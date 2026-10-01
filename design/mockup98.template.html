@@ -1,0 +1,698 @@
+<title>Dogdex 98</title>
+<style>
+/*__98CSS__*/
+</style>
+<style>
+  /* Windows 98 palette: teal desktop, silver chrome, navy selection. One theme only, by design. */
+  :root {
+    color-scheme: light;
+    --desktop: #008080;
+    --silver: #c0c0c0;
+    --navy: #000080;
+    --ink: #000000;
+    --white: #ffffff;
+    --dark: #808080;
+    --tooltip: #ffffe1;
+    --body-font: Verdana, Tahoma, Geneva, sans-serif;
+    --pixel: 'Pixelated MS Sans Serif', Tahoma, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--desktop); }
+  body {
+    margin: 0;
+    padding-inline: 24px;
+    padding-block: 24px 64px;
+    color: var(--ink);
+    font-family: var(--pixel);
+  }
+
+  /* ---------- Board (big screens): a README window, then the phones ---------- */
+  .readme { max-width: 760px; margin: 0 auto 28px; }
+  .readme .window-body { margin: 0; padding: 12px 14px; background: var(--white); box-shadow: inset -1px -1px #fff, inset 1px 1px #808080; font: 13px/1.6 'Courier New', Courier, monospace; }
+  .readme p { margin: 0 0 6px; }
+  .phones { display: flex; flex-wrap: wrap; gap: 40px 36px; justify-content: center; }
+  .phone-wrap { display: grid; gap: 10px; justify-items: center; }
+  .phone-label { color: var(--white); font: 11px var(--pixel); text-shadow: 1px 1px #000; padding: 2px 6px; background: rgba(0, 0, 0, 0.25); }
+  .phone {
+    width: 402px;
+    height: 874px;
+    max-width: 100%;
+    border-radius: 58px;
+    border: 11px solid #111;
+    box-shadow: 0 0 0 1px #333, 0 30px 60px -20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    position: relative;
+    background: var(--desktop);
+  }
+
+  /* ---------- The app. Drawn at Windows 98 pixel sizes, then scaled 1.5x for thumbs ---------- */
+  .stage { position: absolute; inset: 0; overflow: hidden; }
+  .notch { position: absolute; top: 11px; left: 50%; width: 122px; height: 34px; margin-left: -61px; border-radius: 20px; background: #000; z-index: 50; }
+  .app98 {
+    --s: 1.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% / var(--s));
+    height: calc(100% / var(--s));
+    transform: scale(var(--s));
+    transform-origin: 0 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--desktop);
+    font-family: var(--pixel);
+    font-size: 11px;
+  }
+  .app98 .top-gap { height: 36px; flex: none; }
+  .main { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 0 3px 3px; }
+  .main > .window-body { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 3px; gap: 4px; }
+  .title-bar-text { display: flex; align-items: center; gap: 4px; }
+  .title-bar-text svg { width: 14px; height: 14px; flex: none; }
+  .menubar { display: flex; gap: 2px; padding: 0 2px; position: relative; }
+  .menubar > button { min-width: 0; min-height: 0; padding: 2px 6px; background: none; box-shadow: none; border: 0; }
+  .menubar > button:focus { outline: 1px dotted #000; outline-offset: -2px; }
+  .menubar > button[aria-expanded="true"] { background: var(--navy); color: var(--white); }
+  .dropdown {
+    position: absolute;
+    top: 18px;
+    z-index: 20;
+    min-width: 150px;
+    background: var(--silver);
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+    padding: 3px;
+    display: grid;
+  }
+  .dropdown button, .startmenu .items button {
+    all: unset;
+    box-sizing: border-box;
+    padding: 4px 20px 4px 22px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .dropdown button:hover, .dropdown button:focus, .startmenu .items button:hover, .startmenu .items button:focus { background: var(--navy); color: var(--white); }
+  .dropdown hr, .startmenu hr { border: 0; border-top: 1px solid var(--dark); border-bottom: 1px solid var(--white); margin: 3px 1px; }
+  .tabs { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+  .tabs menu[role="tablist"] { margin: 0; flex: none; }
+  .tabs menu[role="tablist"] li { padding: 4px 10px; cursor: pointer; }
+  .tabs [role="tabpanel"] { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 0; }
+  .tabs [role="tabpanel"][hidden] { display: none; }
+  .status-bar { flex: none; margin: 0 1px 1px; }
+  .status-bar-field { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  /* Dex panel */
+  .find { display: grid; grid-template-columns: auto 1fr auto; gap: 4px 6px; align-items: center; margin-bottom: 6px; }
+  .find input, .find select { width: 100%; min-width: 0; font-size: 11px; }
+  .find select { grid-column: 2 / 4; }
+  .find .x { min-width: 0; padding: 0 6px; }
+  .show { display: flex; gap: 10px; margin: 0 0 8px; padding: 6px 8px 8px; }
+  .show legend { padding: 0 3px; }
+  .show .field-row { margin: 0; }
+  .group-box { margin: 0 0 10px; padding: 8px 6px 8px; }
+  .group-box legend { display: flex; align-items: center; gap: 4px; padding: 0 3px; font-weight: bold; }
+  .swatch { width: 9px; height: 9px; box-shadow: inset -1px -1px #000, inset 1px 1px #fff; flex: none; }
+  .group-desc { margin: 0 0 8px; font: 10px/1.45 var(--body-font); color: #333; }
+  .icons { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px 6px; }
+  .icon {
+    all: unset;
+    box-sizing: border-box;
+    display: grid;
+    justify-items: center;
+    gap: 3px;
+    padding: 3px 2px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+  }
+  .icon .pic { width: 64px; height: 64px; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; padding: 2px; background: #fff; }
+  .icon img { width: 100%; height: 100%; display: block; object-fit: cover; }
+  .icon:not(.is-caught) img { image-rendering: pixelated; filter: grayscale(1) contrast(1.15); }
+  .icon .label { font-size: 11px; line-height: 1.2; padding: 1px 2px; max-width: 100%; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .icon:not(.is-caught) .label { color: #444; }
+  .icon:focus .label, .icon:hover .label { background: var(--navy); color: var(--white); outline: 1px dotted #ffff7f; }
+  .icon .no { position: absolute; top: 5px; left: calc(50% - 30px); background: var(--g); color: #fff; font-size: 9px; line-height: 1; padding: 2px 3px; box-shadow: 1px 1px #000; }
+  .icon .tick { position: absolute; top: 3px; right: calc(50% - 34px); width: 15px; height: 15px; background: #fff; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; display: grid; place-items: center; }
+  .icon .tick svg { width: 9px; height: 9px; }
+  .empty { padding: 20px 6px; text-align: center; font: 11px/1.6 var(--body-font); }
+  .sample-note { text-align: center; color: #333; margin: 2px 0 6px; font-size: 10px; }
+
+  /* Properties window (breed page) */
+  .props { position: absolute; inset: 36px 3px 3px; z-index: 30; display: flex; flex-direction: column; }
+  .props[hidden] { display: none; }
+  .props > .window-body { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 3px; padding: 4px 4px 8px; display: grid; gap: 8px; align-content: start; }
+  .photo-frame { position: relative; padding: 3px; background: #fff; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; }
+  .photo-frame img { display: block; width: 100%; height: auto; max-height: 230px; object-fit: cover; }
+  .photo-frame .credit-btn { position: absolute; right: 7px; bottom: 7px; min-width: 0; min-height: 0; width: 22px; height: 22px; padding: 0; display: grid; place-items: center; }
+  .photo-frame .credit-btn svg { width: 14px; height: 14px; }
+  .tooltip { background: var(--tooltip); border: 1px solid #000; padding: 4px 6px; font: 10px/1.5 var(--body-font); }
+  .tooltip a { color: var(--navy); }
+  .head { display: flex; gap: 8px; align-items: center; }
+  .head svg { width: 32px; height: 32px; flex: none; }
+  .head h2 { margin: 0; font: bold 13px/1.25 var(--pixel); }
+  .props-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+  .props-table th { text-align: left; font-weight: normal; color: #333; padding: 2px 8px 2px 0; vertical-align: top; white-space: nowrap; width: 1%; }
+  .props-table td { padding: 2px 0; }
+  hr.etched { border: 0; border-top: 1px solid var(--dark); border-bottom: 1px solid var(--white); margin: 0; }
+  .temper p, .desc { margin: 0; font: 11px/1.55 var(--body-font); }
+  .traits { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 6px; }
+  .traits span { padding: 1px 6px; background: #fff; box-shadow: inset -1px -1px #fff, inset 1px 1px grey; font-size: 11px; }
+  .forms { display: flex; flex-wrap: wrap; gap: 3px 10px; font-size: 11px; }
+  .catch-btn { width: 100%; min-height: 34px; font-weight: bold; font-size: 12px; display: flex; align-items: center; justify-content: center; gap: 6px; }
+  .catch-btn svg { width: 16px; height: 16px; }
+  .caught-line { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .caught-line svg { width: 32px; height: 32px; flex: none; }
+  .caught-line b { display: block; font-size: 12px; }
+  .props .field-row-stacked { margin: 0 0 6px; }
+  .props textarea { resize: none; font: 11px var(--body-font); }
+  .props-buttons { display: flex; justify-content: flex-end; gap: 6px; }
+  .link-btn { width: 100%; text-align: left; display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+
+  /* Progress and More panels */
+  .big-progress { display: grid; gap: 4px; margin-bottom: 8px; }
+  .big-progress .figure { font: bold 13px var(--pixel); }
+  .progress-indicator.segmented > .progress-indicator-bar { width: 0; transition: width 0.6s steps(12); }
+  .progress-indicator.small { height: 14px; padding: 2px; }
+  .progress-indicator.small > .progress-indicator-bar { background-size: 9px 100%; background-image: linear-gradient(90deg, navy 7px, transparent 0 2px); }
+  .sunken-panel { background: #fff; }
+  .sunken-panel table { width: 100%; }
+  .sunken-panel td, .sunken-panel th { font-size: 11px; }
+  .sunken-panel td:nth-child(2) { white-space: nowrap; }
+  .sunken-panel tr { cursor: pointer; }
+  .recent-row img { width: 18px; height: 18px; vertical-align: middle; margin-right: 4px; object-fit: cover; }
+  .about-head { display: flex; gap: 8px; align-items: center; margin-bottom: 6px; }
+  .about-head svg { width: 40px; height: 40px; flex: none; }
+  .about-head b { font-size: 14px; display: block; }
+  .about-head span { font-size: 10px; color: #333; }
+  .panel-box { margin: 0 0 10px; padding: 8px; }
+  .panel-box legend { font-weight: bold; padding: 0 3px; }
+  .panel-box p, .panel-box ol { margin: 0 0 8px; font: 11px/1.55 var(--body-font); }
+  .panel-box ol { padding-left: 18px; }
+  .stack { display: grid; gap: 6px; }
+  .warn { display: flex; align-items: center; gap: 6px; font-size: 11px; margin-bottom: 8px; }
+  .warn svg { width: 22px; height: 22px; flex: none; }
+
+  /* Taskbar and Start menu */
+  .taskbar {
+    flex: none;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 2px 2px;
+    background: var(--silver);
+    box-shadow: inset 0 1px #dfdfdf, inset 0 2px #fff;
+    position: relative;
+    z-index: 40;
+    margin-bottom: 14px;
+  }
+  .start { min-width: 0; padding: 0 5px; height: 24px; font-weight: bold; display: flex; align-items: center; gap: 4px; }
+  .start svg { width: 18px; height: 16px; }
+  .start[aria-expanded="true"] { box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey; }
+  .task { flex: 1; min-width: 0; height: 24px; text-align: left; display: flex; align-items: center; gap: 4px; padding: 0 6px; font-weight: bold; box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey; background: repeating-conic-gradient(#c0c0c0 0 25%, #fff 0 50%) 0 0 / 2px 2px; }
+  .task svg { width: 14px; height: 14px; }
+  .tray { height: 24px; padding: 0 8px; display: flex; align-items: center; gap: 6px; box-shadow: inset -1px -1px #fff, inset 1px 1px grey; }
+  .tray svg { width: 14px; height: 14px; }
+  .startmenu {
+    position: absolute;
+    left: 2px;
+    bottom: 31px;
+    z-index: 45;
+    display: flex;
+    background: var(--silver);
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+    padding: 3px;
+  }
+  .startmenu[hidden] { display: none; }
+  .startmenu .banner { width: 22px; background: linear-gradient(0deg, #000080, #1084d0); color: #c0c0c0; writing-mode: vertical-rl; transform: rotate(180deg); padding: 6px 0; font: bold 15px Arial, sans-serif; letter-spacing: 0.02em; }
+  .startmenu .banner b { color: #fff; }
+  .startmenu .items { display: grid; min-width: 168px; }
+  .startmenu .items button { display: flex; align-items: center; gap: 8px; padding: 6px 16px 6px 6px; }
+  .startmenu .items svg { width: 22px; height: 22px; flex: none; }
+
+  /* Dialogs, boot screen and shut-down screen */
+  .modal { position: absolute; inset: 0; z-index: 60; display: grid; place-items: center; background: rgba(0, 0, 0, 0.0); }
+  .modal[hidden] { display: none; }
+  .dialog { width: 230px; }
+  .dialog .window-body { display: grid; gap: 12px; }
+  .dialog .msg { display: flex; gap: 10px; align-items: flex-start; font-size: 11px; line-height: 1.5; }
+  .dialog .msg svg { width: 32px; height: 32px; flex: none; }
+  .dialog .btns { display: flex; justify-content: center; gap: 6px; }
+  .boot { position: absolute; inset: 0; z-index: 70; background: #000; display: grid; place-items: center; align-content: center; gap: 18px; color: #fff; cursor: pointer; }
+  .boot[hidden] { display: none; }
+  .boot .logo { display: flex; align-items: center; gap: 10px; }
+  .boot .logo svg { width: 64px; height: 64px; }
+  .boot .word { font: italic bold 30px/1 'Times New Roman', Times, serif; letter-spacing: -0.01em; }
+  .boot .word sup { font: bold 24px Arial, sans-serif; font-style: normal; color: #ffcc00; vertical-align: 0.15em; }
+  .boot .sub { font: 11px var(--pixel); color: #aaa; }
+  .boot .progress-indicator { width: 180px; height: 18px; background: #c0c0c0; }
+  .safe { position: absolute; inset: 0; z-index: 80; background: #000; display: grid; place-items: center; text-align: center; cursor: pointer; }
+  .safe[hidden] { display: none; }
+  .safe p { font: bold 20px/1.4 Arial, sans-serif; color: #ff8c00; margin: 0; padding: 20px; }
+  .safe small { display: block; margin-top: 18px; font: 11px var(--pixel); color: #888; }
+
+  /* Phone: the page becomes the app itself, full screen */
+  @media (max-width: 560px) {
+    body { padding-inline: 0; padding-block: 0; }
+    .readme, .phone-label, .phone-wrap:not(:first-child) { display: none; }
+    .phones { display: block; }
+    .phone { width: 100%; height: calc(100dvh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); border: 0; border-radius: 0; box-shadow: none; }
+    .notch { display: none; }
+    .app98 .top-gap { height: 4px; }
+    .props { top: 4px; }
+    .taskbar { margin-bottom: calc(env(safe-area-inset-bottom, 0px) / 1.5); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .progress-indicator.segmented > .progress-indicator-bar { transition: none; }
+  }
+</style>
+
+<div class="window readme">
+  <div class="title-bar">
+    <div class="title-bar-text">README.TXT - Notepad</div>
+    <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
+  </div>
+  <div class="window-body">
+    <p>DOGDEX 98 - the Windows 98 version of the Dogdex mockup.</p>
+    <p>Tap anything: it works like the app, with 28 sample breeds and some example catches. Try the Start button, catch a dog, and press Shut Down.</p>
+    <p>To suggest a change, leave a comment on the part you mean, then tell Claude in chat.</p>
+  </div>
+</div>
+<main class="phones" id="phones"></main>
+
+<script>const DATA = __DOGDEX_DATA__;</script>
+<script>
+(() => {
+  // Pixel-style icons, drawn on a 16px grid like the originals.
+  const px = (d, size = 16) => `<svg viewBox="0 0 ${size} ${size}" shape-rendering="crispEdges">${d}</svg>`
+  const icons = {
+    paw: px('<rect x="2" y="5" width="3" height="4" fill="#000"/><rect x="5" y="1" width="3" height="4" fill="#000"/><rect x="9" y="1" width="3" height="4" fill="#000"/><rect x="12" y="5" width="3" height="4" fill="#000"/><rect x="5" y="8" width="7" height="6" fill="#000"/><rect x="4" y="10" width="9" height="3" fill="#000"/>'),
+    logo: px('<rect x="1" y="1" width="6" height="6" fill="#ff0000"/><rect x="9" y="1" width="6" height="6" fill="#00a000"/><rect x="1" y="9" width="6" height="6" fill="#0000ff"/><rect x="9" y="9" width="6" height="6" fill="#ffcc00"/><rect x="3" y="3" width="2" height="2" fill="#fff"/><rect x="11" y="3" width="2" height="2" fill="#fff"/><rect x="3" y="11" width="2" height="2" fill="#fff"/><rect x="11" y="11" width="2" height="2" fill="#fff"/>'),
+    bigPaw: px('<rect x="2" y="9" width="5" height="7" fill="#ff0000"/><rect x="8" y="2" width="5" height="7" fill="#00a000"/><rect x="15" y="2" width="5" height="7" fill="#0000ff"/><rect x="21" y="9" width="5" height="7" fill="#ffcc00"/><rect x="8" y="14" width="12" height="10" fill="#ffffff"/><rect x="6" y="18" width="16" height="6" fill="#ffffff"/>', 28),
+    info: px('<circle cx="8" cy="8" r="7.5" fill="#fff" stroke="#000080"/><rect x="7" y="3" width="2" height="2" fill="#000080"/><rect x="7" y="6" width="2" height="7" fill="#000080"/>'),
+    infoBig: px('<circle cx="16" cy="16" r="15" fill="#fff" stroke="#000"/><circle cx="16" cy="16" r="13" fill="#2050e0"/><rect x="14" y="7" width="4" height="4" fill="#fff"/><rect x="14" y="13" width="4" height="12" fill="#fff"/>', 32),
+    warn: px('<path d="M16 2L31 29H1z" fill="#ffcc00" stroke="#000"/><rect x="14" y="10" width="4" height="11" fill="#000"/><rect x="14" y="23" width="4" height="4" fill="#000"/>', 32),
+    tick: px('<path d="M1 8l2-2 2 2 6-6 2 2-8 8z" fill="#000"/>'),
+    trophy: px('<rect x="4" y="2" width="8" height="7" fill="#ffcc00" stroke="#806000"/><rect x="1" y="3" width="3" height="3" fill="none" stroke="#806000"/><rect x="12" y="3" width="3" height="3" fill="none" stroke="#806000"/><rect x="7" y="9" width="2" height="3" fill="#806000"/><rect x="4" y="12" width="8" height="2" fill="#806000"/>'),
+    folder: px('<path d="M1 4h5l1 1h8v9H1z" fill="#ffcc00" stroke="#806000"/>'),
+    disk: px('<rect x="1" y="1" width="14" height="14" fill="#000080"/><rect x="4" y="1" width="8" height="5" fill="#c0c0c0"/><rect x="9" y="2" width="2" height="3" fill="#000080"/><rect x="3" y="9" width="10" height="6" fill="#fff"/>'),
+    phone: px('<rect x="4" y="1" width="8" height="14" fill="#c0c0c0" stroke="#000"/><rect x="5" y="3" width="6" height="9" fill="#008080"/><rect x="7" y="13" width="2" height="1" fill="#000"/>'),
+    help: px('<rect x="1" y="1" width="14" height="14" fill="#ffffe1" stroke="#000"/><rect x="6" y="3" width="4" height="2" fill="#000080"/><rect x="10" y="5" width="2" height="3" fill="#000080"/><rect x="8" y="8" width="2" height="2" fill="#000080"/><rect x="8" y="11" width="2" height="2" fill="#000080"/>'),
+    power: px('<circle cx="8" cy="9" r="5.5" fill="none" stroke="#c00000" stroke-width="2"/><rect x="7" y="1" width="2" height="7" fill="#c00000"/>'),
+    speaker: px('<rect x="2" y="6" width="3" height="4" fill="#000"/><path d="M5 6l4-3v10l-4-3z" fill="#000"/><rect x="11" y="5" width="1" height="6" fill="#000"/><rect x="13" y="3" width="1" height="10" fill="#000"/>'),
+    ext: px('<rect x="1" y="4" width="10" height="11" fill="#fff" stroke="#000"/><path d="M8 1h7v7l-2-2-4 4-2-2 4-4z" fill="#000080"/>'),
+  }
+  // Group colours in the Windows 16-colour spirit.
+  const groupColour = { toys: '#c00080', terriers: '#a04000', gundogs: '#008000', hounds: '#804000', 'working-dogs': '#000080', utility: '#800080', 'non-sporting': '#008080', bonus: '#c08000' }
+
+  const { groups, breeds } = DATA
+  const group = Object.fromEntries(groups.map((g) => [g.id, g]))
+  const officialTotal = groups.filter((g) => g.id !== 'bonus').reduce((n, g) => n + g.total, 0)
+  const byId = Object.fromEntries(breeds.map((b) => [b.id, b]))
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`)
+
+  const KEY = 'dogdex98-mockup-v1'
+  let caught = { ...DATA.demoCaught }
+  try { const saved = localStorage.getItem(KEY); if (saved) caught = JSON.parse(saved) } catch {}
+  const persist = () => { try { localStorage.setItem(KEY, JSON.stringify(caught)) } catch {} }
+  const pad = (n) => String(n).padStart(2, '0')
+  const todayIso = () => { const d = new Date(); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}` }
+  const fmt = (iso) => new Date(`${iso}T00:00:00`).toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' })
+  const caughtIn = (gid) => breeds.filter((b) => b.groupId === gid && caught[b.id]).length
+  const officialCaught = () => breeds.filter((b) => b.tier === 'ankc' && caught[b.id]).length
+
+  // Same search rules as the app: exact, prefix, word prefix, then substring, over names, nicknames and varieties.
+  const norm = (t) => t.normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim()
+  const rank = (name, q) => (name === q ? 0 : name.startsWith(q) ? 1 : ` ${name}`.includes(` ${q}`) ? 2 : name.includes(q) ? 3 : null)
+  function search(list, query) {
+    const q = norm(query)
+    if (!q) return list
+    return list
+      .map((b, i) => {
+        const r = [b.name, b.officialName || '', ...b.aliases, ...b.forms].filter(Boolean).map((n) => rank(norm(n), q)).filter((x) => x !== null)
+        return r.length ? { b, r: Math.min(...r), i } : null
+      })
+      .filter(Boolean)
+      .sort((x, y) => x.r - y.r || x.i - y.i)
+      .map((x) => x.b)
+  }
+  const bar = (fraction, small) => `<div class="progress-indicator segmented${small ? ' small' : ''}"><span class="progress-indicator-bar" data-w="${Math.max(fraction * 100, fraction > 0 ? 3 : 0)}"></span></div>`
+  const fillBars = (root) => requestAnimationFrame(() => root.querySelectorAll('.progress-indicator-bar[data-w]').forEach((b) => (b.style.width = `${b.dataset.w}%`)))
+
+  const phones = []
+  class Phone {
+    constructor(host, initial) {
+      this.host = host
+      this.uid = phones.length
+      this.s = { tab: 'dex', group: 'all', filter: 'all', q: '', detail: null, credit: false, ...initial }
+      host.innerHTML = `
+        <div class="stage">
+          <div class="notch" aria-hidden="true"></div>
+          <div class="app98">
+            <div class="top-gap"></div>
+            <div class="window main">
+              <div class="title-bar">
+                <div class="title-bar-text">${icons.logo}Dogdex.exe</div>
+                <div class="title-bar-controls"><button aria-label="Minimize" data-act="joke-min"></button><button aria-label="Maximize"></button><button aria-label="Close" data-act="shutdown"></button></div>
+              </div>
+              <div class="menubar" role="menubar">
+                <button type="button" data-act="menu" data-menu="file" aria-expanded="false"><u>F</u>ile</button>
+                <button type="button" data-act="menu" data-menu="view" aria-expanded="false"><u>V</u>iew</button>
+                <button type="button" data-act="menu" data-menu="help" aria-expanded="false"><u>H</u>elp</button>
+                <div class="dropdown" hidden></div>
+              </div>
+              <div class="window-body">
+                <section class="tabs">
+                  <menu role="tablist">
+                    <li role="tab" data-act="tab" data-tab="dex"><a>Dex</a></li>
+                    <li role="tab" data-act="tab" data-tab="progress"><a>Progress</a></li>
+                    <li role="tab" data-act="tab" data-tab="more"><a>More</a></li>
+                  </menu>
+                  <div class="window" role="tabpanel" data-panel="dex"><div class="window-body"></div></div>
+                  <div class="window" role="tabpanel" data-panel="progress" hidden><div class="window-body"></div></div>
+                  <div class="window" role="tabpanel" data-panel="more" hidden><div class="window-body"></div></div>
+                </section>
+              </div>
+              <div class="status-bar"><p class="status-bar-field" data-status="count"></p><p class="status-bar-field" data-status="bonus"></p></div>
+            </div>
+            <div class="window props" hidden></div>
+            <div class="startmenu" hidden>
+              <div class="banner"><b>Dogdex</b>98</div>
+              <div class="items">
+                <button type="button" data-act="start-go" data-tab="dex">${icons.folder}Dex</button>
+                <button type="button" data-act="start-go" data-tab="progress">${icons.trophy}Progress</button>
+                <hr>
+                <button type="button" data-act="start-go" data-tab="more" data-anchor="about">${icons.help}About</button>
+                <button type="button" data-act="start-go" data-tab="more" data-anchor="home">${icons.phone}Add to Home Screen</button>
+                <button type="button" data-act="start-go" data-tab="more" data-anchor="backup">${icons.disk}Backup</button>
+                <hr>
+                <button type="button" data-act="shutdown">${icons.power}Shut Down...</button>
+              </div>
+            </div>
+            <div class="taskbar">
+              <button type="button" class="start" data-act="start" aria-expanded="false">${icons.logo}Start</button>
+              <button type="button" class="task" data-act="close-start">${icons.logo}Dogdex.exe</button>
+              <div class="tray">${icons.speaker}<span data-clock></span></div>
+            </div>
+            <div class="modal" hidden></div>
+            <div class="boot" hidden data-act="boot-skip">
+              <div class="logo">${icons.bigPaw}<span class="word">Dogdex<sup>98</sup></span></div>
+              <div class="progress-indicator segmented"><span class="progress-indicator-bar" style="width:0"></span></div>
+              <span class="sub">Starting Dogdex... (tap to skip)</span>
+            </div>
+            <div class="safe" hidden data-act="wake"><p>It's now safe to go to the park.<small>Tap anywhere to start Dogdex again</small></p></div>
+          </div>
+        </div>`
+      this.q = (sel) => host.querySelector(sel)
+      this.panels = Object.fromEntries([...host.querySelectorAll('[data-panel]')].map((n) => [n.dataset.panel, n.querySelector('.window-body')]))
+      host.addEventListener('click', (e) => this.onClick(e))
+      host.addEventListener('input', (e) => this.onInput(e))
+      host.addEventListener('change', (e) => this.onChange(e))
+      this.renderDexShell()
+      this.refresh()
+      this.showTab(this.s.tab)
+      if (this.s.detail) this.openProps(this.s.detail)
+      this.tick()
+      setInterval(() => this.tick(), 20000)
+    }
+    tick() {
+      this.q('[data-clock]').textContent = new Date().toLocaleTimeString('en-AU', { hour: 'numeric', minute: '2-digit' })
+    }
+
+    onClick(e) {
+      const t = e.target.closest('[data-act]')
+      if (!t) {
+        if (!e.target.closest('.startmenu')) this.closeStart()
+        if (!e.target.closest('.menubar')) this.closeMenu()
+        return
+      }
+      const { act } = t.dataset
+      if (act !== 'start' && !t.closest('.startmenu')) this.closeStart()
+      if (act !== 'menu' && !t.closest('.dropdown')) this.closeMenu()
+      if (act === 'tab') this.showTab(t.dataset.tab)
+      if (act === 'open') this.openProps(t.dataset.id)
+      if (act === 'close-props') this.closeProps()
+      if (act === 'credit') { this.s.credit = !this.s.credit; this.renderProps() }
+      if (act === 'catch') catchBreed(t.dataset.id, this)
+      if (act === 'undo') { delete caught[t.dataset.id]; persist(); refreshAll() }
+      if (act === 'clear') { this.s.q = ''; const input = this.q('[data-role="q"]'); input.value = ''; input.focus(); this.refreshResults() }
+      if (act === 'go-group') { this.s.group = t.dataset.group; this.s.filter = 'all'; this.q('[data-role="group"]').value = this.s.group; this.showTab('dex'); this.refresh() }
+      if (act === 'start') this.toggleStart()
+      if (act === 'close-start') this.closeStart()
+      if (act === 'start-go') { this.closeStart(); this.closeProps(); this.showTab(t.dataset.tab); if (t.dataset.anchor) this.q(`#${t.dataset.anchor}-${this.uid}`)?.scrollIntoView() }
+      if (act === 'menu') this.toggleMenu(t)
+      if (act === 'menu-go') { this.closeMenu(); this.closeProps(); this.showTab(t.dataset.tab); if (t.dataset.anchor) this.q(`#${t.dataset.anchor}-${this.uid}`)?.scrollIntoView() }
+      if (act === 'backup') this.dialog('Save Backup', 'In the app, this opens the iPhone share sheet so you can save your catches to Files or iCloud Drive.', 'info')
+      if (act === 'restore') this.dialog('Restore Backup', 'In the app, this lets you pick a backup file. Catches are merged, so nothing is lost.', 'info')
+      if (act === 'joke-min') this.dialog('Dogdex', 'Dogdex cannot be minimised while there are dogs in the park.', 'warn')
+      if (act === 'dialog-ok') this.q('.modal').hidden = true
+      if (act === 'shutdown') { this.closeStart(); this.q('.safe').hidden = false }
+      if (act === 'wake') { this.q('.safe').hidden = true; this.boot() }
+      if (act === 'boot-skip') this.q('.boot').hidden = true
+    }
+    onInput(e) {
+      if (e.target.matches('[data-role="q"]')) { this.s.q = e.target.value; this.refreshResults() }
+      if (e.target.matches('[data-role="note"]')) { const c = caught[e.target.dataset.id]; if (c) { c.note = e.target.value; persist() } }
+    }
+    onChange(e) {
+      if (e.target.matches('[data-role="group"]')) { this.s.group = e.target.value; this.refreshResults(); this.panels.dex.parentElement.scrollTop = 0 }
+      if (e.target.matches('[data-role="filter"]')) { this.s.filter = e.target.value; this.refreshResults() }
+      if (e.target.matches('[data-role="date"]') && e.target.value) { const c = caught[e.target.dataset.id]; if (c) { c.date = e.target.value; persist(); refreshAll() } }
+    }
+
+    showTab(tab) {
+      this.s.tab = tab
+      this.host.querySelectorAll('[data-panel]').forEach((p) => (p.hidden = p.dataset.panel !== tab))
+      this.host.querySelectorAll('[role="tab"]').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === tab)))
+      fillBars(this.panels[tab])
+    }
+    toggleStart() {
+      const menu = this.q('.startmenu')
+      menu.hidden = !menu.hidden
+      this.q('.start').setAttribute('aria-expanded', String(!menu.hidden))
+    }
+    closeStart() { this.q('.startmenu').hidden = true; this.q('.start').setAttribute('aria-expanded', 'false') }
+    toggleMenu(btn) {
+      const dd = this.q('.dropdown')
+      const open = btn.getAttribute('aria-expanded') === 'true'
+      this.closeMenu()
+      if (open) return
+      const items = {
+        file: `<button type="button" data-act="backup">Save Backup...</button><button type="button" data-act="restore">Restore Backup...</button><hr><button type="button" data-act="shutdown">Exit</button>`,
+        view: `<button type="button" data-act="menu-go" data-tab="dex">Dex</button><button type="button" data-act="menu-go" data-tab="progress">Progress</button>`,
+        help: `<button type="button" data-act="menu-go" data-tab="more" data-anchor="home">Add to Home Screen</button><hr><button type="button" data-act="menu-go" data-tab="more" data-anchor="about">About Dogdex</button>`,
+      }[btn.dataset.menu]
+      dd.innerHTML = items
+      dd.style.left = `${btn.offsetLeft}px`
+      dd.hidden = false
+      btn.setAttribute('aria-expanded', 'true')
+    }
+    closeMenu() {
+      this.q('.dropdown').hidden = true
+      this.host.querySelectorAll('.menubar > button').forEach((b) => b.setAttribute('aria-expanded', 'false'))
+    }
+    dialog(title, text, kind) {
+      const m = this.q('.modal')
+      m.innerHTML = `<div class="window dialog" role="alertdialog" aria-label="${esc(title)}">
+        <div class="title-bar"><div class="title-bar-text">${esc(title)}</div><div class="title-bar-controls"><button aria-label="Close" data-act="dialog-ok"></button></div></div>
+        <div class="window-body"><div class="msg">${kind === 'warn' ? icons.warn : icons.infoBig}<span>${esc(text)}</span></div><div class="btns"><button type="button" class="default" data-act="dialog-ok">OK</button></div></div>
+      </div>`
+      m.hidden = false
+      m.querySelector('.default').focus()
+    }
+    boot() {
+      const b = this.q('.boot')
+      b.hidden = false
+      const barEl = b.querySelector('.progress-indicator-bar')
+      barEl.style.transition = 'none'
+      barEl.style.width = '0'
+      requestAnimationFrame(() => requestAnimationFrame(() => { barEl.style.transition = 'width 1.6s steps(10)'; barEl.style.width = '100%' }))
+      clearTimeout(this.bootTimer)
+      this.bootTimer = setTimeout(() => (b.hidden = true), 2000)
+    }
+
+    refresh() {
+      this.refreshResults()
+      this.renderProgress()
+      this.renderMore()
+      const n = officialCaught()
+      this.q('[data-status="count"]').textContent = `${n} of ${officialTotal} caught`
+      this.q('[data-status="bonus"]').textContent = `Bonus: ${caughtIn('bonus')} of ${group.bonus.total}`
+      if (this.s.detail) this.renderProps()
+    }
+
+    renderDexShell() {
+      this.panels.dex.innerHTML = `
+        <div class="find">
+          <label for="q98-${this.uid}">Find:</label>
+          <input id="q98-${this.uid}" type="text" data-role="q" placeholder="Breed or nickname" autocomplete="off" enterkeyhint="search">
+          <button type="button" class="x" data-act="clear" aria-label="Clear">X</button>
+          <label for="g98-${this.uid}">Group:</label>
+          <select id="g98-${this.uid}" data-role="group"></select>
+        </div>
+        <fieldset class="show"><legend>Show</legend>
+          <div class="field-row"><input id="fa-${this.uid}" type="radio" name="f-${this.uid}" value="all" data-role="filter" checked><label for="fa-${this.uid}">All</label></div>
+          <div class="field-row"><input id="fc-${this.uid}" type="radio" name="f-${this.uid}" value="caught" data-role="filter"><label for="fc-${this.uid}">Caught</label></div>
+          <div class="field-row"><input id="ft-${this.uid}" type="radio" name="f-${this.uid}" value="todo" data-role="filter"><label for="ft-${this.uid}">Still to find</label></div>
+        </fieldset>
+        <div class="results"></div>`
+    }
+
+    refreshResults() {
+      const s = this.s
+      const select = this.q('[data-role="group"]')
+      select.innerHTML = `<option value="all">All groups</option>` + groups.map((g) => `<option value="${g.id}">${esc(g.name)} (${caughtIn(g.id)}/${g.total})</option>`).join('')
+      select.value = s.group
+      let list = breeds
+      if (s.group !== 'all') list = list.filter((b) => b.groupId === s.group)
+      if (s.filter === 'caught') list = list.filter((b) => caught[b.id])
+      if (s.filter === 'todo') list = list.filter((b) => !caught[b.id])
+      const results = this.q('.results')
+      if (s.q) {
+        const found = search(list, s.q)
+        results.innerHTML = found.length
+          ? `<div class="icons">${found.map((b) => this.icon(b)).join('')}</div>`
+          : `<div class="empty">Dogdex cannot find <b>${esc(s.q)}</b>.<br>Try a nickname like "staffy", "heeler" or "sausage dog".</div>`
+        return
+      }
+      const shown = s.group === 'all' ? groups : [group[s.group]]
+      const html = shown
+        .map((g) => {
+          const items = list.filter((b) => b.groupId === g.id)
+          if (!items.length) return ''
+          return `<fieldset class="group-box"><legend><span class="swatch" style="background:${groupColour[g.id]}"></span>${esc(g.name)} - ${caughtIn(g.id)} of ${g.total}</legend>
+            <p class="group-desc">${esc(g.description)}</p>
+            <div class="icons">${items.map((b) => this.icon(b)).join('')}</div></fieldset>`
+        })
+        .join('')
+      results.innerHTML = (html || `<div class="empty">Nothing here yet. Get to the park!</div>`) + `<p class="sample-note">Mockup sample: ${breeds.length} of ${DATA.totalEntries} entries</p>`
+    }
+
+    icon(b) {
+      const c = caught[b.id]
+      return `<button type="button" class="icon${c ? ' is-caught' : ''}" data-act="open" data-id="${b.id}" style="--g:${groupColour[b.groupId]}">
+        <span class="pic"><img src="${c ? b.img.grid : b.img.tiny}" alt=""></span>
+        <span class="no">${b.dexNo}</span>
+        ${c ? `<span class="tick" aria-label="Caught">${icons.tick}</span>` : ''}
+        <span class="label">${esc(b.name)}</span>
+      </button>`
+    }
+
+    openProps(id) {
+      this.s.detail = id
+      this.s.credit = false
+      this.renderProps()
+      const p = this.q('.props')
+      p.hidden = false
+      p.querySelector('.window-body').scrollTop = 0
+    }
+    closeProps() { this.s.detail = null; this.q('.props').hidden = true }
+
+    renderProps() {
+      const b = byId[this.s.detail]
+      if (!b) return
+      const g = group[b.groupId]
+      const c = caught[b.id]
+      const aka = b.aliases.filter((a) => !b.name.toLowerCase().includes(a.toLowerCase())).slice(0, 4)
+      const rows = [
+        ['Dex number', b.dexNo],
+        ['Group', `<span class="swatch" style="display:inline-block;vertical-align:-1px;margin-right:4px;background:${groupColour[b.groupId]}"></span>${esc(g.name)}`],
+      ]
+      if (b.officialName) rows.push(['Official name', esc(b.officialName)])
+      if (aka.length) rows.push(['Also called', aka.map(esc).join(', ')])
+      if (b.parents) rows.push(['Cross of', `${esc(b.parents[0])} x ${esc(b.parents[1])}`])
+      const status = c
+        ? `<div class="caught-line">${icons.infoBig}<span><b>Caught!</b>First spotted ${esc(fmt(c.date))}</span></div>
+           <div class="field-row-stacked"><label for="d98-${this.uid}-${b.id}">Date seen:</label><input id="d98-${this.uid}-${b.id}" type="date" data-role="date" data-id="${b.id}" value="${c.date}" max="${todayIso()}"></div>
+           <div class="field-row-stacked"><label for="n98-${this.uid}-${b.id}">Note:</label><textarea id="n98-${this.uid}-${b.id}" rows="2" data-role="note" data-id="${b.id}" placeholder="Where, what colour, the dog's name...">${esc(c.note || '')}</textarea></div>
+           <button type="button" data-act="undo" data-id="${b.id}">Undo catch</button>`
+        : `<button type="button" class="catch-btn default" data-act="catch" data-id="${b.id}">${icons.paw}I spotted one!</button>`
+      const p = this.q('.props')
+      p.innerHTML = `
+        <div class="title-bar">
+          <div class="title-bar-text">${icons.logo}${esc(b.name)} Properties</div>
+          <div class="title-bar-controls"><button aria-label="Help" data-act="credit"></button><button aria-label="Close" data-act="close-props"></button></div>
+        </div>
+        <div class="window-body">
+          <div class="photo-frame">
+            <img src="${b.img.detail}" alt="${esc(b.name)}" style="aspect-ratio:${Math.min(Math.max(b.img.w / b.img.h, 1.1), 1.5)};object-position:${b.focus[0] * 100}% ${b.focus[1] * 100}%">
+            <button type="button" class="credit-btn" data-act="credit" aria-label="Photo credit">${icons.info}</button>
+          </div>
+          ${this.s.credit ? `<div class="tooltip">Photo: ${esc(b.credit.author)}, <a href="${esc(b.credit.licenceUrl || b.credit.sourceUrl)}" target="_blank" rel="noopener">${esc(b.credit.licence)}</a>, via <a href="${esc(b.credit.sourceUrl)}" target="_blank" rel="noopener">Wikimedia Commons</a>. Resized and cropped.</div>` : ''}
+          <div class="head">${icons.bigPaw}<h2>${esc(b.name)}</h2></div>
+          <hr class="etched">
+          <table class="props-table">${rows.map(([k, v]) => `<tr><th>${k}:</th><td>${v}</td></tr>`).join('')}</table>
+          ${b.about ? `<p class="desc">${esc(b.about)} Not recognised by Dogs Australia.</p>` : b.parents ? `<p class="desc">A designer cross. Not recognised by Dogs Australia.</p>` : `<p class="desc">${esc(g.description)}</p>`}
+          ${b.temperament ? `<fieldset class="temper"><legend>Temperament</legend><div class="traits">${b.temperament.traits.map((t) => `<span>${esc(t)}</span>`).join('')}</div><p>${esc(b.temperament.text)}</p></fieldset>` : ''}
+          ${b.ankcUrl ? `<a class="link-btn-wrap" href="${esc(b.ankcUrl)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><button type="button" class="link-btn" tabindex="-1">See the official standard${icons.ext}</button></a>` : ''}
+          ${b.forms.length ? `<fieldset><legend>Varieties</legend><div class="forms">${b.forms.map((f) => `<span>${esc(f)}</span>`).join('')}</div></fieldset>` : ''}
+          <fieldset><legend>Status</legend>${status}</fieldset>
+          <div class="props-buttons"><button type="button" data-act="close-props">OK</button><button type="button" data-act="close-props">Cancel</button></div>
+        </div>`
+    }
+
+    renderProgress() {
+      const n = officialCaught()
+      const recent = breeds.filter((b) => caught[b.id]).sort((a, b) => caught[b.id].date.localeCompare(caught[a.id].date)).slice(0, 6)
+      this.panels.progress.innerHTML = `
+        <div class="big-progress">
+          <span class="figure">${n} of ${officialTotal} official breeds caught</span>
+          ${bar(n / officialTotal)}
+          <span>Plus ${caughtIn('bonus')} of ${group.bonus.total} bonus dogs</span>
+        </div>
+        <div class="sunken-panel"><table class="interactive">
+          <thead><tr><th>Group</th><th>Caught</th><th>Progress</th></tr></thead>
+          <tbody>${groups.map((g) => `<tr data-act="go-group" data-group="${g.id}"><td><span class="swatch" style="display:inline-block;vertical-align:-1px;margin-right:4px;background:${groupColour[g.id]}"></span>${esc(g.name)}</td><td>${caughtIn(g.id)} / ${g.total}</td><td style="width:40%">${bar(caughtIn(g.id) / g.total, true)}</td></tr>`).join('')}</tbody>
+        </table></div>
+        <p style="margin:10px 0 4px"><b>Recent catches</b></p>
+        <div class="sunken-panel"><table class="interactive">
+          <thead><tr><th>Breed</th><th>Date</th></tr></thead>
+          <tbody>${recent.map((b) => `<tr class="recent-row" data-act="open" data-id="${b.id}"><td><img src="${b.img.grid}" alt="">${esc(b.name)}</td><td>${esc(fmt(caught[b.id].date))}</td></tr>`).join('')}</tbody>
+        </table></div>`
+      if (this.s.tab === 'progress') fillBars(this.panels.progress)
+    }
+
+    renderMore() {
+      this.panels.more.innerHTML = `
+        <fieldset class="panel-box" id="about-${this.uid}"><legend>About</legend>
+          <div class="about-head">${icons.bigPaw}<span><b>Dogdex 98</b><span>Version 1.0 (mockup)</span></span></div>
+          <p>The official list is the ${officialTotal} breeds recognised by Dogs Australia, in its 7 groups (checked 1 Oct 2026), plus ${group.bonus.total} popular bonus dogs it doesn't recognise. Photos come from Wikimedia Commons.</p>
+        </fieldset>
+        <fieldset class="panel-box" id="home-${this.uid}"><legend>Add to Home Screen</legend>
+          <ol><li>Open Dogdex in <b>Safari</b></li><li>Tap <b>Share</b>, then <b>Add to Home Screen</b></li><li>Open it from the new icon. It runs full screen, like an app.</li></ol>
+        </fieldset>
+        <fieldset class="panel-box" id="backup-${this.uid}"><legend>Backup</legend>
+          <p>Your catches are saved on this phone only. Save a backup now and then so a lost or new phone doesn't mean a lost dex.</p>
+          <div class="warn">${icons.warn}<span>Last backup: never</span></div>
+          <div class="stack"><button type="button" class="default" data-act="backup">Save Backup...</button><button type="button" data-act="restore">Restore Backup...</button></div>
+        </fieldset>`
+    }
+  }
+
+  function catchBreed(id, from) {
+    caught[id] = { date: todayIso() }
+    persist()
+    refreshAll()
+    const b = byId[id]
+    from.dialog('Dogdex', `You caught a ${b.name}! That's ${officialCaught()} of ${officialTotal} official breeds${b.tier === 'unofficial' ? `, plus ${caughtIn('bonus')} bonus` : ''}.`, 'info')
+  }
+  function refreshAll() { phones.forEach((p) => p.refresh()) }
+
+  const screens = [
+    { label: 'Dex', state: {} },
+    { label: 'Properties (breed page)', state: { detail: 'staffordshire-bull-terrier' } },
+    { label: 'Progress', state: { tab: 'progress' } },
+    { label: 'More', state: { tab: 'more' } },
+  ]
+  const host = document.getElementById('phones')
+  for (const sc of screens) {
+    const wrap = document.createElement('div')
+    wrap.className = 'phone-wrap'
+    wrap.innerHTML = `<span class="phone-label">${sc.label}</span><div class="phone"></div>`
+    host.append(wrap)
+    phones.push(new Phone(wrap.querySelector('.phone'), sc.state))
+  }
+  // Boot screen once per visit, on the first (phone-sized) instance.
+  let booted = false
+  try { booted = sessionStorage.getItem('dogdex98-booted') === '1'; sessionStorage.setItem('dogdex98-booted', '1') } catch {}
+  if (!booted && !matchMedia('(prefers-reduced-motion: reduce)').matches) phones[0].boot()
+})()
+</script>
