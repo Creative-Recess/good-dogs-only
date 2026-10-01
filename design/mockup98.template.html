@@ -18,6 +18,8 @@
     --pixel: Verdana, Tahoma, Geneva, sans-serif;
   }
   * { box-sizing: border-box; }
+  /* Safari draws both start and end arrow pairs from 98.css; keep one arrow at each end. */
+  ::-webkit-scrollbar-button:vertical:start:increment, ::-webkit-scrollbar-button:vertical:end:decrement, ::-webkit-scrollbar-button:horizontal:start:increment, ::-webkit-scrollbar-button:horizontal:end:decrement { display: none; }
   body, button, input, select, textarea, label, legend, table, .title-bar-text { font-family: var(--pixel) !important; }
   .title-bar-text { font-weight: bold; }
   html, body { background: var(--desktop); }
@@ -82,7 +84,7 @@
   .tabs { flex: 1; min-height: 0; display: flex; flex-direction: column; }
   .tabs menu[role="tablist"] { margin: 0; flex: none; }
   .tabs menu[role="tablist"] li { padding: 4px 10px; cursor: pointer; }
-  .tabs .panel { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 0; background: var(--silver); }
+  .tabs .panel { overflow-x: hidden; flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 0; background: var(--silver); }
   .tabs .panel > .window-body { margin: 6px; }
   .tabs .panel[hidden] { display: none; }
   .status-bar { flex: none; margin: 0 1px 1px; }
@@ -127,19 +129,37 @@
   /* Properties window (breed page) */
   .props { position: absolute; inset: 36px 0 0; z-index: 30; display: flex; flex-direction: column; }
   .props[hidden] { display: none; }
-  .props > .window-body { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 0; padding-bottom: 20px !important; padding: 4px 4px 8px; display: grid; gap: 8px; align-content: start; }
+  .props > .window-body { grid-template-columns: minmax(0, 1fr); overflow-x: hidden; flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 0; padding-bottom: 20px !important; padding: 4px 4px 8px; display: grid; gap: 8px; align-content: start; }
   .photo-frame { position: relative; padding: 3px; background: #fff; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; }
   .photo-frame img { display: block; width: 100%; height: auto; max-height: 230px; object-fit: cover; }
   .photo-frame .credit-btn { position: absolute; right: 7px; bottom: 7px; min-width: 0; min-height: 0; width: 22px; height: 22px; padding: 0; display: grid; place-items: center; }
   .photo-frame .credit-btn svg { width: 14px; height: 14px; }
   .tooltip { background: var(--tooltip); border: 1px solid #000; padding: 4px 6px; font: 11px/1.5 var(--body-font); }
   .tooltip a { color: var(--navy); }
+  .title-block h2 { margin: 2px 0 2px; font: bold 17px/1.15 var(--pixel); text-wrap: balance; }
+  .title-block p { margin: 0; font-size: 11px; color: #222; }
+  .box { margin: 0; padding: 6px 6px 8px; min-width: 0; }
+  .chips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px 4px; }
+  .box .chips:has(> :nth-child(2):last-child) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .chip { display: flex; align-items: center; gap: 4px; font-size: 10.5px; line-height: 1.15; min-width: 0; hyphens: auto; -webkit-hyphens: auto; }
+  .chip-icon { width: 24px; height: 24px; flex: none; display: grid; place-items: center; background: var(--silver); box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf; }
+  .chip-icon svg { width: 16px; height: 16px; }
+  .chip-icon.dexno { font-size: 9px; font-weight: bold; width: 28px; }
+  .swatch.big { width: 13px; height: 13px; }
+  .small { margin: 6px 0 0; font-size: 10.5px; line-height: 1.45; }
+  .textbox { background: #fff; padding: 6px 8px; font-size: 11px; line-height: 1.5; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; }
   .head { display: flex; gap: 8px; align-items: center; }
   .head svg { width: 32px; height: 32px; flex: none; }
   .head h2 { margin: 0; font: bold 13px/1.25 var(--pixel); }
   .props-table { width: 100%; border-collapse: collapse; font-size: 11px; }
   .props-table th { text-align: left; font-weight: normal; color: #333; padding: 2px 8px 2px 0; vertical-align: top; white-space: nowrap; width: 1%; }
-  .props-table td { padding: 2px 0; }
+  .props-table { table-layout: fixed; }
+  .props-table th { width: 92px !important; }
+  .props-table td { padding: 2px 0; overflow-wrap: anywhere; }
+  .props fieldset, .tabs fieldset { min-width: 0; }
+  .sunken-panel table { table-layout: fixed; }
+  .sunken-panel td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .sunken-panel { overflow-x: hidden !important; }
   hr.etched { border: 0; border-top: 1px solid var(--dark); border-bottom: 1px solid var(--white); margin: 0; }
   .temper p, .desc { margin: 0; font: 11px/1.55 var(--body-font); }
   .traits { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 6px; }
@@ -252,9 +272,26 @@
     help: px('<rect x="1" y="1" width="14" height="14" fill="#ffffe1" stroke="#000"/><rect x="6" y="3" width="4" height="2" fill="#000080"/><rect x="10" y="5" width="2" height="3" fill="#000080"/><rect x="8" y="8" width="2" height="2" fill="#000080"/><rect x="8" y="11" width="2" height="2" fill="#000080"/>'),
     power: px('<circle cx="8" cy="9" r="5.5" fill="none" stroke="#c00000" stroke-width="2"/><rect x="7" y="1" width="2" height="7" fill="#c00000"/>'),
     speaker: px('<rect x="2" y="6" width="3" height="4" fill="#000"/><path d="M5 6l4-3v10l-4-3z" fill="#000"/><rect x="11" y="5" width="1" height="6" fill="#000"/><rect x="13" y="3" width="1" height="10" fill="#000"/>'),
+    tHeart: px('<path d="M2 4h2V2h3v2h2V2h3v2h2v4h-2v2h-2v2h-2v2H7v-2H5v-2H3V8H1V4z" fill="#e00000"/><rect x="4" y="4" width="2" height="2" fill="#ff9090"/>'),
+    tShield: px('<path d="M2 2h12v6l-2 3-4 3-4-3-2-3z" fill="#c0c0c0" stroke="#000080"/><path d="M8 3v10M3 6h10" stroke="#000080"/>'),
+    tBall: px('<circle cx="8" cy="8" r="6.5" fill="#d8e000" stroke="#606000"/><path d="M3 5c3 1 3 5 0 7M13 4c-3 1-3 6 0 8" fill="none" stroke="#fff"/>'),
+    tBulb: px('<circle cx="8" cy="6" r="4.5" fill="#ffee55" stroke="#806000"/><rect x="6" y="10" width="4" height="4" fill="#808080" stroke="#404040"/>'),
+    tBolt: px('<path d="M9 1L3 9h4l-1 6 6-8H8z" fill="#ffcc00" stroke="#806000"/>'),
+    tMoon: px('<path d="M10 2a6 6 0 1 0 4 10A5 5 0 0 1 10 2z" fill="#ffee88" stroke="#806000"/>'),
+    tStar: px('<path d="M8 1l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5z" fill="#ffcc00" stroke="#806000"/>'),
     ext: px('<rect x="1" y="4" width="10" height="11" fill="#fff" stroke="#000"/><path d="M8 1h7v7l-2-2-4 4-2-2 4-4z" fill="#000080"/>'),
   }
   // Group colours in the Windows 16-colour spirit.
+  const traitIcon = (t) => {
+    const w = t.toLowerCase()
+    if (/affection|loyal|gentle|kind|friendly|devoted|trusting|good-natured|sensitive|charming/.test(w)) return icons.tHeart
+    if (/courag|bold|confident|fearless|dignified|determined|independent|stubborn/.test(w)) return icons.tShield
+    if (/playful|merry|cheerful|clownish|mischiev|outgoing|spirited|sociable/.test(w)) return icons.tBall
+    if (/clever|intelligent|bright|alert|curious|eager/.test(w)) return icons.tBulb
+    if (/energetic|tireless|quick|lively|busy|intense/.test(w)) return icons.tBolt
+    if (/calm|easygoing|docile|patient|adaptable|reliable/.test(w)) return icons.tMoon
+    return icons.tStar
+  }
   const groupColour = { toys: '#c00080', terriers: '#a04000', gundogs: '#008000', hounds: '#804000', 'working-dogs': '#000080', utility: '#800080', 'non-sporting': '#008080', bonus: '#c08000' }
 
   const { groups, breeds } = DATA
@@ -506,11 +543,19 @@
             <button type="button" class="credit-btn" data-act="credit" aria-label="Photo credit">${icons.info}</button>
           </div>
           ${this.s.credit ? `<div class="tooltip">Photo: ${esc(b.credit.author)}, <a href="${esc(b.credit.licenceUrl || b.credit.sourceUrl)}" target="_blank" rel="noopener">${esc(b.credit.licence)}</a>, via <a href="${esc(b.credit.sourceUrl)}" target="_blank" rel="noopener">Wikimedia Commons</a>. Resized and cropped.</div>` : ''}
-          <div class="head">${icons.bigPaw}<h2>${esc(b.name)}</h2></div>
-          <hr class="etched">
-          <table class="props-table">${rows.map(([k, v]) => `<tr><th>${k}:</th><td>${v}</td></tr>`).join('')}</table>
-          ${b.about ? `<p class="desc">${esc(b.about)} Not recognised by Dogs Australia.</p>` : b.parents ? `<p class="desc">A designer cross. Not recognised by Dogs Australia.</p>` : `<p class="desc">${esc(g.description)}</p>`}
-          ${b.temperament ? `<fieldset class="temper"><legend>Temperament</legend><div class="traits">${b.temperament.traits.map((t) => `<span>${esc(t)}</span>`).join('')}</div><p>${esc(b.temperament.text)}</p></fieldset>` : ''}
+          <div class="title-block">
+            <h2>${esc(b.name)}</h2>
+            ${aka.length ? `<p>Also called ${aka.map(esc).join(', ')}</p>` : ''}
+            ${b.officialName ? `<p>Official name: ${esc(b.officialName)}</p>` : ''}
+          </div>
+          <fieldset class="box"><legend>Group</legend>
+            <div class="chips"><span class="chip"><span class="chip-icon"><span class="swatch big" style="background:${groupColour[b.groupId]}"></span></span>${esc(g.name)}</span><span class="chip"><span class="chip-icon dexno">${b.dexNo}</span>Dex number</span></div>
+            ${b.parents ? `<p class="small">Cross of ${esc(b.parents[0])} x ${esc(b.parents[1])}. Not recognised by Dogs Australia.</p>` : b.about ? `<p class="small">${esc(b.about)} Not recognised by Dogs Australia.</p>` : ''}
+          </fieldset>
+          ${b.temperament ? `<fieldset class="box"><legend>Temperament</legend>
+            <div class="chips" lang="en">${b.temperament.traits.map((t) => `<span class="chip"><span class="chip-icon">${traitIcon(t)}</span>${esc(t)}</span>`).join('')}</div>
+          </fieldset>
+          <div class="textbox">${esc(b.temperament.text)}</div>` : ''}
           ${b.ankcUrl ? `<a class="link-btn-wrap" href="${esc(b.ankcUrl)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><button type="button" class="link-btn" tabindex="-1">See the official standard${icons.ext}</button></a>` : ''}
           ${b.forms.length ? `<fieldset><legend>Varieties</legend><div class="forms">${b.forms.map((f) => `<span>${esc(f)}</span>`).join('')}</div></fieldset>` : ''}
           <fieldset><legend>Status</legend>${status}</fieldset>
