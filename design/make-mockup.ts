@@ -59,7 +59,7 @@ for (const id of SAMPLE) {
     focus: picks[id]?.focus ?? [0.5, 0.5],
     // Traits from the approved list (data/traits.json); our own one-line text where written.
     temperament: { traits: traitsData[b.officialName ?? b.name].traits, text: traitsData[b.officialName ?? b.name].text ?? '' },
-    img: { grid: dataUri(grid), tiny: dataUri(grid), detail: dataUri(detailOut.data), w: detailOut.info.width, h: detailOut.info.height },
+    img: { grid: dataUri(grid), tiny: dataUri(grid), detail: dataUri(detailOut.data), w: detailOut.info.width, h: detailOut.info.height, mask: dataUri(await sharp(await read(built.image.mask)).resize(160).webp({ quality: 75, alphaQuality: 70 }).toBuffer()) },
     credit: built.credit,
   })
   console.log(`${b.dexNo} ${b.name}: ${built.credit.sourceUrl}`)
