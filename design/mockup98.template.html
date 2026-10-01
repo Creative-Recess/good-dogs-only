@@ -13,7 +13,7 @@
     --white: #ffffff;
     --dark: #808080;
     --tooltip: #ffffe1;
-    --body-font: Verdana, Tahoma, Geneva, sans-serif;
+    --body-font: 'Pixelated MS Sans Serif', Tahoma, Arial, sans-serif;
     --pixel: 'Pixelated MS Sans Serif', Tahoma, Arial, sans-serif;
   }
   * { box-sizing: border-box; }
@@ -28,7 +28,7 @@
 
   /* ---------- Board (big screens): a README window, then the phones ---------- */
   .readme { max-width: 760px; margin: 0 auto 28px; }
-  .readme .window-body { margin: 0; padding: 12px 14px; background: var(--white); box-shadow: inset -1px -1px #fff, inset 1px 1px #808080; font: 13px/1.6 'Courier New', Courier, monospace; }
+  .readme .window-body { margin: 0; padding: 12px 14px; background: var(--white); box-shadow: inset -1px -1px #fff, inset 1px 1px #808080; font: 11px/1.7 var(--pixel); }
   .readme p { margin: 0 0 6px; }
   .phones { display: flex; flex-wrap: wrap; gap: 40px 36px; justify-content: center; }
   .phone-wrap { display: grid; gap: 10px; justify-items: center; }
@@ -64,38 +64,20 @@
     font-size: 11px;
   }
   .app98 .top-gap { height: 36px; flex: none; }
-  .main { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 0 3px 3px; }
+  .main { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 0 3px 12px; }
   .main > .window-body { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 3px; gap: 4px; }
   .title-bar-text { display: flex; align-items: center; gap: 4px; }
   .title-bar-text svg { width: 14px; height: 14px; flex: none; }
   .menubar { display: flex; gap: 2px; padding: 0 2px; position: relative; }
-  .menubar > button { min-width: 0; min-height: 0; padding: 2px 6px; background: none; box-shadow: none; border: 0; }
+  .menubar > button { min-width: 0; min-height: 0; padding: 3px 8px; background: none; box-shadow: none; border: 0; }
   .menubar > button:focus { outline: 1px dotted #000; outline-offset: -2px; }
-  .menubar > button[aria-expanded="true"] { background: var(--navy); color: var(--white); }
-  .dropdown {
-    position: absolute;
-    top: 18px;
-    z-index: 20;
-    min-width: 150px;
-    background: var(--silver);
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 3px;
-    display: grid;
-  }
-  .dropdown button, .startmenu .items button {
-    all: unset;
-    box-sizing: border-box;
-    padding: 4px 20px 4px 22px;
-    cursor: pointer;
-    white-space: nowrap;
-  }
-  .dropdown button:hover, .dropdown button:focus, .startmenu .items button:hover, .startmenu .items button:focus { background: var(--navy); color: var(--white); }
-  .dropdown hr, .startmenu hr { border: 0; border-top: 1px solid var(--dark); border-bottom: 1px solid var(--white); margin: 3px 1px; }
+  .menubar > button[aria-current="page"] { box-shadow: inset -1px -1px #fff, inset 1px 1px grey; }
   .tabs { flex: 1; min-height: 0; display: flex; flex-direction: column; }
   .tabs menu[role="tablist"] { margin: 0; flex: none; }
   .tabs menu[role="tablist"] li { padding: 4px 10px; cursor: pointer; }
-  .tabs [role="tabpanel"] { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 0; }
-  .tabs [role="tabpanel"][hidden] { display: none; }
+  .tabs .panel { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 0; background: var(--silver); }
+  .tabs .panel > .window-body { margin: 6px; }
+  .tabs .panel[hidden] { display: none; }
   .status-bar { flex: none; margin: 0 1px 1px; }
   .status-bar-field { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
@@ -110,7 +92,7 @@
   .group-box { margin: 0 0 10px; padding: 8px 6px 8px; }
   .group-box legend { display: flex; align-items: center; gap: 4px; padding: 0 3px; font-weight: bold; }
   .swatch { width: 9px; height: 9px; box-shadow: inset -1px -1px #000, inset 1px 1px #fff; flex: none; }
-  .group-desc { margin: 0 0 8px; font: 10px/1.45 var(--body-font); color: #333; }
+  .group-desc { margin: 0 0 8px; font: 11px/1.45 var(--body-font); color: #333; }
   .icons { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px 6px; }
   .icon {
     all: unset;
@@ -143,7 +125,7 @@
   .photo-frame img { display: block; width: 100%; height: auto; max-height: 230px; object-fit: cover; }
   .photo-frame .credit-btn { position: absolute; right: 7px; bottom: 7px; min-width: 0; min-height: 0; width: 22px; height: 22px; padding: 0; display: grid; place-items: center; }
   .photo-frame .credit-btn svg { width: 14px; height: 14px; }
-  .tooltip { background: var(--tooltip); border: 1px solid #000; padding: 4px 6px; font: 10px/1.5 var(--body-font); }
+  .tooltip { background: var(--tooltip); border: 1px solid #000; padding: 4px 6px; font: 11px/1.5 var(--body-font); }
   .tooltip a { color: var(--navy); }
   .head { display: flex; gap: 8px; align-items: center; }
   .head svg { width: 32px; height: 32px; flex: none; }
@@ -190,44 +172,6 @@
   .warn { display: flex; align-items: center; gap: 6px; font-size: 11px; margin-bottom: 8px; }
   .warn svg { width: 22px; height: 22px; flex: none; }
 
-  /* Taskbar and Start menu */
-  .taskbar {
-    flex: none;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    padding: 2px 2px;
-    background: var(--silver);
-    box-shadow: inset 0 1px #dfdfdf, inset 0 2px #fff;
-    position: relative;
-    z-index: 40;
-    margin-bottom: 14px;
-  }
-  .start { min-width: 0; padding: 0 5px; height: 24px; font-weight: bold; display: flex; align-items: center; gap: 4px; }
-  .start svg { width: 18px; height: 16px; }
-  .start[aria-expanded="true"] { box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey; }
-  .task { flex: 1; min-width: 0; height: 24px; text-align: left; display: flex; align-items: center; gap: 4px; padding: 0 6px; font-weight: bold; box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey; background: repeating-conic-gradient(#c0c0c0 0 25%, #fff 0 50%) 0 0 / 2px 2px; }
-  .task svg { width: 14px; height: 14px; }
-  .tray { height: 24px; padding: 0 8px; display: flex; align-items: center; gap: 6px; box-shadow: inset -1px -1px #fff, inset 1px 1px grey; }
-  .tray svg { width: 14px; height: 14px; }
-  .startmenu {
-    position: absolute;
-    left: 2px;
-    bottom: 31px;
-    z-index: 45;
-    display: flex;
-    background: var(--silver);
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 3px;
-  }
-  .startmenu[hidden] { display: none; }
-  .startmenu .banner { width: 22px; background: linear-gradient(0deg, #000080, #1084d0); color: #c0c0c0; writing-mode: vertical-rl; transform: rotate(180deg); padding: 6px 0; font: bold 15px Arial, sans-serif; letter-spacing: 0.02em; }
-  .startmenu .banner b { color: #fff; }
-  .startmenu .items { display: grid; min-width: 168px; }
-  .startmenu .items button { display: flex; align-items: center; gap: 8px; padding: 6px 16px 6px 6px; }
-  .startmenu .items svg { width: 22px; height: 22px; flex: none; }
-
   /* Dialogs, boot screen and shut-down screen */
   .modal { position: absolute; inset: 0; z-index: 60; display: grid; place-items: center; background: rgba(0, 0, 0, 0.0); }
   .modal[hidden] { display: none; }
@@ -240,13 +184,13 @@
   .boot[hidden] { display: none; }
   .boot .logo { display: flex; align-items: center; gap: 10px; }
   .boot .logo svg { width: 64px; height: 64px; }
-  .boot .word { font: italic bold 30px/1 'Times New Roman', Times, serif; letter-spacing: -0.01em; }
-  .boot .word sup { font: bold 24px Arial, sans-serif; font-style: normal; color: #ffcc00; vertical-align: 0.15em; }
+  .boot .word { font: bold 22px/1 var(--pixel); }
+  .boot .word sup { font: bold 16px var(--pixel); color: #ffcc00; vertical-align: 0.3em; }
   .boot .sub { font: 11px var(--pixel); color: #aaa; }
   .boot .progress-indicator { width: 180px; height: 18px; background: #c0c0c0; }
   .safe { position: absolute; inset: 0; z-index: 80; background: #000; display: grid; place-items: center; text-align: center; cursor: pointer; }
   .safe[hidden] { display: none; }
-  .safe p { font: bold 20px/1.4 Arial, sans-serif; color: #ff8c00; margin: 0; padding: 20px; }
+  .safe p { font: bold 16px/1.5 var(--pixel); color: #ff8c00; margin: 0; padding: 20px; }
   .safe small { display: block; margin-top: 18px; font: 11px var(--pixel); color: #888; }
 
   /* Phone: the page becomes the app itself, full screen */
@@ -258,7 +202,7 @@
     .notch { display: none; }
     .app98 .top-gap { height: 4px; }
     .props { top: 4px; }
-    .taskbar { margin-bottom: calc(env(safe-area-inset-bottom, 0px) / 1.5); }
+    .main { margin-bottom: calc(3px + env(safe-area-inset-bottom, 0px) / 1.5); }
   }
   @media (prefers-reduced-motion: reduce) {
     .progress-indicator.segmented > .progress-indicator-bar { transition: none; }
@@ -272,7 +216,7 @@
   </div>
   <div class="window-body">
     <p>DOGDEX 98 - the Windows 98 version of the Dogdex mockup.</p>
-    <p>Tap anything: it works like the app, with 28 sample breeds and some example catches. Try the Start button, catch a dog, and press Shut Down.</p>
+    <p>Tap anything: it works like the app, with 28 sample breeds and some example catches. Switch screens with Dex, Progress and Help at the top. Catch a dog, then try the X.</p>
     <p>To suggest a change, leave a comment on the part you mean, then tell Claude in chat.</p>
   </div>
 </div>
@@ -353,45 +297,21 @@
                 <div class="title-bar-text">${icons.logo}Dogdex.exe</div>
                 <div class="title-bar-controls"><button aria-label="Minimize" data-act="joke-min"></button><button aria-label="Maximize"></button><button aria-label="Close" data-act="shutdown"></button></div>
               </div>
-              <div class="menubar" role="menubar">
-                <button type="button" data-act="menu" data-menu="file" aria-expanded="false"><u>F</u>ile</button>
-                <button type="button" data-act="menu" data-menu="view" aria-expanded="false"><u>V</u>iew</button>
-                <button type="button" data-act="menu" data-menu="help" aria-expanded="false"><u>H</u>elp</button>
-                <div class="dropdown" hidden></div>
-              </div>
+              <nav class="menubar" aria-label="Screens">
+                <button type="button" data-act="tab" data-tab="dex"><u>D</u>ex</button>
+                <button type="button" data-act="tab" data-tab="progress"><u>P</u>rogress</button>
+                <button type="button" data-act="tab" data-tab="more"><u>H</u>elp</button>
+              </nav>
               <div class="window-body">
                 <section class="tabs">
-                  <menu role="tablist">
-                    <li role="tab" data-act="tab" data-tab="dex"><a>Dex</a></li>
-                    <li role="tab" data-act="tab" data-tab="progress"><a>Progress</a></li>
-                    <li role="tab" data-act="tab" data-tab="more"><a>More</a></li>
-                  </menu>
-                  <div class="window" role="tabpanel" data-panel="dex"><div class="window-body"></div></div>
-                  <div class="window" role="tabpanel" data-panel="progress" hidden><div class="window-body"></div></div>
-                  <div class="window" role="tabpanel" data-panel="more" hidden><div class="window-body"></div></div>
+                  <div class="panel sunken-panel" data-panel="dex"><div class="window-body"></div></div>
+                  <div class="panel sunken-panel" data-panel="progress" hidden><div class="window-body"></div></div>
+                  <div class="panel sunken-panel" data-panel="more" hidden><div class="window-body"></div></div>
                 </section>
               </div>
               <div class="status-bar"><p class="status-bar-field" data-status="count"></p><p class="status-bar-field" data-status="bonus"></p></div>
             </div>
             <div class="window props" hidden></div>
-            <div class="startmenu" hidden>
-              <div class="banner"><b>Dogdex</b>98</div>
-              <div class="items">
-                <button type="button" data-act="start-go" data-tab="dex">${icons.folder}Dex</button>
-                <button type="button" data-act="start-go" data-tab="progress">${icons.trophy}Progress</button>
-                <hr>
-                <button type="button" data-act="start-go" data-tab="more" data-anchor="about">${icons.help}About</button>
-                <button type="button" data-act="start-go" data-tab="more" data-anchor="home">${icons.phone}Add to Home Screen</button>
-                <button type="button" data-act="start-go" data-tab="more" data-anchor="backup">${icons.disk}Backup</button>
-                <hr>
-                <button type="button" data-act="shutdown">${icons.power}Shut Down...</button>
-              </div>
-            </div>
-            <div class="taskbar">
-              <button type="button" class="start" data-act="start" aria-expanded="false">${icons.logo}Start</button>
-              <button type="button" class="task" data-act="close-start">${icons.logo}Dogdex.exe</button>
-              <div class="tray">${icons.speaker}<span data-clock></span></div>
-            </div>
             <div class="modal" hidden></div>
             <div class="boot" hidden data-act="boot-skip">
               <div class="logo">${icons.bigPaw}<span class="word">Dogdex<sup>98</sup></span></div>
@@ -410,24 +330,12 @@
       this.refresh()
       this.showTab(this.s.tab)
       if (this.s.detail) this.openProps(this.s.detail)
-      this.tick()
-      setInterval(() => this.tick(), 20000)
     }
-    tick() {
-      this.q('[data-clock]').textContent = new Date().toLocaleTimeString('en-AU', { hour: 'numeric', minute: '2-digit' })
-    }
-
     onClick(e) {
       const t = e.target.closest('[data-act]')
-      if (!t) {
-        if (!e.target.closest('.startmenu')) this.closeStart()
-        if (!e.target.closest('.menubar')) this.closeMenu()
-        return
-      }
+      if (!t) return
       const { act } = t.dataset
-      if (act !== 'start' && !t.closest('.startmenu')) this.closeStart()
-      if (act !== 'menu' && !t.closest('.dropdown')) this.closeMenu()
-      if (act === 'tab') this.showTab(t.dataset.tab)
+      if (act === 'tab') { this.closeProps(); this.showTab(t.dataset.tab) }
       if (act === 'open') this.openProps(t.dataset.id)
       if (act === 'close-props') this.closeProps()
       if (act === 'credit') { this.s.credit = !this.s.credit; this.renderProps() }
@@ -435,16 +343,11 @@
       if (act === 'undo') { delete caught[t.dataset.id]; persist(); refreshAll() }
       if (act === 'clear') { this.s.q = ''; const input = this.q('[data-role="q"]'); input.value = ''; input.focus(); this.refreshResults() }
       if (act === 'go-group') { this.s.group = t.dataset.group; this.s.filter = 'all'; this.q('[data-role="group"]').value = this.s.group; this.showTab('dex'); this.refresh() }
-      if (act === 'start') this.toggleStart()
-      if (act === 'close-start') this.closeStart()
-      if (act === 'start-go') { this.closeStart(); this.closeProps(); this.showTab(t.dataset.tab); if (t.dataset.anchor) this.q(`#${t.dataset.anchor}-${this.uid}`)?.scrollIntoView() }
-      if (act === 'menu') this.toggleMenu(t)
-      if (act === 'menu-go') { this.closeMenu(); this.closeProps(); this.showTab(t.dataset.tab); if (t.dataset.anchor) this.q(`#${t.dataset.anchor}-${this.uid}`)?.scrollIntoView() }
       if (act === 'backup') this.dialog('Save Backup', 'In the app, this opens the iPhone share sheet so you can save your catches to Files or iCloud Drive.', 'info')
       if (act === 'restore') this.dialog('Restore Backup', 'In the app, this lets you pick a backup file. Catches are merged, so nothing is lost.', 'info')
       if (act === 'joke-min') this.dialog('Dogdex', 'Dogdex cannot be minimised while there are dogs in the park.', 'warn')
       if (act === 'dialog-ok') this.q('.modal').hidden = true
-      if (act === 'shutdown') { this.closeStart(); this.q('.safe').hidden = false }
+      if (act === 'shutdown') this.q('.safe').hidden = false
       if (act === 'wake') { this.q('.safe').hidden = true; this.boot() }
       if (act === 'boot-skip') this.q('.boot').hidden = true
     }
@@ -461,33 +364,9 @@
     showTab(tab) {
       this.s.tab = tab
       this.host.querySelectorAll('[data-panel]').forEach((p) => (p.hidden = p.dataset.panel !== tab))
-      this.host.querySelectorAll('[role="tab"]').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === tab)))
+      this.host.querySelectorAll('.menubar > button').forEach((t) => (t.dataset.tab === tab ? t.setAttribute('aria-current', 'page') : t.removeAttribute('aria-current')))
+      this.panels[tab].parentElement.scrollTop = 0
       fillBars(this.panels[tab])
-    }
-    toggleStart() {
-      const menu = this.q('.startmenu')
-      menu.hidden = !menu.hidden
-      this.q('.start').setAttribute('aria-expanded', String(!menu.hidden))
-    }
-    closeStart() { this.q('.startmenu').hidden = true; this.q('.start').setAttribute('aria-expanded', 'false') }
-    toggleMenu(btn) {
-      const dd = this.q('.dropdown')
-      const open = btn.getAttribute('aria-expanded') === 'true'
-      this.closeMenu()
-      if (open) return
-      const items = {
-        file: `<button type="button" data-act="backup">Save Backup...</button><button type="button" data-act="restore">Restore Backup...</button><hr><button type="button" data-act="shutdown">Exit</button>`,
-        view: `<button type="button" data-act="menu-go" data-tab="dex">Dex</button><button type="button" data-act="menu-go" data-tab="progress">Progress</button>`,
-        help: `<button type="button" data-act="menu-go" data-tab="more" data-anchor="home">Add to Home Screen</button><hr><button type="button" data-act="menu-go" data-tab="more" data-anchor="about">About Dogdex</button>`,
-      }[btn.dataset.menu]
-      dd.innerHTML = items
-      dd.style.left = `${btn.offsetLeft}px`
-      dd.hidden = false
-      btn.setAttribute('aria-expanded', 'true')
-    }
-    closeMenu() {
-      this.q('.dropdown').hidden = true
-      this.host.querySelectorAll('.menubar > button').forEach((b) => b.setAttribute('aria-expanded', 'false'))
     }
     dialog(title, text, kind) {
       const m = this.q('.modal')
@@ -645,7 +524,7 @@
         <p style="margin:10px 0 4px"><b>Recent catches</b></p>
         <div class="sunken-panel"><table class="interactive">
           <thead><tr><th>Breed</th><th>Date</th></tr></thead>
-          <tbody>${recent.map((b) => `<tr class="recent-row" data-act="open" data-id="${b.id}"><td><img src="${b.img.grid}" alt="">${esc(b.name)}</td><td>${esc(fmt(caught[b.id].date))}</td></tr>`).join('')}</tbody>
+          <tbody>${recent.map((b) => `<tr class="recent-row" data-act="open" data-id="${b.id}"><td><img src="${b.img.grid}" alt="">${esc(b.name)}</td><td>${esc(new Date(`${caught[b.id].date}T00:00:00`).toLocaleDateString('en-AU', { day: 'numeric', month: 'short' }))}</td></tr>`).join('')}</tbody>
         </table></div>`
       if (this.s.tab === 'progress') fillBars(this.panels.progress)
     }
@@ -680,7 +559,7 @@
     { label: 'Dex', state: {} },
     { label: 'Properties (breed page)', state: { detail: 'staffordshire-bull-terrier' } },
     { label: 'Progress', state: { tab: 'progress' } },
-    { label: 'More', state: { tab: 'more' } },
+    { label: 'Help', state: { tab: 'more' } },
   ]
   const host = document.getElementById('phones')
   for (const sc of screens) {
