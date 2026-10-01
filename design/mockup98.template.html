@@ -131,7 +131,7 @@
   .props[hidden] { display: none; }
   .props > .window-body { grid-template-columns: minmax(0, 1fr); overflow-x: hidden; flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 0; padding-bottom: 20px !important; padding: 4px 4px 8px; display: grid; gap: 8px; align-content: start; }
   .photo-frame { position: relative; padding: 3px; background: #fff; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; }
-  .photo-frame img { display: block; width: 100%; height: auto; max-height: 230px; object-fit: cover; }
+  .photo-frame img { display: block; width: 100%; height: auto; max-height: 300px; object-fit: contain; background: #fff; }
   .photo-frame .credit-btn { position: absolute; right: 7px; bottom: 7px; min-width: 0; min-height: 0; width: 22px; height: 22px; padding: 0; display: grid; place-items: center; }
   .photo-frame .credit-btn svg { width: 14px; height: 14px; }
   .tooltip { background: var(--tooltip); border: 1px solid #000; padding: 4px 6px; font: 11px/1.5 var(--body-font); }
@@ -181,7 +181,10 @@
   .big-progress { display: grid; gap: 4px; margin-bottom: 8px; }
   .big-progress .figure { font: bold 13px var(--pixel); }
   .progress-indicator.segmented > .progress-indicator-bar { width: 0; transition: width 0.6s steps(12); }
-  .progress-indicator.small { height: 14px; padding: 2px; }
+  .progress-indicator.small { height: 14px; padding: 2px; flex: 1; min-width: 0; }
+  .bar-row { display: flex; align-items: center; gap: 4px; }
+  .bar-row .pct { width: 28px; text-align: right; font-size: 10px; flex: none; }
+  .pct-in { position: absolute; inset: 0; display: grid; place-items: center; font-weight: bold; font-size: 12px; color: #fff; mix-blend-mode: difference; }
   .progress-indicator.small > .progress-indicator-bar { background-size: 9px 100%; background-image: linear-gradient(90deg, navy 7px, transparent 0 2px); }
   .sunken-panel { background: #fff; }
   .sunken-panel table { width: 100%; }
@@ -325,7 +328,11 @@
       .sort((x, y) => x.r - y.r || x.i - y.i)
       .map((x) => x.b)
   }
-  const bar = (fraction, small) => `<div class="progress-indicator segmented${small ? ' small' : ''}"><span class="progress-indicator-bar" data-w="${Math.max(fraction * 100, fraction > 0 ? 3 : 0)}"></span></div>`
+  const pct = (fraction) => `${Math.round(fraction * 100)}%`
+  const bar = (fraction, small) => {
+    const meter = `<div class="progress-indicator segmented${small ? ' small' : ''}"><span class="progress-indicator-bar" data-w="${Math.max(fraction * 100, fraction > 0 ? 3 : 0)}"></span>${small ? '' : `<span class="pct-in">${pct(fraction)}</span>`}</div>`
+    return small ? `<div class="bar-row">${meter}<span class="pct">${pct(fraction)}</span></div>` : meter
+  }
   const fillBars = (root) => requestAnimationFrame(() => root.querySelectorAll('.progress-indicator-bar[data-w]').forEach((b) => (b.style.width = `${b.dataset.w}%`)))
 
   const phones = []
@@ -443,8 +450,8 @@
       if (this.s.detail) this.renderProps()
     }
     fillStatus() {
-      this.host.querySelectorAll('[data-status="count"]').forEach((el) => (el.textContent = `${officialCaught()} of ${officialTotal} caught`))
-      this.host.querySelectorAll('[data-status="bonus"]').forEach((el) => (el.textContent = `Bonus: ${caughtIn('bonus')} of ${group.bonus.total}`))
+      this.host.querySelectorAll('[data-status="count"]').forEach((el) => (el.textContent = `${officialCaught()} of ${officialTotal} caught (${pct(officialCaught() / officialTotal)})`))
+      this.host.querySelectorAll('[data-status="bonus"]').forEach((el) => (el.textContent = `Bonus: ${caughtIn('bonus')} of ${group.bonus.total} (${pct(caughtIn('bonus') / group.bonus.total)})`))
     }
 
     renderDexShell() {
@@ -541,7 +548,7 @@
         </div>
         <div class="window-body">
           <div class="photo-frame">
-            <img src="${b.img.detail}" alt="${esc(b.name)}" style="aspect-ratio:${Math.min(Math.max(b.img.w / b.img.h, 1.1), 1.5)};object-position:${b.focus[0] * 100}% ${b.focus[1] * 100}%">
+            <img src="${b.img.detail}" alt="${esc(b.name)}" style="aspect-ratio:${b.img.w / b.img.h}">
             <button type="button" class="credit-btn" data-act="credit" aria-label="Photo credit">${icons.info}</button>
           </div>
           ${this.s.credit ? `<div class="tooltip">Photo: ${esc(b.credit.author)}, <a href="${esc(b.credit.licenceUrl || b.credit.sourceUrl)}" target="_blank" rel="noopener">${esc(b.credit.licence)}</a>, via <a href="${esc(b.credit.sourceUrl)}" target="_blank" rel="noopener">Wikimedia Commons</a>. Resized and cropped.</div>` : ''}
@@ -576,8 +583,8 @@
           <span>Plus ${caughtIn('bonus')} of ${group.bonus.total} bonus dogs</span>
         </div>
         <div class="sunken-panel"><table class="interactive">
-          <thead><tr><th>Group</th><th>Caught</th><th>Progress</th></tr></thead>
-          <tbody>${groups.map((g) => `<tr data-act="go-group" data-group="${g.id}"><td><span class="swatch" style="display:inline-block;vertical-align:-1px;margin-right:4px;background:${groupColour[g.id]}"></span>${esc(g.name)}</td><td>${caughtIn(g.id)} / ${g.total}</td><td style="width:40%">${bar(caughtIn(g.id) / g.total, true)}</td></tr>`).join('')}</tbody>
+          <colgroup><col style="width:42%"><col style="width:20%"><col style="width:38%"></colgroup><thead><tr><th>Group</th><th>Caught</th><th>Progress</th></tr></thead>
+          <tbody>${groups.map((g) => `<tr data-act="go-group" data-group="${g.id}"><td><span class="swatch" style="display:inline-block;vertical-align:-1px;margin-right:4px;background:${groupColour[g.id]}"></span>${esc(g.name)}</td><td>${caughtIn(g.id)} / ${g.total}</td><td>${bar(caughtIn(g.id) / g.total, true)}</td></tr>`).join('')}</tbody>
         </table></div>
         <p style="margin:10px 0 4px"><b>Recent catches</b></p>
         <div class="sunken-panel"><table class="interactive">
