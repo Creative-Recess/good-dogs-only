@@ -497,7 +497,11 @@
 
   const blob = (x, cx, cy, r, col) => { x.fillStyle = col; x.beginPath(); x.arc(cx, cy, r, 0, Math.PI * 2); x.fill() }
   // Dogs walk inside this band (fractions of the height); the shade under the big fig is a favourite spot.
-  const TOP = 0.53, BOTTOM = 0.95
+  const TOP = 0.36, BOTTOM = 0.96
+  // The harbour sits high so most of the screen is lawn.
+  const SEA = 0.24, SHORE = 0.31
+  // At most this many dogs are out at once; with more spotted, dogs take turns, walking off and on.
+  const MAX_HERE = 20
 
   class Park {
     constructor(phone, body, opts = {}) {
@@ -526,17 +530,49 @@
       this.cv.width = this.w * dpr; this.cv.height = this.h * dpr
       this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
     }
+    newDog(b, x, y) {
+      const n = (this.made = (this.made ?? 0) + 1)
+      // Breeds with their own shape are already drawn to size; the rest scale by group.
+      const d = { b, seed: n * 1.7 + 0.3, dir: n % 2 ? 1 : -1, state: 'idle', timer: Math.random() * 2, hop: 0, happy: 0, scale: 1, size: SHAPE[b.id] ? 1 : GROUP_SIZE[b.groupId] ?? 1, x, y }
+      dogColours(b).then((c) => (d.col = c))
+      return d
+    }
     sync() {
       if (!this.w) return
+      const spotted = breeds.filter((b) => caught[b.id])
       const have = new Set(this.dogs.map((d) => d.b.id))
       this.dogs = this.dogs.filter((d) => caught[d.b.id])
-      breeds.filter((b) => caught[b.id] && !have.has(b.id)).forEach((b, i) => {
-        const n = this.dogs.length + i
-        // Breeds with their own shape are already drawn to size; the rest scale by group.
-        const d = { b, seed: n * 1.7 + 0.3, dir: n % 2 ? 1 : -1, state: 'idle', timer: Math.random() * 2, hop: 0, happy: 0, scale: 1, size: SHAPE[b.id] ? 1 : GROUP_SIZE[b.groupId] ?? 1, x: this.w * (0.12 + ((n * 0.37) % 0.76)), y: this.h * (TOP + ((n * 0.53) % 1) * (BOTTOM - TOP)) }
-        dogColours(b).then((c) => (d.col = c))
-        this.dogs.push(d)
-      })
+      // A breed you've just spotted always comes out; otherwise fill up to MAX_HERE in random order.
+      const fresh = spotted.filter((b) => !have.has(b.id))
+      const pick = this.started ? fresh : fresh.sort(() => Math.random() - 0.5)
+      for (const b of pick) {
+        if (this.started) { const d = this.enter(b); d.x = this.w * (0.15 + Math.random() * 0.7); d.y = this.h * (TOP + 0.1 + Math.random() * 0.4); d.state = 'idle'; d.happy = 2; d.hop = 1 }
+        else if (this.dogs.length < MAX_HERE) { const n = this.dogs.length; this.dogs.push(this.newDog(b, this.w * (0.12 + ((n * 0.37) % 0.76)), this.h * (TOP + ((n * 0.53) % 1) * (BOTTOM - TOP)))) }
+      }
+      while (this.dogs.filter((d) => !d.leaving).length > MAX_HERE) this.leave(this.dogs.find((d) => !d.leaving))
+      this.spotted = spotted.length
+      this.started = true
+      this.swapIn = 6
+    }
+    // A dog trots in from the side of the park.
+    enter(b) {
+      const side = Math.random() < 0.5, d = this.newDog(b, side ? -30 : this.w + 30, this.h * (TOP + 0.15 + Math.random() * 0.6))
+      d.state = 'walk'; d.tx = this.w * (0.2 + Math.random() * 0.6); d.ty = d.y; d.timer = 20; d.dir = side ? 1 : -1
+      this.dogs.push(d)
+      return d
+    }
+    leave(d) { d.leaving = true; d.state = 'walk'; d.tx = d.x < this.w / 2 ? -40 : this.w + 40; d.ty = d.y; d.timer = 99; d.friend = null }
+    // Every few seconds, when there are more spotted breeds than fit, one dog heads home and another arrives.
+    rotate(dt) {
+      if (this.spotted <= MAX_HERE) return
+      this.swapIn -= dt
+      if (this.swapIn > 0) return
+      this.swapIn = 7 + Math.random() * 5
+      const here = new Set(this.dogs.map((d) => d.b.id)), out = breeds.filter((b) => caught[b.id] && !here.has(b.id))
+      const goer = this.dogs.filter((d) => !d.leaving && d.state !== 'run')[Math.floor(Math.random() * this.dogs.length)]
+      if (!goer || !out.length) return
+      this.leave(goer)
+      this.enter(out[Math.floor(Math.random() * out.length)])
     }
     tap(e) {
       const r = this.cv.getBoundingClientRect(), px = e.clientX - r.left, py = e.clientY - r.top
@@ -546,39 +582,42 @@
     }
     pickTarget(d) {
       const { w, h } = this
-      if (Math.random() < 0.3) { d.tx = w * (0.82 + (Math.random() - 0.5) * 0.2); d.ty = h * (0.65 + Math.random() * 0.04); d.toSpot = true }
+      if (Math.random() < 0.3) { d.tx = w * (0.82 + (Math.random() - 0.5) * 0.2); d.ty = h * (0.56 + Math.random() * 0.04); d.toSpot = true }
       else { d.tx = w * (0.08 + Math.random() * 0.84); d.ty = h * (TOP + Math.random() * (BOTTOM - TOP)); d.toSpot = false }
     }
     // Wander, pause, sit, and every so often run over to play with a friend.
     update(dt) {
-      const { h } = this
+      const { w, h } = this
+      this.rotate(dt)
+      this.dogs = this.dogs.filter((d) => !(d.leaving && (d.x < -35 || d.x > w + 35)))
       for (const d of this.dogs) {
         d.timer -= dt; d.hop = Math.max(0, d.hop - dt * 1.6); d.happy = Math.max(0, d.happy - dt)
+        if (d.leaving) { d.state = 'walk'; d.timer = 99 }
         if (d.timer <= 0) {
           const r = Math.random()
           if (r < 0.5) { d.state = 'walk'; this.pickTarget(d); d.timer = 3 + Math.random() * 3 }
           else if (r < 0.75) { d.state = 'idle'; d.timer = 1 + Math.random() * 2.5; d.happy = 1.5 }
           else if (r < 0.9) { d.state = 'sit'; d.timer = 2 + Math.random() * 3 }
-          else { const f = this.dogs[Math.floor(Math.random() * this.dogs.length)]; if (f !== d) { d.state = f.state = 'run'; d.friend = f; f.friend = d; d.timer = f.timer = 3 } }
+          else { const f = this.dogs[Math.floor(Math.random() * this.dogs.length)]; if (f !== d && !f.leaving) { d.state = f.state = 'run'; d.friend = f; f.friend = d; d.timer = f.timer = 3 } }
         }
         if (d.state === 'run' && d.friend) { d.tx = d.friend.x; d.ty = d.friend.y }
         if (d.state === 'walk' || d.state === 'run') {
           const sp = (d.state === 'run' ? 90 : 26) * dt, dx = d.tx - d.x, dy = d.ty - d.y, dist = Math.hypot(dx, dy)
-          if (dist < (d.state === 'run' ? 26 : 2)) { if (d.state === 'run') { d.hop = 1; d.happy = 2 } d.state = d.toSpot ? 'sit' : 'idle'; d.timer = 1.5 + Math.random() * 2 }
+          if (dist < (d.state === 'run' ? 26 : 2) && !d.leaving) { if (d.state === 'run') { d.hop = 1; d.happy = 2 } d.state = d.toSpot ? 'sit' : 'idle'; d.timer = 1.5 + Math.random() * 2 }
           else { d.x += (dx / dist) * sp; d.y += (dy / dist) * sp; if (Math.abs(dx) > 1) d.dir = dx > 0 ? 1 : -1 }
         }
         // Further away = smaller.
-        d.scale = 0.75 + 0.45 * ((d.y / h - TOP) / (BOTTOM - TOP))
+        d.scale = 0.72 + 0.5 * ((d.y / h - TOP) / (BOTTOM - TOP))
       }
     }
-    // Rushcutters Bay: lawn and Moreton Bay figs in front, the marina and Darling Point across the water, the Bridge far off.
+    // Rushcutters Bay: lawn and Moreton Bay figs in front, the marina across the water, the Bridge, Opera House and city beyond.
     // Everything that doesn't move is drawn once into this.bg.
     drawBackground() {
       const { w, h } = this, dpr = Math.min(2, devicePixelRatio || 1)
       const c = document.createElement('canvas'); c.width = w * dpr; c.height = h * dpr
       const x = c.getContext('2d'); x.scale(dpr, dpr)
       let seed = 7; const R = () => ((seed = (seed * 16807) % 2147483647) / 2147483647)
-      const sea = h * 0.36, shore = h * 0.47
+      const sea = h * SEA, shore = h * SHORE
       const g = x.createLinearGradient(0, 0, 0, sea); g.addColorStop(0, '#9fd0f5'); g.addColorStop(1, '#e4f2f7'); x.fillStyle = g; x.fillRect(0, 0, w, sea + 1)
       blob(x, w * 0.84, h * 0.09, 20, '#ffe27a'); blob(x, w * 0.84, h * 0.09, 28, 'rgba(255,226,122,0.25)')
       // Harbour Bridge, hazy in the distance (left)
@@ -589,19 +628,39 @@
       for (let i = 1; i < 12; i++) { const px = bx + 8 + ((bw - 16) * i) / 12, k = (i / 12) * 2 - 1, top = deck - (1 - k * k) * (deck - arch + 4); x.beginPath(); x.moveTo(px, deck); x.lineTo(px, top); x.stroke() }
       x.fillRect(bx - 4, deck, bw + 8, 2)
       ;[bx + 1, bx + bw - 9].forEach((px) => x.fillRect(px, deck - 15, 8, 15))
-      // Darling Point and Elizabeth Bay towers across the water (right)
-      for (let i = 0; i < 16; i++) {
-        const tw = 8 + R() * 10, th = 8 + R() * (i % 4 === 1 ? 34 : 16), tx = w * 0.42 + (i / 16) * w * 0.62 + R() * 6
-        x.fillStyle = ['#e9e2d6', '#d8d4cc', '#f2eee6', '#cfd6da'][i % 4]; x.fillRect(tx, sea - th, tw, th)
-        x.fillStyle = 'rgba(90,110,130,0.25)'; for (let fy = sea - th + 3; fy < sea - 2; fy += 4) x.fillRect(tx + 1, fy, tw - 2, 1)
-      }
-      x.fillStyle = '#7fae74'; x.beginPath(); x.ellipse(w * 0.42, sea, w * 0.08, 5, 0, Math.PI, 0); x.fill()
+      // The city skyline behind the Opera House, hazier the further back.
+      const k = w / 400
+      const towers = [[0.43, 9, 50], [0.47, 11, 38], [0.5, 8, 58], [0.53, 12, 44], [0.565, 10, 66], [0.6, 13, 52], [0.635, 9, 40], [0.69, 12, 56], [0.725, 10, 46], [0.76, 14, 34], [0.795, 9, 42], [0.83, 12, 28]]
+      towers.forEach(([fx, tw, th], i) => {
+        const tx = w * fx, wd = tw * k
+        x.fillStyle = i % 3 === 0 ? '#aebbc7' : i % 3 === 1 ? '#bcc7d1' : '#c8d1d9'; x.fillRect(tx, sea - th, wd, th)
+        x.fillStyle = 'rgba(255,255,255,0.35)'; x.fillRect(tx, sea - th, Math.max(1, wd * 0.3), th)
+        if (i % 4 === 2) { x.fillStyle = '#aebbc7'; x.fillRect(tx + wd / 2 - 0.5, sea - th - 6, 1, 6) }
+      })
+      // Sydney Tower: thin shaft, gold turret, spire
+      const st = w * 0.665
+      x.fillStyle = '#a7b4c0'; x.fillRect(st - 1.5, sea - 74, 3, 74)
+      x.fillStyle = '#d9b45a'; x.beginPath(); x.roundRect(st - 5, sea - 76, 10, 8, 2); x.fill()
+      x.fillStyle = '#c49a3e'; x.fillRect(st - 5, sea - 72, 10, 1)
+      x.fillStyle = '#a7b4c0'; x.fillRect(st - 0.5, sea - 90, 1, 14)
+      // Darling Point apartments, closer and lower (far right)
+      ;[[0.86, 12, 22], [0.9, 10, 30], [0.94, 14, 18], [0.975, 10, 26]].forEach(([fx, tw, th]) => {
+        x.fillStyle = '#ece5d8'; x.fillRect(w * fx, sea - th, tw * k, th)
+        x.fillStyle = 'rgba(90,110,130,0.25)'; for (let fy = sea - th + 3; fy < sea - 2; fy += 4) x.fillRect(w * fx + 1, fy, tw * k - 2, 1)
+      })
+      // The Opera House on Bennelong Point, in front of the city
+      const ob = sea - 1, ox = w * 0.4
+      x.fillStyle = '#e3d2ad'; x.fillRect(ox - 2 * k, ob - 4, 74 * k, 5)
+      const shell = (sx, sw, sh) => { x.beginPath(); x.moveTo(sx, ob - 4); x.quadraticCurveTo(sx + sw * 0.05, ob - 4 - sh * 0.8, sx + sw * 0.32, ob - 4 - sh); x.quadraticCurveTo(sx + sw * 0.62, ob - 4 - sh * 0.45, sx + sw, ob - 4); x.closePath(); x.fill(); x.stroke() }
+      x.fillStyle = '#fbfaf5'; x.strokeStyle = '#cfd5da'; x.lineWidth = 0.8
+      ;[[0, 22, 24], [12, 20, 20], [22, 17, 15], [30, 13, 10]].forEach(([dx, sw, sh]) => shell(ox + dx * k, sw * k, sh))
+      ;[[42, 15, 16], [51, 13, 12], [58, 10, 8]].forEach(([dx, sw, sh]) => shell(ox + dx * k, sw * k, sh))
       // harbour
       const wg = x.createLinearGradient(0, sea, 0, shore); wg.addColorStop(0, '#5d9cc4'); wg.addColorStop(1, '#3f7fac'); x.fillStyle = wg; x.fillRect(0, sea, w, shore - sea)
       // marina: a forest of masts over moored hulls
       const my = sea + (shore - sea) * 0.42
-      for (let i = 0; i < 34; i++) {
-        const mx = w * 0.3 + R() * w * 0.68, mh = 18 + R() * 26, hy = my + R() * 6
+      for (let i = 0; i < 22; i++) {
+        const mx = w * 0.62 + R() * w * 0.38, mh = 14 + R() * 18, hy = my + R() * 5
         x.strokeStyle = 'rgba(255,255,255,0.85)'; x.lineWidth = 1; x.beginPath(); x.moveTo(mx, hy); x.lineTo(mx, hy - mh); x.stroke()
         x.fillStyle = '#ffffff'; x.beginPath(); x.moveTo(mx - 7, hy - 2); x.lineTo(mx + 7, hy - 2); x.lineTo(mx + 5, hy + 1); x.lineTo(mx - 5, hy + 1); x.closePath(); x.fill()
         x.fillStyle = 'rgba(30,60,90,0.3)'; x.fillRect(mx - 5, hy + 1, 10, 1)
@@ -613,16 +672,10 @@
       for (let i = 0; i < 70; i++) { x.fillStyle = R() < 0.5 ? 'rgba(255,255,255,0.06)' : 'rgba(40,90,30,0.06)'; x.beginPath(); x.ellipse(R() * w, shore + 8 + R() * (h - shore), 10 + R() * 26, 3 + R() * 6, 0, 0, Math.PI * 2); x.fill() }
       // the curving concrete path
       x.strokeStyle = '#d4d1c8'; x.lineWidth = 9; x.lineCap = 'round'
-      x.beginPath(); x.moveTo(-10, h * 0.6); x.bezierCurveTo(w * 0.35, h * 0.56, w * 0.55, h * 0.74, w + 10, h * 0.7); x.stroke()
+      x.beginPath(); x.moveTo(-10, h * 0.5); x.bezierCurveTo(w * 0.35, h * 0.45, w * 0.55, h * 0.68, w + 10, h * 0.62); x.stroke()
       x.strokeStyle = '#c4c1b7'; x.lineWidth = 1; x.stroke()
       // lamp posts along the path
-      ;[[0.22, 0.585], [0.78, 0.705]].forEach(([fx, fy]) => { x.fillStyle = '#3c3f44'; x.fillRect(w * fx - 1, h * fy - 30, 2, 30); x.fillRect(w * fx - 3, h * fy - 32, 6, 3) })
-      // the park sign
-      const sx = w * 0.06, sy = h * 0.9
-      x.font = '600 6px system-ui, sans-serif'; const sw = x.measureText('Rushcutters Bay Park').width + 8
-      x.fillStyle = '#9aa0a6'; x.fillRect(sx + 4, sy - 6, 2, 8); x.fillRect(sx + sw - 6, sy - 6, 2, 8)
-      x.fillStyle = '#1f4fa0'; x.fillRect(sx, sy - 18, sw, 13)
-      x.fillStyle = '#fff'; x.textBaseline = 'middle'; x.fillText('Rushcutters Bay Park', sx + 4, sy - 11.5)
+      ;[[0.24, 0.475], [0.76, 0.638]].forEach(([fx, fy]) => { x.fillStyle = '#3c3f44'; x.fillRect(w * fx - 1, h * fy - 30, 2, 30); x.fillRect(w * fx - 3, h * fy - 32, 6, 3) })
       return c
     }
     // A Moreton Bay fig: thick grey trunk, wide dark canopy. Drawn after the dogs that are behind it.
@@ -636,7 +689,7 @@
       const { w, h } = this
       if (!this.bg || this.bgSize !== `${w}x${h}`) { this.bg = this.drawBackground(); this.bgSize = `${w}x${h}` }
       x.drawImage(this.bg, 0, 0, w, h)
-      const sea = h * 0.36, shore = h * 0.47
+      const sea = h * SEA, shore = h * SHORE
       // water glints and two yachts sailing across the bay
       x.fillStyle = 'rgba(255,255,255,0.5)'
       for (let i = 0; i < 10; i++) { const gx = (i * 0.37 * w + Math.sin(t * 0.6 + i) * 6) % w, gy = sea + 4 + ((i * 0.61) % 1) * (shore - sea - 10); x.fillRect(gx, gy, 6 + (i % 3) * 3, 1) }
@@ -660,12 +713,13 @@
       const t = now / 1000, x = this.ctx
       if (!this.still) this.update(dt)
       this.paint(x, t)
-      const figs = [{ y: this.h * 0.56, draw: () => this.fig(x, this.w * 0.12, this.h * 0.56, 0.8) }, { y: this.h * 0.62, draw: () => this.fig(x, this.w * 0.9, this.h * 0.62, 0.95) }]
+      const figs = [[0.1, 0.41, 0.75], [0.9, 0.53, 0.95], [0.2, 0.84, 1.15]].map(([fx, fy, k]) => ({ y: this.h * fy, draw: () => this.fig(x, this.w * fx, this.h * fy, k) }))
       const things = [...this.dogs.map((d) => ({ y: d.y, draw: () => { x.save(); x.translate(d.x, d.y); drawStory(x, d, t); x.restore() } })), ...figs]
       for (const o of things.sort((a, z) => a.y - z.y)) o.draw()
       const [tint, label] = this.tint()
       if (tint) { x.fillStyle = tint; x.fillRect(0, 0, this.w, this.h) }
-      this.hint.textContent = `${this.dogs.length} dogs · ${label}`
+      const here = this.dogs.filter((d) => !d.leaving).length
+      this.hint.textContent = `${this.spotted > here ? `${here} of ${this.spotted}` : this.spotted} dogs · ${label}`
       requestAnimationFrame(this.loop)
     }
   }
