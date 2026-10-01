@@ -61,7 +61,7 @@ export default function App() {
   return (
     <DialogContext.Provider value={setDialog}>
       <div className="stage">
-        <div className="app98">
+        <div className="app">
           <div className="window main">
             <div className="title-bar">
               <div className="title-bar-text">

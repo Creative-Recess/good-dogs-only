@@ -11,7 +11,14 @@ export default defineConfig({
     baseURL: 'http://localhost:4173',
     trace: 'retain-on-failure',
   },
-  projects: [{ name: 'iphone', use: { ...devices['iPhone 17'] } }],
+  // The whole suite runs once per theme; each project starts with its theme saved on the "phone".
+  projects: (['win98'] as const).map((theme) => ({
+    name: theme,
+    use: {
+      ...devices['iPhone 17'],
+      storageState: { cookies: [], origins: [{ origin: 'http://localhost:4173', localStorage: [{ name: 'good-dogs-only.theme', value: theme }] }] },
+    },
+  })),
   webServer: {
     command: 'pnpm build && pnpm preview --port 4173 --strictPort',
     url: 'http://localhost:4173',

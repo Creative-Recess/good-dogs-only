@@ -1,6 +1,7 @@
-/* Good Dogs Only: Windows 98 (98.css) drawn at 98 pixel sizes, then scaled 1.5x for thumbs.
-   One theme only, by design (no dark mode). */
-:root {
+@layer theme {
+@scope (:root[data-theme="win98"]) {
+/* Windows 98 theme, on top of 98.css (which the build fences in to this theme). Drawn at 98 pixel sizes, scaled 1.5x. */
+:scope {
   color-scheme: light;
   --desktop: #008080;
   --silver: #c0c0c0;
@@ -13,48 +14,17 @@
   --sunken: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
   --raised: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
 }
-* { box-sizing: border-box; }
 body *, body { font-family: var(--font) !important; -webkit-font-smoothing: antialiased !important; -moz-osx-font-smoothing: grayscale !important; }
-html, body { height: 100%; margin: 0; background: var(--desktop); color: var(--ink); overscroll-behavior: none; }
-body { -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; }
+:scope, body { background: var(--desktop); color: var(--ink); }
 .title-bar-text { font-weight: bold; }
-.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
 /* iPhone Safari zooms into any field under 16px. Fields use 16px text, scaled back down to the 98 size
    (16 x 0.6875 = 11px), with negative margins so the layout keeps the scaled size. */
 .nz { font-size: 16px !important; width: 145.4545% !important; height: 30px !important; transform: scale(0.6875); transform-origin: 0 0; margin: 0 -45.4545% -9.375px 0 !important; }
 .nz-area { height: 64px !important; margin-bottom: -20px !important; }
 select.nz { background-size: 24px 100% !important; background-position: right center !important; }
-/* Safari draws both start and end arrow pairs from 98.css; keep one arrow at each end. */
-::-webkit-scrollbar-button:vertical:start:increment, ::-webkit-scrollbar-button:vertical:end:decrement, ::-webkit-scrollbar-button:horizontal:start:increment, ::-webkit-scrollbar-button:horizontal:end:decrement { display: none; }
 
-/* ---------- The screen: everything inside the iPhone's safe area ---------- */
-.stage {
-  position: fixed;
-  top: env(safe-area-inset-top, 0px);
-  bottom: env(safe-area-inset-bottom, 0px);
-  left: env(safe-area-inset-left, 0px);
-  right: env(safe-area-inset-right, 0px);
-  overflow: hidden;
-}
-/* On a big screen, show the app at phone size in the middle of the desktop. */
-@media (min-width: 600px) {
-  .stage { top: 24px; bottom: 24px; left: 50%; right: auto; width: 402px; margin-left: -201px; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6); }
-}
-.app98 {
-  --s: 1.5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(100% / var(--s));
-  height: calc(100% / var(--s));
-  transform: scale(var(--s));
-  transform-origin: 0 0;
-  display: flex;
-  flex-direction: column;
-  background: var(--desktop);
-  font-size: 10.5px;
-}
+.app { --s: 1.5; background: var(--desktop); font-size: 10.5px; }
 
 /* ---------- Windows ---------- */
 .main, .props { padding: 3px; }
@@ -200,4 +170,9 @@ fieldset { min-width: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   .progress-indicator.segmented > .progress-indicator-bar, .boot .progress-indicator-bar { transition: none; }
+}
+}
+/* WebKit ignores scrollbar-button styles under @scope or :root, so these sit outside the scope with an html prefix. */
+/* Safari draws both start and end arrow pairs from 98.css; keep one arrow at each end. */
+html[data-theme="win98"] ::-webkit-scrollbar-button:vertical:start:increment, html[data-theme="win98"] ::-webkit-scrollbar-button:vertical:end:decrement, html[data-theme="win98"] ::-webkit-scrollbar-button:horizontal:start:increment, html[data-theme="win98"] ::-webkit-scrollbar-button:horizontal:end:decrement { display: none; }
 }
