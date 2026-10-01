@@ -535,7 +535,7 @@
       "file": "File:2019 Laurent-Perrier Pop-Up in Sonoma - Sarah Stierch 06.jpg",
       "focus": [
         0.5,
-        0.45
+        0.18
       ],
       "by": "claude-review",
       "confidence": "high",
@@ -715,7 +715,7 @@
       "file": "File:Bordoodle, Australian.jpg",
       "focus": [
         0.5,
-        0.4
+        0.17
       ],
       "by": "claude-review",
       "confidence": "high",
@@ -1069,7 +1069,7 @@
       "file": "File:Cavapoo male (90675).jpg",
       "focus": [
         0.5,
-        0.5
+        0.75
       ],
       "by": "claude-review",
       "confidence": "high",
@@ -1938,7 +1938,7 @@
     "great-swiss-mountain-dog": {
       "file": "File:Swissy.JPG",
       "focus": [
-        0.47,
+        0.42,
         0.5
       ],
       "by": "claude-review",
@@ -1979,7 +1979,7 @@
       "file": "File:Golden Doodle Standing (HD).jpg",
       "focus": [
         0.52,
-        0.5
+        0.7
       ],
       "by": "claude-review",
       "confidence": "high",
@@ -2426,14 +2426,15 @@
       }
     },
     "koolie": {
-      "file": "File:Black Merle Koolie.jpg",
+      "file": "File:Blue Merle medium coated Koolie.jpg",
       "focus": [
-        0.5,
-        0.476
+        0.6,
+        0.5
       ],
-      "by": "claude-review",
+      "by": "claude",
       "confidence": "high",
-      "note": "merle koolie standing three-quarter; small watermark cropped"
+      "note": "Old photo was near-square and 714x750, so the frame cut the ears and feet. New: same breeder (Silhouette Koolies), blue merle medium-coat koolie trotting on grass, landscape 902x700, whole dog in the frame; grid shows head and body (rump trimmed). Small breeder watermark bottom-left, as on the old one.",
+      "previous": "File:Black Merle Koolie.jpg"
     },
     "kuvasz": {
       "file": null,
@@ -2698,7 +2699,7 @@
     "miniature-american-shepherd": {
       "file": "File:Miniature American Shepherd red merle.jpg",
       "focus": [
-        0.52,
+        0.45,
         0.5
       ],
       "by": "claude-review",
@@ -2736,14 +2737,15 @@
       }
     },
     "moodle": {
-      "file": "File:말티즈와 푸들.jpg",
+      "file": "File:Maltipoo dog (11995).jpg",
       "focus": [
-        0.5,
+        0.42,
         0.5
       ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "adult curly maltipoo lying; very poodle-like; 6 puppy, others jacketed"
+      "by": "claude",
+      "confidence": "high",
+      "note": "Old pick was a square photo of a lying dog whose head/paws cropped in the frame (and medium confidence on the breed). New: Rhododendrites (Prospect Park 2024), apricot adult maltipoo standing three-quarter in harness, landscape, sharp; whole dog with room in both crops. Alternative if a white one is preferred: File:Maltipoo-Moodle.jpg (white maltipoo lying on grass, also landscape).",
+      "previous": "File:말티즈와 푸들.jpg"
     },
     "mudi": {
       "file": "File:Mudibrown1.jpg",
@@ -3002,7 +3004,11 @@
     "peruvian-hairless-dog-medium": {
       "file": "File:Chien du pérou variété nue.jpg",
       "by": "justin",
-      "note": "Chosen by Justin on the review page (moved from Large)"
+      "note": "Chosen by Justin on the review page (moved from Large)",
+      "focus": [
+        0.85,
+        0.58
+      ]
     },
     "peruvian-hairless-dog-small": {
       "file": null,
@@ -3648,7 +3654,7 @@
       "file": "File:Pebbles the Sheepadoodle.jpg",
       "focus": [
         0.5,
-        0.5
+        0.2
       ],
       "by": "claude-review",
       "confidence": "medium",
@@ -3717,8 +3723,8 @@
     "shikoku": {
       "file": "File:Shikokunkoira1.jpg",
       "focus": [
-        0.5,
-        0.5
+        0.4,
+        0.7
       ],
       "by": "claude-review",
       "confidence": "high",

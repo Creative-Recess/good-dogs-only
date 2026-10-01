@@ -8560,24 +8560,24 @@
     "fluff": 0.6
    },
    "image": {
-    "grid": "/breeds/miniature-american-shepherd-197554dc-grid.webp",
-    "detail": "/breeds/miniature-american-shepherd-197554dc.webp",
+    "grid": "/breeds/miniature-american-shepherd-ee66e693-grid.webp",
+    "detail": "/breeds/miniature-american-shepherd-ee66e693.webp",
     "width": 1200,
     "height": 800,
     "focus": [
-     0.52,
+     0.45,
      0.5
     ],
     "colours": {
      "body": [
-      179,
-      174,
-      173
+      181,
+      175,
+      174
      ],
      "patch": [
-      87,
       84,
-      71
+      82,
+      72
      ]
     }
    },
@@ -10289,23 +10289,23 @@
     "tail": "straight"
    },
    "image": {
-    "grid": "/breeds/great-swiss-mountain-dog-ddd71452-grid.webp",
-    "detail": "/breeds/great-swiss-mountain-dog-ddd71452.webp",
+    "grid": "/breeds/great-swiss-mountain-dog-4c64b426-grid.webp",
+    "detail": "/breeds/great-swiss-mountain-dog-4c64b426.webp",
     "width": 1200,
     "height": 898,
     "focus": [
-     0.47,
+     0.42,
      0.5
     ],
     "colours": {
      "body": [
-      50,
-      50,
+      49,
+      49,
       41
      ],
      "patch": [
-      238,
-      218,
+      237,
+      217,
       168
      ]
     }
@@ -11277,18 +11277,18 @@
     "fluff": 0.3
    },
    "image": {
-    "grid": "/breeds/shikoku-e292489a-grid.webp",
-    "detail": "/breeds/shikoku-e292489a.webp",
+    "grid": "/breeds/shikoku-34351841-grid.webp",
+    "detail": "/breeds/shikoku-34351841.webp",
     "width": 1200,
     "height": 1099,
     "focus": [
-     0.5,
-     0.5
+     0.4,
+     0.7
     ],
     "colours": {
      "body": [
       215,
-      206,
+      205,
       184
      ],
      "patch": [
@@ -12595,22 +12595,22 @@
     "tail": "straight"
    },
    "image": {
-    "grid": "/breeds/peruvian-hairless-dog-medium-4cedfc5f-grid.webp",
-    "detail": "/breeds/peruvian-hairless-dog-medium-4cedfc5f.webp",
+    "grid": "/breeds/peruvian-hairless-dog-medium-4a849c91-grid.webp",
+    "detail": "/breeds/peruvian-hairless-dog-medium-4a849c91.webp",
     "width": 1200,
     "height": 995,
     "focus": [
-     0.5,
-     0.5
+     0.85,
+     0.58
     ],
     "colours": {
      "body": [
-      19,
+      18,
       18,
       13
      ],
      "patch": [
-      216,
+      215,
       176,
       168
      ]
@@ -13181,24 +13181,24 @@
     "fluff": 1
    },
    "image": {
-    "grid": "/breeds/cavoodle-fa588114-grid.webp",
-    "detail": "/breeds/cavoodle-fa588114.webp",
+    "grid": "/breeds/cavoodle-1a060e3f-grid.webp",
+    "detail": "/breeds/cavoodle-1a060e3f.webp",
     "width": 1200,
     "height": 1361,
     "focus": [
      0.5,
-     0.5
+     0.75
     ],
     "colours": {
      "body": [
-      144,
-      108,
-      79
+      110,
+      81,
+      52
      ],
      "patch": [
-      76,
-      51,
-      21
+      59,
+      41,
+      14
      ]
     }
    },
@@ -13243,13 +13243,13 @@
     "fluff": 1
    },
    "image": {
-    "grid": "/breeds/groodle-df92c81c-grid.webp",
-    "detail": "/breeds/groodle-df92c81c.webp",
+    "grid": "/breeds/groodle-ce5d9029-grid.webp",
+    "detail": "/breeds/groodle-ce5d9029.webp",
     "width": 1200,
     "height": 1079,
     "focus": [
      0.52,
-     0.5
+     0.7
     ],
     "colours": {
      "body": [
@@ -13431,32 +13431,32 @@
     "fluff": 1
    },
    "image": {
-    "grid": "/breeds/moodle-a9bb5f0d-grid.webp",
-    "detail": "/breeds/moodle-a9bb5f0d.webp",
+    "grid": "/breeds/moodle-f260f374-grid.webp",
+    "detail": "/breeds/moodle-f260f374.webp",
     "width": 1200,
-    "height": 1200,
+    "height": 939,
     "focus": [
-     0.5,
+     0.42,
      0.5
     ],
     "colours": {
      "body": [
-      201,
-      202,
-      206
+      51,
+      47,
+      17
      ],
      "patch": [
-      136,
-      109,
-      84
+      212,
+      179,
+      145
      ]
     }
    },
    "credit": {
-    "author": "Nan4471",
+    "author": "Rhododendrites",
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%EB%A7%90%ED%8B%B0%EC%A6%88%EC%99%80_%ED%91%B8%EB%93%A4.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maltipoo_dog_(11995).jpg",
     "changes": "Resized, and cropped to a square for the grid"
    }
   },
@@ -13618,13 +13618,13 @@
     "fluff": 1
    },
    "image": {
-    "grid": "/breeds/bernedoodle-9c42cae2-grid.webp",
-    "detail": "/breeds/bernedoodle-9c42cae2.webp",
+    "grid": "/breeds/bernedoodle-b5e929a2-grid.webp",
+    "detail": "/breeds/bernedoodle-b5e929a2.webp",
     "width": 1125,
     "height": 1500,
     "focus": [
      0.5,
-     0.45
+     0.18
     ],
     "colours": {
      "body": [
@@ -13634,8 +13634,8 @@
      ],
      "patch": [
       104,
-      88,
-      76
+      86,
+      73
      ]
     }
    },
@@ -13679,23 +13679,23 @@
     "fluff": 1
    },
    "image": {
-    "grid": "/breeds/sheepadoodle-9f4bef1b-grid.webp",
-    "detail": "/breeds/sheepadoodle-9f4bef1b.webp",
+    "grid": "/breeds/sheepadoodle-97bd8005-grid.webp",
+    "detail": "/breeds/sheepadoodle-97bd8005.webp",
     "width": 1125,
     "height": 1500,
     "focus": [
      0.5,
-     0.5
+     0.2
     ],
     "colours": {
      "body": [
-      49,
       48,
-      46
+      49,
+      49
      ],
      "patch": [
-      171,
-      146,
+      172,
+      147,
       114
      ]
     }
@@ -13741,13 +13741,13 @@
     "fluff": 0.9
    },
    "image": {
-    "grid": "/breeds/bordoodle-7280de3e-grid.webp",
-    "detail": "/breeds/bordoodle-7280de3e.webp",
+    "grid": "/breeds/bordoodle-f75c313c-grid.webp",
+    "detail": "/breeds/bordoodle-f75c313c.webp",
     "width": 1000,
     "height": 1500,
     "focus": [
      0.5,
-     0.4
+     0.17
     ],
     "colours": {
      "body": [
@@ -13756,9 +13756,9 @@
       9
      ],
      "patch": [
-      178,
       177,
-      178
+      176,
+      176
      ]
     }
    },
@@ -14228,24 +14228,24 @@
     "fluff": 0.2
    },
    "image": {
-    "grid": "/breeds/koolie-5c5cd506-grid.webp",
-    "detail": "/breeds/koolie-5c5cd506.webp",
-    "width": 714,
-    "height": 750,
+    "grid": "/breeds/koolie-eb28c085-grid.webp",
+    "detail": "/breeds/koolie-eb28c085.webp",
+    "width": 902,
+    "height": 700,
     "focus": [
-     0.5,
-     0.476
+     0.6,
+     0.5
     ],
     "colours": {
      "body": [
-      176,
-      175,
-      171
+      42,
+      46,
+      44
      ],
      "patch": [
-      111,
-      112,
-      113
+      108,
+      109,
+      112
      ]
     }
    },
@@ -14253,7 +14253,7 @@
     "author": "Koolie",
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Merle_Koolie.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_Merle_medium_coated_Koolie.jpg",
     "changes": "Resized, and cropped to a square for the grid"
    }
   },
