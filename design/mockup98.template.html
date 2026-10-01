@@ -20,7 +20,8 @@
   * { box-sizing: border-box; }
   /* Safari draws both start and end arrow pairs from 98.css; keep one arrow at each end. */
   ::-webkit-scrollbar-button:vertical:start:increment, ::-webkit-scrollbar-button:vertical:end:decrement, ::-webkit-scrollbar-button:horizontal:start:increment, ::-webkit-scrollbar-button:horizontal:end:decrement { display: none; }
-  body, button, input, select, textarea, label, legend, table, .title-bar-text { font-family: var(--pixel) !important; }
+  /* 98.css sets its pixel font on many elements; use one smooth face for every element. */
+  body *, body { font-family: var(--pixel) !important; -webkit-font-smoothing: antialiased; }
   .title-bar-text { font-weight: bold; }
   html, body { background: var(--desktop); }
   body {
