@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test'
+import { openHelp } from './helpers.ts'
 
 test('serves a valid manifest and icons for the Home Screen', async ({ page, request }) => {
   await page.goto('/')
@@ -18,6 +19,6 @@ test('serves a valid manifest and icons for the Home Screen', async ({ page, req
 test('Help shows how to add it to the Home Screen when opened in Safari', async ({ page }) => {
   await page.goto('/')
   await page.getByRole('button', { name: /Tap to launch/ }).click()
-  await page.getByRole('tab', { name: 'Help' }).click()
+  await openHelp(page)
   await expect(page.getByText('Open it from the new icon.', { exact: false })).toBeVisible()
 })

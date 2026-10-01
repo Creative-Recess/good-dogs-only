@@ -1,5 +1,5 @@
 import { expect, test, type Page } from '@playwright/test'
-import { launch, openBreed, spotBreed } from './helpers.ts'
+import { launch, openBreed, openHelp, spotBreed } from './helpers.ts'
 
 // Screenshots of every screen, per theme, so a style change anywhere shows up as a diff.
 // Update them on purpose with: pnpm test:e2e --update-snapshots
@@ -44,6 +44,6 @@ test('every screen', async ({ page }) => {
 
 test('help', async ({ page }) => {
   await launch(page)
-  await page.getByRole('tab', { name: 'Help' }).click()
+  await openHelp(page)
   await shot(page, 'help')
 })

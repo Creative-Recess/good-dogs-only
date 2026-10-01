@@ -1,0 +1,55 @@
+/* Aqua Glass: Aqua (aqua.css) with frosted, see-through windows over the wallpaper and a blue accent. */
+@layer theme {
+@scope (:root[data-theme="glass"]) {
+  /* ---------- Aqua Glass: frosted, see-through windows over the wallpaper, with a blue accent ---------- */
+  :scope {
+    --accent: linear-gradient(180deg, #dcefff 0%, #9fd0ff 10%, #5aa8f0 48%, #3a8be0 52%, #6cb6f4 85%, #c4e4ff 100%);
+    --accent-solid: #4a96e6;
+    --selection: #3d85d8;
+    --glass: rgba(246, 248, 252, 0.72);
+    --wallpaper:
+      linear-gradient(176deg, transparent 0 18%, rgba(255, 214, 140, 0.75) 24%, rgba(240, 170, 90, 0.55) 27%, transparent 33%),
+      linear-gradient(183deg, transparent 0 52%, rgba(232, 168, 92, 0.7) 58%, rgba(250, 220, 170, 0.6) 62%, transparent 68%),
+      linear-gradient(178deg, transparent 0 74%, rgba(255, 200, 130, 0.45) 80%, transparent 86%),
+      linear-gradient(180deg, #9cc0e6 0%, #d6e2ec 16%, #8fb0d8 34%, #4f7fbf 46%, #6f97c9 66%, #3d68a8 84%, #284f8c 100%);
+  }
+  :scope, body { background: var(--wallpaper); background-attachment: fixed; }
+  .app { background: var(--wallpaper); }
+  .window { background: var(--glass); -webkit-backdrop-filter: blur(22px) saturate(1.6); backdrop-filter: blur(22px) saturate(1.6); border-radius: 10px 10px 0 0; box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 12px 32px rgba(20, 40, 80, 0.3); }
+  .title-bar { background: linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.05)); border-bottom: 1px solid rgba(0, 0, 0, 0.1); border-radius: 10px 10px 0 0; height: 24px; }
+  .title-bar-text { color: #2a2420; }
+  .title-bar-controls button[aria-label="Close"], .title-bar-controls button[aria-label="Minimize"], .title-bar-controls button[aria-label="Maximize"] { background: radial-gradient(circle at 50% 75%, #c8e6ff, #4d9be8 55%, #1f5fae); }
+  /* The toolbar: frosted, with the current item in a pale pressed-in well. */
+  .tabs menu[role="tablist"] { background: linear-gradient(180deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.1)); border-bottom: 1px solid rgba(0, 0, 0, 0.12); box-shadow: none; }
+  .tabs menu[role="tablist"] li[aria-selected="true"] { background: rgba(255, 255, 255, 0.55); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.18), 0 0 0 0.5px rgba(0, 0, 0, 0.1); }
+  .tabs .panel.window { -webkit-backdrop-filter: none; backdrop-filter: none; }
+  /* Controls: white glassy rounded rectangles; the default button wears the accent. */
+  button { border-radius: 7px; background: linear-gradient(180deg, #ffffff, #f4f1ef 50%, #ebe7e4 52%, #f7f5f3); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.28), 0 1px 1px rgba(0, 0, 0, 0.12); }
+  button.default { background: var(--accent); color: #fff; text-shadow: 0 -1px 0 rgba(0, 40, 100, 0.35); box-shadow: inset 0 0 0 1px #2f6fb8, 0 1px 1px rgba(0, 0, 0, 0.2); }
+  .catch-btn { border-radius: 9px; color: #fff; }
+  select.nz { border-radius: 9px; background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='14'%3E%3Cpath d='M2 5l3-3 3 3M2 9l3 3 3-3' fill='none' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 12px center / 10px 14px, linear-gradient(180deg, #ffffff, #f4f1ef 50%, #ebe7e4 52%, #f7f5f3); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.28), 0 1px 1px rgba(0, 0, 0, 0.12); }
+  input[type="radio"]:checked { background: var(--accent); box-shadow: inset 0 0 0 1px #2f6fb8; }
+  input[type="radio"]:checked::after { background: #0f2c55; }
+  input[type="text"]:focus, textarea:focus { box-shadow: var(--field-shadow), 0 0 0 3px rgba(80, 150, 240, 0.55); }
+  fieldset { background: rgba(255, 255, 255, 0.28); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12); border-radius: 7px; }
+  .textbox { background: rgba(255, 255, 255, 0.85); border-radius: 3px; }
+  .sunken-panel { background: rgba(255, 255, 255, 0.78); }
+  .g-row:nth-child(even), .sunken-panel tbody tr:nth-child(even) { background: rgba(226, 238, 252, 0.75); }
+  .g-row:active, .g-row:focus { background: var(--selection); }
+  .sunken-panel th { background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(236, 232, 229, 0.95)); }
+  .progress-indicator-bar { background: linear-gradient(180deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0.08) 52%, rgba(255, 255, 255, 0.35)), repeating-linear-gradient(-45deg, #2c7ae0 0 6px, #8cc4f7 6px 12px); background-size: 100% 100%, 17px 17px; box-shadow: inset 0 0 0 1px rgba(20, 60, 130, 0.55); }
+  .icon:focus-visible .label, .icon:active .label { background: var(--selection); }
+  @media (hover: hover) { .icon:hover .label { background: var(--selection); } }
+  .park-hint { background: rgba(255, 255, 255, 0.6); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+  /* Windows on top of other windows are frostier, so what's behind never competes with them. */
+  /* Windows on top of other windows (breed, Help, sheets) are frosted over the wallpaper itself rather than over
+     the screen beneath, so nothing behind them ever shows through their text. */
+  .props.window, .dialog.window { background: linear-gradient(rgba(246, 248, 252, 0.9), rgba(246, 248, 252, 0.9)), var(--wallpaper); -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .props .title-bar { background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.25)); }
+  .dialog { border-radius: 0 0 10px 10px; }
+  /* Launch screen: a frosted panel floating over the wallpaper. */
+  .boot { background: var(--wallpaper); }
+  .boot .logo { padding: 22px 30px 18px; border-radius: 16px; background: rgba(255, 255, 255, 0.5); -webkit-backdrop-filter: blur(18px) saturate(1.5); backdrop-filter: blur(18px) saturate(1.5); box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.2), 0 10px 30px rgba(20, 40, 80, 0.25); }
+  .boot .sub { color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45); }
+}
+}

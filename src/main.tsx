@@ -5,6 +5,8 @@ import './styles/layers.css'
 import './vendor/98css/98.css'
 import './styles/base.css'
 import './styles/themes/win98.css'
+import './styles/themes/aqua.css'
+import './styles/themes/glass.css'
 import App from './app/App.tsx'
 import { applyTheme, getTheme } from './theme/store.ts'
 

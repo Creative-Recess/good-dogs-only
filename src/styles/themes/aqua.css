@@ -1,0 +1,261 @@
+/* Aqua and Aqua Glass: early Mac OS X. Pinstriped windows, gel buttons, traffic lights, a System Preferences style
+   toolbar, Get Info style fold-away sections, sheets, and the spinning gear. Aqua Glass adds glass.css on top. */
+@layer theme {
+@scope (:root[data-theme="aqua"], :root[data-theme="glass"]) {
+
+  /* Aqua: early Mac OS X. Pinstriped windows, gel buttons, traffic lights, candy-striped progress. One theme, by design. */
+  :scope {
+    color-scheme: light;
+    --desktop-1: #1d5fb8;
+    --desktop-2: #6aa7ea;
+    --ink: #000;
+    --muted: #4c4c4c;
+    --font: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --pinstripe: repeating-linear-gradient(180deg, #f2f2f2 0 1px, #e8e8e8 1px 2px);
+    --blue-gel: linear-gradient(180deg, #d5e9ff 0%, #8ec1f7 8%, #4f9be8 48%, #2a7ad8 52%, #5aa9f2 85%, #a6d7ff 100%);
+    --white-gel: linear-gradient(180deg, #ffffff 0%, #f4f4f4 45%, #e0e0e0 52%, #ececec 85%, #fafafa 100%);
+    --selection: #3875d7;
+    --field-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.35), 0 0 0 1px #8e8e8e;
+  }
+  * { box-sizing: border-box; }
+  /* iPhone Safari zooms into any field under 16px. Fields use 16px text, scaled back down to 11px,
+     with negative margins so the layout keeps the scaled size. */
+  .nz { font-size: 16px !important; width: 145.4545% !important; height: 31px !important; transform: scale(0.6875); transform-origin: 0 0; margin: 0 -45.4545% -9.6875px 0 !important; }
+  .nz-area { height: 64px !important; margin-bottom: -20px !important; }
+  body *, body { font-family: var(--font); -webkit-font-smoothing: antialiased; }
+  :scope, body {
+    color: var(--ink);
+    /* The Aqua desktop: deep blue with soft light swooshes. */
+    background:
+      radial-gradient(120% 60% at 20% 15%, rgba(255, 255, 255, 0.28), transparent 60%),
+      radial-gradient(90% 50% at 85% 75%, rgba(140, 200, 255, 0.5), transparent 70%),
+      linear-gradient(160deg, var(--desktop-2), var(--desktop-1) 55%, #0d3c86);
+    background-attachment: fixed;
+  }
+
+  .app {
+    --s: 1.5;
+    background: linear-gradient(160deg, var(--desktop-2), var(--desktop-1) 60%);
+    font-size: 11px;
+  }
+
+  /* Windows: pinstriped, rounded top corners, soft drop shadow. */
+  .window { background: var(--pinstripe); border-radius: 6px 6px 0 0; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35), 0 6px 18px rgba(0, 0, 0, 0.35); }
+  .main { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 0; }
+  .main > .window-body { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 0; padding: 6px 6px 0; gap: 4px; }
+  .title-bar {
+    position: relative; display: flex; align-items: center; height: 22px; padding: 0 8px; flex: none;
+    border-radius: 6px 6px 0 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0) 60%), repeating-linear-gradient(180deg, #e6e6e6 0 1px, #d9d9d9 1px 2px);
+    border-bottom: 1px solid #9a9a9a;
+  }
+  .title-bar-text { position: absolute; left: 60px; right: 60px; text-align: center; font-size: 13px; color: #1a1a1a; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; justify-content: center; align-items: center; gap: 5px; }
+  .title-bar-text svg { width: 14px; height: 14px; flex: none; }
+  .main .title-bar-text svg { display: none; }
+  .title-bar-text.one-line span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+  /* Traffic lights, on the left: close (red), then minimise (yellow). */
+  .title-bar-controls { display: flex; gap: 7px; align-items: center; flex: 1; }
+  .title-bar-controls button { all: unset; width: 13px; height: 13px; border-radius: 50%; cursor: pointer; position: relative; box-shadow: inset 0 0 0 0.5px rgba(0, 0, 0, 0.45), 0 1px 1px rgba(255, 255, 255, 0.6); }
+  .title-bar-controls button::after { content: ''; position: absolute; left: 3px; right: 3px; top: 1px; height: 5px; border-radius: 50%; background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.1)); }
+  .title-bar-controls button[aria-label="Close"] { order: 1; background: radial-gradient(circle at 50% 75%, #ff9a8a, #e0443a 55%, #a3221b); }
+  .title-bar-controls button[aria-label="Minimize"] { order: 2; background: radial-gradient(circle at 50% 75%, #ffe58a, #f0b21e 55%, #b07a0a); }
+  .title-bar-controls button[aria-label="Maximize"] { order: 3; background: radial-gradient(circle at 50% 75%, #b6f39a, #4cbf2f 55%, #2a7d18); }
+  /* The ? help button sits on the right, round and white like Aqua's help buttons. */
+  .title-bar-controls button.help { order: 9; margin-left: auto; width: 17px; height: 17px; background: var(--white-gel); box-shadow: inset 0 0 0 1px #8a8a8a, 0 1px 1px rgba(0, 0, 0, 0.15); }
+  .title-bar-controls button.help::after { content: '?'; inset: 0; height: auto; background: none; display: grid; place-items: center; font: bold 11px var(--font); color: #2a2a2a; }
+
+  /* Tabs: a centred segmented control sitting on the top edge of a recessed box. */
+  .tabs { flex: 1; min-height: 0; display: flex; flex-direction: column; position: relative; }
+  .tabs menu[role="tablist"] { display: flex; justify-content: center; margin: 2px 0 -11px; padding: 0; list-style: none; position: relative; z-index: 2; }
+  .tabs menu[role="tablist"] li { cursor: pointer; padding: 3px 0; min-width: 62px; text-align: center; font-size: 11px; background: var(--white-gel); box-shadow: inset 0 0 0 1px #8b8b8b; margin-left: -1px; text-shadow: 0 1px 0 #fff; }
+  .tabs menu[role="tablist"] li:first-child { border-radius: 11px 0 0 11px; margin-left: 0; }
+  .tabs menu[role="tablist"] li:last-child { border-radius: 0 11px 11px 0; }
+  .tabs menu[role="tablist"] li[aria-selected="true"] { background: var(--blue-gel); color: #fff; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35); box-shadow: inset 0 0 0 1px #2c5f9e; position: relative; z-index: 1; }
+  .tabs menu[role="tablist"] li button { all: unset; display: block; color: inherit; padding: 0 6px; cursor: pointer; }
+  .tabs .panel { flex: 1; min-height: 0; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; margin: 0 0 6px; padding-top: 14px; background: rgba(0, 0, 0, 0.045); border-radius: 6px; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 0, 0, 0.18); }
+  .tabs .panel.window { box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 0, 0, 0.18); }
+  .tabs .panel > .window-body { margin: 6px 8px 10px; }
+  .tabs .park-panel { overflow: hidden; padding: 14px 0 0; }
+  .tabs .park-panel > .park-body { margin: 0 4px 4px; height: calc(100% - 4px); position: relative; border-radius: 4px; overflow: hidden; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3); }
+  .park-view { position: relative; width: 100%; height: 100%; }
+  .park-view canvas { display: block; width: 100%; height: 100%; cursor: pointer; }
+  .saver { position: absolute; inset: 0; z-index: 75; background: #000; cursor: pointer; }
+  .saver .park-hint { display: none; }
+  .park-hint { position: absolute; left: 6px; top: 6px; padding: 2px 9px; border-radius: 10px; background: rgba(255, 255, 255, 0.82); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); font-size: 10px; pointer-events: none; font-variant-numeric: tabular-nums; }
+
+  /* Gel buttons. The default button is blue and gently pulses, like Aqua's. */
+  button { font: 12px var(--font); color: #000; padding: 3px 16px; min-height: 21px; border: 0; border-radius: 11px; background: var(--white-gel); box-shadow: inset 0 0 0 1px #7d7d7d, 0 1px 1px rgba(0, 0, 0, 0.18); cursor: pointer; }
+  button:active { background: linear-gradient(180deg, #e2e2e2, #c9c9c9 50%, #bdbdbd 52%, #d0d0d0); }
+  button.default { background: var(--blue-gel); box-shadow: inset 0 0 0 1px #20508f, 0 1px 1px rgba(0, 0, 0, 0.2); animation: aqua-pulse 1.6s ease-in-out infinite; }
+  /* Text fields and the Group popup */
+  input[type="text"], textarea { font: 11px var(--font); background: #fff; border: 0; border-radius: 0; box-shadow: var(--field-shadow); padding: 3px 5px; outline: none; }
+  input[type="text"]:focus, textarea:focus { box-shadow: var(--field-shadow), 0 0 0 3px rgba(80, 150, 240, 0.65); }
+  textarea { resize: none; width: 100%; }
+  select { -webkit-appearance: none; appearance: none; font: 11px var(--font); border: 0; border-radius: 5px; padding: 3px 26px 3px 8px; background: linear-gradient(90deg, transparent calc(100% - 20px), #3a86e2 calc(100% - 20px)) , var(--white-gel); box-shadow: inset 0 0 0 1px #7d7d7d, 0 1px 1px rgba(0, 0, 0, 0.15); position: relative; }
+  select.nz { background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='14'%3E%3Cpath d='M5 1l4 4.5H1zM5 13L1 8.5h8z' fill='%23fff'/%3E%3C/svg%3E") no-repeat right 9px center / 10px 14px, linear-gradient(90deg, transparent calc(100% - 29px), rgba(0, 0, 0, 0.3) calc(100% - 29px), rgba(0, 0, 0, 0.3) calc(100% - 28px), transparent calc(100% - 28px)), linear-gradient(180deg, #a9d2ff, #3f8de6 50%, #2a73d1 52%, #6fb2f5) no-repeat right center / 28px 100%, var(--white-gel); border-radius: 7px; padding-right: 36px; }
+  /* Radio buttons: small gel circles, blue when chosen. */
+  input[type="radio"] { -webkit-appearance: none; appearance: none; width: 13px; height: 13px; margin: 0 5px 0 0; border-radius: 50%; background: var(--white-gel); box-shadow: inset 0 0 0 1px #6f6f6f, inset 0 1px 2px rgba(0, 0, 0, 0.2); flex: none; position: relative; vertical-align: -2px; }
+  input[type="radio"]:checked { background: var(--blue-gel); box-shadow: inset 0 0 0 1px #20508f; }
+  input[type="radio"]:checked::after { content: ''; position: absolute; inset: 4px; border-radius: 50%; background: #10294f; }
+  .field-row { display: flex; align-items: center; }
+  .field-row label { font-size: 11px; }
+  .field-row-stacked { display: flex; flex-direction: column; gap: 4px; }
+  /* Group boxes */
+  fieldset { margin: 0; padding: 8px; border: 0; border-radius: 5px; background: rgba(0, 0, 0, 0.035); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.17); min-width: 0; position: relative; }
+  legend { font-size: 11px; font-weight: bold; color: #1a1a1a; padding: 0; float: left; width: 100%; margin: -2px 0 6px; }
+  legend + * { clear: both; }
+
+  /* Breeds */
+  .find { display: grid; grid-template-columns: auto 1fr auto; gap: 6px 6px; align-items: center; margin-bottom: 8px; }
+  .find label { font-size: 11px; text-align: right; }
+  .find input, .find select { min-width: 0; }
+  .find select { grid-column: 2 / 4; }
+  /* Find is an Aqua search field: rounded, a magnifying glass on the left, and a small grey cancel button inside on the right once you've typed. */
+  .find input { grid-column: 2 / 4; grid-row: 1; border-radius: 15px; padding-left: 26px; padding-right: 28px; background: #fff url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Ccircle cx='5.8' cy='5.8' r='4.3' fill='none' stroke='%23666' stroke-width='1.6'/%3E%3Cpath d='M9 9l4 4' stroke='%23666' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat 9px center / 14px 14px; }
+  .find .x { grid-column: 3; grid-row: 1; justify-self: end; margin-right: 4px; min-width: 0; min-height: 0; width: 14px; height: 14px; padding: 0; border-radius: 50%; font-size: 0; position: relative; z-index: 1; background: #a2a2a2; box-shadow: none; animation: none; }
+  .find .x::after { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath d='M4.5 4.5l5 5M9.5 4.5l-5 5' stroke='%23fff' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E") center / 14px 14px; }
+  .find input:placeholder-shown + .x { visibility: hidden; }
+  .show { margin: 0 0 10px; padding: 8px; }
+  .show-row { display: flex; gap: 16px; align-items: center; }
+  .show .field-row { margin: 0; }
+  .swatch { width: 9px; height: 9px; border-radius: 50%; box-shadow: inset 0 0 0 0.5px rgba(0, 0, 0, 0.4), inset 0 2px 2px rgba(255, 255, 255, 0.55); flex: none; display: inline-block; }
+  .icons { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px 6px; }
+  /* Tiles: like Finder's icon view. */
+  .icon { all: unset; box-sizing: border-box; display: grid; justify-items: center; align-content: start; gap: 4px; padding: 3px 2px; cursor: pointer; position: relative; text-align: center; }
+  .icon .pic { width: 66px; height: 66px; padding: 0; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.15); background: #fff; }
+  .icon img { width: 100%; height: 100%; display: block; object-fit: cover; }
+  .icon:not(.is-spotted) img { filter: grayscale(1) contrast(0.9) brightness(1.08); opacity: 0.7; }
+  .icon .label { font-size: 10px; line-height: 1.25; padding: 1px 5px; border-radius: 7px; max-width: 100%; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .icon:not(.is-spotted) .label { color: #555; }
+  .icon:focus-visible .label, .icon:active .label { background: var(--selection); color: #fff; }
+  @media (hover: hover) { .icon:hover .label { background: var(--selection); color: #fff; } }
+  .icon .no { position: absolute; top: 6px; left: calc(50% - 30px); background: var(--g); color: #fff; font-size: 8.5px; font-weight: bold; line-height: 1; padding: 2px 5px; border-radius: 7px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.35); }
+  .icon .tick { position: absolute; top: 0; right: calc(50% - 38px); width: 17px; height: 17px; border-radius: 50%; display: grid; place-items: center; background: radial-gradient(circle at 50% 30%, #9ef28c, #34b81e 60%, #1d7a0d); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.45), inset 0 0 0 1px rgba(0, 0, 0, 0.25); }
+  .icon .tick svg { width: 10px; height: 10px; }
+  .empty { padding: 20px 6px; text-align: center; font-size: 11px; line-height: 1.6; color: var(--muted); }
+
+  /* The breed window: a Get Info style panel. */
+  .props { position: absolute; inset: 0; z-index: 30; display: flex; flex-direction: column; }
+  .props > .window-body { flex: 1; min-height: 0; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; margin: 0; padding: 8px 8px 20px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 9px; align-content: start; }
+  .photo-frame { position: relative; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.2); background: #fff; }
+  .photo-frame img { display: block; width: 100%; height: auto; aspect-ratio: 770 / 540; object-fit: cover; }
+  .photo-strip { position: absolute; left: 0; right: 0; bottom: 0; display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 4px 8px; background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.62)); color: #fff; font-size: 11px; font-weight: bold; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+  .photo-strip > span:first-child { display: flex; align-items: center; gap: 5px; }
+  .title-block p { margin: 0; font-size: 11px; color: #333; }
+  .box { margin: 0; padding: 8px; }
+  .chips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px 4px; }
+  .chip { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; font-size: 10px; line-height: 1.2; min-width: 0; overflow-wrap: break-word; }
+  .chip-icon { width: 30px; height: 30px; flex: none; display: grid; place-items: center; }
+  .chip-icon svg { width: 30px; height: 30px; filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, 0.35)); }
+  .small { margin: 0; font-size: 10.5px; line-height: 1.45; color: #333; }
+  .textbox { background: #fff; padding: 7px 9px; font-size: 11px; line-height: 1.5; box-shadow: var(--field-shadow); }
+  .forms { display: flex; flex-wrap: wrap; gap: 3px 10px; font-size: 11px; }
+  .catch-btn { width: 100%; min-height: 30px; font-weight: bold; font-size: 13px; display: flex; align-items: center; justify-content: center; gap: 6px; border-radius: 15px; color: #fff; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35); }
+  .catch-btn svg { width: 18px; height: 18px; }
+  .caught-line { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .caught-line svg { width: 32px; height: 32px; flex: none; filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, 0.3)); }
+  .caught-line b { display: block; font-size: 12px; }
+  .props .field-row-stacked { margin: 0 0 8px; }
+  .props .field-row-stacked label { font-size: 11px; }
+
+  /* Progress and Help */
+  .big-progress { display: grid; gap: 6px; margin-bottom: 10px; }
+  .big-progress .figure { font-size: 13px; font-weight: bold; font-variant-numeric: tabular-nums; }
+  /* Aqua's candy-striped blue progress bar, its stripes always on the move. */
+  .progress-indicator { position: relative; height: 16px; border-radius: 8px; overflow: hidden; background: linear-gradient(180deg, #e9e9e9, #ffffff 50%, #f0f0f0 52%, #dcdcdc); box-shadow: inset 0 0 0 1px #8a8a8a, inset 0 1px 2px rgba(0, 0, 0, 0.2); }
+  .progress-indicator-bar { display: block; height: 100%; width: 0; border-radius: 8px; background: linear-gradient(180deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0.08) 52%, rgba(255, 255, 255, 0.35)), repeating-linear-gradient(-45deg, #2c7ae0 0 6px, #78b5f5 6px 12px); background-size: 100% 100%, 17px 17px; box-shadow: inset 0 0 0 1px rgba(20, 60, 130, 0.6); animation: aqua-candy 0.8s linear infinite; transition: width 0.7s ease-out; }
+  .pct-in { position: absolute; inset: 0; display: grid; place-items: center; font-weight: bold; font-size: 10.5px; color: #1a1a1a; text-shadow: 0 0 3px #fff, 0 0 2px #fff, 0 1px 0 #fff; }
+  .pct-in.on { display: none; }
+  .group-list { display: grid; padding: 0 !important; overflow: hidden; }
+  .g-row { all: unset; box-sizing: border-box; display: grid; padding: 6px 8px; cursor: pointer; }
+  .g-row:nth-child(even) { background: #edf3fe; }
+  .g-row:active, .g-row:focus { background: var(--selection); color: #fff; }
+  .g-top { display: flex; justify-content: space-between; gap: 6px; font-size: 11px; font-variant-numeric: tabular-nums; }
+  .g-top > span:first-child { display: flex; align-items: center; gap: 6px; min-width: 0; }
+  .g-top > span:last-child { white-space: nowrap; }
+  .sunken-panel { background: #fff; box-shadow: var(--field-shadow); overflow-x: hidden; }
+  .sunken-panel table { width: 100%; table-layout: fixed; border-collapse: collapse; }
+  .sunken-panel th { font-size: 10.5px; font-weight: normal; text-align: left; padding: 2px 6px; background: linear-gradient(180deg, #fefefe, #e7e7e7 50%, #dcdcdc 52%, #ececec); border-bottom: 1px solid #a5a5a5; border-right: 1px solid #c6c6c6; }
+  .sunken-panel td { font-size: 11px; padding: 3px 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sunken-panel tbody tr:nth-child(even) { background: #edf3fe; }
+  .sunken-panel tr { cursor: pointer; }
+  .recent-row img { width: 18px; height: 18px; vertical-align: middle; margin-right: 5px; object-fit: cover; border-radius: 3px; }
+  .about-head { display: flex; gap: 10px; align-items: center; margin-bottom: 8px; }
+  .about-head svg { width: 44px; height: 44px; flex: none; filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3)); }
+  .about-head b { font-size: 14px; display: block; }
+  .about-head span { font-size: 10px; color: var(--muted); }
+  .panel-box { margin: 0 0 10px; padding: 9px; }
+  .panel-box p, .panel-box ol { margin: 0 0 8px; font-size: 11px; line-height: 1.55; }
+  .panel-box ol { padding-left: 18px; }
+  .stack { display: grid; gap: 7px; }
+  .appearance { display: grid; gap: 7px; }
+  .appearance .field-row label { font-size: 11px; }
+  .warn { display: flex; align-items: center; gap: 7px; font-size: 11px; margin-bottom: 8px; }
+  .warn svg { width: 24px; height: 24px; flex: none; }
+
+  /* Dialogs are Aqua sheets: they slide down out of the title bar. */
+  .modal { position: absolute; inset: 0; z-index: 60; display: flex; justify-content: center; align-items: flex-start; padding-top: 22px; }
+  .dialog { width: 240px; border-radius: 0 0 6px 6px; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35), 0 10px 24px rgba(0, 0, 0, 0.45); animation: aqua-sheet 0.28s ease-out; }
+  .dialog .title-bar { display: none; }
+  .dialog .window-body { display: grid; gap: 14px; padding: 14px 14px 12px; }
+  .dialog .msg { display: flex; gap: 12px; align-items: flex-start; font-size: 11px; line-height: 1.5; }
+  .dialog .msg svg { width: 40px; height: 40px; flex: none; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3)); }
+  .dialog .msg b { display: block; font-size: 12px; margin-bottom: 3px; }
+  .dialog .btns { display: flex; justify-content: flex-end; gap: 8px; }
+  .dialog .btns button { min-width: 64px; }
+
+  /* Launch screen: light grey, like the Mac OS X start-up screen. */
+  .boot { all: unset; position: absolute; inset: 0; z-index: 70; background: radial-gradient(circle at 50% 42%, #f4f4f4, #c9c9c9 85%); display: grid; place-items: center; align-content: center; gap: 22px; color: #333; cursor: pointer; }
+  .boot .logo { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .boot .logo svg { width: 76px; height: 76px; filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); }
+  .boot .word { font-size: 20px; font-weight: bold; line-height: 1; color: #3a3a3a; text-shadow: 0 1px 0 #fff; }
+  .boot .sub { font-size: 11px; color: #555; }
+
+  /* ---------- Idea 1: a System Preferences style toolbar instead of tabs ---------- */
+  .main .title-bar { border-bottom: 0; }
+  .main > .window-body { padding: 0; }
+  .tabs menu[role="tablist"] { justify-content: space-around; margin: 0; padding: 3px 4px 5px; gap: 0; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.05) 100%), repeating-linear-gradient(180deg, #e6e6e6 0 1px, #d9d9d9 1px 2px); border-bottom: 1px solid #8f8f8f; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); }
+  .tabs menu[role="tablist"] li, .tabs menu[role="tablist"] li:first-child, .tabs menu[role="tablist"] li:last-child { min-width: 0; flex: 1 1 0; margin: 0 2px; padding: 3px 0 2px; border-radius: 6px; background: none; box-shadow: none; color: #1a1a1a; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.85); }
+  .tabs menu[role="tablist"] li[aria-selected="true"] { background: rgba(0, 0, 0, 0.13); box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.7); color: #000; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); }
+  .tabs menu[role="tablist"] li button { display: grid; justify-items: center; gap: 1px; padding: 0; width: 100%; }
+  .tabs menu[role="tablist"] li svg { width: 30px; height: 30px; filter: drop-shadow(0 1.5px 1.5px rgba(0, 0, 0, 0.3)); }
+  .tabs menu[role="tablist"] li span { font-size: 10px; }
+  .tabs .panel, .tabs .panel.window { margin: 0; padding-top: 0; border-radius: 0; background: none; box-shadow: none; }
+  .tabs .panel > .window-body { margin: 10px 8px 12px; }
+  .tabs .park-panel > .park-body { margin: 6px; height: calc(100% - 12px); }
+
+  /* ---------- Idea 2: fold-away sections on the breed page, like Get Info ---------- */
+  .fold { border-radius: 5px; background: rgba(0, 0, 0, 0.035); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.17); }
+  .fold summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 6px; padding: 6px 8px; font-size: 11px; font-weight: bold; color: #1a1a1a; -webkit-user-select: none; user-select: none; }
+  .fold summary::-webkit-details-marker { display: none; }
+  .fold summary::before { content: ''; width: 0; height: 0; border-style: solid; border-width: 4px 0 4px 7px; border-color: transparent transparent transparent #4a4a4a; transition: transform 0.15s; }
+  .fold[open] summary::before { transform: rotate(90deg); }
+  .fold-hint { margin-left: auto; font-weight: normal; color: #2b7a1e; font-size: 10.5px; }
+  .fold[open] .fold-hint { display: none; }
+  .fold-body { padding: 0 8px 9px; display: grid; gap: 8px; }
+  .fold-body > button:not(.catch-btn) { justify-self: start; min-width: 80px; }
+  .section-title { margin: 12px 0 5px; font-size: 11px; font-weight: bold; }
+  .recent-empty { padding: 8px; font-size: 11px; color: var(--muted); margin: 0; }
+
+  /* ---------- Idea 3: the dog itself in the Spotted sheet ---------- */
+  .dialog .msg .sheet-photo { width: 48px; height: 48px; flex: none; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.15); }
+
+  /* ---------- Idea 4: the Mac OS X spinning gear while it starts ---------- */
+  .gear { position: relative; width: 26px; height: 26px; }
+  .gear { display: block; }
+  .gear.waiting { visibility: hidden; }
+  .gear i { position: absolute; left: 11.75px; top: 0; width: 2.5px; height: 7.5px; border-radius: 1.25px; background: #4a4a4a; transform-origin: 1.25px 13px; transform: rotate(calc(var(--i) * 30deg)); animation: aqua-gear 1s linear infinite; animation-delay: calc((var(--i) - 12) * 1s / 12); opacity: 0.15; }
+
+
+  /* Help: a window of its own, behind the round ? on the right of the title bar. */
+  .helpwin { z-index: 29; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .progress-indicator-bar, button.default, .dialog, .gear i { animation: none; transition: none; }
+  }
+}
+@keyframes aqua-pulse { 50% { filter: brightness(1.12) saturate(0.85); } }
+@keyframes aqua-candy { to { background-position: 0 0, 17px 0; } }
+@keyframes aqua-sheet { from { transform: translateY(-110%); } }
+@keyframes aqua-gear { 0% { opacity: 1; } 100% { opacity: 0.15; } }
+}

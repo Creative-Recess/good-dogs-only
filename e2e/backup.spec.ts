@@ -1,6 +1,6 @@
 import { writeFile } from 'node:fs/promises'
 import { expect, test } from '@playwright/test'
-import { launch, spotBreed } from './helpers.ts'
+import { launch, leaveHelp, openHelp, spotBreed } from './helpers.ts'
 
 test('a backup restores every spot after the phone is wiped', async ({ page }, testInfo) => {
   // Stand in for the iPhone share sheet: keep the file it was given.
@@ -12,7 +12,7 @@ test('a backup restores every spot after the phone is wiped', async ({ page }, t
   await launch(page)
   await spotBreed(page, 'Border Collie')
   await spotBreed(page, 'Groodle')
-  await page.getByRole('tab', { name: 'Help' }).click()
+  await openHelp(page)
   await expect(page.getByText('Last backup: never')).toBeVisible()
 
   await page.getByRole('button', { name: 'Save Backup...' }).click()
@@ -38,7 +38,7 @@ test('a backup restores every spot after the phone is wiped', async ({ page }, t
   await launch(page)
   await page.getByRole('tab', { name: 'Progress' }).click()
   await expect(page.getByText('0 of 239 breeds')).toBeVisible()
-  await page.getByRole('tab', { name: 'Help' }).click()
+  await openHelp(page)
   await page.getByTestId('restore-file').setInputFiles(file)
   await expect(page.getByRole('alertdialog')).toContainText('Backup restored.')
   await page.getByRole('alertdialog').getByRole('button', { name: 'OK' }).click()
@@ -47,13 +47,14 @@ test('a backup restores every spot after the phone is wiped', async ({ page }, t
   await page.getByTestId('restore-file').setInputFiles(file)
   await expect(page.getByRole('alertdialog')).toContainText('already here')
   await page.getByRole('alertdialog').getByRole('button', { name: 'OK' }).click()
+  await leaveHelp(page)
   await page.getByRole('tab', { name: 'Progress' }).click()
   await expect(page.getByText('2 of 239 breeds')).toBeVisible()
 })
 
 test('restoring a file that is not a backup says so', async ({ page }) => {
   await launch(page)
-  await page.getByRole('tab', { name: 'Help' }).click()
+  await openHelp(page)
   await page.getByTestId('restore-file').setInputFiles({ name: 'notes.json', mimeType: 'application/json', buffer: Buffer.from('{"hello":1}') })
   await expect(page.getByRole('alertdialog')).toContainText("isn't a Good Dogs Only backup")
 })
