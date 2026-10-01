@@ -45,6 +45,8 @@ export type BreedImage = {
   grid: string
   /** Larger uncropped image for the breed page. */
   detail: string
+  /** The dog's shape in the grid photo (white on transparent), for the silhouette of a breed not yet spotted. */
+  mask: string
   width: number
   height: number
   /** Where the dog is in the detail photo (0-1), for cropping it into the 770:540 frame. */

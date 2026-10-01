@@ -73,6 +73,7 @@
    "image": {
     "grid": "/breeds/affenpinscher-3282fa8d-grid.webp",
     "detail": "/breeds/affenpinscher-3282fa8d.webp",
+    "mask": "/breeds/affenpinscher-3282fa8d-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -132,6 +133,7 @@
    "image": {
     "grid": "/breeds/australian-silky-terrier-05526e96-grid.webp",
     "detail": "/breeds/australian-silky-terrier-05526e96.webp",
+    "mask": "/breeds/australian-silky-terrier-05526e96-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -190,6 +192,7 @@
    "image": {
     "grid": "/breeds/bichon-frise-4f5a2e68-grid.webp",
     "detail": "/breeds/bichon-frise-4f5a2e68.webp",
+    "mask": "/breeds/bichon-frise-4f5a2e68-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -246,6 +249,7 @@
    "image": {
     "grid": "/breeds/biewer-terrier-14d47bfe-grid.webp",
     "detail": "/breeds/biewer-terrier-14d47bfe.webp",
+    "mask": "/breeds/biewer-terrier-14d47bfe-mask.webp",
     "width": 1200,
     "height": 797,
     "focus": [
@@ -301,6 +305,7 @@
    "image": {
     "grid": "/breeds/bolognese-25881226-grid.webp",
     "detail": "/breeds/bolognese-25881226.webp",
+    "mask": "/breeds/bolognese-25881226-mask.webp",
     "width": 1200,
     "height": 800,
     "focus": [
@@ -361,6 +366,7 @@
    "image": {
     "grid": "/breeds/cavalier-king-charles-spaniel-532c3e45-grid.webp",
     "detail": "/breeds/cavalier-king-charles-spaniel-532c3e45.webp",
+    "mask": "/breeds/cavalier-king-charles-spaniel-532c3e45-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -421,6 +427,7 @@
    "image": {
     "grid": "/breeds/chihuahua-long-coat-72f9e6a0-grid.webp",
     "detail": "/breeds/chihuahua-long-coat-72f9e6a0.webp",
+    "mask": "/breeds/chihuahua-long-coat-72f9e6a0-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -480,6 +487,7 @@
    "image": {
     "grid": "/breeds/chihuahua-smooth-coat-415bc840-grid.webp",
     "detail": "/breeds/chihuahua-smooth-coat-415bc840.webp",
+    "mask": "/breeds/chihuahua-smooth-coat-415bc840-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -539,6 +547,7 @@
    "image": {
     "grid": "/breeds/chinese-crested-dog-cfde53de-grid.webp",
     "detail": "/breeds/chinese-crested-dog-cfde53de.webp",
+    "mask": "/breeds/chinese-crested-dog-cfde53de-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -598,6 +607,7 @@
    "image": {
     "grid": "/breeds/coton-de-tulear-4355755f-grid.webp",
     "detail": "/breeds/coton-de-tulear-4355755f.webp",
+    "mask": "/breeds/coton-de-tulear-4355755f-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -657,6 +667,7 @@
    "image": {
     "grid": "/breeds/english-toy-terrier-black-and-tan-b5d7e016-grid.webp",
     "detail": "/breeds/english-toy-terrier-black-and-tan-b5d7e016.webp",
+    "mask": "/breeds/english-toy-terrier-black-and-tan-b5d7e016-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -716,6 +727,7 @@
    "image": {
     "grid": "/breeds/griffon-bruxellois-d14ac772-grid.webp",
     "detail": "/breeds/griffon-bruxellois-d14ac772.webp",
+    "mask": "/breeds/griffon-bruxellois-d14ac772-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -772,6 +784,7 @@
    "image": {
     "grid": "/breeds/havanese-2854236e-grid.webp",
     "detail": "/breeds/havanese-2854236e.webp",
+    "mask": "/breeds/havanese-2854236e-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -830,6 +843,7 @@
    "image": {
     "grid": "/breeds/italian-greyhound-09379774-grid.webp",
     "detail": "/breeds/italian-greyhound-09379774.webp",
+    "mask": "/breeds/italian-greyhound-09379774-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -886,6 +900,7 @@
    "image": {
     "grid": "/breeds/japanese-chin-141435c0-grid.webp",
     "detail": "/breeds/japanese-chin-141435c0.webp",
+    "mask": "/breeds/japanese-chin-141435c0-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -945,6 +960,7 @@
    "image": {
     "grid": "/breeds/king-charles-spaniel-fa02f1c2-grid.webp",
     "detail": "/breeds/king-charles-spaniel-fa02f1c2.webp",
+    "mask": "/breeds/king-charles-spaniel-fa02f1c2-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1005,6 +1021,7 @@
    "image": {
     "grid": "/breeds/lowchen-little-lion-dog-134b5ce2-grid.webp",
     "detail": "/breeds/lowchen-little-lion-dog-134b5ce2.webp",
+    "mask": "/breeds/lowchen-little-lion-dog-134b5ce2-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1061,6 +1078,7 @@
    "image": {
     "grid": "/breeds/maltese-a6a0c1ce-grid.webp",
     "detail": "/breeds/maltese-a6a0c1ce.webp",
+    "mask": "/breeds/maltese-a6a0c1ce-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1119,6 +1137,7 @@
    "image": {
     "grid": "/breeds/miniature-pinscher-45a34620-grid.webp",
     "detail": "/breeds/miniature-pinscher-45a34620.webp",
+    "mask": "/breeds/miniature-pinscher-45a34620-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1175,6 +1194,7 @@
    "image": {
     "grid": "/breeds/papillon-54d1b8b7-grid.webp",
     "detail": "/breeds/papillon-54d1b8b7.webp",
+    "mask": "/breeds/papillon-54d1b8b7-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1233,6 +1253,7 @@
    "image": {
     "grid": "/breeds/pekingese-ffb17f00-grid.webp",
     "detail": "/breeds/pekingese-ffb17f00.webp",
+    "mask": "/breeds/pekingese-ffb17f00-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1291,6 +1312,7 @@
    "image": {
     "grid": "/breeds/pomeranian-06edc7f0-grid.webp",
     "detail": "/breeds/pomeranian-06edc7f0.webp",
+    "mask": "/breeds/pomeranian-06edc7f0-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1348,6 +1370,7 @@
    "image": {
     "grid": "/breeds/prague-ratter-cf02976d-grid.webp",
     "detail": "/breeds/prague-ratter-cf02976d.webp",
+    "mask": "/breeds/prague-ratter-cf02976d-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1403,6 +1426,7 @@
    "image": {
     "grid": "/breeds/pug-08a44871-grid.webp",
     "detail": "/breeds/pug-08a44871.webp",
+    "mask": "/breeds/pug-08a44871-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1463,6 +1487,7 @@
    "image": {
     "grid": "/breeds/russian-toy-long-haired-577b3430-grid.webp",
     "detail": "/breeds/russian-toy-long-haired-577b3430.webp",
+    "mask": "/breeds/russian-toy-long-haired-577b3430-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1522,6 +1547,7 @@
    "image": {
     "grid": "/breeds/russian-toy-smooth-haired-d097b61f-grid.webp",
     "detail": "/breeds/russian-toy-smooth-haired-d097b61f.webp",
+    "mask": "/breeds/russian-toy-smooth-haired-d097b61f-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1580,6 +1606,7 @@
    "image": {
     "grid": "/breeds/tibetan-spaniel-0ddd1470-grid.webp",
     "detail": "/breeds/tibetan-spaniel-0ddd1470.webp",
+    "mask": "/breeds/tibetan-spaniel-0ddd1470-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1638,6 +1665,7 @@
    "image": {
     "grid": "/breeds/yorkshire-terrier-b5e3f21a-grid.webp",
     "detail": "/breeds/yorkshire-terrier-b5e3f21a.webp",
+    "mask": "/breeds/yorkshire-terrier-b5e3f21a-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1694,6 +1722,7 @@
    "image": {
     "grid": "/breeds/airedale-terrier-6f63b1a8-grid.webp",
     "detail": "/breeds/airedale-terrier-6f63b1a8.webp",
+    "mask": "/breeds/airedale-terrier-6f63b1a8-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1750,6 +1779,7 @@
    "image": {
     "grid": "/breeds/american-hairless-terrier-1f318ea2-grid.webp",
     "detail": "/breeds/american-hairless-terrier-1f318ea2.webp",
+    "mask": "/breeds/american-hairless-terrier-1f318ea2-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1809,6 +1839,7 @@
    "image": {
     "grid": "/breeds/american-staffordshire-terrier-4778e963-grid.webp",
     "detail": "/breeds/american-staffordshire-terrier-4778e963.webp",
+    "mask": "/breeds/american-staffordshire-terrier-4778e963-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1867,6 +1898,7 @@
    "image": {
     "grid": "/breeds/australian-terrier-e474f649-grid.webp",
     "detail": "/breeds/australian-terrier-e474f649.webp",
+    "mask": "/breeds/australian-terrier-e474f649-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1923,6 +1955,7 @@
    "image": {
     "grid": "/breeds/bedlington-terrier-10e5ee56-grid.webp",
     "detail": "/breeds/bedlington-terrier-10e5ee56.webp",
+    "mask": "/breeds/bedlington-terrier-10e5ee56-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -1979,6 +2012,7 @@
    "image": {
     "grid": "/breeds/border-terrier-6af785b0-grid.webp",
     "detail": "/breeds/border-terrier-6af785b0.webp",
+    "mask": "/breeds/border-terrier-6af785b0-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2036,6 +2070,7 @@
    "image": {
     "grid": "/breeds/bull-terrier-f6b97fa7-grid.webp",
     "detail": "/breeds/bull-terrier-f6b97fa7.webp",
+    "mask": "/breeds/bull-terrier-f6b97fa7-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2094,6 +2129,7 @@
    "image": {
     "grid": "/breeds/bull-terrier-miniature-a75e369f-grid.webp",
     "detail": "/breeds/bull-terrier-miniature-a75e369f.webp",
+    "mask": "/breeds/bull-terrier-miniature-a75e369f-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2150,6 +2186,7 @@
    "image": {
     "grid": "/breeds/cairn-terrier-0e8500e9-grid.webp",
     "detail": "/breeds/cairn-terrier-0e8500e9.webp",
+    "mask": "/breeds/cairn-terrier-0e8500e9-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2206,6 +2243,7 @@
    "image": {
     "grid": "/breeds/cesky-terrier-1c5289e1-grid.webp",
     "detail": "/breeds/cesky-terrier-1c5289e1.webp",
+    "mask": "/breeds/cesky-terrier-1c5289e1-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2265,6 +2303,7 @@
    "image": {
     "grid": "/breeds/dandie-dinmont-terrier-eb62d808-grid.webp",
     "detail": "/breeds/dandie-dinmont-terrier-eb62d808.webp",
+    "mask": "/breeds/dandie-dinmont-terrier-eb62d808-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2322,6 +2361,7 @@
    "image": {
     "grid": "/breeds/fox-terrier-smooth-1e77b192-grid.webp",
     "detail": "/breeds/fox-terrier-smooth-1e77b192.webp",
+    "mask": "/breeds/fox-terrier-smooth-1e77b192-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2381,6 +2421,7 @@
    "image": {
     "grid": "/breeds/fox-terrier-wire-25d8d374-grid.webp",
     "detail": "/breeds/fox-terrier-wire-25d8d374.webp",
+    "mask": "/breeds/fox-terrier-wire-25d8d374-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2440,6 +2481,7 @@
    "image": {
     "grid": "/breeds/german-hunting-terrier-c8b82740-grid.webp",
     "detail": "/breeds/german-hunting-terrier-c8b82740.webp",
+    "mask": "/breeds/german-hunting-terrier-c8b82740-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2500,6 +2542,7 @@
    "image": {
     "grid": "/breeds/glen-of-imaal-terrier-293a5fb5-grid.webp",
     "detail": "/breeds/glen-of-imaal-terrier-293a5fb5.webp",
+    "mask": "/breeds/glen-of-imaal-terrier-293a5fb5-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2556,6 +2599,7 @@
    "image": {
     "grid": "/breeds/irish-terrier-3f72b98c-grid.webp",
     "detail": "/breeds/irish-terrier-3f72b98c.webp",
+    "mask": "/breeds/irish-terrier-3f72b98c-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2615,6 +2659,7 @@
    "image": {
     "grid": "/breeds/jack-russell-terrier-8af78a68-grid.webp",
     "detail": "/breeds/jack-russell-terrier-8af78a68.webp",
+    "mask": "/breeds/jack-russell-terrier-8af78a68-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2673,6 +2718,7 @@
    "image": {
     "grid": "/breeds/kerry-blue-terrier-112dbe49-grid.webp",
     "detail": "/breeds/kerry-blue-terrier-112dbe49.webp",
+    "mask": "/breeds/kerry-blue-terrier-112dbe49-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2729,6 +2775,7 @@
    "image": {
     "grid": "/breeds/lakeland-terrier-21effd00-grid.webp",
     "detail": "/breeds/lakeland-terrier-21effd00.webp",
+    "mask": "/breeds/lakeland-terrier-21effd00-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2784,6 +2831,7 @@
    "image": {
     "grid": "/breeds/manchester-terrier-ded36e9a-grid.webp",
     "detail": "/breeds/manchester-terrier-ded36e9a.webp",
+    "mask": "/breeds/manchester-terrier-ded36e9a-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2840,6 +2888,7 @@
    "image": {
     "grid": "/breeds/norfolk-terrier-f3a6675f-grid.webp",
     "detail": "/breeds/norfolk-terrier-f3a6675f.webp",
+    "mask": "/breeds/norfolk-terrier-f3a6675f-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2896,6 +2945,7 @@
    "image": {
     "grid": "/breeds/norwich-terrier-e8d3df92-grid.webp",
     "detail": "/breeds/norwich-terrier-e8d3df92.webp",
+    "mask": "/breeds/norwich-terrier-e8d3df92-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -2954,6 +3004,7 @@
    "image": {
     "grid": "/breeds/parson-russell-terrier-55f1f5c5-grid.webp",
     "detail": "/breeds/parson-russell-terrier-55f1f5c5.webp",
+    "mask": "/breeds/parson-russell-terrier-55f1f5c5-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3013,6 +3064,7 @@
    "image": {
     "grid": "/breeds/scottish-terrier-6d334e1a-grid.webp",
     "detail": "/breeds/scottish-terrier-6d334e1a.webp",
+    "mask": "/breeds/scottish-terrier-6d334e1a-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3069,6 +3121,7 @@
    "image": {
     "grid": "/breeds/sealyham-terrier-c0f21a05-grid.webp",
     "detail": "/breeds/sealyham-terrier-c0f21a05.webp",
+    "mask": "/breeds/sealyham-terrier-c0f21a05-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3125,6 +3178,7 @@
    "image": {
     "grid": "/breeds/skye-terrier-0213a1e9-grid.webp",
     "detail": "/breeds/skye-terrier-0213a1e9.webp",
+    "mask": "/breeds/skye-terrier-0213a1e9-mask.webp",
     "width": 1200,
     "height": 888,
     "focus": [
@@ -3184,6 +3238,7 @@
    "image": {
     "grid": "/breeds/soft-coated-wheaten-terrier-e8376603-grid.webp",
     "detail": "/breeds/soft-coated-wheaten-terrier-e8376603.webp",
+    "mask": "/breeds/soft-coated-wheaten-terrier-e8376603-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3243,6 +3298,7 @@
    "image": {
     "grid": "/breeds/staffordshire-bull-terrier-7aca928a-grid.webp",
     "detail": "/breeds/staffordshire-bull-terrier-7aca928a.webp",
+    "mask": "/breeds/staffordshire-bull-terrier-7aca928a-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3300,6 +3356,7 @@
    "image": {
     "grid": "/breeds/tenterfield-terrier-79cd7486-grid.webp",
     "detail": "/breeds/tenterfield-terrier-79cd7486.webp",
+    "mask": "/breeds/tenterfield-terrier-79cd7486-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3356,6 +3413,7 @@
    "image": {
     "grid": "/breeds/welsh-terrier-08fc5b2a-grid.webp",
     "detail": "/breeds/welsh-terrier-08fc5b2a.webp",
+    "mask": "/breeds/welsh-terrier-08fc5b2a-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3415,6 +3473,7 @@
    "image": {
     "grid": "/breeds/west-highland-white-terrier-de30e149-grid.webp",
     "detail": "/breeds/west-highland-white-terrier-de30e149.webp",
+    "mask": "/breeds/west-highland-white-terrier-de30e149-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3470,6 +3529,7 @@
    "image": {
     "grid": "/breeds/bracco-italiano-27fc9f86-grid.webp",
     "detail": "/breeds/bracco-italiano-27fc9f86.webp",
+    "mask": "/breeds/bracco-italiano-27fc9f86-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3528,6 +3588,7 @@
    "image": {
     "grid": "/breeds/brittany-322ded82-grid.webp",
     "detail": "/breeds/brittany-322ded82.webp",
+    "mask": "/breeds/brittany-322ded82-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3587,6 +3648,7 @@
    "image": {
     "grid": "/breeds/chesapeake-bay-retriever-41b6ff52-grid.webp",
     "detail": "/breeds/chesapeake-bay-retriever-41b6ff52.webp",
+    "mask": "/breeds/chesapeake-bay-retriever-41b6ff52-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3643,6 +3705,7 @@
    "image": {
     "grid": "/breeds/clumber-spaniel-d0a46750-grid.webp",
     "detail": "/breeds/clumber-spaniel-d0a46750.webp",
+    "mask": "/breeds/clumber-spaniel-d0a46750-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3702,6 +3765,7 @@
    "image": {
     "grid": "/breeds/cocker-spaniel-1621cf3c-grid.webp",
     "detail": "/breeds/cocker-spaniel-1621cf3c.webp",
+    "mask": "/breeds/cocker-spaniel-1621cf3c-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3762,6 +3826,7 @@
    "image": {
     "grid": "/breeds/cocker-spaniel-american-c2104e1e-grid.webp",
     "detail": "/breeds/cocker-spaniel-american-c2104e1e.webp",
+    "mask": "/breeds/cocker-spaniel-american-c2104e1e-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3821,6 +3886,7 @@
    "image": {
     "grid": "/breeds/curly-coated-retriever-a7dbb0ef-grid.webp",
     "detail": "/breeds/curly-coated-retriever-a7dbb0ef.webp",
+    "mask": "/breeds/curly-coated-retriever-a7dbb0ef-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3877,6 +3943,7 @@
    "image": {
     "grid": "/breeds/english-setter-5345b4f3-grid.webp",
     "detail": "/breeds/english-setter-5345b4f3.webp",
+    "mask": "/breeds/english-setter-5345b4f3-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3937,6 +4004,7 @@
    "image": {
     "grid": "/breeds/english-springer-spaniel-0aa1e856-grid.webp",
     "detail": "/breeds/english-springer-spaniel-0aa1e856.webp",
+    "mask": "/breeds/english-springer-spaniel-0aa1e856-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -3993,6 +4061,7 @@
    "image": {
     "grid": "/breeds/field-spaniel-2365e30d-grid.webp",
     "detail": "/breeds/field-spaniel-2365e30d.webp",
+    "mask": "/breeds/field-spaniel-2365e30d-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4052,6 +4121,7 @@
    "image": {
     "grid": "/breeds/flat-coated-retriever-6c3c7f9f-grid.webp",
     "detail": "/breeds/flat-coated-retriever-6c3c7f9f.webp",
+    "mask": "/breeds/flat-coated-retriever-6c3c7f9f-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4110,6 +4180,7 @@
    "image": {
     "grid": "/breeds/german-shorthaired-pointer-ec1cc2d6-grid.webp",
     "detail": "/breeds/german-shorthaired-pointer-ec1cc2d6.webp",
+    "mask": "/breeds/german-shorthaired-pointer-ec1cc2d6-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4169,6 +4240,7 @@
    "image": {
     "grid": "/breeds/german-wirehaired-pointer-4628e207-grid.webp",
     "detail": "/breeds/german-wirehaired-pointer-4628e207.webp",
+    "mask": "/breeds/german-wirehaired-pointer-4628e207-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4225,6 +4297,7 @@
    "image": {
     "grid": "/breeds/golden-retriever-0e4a69e1-grid.webp",
     "detail": "/breeds/golden-retriever-0e4a69e1.webp",
+    "mask": "/breeds/golden-retriever-0e4a69e1-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4281,6 +4354,7 @@
    "image": {
     "grid": "/breeds/gordon-setter-22617b64-grid.webp",
     "detail": "/breeds/gordon-setter-22617b64.webp",
+    "mask": "/breeds/gordon-setter-22617b64-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4338,6 +4412,7 @@
    "image": {
     "grid": "/breeds/hungarian-vizsla-950c2a70-grid.webp",
     "detail": "/breeds/hungarian-vizsla-950c2a70.webp",
+    "mask": "/breeds/hungarian-vizsla-950c2a70-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4397,6 +4472,7 @@
    "image": {
     "grid": "/breeds/hungarian-wirehaired-vizsla-c2754e8d-grid.webp",
     "detail": "/breeds/hungarian-wirehaired-vizsla-c2754e8d.webp",
+    "mask": "/breeds/hungarian-wirehaired-vizsla-c2754e8d-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4454,6 +4530,7 @@
    "image": {
     "grid": "/breeds/irish-red-and-white-setter-24346cb2-grid.webp",
     "detail": "/breeds/irish-red-and-white-setter-24346cb2.webp",
+    "mask": "/breeds/irish-red-and-white-setter-24346cb2-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4512,6 +4589,7 @@
    "image": {
     "grid": "/breeds/irish-setter-23cee8be-grid.webp",
     "detail": "/breeds/irish-setter-23cee8be.webp",
+    "mask": "/breeds/irish-setter-23cee8be-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4570,6 +4648,7 @@
    "image": {
     "grid": "/breeds/irish-water-spaniel-668fdd19-grid.webp",
     "detail": "/breeds/irish-water-spaniel-668fdd19.webp",
+    "mask": "/breeds/irish-water-spaniel-668fdd19-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4628,6 +4707,7 @@
    "image": {
     "grid": "/breeds/italian-spinone-a4f47cea-grid.webp",
     "detail": "/breeds/italian-spinone-a4f47cea.webp",
+    "mask": "/breeds/italian-spinone-a4f47cea-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4685,6 +4765,7 @@
    "image": {
     "grid": "/breeds/labrador-retriever-0d6d043a-grid.webp",
     "detail": "/breeds/labrador-retriever-0d6d043a.webp",
+    "mask": "/breeds/labrador-retriever-0d6d043a-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4743,6 +4824,7 @@
    "image": {
     "grid": "/breeds/lagotto-romagnolo-03decbc6-grid.webp",
     "detail": "/breeds/lagotto-romagnolo-03decbc6.webp",
+    "mask": "/breeds/lagotto-romagnolo-03decbc6-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4799,6 +4881,7 @@
    "image": {
     "grid": "/breeds/large-munsterlander-ecc7516a-grid.webp",
     "detail": "/breeds/large-munsterlander-ecc7516a.webp",
+    "mask": "/breeds/large-munsterlander-ecc7516a-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4859,6 +4942,7 @@
    "image": {
     "grid": "/breeds/murray-river-retriever-9018e822-grid.webp",
     "detail": "/breeds/murray-river-retriever-9018e822.webp",
+    "mask": "/breeds/murray-river-retriever-9018e822-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4918,6 +5002,7 @@
    "image": {
     "grid": "/breeds/nova-scotia-duck-tolling-retriever-bc115695-grid.webp",
     "detail": "/breeds/nova-scotia-duck-tolling-retriever-bc115695.webp",
+    "mask": "/breeds/nova-scotia-duck-tolling-retriever-bc115695-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -4975,6 +5060,7 @@
    "image": {
     "grid": "/breeds/pointer-efeffce4-grid.webp",
     "detail": "/breeds/pointer-efeffce4.webp",
+    "mask": "/breeds/pointer-efeffce4-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5033,6 +5119,7 @@
    "image": {
     "grid": "/breeds/spanish-water-dog-431f083f-grid.webp",
     "detail": "/breeds/spanish-water-dog-431f083f.webp",
+    "mask": "/breeds/spanish-water-dog-431f083f-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5089,6 +5176,7 @@
    "image": {
     "grid": "/breeds/sussex-spaniel-87102b9d-grid.webp",
     "detail": "/breeds/sussex-spaniel-87102b9d.webp",
+    "mask": "/breeds/sussex-spaniel-87102b9d-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5147,6 +5235,7 @@
    "image": {
     "grid": "/breeds/weimaraner-0ed5c94b-grid.webp",
     "detail": "/breeds/weimaraner-0ed5c94b.webp",
+    "mask": "/breeds/weimaraner-0ed5c94b-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5206,6 +5295,7 @@
    "image": {
     "grid": "/breeds/weimaraner-longhair-7c75ca6e-grid.webp",
     "detail": "/breeds/weimaraner-longhair-7c75ca6e.webp",
+    "mask": "/breeds/weimaraner-longhair-7c75ca6e-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5265,6 +5355,7 @@
    "image": {
     "grid": "/breeds/welsh-springer-spaniel-626cb3b9-grid.webp",
     "detail": "/breeds/welsh-springer-spaniel-626cb3b9.webp",
+    "mask": "/breeds/welsh-springer-spaniel-626cb3b9-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5324,6 +5415,7 @@
    "image": {
     "grid": "/breeds/wirehaired-slovakian-pointer-bad466b1-grid.webp",
     "detail": "/breeds/wirehaired-slovakian-pointer-bad466b1.webp",
+    "mask": "/breeds/wirehaired-slovakian-pointer-bad466b1-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5380,6 +5472,7 @@
    "image": {
     "grid": "/breeds/afghan-hound-8fdae799-grid.webp",
     "detail": "/breeds/afghan-hound-8fdae799.webp",
+    "mask": "/breeds/afghan-hound-8fdae799-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5435,6 +5528,7 @@
    "image": {
     "grid": "/breeds/azawakh-790f5d9c-grid.webp",
     "detail": "/breeds/azawakh-790f5d9c.webp",
+    "mask": "/breeds/azawakh-790f5d9c-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5490,6 +5584,7 @@
    "image": {
     "grid": "/breeds/basenji-e8b0e877-grid.webp",
     "detail": "/breeds/basenji-e8b0e877.webp",
+    "mask": "/breeds/basenji-e8b0e877-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5550,6 +5645,7 @@
    "image": {
     "grid": "/breeds/basset-fauve-de-bretagne-6fa24627-grid.webp",
     "detail": "/breeds/basset-fauve-de-bretagne-6fa24627.webp",
+    "mask": "/breeds/basset-fauve-de-bretagne-6fa24627-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5605,6 +5701,7 @@
    "image": {
     "grid": "/breeds/basset-hound-aaed6ec9-grid.webp",
     "detail": "/breeds/basset-hound-aaed6ec9.webp",
+    "mask": "/breeds/basset-hound-aaed6ec9-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5663,6 +5760,7 @@
    "image": {
     "grid": "/breeds/bavarian-mountain-scent-hound-f5a882b4-grid.webp",
     "detail": "/breeds/bavarian-mountain-scent-hound-f5a882b4.webp",
+    "mask": "/breeds/bavarian-mountain-scent-hound-f5a882b4-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5718,6 +5816,7 @@
    "image": {
     "grid": "/breeds/beagle-c7aee472-grid.webp",
     "detail": "/breeds/beagle-c7aee472.webp",
+    "mask": "/breeds/beagle-c7aee472-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5776,6 +5875,7 @@
    "image": {
     "grid": "/breeds/black-and-tan-coonhound-0f99e237-grid.webp",
     "detail": "/breeds/black-and-tan-coonhound-0f99e237.webp",
+    "mask": "/breeds/black-and-tan-coonhound-0f99e237-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5831,6 +5931,7 @@
    "image": {
     "grid": "/breeds/bloodhound-3eb92ead-grid.webp",
     "detail": "/breeds/bloodhound-3eb92ead.webp",
+    "mask": "/breeds/bloodhound-3eb92ead-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5888,6 +5989,7 @@
    "image": {
     "grid": "/breeds/bluetick-coonhound-9fa83bed-grid.webp",
     "detail": "/breeds/bluetick-coonhound-9fa83bed.webp",
+    "mask": "/breeds/bluetick-coonhound-9fa83bed-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -5946,6 +6048,7 @@
    "image": {
     "grid": "/breeds/borzoi-6836b06b-grid.webp",
     "detail": "/breeds/borzoi-6836b06b.webp",
+    "mask": "/breeds/borzoi-6836b06b-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6002,6 +6105,7 @@
    "image": {
     "grid": "/breeds/cirneco-dell-etna-740b909d-grid.webp",
     "detail": "/breeds/cirneco-dell-etna-740b909d.webp",
+    "mask": "/breeds/cirneco-dell-etna-740b909d-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6072,6 +6176,7 @@
    "image": {
     "grid": "/breeds/dachshund-477d9c4c-grid.webp",
     "detail": "/breeds/dachshund-477d9c4c.webp",
+    "mask": "/breeds/dachshund-477d9c4c-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6130,6 +6235,7 @@
    "image": {
     "grid": "/breeds/deerhound-9f459ae4-grid.webp",
     "detail": "/breeds/deerhound-9f459ae4.webp",
+    "mask": "/breeds/deerhound-9f459ae4-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6186,6 +6292,7 @@
    "image": {
     "grid": "/breeds/finnish-spitz-bba171c3-grid.webp",
     "detail": "/breeds/finnish-spitz-bba171c3.webp",
+    "mask": "/breeds/finnish-spitz-bba171c3-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6241,6 +6348,7 @@
    "image": {
     "grid": "/breeds/foxhound-b3516ea9-grid.webp",
     "detail": "/breeds/foxhound-b3516ea9.webp",
+    "mask": "/breeds/foxhound-b3516ea9-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6300,6 +6408,7 @@
    "image": {
     "grid": "/breeds/grand-basset-griffon-vendeen-3bf0ab10-grid.webp",
     "detail": "/breeds/grand-basset-griffon-vendeen-3bf0ab10.webp",
+    "mask": "/breeds/grand-basset-griffon-vendeen-3bf0ab10-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6355,6 +6464,7 @@
    "image": {
     "grid": "/breeds/greyhound-cfdb8246-grid.webp",
     "detail": "/breeds/greyhound-cfdb8246.webp",
+    "mask": "/breeds/greyhound-cfdb8246-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6412,6 +6522,7 @@
    "image": {
     "grid": "/breeds/hamiltonstovare-dbc9e135-grid.webp",
     "detail": "/breeds/hamiltonstovare-dbc9e135.webp",
+    "mask": "/breeds/hamiltonstovare-dbc9e135-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6467,6 +6578,7 @@
    "image": {
     "grid": "/breeds/harrier-b5643e6e-grid.webp",
     "detail": "/breeds/harrier-b5643e6e.webp",
+    "mask": "/breeds/harrier-b5643e6e-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6522,6 +6634,7 @@
    "image": {
     "grid": "/breeds/ibizan-hound-6e35b3ae-grid.webp",
     "detail": "/breeds/ibizan-hound-6e35b3ae.webp",
+    "mask": "/breeds/ibizan-hound-6e35b3ae-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6580,6 +6693,7 @@
    "image": {
     "grid": "/breeds/irish-wolfhound-2ea006a1-grid.webp",
     "detail": "/breeds/irish-wolfhound-2ea006a1.webp",
+    "mask": "/breeds/irish-wolfhound-2ea006a1-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6638,6 +6752,7 @@
    "image": {
     "grid": "/breeds/norwegian-elkhound-4dd2dfae-grid.webp",
     "detail": "/breeds/norwegian-elkhound-4dd2dfae.webp",
+    "mask": "/breeds/norwegian-elkhound-4dd2dfae-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6694,6 +6809,7 @@
    "image": {
     "grid": "/breeds/otterhound-9d03fadc-grid.webp",
     "detail": "/breeds/otterhound-9d03fadc.webp",
+    "mask": "/breeds/otterhound-9d03fadc-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6753,6 +6869,7 @@
    "image": {
     "grid": "/breeds/petit-basset-griffon-vendeen-f25450da-grid.webp",
     "detail": "/breeds/petit-basset-griffon-vendeen-f25450da.webp",
+    "mask": "/breeds/petit-basset-griffon-vendeen-f25450da-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6808,6 +6925,7 @@
    "image": {
     "grid": "/breeds/pharaoh-hound-868f0ca1-grid.webp",
     "detail": "/breeds/pharaoh-hound-868f0ca1.webp",
+    "mask": "/breeds/pharaoh-hound-868f0ca1-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6863,6 +6981,7 @@
    "image": {
     "grid": "/breeds/porcelaine-6c45a7f1-grid.webp",
     "detail": "/breeds/porcelaine-6c45a7f1.webp",
+    "mask": "/breeds/porcelaine-6c45a7f1-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6928,6 +7047,7 @@
    "image": {
     "grid": "/breeds/portuguese-podengo-055aa432-grid.webp",
     "detail": "/breeds/portuguese-podengo-055aa432.webp",
+    "mask": "/breeds/portuguese-podengo-055aa432-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -6992,6 +7112,7 @@
    "image": {
     "grid": "/breeds/rabbit-dachshund-82382be2-grid.webp",
     "detail": "/breeds/rabbit-dachshund-82382be2.webp",
+    "mask": "/breeds/rabbit-dachshund-82382be2-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7049,6 +7170,7 @@
    "image": {
     "grid": "/breeds/rhodesian-ridgeback-42f214f0-grid.webp",
     "detail": "/breeds/rhodesian-ridgeback-42f214f0.webp",
+    "mask": "/breeds/rhodesian-ridgeback-42f214f0-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7105,6 +7227,7 @@
    "image": {
     "grid": "/breeds/saluki-c3d7b96c-grid.webp",
     "detail": "/breeds/saluki-c3d7b96c.webp",
+    "mask": "/breeds/saluki-c3d7b96c-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7160,6 +7283,7 @@
    "image": {
     "grid": "/breeds/sloughi-6adb6859-grid.webp",
     "detail": "/breeds/sloughi-6adb6859.webp",
+    "mask": "/breeds/sloughi-6adb6859-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7215,6 +7339,7 @@
    "image": {
     "grid": "/breeds/whippet-2912187e-grid.webp",
     "detail": "/breeds/whippet-2912187e.webp",
+    "mask": "/breeds/whippet-2912187e-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7276,6 +7401,7 @@
    "image": {
     "grid": "/breeds/australian-cattle-dog-39091f36-grid.webp",
     "detail": "/breeds/australian-cattle-dog-39091f36.webp",
+    "mask": "/breeds/australian-cattle-dog-39091f36-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7333,6 +7459,7 @@
    "image": {
     "grid": "/breeds/australian-kelpie-15c5df2d-grid.webp",
     "detail": "/breeds/australian-kelpie-15c5df2d.webp",
+    "mask": "/breeds/australian-kelpie-15c5df2d-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7392,6 +7519,7 @@
    "image": {
     "grid": "/breeds/australian-shepherd-825f6772-grid.webp",
     "detail": "/breeds/australian-shepherd-825f6772.webp",
+    "mask": "/breeds/australian-shepherd-825f6772-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7452,6 +7580,7 @@
    "image": {
     "grid": "/breeds/australian-stumpy-tail-cattle-dog-af36578f-grid.webp",
     "detail": "/breeds/australian-stumpy-tail-cattle-dog-af36578f.webp",
+    "mask": "/breeds/australian-stumpy-tail-cattle-dog-af36578f-mask.webp",
     "width": 770,
     "height": 513,
     "focus": [
@@ -7510,6 +7639,7 @@
    "image": {
     "grid": "/breeds/bearded-collie-9d358d46-grid.webp",
     "detail": "/breeds/bearded-collie-9d358d46.webp",
+    "mask": "/breeds/bearded-collie-9d358d46-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7566,6 +7696,7 @@
    "image": {
     "grid": "/breeds/beauceron-berger-de-beauce-7c04facf-grid.webp",
     "detail": "/breeds/beauceron-berger-de-beauce-7c04facf.webp",
+    "mask": "/breeds/beauceron-berger-de-beauce-7c04facf-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7636,6 +7767,7 @@
    "image": {
     "grid": "/breeds/belgian-shepherd-dog-cf383ad1-grid.webp",
     "detail": "/breeds/belgian-shepherd-dog-cf383ad1.webp",
+    "mask": "/breeds/belgian-shepherd-dog-cf383ad1-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7693,6 +7825,7 @@
    "image": {
     "grid": "/breeds/bergamasco-shepherd-dog-dc8068fa-grid.webp",
     "detail": "/breeds/bergamasco-shepherd-dog-dc8068fa.webp",
+    "mask": "/breeds/bergamasco-shepherd-dog-dc8068fa-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7749,6 +7882,7 @@
    "image": {
     "grid": "/breeds/berger-picard-099aebcc-grid.webp",
     "detail": "/breeds/berger-picard-099aebcc.webp",
+    "mask": "/breeds/berger-picard-099aebcc-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7805,6 +7939,7 @@
    "image": {
     "grid": "/breeds/border-collie-b236ae62-grid.webp",
     "detail": "/breeds/border-collie-b236ae62.webp",
+    "mask": "/breeds/border-collie-b236ae62-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7864,6 +7999,7 @@
    "image": {
     "grid": "/breeds/bouvier-des-flandres-ee5addf4-grid.webp",
     "detail": "/breeds/bouvier-des-flandres-ee5addf4.webp",
+    "mask": "/breeds/bouvier-des-flandres-ee5addf4-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7920,6 +8056,7 @@
    "image": {
     "grid": "/breeds/briard-baaf7cbc-grid.webp",
     "detail": "/breeds/briard-baaf7cbc.webp",
+    "mask": "/breeds/briard-baaf7cbc-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -7979,6 +8116,7 @@
    "image": {
     "grid": "/breeds/collie-rough-6ec48a97-grid.webp",
     "detail": "/breeds/collie-rough-6ec48a97.webp",
+    "mask": "/breeds/collie-rough-6ec48a97-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -8036,6 +8174,7 @@
    "image": {
     "grid": "/breeds/collie-smooth-8136246f-grid.webp",
     "detail": "/breeds/collie-smooth-8136246f.webp",
+    "mask": "/breeds/collie-smooth-8136246f-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -8095,6 +8234,7 @@
    "image": {
     "grid": "/breeds/dutch-shepherd-dog-40fda461-grid.webp",
     "detail": "/breeds/dutch-shepherd-dog-40fda461.webp",
+    "mask": "/breeds/dutch-shepherd-dog-40fda461-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -8153,6 +8293,7 @@
    "image": {
     "grid": "/breeds/finnish-lapphund-b3445ff8-grid.webp",
     "detail": "/breeds/finnish-lapphund-b3445ff8.webp",
+    "mask": "/breeds/finnish-lapphund-b3445ff8-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -8214,6 +8355,7 @@
    "image": {
     "grid": "/breeds/german-shepherd-dog-61c1d5e2-grid.webp",
     "detail": "/breeds/german-shepherd-dog-61c1d5e2.webp",
+    "mask": "/breeds/german-shepherd-dog-61c1d5e2-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -8275,6 +8417,7 @@
    "image": {
     "grid": "/breeds/german-shepherd-dog-long-stock-coat-f9a74abc-grid.webp",
     "detail": "/breeds/german-shepherd-dog-long-stock-coat-f9a74abc.webp",
+    "mask": "/breeds/german-shepherd-dog-long-stock-coat-f9a74abc-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -8331,6 +8474,7 @@
    "image": {
     "grid": "/breeds/icelandic-sheepdog-76d67b03-grid.webp",
     "detail": "/breeds/icelandic-sheepdog-76d67b03.webp",
+    "mask": "/breeds/icelandic-sheepdog-76d67b03-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -8387,6 +8531,7 @@
    "image": {
     "grid": "/breeds/komondor-e05a5fe1-grid.webp",
     "detail": "/breeds/komondor-e05a5fe1.webp",
+    "mask": "/breeds/komondor-e05a5fe1-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -8443,6 +8588,7 @@
    "image": {
     "grid": "/breeds/kuvasz-d4b40907-grid.webp",
     "detail": "/breeds/kuvasz-d4b40907.webp",
+    "mask": "/breeds/kuvasz-d4b40907-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -8501,6 +8647,7 @@
    "image": {
     "grid": "/breeds/maremma-sheepdog-f8e38099-grid.webp",
     "detail": "/breeds/maremma-sheepdog-f8e38099.webp",
+    "mask": "/breeds/maremma-sheepdog-f8e38099-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -8562,6 +8709,7 @@
    "image": {
     "grid": "/breeds/miniature-american-shepherd-ee66e693-grid.webp",
     "detail": "/breeds/miniature-american-shepherd-ee66e693.webp",
+    "mask": "/breeds/miniature-american-shepherd-ee66e693-mask.webp",
     "width": 1200,
     "height": 800,
     "focus": [
@@ -8617,6 +8765,7 @@
    "image": {
     "grid": "/breeds/mudi-5b265de7-grid.webp",
     "detail": "/breeds/mudi-5b265de7.webp",
+    "mask": "/breeds/mudi-5b265de7-mask.webp",
     "width": 1200,
     "height": 1067,
     "focus": [
@@ -8674,6 +8823,7 @@
    "image": {
     "grid": "/breeds/norwegian-buhund-41f55b0b-grid.webp",
     "detail": "/breeds/norwegian-buhund-41f55b0b.webp",
+    "mask": "/breeds/norwegian-buhund-41f55b0b-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -8733,6 +8883,7 @@
    "image": {
     "grid": "/breeds/old-english-sheepdog-a7f78ce3-grid.webp",
     "detail": "/breeds/old-english-sheepdog-a7f78ce3.webp",
+    "mask": "/breeds/old-english-sheepdog-a7f78ce3-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -8792,6 +8943,7 @@
    "image": {
     "grid": "/breeds/polish-lowland-sheepdog-79b4634a-grid.webp",
     "detail": "/breeds/polish-lowland-sheepdog-79b4634a.webp",
+    "mask": "/breeds/polish-lowland-sheepdog-79b4634a-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -8848,6 +9000,7 @@
    "image": {
     "grid": "/breeds/puli-a4c6cce3-grid.webp",
     "detail": "/breeds/puli-a4c6cce3.webp",
+    "mask": "/breeds/puli-a4c6cce3-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -8904,6 +9057,7 @@
    "image": {
     "grid": "/breeds/pumi-e7cd817a-grid.webp",
     "detail": "/breeds/pumi-e7cd817a.webp",
+    "mask": "/breeds/pumi-e7cd817a-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -8961,6 +9115,7 @@
    "image": {
     "grid": "/breeds/pyrenean-sheepdog-longhaired-f43a88d8-grid.webp",
     "detail": "/breeds/pyrenean-sheepdog-longhaired-f43a88d8.webp",
+    "mask": "/breeds/pyrenean-sheepdog-longhaired-f43a88d8-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9019,6 +9174,7 @@
    "image": {
     "grid": "/breeds/shetland-sheepdog-aae70480-grid.webp",
     "detail": "/breeds/shetland-sheepdog-aae70480.webp",
+    "mask": "/breeds/shetland-sheepdog-aae70480-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9075,6 +9231,7 @@
    "image": {
     "grid": "/breeds/swedish-lapphund-cb134afd-grid.webp",
     "detail": "/breeds/swedish-lapphund-cb134afd.webp",
+    "mask": "/breeds/swedish-lapphund-cb134afd-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9133,6 +9290,7 @@
    "image": {
     "grid": "/breeds/swedish-vallhund-56f9da28-grid.webp",
     "detail": "/breeds/swedish-vallhund-56f9da28.webp",
+    "mask": "/breeds/swedish-vallhund-56f9da28-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9190,6 +9348,7 @@
    "image": {
     "grid": "/breeds/tatra-shepherd-dog-c4e63a3b-grid.webp",
     "detail": "/breeds/tatra-shepherd-dog-c4e63a3b.webp",
+    "mask": "/breeds/tatra-shepherd-dog-c4e63a3b-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9249,6 +9408,7 @@
    "image": {
     "grid": "/breeds/welsh-corgi-cardigan-1fded1aa-grid.webp",
     "detail": "/breeds/welsh-corgi-cardigan-1fded1aa.webp",
+    "mask": "/breeds/welsh-corgi-cardigan-1fded1aa-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9308,6 +9468,7 @@
    "image": {
     "grid": "/breeds/welsh-corgi-pembroke-c2fd4396-grid.webp",
     "detail": "/breeds/welsh-corgi-pembroke-c2fd4396.webp",
+    "mask": "/breeds/welsh-corgi-pembroke-c2fd4396-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9368,6 +9529,7 @@
    "image": {
     "grid": "/breeds/white-swiss-shepherd-dog-33e3da48-grid.webp",
     "detail": "/breeds/white-swiss-shepherd-dog-33e3da48.webp",
+    "mask": "/breeds/white-swiss-shepherd-dog-33e3da48-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9426,6 +9588,7 @@
    "image": {
     "grid": "/breeds/akita-a0fac19d-grid.webp",
     "detail": "/breeds/akita-a0fac19d.webp",
+    "mask": "/breeds/akita-a0fac19d-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9485,6 +9648,7 @@
    "image": {
     "grid": "/breeds/akita-japanese-d46b7a22-grid.webp",
     "detail": "/breeds/akita-japanese-d46b7a22.webp",
+    "mask": "/breeds/akita-japanese-d46b7a22-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9543,6 +9707,7 @@
    "image": {
     "grid": "/breeds/alaskan-malamute-36d1c565-grid.webp",
     "detail": "/breeds/alaskan-malamute-36d1c565.webp",
+    "mask": "/breeds/alaskan-malamute-36d1c565-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9602,6 +9767,7 @@
    "image": {
     "grid": "/breeds/anatolian-shepherd-dog-b66e797f-grid.webp",
     "detail": "/breeds/anatolian-shepherd-dog-b66e797f.webp",
+    "mask": "/breeds/anatolian-shepherd-dog-b66e797f-mask.webp",
     "width": 1200,
     "height": 841,
     "focus": [
@@ -9662,6 +9828,7 @@
    "image": {
     "grid": "/breeds/bernese-mountain-dog-bb53d78f-grid.webp",
     "detail": "/breeds/bernese-mountain-dog-bb53d78f.webp",
+    "mask": "/breeds/bernese-mountain-dog-bb53d78f-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9717,6 +9884,7 @@
    "image": {
     "grid": "/breeds/boxer-4a76a8d2-grid.webp",
     "detail": "/breeds/boxer-4a76a8d2.webp",
+    "mask": "/breeds/boxer-4a76a8d2-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9772,6 +9940,7 @@
    "image": {
     "grid": "/breeds/bullmastiff-15bd5535-grid.webp",
     "detail": "/breeds/bullmastiff-15bd5535.webp",
+    "mask": "/breeds/bullmastiff-15bd5535-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9828,6 +9997,7 @@
    "image": {
     "grid": "/breeds/canadian-eskimo-dog-d145f0eb-grid.webp",
     "detail": "/breeds/canadian-eskimo-dog-d145f0eb.webp",
+    "mask": "/breeds/canadian-eskimo-dog-d145f0eb-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9886,6 +10056,7 @@
    "image": {
     "grid": "/breeds/cane-corso-98d0532d-grid.webp",
     "detail": "/breeds/cane-corso-98d0532d.webp",
+    "mask": "/breeds/cane-corso-98d0532d-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -9945,6 +10116,7 @@
    "image": {
     "grid": "/breeds/caucasian-shepherd-dog-bcbdd52d-grid.webp",
     "detail": "/breeds/caucasian-shepherd-dog-bcbdd52d.webp",
+    "mask": "/breeds/caucasian-shepherd-dog-bcbdd52d-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10004,6 +10176,7 @@
    "image": {
     "grid": "/breeds/central-asian-shepherd-dog-a5dbb34a-grid.webp",
     "detail": "/breeds/central-asian-shepherd-dog-a5dbb34a.webp",
+    "mask": "/breeds/central-asian-shepherd-dog-a5dbb34a-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10063,6 +10236,7 @@
    "image": {
     "grid": "/breeds/dobermann-0637cfa7-grid.webp",
     "detail": "/breeds/dobermann-0637cfa7.webp",
+    "mask": "/breeds/dobermann-0637cfa7-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10121,6 +10295,7 @@
    "image": {
     "grid": "/breeds/dogue-de-bordeaux-ff5e273d-grid.webp",
     "detail": "/breeds/dogue-de-bordeaux-ff5e273d.webp",
+    "mask": "/breeds/dogue-de-bordeaux-ff5e273d-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10178,6 +10353,7 @@
    "image": {
     "grid": "/breeds/estrela-mountain-dog-7855b706-grid.webp",
     "detail": "/breeds/estrela-mountain-dog-7855b706.webp",
+    "mask": "/breeds/estrela-mountain-dog-7855b706-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10233,6 +10409,7 @@
    "image": {
     "grid": "/breeds/german-pinscher-d07996d7-grid.webp",
     "detail": "/breeds/german-pinscher-d07996d7.webp",
+    "mask": "/breeds/german-pinscher-d07996d7-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10291,6 +10468,7 @@
    "image": {
     "grid": "/breeds/great-swiss-mountain-dog-4c64b426-grid.webp",
     "detail": "/breeds/great-swiss-mountain-dog-4c64b426.webp",
+    "mask": "/breeds/great-swiss-mountain-dog-4c64b426-mask.webp",
     "width": 1200,
     "height": 898,
     "focus": [
@@ -10348,6 +10526,7 @@
    "image": {
     "grid": "/breeds/kangal-shepherd-dog-165ef2b6-grid.webp",
     "detail": "/breeds/kangal-shepherd-dog-165ef2b6.webp",
+    "mask": "/breeds/kangal-shepherd-dog-165ef2b6-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10407,6 +10586,7 @@
    "image": {
     "grid": "/breeds/landseer-european-continental-type-a09dd5ef-grid.webp",
     "detail": "/breeds/landseer-european-continental-type-a09dd5ef.webp",
+    "mask": "/breeds/landseer-european-continental-type-a09dd5ef-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10465,6 +10645,7 @@
    "image": {
     "grid": "/breeds/leonberger-5f43ce2f-grid.webp",
     "detail": "/breeds/leonberger-5f43ce2f.webp",
+    "mask": "/breeds/leonberger-5f43ce2f-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10522,6 +10703,7 @@
    "image": {
     "grid": "/breeds/mastiff-f684d8e2-grid.webp",
     "detail": "/breeds/mastiff-f684d8e2.webp",
+    "mask": "/breeds/mastiff-f684d8e2-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10580,6 +10762,7 @@
    "image": {
     "grid": "/breeds/neapolitan-mastiff-db6b3fb3-grid.webp",
     "detail": "/breeds/neapolitan-mastiff-db6b3fb3.webp",
+    "mask": "/breeds/neapolitan-mastiff-db6b3fb3-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10638,6 +10821,7 @@
    "image": {
     "grid": "/breeds/newfoundland-32d0817f-grid.webp",
     "detail": "/breeds/newfoundland-32d0817f.webp",
+    "mask": "/breeds/newfoundland-32d0817f-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10697,6 +10881,7 @@
    "image": {
     "grid": "/breeds/portuguese-water-dog-d0ddfd91-grid.webp",
     "detail": "/breeds/portuguese-water-dog-d0ddfd91.webp",
+    "mask": "/breeds/portuguese-water-dog-d0ddfd91-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10753,6 +10938,7 @@
    "image": {
     "grid": "/breeds/pyrenean-mastiff-a1c292f9-grid.webp",
     "detail": "/breeds/pyrenean-mastiff-a1c292f9.webp",
+    "mask": "/breeds/pyrenean-mastiff-a1c292f9-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10813,6 +10999,7 @@
    "image": {
     "grid": "/breeds/pyrenean-mountain-dog-e8ee29d8-grid.webp",
     "detail": "/breeds/pyrenean-mountain-dog-e8ee29d8.webp",
+    "mask": "/breeds/pyrenean-mountain-dog-e8ee29d8-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10871,6 +11058,7 @@
    "image": {
     "grid": "/breeds/rottweiler-aee1d0f4-grid.webp",
     "detail": "/breeds/rottweiler-aee1d0f4.webp",
+    "mask": "/breeds/rottweiler-aee1d0f4-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10931,6 +11119,7 @@
    "image": {
     "grid": "/breeds/russian-black-terrier-473c1a28-grid.webp",
     "detail": "/breeds/russian-black-terrier-473c1a28.webp",
+    "mask": "/breeds/russian-black-terrier-473c1a28-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -10990,6 +11179,7 @@
    "image": {
     "grid": "/breeds/samoyed-b28f7acf-grid.webp",
     "detail": "/breeds/samoyed-b28f7acf.webp",
+    "mask": "/breeds/samoyed-b28f7acf-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -11048,6 +11238,7 @@
    "image": {
     "grid": "/breeds/schnauzer-0389f1bf-grid.webp",
     "detail": "/breeds/schnauzer-0389f1bf.webp",
+    "mask": "/breeds/schnauzer-0389f1bf-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -11106,6 +11297,7 @@
    "image": {
     "grid": "/breeds/schnauzer-giant-8a9c6780-grid.webp",
     "detail": "/breeds/schnauzer-giant-8a9c6780.webp",
+    "mask": "/breeds/schnauzer-giant-8a9c6780-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -11165,6 +11357,7 @@
    "image": {
     "grid": "/breeds/schnauzer-miniature-221d5bd0-grid.webp",
     "detail": "/breeds/schnauzer-miniature-221d5bd0.webp",
+    "mask": "/breeds/schnauzer-miniature-221d5bd0-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -11223,6 +11416,7 @@
    "image": {
     "grid": "/breeds/shiba-inu-21c50abb-grid.webp",
     "detail": "/breeds/shiba-inu-21c50abb.webp",
+    "mask": "/breeds/shiba-inu-21c50abb-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -11279,6 +11473,7 @@
    "image": {
     "grid": "/breeds/shikoku-34351841-grid.webp",
     "detail": "/breeds/shikoku-34351841.webp",
+    "mask": "/breeds/shikoku-34351841-mask.webp",
     "width": 1200,
     "height": 1099,
     "focus": [
@@ -11336,6 +11531,7 @@
    "image": {
     "grid": "/breeds/siberian-husky-7fc9c9e5-grid.webp",
     "detail": "/breeds/siberian-husky-7fc9c9e5.webp",
+    "mask": "/breeds/siberian-husky-7fc9c9e5-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -11392,6 +11588,7 @@
    "image": {
     "grid": "/breeds/spanish-mastiff-18f3f890-grid.webp",
     "detail": "/breeds/spanish-mastiff-18f3f890.webp",
+    "mask": "/breeds/spanish-mastiff-18f3f890-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -11450,6 +11647,7 @@
    "image": {
     "grid": "/breeds/st-bernard-c9f42924-grid.webp",
     "detail": "/breeds/st-bernard-c9f42924.webp",
+    "mask": "/breeds/st-bernard-c9f42924-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -11506,6 +11704,7 @@
    "image": {
     "grid": "/breeds/tibetan-mastiff-e1e905f8-grid.webp",
     "detail": "/breeds/tibetan-mastiff-e1e905f8.webp",
+    "mask": "/breeds/tibetan-mastiff-e1e905f8-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -11562,6 +11761,7 @@
    "image": {
     "grid": "/breeds/tornjak-81d477ab-grid.webp",
     "detail": "/breeds/tornjak-81d477ab.webp",
+    "mask": "/breeds/tornjak-81d477ab-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -11620,6 +11820,7 @@
    "image": {
     "grid": "/breeds/yakutian-laika-822f602c-grid.webp",
     "detail": "/breeds/yakutian-laika-822f602c.webp",
+    "mask": "/breeds/yakutian-laika-822f602c-mask.webp",
     "width": 1200,
     "height": 841,
     "focus": [
@@ -11681,6 +11882,7 @@
    "image": {
     "grid": "/breeds/yugoslavian-shepherd-dog-sharplanina-ff98295d-grid.webp",
     "detail": "/breeds/yugoslavian-shepherd-dog-sharplanina-ff98295d.webp",
+    "mask": "/breeds/yugoslavian-shepherd-dog-sharplanina-ff98295d-mask.webp",
     "width": 1200,
     "height": 800,
     "focus": [
@@ -11737,6 +11939,7 @@
    "image": {
     "grid": "/breeds/australasian-bosdog-b3ed281d-grid.webp",
     "detail": "/breeds/australasian-bosdog-b3ed281d.webp",
+    "mask": "/breeds/australasian-bosdog-b3ed281d-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -11792,6 +11995,7 @@
    "image": {
     "grid": "/breeds/boston-terrier-ebe8ed11-grid.webp",
     "detail": "/breeds/boston-terrier-ebe8ed11.webp",
+    "mask": "/breeds/boston-terrier-ebe8ed11-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -11850,6 +12054,7 @@
    "image": {
     "grid": "/breeds/british-bulldog-f3067c8a-grid.webp",
     "detail": "/breeds/british-bulldog-f3067c8a.webp",
+    "mask": "/breeds/british-bulldog-f3067c8a-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -11906,6 +12111,7 @@
    "image": {
     "grid": "/breeds/canaan-dog-a7f85ab3-grid.webp",
     "detail": "/breeds/canaan-dog-a7f85ab3.webp",
+    "mask": "/breeds/canaan-dog-a7f85ab3-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -11964,6 +12170,7 @@
    "image": {
     "grid": "/breeds/chow-chow-cc38071e-grid.webp",
     "detail": "/breeds/chow-chow-cc38071e.webp",
+    "mask": "/breeds/chow-chow-cc38071e-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -12021,6 +12228,7 @@
    "image": {
     "grid": "/breeds/dalmatian-834819f6-grid.webp",
     "detail": "/breeds/dalmatian-834819f6.webp",
+    "mask": "/breeds/dalmatian-834819f6-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -12077,6 +12285,7 @@
    "image": {
     "grid": "/breeds/eurasier-5594b3aa-grid.webp",
     "detail": "/breeds/eurasier-5594b3aa.webp",
+    "mask": "/breeds/eurasier-5594b3aa-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -12135,6 +12344,7 @@
    "image": {
     "grid": "/breeds/french-bulldog-9e0a0347-grid.webp",
     "detail": "/breeds/french-bulldog-9e0a0347.webp",
+    "mask": "/breeds/french-bulldog-9e0a0347-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -12195,6 +12405,7 @@
    "image": {
     "grid": "/breeds/german-spitz-b3465eab-grid.webp",
     "detail": "/breeds/german-spitz-b3465eab.webp",
+    "mask": "/breeds/german-spitz-b3465eab-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -12252,6 +12463,7 @@
    "image": {
     "grid": "/breeds/great-dane-a3dbdd6e-grid.webp",
     "detail": "/breeds/great-dane-a3dbdd6e.webp",
+    "mask": "/breeds/great-dane-a3dbdd6e-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -12308,6 +12520,7 @@
    "image": {
     "grid": "/breeds/japanese-spitz-8a6623e4-grid.webp",
     "detail": "/breeds/japanese-spitz-8a6623e4.webp",
+    "mask": "/breeds/japanese-spitz-8a6623e4-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -12364,6 +12577,7 @@
    "image": {
     "grid": "/breeds/karelian-bear-dog-0acb57c0-grid.webp",
     "detail": "/breeds/karelian-bear-dog-0acb57c0.webp",
+    "mask": "/breeds/karelian-bear-dog-0acb57c0-mask.webp",
     "width": 1200,
     "height": 841,
     "focus": [
@@ -12422,6 +12636,7 @@
    "image": {
     "grid": "/breeds/keeshond-436c39ce-grid.webp",
     "detail": "/breeds/keeshond-436c39ce.webp",
+    "mask": "/breeds/keeshond-436c39ce-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -12480,6 +12695,7 @@
    "image": {
     "grid": "/breeds/lhasa-apso-ee0bcc61-grid.webp",
     "detail": "/breeds/lhasa-apso-ee0bcc61.webp",
+    "mask": "/breeds/lhasa-apso-ee0bcc61-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -12539,6 +12755,7 @@
    "image": {
     "grid": "/breeds/peruvian-hairless-dog-large-5d370d56-grid.webp",
     "detail": "/breeds/peruvian-hairless-dog-large-5d370d56.webp",
+    "mask": "/breeds/peruvian-hairless-dog-large-5d370d56-mask.webp",
     "width": 1200,
     "height": 900,
     "focus": [
@@ -12597,6 +12814,7 @@
    "image": {
     "grid": "/breeds/peruvian-hairless-dog-medium-4a849c91-grid.webp",
     "detail": "/breeds/peruvian-hairless-dog-medium-4a849c91.webp",
+    "mask": "/breeds/peruvian-hairless-dog-medium-4a849c91-mask.webp",
     "width": 1200,
     "height": 995,
     "focus": [
@@ -12655,6 +12873,7 @@
    "image": {
     "grid": "/breeds/peruvian-hairless-dog-small-9ab4e8b7-grid.webp",
     "detail": "/breeds/peruvian-hairless-dog-small-9ab4e8b7.webp",
+    "mask": "/breeds/peruvian-hairless-dog-small-9ab4e8b7-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -12714,6 +12933,7 @@
    "image": {
     "grid": "/breeds/poodle-miniature-c3c595f8-grid.webp",
     "detail": "/breeds/poodle-miniature-c3c595f8.webp",
+    "mask": "/breeds/poodle-miniature-c3c595f8-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -12772,6 +12992,7 @@
    "image": {
     "grid": "/breeds/poodle-standard-731818b5-grid.webp",
     "detail": "/breeds/poodle-standard-731818b5.webp",
+    "mask": "/breeds/poodle-standard-731818b5-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -12830,6 +13051,7 @@
    "image": {
     "grid": "/breeds/poodle-toy-2c4797f9-grid.webp",
     "detail": "/breeds/poodle-toy-2c4797f9.webp",
+    "mask": "/breeds/poodle-toy-2c4797f9-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -12886,6 +13108,7 @@
    "image": {
     "grid": "/breeds/schipperke-86c0a71c-grid.webp",
     "detail": "/breeds/schipperke-86c0a71c.webp",
+    "mask": "/breeds/schipperke-86c0a71c-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -12944,6 +13167,7 @@
    "image": {
     "grid": "/breeds/shar-pei-74167ae9-grid.webp",
     "detail": "/breeds/shar-pei-74167ae9.webp",
+    "mask": "/breeds/shar-pei-74167ae9-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -13002,6 +13226,7 @@
    "image": {
     "grid": "/breeds/shih-tzu-7fde6546-grid.webp",
     "detail": "/breeds/shih-tzu-7fde6546.webp",
+    "mask": "/breeds/shih-tzu-7fde6546-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -13058,6 +13283,7 @@
    "image": {
     "grid": "/breeds/tibetan-terrier-e086c1d6-grid.webp",
     "detail": "/breeds/tibetan-terrier-e086c1d6.webp",
+    "mask": "/breeds/tibetan-terrier-e086c1d6-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -13120,6 +13346,7 @@
    "image": {
     "grid": "/breeds/xoloitzcuintle-5b91bc0f-grid.webp",
     "detail": "/breeds/xoloitzcuintle-5b91bc0f.webp",
+    "mask": "/breeds/xoloitzcuintle-5b91bc0f-mask.webp",
     "width": 770,
     "height": 540,
     "focus": [
@@ -13183,6 +13410,7 @@
    "image": {
     "grid": "/breeds/cavoodle-1a060e3f-grid.webp",
     "detail": "/breeds/cavoodle-1a060e3f.webp",
+    "mask": "/breeds/cavoodle-1a060e3f-mask.webp",
     "width": 1200,
     "height": 1361,
     "focus": [
@@ -13245,6 +13473,7 @@
    "image": {
     "grid": "/breeds/groodle-ce5d9029-grid.webp",
     "detail": "/breeds/groodle-ce5d9029.webp",
+    "mask": "/breeds/groodle-ce5d9029-mask.webp",
     "width": 1200,
     "height": 1079,
     "focus": [
@@ -13307,6 +13536,7 @@
    "image": {
     "grid": "/breeds/labradoodle-90a062f8-grid.webp",
     "detail": "/breeds/labradoodle-90a062f8.webp",
+    "mask": "/breeds/labradoodle-90a062f8-mask.webp",
     "width": 1200,
     "height": 999,
     "focus": [
@@ -13372,6 +13602,7 @@
    "image": {
     "grid": "/breeds/maltese-x-shih-tzu-64467f67-grid.webp",
     "detail": "/breeds/maltese-x-shih-tzu-64467f67.webp",
+    "mask": "/breeds/maltese-x-shih-tzu-64467f67-mask.webp",
     "width": 1200,
     "height": 1023,
     "focus": [
@@ -13433,6 +13664,7 @@
    "image": {
     "grid": "/breeds/cavachon-19ed5dcb-grid.webp",
     "detail": "/breeds/cavachon-19ed5dcb.webp",
+    "mask": "/breeds/cavachon-19ed5dcb-mask.webp",
     "width": 1200,
     "height": 900,
     "focus": [
@@ -13495,6 +13727,7 @@
    "image": {
     "grid": "/breeds/pugalier-0765c42d-grid.webp",
     "detail": "/breeds/pugalier-0765c42d.webp",
+    "mask": "/breeds/pugalier-0765c42d-mask.webp",
     "width": 497,
     "height": 502,
     "focus": [
@@ -13555,6 +13788,7 @@
    "image": {
     "grid": "/breeds/puggle-f67c2ccb-grid.webp",
     "detail": "/breeds/puggle-f67c2ccb.webp",
+    "mask": "/breeds/puggle-f67c2ccb-mask.webp",
     "width": 1200,
     "height": 900,
     "focus": [
@@ -13616,6 +13850,7 @@
    "image": {
     "grid": "/breeds/jug-268982c4-grid.webp",
     "detail": "/breeds/jug-268982c4.webp",
+    "mask": "/breeds/jug-268982c4-mask.webp",
     "width": 1200,
     "height": 900,
     "focus": [
@@ -13675,6 +13910,7 @@
    "image": {
     "grid": "/breeds/miniature-fox-terrier-bd6c7208-grid.webp",
     "detail": "/breeds/miniature-fox-terrier-bd6c7208.webp",
+    "mask": "/breeds/miniature-fox-terrier-bd6c7208-mask.webp",
     "width": 1200,
     "height": 899,
     "focus": [
@@ -13734,6 +13970,7 @@
    "image": {
     "grid": "/breeds/koolie-eb28c085-grid.webp",
     "detail": "/breeds/koolie-eb28c085.webp",
+    "mask": "/breeds/koolie-eb28c085-mask.webp",
     "width": 902,
     "height": 700,
     "focus": [
@@ -13793,6 +14030,7 @@
    "image": {
     "grid": "/breeds/american-bully-d5f5b1b5-grid.webp",
     "detail": "/breeds/american-bully-d5f5b1b5.webp",
+    "mask": "/breeds/american-bully-d5f5b1b5-mask.webp",
     "width": 1200,
     "height": 951,
     "focus": [
@@ -13850,6 +14088,7 @@
    "image": {
     "grid": "/breeds/bull-arab-f1b5cd94-grid.webp",
     "detail": "/breeds/bull-arab-f1b5cd94.webp",
+    "mask": "/breeds/bull-arab-f1b5cd94-mask.webp",
     "width": 480,
     "height": 613,
     "focus": [

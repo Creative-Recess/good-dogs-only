@@ -1,7 +1,7 @@
 // Prototype: ways to show a breed you haven't seen yet, Pokedex style, from each photo's dog mask.
 // Masks come from scripts/vision/mask.swift (Apple Vision, on this Mac) into .cache/silhouettes/.
 // Usage: node design/make-silhouettes.ts  -> .cache/design/silhouettes.html
-import { readFile, writeFile } from 'node:fs/promises'
+import { writeFile } from 'node:fs/promises'
 import sharp from 'sharp'
 import data from '../src/data/breeds.json' with { type: 'json' }
 import type { Breed } from '../src/data/types.ts'

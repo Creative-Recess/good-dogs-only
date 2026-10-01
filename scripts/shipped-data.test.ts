@@ -24,10 +24,11 @@ describe('src/data/breeds.json', () => {
     expect(new Set(sources).size).toBe(sources.length)
   })
 
-  it('has both image files on disk for each photo', () => {
+  it('has the grid, detail and mask files on disk for each photo', () => {
     for (const b of breeds.filter((x) => x.image)) {
       expect(existsSync(publicPath(b.image!.grid)), b.id).toBe(true)
       expect(existsSync(publicPath(b.image!.detail)), b.id).toBe(true)
+      expect(existsSync(publicPath(b.image!.mask)), b.id).toBe(true)
     }
   })
 
@@ -52,7 +53,7 @@ describe('src/data/breeds.json', () => {
   })
 
   it('has no stray files in public/breeds', () => {
-    const used = new Set(breeds.flatMap((b) => (b.image ? [b.image.grid, b.image.detail] : [])).map((p) => p.replace('/breeds/', '')))
+    const used = new Set(breeds.flatMap((b) => (b.image ? [b.image.grid, b.image.detail, b.image.mask] : [])).map((p) => p.replace('/breeds/', '')))
     expect(readdirSync(publicPath('/breeds/')).filter((f) => !used.has(f))).toEqual([])
   })
 

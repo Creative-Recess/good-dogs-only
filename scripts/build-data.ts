@@ -9,6 +9,7 @@ import type { Breed, PhotoCredit } from '../src/data/types.ts'
 import { photoColours } from './lib/colours.ts'
 import { buildBreedList, groups } from './lib/dataset.ts'
 import { cachedDownload } from './lib/downloads.ts'
+import { makeMasks } from './lib/masks.ts'
 import { politeFetchJson } from './lib/http.ts'
 import { isAllowedLicence } from './lib/licences.ts'
 import { plainText, type PhotoPick } from './lib/photos.ts'
@@ -51,6 +52,7 @@ for (const batch of chunk(files, 50)) {
 await mkdir(outDir, { recursive: true })
 const written = new Set<string>()
 const breeds: Breed[] = []
+const maskJobs: { grid: string; out: string }[] = []
 const problems: string[] = []
 for (const b of buildBreedList()) {
   const pick = picks[b.id]
@@ -111,17 +113,22 @@ for (const b of buildBreedList()) {
     .resize({ ...DETAIL_MAX, fit: 'inside', withoutEnlargement: true })
     .webp({ quality: 78 })
     .toFile(new URL(detailName, outDir).pathname)
-  written.add(gridName).add(detailName)
+  const maskName = `${b.id}-${hash}-mask.webp`
+  written.add(gridName).add(detailName).add(maskName)
+  maskJobs.push({ grid: new URL(gridName, outDir).pathname, out: new URL(maskName, outDir).pathname })
 
   const colours = await photoColours(new URL(gridName, outDir).pathname)
   breeds.push({
     ...b,
-    image: { grid: `/breeds/${gridName}`, detail: `/breeds/${detailName}`, width: detail.width, height: detail.height, focus: [fx, fy], colours },
+    image: { grid: `/breeds/${gridName}`, detail: `/breeds/${detailName}`, mask: `/breeds/${maskName}`, width: detail.width, height: detail.height, focus: [fx, fy], colours },
     credit,
   })
 }
 
-// 3. Remove images from earlier builds that are no longer used, then write the data file.
+// 3. The dog's shape for each photo (for unseen breeds' silhouettes), made once and kept.
+await makeMasks(maskJobs, new URL('../.cache/masks', import.meta.url).pathname)
+
+// 4. Remove images from earlier builds that are no longer used, then write the data file.
 for (const f of await readdir(outDir)) if (!written.has(f)) await rm(new URL(f, outDir))
 await writeFile(new URL('../src/data/breeds.json', import.meta.url), JSON.stringify({ groups, breeds }, null, 1) + '\n')
 const withPhoto = breeds.filter((b) => b.image).length
