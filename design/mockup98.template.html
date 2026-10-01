@@ -273,7 +273,7 @@
   </div>
   <div class="window-body">
     <p>GOOD DOGS ONLY - the Windows 98 version of the mockup.</p>
-    <p>Tap anything: it works like the app, with 28 sample breeds and some example spots. Switch screens with Dex, Progress and Help at the top. Spot a dog, then try the X.</p>
+    <p>Tap anything: it works like the app, with 28 sample breeds and some example spots (Progress uses example numbers). Switch screens with Dex, Progress and Help at the top. Spot a dog, then try the X.</p>
     <p>To suggest a change, leave a comment on the part you mean, then tell Claude in chat.</p>
   </div>
 </div>
@@ -338,8 +338,10 @@
   // Fixed three-letter months (the en-AU locale gives "Sept").
   const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
   const fmt = (iso, withYear = true) => { const [y, m, d] = iso.split('-').map(Number); return `${d} ${MONTHS[m - 1]}${withYear ? ` ${y}` : ''}` }
-  const caughtIn = (gid) => breeds.filter((b) => b.groupId === gid && caught[b.id]).length
-  const spottedCount = () => breeds.filter((b) => caught[b.id]).length
+  // Mockup only: example counts on top of the 28 sample breeds, so Progress shows a well-used dex (~65%).
+  const DEMO_EXTRA = { toys: 16, terriers: 18, gundogs: 20, hounds: 20, 'working-dogs': 23, utility: 26, 'non-sporting': 14, bonus: 12 }
+  const caughtIn = (gid) => breeds.filter((b) => b.groupId === gid && caught[b.id]).length + (DEMO_EXTRA[gid] ?? 0)
+  const spottedCount = () => groups.reduce((n, g) => n + caughtIn(g.id), 0)
 
   // Same search rules as the app: exact, prefix, word prefix, then substring, over names, nicknames and varieties.
   const norm = (t) => t.normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim()
@@ -560,7 +562,7 @@
       p.innerHTML = `
         <div class="title-bar">
           <div class="title-bar-text one-line">${icons.bigPaw}<span>${esc(b.name)}</span></div>
-          <div class="title-bar-controls"><button aria-label="Close" data-act="close-props"></button></div>
+          <div class="title-bar-controls">${b.ankcUrl ? `<a href="${esc(b.ankcUrl)}" target="_blank" rel="noopener" aria-label="Official standard on Dogs Australia" style="display:inline-flex"><button aria-label="Help" tabindex="-1"></button></a>` : ''}<button aria-label="Close" data-act="close-props"></button></div>
         </div>
         <div class="window-body">
           <div class="photo-frame">
@@ -577,7 +579,6 @@
             <div class="chips" lang="en">${b.temperament.traits.map((t) => `<span class="chip"><span class="chip-icon">${traitIcon(t)}</span>${esc(t)}</span>`).join('')}</div>
           </fieldset>
           <div class="textbox">${esc(b.temperament.text)}</div>` : ''}
-          ${b.ankcUrl ? `<a class="link-btn-wrap" href="${esc(b.ankcUrl)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><button type="button" class="link-btn" tabindex="-1">See the official standard${icons.ext}</button></a>` : ''}
           ${b.forms.length ? `<fieldset><legend>Varieties</legend><div class="forms">${b.forms.map((f) => `<span>${esc(f)}</span>`).join('')}</div></fieldset>` : ''}
           <fieldset><legend>Status</legend>${status}</fieldset>
         </div>
