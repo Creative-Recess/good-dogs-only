@@ -102,6 +102,10 @@
   .tabs .panel { overflow-x: hidden; flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 0; }
   .tabs .panel > .window-body { margin: 6px; }
   .tabs .panel[hidden] { display: none; }
+  .tabs .park-panel { overflow: hidden; padding: 0; }
+  .tabs .park-panel > .park-body { margin: 2px; height: calc(100% - 4px); position: relative; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; padding: 2px; }
+  .park-body canvas { display: block; width: 100%; height: 100%; image-rendering: pixelated; image-rendering: crisp-edges; cursor: pointer; }
+  .park-hint { position: absolute; left: 6px; bottom: 6px; padding: 2px 5px; background: var(--silver); box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff; font-size: 10px; pointer-events: none; }
   .status-bar { flex: none; margin: 0 1px 1px; }
   .status-bar-field { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: center; font-variant-numeric: tabular-nums; }
   .sb-meter { position: relative; flex: 0 0 64px; padding: 0 !important; }
@@ -136,7 +140,7 @@
   .icon .pic { width: 64px; height: 64px; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; padding: 2px; background: #fff; }
   .icon img { width: 100%; height: 100%; display: block; object-fit: cover; }
   .icon:not(.is-caught) img { filter: grayscale(1) contrast(0.92) brightness(1.04); opacity: 0.72; }
-  .icon .label { font-size: 11px; line-height: 1.2; padding: 1px 2px; max-width: 100%; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .icon .label { font-size: 10px; line-height: 1.2; padding: 1px 2px; max-width: 100%; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
   .icon:not(.is-caught) .label { color: #444; }
   .icon:focus .label, .icon:hover .label { background: var(--navy); color: var(--white); outline: 1px dotted #ffff7f; }
   .icon .no { position: absolute; top: 5px; left: calc(50% - 30px); background: var(--g); color: #fff; font-size: 9px; line-height: 1; padding: 2px 3px; box-shadow: 1px 1px #000; }
@@ -310,7 +314,7 @@
     tBulb: px('<circle cx="8" cy="6" r="4.5" fill="#ffee55" stroke="#806000"/><rect x="6" y="10" width="4" height="4" fill="#808080" stroke="#404040"/>'),
     tBolt: px('<path d="M9 1L3 9h4l-1 6 6-8H8z" fill="#ffcc00" stroke="#806000"/>'),
     tMoon: px('<path d="M10 2a6 6 0 1 0 4 10A5 5 0 0 1 10 2z" fill="#ffee88" stroke="#806000"/>'),
-    tHand: px('<path d="M5 15V7H4V4h1v2h1V2h1v4h1V1h1v5h1V2h1v5h1V5h1v6l-2 4z" fill="#ffcc99" stroke="#804000" stroke-width="0.8"/>'),
+    tHand: px('<circle cx="8" cy="8" r="6.8" fill="#ffdd33" stroke="#806000"/><rect x="5" y="5" width="2" height="2.5" fill="#000"/><rect x="9" y="5" width="2" height="2.5" fill="#000"/><path d="M4.5 9.5c1.5 2.6 5.5 2.6 7 0" fill="none" stroke="#000" stroke-width="1.2"/>'),
     tEye: px('<path d="M1 8c3-5 11-5 14 0-3 5-11 5-14 0z" fill="#fff" stroke="#000"/><circle cx="8" cy="8" r="2.6" fill="#0060c0"/><circle cx="8" cy="8" r="1.1" fill="#000"/>'),
     tCrook: px('<path d="M6 15V6a3 3 0 1 1 6 0v1" fill="none" stroke="#804000" stroke-width="2"/>'),
     tLock: px('<rect x="3" y="7" width="10" height="8" fill="#ffcc00" stroke="#806000"/><path d="M5 7V5a3 3 0 0 1 6 0v2" fill="none" stroke="#606060" stroke-width="1.6"/><rect x="7" y="10" width="2" height="3" fill="#806000"/>'),
@@ -375,6 +379,189 @@
   }
   const fillBars = (root) => requestAnimationFrame(() => root.querySelectorAll('.progress-indicator-bar[data-w]').forEach((b) => (b.style.width = `${b.dataset.w}%`)))
 
+
+  // ---------- Dog Park: a pixel-art park with one little dog per spotted breed ----------
+  const GROUP_SIZE = { toys: 0.72, terriers: 0.85, gundogs: 1, hounds: 0.95, 'working-dogs': 1, utility: 1.15, 'non-sporting': 1, bonus: 0.9 }
+  const SIZE_OVERRIDE = { 'great-dane': 1.35, 'bernese-mountain-dog': 1.2, 'french-bulldog': 0.8, 'schnauzer-miniature': 0.8, dachshund: 0.85, 'jack-russell-terrier': 0.75, 'miniature-fox-terrier': 0.7, cavoodle: 0.75, 'cavalier-king-charles-spaniel': 0.75 }
+  const LONG_LOW = new Set(['dachshund', 'rabbit-dachshund', 'basset-hound', 'welsh-corgi-pembroke', 'welsh-corgi-cardigan'])
+  const colourCache = {}
+  function rand(seed) { let x = seed % 2147483647; if (x <= 0) x += 2147483646; return () => (x = (x * 16807) % 2147483647) / 2147483647 }
+  function shade([r, g, b], k) { return [r * k, g * k, b * k].map((v) => Math.max(0, Math.min(255, Math.round(v)))) }
+  const rgb = (c) => `rgb(${c[0]},${c[1]},${c[2]})`
+  // Body and patch colours from the breed photo: most common non-grass, non-sky colours near the centre.
+  function dogColours(b) {
+    if (colourCache[b.id]) return Promise.resolve(colourCache[b.id])
+    return new Promise((resolve) => {
+      const img = new Image()
+      img.onload = () => {
+        const c = document.createElement('canvas'); c.width = c.height = 24
+        const x = c.getContext('2d', { willReadFrequently: true }); x.drawImage(img, 0, 0, 24, 24)
+        const d = x.getImageData(5, 5, 14, 15).data, counts = new Map()
+        for (let i = 0; i < d.length; i += 4) {
+          const [r, g, bl] = [d[i], d[i + 1], d[i + 2]]
+          if (g > r + 10 && g > bl) continue // grass
+          if (bl > r + 25 && bl > g) continue // sky
+          const key = [r >> 5, g >> 5, bl >> 5].join(',')
+          const e = counts.get(key) ?? { n: 0, r: 0, g: 0, b: 0 }
+          e.n++; e.r += r; e.g += g; e.b += bl; counts.set(key, e)
+        }
+        const ranked = [...counts.values()].sort((a, z) => z.n - a.n).map((e) => [e.r / e.n, e.g / e.n, e.b / e.n].map(Math.round))
+        const body = ranked[0] ?? [170, 120, 70]
+        const patch = ranked.find((c) => Math.abs(c[0] - body[0]) + Math.abs(c[1] - body[1]) + Math.abs(c[2] - body[2]) > 120) ?? shade(body, 1.35)
+        resolve((colourCache[b.id] = { body, patch }))
+      }
+      img.onerror = () => resolve({ body: [170, 120, 70], patch: [240, 230, 210] })
+      img.src = b.img.grid
+    })
+  }
+
+  class Park {
+    constructor(phone, body) {
+      this.phone = phone
+      this.body = body
+      body.innerHTML = '<canvas aria-label="Dog park"></canvas><div class="park-hint"></div>'
+      this.cv = body.querySelector('canvas')
+      this.ctx = this.cv.getContext('2d')
+      this.hint = body.querySelector('.park-hint')
+      this.dogs = []
+      this.loop = this.loop.bind(this)
+      this.cv.addEventListener('click', (e) => this.tap(e))
+      this.still = matchMedia('(prefers-reduced-motion: reduce)').matches
+    }
+    start() {
+      requestAnimationFrame(() => {
+        this.resize()
+        this.sync()
+        if (!this.running) { this.running = true; this.last = performance.now(); requestAnimationFrame(this.loop) }
+      })
+    }
+    stop() { this.running = false }
+    resize() {
+      const W = this.cv.clientWidth, H = this.cv.clientHeight
+      this.S = 2
+      this.w = Math.max(60, Math.floor(W / this.S))
+      this.h = Math.max(80, Math.floor(H / this.S))
+      this.cv.width = this.w
+      this.cv.height = this.h
+      this.scene = this.drawScene()
+    }
+    // Static background, drawn once: sky, hills, pines, a winding stream and grass.
+    drawScene() {
+      const { w, h } = this
+      const c = document.createElement('canvas'); c.width = w; c.height = h
+      const x = c.getContext('2d'), R = rand(42)
+      const horizon = Math.round(h * 0.3)
+      const sky = ['#8fb7c9', '#9fc2cf', '#b2cdd3', '#c5d6d6']
+      sky.forEach((col, i) => { x.fillStyle = col; x.fillRect(0, Math.round((horizon * i) / sky.length), w, Math.ceil(horizon / sky.length) + 1) })
+      x.fillStyle = '#7fae63'
+      for (let i = 0; i < w; i++) { const y = horizon - 3 - Math.round(2 + 2 * Math.sin(i / 9) + Math.sin(i / 4)); x.fillRect(i, y, 1, horizon - y + 1) }
+      x.fillStyle = '#86bb5f'; x.fillRect(0, horizon, w, h - horizon)
+      for (let row = 0; row < 6; row++) { x.fillStyle = row % 2 ? '#8cc164' : '#84b95c'; x.fillRect(0, horizon + 8 + row * Math.round((h - horizon) / 6), w, 2) }
+      const pine = (px, py, sz) => {
+        x.fillStyle = '#6b3d1f'; x.fillRect(px - 1, py, 2, 3)
+        for (let k = 0; k < sz; k++) { x.fillStyle = k % 3 === 0 ? '#2f6b39' : '#3b7f44'; const hw = Math.round(((k + 1) / sz) * (sz / 2.2)) + 1; x.fillRect(px - hw, py - sz + k, hw * 2, 1) }
+      }
+      for (let i = 0; i < 9; i++) { const px = Math.round(((i + 0.5) / 9) * w + (R() - 0.5) * 8); if (i === 6) continue; pine(px, horizon + 2 + Math.round(R() * 3), 14 + Math.round(R() * 6)) }
+      x.fillStyle = '#6b3d1f'; x.fillRect(Math.round(w * 0.68), horizon - 2, 2, 6)
+      x.fillStyle = '#4f9a48'; x.beginPath(); x.arc(Math.round(w * 0.68) + 1, horizon - 7, 6, 0, Math.PI * 2); x.fill()
+      this.riverY = (px) => Math.round(h * 0.44 + Math.sin(px / (w / 6)) * 4)
+      for (let i = 0; i < w; i++) {
+        const y = this.riverY(i)
+        x.fillStyle = '#5b98c6'; x.fillRect(i, y - 3, 1, 7)
+        x.fillStyle = '#4c87b6'; x.fillRect(i, y + 3, 1, 1)
+        if (R() < 0.12) { x.fillStyle = '#a9d0ea'; x.fillRect(i, y - 1 + Math.round(R() * 2), 2, 1) }
+      }
+      for (let i = 0; i < w * 0.9; i++) { x.fillStyle = R() < 0.5 ? '#76ab52' : '#9ccc72'; const tx = Math.round(R() * w), ty = Math.round(horizon + 6 + R() * (h - horizon - 6)); if (Math.abs(ty - this.riverY(tx)) > 5) { x.fillRect(tx, ty, 1, 1); x.fillRect(tx + 2, ty, 1, 1); x.fillRect(tx + 1, ty + 1, 1, 1) } }
+      return c
+    }
+    sync() {
+      if (!this.w) return
+      const spotted = breeds.filter((b) => caught[b.id])
+      const have = new Set(this.dogs.map((d) => d.b.id))
+      this.dogs = this.dogs.filter((d) => caught[d.b.id])
+      for (const b of spotted) {
+        if (have.has(b.id)) continue
+        const R = rand([...b.id].reduce((n, ch) => n * 31 + ch.charCodeAt(0), 7))
+        const dog = { b, x: 6 + R() * (this.w - 16), y: this.h * 0.55 + R() * (this.h * 0.4), dir: R() < 0.5 ? -1 : 1, state: 'idle', timer: R() * 2, phase: R() * 6, size: SIZE_OVERRIDE[b.id] ?? GROUP_SIZE[b.groupId] ?? 1, long: LONG_LOW.has(b.id), colours: null, hop: 0 }
+        dogColours(b).then((c) => (dog.colours = c))
+        this.dogs.push(dog)
+      }
+      this.hint.textContent = `${this.dogs.length} dogs in the park · tap one to visit`
+    }
+    tap(e) {
+      const r = this.cv.getBoundingClientRect()
+      const px = ((e.clientX - r.left) / r.width) * this.w, py = ((e.clientY - r.top) / r.height) * this.h
+      const hit = [...this.dogs].sort((a, z) => z.y - a.y).find((d) => { const L = 11 * d.size; return px > d.x - 2 && px < d.x + L + 3 && py > d.y - 9 * d.size - 3 && py < d.y + 2 })
+      if (hit) this.phone.openProps(hit.b.id)
+    }
+    update(dt) {
+      const top = this.h * 0.52, bottom = this.h - 3
+      for (const d of this.dogs) {
+        d.timer -= dt
+        d.hop = Math.max(0, d.hop - dt)
+        if (d.timer <= 0) {
+          const roll = Math.random()
+          if (roll < 0.45) { d.state = 'walk'; d.tx = 4 + Math.random() * (this.w - 16); d.ty = top + Math.random() * (bottom - top); d.timer = 3 + Math.random() * 4 }
+          else if (roll < 0.75) { d.state = 'idle'; d.timer = 1.5 + Math.random() * 3 }
+          else if (roll < 0.92) { d.state = 'sit'; d.timer = 2 + Math.random() * 4 }
+          else {
+            const friend = this.dogs[Math.floor(Math.random() * this.dogs.length)]
+            if (friend && friend !== d) { for (const p of [d, friend]) { p.state = 'play'; p.timer = 3 } d.tx = friend.x; d.ty = friend.y; friend.tx = d.x; friend.ty = d.y }
+          }
+        }
+        if (d.state === 'walk' || d.state === 'play') {
+          const sp = (d.state === 'play' ? 26 : 9) * dt, dx = d.tx - d.x, dy = d.ty - d.y, dist = Math.hypot(dx, dy)
+          if (dist < 1.5) { if (d.state === 'play') d.hop = 1.2; d.state = 'idle'; d.timer = 1 + Math.random() * 2 }
+          else { d.x += (dx / dist) * sp; d.y += (dy / dist) * sp; if (Math.abs(dx) > 0.5) d.dir = dx > 0 ? 1 : -1 }
+        }
+        d.phase += dt * (d.state === 'play' ? 14 : 8)
+      }
+    }
+    drawDog(x, d) {
+      if (!d.colours) return
+      const s = d.size, body = d.colours.body, patch = d.colours.patch, dark = shade(body, 0.45)
+      const L = Math.round((d.long ? 12 : 9) * s), H = Math.max(3, Math.round(4 * s)), leg = Math.max(1, Math.round((d.long ? 1.5 : 3) * s))
+      const moving = d.state === 'walk' || d.state === 'play'
+      const hop = d.hop > 0 ? Math.round(Math.abs(Math.sin(d.hop * 9)) * 3) : 0
+      const fx = Math.round(d.x), fy = Math.round(d.y) - hop
+      const sit = d.state === 'sit'
+      x.fillStyle = 'rgba(40,70,30,0.35)'; x.fillRect(fx, Math.round(d.y) + 1, L + 2, 1)
+      const bodyTop = fy - leg - H + (sit ? 1 : 0)
+      x.fillStyle = rgb(body); x.fillRect(fx, bodyTop, L, H)
+      x.fillStyle = rgb(patch); x.fillRect(d.dir > 0 ? fx + L - 3 : fx + 1, bodyTop + H - 1, 2, 1); x.fillRect(fx + Math.round(L / 2) - 1, bodyTop, 2, 1)
+      const legs = sit ? [d.dir > 0 ? L - 2 : 1] : [1, 3, L - 4, L - 2]
+      legs.forEach((lx, i) => { const lift = moving && (i + Math.floor(d.phase)) % 2 ? 1 : 0; x.fillStyle = rgb(shade(body, 0.85)); x.fillRect(fx + lx, bodyTop + H, 1, leg - lift) })
+      if (sit) { x.fillStyle = rgb(shade(body, 0.85)); x.fillRect(d.dir > 0 ? fx : fx + L - 3, bodyTop + H - 1, 3, leg + 1) }
+      const hs = Math.max(3, Math.round(4 * s)), hx = d.dir > 0 ? fx + L - 1 : fx - hs + 1, hy = bodyTop - hs + 2
+      x.fillStyle = rgb(body); x.fillRect(hx, hy, hs, hs)
+      x.fillStyle = rgb(patch); x.fillRect(d.dir > 0 ? hx + hs - 1 : hx - 1, hy + hs - 2, 2, 2)
+      x.fillStyle = rgb(dark); x.fillRect(d.dir > 0 ? hx + hs : hx - 2, hy + hs - 2, 1, 1); x.fillRect(d.dir > 0 ? hx + hs - 2 : hx + 1, hy + 1, 1, 1)
+      x.fillStyle = rgb(shade(body, 0.7)); x.fillRect(d.dir > 0 ? hx : hx + hs - 1, hy, 1, Math.max(2, Math.round(2.5 * s)))
+      const wag = Math.round(Math.sin(d.phase * (d.state === 'idle' ? 1.6 : 1)) * 1)
+      x.fillStyle = rgb(shade(body, 0.9)); const tx = d.dir > 0 ? fx - 1 : fx + L
+      x.fillRect(tx + (d.dir > 0 ? wag : -wag), bodyTop - 2, 1, 3)
+    }
+    tint() {
+      const hr = new Date().getHours()
+      if (hr >= 21 || hr < 5) return ['rgba(20,30,80,0.45)', 'Night']
+      if (hr < 7) return ['rgba(255,170,190,0.16)', 'Dawn']
+      if (hr >= 17) return ['rgba(255,150,60,0.18)', 'Golden hour']
+      return [null, 'Daytime']
+    }
+    loop(now) {
+      if (!this.running) return
+      const dt = Math.min(0.1, (now - this.last) / 1000); this.last = now
+      if (!this.still) this.update(dt)
+      const x = this.ctx; x.imageSmoothingEnabled = false
+      x.drawImage(this.scene, 0, 0)
+      for (const d of [...this.dogs].sort((a, z) => a.y - z.y)) this.drawDog(x, d)
+      const [tint, label] = this.tint()
+      if (tint) { x.fillStyle = tint; x.fillRect(0, 0, this.w, this.h) }
+      this.hint.textContent = `${this.dogs.length} dogs · ${label} · tap one to visit`
+      requestAnimationFrame(this.loop)
+    }
+  }
+
   const phones = []
   class Phone {
     constructor(host, initial) {
@@ -394,11 +581,13 @@
               <div class="window-body">
                 <section class="tabs">
                   <menu role="tablist" aria-label="Screens">
-                    <li role="tab" data-act="tab" data-tab="dex"><a>Dex</a></li>
+                    <li role="tab" data-act="tab" data-tab="dex"><a>Breeds</a></li>
+                    <li role="tab" data-act="tab" data-tab="park"><a>Dog Park</a></li>
                     <li role="tab" data-act="tab" data-tab="progress"><a>Progress</a></li>
                     <li role="tab" data-act="tab" data-tab="more"><a>Help</a></li>
                   </menu>
                   <div class="window panel" role="tabpanel" data-panel="dex"><div class="window-body"></div></div>
+                  <div class="window panel park-panel" role="tabpanel" data-panel="park" hidden><div class="window-body park-body"></div></div>
                   <div class="window panel" role="tabpanel" data-panel="progress" hidden><div class="window-body"></div></div>
                   <div class="window panel" role="tabpanel" data-panel="more" hidden><div class="window-body"></div></div>
                 </section>
@@ -460,6 +649,7 @@
       this.host.querySelectorAll('[role="tab"]').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === tab)))
       this.panels[tab].parentElement.scrollTop = 0
       fillBars(this.panels[tab])
+      if (tab === 'park') { this.park ??= new Park(this, this.panels.park); this.park.start() } else this.park?.stop()
     }
     dialog(title, text, kind) {
       const m = this.q('.modal')
@@ -486,6 +676,7 @@
       this.renderProgress()
       this.renderMore()
       this.fillStatus()
+      this.park?.sync()
       if (this.s.detail) this.renderProps()
     }
     fillStatus() {
@@ -593,6 +784,9 @@
         </div>
         <div class="status-bar"><p class="status-bar-field" data-status="count"></p></div>`
       this.fillStatus()
+      // Shrink the title-bar breed name until it fits on one line (min 8px), then let it ellipsis.
+      const t = p.querySelector('.title-bar-text.one-line span')
+      if (t) requestAnimationFrame(() => { for (let size = 11; size > 8 && t.scrollWidth > t.clientWidth; size -= 0.5) t.style.fontSize = `${size}px` })
       // Shrink the breed name until it fits on one line (min 11px), then let it ellipsis.
       const h = p.querySelector('.title-block h2')
       if (h) requestAnimationFrame(() => { for (let size = 17; size > 11 && h.scrollWidth > h.clientWidth; size -= 0.5) h.style.fontSize = `${size}px` })
@@ -642,8 +836,9 @@
   function refreshAll() { phones.forEach((p) => p.refresh()) }
 
   const screens = [
-    { label: 'Dex', state: {} },
+    { label: 'Breeds', state: {} },
     { label: 'Properties (breed page)', state: { detail: 'staffordshire-bull-terrier' } },
+    { label: 'Dog Park', state: { tab: 'park' } },
     { label: 'Progress', state: { tab: 'progress' } },
     { label: 'Help', state: { tab: 'more' } },
   ]
