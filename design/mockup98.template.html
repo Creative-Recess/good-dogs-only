@@ -596,7 +596,7 @@
                   <div class="window panel" role="tabpanel" data-panel="more" hidden><div class="window-body"></div></div>
                 </section>
               </div>
-              <div class="status-bar"><p class="status-bar-field" data-status="count"></p></div>
+              
             </div>
             <div class="window props" hidden></div>
             <div class="modal" hidden></div>
@@ -719,7 +719,7 @@
         <fieldset class="show"><legend>Show</legend>
           <div class="field-row"><input id="fa-${this.uid}" type="radio" name="f-${this.uid}" value="all" data-role="filter" checked><label for="fa-${this.uid}">All</label></div>
           <div class="field-row"><input id="fc-${this.uid}" type="radio" name="f-${this.uid}" value="caught" data-role="filter"><label for="fc-${this.uid}">Spotted</label></div>
-          <div class="field-row"><input id="ft-${this.uid}" type="radio" name="f-${this.uid}" value="todo" data-role="filter"><label for="ft-${this.uid}">Not yet</label></div>
+          <div class="field-row"><input id="ft-${this.uid}" type="radio" name="f-${this.uid}" value="todo" data-role="filter"><label for="ft-${this.uid}">Unseen</label></div>
         </fieldset>
         <div class="results"></div>`
     }
@@ -727,7 +727,7 @@
     refreshResults() {
       const s = this.s
       const select = this.q('[data-role="group"]')
-      select.innerHTML = `<option value="all">All groups</option>` + groups.map((g) => `<option value="${g.id}">${esc(g.name)} (${caughtIn(g.id)}/${g.total})</option>`).join('')
+      select.innerHTML = `<option value="all">All</option>` + groups.map((g) => `<option value="${g.id}">${esc(g.name)} (${caughtIn(g.id)}/${g.total})</option>`).join('')
       select.value = s.group
       let list = breeds
       if (s.group !== 'all') list = list.filter((b) => b.groupId === s.group)
@@ -810,7 +810,7 @@
           ${b.forms.length ? `<fieldset><legend>Varieties</legend><div class="forms">${b.forms.map((f) => `<span>${esc(f)}</span>`).join('')}</div></fieldset>` : ''}
           <fieldset><legend>Status</legend>${status}</fieldset>
         </div>
-        <div class="status-bar"><p class="status-bar-field" data-status="count"></p></div>`
+        `
       this.fillStatus()
       // Shrink the title-bar breed name until it fits on one line (min 8px), then let it ellipsis.
       const t = p.querySelector('.title-bar-text.one-line span')
