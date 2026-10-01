@@ -103,8 +103,10 @@ function BreedTile({ breed: b, spotted, onOpen }: { breed: Breed; spotted: boole
   useShrinkToFit(label, 10, 7.5, name)
   return (
     <button type="button" className={`icon${spotted ? ' is-spotted' : ''}`} style={{ '--g': GROUP_COLOUR[b.groupId] } as React.CSSProperties} onClick={() => onOpen(b.id)} aria-label={`${b.name}${spotted ? ', spotted' : ''}`}>
-      <span className="pic">{b.image && <img src={b.image.grid} alt="" loading="lazy" decoding="async" width={60} height={60} />}</span>
-      <span className="no">{b.dexNo}</span>
+      <span className="pic">
+        {b.image && <img src={b.image.grid} alt="" loading="lazy" decoding="async" width={60} height={60} />}
+        <span className="no">{b.dexNo}</span>
+      </span>
       {spotted && (
         <span className="tick">
           <Icon name="tick" />
