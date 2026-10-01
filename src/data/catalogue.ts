@@ -1,5 +1,5 @@
 // The breed catalogue the app ships with, plus lookups derived from it.
-import data from './breeds.json'
+import data from './breeds.json' with { type: 'json' }
 import type { Breed, Group, GroupId } from './types.ts'
 
 export const breeds = data.breeds as Breed[]
