@@ -42,7 +42,6 @@
   .readme p { margin: 0 0 6px; }
   .phones { display: flex; flex-wrap: wrap; gap: 40px 36px; justify-content: center; }
   .phone-wrap { display: grid; gap: 10px; justify-items: center; }
-  .phone-label { color: var(--white); font: 11px var(--pixel); text-shadow: 1px 1px #000; padding: 2px 6px; background: rgba(0, 0, 0, 0.25); }
   .phone {
     width: 402px;
     height: 874px;
@@ -105,11 +104,11 @@
   .tabs .panel[hidden] { display: none; }
   .tabs .park-panel { overflow: hidden; padding: 0; }
   .tabs .park-panel > .park-body { margin: 2px; height: calc(100% - 4px); position: relative; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; padding: 2px; }
-  .park-body canvas { display: block; width: 100%; height: 100%; image-rendering: pixelated; image-rendering: crisp-edges; cursor: pointer; }
+  .park-body canvas { display: block; width: 100%; height: 100%; cursor: pointer; }
   .saver { position: absolute; inset: 0; z-index: 75; background: #000; cursor: pointer; }
   .saver[hidden] { display: none; }
   .saver-body { position: absolute; inset: 0; }
-  .saver-body canvas { display: block; width: 100%; height: 100%; image-rendering: pixelated; image-rendering: crisp-edges; }
+  .saver-body canvas { display: block; width: 100%; height: 100%; }
   .saver .park-hint { display: none; }
   .park-hint { position: absolute; left: 6px; top: 6px; padding: 2px 5px; background: var(--silver); box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff; font-size: 10px; pointer-events: none; }
   .status-bar { flex: none; margin: 0 1px 1px; }
@@ -262,7 +261,7 @@
   /* Phone: the page becomes the app itself, full screen */
   @media (max-width: 560px) {
     body { padding-inline: 0; padding-block: 0; }
-    .readme, .phone-label, .phone-wrap:not(:first-child) { display: none; }
+    .readme { display: none; }
     .phones { display: block; }
     .phone { width: 100%; height: calc(100dvh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); border: 0; border-radius: 0; box-shadow: none; }
     .notch { display: none; }
@@ -283,7 +282,7 @@
   </div>
   <div class="window-body">
     <p>GOOD DOGS ONLY - the Windows 98 version of the mockup.</p>
-    <p>Tap anything: it works like the app, with 28 sample breeds and some example spots (Progress uses example numbers). Switch screens with Dex, Progress and Help at the top. Spot a dog, then try the X.</p>
+    <p>Tap anything: it works like the app, with 28 sample breeds and some example spots (Progress uses example numbers). Switch screens with the tabs at the top.</p>
     <p>To suggest a change, leave a comment on the part you mean, then tell Claude in chat.</p>
   </div>
 </div>
@@ -383,14 +382,11 @@
   const fillBars = (root) => requestAnimationFrame(() => root.querySelectorAll('.progress-indicator-bar[data-w]').forEach((b) => (b.style.width = `${b.dataset.w}%`)))
 
 
-  // ---------- Dog Park: a pixel-art park with one little dog per spotted breed ----------
+  // ---------- Park: Rushcutters Bay, with one storybook dog per spotted breed ----------
   const GROUP_SIZE = { toys: 0.72, terriers: 0.85, gundogs: 1, hounds: 0.95, 'working-dogs': 1, utility: 1.15, 'non-sporting': 1, bonus: 0.9 }
-  const SIZE_OVERRIDE = { 'great-dane': 1.35, 'bernese-mountain-dog': 1.2, 'french-bulldog': 0.8, 'schnauzer-miniature': 0.8, dachshund: 0.85, 'jack-russell-terrier': 0.75, 'miniature-fox-terrier': 0.7, cavoodle: 0.75, 'cavalier-king-charles-spaniel': 0.75 }
-  const LONG_LOW = new Set(['dachshund', 'rabbit-dachshund', 'basset-hound', 'welsh-corgi-pembroke', 'welsh-corgi-cardigan'])
   const colourCache = {}
-  function rand(seed) { let x = seed % 2147483647; if (x <= 0) x += 2147483646; return () => (x = (x * 16807) % 2147483647) / 2147483647 }
   function shade([r, g, b], k) { return [r * k, g * k, b * k].map((v) => Math.max(0, Math.min(255, Math.round(v)))) }
-  const rgb = (c) => `rgb(${c[0]},${c[1]},${c[2]})`
+  const css = (c, a = 1) => `rgba(${c[0]},${c[1]},${c[2]},${a})`
   // Body and patch colours from the breed photo: most common non-grass, non-sky colours near the centre.
   function dogColours(b) {
     if (colourCache[b.id]) return Promise.resolve(colourCache[b.id])
@@ -418,10 +414,94 @@
     })
   }
 
+  // Breed shapes for the storybook style (side-on, in body units; scaled by dog size).
+  const SHAPE = {
+    'labrador-retriever': { len: 28, h: 12, leg: 10, head: 9, snout: 7, ears: 'floppy', tail: 'straight' },
+    'golden-retriever': { len: 28, h: 12, leg: 10, head: 9, snout: 7, ears: 'floppy', tail: 'plume', fluff: 0.5 },
+    cavoodle: { len: 20, h: 10, leg: 8, head: 8, snout: 4, ears: 'long', tail: 'plume', fluff: 1 },
+    groodle: { len: 27, h: 12, leg: 11, head: 9, snout: 5, ears: 'long', tail: 'plume', fluff: 1 },
+    'staffordshire-bull-terrier': { len: 24, h: 12, leg: 8, head: 10, snout: 5, ears: 'rose', tail: 'straight' },
+    'border-collie': { len: 27, h: 10, leg: 11, head: 8, snout: 7, ears: 'tipped', tail: 'plume', fluff: 0.5 },
+    'french-bulldog': { len: 19, h: 11, leg: 7, head: 10, snout: 2, ears: 'bat', tail: 'stub' },
+    'jack-russell-terrier': { len: 22, h: 9, leg: 8, head: 7, snout: 6, ears: 'floppy', tail: 'up' },
+    dachshund: { len: 32, h: 9, leg: 4, head: 8, snout: 8, ears: 'long', tail: 'straight' },
+    'cavalier-king-charles-spaniel': { len: 21, h: 10, leg: 8, head: 8, snout: 4, ears: 'long', tail: 'plume', fluff: 0.4 },
+    pug: { len: 19, h: 11, leg: 6, head: 10, snout: 1, ears: 'rose', tail: 'curl' },
+  }
+  const DEFAULT_SHAPE = { len: 25, h: 11, leg: 9, head: 9, snout: 6, ears: 'floppy', tail: 'straight' }
+
+  function cloudShape(x, cx, cy, rx, ry, bumps) {
+    x.beginPath()
+    for (let i = 0; i <= bumps; i++) { const a = (i / bumps) * Math.PI * 2; const px = cx + Math.cos(a) * rx, py = cy + Math.sin(a) * ry; x.moveTo(px + ry * 0.38, py); x.arc(px, py, ry * 0.38, 0, Math.PI * 2) }
+    x.fill()
+  }
+
+  function drawStory(x, d, t) {
+    if (!d.col) return
+    const P = SHAPE[d.b.id] ?? DEFAULT_SHAPE, s = d.size * d.scale * 0.95, { body, patch } = d.col, line = css(shade(body, 0.5))
+    const walk = d.state === 'walk' || d.state === 'run', sp = d.state === 'run' ? 15 : 8
+    const swing = walk ? Math.sin(t * sp + d.seed) * 0.45 : 0
+    const hop = d.hop > 0 ? Math.sin(d.hop * Math.PI) * 12 * s : 0
+    const L = P.len * s, H = P.h * s, leg = P.leg * s, sit = d.state === 'sit'
+    x.save(); x.scale(d.dir, 1)
+    x.fillStyle = 'rgba(30,50,40,0.14)'; x.beginPath(); x.ellipse(0, 0, L * 0.6, 3 * s, 0, 0, Math.PI * 2); x.fill()
+    x.translate(0, -hop)
+    if (sit) { x.translate(-L * 0.35, 0); x.rotate(-0.32); x.translate(L * 0.35, 0) }
+    x.lineWidth = 1.5; x.lineJoin = 'round'; x.lineCap = 'round'; x.strokeStyle = line
+    const bodyY = -leg - H / 2
+    // legs (back pair behind body, front pair in front)
+    const legW = Math.max(2.5, 3.2 * s * (P.h / 11))
+    const drawLeg = (lx, ang, dark, fold) => { x.save(); x.translate(lx, bodyY + H * 0.3); x.rotate(ang); x.fillStyle = css(dark ? shade(body, 0.8) : body); x.beginPath(); x.roundRect(fold ? -legW : -legW / 2, 0, fold ? legW * 2 : legW, fold ? leg * 0.65 + H * 0.2 : leg + H * 0.2, legW / 2); x.fill(); x.stroke(); x.restore() }
+    drawLeg(-L * 0.32, swing, true, sit); drawLeg(L * 0.3, -swing, true)
+    // tail
+    const wag = Math.sin(t * (walk ? 6 : 11) + d.seed) * 0.35
+    x.save(); x.translate(-L * 0.47, bodyY - H * 0.2); x.rotate(-0.6 + wag)
+    x.strokeStyle = css(shade(body, 0.9)); const tw = P.tail === 'plume' ? 4.5 * s : 2.6 * s; x.lineWidth = tw
+    x.beginPath()
+    if (P.tail === 'curl') { x.arc(0, -3 * s, 3.2 * s, Math.PI * 0.6, Math.PI * 2.3) }
+    else if (P.tail === 'stub') { x.moveTo(0, 0); x.lineTo(-2 * s, -2 * s) }
+    else if (P.tail === 'up') { x.moveTo(0, 0); x.lineTo(-1 * s, -9 * s) }
+    else { x.moveTo(0, 0); x.quadraticCurveTo(-6 * s, -4 * s, -9 * s, P.tail === 'plume' ? -9 * s : -5 * s) }
+    x.stroke(); x.restore(); x.lineWidth = 1.5; x.strokeStyle = line
+    // body
+    x.fillStyle = css(body)
+    if (P.fluff) { cloudShape(x, 0, bodyY, L / 2, H / 2, 10); x.beginPath(); x.ellipse(0, bodyY, L / 2, H / 2, 0, 0, Math.PI * 2); x.fill() }
+    else { x.beginPath(); x.ellipse(0, bodyY, L / 2, H / 2, 0, 0, Math.PI * 2); x.fill(); x.stroke() }
+    x.fillStyle = css(patch, 0.9); x.beginPath(); x.ellipse(L * 0.22, bodyY + H * 0.18, L * 0.2, H * 0.3, 0, 0, Math.PI * 2); x.fill()
+    drawLeg(-L * 0.22, -swing, false, sit); drawLeg(L * 0.36, swing, false)
+    // neck + head
+    const hr = P.head * s, hx = L * 0.46, hy = bodyY - H * 0.55 - hr * 0.35
+    x.fillStyle = css(body); x.beginPath(); x.moveTo(L * 0.25, bodyY - H * 0.3); x.lineTo(hx - hr * 0.5, hy + hr * 0.6); x.lineTo(hx + hr * 0.2, hy + hr * 0.4); x.lineTo(L * 0.42, bodyY + H * 0.1); x.closePath(); x.fill()
+    const ear = (front) => {
+      x.fillStyle = css(shade(body, front ? 0.78 : 0.68))
+      x.beginPath()
+      if (P.ears === 'pointy' || P.ears === 'bat') { const k = P.ears === 'bat' ? 1.3 : 1.15; x.moveTo(hx - hr * 0.55, hy - hr * 0.45); x.lineTo(hx - hr * 0.35, hy - hr * k); x.lineTo(hx + hr * 0.1, hy - hr * 0.65); x.closePath() }
+      else if (P.ears === 'rose' || P.ears === 'tipped') { x.moveTo(hx - hr * 0.5, hy - hr * 0.55); x.quadraticCurveTo(hx - hr * 0.4, hy - hr * 1.25, hx + hr * 0.05, hy - hr * 0.85); x.lineTo(hx - hr * 0.1, hy - hr * 0.5); x.closePath() }
+      else { const len = P.ears === 'long' ? 1.25 : 0.8; x.ellipse(hx - hr * 0.35, hy + hr * 0.15 * len, hr * 0.33, hr * 0.62 * len, 0.3, 0, Math.PI * 2) }
+      x.fill(); x.stroke()
+    }
+    if (P.ears === 'pointy' || P.ears === 'bat' || P.ears === 'rose' || P.ears === 'tipped') ear(false)
+    x.fillStyle = css(body)
+    if (P.fluff) cloudShape(x, hx, hy, hr * 0.85, hr * 0.85, 8)
+    x.beginPath(); x.arc(hx, hy, hr * 0.85, 0, Math.PI * 2); x.fill(); if (!P.fluff) x.stroke()
+    const sn = P.snout * s
+    if (sn > 2 * s) { x.fillStyle = css(patch); x.beginPath(); x.roundRect(hx + hr * 0.3, hy - hr * 0.05, sn + hr * 0.3, hr * 0.6, hr * 0.3); x.fill(); x.stroke() }
+    else { x.fillStyle = css(shade(body, 0.55)); x.beginPath(); x.ellipse(hx + hr * 0.6, hy + hr * 0.25, hr * 0.38, hr * 0.32, 0, 0, Math.PI * 2); x.fill() }
+    x.fillStyle = '#2b2b33'; x.beginPath(); x.arc(hx + hr * 0.6 + sn, hy + hr * 0.1, 1.6 * s, 0, Math.PI * 2); x.fill()
+    const blink = Math.sin(t * 0.9 + d.seed * 3) > 0.985 ? 0.2 : 1
+    x.beginPath(); x.ellipse(hx + hr * 0.25, hy - hr * 0.25, 1.4 * s, 1.6 * s * blink, 0, 0, Math.PI * 2); x.fill()
+    if (P.ears !== 'pointy' && P.ears !== 'bat' && P.ears !== 'rose' && P.ears !== 'tipped') ear(true)
+    if (d.happy > 0 && sn > 2 * s) { x.fillStyle = '#e8506a'; x.beginPath(); x.ellipse(hx + hr * 0.6 + sn * 0.6, hy + hr * 0.6, 1.4 * s, 2 * s, 0, 0, Math.PI * 2); x.fill() }
+    x.restore()
+  }
+
+  const blob = (x, cx, cy, r, col) => { x.fillStyle = col; x.beginPath(); x.arc(cx, cy, r, 0, Math.PI * 2); x.fill() }
+  // Dogs walk inside this band (fractions of the height); the shade under the big fig is a favourite spot.
+  const TOP = 0.53, BOTTOM = 0.95
+
   class Park {
     constructor(phone, body, opts = {}) {
       this.phone = phone
-      this.body = body
       this.saver = !!opts.saver
       body.innerHTML = '<canvas aria-label="Dog park"></canvas><div class="park-hint"></div>'
       this.cv = body.querySelector('canvas')
@@ -441,109 +521,131 @@
     }
     stop() { this.running = false }
     resize() {
-      const W = this.cv.clientWidth, H = this.cv.clientHeight
-      this.S = 2
-      this.w = Math.max(60, Math.floor(W / this.S))
-      this.h = Math.max(80, Math.floor(H / this.S))
-      this.cv.width = this.w
-      this.cv.height = this.h
-      this.scene = this.drawScene()
-    }
-    // Static background, drawn once: sky, hills, pines, a winding stream and grass.
-    drawScene() {
-      const { w, h } = this
-      const c = document.createElement('canvas'); c.width = w; c.height = h
-      const x = c.getContext('2d'), R = rand(42)
-      const horizon = Math.round(h * 0.3)
-      const sky = ['#8fb7c9', '#9fc2cf', '#b2cdd3', '#c5d6d6']
-      sky.forEach((col, i) => { x.fillStyle = col; x.fillRect(0, Math.round((horizon * i) / sky.length), w, Math.ceil(horizon / sky.length) + 1) })
-      x.fillStyle = '#7fae63'
-      for (let i = 0; i < w; i++) { const y = horizon - 3 - Math.round(2 + 2 * Math.sin(i / 9) + Math.sin(i / 4)); x.fillRect(i, y, 1, horizon - y + 1) }
-      x.fillStyle = '#86bb5f'; x.fillRect(0, horizon, w, h - horizon)
-      for (let row = 0; row < 6; row++) { x.fillStyle = row % 2 ? '#8cc164' : '#84b95c'; x.fillRect(0, horizon + 8 + row * Math.round((h - horizon) / 6), w, 2) }
-      const pine = (px, py, sz) => {
-        x.fillStyle = '#6b3d1f'; x.fillRect(px - 1, py, 2, 3)
-        for (let k = 0; k < sz; k++) { x.fillStyle = k % 3 === 0 ? '#2f6b39' : '#3b7f44'; const hw = Math.round(((k + 1) / sz) * (sz / 2.2)) + 1; x.fillRect(px - hw, py - sz + k, hw * 2, 1) }
-      }
-      for (let i = 0; i < 9; i++) { const px = Math.round(((i + 0.5) / 9) * w + (R() - 0.5) * 8); if (i === 6) continue; pine(px, horizon + 2 + Math.round(R() * 3), 14 + Math.round(R() * 6)) }
-      x.fillStyle = '#6b3d1f'; x.fillRect(Math.round(w * 0.68), horizon - 2, 2, 6)
-      x.fillStyle = '#4f9a48'; x.beginPath(); x.arc(Math.round(w * 0.68) + 1, horizon - 7, 6, 0, Math.PI * 2); x.fill()
-      this.riverY = (px) => Math.round(h * 0.44 + Math.sin(px / (w / 6)) * 4)
-      for (let i = 0; i < w; i++) {
-        const y = this.riverY(i)
-        x.fillStyle = '#5b98c6'; x.fillRect(i, y - 3, 1, 7)
-        x.fillStyle = '#4c87b6'; x.fillRect(i, y + 3, 1, 1)
-        if (R() < 0.12) { x.fillStyle = '#a9d0ea'; x.fillRect(i, y - 1 + Math.round(R() * 2), 2, 1) }
-      }
-      for (let i = 0; i < w * 0.9; i++) { x.fillStyle = R() < 0.5 ? '#76ab52' : '#9ccc72'; const tx = Math.round(R() * w), ty = Math.round(horizon + 6 + R() * (h - horizon - 6)); if (Math.abs(ty - this.riverY(tx)) > 5) { x.fillRect(tx, ty, 1, 1); x.fillRect(tx + 2, ty, 1, 1); x.fillRect(tx + 1, ty + 1, 1, 1) } }
-      return c
+      const dpr = Math.min(2, devicePixelRatio || 1)
+      this.w = Math.max(60, this.cv.clientWidth); this.h = Math.max(80, this.cv.clientHeight)
+      this.cv.width = this.w * dpr; this.cv.height = this.h * dpr
+      this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
     }
     sync() {
       if (!this.w) return
-      const spotted = breeds.filter((b) => caught[b.id])
       const have = new Set(this.dogs.map((d) => d.b.id))
       this.dogs = this.dogs.filter((d) => caught[d.b.id])
-      for (const b of spotted) {
-        if (have.has(b.id)) continue
-        const R = rand([...b.id].reduce((n, ch) => n * 31 + ch.charCodeAt(0), 7))
-        const dog = { b, x: 6 + R() * (this.w - 16), y: this.h * 0.55 + R() * (this.h * 0.4), dir: R() < 0.5 ? -1 : 1, state: 'idle', timer: R() * 2, phase: R() * 6, size: SIZE_OVERRIDE[b.id] ?? GROUP_SIZE[b.groupId] ?? 1, long: LONG_LOW.has(b.id), colours: null, hop: 0 }
-        dogColours(b).then((c) => (dog.colours = c))
-        this.dogs.push(dog)
-      }
-      this.hint.textContent = `${this.dogs.length} dogs`
+      breeds.filter((b) => caught[b.id] && !have.has(b.id)).forEach((b, i) => {
+        const n = this.dogs.length + i
+        // Breeds with their own shape are already drawn to size; the rest scale by group.
+        const d = { b, seed: n * 1.7 + 0.3, dir: n % 2 ? 1 : -1, state: 'idle', timer: Math.random() * 2, hop: 0, happy: 0, scale: 1, size: SHAPE[b.id] ? 1 : GROUP_SIZE[b.groupId] ?? 1, x: this.w * (0.12 + ((n * 0.37) % 0.76)), y: this.h * (TOP + ((n * 0.53) % 1) * (BOTTOM - TOP)) }
+        dogColours(b).then((c) => (d.col = c))
+        this.dogs.push(d)
+      })
     }
     tap(e) {
-      const r = this.cv.getBoundingClientRect()
-      const px = ((e.clientX - r.left) / r.width) * this.w, py = ((e.clientY - r.top) / r.height) * this.h
-      const hit = [...this.dogs].sort((a, z) => z.y - a.y).find((d) => { const L = 11 * d.size; return px > d.x - 2 && px < d.x + L + 3 && py > d.y - 9 * d.size - 3 && py < d.y + 2 })
-      if (hit) this.phone.openProps(hit.b.id)
+      const r = this.cv.getBoundingClientRect(), px = e.clientX - r.left, py = e.clientY - r.top
+      let best = null, bestD = 36
+      for (const d of this.dogs) { const dist = Math.hypot(px - d.x, py - (d.y - 14 * d.scale)); if (dist < bestD) { best = d; bestD = dist } }
+      if (best) this.phone.openProps(best.b.id)
     }
+    pickTarget(d) {
+      const { w, h } = this
+      if (Math.random() < 0.3) { d.tx = w * (0.82 + (Math.random() - 0.5) * 0.2); d.ty = h * (0.65 + Math.random() * 0.04); d.toSpot = true }
+      else { d.tx = w * (0.08 + Math.random() * 0.84); d.ty = h * (TOP + Math.random() * (BOTTOM - TOP)); d.toSpot = false }
+    }
+    // Wander, pause, sit, and every so often run over to play with a friend.
     update(dt) {
-      const top = this.h * 0.52, bottom = this.h - 3
+      const { h } = this
       for (const d of this.dogs) {
-        d.timer -= dt
-        d.hop = Math.max(0, d.hop - dt)
+        d.timer -= dt; d.hop = Math.max(0, d.hop - dt * 1.6); d.happy = Math.max(0, d.happy - dt)
         if (d.timer <= 0) {
-          const roll = Math.random()
-          if (roll < 0.45) { d.state = 'walk'; d.tx = 4 + Math.random() * (this.w - 16); d.ty = top + Math.random() * (bottom - top); d.timer = 3 + Math.random() * 4 }
-          else if (roll < 0.75) { d.state = 'idle'; d.timer = 1.5 + Math.random() * 3 }
-          else if (roll < 0.92) { d.state = 'sit'; d.timer = 2 + Math.random() * 4 }
-          else {
-            const friend = this.dogs[Math.floor(Math.random() * this.dogs.length)]
-            if (friend && friend !== d) { for (const p of [d, friend]) { p.state = 'play'; p.timer = 3 } d.tx = friend.x; d.ty = friend.y; friend.tx = d.x; friend.ty = d.y }
-          }
+          const r = Math.random()
+          if (r < 0.5) { d.state = 'walk'; this.pickTarget(d); d.timer = 3 + Math.random() * 3 }
+          else if (r < 0.75) { d.state = 'idle'; d.timer = 1 + Math.random() * 2.5; d.happy = 1.5 }
+          else if (r < 0.9) { d.state = 'sit'; d.timer = 2 + Math.random() * 3 }
+          else { const f = this.dogs[Math.floor(Math.random() * this.dogs.length)]; if (f !== d) { d.state = f.state = 'run'; d.friend = f; f.friend = d; d.timer = f.timer = 3 } }
         }
-        if (d.state === 'walk' || d.state === 'play') {
-          const sp = (d.state === 'play' ? 26 : 9) * dt, dx = d.tx - d.x, dy = d.ty - d.y, dist = Math.hypot(dx, dy)
-          if (dist < 1.5) { if (d.state === 'play') d.hop = 1.2; d.state = 'idle'; d.timer = 1 + Math.random() * 2 }
-          else { d.x += (dx / dist) * sp; d.y += (dy / dist) * sp; if (Math.abs(dx) > 0.5) d.dir = dx > 0 ? 1 : -1 }
+        if (d.state === 'run' && d.friend) { d.tx = d.friend.x; d.ty = d.friend.y }
+        if (d.state === 'walk' || d.state === 'run') {
+          const sp = (d.state === 'run' ? 90 : 26) * dt, dx = d.tx - d.x, dy = d.ty - d.y, dist = Math.hypot(dx, dy)
+          if (dist < (d.state === 'run' ? 26 : 2)) { if (d.state === 'run') { d.hop = 1; d.happy = 2 } d.state = d.toSpot ? 'sit' : 'idle'; d.timer = 1.5 + Math.random() * 2 }
+          else { d.x += (dx / dist) * sp; d.y += (dy / dist) * sp; if (Math.abs(dx) > 1) d.dir = dx > 0 ? 1 : -1 }
         }
-        d.phase += dt * (d.state === 'play' ? 14 : 8)
+        // Further away = smaller.
+        d.scale = 0.75 + 0.45 * ((d.y / h - TOP) / (BOTTOM - TOP))
       }
     }
-    drawDog(x, d) {
-      if (!d.colours) return
-      const s = d.size, body = d.colours.body, patch = d.colours.patch, dark = shade(body, 0.45)
-      const L = Math.round((d.long ? 12 : 9) * s), H = Math.max(3, Math.round(4 * s)), leg = Math.max(1, Math.round((d.long ? 1.5 : 3) * s))
-      const moving = d.state === 'walk' || d.state === 'play'
-      const hop = d.hop > 0 ? Math.round(Math.abs(Math.sin(d.hop * 9)) * 3) : 0
-      const fx = Math.round(d.x), fy = Math.round(d.y) - hop
-      const sit = d.state === 'sit'
-      x.fillStyle = 'rgba(40,70,30,0.35)'; x.fillRect(fx, Math.round(d.y) + 1, L + 2, 1)
-      const bodyTop = fy - leg - H + (sit ? 1 : 0)
-      x.fillStyle = rgb(body); x.fillRect(fx, bodyTop, L, H)
-      x.fillStyle = rgb(patch); x.fillRect(d.dir > 0 ? fx + L - 3 : fx + 1, bodyTop + H - 1, 2, 1); x.fillRect(fx + Math.round(L / 2) - 1, bodyTop, 2, 1)
-      const legs = sit ? [d.dir > 0 ? L - 2 : 1] : [1, 3, L - 4, L - 2]
-      legs.forEach((lx, i) => { const lift = moving && (i + Math.floor(d.phase)) % 2 ? 1 : 0; x.fillStyle = rgb(shade(body, 0.85)); x.fillRect(fx + lx, bodyTop + H, 1, leg - lift) })
-      if (sit) { x.fillStyle = rgb(shade(body, 0.85)); x.fillRect(d.dir > 0 ? fx : fx + L - 3, bodyTop + H - 1, 3, leg + 1) }
-      const hs = Math.max(3, Math.round(4 * s)), hx = d.dir > 0 ? fx + L - 1 : fx - hs + 1, hy = bodyTop - hs + 2
-      x.fillStyle = rgb(body); x.fillRect(hx, hy, hs, hs)
-      x.fillStyle = rgb(patch); x.fillRect(d.dir > 0 ? hx + hs - 1 : hx - 1, hy + hs - 2, 2, 2)
-      x.fillStyle = rgb(dark); x.fillRect(d.dir > 0 ? hx + hs : hx - 2, hy + hs - 2, 1, 1); x.fillRect(d.dir > 0 ? hx + hs - 2 : hx + 1, hy + 1, 1, 1)
-      x.fillStyle = rgb(shade(body, 0.7)); x.fillRect(d.dir > 0 ? hx : hx + hs - 1, hy, 1, Math.max(2, Math.round(2.5 * s)))
-      const wag = Math.round(Math.sin(d.phase * (d.state === 'idle' ? 1.6 : 1)) * 1)
-      x.fillStyle = rgb(shade(body, 0.9)); const tx = d.dir > 0 ? fx - 1 : fx + L
-      x.fillRect(tx + (d.dir > 0 ? wag : -wag), bodyTop - 2, 1, 3)
+    // Rushcutters Bay: lawn and Moreton Bay figs in front, the marina and Darling Point across the water, the Bridge far off.
+    // Everything that doesn't move is drawn once into this.bg.
+    drawBackground() {
+      const { w, h } = this, dpr = Math.min(2, devicePixelRatio || 1)
+      const c = document.createElement('canvas'); c.width = w * dpr; c.height = h * dpr
+      const x = c.getContext('2d'); x.scale(dpr, dpr)
+      let seed = 7; const R = () => ((seed = (seed * 16807) % 2147483647) / 2147483647)
+      const sea = h * 0.36, shore = h * 0.47
+      const g = x.createLinearGradient(0, 0, 0, sea); g.addColorStop(0, '#9fd0f5'); g.addColorStop(1, '#e4f2f7'); x.fillStyle = g; x.fillRect(0, 0, w, sea + 1)
+      blob(x, w * 0.84, h * 0.09, 20, '#ffe27a'); blob(x, w * 0.84, h * 0.09, 28, 'rgba(255,226,122,0.25)')
+      // Harbour Bridge, hazy in the distance (left)
+      const bx = w * 0.04, bw = w * 0.36, deck = sea - 6, arch = deck - 26
+      x.strokeStyle = '#9fb0bf'; x.fillStyle = '#9fb0bf'; x.lineWidth = 2
+      x.beginPath(); x.moveTo(bx + 8, deck); x.quadraticCurveTo(bx + bw / 2, arch - 22, bx + bw - 8, deck); x.stroke()
+      x.lineWidth = 1; x.beginPath(); x.moveTo(bx + 8, deck - 4); x.quadraticCurveTo(bx + bw / 2, arch - 14, bx + bw - 8, deck - 4); x.stroke()
+      for (let i = 1; i < 12; i++) { const px = bx + 8 + ((bw - 16) * i) / 12, k = (i / 12) * 2 - 1, top = deck - (1 - k * k) * (deck - arch + 4); x.beginPath(); x.moveTo(px, deck); x.lineTo(px, top); x.stroke() }
+      x.fillRect(bx - 4, deck, bw + 8, 2)
+      ;[bx + 1, bx + bw - 9].forEach((px) => x.fillRect(px, deck - 15, 8, 15))
+      // Darling Point and Elizabeth Bay towers across the water (right)
+      for (let i = 0; i < 16; i++) {
+        const tw = 8 + R() * 10, th = 8 + R() * (i % 4 === 1 ? 34 : 16), tx = w * 0.42 + (i / 16) * w * 0.62 + R() * 6
+        x.fillStyle = ['#e9e2d6', '#d8d4cc', '#f2eee6', '#cfd6da'][i % 4]; x.fillRect(tx, sea - th, tw, th)
+        x.fillStyle = 'rgba(90,110,130,0.25)'; for (let fy = sea - th + 3; fy < sea - 2; fy += 4) x.fillRect(tx + 1, fy, tw - 2, 1)
+      }
+      x.fillStyle = '#7fae74'; x.beginPath(); x.ellipse(w * 0.42, sea, w * 0.08, 5, 0, Math.PI, 0); x.fill()
+      // harbour
+      const wg = x.createLinearGradient(0, sea, 0, shore); wg.addColorStop(0, '#5d9cc4'); wg.addColorStop(1, '#3f7fac'); x.fillStyle = wg; x.fillRect(0, sea, w, shore - sea)
+      // marina: a forest of masts over moored hulls
+      const my = sea + (shore - sea) * 0.42
+      for (let i = 0; i < 34; i++) {
+        const mx = w * 0.3 + R() * w * 0.68, mh = 18 + R() * 26, hy = my + R() * 6
+        x.strokeStyle = 'rgba(255,255,255,0.85)'; x.lineWidth = 1; x.beginPath(); x.moveTo(mx, hy); x.lineTo(mx, hy - mh); x.stroke()
+        x.fillStyle = '#ffffff'; x.beginPath(); x.moveTo(mx - 7, hy - 2); x.lineTo(mx + 7, hy - 2); x.lineTo(mx + 5, hy + 1); x.lineTo(mx - 5, hy + 1); x.closePath(); x.fill()
+        x.fillStyle = 'rgba(30,60,90,0.3)'; x.fillRect(mx - 5, hy + 1, 10, 1)
+      }
+      // sandstone sea wall
+      x.fillStyle = '#d9c39a'; x.fillRect(0, shore - 3, w, 4); x.fillStyle = '#c4ab80'; x.fillRect(0, shore + 1, w, 1)
+      // lawn: one flat, mown green with soft mottling
+      x.fillStyle = '#86c35f'; x.fillRect(0, shore + 2, w, h - shore)
+      for (let i = 0; i < 70; i++) { x.fillStyle = R() < 0.5 ? 'rgba(255,255,255,0.06)' : 'rgba(40,90,30,0.06)'; x.beginPath(); x.ellipse(R() * w, shore + 8 + R() * (h - shore), 10 + R() * 26, 3 + R() * 6, 0, 0, Math.PI * 2); x.fill() }
+      // the curving concrete path
+      x.strokeStyle = '#d4d1c8'; x.lineWidth = 9; x.lineCap = 'round'
+      x.beginPath(); x.moveTo(-10, h * 0.6); x.bezierCurveTo(w * 0.35, h * 0.56, w * 0.55, h * 0.74, w + 10, h * 0.7); x.stroke()
+      x.strokeStyle = '#c4c1b7'; x.lineWidth = 1; x.stroke()
+      // lamp posts along the path
+      ;[[0.22, 0.585], [0.78, 0.705]].forEach(([fx, fy]) => { x.fillStyle = '#3c3f44'; x.fillRect(w * fx - 1, h * fy - 30, 2, 30); x.fillRect(w * fx - 3, h * fy - 32, 6, 3) })
+      // the park sign
+      const sx = w * 0.06, sy = h * 0.9
+      x.font = '600 6px system-ui, sans-serif'; const sw = x.measureText('Rushcutters Bay Park').width + 8
+      x.fillStyle = '#9aa0a6'; x.fillRect(sx + 4, sy - 6, 2, 8); x.fillRect(sx + sw - 6, sy - 6, 2, 8)
+      x.fillStyle = '#1f4fa0'; x.fillRect(sx, sy - 18, sw, 13)
+      x.fillStyle = '#fff'; x.textBaseline = 'middle'; x.fillText('Rushcutters Bay Park', sx + 4, sy - 11.5)
+      return c
+    }
+    // A Moreton Bay fig: thick grey trunk, wide dark canopy. Drawn after the dogs that are behind it.
+    fig(x, cx, cy, k) {
+      x.fillStyle = 'rgba(30,60,25,0.18)'; x.beginPath(); x.ellipse(cx, cy + 2, 42 * k, 9 * k, 0, 0, Math.PI * 2); x.fill()
+      x.fillStyle = '#8b8378'; x.beginPath(); x.moveTo(cx - 9 * k, cy); x.quadraticCurveTo(cx - 4 * k, cy - 18 * k, cx - 5 * k, cy - 34 * k); x.lineTo(cx + 5 * k, cy - 34 * k); x.quadraticCurveTo(cx + 4 * k, cy - 18 * k, cx + 10 * k, cy); x.closePath(); x.fill()
+      ;[[-26, -44, 22], [0, -54, 28], [26, -44, 22], [-14, -62, 20], [14, -64, 20], [-36, -36, 14], [36, -36, 14]].forEach(([dx, dy, r], i) => blob(x, cx + dx * k, cy + dy * k, r * k, i % 2 ? '#3e7a3a' : '#356e33'))
+      ;[[-18, -66, 9], [8, -72, 10], [24, -54, 8]].forEach(([dx, dy, r]) => blob(x, cx + dx * k, cy + dy * k, r * k, 'rgba(120,180,90,0.45)'))
+    }
+    paint(x, t) {
+      const { w, h } = this
+      if (!this.bg || this.bgSize !== `${w}x${h}`) { this.bg = this.drawBackground(); this.bgSize = `${w}x${h}` }
+      x.drawImage(this.bg, 0, 0, w, h)
+      const sea = h * 0.36, shore = h * 0.47
+      // water glints and two yachts sailing across the bay
+      x.fillStyle = 'rgba(255,255,255,0.5)'
+      for (let i = 0; i < 10; i++) { const gx = (i * 0.37 * w + Math.sin(t * 0.6 + i) * 6) % w, gy = sea + 4 + ((i * 0.61) % 1) * (shore - sea - 10); x.fillRect(gx, gy, 6 + (i % 3) * 3, 1) }
+      ;[[0.022, 0.12, 0.6], [-0.015, 0.62, 0.78]].forEach(([v, off, fy]) => {
+        const span = w + 60, px = (((t * v * w + off * span) % span) + span) % span - 30, py = sea + (shore - sea) * fy, dir = Math.sign(v)
+        x.fillStyle = '#fff'; x.beginPath(); x.moveTo(px - 9, py); x.lineTo(px + 9, py); x.lineTo(px + 6, py + 3); x.lineTo(px - 6, py + 3); x.closePath(); x.fill()
+        x.beginPath(); x.moveTo(px, py - 1); x.lineTo(px, py - 24); x.lineTo(px + dir * 11, py - 2); x.closePath(); x.fill()
+        x.fillStyle = 'rgba(255,255,255,0.75)'; x.beginPath(); x.moveTo(px - dir * 1, py - 20); x.lineTo(px - dir * 1, py - 2); x.lineTo(px - dir * 8, py - 2); x.closePath(); x.fill()
+      })
     }
     tint() {
       const hr = new Date().getHours()
@@ -554,11 +656,13 @@
     }
     loop(now) {
       if (!this.running) return
-      const dt = Math.min(0.1, (now - this.last) / 1000); this.last = now
+      const dt = Math.min(0.05, (now - this.last) / 1000); this.last = now
+      const t = now / 1000, x = this.ctx
       if (!this.still) this.update(dt)
-      const x = this.ctx; x.imageSmoothingEnabled = false
-      x.drawImage(this.scene, 0, 0)
-      for (const d of [...this.dogs].sort((a, z) => a.y - z.y)) this.drawDog(x, d)
+      this.paint(x, t)
+      const figs = [{ y: this.h * 0.56, draw: () => this.fig(x, this.w * 0.12, this.h * 0.56, 0.8) }, { y: this.h * 0.62, draw: () => this.fig(x, this.w * 0.9, this.h * 0.62, 0.95) }]
+      const things = [...this.dogs.map((d) => ({ y: d.y, draw: () => { x.save(); x.translate(d.x, d.y); drawStory(x, d, t); x.restore() } })), ...figs]
+      for (const o of things.sort((a, z) => a.y - z.y)) o.draw()
       const [tint, label] = this.tint()
       if (tint) { x.fillStyle = tint; x.fillRect(0, 0, this.w, this.h) }
       this.hint.textContent = `${this.dogs.length} dogs · ${label}`
@@ -865,21 +969,13 @@
   }
   function refreshAll() { phones.forEach((p) => p.refresh()) }
 
-  const screens = [
-    { label: 'Breeds', state: {} },
-    { label: 'Properties (breed page)', state: { detail: 'staffordshire-bull-terrier' } },
-    { label: 'Park', state: { tab: 'park' } },
-    { label: 'Progress', state: { tab: 'progress' } },
-    { label: 'Help', state: { tab: 'more' } },
-  ]
+  // One phone: tap around it like the real app.
   const host = document.getElementById('phones')
-  for (const sc of screens) {
-    const wrap = document.createElement('div')
-    wrap.className = 'phone-wrap'
-    wrap.innerHTML = `<span class="phone-label">${sc.label}</span><div class="phone"></div>`
-    host.append(wrap)
-    phones.push(new Phone(wrap.querySelector('.phone'), sc.state))
-  }
+  const wrap = document.createElement('div')
+  wrap.className = 'phone-wrap'
+  wrap.innerHTML = '<div class="phone"></div>'
+  host.append(wrap)
+  phones.push(new Phone(wrap.querySelector('.phone'), {}))
   // Boot screen once per visit, on the first (phone-sized) instance.
   let booted = false
   try { booted = sessionStorage.getItem('dogdex98-booted') === '1'; sessionStorage.setItem('dogdex98-booted', '1') } catch {}
