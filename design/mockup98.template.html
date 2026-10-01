@@ -142,7 +142,7 @@
   .box { margin: 0; padding: 6px 6px 8px; min-width: 0; }
   .chips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px 4px; }
   .box .chips:has(> :nth-child(2):last-child) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .chip { display: flex; align-items: center; gap: 4px; font-size: 10.5px; line-height: 1.15; min-width: 0; hyphens: auto; -webkit-hyphens: auto; }
+  .chip { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 3px; font-size: 10px; line-height: 1.2; min-width: 0; overflow-wrap: break-word; }
   .chip-icon { width: 24px; height: 24px; flex: none; display: grid; place-items: center; background: var(--silver); box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf; }
   .chip-icon svg { width: 16px; height: 16px; }
   .chip-icon.dexno { font-size: 9px; font-weight: bold; width: 28px; }
@@ -451,8 +451,8 @@
       if (this.s.detail) this.renderProps()
     }
     fillStatus() {
-      this.host.querySelectorAll('[data-status="count"]').forEach((el) => (el.textContent = `${officialCaught()} of ${officialTotal} caught (${pct(officialCaught() / officialTotal)})`))
-      this.host.querySelectorAll('[data-status="bonus"]').forEach((el) => (el.textContent = `Bonus: ${caughtIn('bonus')} of ${group.bonus.total} (${pct(caughtIn('bonus') / group.bonus.total)})`))
+      this.host.querySelectorAll('[data-status="count"]').forEach((el) => (el.textContent = `${officialCaught()}/${officialTotal} caught (${pct(officialCaught() / officialTotal)})`))
+      this.host.querySelectorAll('[data-status="bonus"]').forEach((el) => (el.textContent = `Bonus ${caughtIn('bonus')}/${group.bonus.total} (${pct(caughtIn('bonus') / group.bonus.total)})`))
     }
 
     renderDexShell() {
