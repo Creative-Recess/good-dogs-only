@@ -141,8 +141,7 @@ fieldset { min-width: 0; }
 .recent-row img { width: 18px; height: 18px; vertical-align: middle; margin-right: 4px; object-fit: cover; }
 .recent-empty { padding: 8px 6px; font-size: 11px; color: #333; }
 .section-title { margin: 10px 0 4px; font-weight: bold; }
-.about-head { display: flex; gap: 8px; align-items: center; margin-bottom: 6px; }
-.about-head svg { width: 40px; height: 40px; flex: none; }
+.about-head { margin-bottom: 6px; }
 .about-head b { font-size: 14px; display: block; }
 .about-head span { font-size: 10px; color: #333; }
 .panel-box { margin: 0 0 10px; padding: 8px; }

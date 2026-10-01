@@ -55,11 +55,8 @@ export function HelpWindowBody({ lastBackup, sightings }: { lastBackup: string |
       <fieldset className="panel-box">
         <legend>About</legend>
         <div className="about-head">
-          <Icon name="bigPaw" />
-          <span>
-            <b>Good Dogs Only</b>
-            <span>Version 1.0</span>
-          </span>
+          <b>Good Dogs Only</b>
+          <span>Version 1.0</span>
         </div>
         <p>
           {TOTAL} breeds: all {TOTAL - bonus} recognised by Dogs Australia (checked 1 Oct 2026), plus {bonus} popular dogs it doesn't, in their own Bonus group.

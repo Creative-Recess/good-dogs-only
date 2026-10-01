@@ -181,8 +181,7 @@
   .sunken-panel tbody tr:nth-child(even) { background: #edf3fe; }
   .sunken-panel tr { cursor: pointer; }
   .recent-row img { width: 18px; height: 18px; vertical-align: middle; margin-right: 5px; object-fit: cover; border-radius: 3px; }
-  .about-head { display: flex; gap: 10px; align-items: center; margin-bottom: 8px; }
-  .about-head svg { width: 44px; height: 44px; flex: none; filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3)); }
+  .about-head { margin-bottom: 8px; }
   .about-head b { font-size: 14px; display: block; }
   .about-head span { font-size: 10px; color: var(--muted); }
   .panel-box { margin: 0 0 10px; padding: 9px; }
