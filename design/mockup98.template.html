@@ -73,7 +73,7 @@
   .main, .props { box-shadow: none; padding: 0; }
   .main { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 0; }
   .main .title-bar, .props .title-bar { padding: 3px 4px 3px 6px; }
-  .main .status-bar { margin: 0; padding: 2px 2px 14px; }
+  .main .status-bar, .props .status-bar { margin: 0; padding: 2px 2px 14px; flex: none; }
   .main > .window-body { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 3px; gap: 4px; }
   .title-bar-text { display: flex; align-items: center; gap: 4px; }
   .title-bar-text svg { width: 14px; height: 14px; flex: none; }
@@ -232,7 +232,7 @@
     .app98 .top-gap { height: 4px; }
     .props { top: 0; }
     .app98 .top-gap { height: 0; }
-    .main .status-bar { padding-bottom: calc(2px + env(safe-area-inset-bottom, 0px) / 1.5); }
+    .main .status-bar, .props .status-bar { padding-bottom: calc(2px + env(safe-area-inset-bottom, 0px) / 1.5); }
   }
   @media (prefers-reduced-motion: reduce) {
     .progress-indicator.segmented > .progress-indicator-bar { transition: none; }
@@ -439,10 +439,12 @@
       this.refreshResults()
       this.renderProgress()
       this.renderMore()
-      const n = officialCaught()
-      this.q('[data-status="count"]').textContent = `${n} of ${officialTotal} caught`
-      this.q('[data-status="bonus"]').textContent = `Bonus: ${caughtIn('bonus')} of ${group.bonus.total}`
+      this.fillStatus()
       if (this.s.detail) this.renderProps()
+    }
+    fillStatus() {
+      this.host.querySelectorAll('[data-status="count"]').forEach((el) => (el.textContent = `${officialCaught()} of ${officialTotal} caught`))
+      this.host.querySelectorAll('[data-status="bonus"]').forEach((el) => (el.textContent = `Bonus: ${caughtIn('bonus')} of ${group.bonus.total}`))
     }
 
     renderDexShell() {
@@ -559,8 +561,9 @@
           ${b.ankcUrl ? `<a class="link-btn-wrap" href="${esc(b.ankcUrl)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><button type="button" class="link-btn" tabindex="-1">See the official standard${icons.ext}</button></a>` : ''}
           ${b.forms.length ? `<fieldset><legend>Varieties</legend><div class="forms">${b.forms.map((f) => `<span>${esc(f)}</span>`).join('')}</div></fieldset>` : ''}
           <fieldset><legend>Status</legend>${status}</fieldset>
-          <div class="props-buttons"><button type="button" data-act="close-props">OK</button><button type="button" data-act="close-props">Cancel</button></div>
-        </div>`
+        </div>
+        <div class="status-bar"><p class="status-bar-field" data-status="count"></p><p class="status-bar-field" data-status="bonus"></p></div>`
+      this.fillStatus()
     }
 
     renderProgress() {
