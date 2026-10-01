@@ -274,6 +274,12 @@
   .gear i { position: absolute; left: 11.75px; top: 0; width: 2.5px; height: 7.5px; border-radius: 1.25px; background: #4a4a4a; transform-origin: 1.25px 13px; transform: rotate(calc(var(--i) * 30deg)); animation: gear 1s linear infinite; animation-delay: calc((var(--i) - 12) * 1s / 12); opacity: 0.15; }
   @keyframes gear { 0% { opacity: 1; } 100% { opacity: 0.15; } }
 
+
+  /* Help: a window of its own, behind the round ? on the right of the title bar. */
+  .main .title-bar-controls a { order: 9; margin-left: auto; display: inline-flex; cursor: pointer; }
+  .helpwin { z-index: 29; }
+  .helpwin .title-bar-controls a { display: none; }
+
   @media (max-width: 560px) {
     body { padding-inline: 0; padding-block: 0; }
     .readme { display: none; }
@@ -295,7 +301,7 @@
     <div class="title-bar-controls"><button aria-label="Close"></button><button aria-label="Minimize"></button><button aria-label="Maximize"></button></div>
   </div>
   <div class="window-body">
-    <p><b>Aqua, with four ideas to try.</b> A System Preferences style toolbar instead of tabs; fold-away sections on the breed page; the dog itself in the Spotted sheet; and a spinning gear on the launch screen.</p>
+    <p><b>Aqua, with four ideas to try.</b> A System Preferences style toolbar instead of tabs, with Help behind the round ? in the title bar; fold-away sections on the breed page; the dog itself in the Spotted sheet; and a spinning gear on the launch screen.</p>
     <p>Tap anything: it works like the app, with 28 sample breeds and some example spots (Progress uses example numbers). Switch screens with the tabs at the top.</p>
     <p>To suggest a change, leave a comment on the part you mean, then tell Claude in chat.</p>
   </div>
@@ -746,7 +752,7 @@
             <div class="window main">
               <div class="title-bar">
                 <div class="title-bar-text">${icons.bigPaw}Good Dogs Only</div>
-                <div class="title-bar-controls"><button aria-label="Minimize" data-act="joke-min"></button><button aria-label="Close" data-act="shutdown"></button></div>
+                <div class="title-bar-controls"><button aria-label="Minimize" data-act="joke-min"></button><button aria-label="Close" data-act="shutdown"></button><a data-act="open-help" aria-label="Help"><button tabindex="-1" aria-hidden="true"></button></a></div>
               </div>
               <div class="window-body">
                 <section class="tabs">
@@ -754,17 +760,19 @@
                     <li role="tab" data-act="tab" data-tab="dex"><a>${icons.tbBreeds}<span>Breeds</span></a></li>
                     <li role="tab" data-act="tab" data-tab="park"><a>${icons.tbPark}<span>Park</span></a></li>
                     <li role="tab" data-act="tab" data-tab="progress"><a>${icons.tbProgress}<span>Progress</span></a></li>
-                    <li role="tab" data-act="tab" data-tab="more"><a>${icons.tbHelp}<span>Help</span></a></li>
                   </menu>
                   <div class="window panel" role="tabpanel" data-panel="dex"><div class="window-body"></div></div>
                   <div class="window panel park-panel" role="tabpanel" data-panel="park" hidden><div class="window-body park-body"></div></div>
                   <div class="window panel" role="tabpanel" data-panel="progress" hidden><div class="window-body"></div></div>
-                  <div class="window panel" role="tabpanel" data-panel="more" hidden><div class="window-body"></div></div>
                 </section>
               </div>
               
             </div>
             <div class="window props" hidden></div>
+            <div class="window props helpwin" hidden role="dialog" aria-label="Help">
+              <div class="title-bar"><div class="title-bar-text">Good Dogs Only Help</div><div class="title-bar-controls"><button aria-label="Close" data-act="close-help"></button></div></div>
+              <div class="window-body" data-help></div>
+            </div>
             <div class="modal" hidden></div>
             <div class="saver" hidden data-act="saver-exit"><div class="saver-body"></div></div>
             <div class="boot" hidden data-act="launch">
@@ -776,6 +784,8 @@
         </div>`
       this.q = (sel) => host.querySelector(sel)
       this.panels = Object.fromEntries([...host.querySelectorAll('[data-panel]')].map((n) => [n.dataset.panel, n.querySelector('.window-body')]))
+      // Help is a window of its own, opened from the ? in the title bar, not a tab.
+      this.panels.more = host.querySelector('[data-help]')
       host.addEventListener('click', (e) => this.onClick(e))
       host.addEventListener('input', (e) => this.onInput(e))
       host.addEventListener('change', (e) => this.onChange(e))
@@ -794,6 +804,8 @@
       if (act === 'tab') { this.closeProps(); this.showTab(t.dataset.tab) }
       if (act === 'open') this.openProps(t.dataset.id)
       if (act === 'close-props') this.closeProps()
+      if (act === 'open-help') { this.closeProps(); const h = this.q('.helpwin'); h.hidden = false; h.querySelector('.window-body').scrollTop = 0 }
+      if (act === 'close-help') this.q('.helpwin').hidden = true
       if (act === 'catch') catchBreed(t.dataset.id, this)
       if (act === 'undo') this.dialog('Unsee', `Remove ${byId[t.dataset.id].name} from your spotted breeds? Its note will be deleted too.`, 'warn', [['Yes', 'unsee-yes', t.dataset.id], ['No', 'dialog-ok']])
       if (act === 'unsee-yes') { this.q('.modal').hidden = true; delete caught[t.dataset.id]; persist(); refreshAll() }
