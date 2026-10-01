@@ -988,7 +988,7 @@
           <span class="figure">${n} of ${total} breeds</span>
           ${bar(n / total)}
         </div>
-        <div class="sunken-panel group-list">${groups.map((g) => { const k = caughtIn(g.id); return `<button type="button" class="g-row" data-act="go-group" data-group="${g.id}"><span class="g-top"><span><span class="swatch" style="display:inline-block;vertical-align:-1px;margin-right:5px;background:${groupColour[g.id]}"></span>${esc(g.name)}</span><span>${k}/${g.total} &middot; ${pct(k / g.total)}</span></span></button>` }).join('')}</div>
+        <div class="sunken-panel group-list">${groups.map((g) => { const k = caughtIn(g.id); return `<button type="button" class="g-row" data-act="go-group" data-group="${g.id}"><span class="g-top"><span><span class="swatch" style="display:inline-block;vertical-align:-1px;margin-right:5px;background:${groupColour[g.id]}"></span>${esc(g.name)}</span><span>${k}/${g.total}</span></span></button>` }).join('')}</div>
         <p style="margin:10px 0 4px"><b>Recently spotted</b></p>
         <div class="sunken-panel"><table class="interactive">
           <colgroup><col><col style="width:64px"></colgroup><thead><tr><th>Breed</th><th>Date</th></tr></thead>

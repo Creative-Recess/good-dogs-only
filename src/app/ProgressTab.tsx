@@ -4,8 +4,6 @@ import { formatDay } from '../lib/dates.ts'
 import type { Spot } from '../lib/sightings.ts'
 import { ProgressBar } from './ProgressBar.tsx'
 
-const pct = (fraction: number) => `${Math.round(fraction * 100)}%`
-
 type Props = { spots: Map<string, Spot>; onGroup: (groupId: string) => void; onOpen: (id: string) => void }
 
 export function ProgressTab({ spots, onGroup, onOpen }: Props) {
@@ -30,7 +28,7 @@ export function ProgressTab({ spots, onGroup, onOpen }: Props) {
                   {g.name}
                 </span>
                 <span>
-                  {k}/{g.total} &middot; {pct(k / g.total)}
+                  {k}/{g.total}
                 </span>
               </span>
             </button>
