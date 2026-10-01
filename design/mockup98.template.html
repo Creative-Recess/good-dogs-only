@@ -129,7 +129,7 @@
   .icon:focus .label, .icon:hover .label { background: var(--navy); color: var(--white); outline: 1px dotted #ffff7f; }
   .icon .no { position: absolute; top: 5px; left: calc(50% - 30px); background: var(--g); color: #fff; font-size: 9px; line-height: 1; padding: 2px 3px; box-shadow: 1px 1px #000; }
   .icon .tick { position: absolute; top: 3px; right: calc(50% - 34px); width: 15px; height: 15px; background: #fff; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; display: grid; place-items: center; }
-  .icon .tick svg { width: 9px; height: 9px; }
+  .icon .tick svg { width: 12px; height: 12px; }
   .empty { padding: 20px 6px; text-align: center; font: 11px/1.6 var(--body-font); }
   .sample-note { text-align: center; color: #333; margin: 2px 0 6px; font-size: 10px; }
 
@@ -139,6 +139,9 @@
   .props > .window-body { grid-template-columns: minmax(0, 1fr); overflow-x: hidden; flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 0; padding-bottom: 20px !important; padding: 4px 4px 8px; display: grid; gap: 8px; align-content: start; }
   .photo-frame { position: relative; padding: 3px; background: #fff; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; }
   .photo-frame img { display: block; width: 100%; height: 165px; object-fit: contain; background: #fff; }
+  .photo-strip { position: absolute; left: 3px; right: 3px; bottom: 3px; display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 3px 34px 3px 6px; background: rgba(0, 0, 128, 0.82); color: #fff; font-size: 11px; font-weight: bold; }
+  .photo-strip > span:first-child { display: flex; align-items: center; gap: 5px; }
+  .photo-strip .swatch { box-shadow: 0 0 0 1px #fff; }
   .photo-frame .credit-btn { position: absolute; right: 7px; bottom: 7px; min-width: 0; min-height: 0; width: 22px; height: 22px; padding: 0; display: grid; place-items: center; }
   .photo-frame .credit-btn svg { width: 14px; height: 14px; }
   .tooltip { background: var(--tooltip); border: 1px solid #000; padding: 4px 6px; font: 11px/1.5 var(--body-font); }
@@ -263,7 +266,7 @@
   </div>
   <div class="window-body">
     <p>DOGDEX 98 - the Windows 98 version of the Dogdex mockup.</p>
-    <p>Tap anything: it works like the app, with 28 sample breeds and some example catches. Switch screens with Dex, Progress and Help at the top. Catch a dog, then try the X.</p>
+    <p>Tap anything: it works like the app, with 28 sample breeds and some example spots. Switch screens with Dex, Progress and Help at the top. Spot a dog, then try the X.</p>
     <p>To suggest a change, leave a comment on the part you mean, then tell Claude in chat.</p>
   </div>
 </div>
@@ -277,6 +280,7 @@
   const icons = {
     paw: px('<rect x="2" y="5" width="3" height="4" fill="#000"/><rect x="5" y="1" width="3" height="4" fill="#000"/><rect x="9" y="1" width="3" height="4" fill="#000"/><rect x="12" y="5" width="3" height="4" fill="#000"/><rect x="5" y="8" width="7" height="6" fill="#000"/><rect x="4" y="10" width="9" height="3" fill="#000"/>'),
     dog: px('<rect x="1" y="3" width="3" height="7" fill="#6b3a1a"/><rect x="12" y="3" width="3" height="7" fill="#6b3a1a"/><rect x="4" y="2" width="8" height="10" fill="#d08c42"/><rect x="3" y="4" width="10" height="6" fill="#d08c42"/><rect x="5" y="8" width="6" height="5" fill="#fff"/><rect x="6" y="13" width="4" height="1" fill="#fff"/><rect x="5" y="5" width="2" height="2" fill="#000"/><rect x="9" y="5" width="2" height="2" fill="#000"/><rect x="7" y="8" width="2" height="2" fill="#000"/><rect x="7" y="11" width="2" height="2" fill="#ff7090"/>'),
+    eyes: px('<rect x="0" y="4" width="7" height="9" rx="3" fill="#fff" stroke="#000"/><rect x="9" y="3" width="7" height="9" rx="3" fill="#fff" stroke="#000"/><rect x="3" y="7" width="3" height="4" fill="#000"/><rect x="12" y="6" width="3" height="4" fill="#000"/><rect x="4" y="8" width="1" height="1" fill="#fff"/><rect x="13" y="7" width="1" height="1" fill="#fff"/>'),
     logo: px('<rect x="1" y="1" width="6" height="6" fill="#ff0000"/><rect x="9" y="1" width="6" height="6" fill="#00a000"/><rect x="1" y="9" width="6" height="6" fill="#0000ff"/><rect x="9" y="9" width="6" height="6" fill="#ffcc00"/><rect x="3" y="3" width="2" height="2" fill="#fff"/><rect x="11" y="3" width="2" height="2" fill="#fff"/><rect x="3" y="11" width="2" height="2" fill="#fff"/><rect x="11" y="11" width="2" height="2" fill="#fff"/>'),
     bigPaw: px('<rect x="2" y="9" width="5" height="7" fill="#ff0000"/><rect x="8" y="2" width="5" height="7" fill="#00a000"/><rect x="15" y="2" width="5" height="7" fill="#0000ff"/><rect x="21" y="9" width="5" height="7" fill="#ffcc00"/><rect x="8" y="14" width="12" height="10" fill="#ffffff"/><rect x="6" y="18" width="16" height="6" fill="#ffffff"/>', 28),
     info: px('<circle cx="8" cy="8" r="7.5" fill="#fff" stroke="#000080"/><rect x="7" y="3" width="2" height="2" fill="#000080"/><rect x="7" y="6" width="2" height="7" fill="#000080"/>'),
@@ -412,8 +416,8 @@
       if (act === 'undo') { delete caught[t.dataset.id]; persist(); refreshAll() }
       if (act === 'clear') { this.s.q = ''; const input = this.q('[data-role="q"]'); input.value = ''; input.focus(); this.refreshResults() }
       if (act === 'go-group') { this.s.group = t.dataset.group; this.s.filter = 'all'; this.q('[data-role="group"]').value = this.s.group; this.showTab('dex'); this.refresh() }
-      if (act === 'backup') this.dialog('Save Backup', 'In the app, this opens the iPhone share sheet so you can save your catches to Files or iCloud Drive.', 'info')
-      if (act === 'restore') this.dialog('Restore Backup', 'In the app, this lets you pick a backup file. Catches are merged, so nothing is lost.', 'info')
+      if (act === 'backup') this.dialog('Save Backup', 'In the app, this opens the iPhone share sheet so you can save your spots to Files or iCloud Drive.', 'info')
+      if (act === 'restore') this.dialog('Restore Backup', 'In the app, this lets you pick a backup file. Spots are merged, so nothing is lost.', 'info')
       if (act === 'joke-min') this.dialog('Dogdex', 'Dogdex cannot be minimised while there are dogs in the park.', 'warn')
       if (act === 'dialog-ok') this.q('.modal').hidden = true
       if (act === 'shutdown') this.q('.safe').hidden = false
@@ -482,7 +486,7 @@
         </div>
         <fieldset class="show"><legend>Show</legend>
           <div class="field-row"><input id="fa-${this.uid}" type="radio" name="f-${this.uid}" value="all" data-role="filter" checked><label for="fa-${this.uid}">All</label></div>
-          <div class="field-row"><input id="fc-${this.uid}" type="radio" name="f-${this.uid}" value="caught" data-role="filter"><label for="fc-${this.uid}">Caught</label></div>
+          <div class="field-row"><input id="fc-${this.uid}" type="radio" name="f-${this.uid}" value="caught" data-role="filter"><label for="fc-${this.uid}">Spotted</label></div>
           <div class="field-row"><input id="ft-${this.uid}" type="radio" name="f-${this.uid}" value="todo" data-role="filter"><label for="ft-${this.uid}">Still to find</label></div>
         </fieldset>
         <div class="results"></div>`
@@ -523,7 +527,7 @@
       return `<button type="button" class="icon${c ? ' is-caught' : ''}" data-act="open" data-id="${b.id}" style="--g:${groupColour[b.groupId]}">
         <span class="pic"><img src="${b.img.grid}" alt=""></span>
         <span class="no">${b.dexNo}</span>
-        ${c ? `<span class="tick" aria-label="Caught">${icons.tick}</span>` : ''}
+        ${c ? `<span class="tick" aria-label="Spotted">${icons.eyes}</span>` : ''}
         <span class="label">${esc(b.name)}</span>
       </button>`
     }
@@ -552,11 +556,11 @@
       if (aka.length) rows.push(['Also called', aka.map(esc).join(', ')])
       if (b.parents) rows.push(['Cross of', `${esc(b.parents[0])} x ${esc(b.parents[1])}`])
       const status = c
-        ? `<div class="caught-line">${icons.infoBig}<span><b>Caught!</b>First spotted ${esc(fmt(c.date))}</span></div>
+        ? `<div class="caught-line">${icons.eyes}<span><b>Spotted!</b>First spotted ${esc(fmt(c.date))}</span></div>
            <div class="field-row-stacked"><label for="d98-${this.uid}-${b.id}">Date seen:</label><input id="d98-${this.uid}-${b.id}" type="date" data-role="date" data-id="${b.id}" value="${c.date}" max="${todayIso()}"></div>
            <div class="field-row-stacked"><label for="n98-${this.uid}-${b.id}">Note:</label><textarea id="n98-${this.uid}-${b.id}" rows="2" data-role="note" data-id="${b.id}" placeholder="Where, what colour, the dog's name...">${esc(c.note || '')}</textarea></div>
-           <button type="button" data-act="undo" data-id="${b.id}">Undo catch</button>`
-        : `<button type="button" class="catch-btn default" data-act="catch" data-id="${b.id}">${icons.paw}I spotted one!</button>`
+           <button type="button" data-act="undo" data-id="${b.id}">Undo</button>`
+        : `<button type="button" class="catch-btn default" data-act="catch" data-id="${b.id}">${icons.eyes}I spotted one!</button>`
       const p = this.q('.props')
       p.innerHTML = `
         <div class="title-bar">
@@ -566,6 +570,7 @@
         <div class="window-body">
           <div class="photo-frame">
             <img src="${b.img.detail}" alt="${esc(b.name)}" >
+            <span class="photo-strip"><span><span class="swatch" style="background:${groupColour[b.groupId]}"></span>${esc(g.name)}</span><span>#${b.dexNo}</span></span>
             <button type="button" class="credit-btn" data-act="credit" aria-label="Photo credit">${icons.info}</button>
           </div>
           ${this.s.credit ? `<div class="tooltip">Photo: ${esc(b.credit.author)}, <a href="${esc(b.credit.licenceUrl || b.credit.sourceUrl)}" target="_blank" rel="noopener">${esc(b.credit.licence)}</a>, via <a href="${esc(b.credit.sourceUrl)}" target="_blank" rel="noopener">Wikimedia Commons</a>. Resized and cropped.</div>` : ''}
@@ -574,10 +579,7 @@
             ${aka.length ? `<p>Also called ${aka.map(esc).join(', ')}</p>` : ''}
             ${b.officialName ? `<p>Official name: ${esc(b.officialName)}</p>` : ''}
           </div>
-          <fieldset class="box"><legend>Group</legend>
-            <div class="chips"><span class="chip"><span class="chip-icon"><span class="swatch big" style="background:${groupColour[b.groupId]}"></span></span>${esc(g.name)}</span><span class="chip"><span class="chip-icon dexno">${b.dexNo}</span>Dex number</span></div>
-            ${b.parents ? `<p class="small">Cross of ${esc(b.parents[0])} x ${esc(b.parents[1])}. Not recognised by Dogs Australia.</p>` : b.about ? `<p class="small">${esc(b.about)} Not recognised by Dogs Australia.</p>` : ''}
-          </fieldset>
+          ${b.parents ? `<p class="small">Cross of ${esc(b.parents[0])} x ${esc(b.parents[1])}. Not recognised by Dogs Australia.</p>` : b.about ? `<p class="small">${esc(b.about)} Not recognised by Dogs Australia.</p>` : ''}
           ${b.temperament ? `<fieldset class="box"><legend>Temperament</legend>
             <div class="chips" lang="en">${b.temperament.traits.map((t) => `<span class="chip"><span class="chip-icon">${traitIcon(t)}</span>${esc(t)}</span>`).join('')}</div>
           </fieldset>
@@ -603,7 +605,7 @@
           <span>Plus ${caughtIn('bonus')} of ${group.bonus.total} bonus breeds</span>
         </div>
         <div class="sunken-panel group-list">${groups.map((g) => { const k = caughtIn(g.id); return `<button type="button" class="g-row" data-act="go-group" data-group="${g.id}"><span class="g-top"><span><span class="swatch" style="display:inline-block;vertical-align:-1px;margin-right:5px;background:${groupColour[g.id]}"></span>${esc(g.name)}</span><span>${k}/${g.total} &middot; ${pct(k / g.total)}</span></span></button>` }).join('')}</div>
-        <p style="margin:10px 0 4px"><b>Recent catches</b></p>
+        <p style="margin:10px 0 4px"><b>Recently spotted</b></p>
         <div class="sunken-panel"><table class="interactive">
           <colgroup><col><col style="width:64px"></colgroup><thead><tr><th>Breed</th><th>Date</th></tr></thead>
           <tbody>${recent.map((b) => `<tr class="recent-row" data-act="open" data-id="${b.id}"><td><img src="${b.img.grid}" alt="">${esc(b.name)}</td><td>${esc(new Date(`${caught[b.id].date}T00:00:00`).toLocaleDateString('en-AU', { day: 'numeric', month: 'short' }))}</td></tr>`).join('')}</tbody>
@@ -621,7 +623,7 @@
           <ol><li>Open Dogdex in <b>Safari</b></li><li>Tap <b>Share</b>, then <b>Add to Home Screen</b></li><li>Open it from the new icon. It runs full screen, like an app.</li></ol>
         </fieldset>
         <fieldset class="panel-box" id="backup-${this.uid}"><legend>Backup</legend>
-          <p>Your catches are saved on this phone only. Save a backup now and then so a lost or new phone doesn't mean a lost dex.</p>
+          <p>Your spots are saved on this phone only. Save a backup now and then so a lost or new phone doesn't mean a lost dex.</p>
           <div class="warn">${icons.warn}<span>Last backup: never</span></div>
           <div class="stack"><button type="button" class="default" data-act="backup">Save Backup...</button><button type="button" data-act="restore">Restore Backup...</button></div>
         </fieldset>`
@@ -633,7 +635,7 @@
     persist()
     refreshAll()
     const b = byId[id]
-    from.dialog('Dogdex', `You caught a ${b.name}! That's ${officialCaught()} of ${officialTotal} official breeds${b.tier === 'unofficial' ? `, plus ${caughtIn('bonus')} bonus` : ''}.`, 'info')
+    from.dialog('Dogdex', `You spotted a ${b.name}! That's ${officialCaught()} of ${officialTotal} official breeds${b.tier === 'unofficial' ? `, plus ${caughtIn('bonus')} bonus` : ''}.`, 'info')
   }
   function refreshAll() { phones.forEach((p) => p.refresh()) }
 
