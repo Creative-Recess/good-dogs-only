@@ -206,7 +206,8 @@
   .g-row .progress-indicator.small { height: 10px; padding: 1px; }
   .bar-row { display: flex; align-items: center; gap: 4px; }
   .bar-row .pct { width: 28px; text-align: right; font-size: 10px; flex: none; }
-  .pct-in { position: absolute; inset: 0; display: grid; place-items: center; font-weight: bold; font-size: 12px; color: #fff; mix-blend-mode: difference; }
+  .pct-in { position: absolute; inset: 0; display: grid; place-items: center; font-weight: bold; font-size: 12px; color: #000; }
+  .pct-in.on { color: #fff; }
   .progress-indicator.small > .progress-indicator-bar { background-size: 9px 100%; background-image: linear-gradient(90deg, navy 7px, transparent 0 2px); }
   .sunken-panel { background: #fff; }
   .sunken-panel table { width: 100%; }
@@ -354,7 +355,7 @@
   }
   const pct = (fraction) => `${Math.round(fraction * 100)}%`
   const bar = (fraction, small) => {
-    const meter = `<div class="progress-indicator segmented${small ? ' small' : ''}"><span class="progress-indicator-bar" data-w="${Math.max(fraction * 100, fraction > 0 ? 3 : 0)}"></span>${small ? '' : `<span class="pct-in">${pct(fraction)}</span>`}</div>`
+    const meter = `<div class="progress-indicator segmented${small ? ' small' : ''}"><span class="progress-indicator-bar" data-w="${Math.max(fraction * 100, fraction > 0 ? 3 : 0)}"></span>${small ? '' : `<span class="pct-in">${pct(fraction)}</span><span class="pct-in on" style="clip-path:inset(0 ${100 - Math.max(fraction * 100, fraction > 0 ? 3 : 0)}% 0 0)">${pct(fraction)}</span>`}</div>`
     return small ? `<div class="bar-row">${meter}<span class="pct">${pct(fraction)}</span></div>` : meter
   }
   const fillBars = (root) => requestAnimationFrame(() => root.querySelectorAll('.progress-indicator-bar[data-w]').forEach((b) => (b.style.width = `${b.dataset.w}%`)))
