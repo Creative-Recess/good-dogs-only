@@ -52,14 +52,14 @@
       "note": "Akita Inu red, whole dog, featured picture; differs from Akita"
     },
     "alaskan-malamute": {
-      "file": "File:Alaskan Malamute - panoramio.jpg",
-      "focus": [
-        0.34,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "whole grey-white dog three-quarter, face clear, plume tail"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Alaskan-Malamute.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/166/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "american-bully": {
       "file": "File:(2x ch GRAN DALI) BOTTIcelli .jpg",
@@ -82,24 +82,24 @@
       "note": "hairless, whole-body side show stance, no people in frame"
     },
     "american-staffordshire-terrier": {
-      "file": "File:(2)American Staffordshire Terrier Mumford.jpg",
-      "focus": [
-        0.58,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "fawn adult side view, whole body, natural ears; harness"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//American-StafforshireTerrier-tile.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/63/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "anatolian-shepherd-dog": {
-      "file": "File:Anatolian Shepherd Dog - Kangal köpeği 01.jpg",
-      "focus": [
-        0.5,
-        0.51
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "Anatolian-labelled; pool identical to Kangal, tile 2 left for Kangal"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Anatolian-Shepherd-Dog-tile.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/238/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "aussiedoodle": {
       "file": "File:Thor, 2021 (51256377380).jpg",
@@ -113,9 +113,13 @@
     },
     "australasian-bosdog": {
       "file": null,
-      "by": "claude-review",
-      "confidence": "low",
-      "note": "no candidates found; no sheet generated"
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//australian%20bosdog%20efited.png",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/247/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "australian-cattle-dog": {
       "file": "File:ACD-blue-spud.jpg",
@@ -138,14 +142,14 @@
       "note": "classic red and tan, whole dog standing, side-on"
     },
     "australian-shepherd": {
-      "file": "File:Australian Shepherd red bi.JPG",
-      "focus": [
-        0.4,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "kept: red bi side view; others headshots or distant"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Australian-Shepherd.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/121/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "australian-silky-terrier": {
       "file": "File:01 Australian Silky Terrier.jpg",
@@ -548,14 +552,14 @@
       "note": "sandy show dog, clear side profile"
     },
     "canadian-eskimo-dog": {
-      "file": "File:Kanadaneskimo1.jpg",
-      "focus": [
-        0.49,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "whole dog side stack; handler legs behind"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Canadian-Eskimo-Dog.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/176/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "cane-corso": {
       "file": "File:Anita Cane Corso Italiano allevato in Italia.jpg",
@@ -588,14 +592,18 @@
       "note": "white with tan ears sitting, whole body; flash eyeshine"
     },
     "cavalier-king-charles-spaniel": {
-      "file": "File:Dog In The Grass.jpg",
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Cavalier-King-Charles-Spaniel.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/45/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)",
       "focus": [
-        0.55,
+        0.3,
         0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "classic Blenheim, face clear but lying; ruby tiles may be cavapoos"
+      ]
     },
     "cavoodle": {
       "file": "File:Cavapoo male (90675).jpg",
@@ -638,14 +646,14 @@
       "note": "whole dog in grass, wavy coat visible"
     },
     "chihuahua-long-coat": {
-      "file": "File:Chihuahua long-haired black & tan.jpg",
-      "focus": [
-        0.5,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "long coat black and tan standing, whole dog; slightly soft"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Chihuahua-Long-Coat.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/46/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "chihuahua-smooth-coat": {
       "file": "File:Chihuahua sitting.jpg",
@@ -738,14 +746,14 @@
       "note": "sable smooth side view; handler hand at neck"
     },
     "coton-de-tulear": {
-      "file": "File:Coton de Tulear 193.jpg",
-      "focus": [
-        0.68,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "adult cotton coat, whole dog on grass; face partly hidden"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Coton-De-Tulear.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/38/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "curly-coated-retriever": {
       "file": "File:Curly coated retriever6.jpg",
@@ -778,14 +786,14 @@
       "note": "single adult sitting, clear spots, clean park"
     },
     "dandie-dinmont-terrier": {
-      "file": "File:Dandie Dinmont Terrier - GCH King's Mtn. Angelina Ballerina (15982121364).jpg",
-      "focus": [
-        0.5,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "side view shows long body and topknot; busy show background"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Dandy-Dinmont-Terrier.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/70/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "deerhound": {
       "file": "File:Karrie.JPG",
@@ -798,14 +806,14 @@
       "note": "whole dog side view, natural, sharp"
     },
     "dobermann": {
-      "file": "File:HiramvonNemesis2.jpg",
-      "focus": [
-        0.48,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "natural ears and tail as in Australia; brown not black-tan"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Dobermann.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/161/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "dogue-de-bordeaux": {
       "file": "File:DJT 0086.jpg",
@@ -918,14 +926,14 @@
       "note": "liver flatcoat, whole dog, clear; tile 5 is yellow"
     },
     "fox-terrier-smooth": {
-      "file": "File:Fox terrier smooth in action.jpg",
-      "focus": [
-        0.5,
-        0.52
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "only clear smooth coat without sweater; front view walking"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Fox-Terrier-Smooth.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/71/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "fox-terrier-wire": {
       "file": "File:01 Wire Fox terrier.jpg",
@@ -978,14 +986,14 @@
       "note": "black and tan, whole-body side profile, no people"
     },
     "german-shepherd-dog": {
-      "file": "File:20110425 German Shepherd Dog 8505.jpg",
-      "focus": [
-        0.58,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "kept: lying but clear; standing options blurred or cluttered"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//German-Shepherd-Dog.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/130/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "german-shepherd-dog-long-stock-coat": {
       "file": "File:Long-haired German shepherd dog.jpg",
@@ -998,14 +1006,14 @@
       "note": "long coat clear, whole dog standing three-quarter"
     },
     "german-shorthaired-pointer": {
-      "file": "File:Курцхаар.jpg",
-      "focus": [
-        0.57,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "typical liver ticked coat, whole side view; head down"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//German-Shorthaired-Pointer.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/207/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "german-spitz": {
       "file": "File:Mittelspitz 1 year (3).jpg",
@@ -1038,14 +1046,14 @@
       "note": "blue brindle adult, side view, whole body"
     },
     "golden-retriever": {
-      "file": "File:A Golden Retriever-9 (Barras).JPG",
-      "focus": [
-        0.53,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "whole adult lying, head up, clear on green grass"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Golden-Retriever.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/27/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "gordon-setter": {
       "file": "File:Orrvilas enska w800px.jpg",
@@ -1098,14 +1106,14 @@
       "note": "whole dog standing on grass, no jacket or people"
     },
     "griffon-bruxellois": {
-      "file": "File:Brussels Griffon Rembrant.png",
-      "focus": [
-        0.47,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "red rough coat, face and beard clear, whole dog; older scan"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Griffon-Bruxellois-Wire.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/219/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "groodle": {
       "file": "File:Golden Doodle Standing (HD).jpg",
@@ -1128,24 +1136,24 @@
       "note": "kept: clean side stack; tiles 2-3 same dog, less side-on"
     },
     "harrier": {
-      "file": "File:Harrier tricolour.jpg",
-      "focus": [
-        0.52,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "kept: whole tricolour dog; larger options cluttered, wide or legs hidden"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Harrier.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/97/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "havanese": {
-      "file": "File:A havanese dog.jpg",
-      "focus": [
-        0.5,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "white curly Havanese standing, whole body three-quarter"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Havanese.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/50/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "hungarian-vizsla": {
       "file": "File:Wyżeł węgierski gładkowłosy 500.jpg",
@@ -1338,14 +1346,14 @@
       "note": "blue coat, side view, whole body, no handler"
     },
     "king-charles-spaniel": {
-      "file": "File:King Charles Spaniel 200.jpg",
-      "focus": [
-        0.5,
-        0.45
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "only true KCS; short face, black and tan, head raised"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//King-Charles-Spaniel.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/39/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "komondor": {
       "file": "File:Komondor Westminster Dog Show crop.jpg",
@@ -1458,24 +1466,24 @@
       "note": "full show coat side view; crop excludes rosettes"
     },
     "lowchen-little-lion-dog": {
-      "file": "File:Little lion Koira 2013.JPG",
-      "focus": [
-        0.52,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "gold lion clip, side stance, head up; handler behind"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Lowchen.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/40/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "maltese": {
-      "file": "File:Maltese 600.jpg",
-      "focus": [
-        0.5,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "classic long white show coat, whole dog; only 600px"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Maltese.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/53/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "maltese-x-shih-tzu": {
       "file": "File:Dog at Nørre Vorupør Strand.jpg",
@@ -1568,24 +1576,24 @@
       "note": "same dog as before, head level, ears pricked"
     },
     "murray-river-retriever": {
-      "file": "File:Murray River Curly Coated Retriever, Stella.jpg",
-      "focus": [
-        0.45,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "low",
-      "note": "leaping shot; only single-dog colour option"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Muray%20river%20retriever%20breed%20profile%20cover%20image%20.png",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/249/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "neapolitan-mastiff": {
-      "file": "File:Mastino napoletano 67576.jpg",
-      "focus": [
-        0.5,
-        0.44
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "very typical wrinkled head, lying front view"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Neapolitan-Mastiff.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/157/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "newfoundland": {
       "file": "File:Newfoundland dog Smoky.jpg",
@@ -1658,14 +1666,18 @@
       "note": "whole dog side view, classic grey and white; rear cropped"
     },
     "otterhound": {
-      "file": "File:Otter-liver&tan4.jpg",
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Otterhoundcover1jpg..jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/204/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)",
       "focus": [
-        0.48,
+        0.3,
         0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "kept: whole dog side view; alternatives handler-held or two dogs"
+      ]
     },
     "papillon": {
       "file": "File:Outdoor Continental Toy Spaniel Papillon.jpeg",
@@ -1763,14 +1775,14 @@
       "note": "whole dog side view, typical coat, natural background"
     },
     "pomeranian": {
-      "file": "File:The Spirit of Tengri, 1 день, собака (1).jpg",
-      "focus": [
-        0.47,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "orange Pom standing, plumed tail clear; face in profile, legs behind"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Pomeranian.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/57/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "poodle-miniature": {
       "file": "File:BELLA ON COUCH (43000573050).jpg",
@@ -1793,14 +1805,14 @@
       "note": "white standard standing three-quarter, whole body, sharp"
     },
     "poodle-toy": {
-      "file": "File:2021-03-11 21.55.24 poodle ggomi.jpg",
-      "focus": [
-        0.56,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "lying on cushion, face clear; others in clothes or crowded"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Poodle-Toy.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/206/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "porcelaine": {
       "file": "File:Porcelaine Hound.jpg",
@@ -1823,14 +1835,14 @@
       "note": "small smooth, clean side profile on white"
     },
     "portuguese-water-dog": {
-      "file": "File:Cão de agua Português 2.jpg",
-      "focus": [
-        0.485,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "curly black side view; low res, handler behind"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Portuguese-Water-Dog.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/155/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "prague-ratter": {
       "file": "File:Prague Ratter.jpg",
@@ -1943,14 +1955,14 @@
       "note": "whole dog side profile, clean background"
     },
     "rottweiler": {
-      "file": "File:Rottweilerhündin Ziva (DSC6787) 1.jpg",
-      "focus": [
-        0.52,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "typical markings, sitting front; dog smallish in frame"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Rottweiler.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/154/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "russian-black-terrier": {
       "file": "File:Wystawa Rybnik 02.10.2011 czarny terier rosyjski 2pl.jpg",
@@ -2013,24 +2025,24 @@
       "note": "standing side view on grass, whole body, bright"
     },
     "schnauzer": {
-      "file": "File:Docked Pepper & Salt Standard Schnauzer American Champion.jpg",
-      "focus": [
-        0.52,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "pepper-salt show stance; docked tail, handler behind"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Schnauzer.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/227/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "schnauzer-giant": {
-      "file": "File:Stablemaster's NORTHERN HOPE(Poznan2006).jpg",
-      "focus": [
-        0.47,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "typical groomed black giant; low res, banner, handler"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Schnauzer-Giant.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/151/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "schnauzer-miniature": {
       "file": "File:Питомник \"Ассон Ари\" Цвергшнауцеры белые и черные с серебром 12.jpg",
@@ -2053,14 +2065,14 @@
       "note": "wavy grey schnoodle standing in snow, whole body"
     },
     "scottish-terrier": {
-      "file": "File:Scotish terrier burleska 2005.jpg",
-      "focus": [
-        0.5,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "lying but ears, beard, body clear; only 700px"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Scottish-Terrier.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/82/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "sealyham-terrier": {
       "file": "File:SealyhamTerrier01.jpg",
@@ -2093,14 +2105,14 @@
       "note": "young dog (all real options young); rest are Dorgis"
     },
     "shetland-sheepdog": {
-      "file": "File:Międzynarowa Wystawa Psów Rasowych w Poznaniu 2018 - 34.jpg",
-      "focus": [
-        0.47,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "whole sable dog frontal at show; no clean side view"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Shetland%20Sheepdog.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/125/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "shiba-inu": {
       "file": "File:Taka Shiba.jpg",
@@ -2233,14 +2245,14 @@
       "note": "red staffy, front three-quarter, very clear"
     },
     "sussex-spaniel": {
-      "file": "File:Sussexinspa2.jpg",
-      "focus": [
-        0.43,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "side show stance, head raised; handler behind, crop trims tail"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Sussex%20Spaniel.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/17/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "swedish-lapphund": {
       "file": "File:SwedishLapp1.jpg",
@@ -2293,14 +2305,14 @@
       "note": "black and tan, mane, plumed tail; handler kneeling"
     },
     "tibetan-spaniel": {
-      "file": "File:Melfjorden 20060824 DSCN1985.jpg",
-      "focus": [
-        0.51,
-        0.46
-      ],
-      "by": "claude-review",
-      "confidence": "low",
-      "note": "gold sable whole dog sitting; top-down, small in busy frame"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Tibetan-Spaniel.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/59/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "tibetan-terrier": {
       "file": "File:Tibet Terrier Bennie (cropped).jpg",
@@ -2443,14 +2455,14 @@
       "note": "black-white show stance side view, minimal handler"
     },
     "yorkshire-terrier": {
-      "file": "File:Sundance Film Festival 2024 - Porcelain War - Frodo-104A2108.jpg",
-      "focus": [
-        0.5,
-        0.42
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "whole dog sitting, pet clip, sharp; partial backdrop logo"
+      "file": null,
+      "external": {
+        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Yorkshire-Terrier.jpg",
+        "credit": "Dogs Australia",
+        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/60/"
+      },
+      "by": "justin",
+      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
     "yugoslavian-shepherd-dog-sharplanina": {
       "file": "File:Sarplaninac male dog Muri-Emír 2 years old.jpg",

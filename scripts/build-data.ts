@@ -54,25 +54,48 @@ const problems: string[] = []
 for (const b of buildBreedList()) {
   const pick = picks[b.id]
   if (!pick) problems.push(`${b.id}: no entry in data/photo-picks.json`)
-  if (!pick?.file) {
+  if (!pick?.file && !pick?.external) {
     breeds.push(b)
     continue
   }
-  const ii = info.get(pick.file)
-  const meta = ii?.extmetadata ?? {}
-  const licence = meta.LicenseShortName?.value ?? ''
-  if (!ii) {
-    problems.push(`${b.id}: ${pick.file} not found on Commons`)
-    breeds.push(b)
-    continue
-  }
-  if (!isAllowedLicence(licence)) problems.push(`${b.id}: ${pick.file} has licence "${licence}", not on the allow-list`)
 
-  // Use the 1280px thumbnail when the original is bigger, otherwise the original itself (never upscale).
-  const sourceUrl = ii.width > SOURCE_WIDTH && ii.thumburl ? ii.thumburl : ii.url
-  const local = await cachedDownload(sourceUrl, originals, '.img')
+  // Where the photo comes from: a Wikimedia Commons file (licence-checked), or a page Justin chose (Dogs Australia).
+  let local: string
+  let credit: PhotoCredit
+  if (pick.external) {
+    local = await cachedDownload(pick.external.url, originals, '.img')
+    credit = {
+      author: pick.external.credit,
+      licence: `Copyright ${pick.external.credit}`,
+      licenceUrl: null,
+      sourceUrl: pick.external.sourceUrl,
+      changes: 'Resized, and cropped to a square for the grid',
+      restricted: true,
+    }
+  } else {
+    const ii = info.get(pick.file!)
+    const meta = ii?.extmetadata ?? {}
+    const licence = meta.LicenseShortName?.value ?? ''
+    if (!ii) {
+      problems.push(`${b.id}: ${pick.file} not found on Commons`)
+      breeds.push(b)
+      continue
+    }
+    if (!isAllowedLicence(licence)) problems.push(`${b.id}: ${pick.file} has licence "${licence}", not on the allow-list`)
+    // Use the 1280px thumbnail when the original is bigger, otherwise the original itself (never upscale).
+    local = await cachedDownload(ii.width > SOURCE_WIDTH && ii.thumburl ? ii.thumburl : ii.url, originals, '.img')
+    const author = plainText(meta.Artist?.value ?? '') || plainText(meta.Credit?.value ?? '') || 'Unknown author (see source page)'
+    credit = {
+      author: author.length > 120 ? `${author.slice(0, 117)}...` : author,
+      licence,
+      licenceUrl: meta.LicenseUrl?.value ?? null,
+      sourceUrl: ii.descriptionurl,
+      changes: 'Resized, and cropped to a square for the grid',
+    }
+  }
+
   const [fx, fy] = pick.focus ?? [0.5, 0.5]
-  const hash = createHash('sha1').update(`${pick.file}|${fx}|${fy}|v1`).digest('hex').slice(0, 8)
+  const hash = createHash('sha1').update(`${pick.file ?? pick.external?.url}|${fx}|${fy}|v1`).digest('hex').slice(0, 8)
   const gridName = `${b.id}-${hash}-grid.webp`
   const detailName = `${b.id}-${hash}.webp`
 
@@ -89,14 +112,6 @@ for (const b of buildBreedList()) {
     .toFile(new URL(detailName, outDir).pathname)
   written.add(gridName).add(detailName)
 
-  const author = plainText(meta.Artist?.value ?? '') || plainText(meta.Credit?.value ?? '') || 'Unknown author (see source page)'
-  const credit: PhotoCredit = {
-    author: author.length > 120 ? `${author.slice(0, 117)}...` : author,
-    licence,
-    licenceUrl: meta.LicenseUrl?.value ?? null,
-    sourceUrl: ii.descriptionurl,
-    changes: 'Resized, and cropped to a square for the grid',
-  }
   breeds.push({
     ...b,
     image: { grid: `/breeds/${gridName}`, detail: `/breeds/${detailName}`, width: detail.width, height: detail.height },

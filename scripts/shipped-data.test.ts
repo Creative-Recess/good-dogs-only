@@ -7,7 +7,7 @@ import { isAllowedLicence } from './lib/licences.ts'
 const breeds = shipped.breeds as Breed[]
 const publicPath = (p: string) => new URL(`../public${p}`, import.meta.url)
 /** Entries with no free photo anywhere; the app shows a "no photo yet" placeholder. */
-const NO_PHOTO = ['australasian-bosdog']
+const NO_PHOTO: string[] = []
 
 describe('src/data/breeds.json', () => {
   it('ships all 247 entries with unique ids', () => {
@@ -35,8 +35,13 @@ describe('src/data/breeds.json', () => {
     for (const b of breeds.filter((x) => x.image)) {
       const c = b.credit!
       expect(c.author, b.id).toBeTruthy()
-      expect(isAllowedLicence(c.licence), `${b.id}: ${c.licence}`).toBe(true)
-      expect(c.sourceUrl, b.id).toMatch(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/)
+      if (c.restricted) {
+        // Justin's call (1 Oct 2026): Dogs Australia photos for the weakest Commons picks, credited to them.
+        expect(c.sourceUrl, b.id).toMatch(/^https:\/\/dogsaustralia\.org\.au\/BrowseBreed\//)
+      } else {
+        expect(isAllowedLicence(c.licence), `${b.id}: ${c.licence}`).toBe(true)
+        expect(c.sourceUrl, b.id).toMatch(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/)
+      }
       expect(c.changes, b.id).toBeTruthy()
     }
   })

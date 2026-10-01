@@ -21,6 +21,8 @@ export type Candidate = {
 /** The chosen photo for one dex entry (data/photo-picks.json). focus: dog centre as [x, y] fractions, for the square crop. */
 export type PhotoPick = {
   file: string | null
+  /** A photo from outside Commons that Justin chose (e.g. a Dogs Australia breed photo). */
+  external?: { url: string; credit: string; sourceUrl: string }
   focus?: [number, number]
   by: 'claude-review' | 'justin'
   confidence?: 'high' | 'medium' | 'low'

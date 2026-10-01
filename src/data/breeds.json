@@ -178,17 +178,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cavalier-King-Charles-Spaniel",
    "image": {
-    "grid": "/breeds/cavalier-king-charles-spaniel-e9782178-grid.webp",
-    "detail": "/breeds/cavalier-king-charles-spaniel-e9782178.webp",
-    "width": 1200,
-    "height": 765
+    "grid": "/breeds/cavalier-king-charles-spaniel-532c3e45-grid.webp",
+    "detail": "/breeds/cavalier-king-charles-spaniel-532c3e45.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Filip B",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dog_In_The_Grass.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/45/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -204,17 +205,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chihuahua-(Long-Coat)",
    "image": {
-    "grid": "/breeds/chihuahua-long-coat-2ade33af-grid.webp",
-    "detail": "/breeds/chihuahua-long-coat-2ade33af.webp",
-    "width": 1091,
-    "height": 1014
+    "grid": "/breeds/chihuahua-long-coat-72f9e6a0-grid.webp",
+    "detail": "/breeds/chihuahua-long-coat-72f9e6a0.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Canarian",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chihuahua_long-haired_black_%26_tan.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/46/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -281,17 +283,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Coton-De-Tulear",
    "image": {
-    "grid": "/breeds/coton-de-tulear-cf366d09-grid.webp",
-    "detail": "/breeds/coton-de-tulear-cf366d09.webp",
-    "width": 1200,
-    "height": 803
+    "grid": "/breeds/coton-de-tulear-4355755f-grid.webp",
+    "detail": "/breeds/coton-de-tulear-4355755f.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "CamilleVila",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coton_de_Tulear_193.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/38/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -333,17 +336,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Griffon-Bruxellois-",
    "image": {
-    "grid": "/breeds/griffon-bruxellois-d4ee5ae6-grid.webp",
-    "detail": "/breeds/griffon-bruxellois-d4ee5ae6.webp",
-    "width": 1040,
-    "height": 800
+    "grid": "/breeds/griffon-bruxellois-d14ac772-grid.webp",
+    "detail": "/breeds/griffon-bruxellois-d14ac772.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "The original uploader was Dan9186 at English Wikipedia .",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brussels_Griffon_Rembrant.png",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/219/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -356,17 +360,18 @@
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Havanese",
    "image": {
-    "grid": "/breeds/havanese-c5a4a32b-grid.webp",
-    "detail": "/breeds/havanese-c5a4a32b.webp",
-    "width": 1200,
-    "height": 938
+    "grid": "/breeds/havanese-2854236e-grid.webp",
+    "detail": "/breeds/havanese-2854236e.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "QHuge",
-    "licence": "CC BY 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_havanese_dog.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/50/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -430,17 +435,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/King-Charles-Spaniel",
    "image": {
-    "grid": "/breeds/king-charles-spaniel-638315fb-grid.webp",
-    "detail": "/breeds/king-charles-spaniel-638315fb.webp",
-    "width": 1200,
-    "height": 1495
+    "grid": "/breeds/king-charles-spaniel-fa02f1c2-grid.webp",
+    "detail": "/breeds/king-charles-spaniel-fa02f1c2.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Pleple2000 10:18, 5 April 2006 (UTC)",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:King_Charles_Spaniel_200.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/39/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -456,17 +462,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Lowchen-(Little-Lion-Dog)",
    "image": {
-    "grid": "/breeds/lowchen-little-lion-dog-7b9b6136-grid.webp",
-    "detail": "/breeds/lowchen-little-lion-dog-7b9b6136.webp",
-    "width": 1200,
-    "height": 898
+    "grid": "/breeds/lowchen-little-lion-dog-134b5ce2-grid.webp",
+    "detail": "/breeds/lowchen-little-lion-dog-134b5ce2.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Томасина",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Little_lion_Koira_2013.JPG",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/40/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -479,17 +486,18 @@
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Maltese",
    "image": {
-    "grid": "/breeds/maltese-1fe23a66-grid.webp",
-    "detail": "/breeds/maltese-1fe23a66.webp",
-    "width": 600,
-    "height": 600
+    "grid": "/breeds/maltese-a6a0c1ce-grid.webp",
+    "detail": "/breeds/maltese-a6a0c1ce.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Sannse",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maltese_600.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/53/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -578,17 +586,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pomeranian",
    "image": {
-    "grid": "/breeds/pomeranian-7d17ed2a-grid.webp",
-    "detail": "/breeds/pomeranian-7d17ed2a.webp",
-    "width": 1200,
-    "height": 800
+    "grid": "/breeds/pomeranian-06edc7f0-grid.webp",
+    "detail": "/breeds/pomeranian-06edc7f0.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Nikolai Bulykin",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Spirit_of_Tengri,_1_%D0%B4%D0%B5%D0%BD%D1%8C,_%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0_(1).jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/57/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -703,17 +712,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tibetan-Spaniel",
    "image": {
-    "grid": "/breeds/tibetan-spaniel-13927f59-grid.webp",
-    "detail": "/breeds/tibetan-spaniel-13927f59.webp",
-    "width": 1200,
-    "height": 900
+    "grid": "/breeds/tibetan-spaniel-0ddd1470-grid.webp",
+    "detail": "/breeds/tibetan-spaniel-0ddd1470.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Magne Tor Ingvald Aga",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Melfjorden_20060824_DSCN1985.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/59/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -728,17 +738,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Yorkshire-Terrier",
    "image": {
-    "grid": "/breeds/yorkshire-terrier-5052feca-grid.webp",
-    "detail": "/breeds/yorkshire-terrier-5052feca.webp",
-    "width": 1125,
-    "height": 1500
+    "grid": "/breeds/yorkshire-terrier-b5e3f21a-grid.webp",
+    "detail": "/breeds/yorkshire-terrier-b5e3f21a.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Frank Schulenburg",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sundance_Film_Festival_2024_-_Porcelain_War_-_Frodo-104A2108.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/60/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -800,17 +811,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/American-Staffordshire-Terrier",
    "image": {
-    "grid": "/breeds/american-staffordshire-terrier-0ea94684-grid.webp",
-    "detail": "/breeds/american-staffordshire-terrier-0ea94684.webp",
-    "width": 1200,
-    "height": 952
+    "grid": "/breeds/american-staffordshire-terrier-4778e963-grid.webp",
+    "detail": "/breeds/american-staffordshire-terrier-4778e963.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Carroy47",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:(2)American_Staffordshire_Terrier_Mumford.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/63/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -993,17 +1005,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dandie-Dinmont-Terrier",
    "image": {
-    "grid": "/breeds/dandie-dinmont-terrier-deb1bd87-grid.webp",
-    "detail": "/breeds/dandie-dinmont-terrier-deb1bd87.webp",
-    "width": 1200,
-    "height": 798
+    "grid": "/breeds/dandie-dinmont-terrier-eb62d808-grid.webp",
+    "detail": "/breeds/dandie-dinmont-terrier-eb62d808.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Pets Adviser from Brooklyn, USA",
-    "licence": "CC BY 2.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dandie_Dinmont_Terrier_-_GCH_King%27s_Mtn._Angelina_Ballerina_(15982121364).jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/70/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -1018,17 +1031,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Fox-Terrier-(Smooth)",
    "image": {
-    "grid": "/breeds/fox-terrier-smooth-83a29785-grid.webp",
-    "detail": "/breeds/fox-terrier-smooth-83a29785.webp",
-    "width": 1171,
-    "height": 1314
+    "grid": "/breeds/fox-terrier-smooth-1e77b192-grid.webp",
+    "detail": "/breeds/fox-terrier-smooth-1e77b192.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Piet ter Beek",
-    "licence": "Public domain",
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
     "licenceUrl": null,
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fox_terrier_smooth_in_action.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/71/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -1313,17 +1327,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Scottish-Terrier",
    "image": {
-    "grid": "/breeds/scottish-terrier-f1b69f52-grid.webp",
-    "detail": "/breeds/scottish-terrier-f1b69f52.webp",
-    "width": 700,
-    "height": 700
+    "grid": "/breeds/scottish-terrier-6d334e1a-grid.webp",
+    "detail": "/breeds/scottish-terrier-6d334e1a.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Mider",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scotish_terrier_burleska_2005.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/82/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -1781,17 +1796,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Shorthaired-Pointer",
    "image": {
-    "grid": "/breeds/german-shorthaired-pointer-65237d04-grid.webp",
-    "detail": "/breeds/german-shorthaired-pointer-65237d04.webp",
-    "width": 1200,
-    "height": 800
+    "grid": "/breeds/german-shorthaired-pointer-ec1cc2d6-grid.webp",
+    "detail": "/breeds/german-shorthaired-pointer-ec1cc2d6.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Горбунова М.С.",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9A%D1%83%D1%80%D1%86%D1%85%D0%B0%D0%B0%D1%80.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/207/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -1829,17 +1845,18 @@
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Golden-Retriever",
    "image": {
-    "grid": "/breeds/golden-retriever-c2518875-grid.webp",
-    "detail": "/breeds/golden-retriever-c2518875.webp",
-    "width": 1200,
-    "height": 900
+    "grid": "/breeds/golden-retriever-0e4a69e1-grid.webp",
+    "detail": "/breeds/golden-retriever-0e4a69e1.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Barras",
-    "licence": "CC BY 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Golden_Retriever-9_(Barras).JPG",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/27/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -2099,17 +2116,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Murray-River-Retriever",
    "image": {
-    "grid": "/breeds/murray-river-retriever-9caf4c18-grid.webp",
-    "detail": "/breeds/murray-river-retriever-9caf4c18.webp",
-    "width": 960,
-    "height": 720
+    "grid": "/breeds/murray-river-retriever-9018e822-grid.webp",
+    "detail": "/breeds/murray-river-retriever-9018e822.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "D mentias",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Murray_River_Curly_Coated_Retriever,_Stella.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/249/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -2197,17 +2215,18 @@
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Sussex-Spaniel",
    "image": {
-    "grid": "/breeds/sussex-spaniel-58ca7894-grid.webp",
-    "detail": "/breeds/sussex-spaniel-58ca7894.webp",
-    "width": 1200,
-    "height": 843
+    "grid": "/breeds/sussex-spaniel-87102b9d-grid.webp",
+    "detail": "/breeds/sussex-spaniel-87102b9d.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Canarian",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sussexinspa2.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/17/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -2792,17 +2811,18 @@
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Harrier",
    "image": {
-    "grid": "/breeds/harrier-1a2e596f-grid.webp",
-    "detail": "/breeds/harrier-1a2e596f.webp",
-    "width": 540,
-    "height": 500
+    "grid": "/breeds/harrier-b5643e6e-grid.webp",
+    "detail": "/breeds/harrier-b5643e6e.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Smcmilla (edited by Pharaoh Hound )",
-    "licence": "Public domain",
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
     "licenceUrl": null,
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harrier_tricolour.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/97/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -2888,17 +2908,18 @@
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Otterhound",
    "image": {
-    "grid": "/breeds/otterhound-b5d17c30-grid.webp",
-    "detail": "/breeds/otterhound-b5d17c30.webp",
-    "width": 1200,
-    "height": 1107
+    "grid": "/breeds/otterhound-9d03fadc-grid.webp",
+    "detail": "/breeds/otterhound-9d03fadc.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Canarian",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Otter-liver%26tan4.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/204/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -3198,17 +3219,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australian-Shepherd",
    "image": {
-    "grid": "/breeds/australian-shepherd-aefcb5a4-grid.webp",
-    "detail": "/breeds/australian-shepherd-aefcb5a4.webp",
-    "width": 1200,
-    "height": 800
+    "grid": "/breeds/australian-shepherd-825f6772-grid.webp",
+    "detail": "/breeds/australian-shepherd-825f6772.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Trickdog-Fina",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Australian_Shepherd_red_bi.JPG",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/121/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -3556,17 +3578,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Shepherd-Dog",
    "image": {
-    "grid": "/breeds/german-shepherd-dog-9485a8de-grid.webp",
-    "detail": "/breeds/german-shepherd-dog-9485a8de.webp",
-    "width": 1200,
-    "height": 797
+    "grid": "/breeds/german-shepherd-dog-61c1d5e2-grid.webp",
+    "detail": "/breeds/german-shepherd-dog-61c1d5e2.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Jakub Hałun",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20110425_German_Shepherd_Dog_8505.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/130/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -3897,17 +3920,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Shetland-Sheepdog",
    "image": {
-    "grid": "/breeds/shetland-sheepdog-74653688-grid.webp",
-    "detail": "/breeds/shetland-sheepdog-74653688.webp",
-    "width": 1200,
-    "height": 900
+    "grid": "/breeds/shetland-sheepdog-aae70480-grid.webp",
+    "detail": "/breeds/shetland-sheepdog-aae70480.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Koefbac",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mi%C4%99dzynarowa_Wystawa_Ps%C3%B3w_Rasowych_w_Poznaniu_2018_-_34.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/125/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -4122,17 +4146,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Alaskan-Malamute",
    "image": {
-    "grid": "/breeds/alaskan-malamute-03c1d724-grid.webp",
-    "detail": "/breeds/alaskan-malamute-03c1d724.webp",
-    "width": 1200,
-    "height": 798
+    "grid": "/breeds/alaskan-malamute-36d1c565-grid.webp",
+    "detail": "/breeds/alaskan-malamute-36d1c565.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "waga11",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alaskan_Malamute_-_panoramio.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/166/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -4147,17 +4172,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Anatolian-Shepherd-Dog",
    "image": {
-    "grid": "/breeds/anatolian-shepherd-dog-dbfb6899-grid.webp",
-    "detail": "/breeds/anatolian-shepherd-dog-dbfb6899.webp",
-    "width": 1008,
-    "height": 1500
+    "grid": "/breeds/anatolian-shepherd-dog-b66e797f-grid.webp",
+    "detail": "/breeds/anatolian-shepherd-dog-b66e797f.webp",
+    "width": 1200,
+    "height": 841
    },
    "credit": {
-    "author": "Zeynel Cebeci",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anatolian_Shepherd_Dog_-_Kangal_k%C3%B6pe%C4%9Fi_01.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/238/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -4242,17 +4268,18 @@
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Canadian-Eskimo-Dog",
    "image": {
-    "grid": "/breeds/canadian-eskimo-dog-d4525b02-grid.webp",
-    "detail": "/breeds/canadian-eskimo-dog-d4525b02.webp",
-    "width": 1200,
-    "height": 1047
+    "grid": "/breeds/canadian-eskimo-dog-d145f0eb-grid.webp",
+    "detail": "/breeds/canadian-eskimo-dog-d145f0eb.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Canarian",
-    "licence": "CC BY 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanadaneskimo1.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/176/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -4345,17 +4372,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dobermann",
    "image": {
-    "grid": "/breeds/dobermann-1b03e091-grid.webp",
-    "detail": "/breeds/dobermann-1b03e091.webp",
-    "width": 1200,
-    "height": 984
+    "grid": "/breeds/dobermann-0637cfa7-grid.webp",
+    "detail": "/breeds/dobermann-0637cfa7.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Unknown author (see source page)",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:HiramvonNemesis2.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/161/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -4568,17 +4596,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Neapolitan-Mastiff",
    "image": {
-    "grid": "/breeds/neapolitan-mastiff-9135718c-grid.webp",
-    "detail": "/breeds/neapolitan-mastiff-9135718c.webp",
-    "width": 1107,
-    "height": 1500
+    "grid": "/breeds/neapolitan-mastiff-db6b3fb3-grid.webp",
+    "detail": "/breeds/neapolitan-mastiff-db6b3fb3.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "user:przykuta",
-    "licence": "CC BY-SA 2.5",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mastino_napoletano_67576.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/157/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -4619,17 +4648,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Portuguese-Water-Dog",
    "image": {
-    "grid": "/breeds/portuguese-water-dog-5b10b8f2-grid.webp",
-    "detail": "/breeds/portuguese-water-dog-5b10b8f2.webp",
-    "width": 1000,
-    "height": 854
+    "grid": "/breeds/portuguese-water-dog-d0ddfd91-grid.webp",
+    "detail": "/breeds/portuguese-water-dog-d0ddfd91.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Silke Hollje-Schumacher",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:C%C3%A3o_de_agua_Portugu%C3%AAs_2.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/155/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -4694,17 +4724,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Rottweiler",
    "image": {
-    "grid": "/breeds/rottweiler-0bbdf8ae-grid.webp",
-    "detail": "/breeds/rottweiler-0bbdf8ae.webp",
-    "width": 1200,
-    "height": 797
+    "grid": "/breeds/rottweiler-aee1d0f4-grid.webp",
+    "detail": "/breeds/rottweiler-aee1d0f4.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Kreuzbube64",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rottweilerh%C3%BCndin_Ziva_(DSC6787)_1.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/154/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -4771,17 +4802,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Schnauzer",
    "image": {
-    "grid": "/breeds/schnauzer-5538f841-grid.webp",
-    "detail": "/breeds/schnauzer-5538f841.webp",
-    "width": 1200,
-    "height": 901
+    "grid": "/breeds/schnauzer-0389f1bf-grid.webp",
+    "detail": "/breeds/schnauzer-0389f1bf.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Standardschnauzer1",
-    "licence": "CC0",
-    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Docked_Pepper_%26_Salt_Standard_Schnauzer_American_Champion.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/227/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -4796,17 +4828,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Schnauzer-(Giant)",
    "image": {
-    "grid": "/breeds/schnauzer-giant-7560b814-grid.webp",
-    "detail": "/breeds/schnauzer-giant-7560b814.webp",
-    "width": 1087,
-    "height": 967
+    "grid": "/breeds/schnauzer-giant-8a9c6780-grid.webp",
+    "detail": "/breeds/schnauzer-giant-8a9c6780.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "No machine-readable author provided. Kkrzysiu o2 assumed (based on copyright claims).",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stablemaster%27s_NORTHERN_HOPE(Poznan2006).jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/151/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
@@ -5064,7 +5097,21 @@
    "aliases": [
     "Bosdog"
    ],
-   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australasian-Bosdog"
+   "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australasian-Bosdog",
+   "image": {
+    "grid": "/breeds/australasian-bosdog-b3ed281d-grid.webp",
+    "detail": "/breeds/australasian-bosdog-b3ed281d.webp",
+    "width": 770,
+    "height": 540
+   },
+   "credit": {
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/247/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
+   }
   },
   {
    "id": "boston-terrier",
@@ -5526,17 +5573,18 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Poodle-(Toy)",
    "image": {
-    "grid": "/breeds/poodle-toy-e1f5b1b8-grid.webp",
-    "detail": "/breeds/poodle-toy-e1f5b1b8.webp",
-    "width": 1200,
-    "height": 900
+    "grid": "/breeds/poodle-toy-2c4797f9-grid.webp",
+    "detail": "/breeds/poodle-toy-2c4797f9.webp",
+    "width": 770,
+    "height": 540
    },
    "credit": {
-    "author": "Choikwangmo9",
-    "licence": "CC0",
-    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-03-11_21.55.24_poodle_ggomi.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Dogs Australia",
+    "licence": "Copyright Dogs Australia",
+    "licenceUrl": null,
+    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/206/",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {
