@@ -18,6 +18,10 @@
     --pixel: Verdana, Tahoma, Geneva, sans-serif;
   }
   * { box-sizing: border-box; }
+  /* iPhone Safari zooms into any field under 16px. Fields use 16px text, scaled back down to the 98 size
+     (16 x 0.6875 = 11px), with negative margins so the layout keeps the scaled size. */
+  .nz { font-size: 16px !important; width: 145.4545% !important; height: 30px !important; transform: scale(0.6875); transform-origin: 0 0; margin: 0 -45.4545% -9.375px 0 !important; }
+  .nz-area { height: 64px !important; margin-bottom: -20px !important; }
   /* Safari draws both start and end arrow pairs from 98.css; keep one arrow at each end. */
   ::-webkit-scrollbar-button:vertical:start:increment, ::-webkit-scrollbar-button:vertical:end:decrement, ::-webkit-scrollbar-button:horizontal:start:increment, ::-webkit-scrollbar-button:horizontal:end:decrement { display: none; }
   /* 98.css sets its pixel font on many elements; use one smooth face for every element. */
@@ -104,7 +108,7 @@
 
   /* Dex panel */
   .find { display: grid; grid-template-columns: auto 1fr auto; gap: 4px 6px; align-items: center; margin-bottom: 6px; }
-  .find input, .find select { width: 100%; min-width: 0; font-size: 11px; }
+  .find input, .find select { min-width: 0; }
   .find select { grid-column: 2 / 4; }
   .find .x { min-width: 0; padding: 0 6px; }
   .show { display: flex; gap: 10px; margin: 0 0 8px; padding: 6px 8px 8px; }
@@ -373,7 +377,7 @@
             <div class="top-gap"></div>
             <div class="window main">
               <div class="title-bar">
-                <div class="title-bar-text">${icons.dog}GoodDogs.exe</div>
+                <div class="title-bar-text">${icons.dog}Good Dogs Only</div>
                 <div class="title-bar-controls"><button aria-label="Minimize" data-act="joke-min"></button><button aria-label="Maximize"></button><button aria-label="Close" data-act="shutdown"></button></div>
               </div>
               <div class="window-body">
@@ -483,10 +487,10 @@
       this.panels.dex.innerHTML = `
         <div class="find">
           <label for="q98-${this.uid}">Find:</label>
-          <input id="q98-${this.uid}" type="text" data-role="q" placeholder="Breed or nickname" autocomplete="off" enterkeyhint="search">
+          <input id="q98-${this.uid}" class="nz" type="text" data-role="q" placeholder="Breed or nickname" autocomplete="off" enterkeyhint="search">
           <button type="button" class="x" data-act="clear" aria-label="Clear">X</button>
           <label for="g98-${this.uid}">Group:</label>
-          <select id="g98-${this.uid}" data-role="group"></select>
+          <select id="g98-${this.uid}" class="nz" data-role="group"></select>
         </div>
         <fieldset class="show"><legend>Show</legend>
           <div class="field-row"><input id="fa-${this.uid}" type="radio" name="f-${this.uid}" value="all" data-role="filter" checked><label for="fa-${this.uid}">All</label></div>
@@ -513,16 +517,8 @@
           : `<div class="empty">Good Dogs Only cannot find <b>${esc(s.q)}</b>.<br>Try a nickname like "staffy", "heeler" or "sausage dog".</div>`
         return
       }
-      const shown = s.group === 'all' ? groups : [group[s.group]]
-      const html = shown
-        .map((g) => {
-          const items = list.filter((b) => b.groupId === g.id)
-          if (!items.length) return ''
-          return `<fieldset class="group-box"><legend><span class="swatch" style="background:${groupColour[g.id]}"></span>${esc(g.name)} - ${caughtIn(g.id)} of ${g.total}</legend>
-            <p class="group-desc">${esc(g.description)}</p>
-            <div class="icons">${items.map((b) => this.icon(b)).join('')}</div></fieldset>`
-        })
-        .join('')
+      const sorted = [...list].sort((x, y) => x.dexNo.localeCompare(y.dexNo, 'en', { numeric: true }))
+      const html = sorted.length ? `<div class="icons">${sorted.map((b) => this.icon(b)).join('')}</div>` : ''
       results.innerHTML = (html || `<div class="empty">Nothing here yet. Get to the park!</div>`) + `<p class="sample-note">Mockup sample: ${breeds.length} of ${DATA.totalEntries} entries</p>`
     }
 
@@ -561,8 +557,8 @@
       if (b.parents) rows.push(['Cross of', `${esc(b.parents[0])} x ${esc(b.parents[1])}`])
       const status = c
         ? `<div class="caught-line">${icons.eyes}<span><b>Spotted!</b>First spotted ${esc(fmt(c.date))}</span></div>
-           <div class="field-row-stacked"><label for="d98-${this.uid}-${b.id}">Date seen:</label><input id="d98-${this.uid}-${b.id}" type="date" data-role="date" data-id="${b.id}" value="${c.date}" max="${todayIso()}"></div>
-           <div class="field-row-stacked"><label for="n98-${this.uid}-${b.id}">Note:</label><textarea id="n98-${this.uid}-${b.id}" rows="2" data-role="note" data-id="${b.id}" placeholder="Where, what colour, the dog's name...">${esc(c.note || '')}</textarea></div>
+           <div class="field-row-stacked"><label for="d98-${this.uid}-${b.id}">Date seen:</label><input id="d98-${this.uid}-${b.id}" class="nz" type="date" data-role="date" data-id="${b.id}" value="${c.date}" max="${todayIso()}"></div>
+           <div class="field-row-stacked"><label for="n98-${this.uid}-${b.id}">Note:</label><textarea id="n98-${this.uid}-${b.id}" class="nz nz-area" rows="2" data-role="note" data-id="${b.id}" placeholder="Where, what colour, the dog's name...">${esc(c.note || '')}</textarea></div>
            <button type="button" data-act="undo" data-id="${b.id}">Undo</button>`
         : `<button type="button" class="catch-btn default" data-act="catch" data-id="${b.id}">${icons.eyes}I spotted one!</button>`
       const p = this.q('.props')
