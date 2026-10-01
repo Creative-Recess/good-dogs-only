@@ -773,7 +773,7 @@
     onChange(e) {
       if (e.target.matches('[data-role="group"]')) { this.s.group = e.target.value; this.refreshResults(); this.panels.dex.parentElement.scrollTop = 0 }
       if (e.target.matches('[data-role="filter"]')) { this.s.filter = e.target.value; this.refreshResults() }
-      if (e.target.matches('[data-role="appearance"]') && e.target.value === '98') { e.target.checked = false; this.q('[data-role="appearance"][value="aqua"]').checked = true; this.dialog('Theme', 'In the app, this switches to Windows 98 straight away. In this mockup, the Windows 98 version is its own page.', 'none') }
+      if (e.target.matches('[data-role="appearance"]') && e.target.value !== 'aqua') { const name = e.target.value === '98' ? 'Windows 98' : 'Aqua Glass'; e.target.checked = false; this.q('[data-role="appearance"][value="aqua"]').checked = true; this.dialog('Theme', `In the app, this switches to ${name} straight away. In this mockup, ${name} is its own page.`, 'none') }
       if (e.target.matches('[data-role="date"]') && e.target.value) { const c = caught[e.target.dataset.id]; if (c) { c.date = e.target.value; persist(); refreshAll() } }
     }
 
@@ -976,8 +976,9 @@
         </fieldset>
         <fieldset class="panel-box"><legend>Theme</legend>
           <div class="appearance">
-            <div class="field-row"><input id="ap98-${this.uid}" type="radio" name="ap-${this.uid}" value="98" data-role="appearance"><label for="ap98-${this.uid}">Windows 98</label></div>
             <div class="field-row"><input id="apaq-${this.uid}" type="radio" name="ap-${this.uid}" value="aqua" data-role="appearance" checked><label for="apaq-${this.uid}">Aqua</label></div>
+            <div class="field-row"><input id="apgl-${this.uid}" type="radio" name="ap-${this.uid}" value="glass" data-role="appearance"><label for="apgl-${this.uid}">Aqua Glass</label></div>
+            <div class="field-row"><input id="ap98-${this.uid}" type="radio" name="ap-${this.uid}" value="98" data-role="appearance"><label for="ap98-${this.uid}">Windows 98</label></div>
           </div>
         </fieldset>
         <fieldset class="panel-box" id="home-${this.uid}"><legend>Add to Home Screen</legend>
