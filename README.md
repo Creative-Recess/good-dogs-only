@@ -1,7 +1,7 @@
 # Good Dogs Only
 
 A Pokedex-style phone app for ticking off dog breeds spotted at the park, dressed as a Windows 98 program.
-The list is every Dogs Australia (ANKC) breed standard (227) plus a Bonus group of 20 common unofficial breeds and crosses, 247 in all.
+The list is every Dogs Australia (ANKC) breed standard (227) plus a Bonus group of 12 common unofficial breeds and crosses, 239 in all.
 
 It's a home-screen web app: open it in Safari on an iPhone, tap Share, then "Add to Home Screen".
 Sightings are stored on the phone only (IndexedDB), with a backup file you can save and restore.

@@ -7,9 +7,9 @@ const breeds = buildBreedList()
 const top = (query: string) => searchBreeds(breeds, query)[0]?.name
 
 describe('buildBreedList', () => {
-  it('has the 227 official breeds then the 20 bonus entries', () => {
+  it('has the 227 official breeds then the 12 bonus entries', () => {
     expect(breeds.filter((b) => b.tier === 'ankc')).toHaveLength(227)
-    expect(breeds.filter((b) => b.tier === 'unofficial')).toHaveLength(20)
+    expect(breeds.filter((b) => b.tier === 'unofficial')).toHaveLength(12)
   })
 
   it('gives every entry a unique, URL-safe id and dex number', () => {
@@ -30,10 +30,10 @@ describe('buildBreedList', () => {
     }
   })
 
-  it('numbers the bonus section B01-B20', () => {
+  it('numbers the bonus section B01-B12', () => {
     const bonus = breeds.filter((b) => b.tier === 'unofficial')
     expect(bonus[0]).toMatchObject({ dexNo: 'B01', name: 'Cavoodle', groupId: 'bonus', kind: 'cross' })
-    expect(bonus.at(-1)?.dexNo).toBe('B20')
+    expect(bonus.at(-1)?.dexNo).toBe('B12')
   })
 
   it('tidies variety-list names and keeps the official one', () => {

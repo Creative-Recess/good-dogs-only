@@ -37,7 +37,7 @@ test('a backup restores every spot after the phone is wiped', async ({ page }, t
   await page.reload()
   await launch(page)
   await page.getByRole('tab', { name: 'Progress' }).click()
-  await expect(page.getByText('0 of 247 breeds')).toBeVisible()
+  await expect(page.getByText('0 of 239 breeds')).toBeVisible()
   await page.getByRole('tab', { name: 'Help' }).click()
   await page.getByTestId('restore-file').setInputFiles(file)
   await expect(page.getByRole('alertdialog')).toContainText('Backup restored.')
@@ -48,7 +48,7 @@ test('a backup restores every spot after the phone is wiped', async ({ page }, t
   await expect(page.getByRole('alertdialog')).toContainText('already here')
   await page.getByRole('alertdialog').getByRole('button', { name: 'OK' }).click()
   await page.getByRole('tab', { name: 'Progress' }).click()
-  await expect(page.getByText('2 of 247 breeds')).toBeVisible()
+  await expect(page.getByText('2 of 239 breeds')).toBeVisible()
 })
 
 test('restoring a file that is not a backup says so', async ({ page }) => {

@@ -3,11 +3,11 @@ import { launch, openBreed, tiles } from './helpers.ts'
 
 test.beforeEach(async ({ page }) => launch(page))
 
-test('shows all 247 breeds in dex order', async ({ page }) => {
-  await expect(tiles(page)).toHaveCount(247)
+test('shows all 239 breeds in dex order', async ({ page }) => {
+  await expect(tiles(page)).toHaveCount(239)
   await expect(tiles(page).first()).toContainText('001')
   await expect(tiles(page).first()).toContainText('Affenpinscher')
-  await expect(tiles(page).last()).toContainText('B20')
+  await expect(tiles(page).last()).toContainText('B12')
 })
 
 test('finds breeds by the names people use at the park', async ({ page }) => {
@@ -28,14 +28,14 @@ test('says so when nothing matches, and the X clears the search', async ({ page 
   await expect(page.getByText('Good Dogs Only cannot find')).toBeVisible()
   await page.getByRole('button', { name: 'Clear' }).click()
   await expect(page.getByLabel('Find:')).toHaveValue('')
-  await expect(tiles(page)).toHaveCount(247)
+  await expect(tiles(page)).toHaveCount(239)
 })
 
 test('filters by group', async ({ page }) => {
   await page.getByLabel('Group:').selectOption('toys')
   await expect(tiles(page)).toHaveCount(28)
   await page.getByLabel('Group:').selectOption('bonus')
-  await expect(tiles(page)).toHaveCount(20)
+  await expect(tiles(page)).toHaveCount(12)
 })
 
 test('shows a breed with its photo, group, temperament and text', async ({ page }) => {

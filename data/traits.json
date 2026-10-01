@@ -109,15 +109,6 @@
    "source": "research",
    "text": "A large Turkish flock guardian, steady and self-assured. Quietly watchful and built for long days on the job."
   },
-  "Aussiedoodle": {
-   "traits": [
-    "Clever",
-    "Energetic",
-    "Trainable"
-   ],
-   "source": "research",
-   "text": "A switched-on mix of Australian Shepherd and Poodle. Thrives on training, games and a job to do."
-  },
   "Australasian Bosdog": {
    "traits": [
     "Loyal",
@@ -289,15 +280,6 @@
    "source": "standard",
    "text": "A scruffy French sheepdog with big upright ears. Even-tempered and quick to learn, with a brave, steady nature."
   },
-  "Bernedoodle": {
-   "traits": [
-    "Gentle",
-    "Affectionate",
-    "Playful"
-   ],
-   "source": "research",
-   "text": "A big, soft teddy bear of a dog with a goofy side. Patient with kids and very people-focused."
-  },
   "Bernese Mountain Dog": {
    "traits": [
     "Gentle",
@@ -378,15 +360,6 @@
    ],
    "source": "standard",
    "text": "A scruffy, otter-headed worker that's game for anything. Plenty of energy and grit for its size."
-  },
-  "Bordoodle": {
-   "traits": [
-    "Clever",
-    "Energetic",
-    "Affectionate"
-   ],
-   "source": "research",
-   "text": "A Border Collie-Poodle mix that's very smart and full of beans. Needs a busy owner and loves its family."
   },
   "Borzoi": {
    "traits": [
@@ -1423,15 +1396,6 @@
    "source": "standard",
    "text": "Small but fearless, strutting about like it owns the place. Lively, alert and always on the go."
   },
-  "Moodle": {
-   "traits": [
-    "Affectionate",
-    "Playful",
-    "Alert"
-   ],
-   "source": "research",
-   "text": "A little fluffball crossing Maltese and Poodle. Loves a cuddle and a game, and may yap at visitors."
-  },
   "Mudi": {
    "traits": [
     "Alert",
@@ -1864,15 +1828,6 @@
    "source": "standard",
    "text": "Bright and chatty, a keen watchdog. Small, sturdy and happy to join any activity."
   },
-  "Schnoodle": {
-   "traits": [
-    "Clever",
-    "Alert",
-    "Playful"
-   ],
-   "source": "research",
-   "text": "A Schnauzer-Poodle cross that's bright and spirited. Makes a keen little watchdog and loves a game."
-  },
   "Scottish Terrier": {
    "traits": [
     "Brave",
@@ -1900,15 +1855,6 @@
    "source": "standard",
    "text": "Instantly known by its deep wrinkles and hippo-like muzzle. Calm and independent, but affectionate with its own family."
   },
-  "Sheepadoodle": {
-   "traits": [
-    "Playful",
-    "Friendly",
-    "Energetic"
-   ],
-   "source": "research",
-   "text": "A shaggy, fun-loving cross of Old English Sheepdog and Poodle. Stays puppyish for years and needs plenty of exercise."
-  },
   "Shetland Sheepdog": {
    "traits": [
     "Affectionate",
@@ -1935,15 +1881,6 @@
    ],
    "source": "research",
    "text": "A little lion dog with a flowing coat. Friendly and outgoing with a cheeky independent streak, made for companionship."
-  },
-  "Shih-poo": {
-   "traits": [
-    "Affectionate",
-    "Playful",
-    "Friendly"
-   ],
-   "source": "research",
-   "text": "A small, cuddly Shih Tzu-Poodle cross. Sociable and cheerful, happiest when it's with its people."
   },
   "Shikoku": {
    "traits": [
@@ -2007,15 +1944,6 @@
    ],
    "source": "standard",
    "text": "A woolly herding and water dog from Spain. Loyal and quick to learn, it loves a job to do."
-  },
-  "Spoodle": {
-   "traits": [
-    "Affectionate",
-    "Playful",
-    "Clever"
-   ],
-   "source": "research",
-   "text": "A merry, curly cross of Cocker Spaniel and Poodle. Cuddly, fun-loving and easy to teach."
   },
   "St Bernard": {
    "traits": [

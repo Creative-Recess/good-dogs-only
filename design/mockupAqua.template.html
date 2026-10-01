@@ -325,7 +325,7 @@
   const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
   const fmt = (iso, withYear = true) => { const [y, m, d] = iso.split('-').map(Number); return `${d} ${MONTHS[m - 1]}${withYear ? ` ${y}` : ''}` }
   // Mockup only: example counts on top of the 28 sample breeds, so Progress shows a well-used dex (~65%).
-  const DEMO_EXTRA = { toys: 16, terriers: 18, gundogs: 20, hounds: 20, 'working-dogs': 23, utility: 26, 'non-sporting': 14, bonus: 12 }
+  const DEMO_EXTRA = { toys: 16, terriers: 18, gundogs: 20, hounds: 20, 'working-dogs': 23, utility: 26, 'non-sporting': 14, bonus: 7 }
   const caughtIn = (gid) => breeds.filter((b) => b.groupId === gid && caught[b.id]).length + (DEMO_EXTRA[gid] ?? 0)
   const spottedCount = () => groups.reduce((n, g) => n + caughtIn(g.id), 0)
 

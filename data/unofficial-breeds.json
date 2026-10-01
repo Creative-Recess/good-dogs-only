@@ -1,45 +1,139 @@
 {
   "about": "Bonus list: common dogs in Australia that Dogs Australia does not recognise. Approved by Justin on 2026-10-01. Order is the bonus dex order.",
   "breeds": [
-    { "name": "Cavoodle", "kind": "cross", "parents": ["Cavalier King Charles Spaniel", "Poodle"], "aliases": ["Cavapoo", "Cavadoodle"] },
-    { "name": "Groodle", "kind": "cross", "parents": ["Golden Retriever", "Poodle"], "aliases": ["Goldendoodle", "Golden Doodle"] },
-    { "name": "Labradoodle", "kind": "cross", "parents": ["Labrador Retriever", "Poodle"], "aliases": ["Australian Labradoodle", "Cobberdog"] },
-    { "name": "Spoodle", "kind": "cross", "parents": ["Cocker Spaniel", "Poodle"], "aliases": ["Cockapoo", "Cockerpoo", "Cockerdoodle"] },
-    { "name": "Moodle", "kind": "cross", "parents": ["Maltese", "Poodle"], "aliases": ["Maltipoo", "Maltepoo", "Maltese Poodle"] },
-    { "name": "Maltese x Shih Tzu", "kind": "cross", "parents": ["Maltese", "Shih Tzu"], "aliases": ["Malshi", "Maltshi", "Mal-Shi", "Shih Tzu x Maltese", "Maltese cross"] },
-    { "name": "Schnoodle", "kind": "cross", "parents": ["Schnauzer", "Poodle"], "aliases": ["Schnauzer x Poodle"] },
-    { "name": "Bernedoodle", "kind": "cross", "parents": ["Bernese Mountain Dog", "Poodle"], "aliases": ["Bernese Poodle"] },
-    { "name": "Sheepadoodle", "kind": "cross", "parents": ["Old English Sheepdog", "Poodle"], "aliases": ["Sheepdoodle"] },
-    { "name": "Bordoodle", "kind": "cross", "parents": ["Border Collie", "Poodle"], "aliases": ["Borderdoodle", "Border Doodle"] },
-    { "name": "Aussiedoodle", "kind": "cross", "parents": ["Australian Shepherd", "Poodle"], "aliases": ["Aussiepoo", "Aussie Doodle"] },
-    { "name": "Shih-poo", "kind": "cross", "parents": ["Shih Tzu", "Poodle"], "aliases": ["Shihpoo", "Shoodle", "Pooshi"] },
-    { "name": "Cavachon", "kind": "cross", "parents": ["Cavalier King Charles Spaniel", "Bichon Frise"], "aliases": ["Cav-a-chon"] },
-    { "name": "Pugalier", "kind": "cross", "parents": ["Pug", "Cavalier King Charles Spaniel"], "aliases": ["Cavapug", "Pug x Cavalier"] },
-    { "name": "Puggle", "kind": "cross", "parents": ["Beagle", "Pug"], "aliases": ["Pug x Beagle"] },
-    { "name": "Jug", "kind": "cross", "parents": ["Jack Russell Terrier", "Pug"], "aliases": ["Jack Russell x Pug", "Pug x Jack Russell"] },
+    {
+      "name": "Cavoodle",
+      "kind": "cross",
+      "parents": [
+        "Cavalier King Charles Spaniel",
+        "Poodle"
+      ],
+      "aliases": [
+        "Cavapoo",
+        "Cavadoodle"
+      ]
+    },
+    {
+      "name": "Groodle",
+      "kind": "cross",
+      "parents": [
+        "Golden Retriever",
+        "Poodle"
+      ],
+      "aliases": [
+        "Goldendoodle",
+        "Golden Doodle"
+      ]
+    },
+    {
+      "name": "Labradoodle",
+      "kind": "cross",
+      "parents": [
+        "Labrador Retriever",
+        "Poodle"
+      ],
+      "aliases": [
+        "Australian Labradoodle",
+        "Cobberdog"
+      ]
+    },
+    {
+      "name": "Maltese x Shih Tzu",
+      "kind": "cross",
+      "parents": [
+        "Maltese",
+        "Shih Tzu"
+      ],
+      "aliases": [
+        "Malshi",
+        "Maltshi",
+        "Mal-Shi",
+        "Shih Tzu x Maltese",
+        "Maltese cross"
+      ]
+    },
+    {
+      "name": "Cavachon",
+      "kind": "cross",
+      "parents": [
+        "Cavalier King Charles Spaniel",
+        "Bichon Frise"
+      ],
+      "aliases": [
+        "Cav-a-chon"
+      ]
+    },
+    {
+      "name": "Pugalier",
+      "kind": "cross",
+      "parents": [
+        "Pug",
+        "Cavalier King Charles Spaniel"
+      ],
+      "aliases": [
+        "Cavapug",
+        "Pug x Cavalier"
+      ]
+    },
+    {
+      "name": "Puggle",
+      "kind": "cross",
+      "parents": [
+        "Beagle",
+        "Pug"
+      ],
+      "aliases": [
+        "Pug x Beagle"
+      ]
+    },
+    {
+      "name": "Jug",
+      "kind": "cross",
+      "parents": [
+        "Jack Russell Terrier",
+        "Pug"
+      ],
+      "aliases": [
+        "Jack Russell x Pug",
+        "Pug x Jack Russell"
+      ]
+    },
     {
       "name": "Miniature Fox Terrier",
       "kind": "breed",
       "about": "An Australian breed descended from Fox Terriers, kept as a ratter and companion.",
-      "aliases": ["Mini Foxie", "Mini Fox Terrier", "Foxie"]
+      "aliases": [
+        "Mini Foxie",
+        "Mini Fox Terrier",
+        "Foxie"
+      ]
     },
     {
       "name": "Koolie",
       "kind": "breed",
       "about": "An Australian working sheepdog, often merle, with its own breed club rather than Dogs Australia recognition.",
-      "aliases": ["German Koolie", "Australian Koolie"]
+      "aliases": [
+        "German Koolie",
+        "Australian Koolie"
+      ]
     },
     {
       "name": "American Bully",
       "kind": "breed",
       "about": "A muscular companion breed developed in the US in the 1990s from bull-type terriers.",
-      "aliases": ["Bully", "Pocket Bully", "XL Bully"]
+      "aliases": [
+        "Bully",
+        "Pocket Bully",
+        "XL Bully"
+      ]
     },
     {
       "name": "Bull Arab",
       "kind": "breed",
       "about": "An Australian pig-hunting dog developed from bull terrier, pointer and sighthound lines.",
-      "aliases": ["Australian Bull Arab"]
+      "aliases": [
+        "Australian Bull Arab"
+      ]
     }
   ]
 }

@@ -8,10 +8,6 @@
     "akita-japanese": {
       "title": "Akita (dog breed)"
     },
-    "aussiedoodle": {
-      "title": null,
-      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
-    },
     "australasian-bosdog": {
       "title": null,
       "note": "No article and no free photos anywhere (checked Oct 2026)."
@@ -22,16 +18,8 @@
     "beauceron-berger-de-beauce": {
       "title": "Beauceron"
     },
-    "bernedoodle": {
-      "title": null,
-      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
-    },
     "bolognese": {
       "title": "Bolognese (dog breed)"
-    },
-    "bordoodle": {
-      "title": null,
-      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
     },
     "boxer": {
       "title": "Boxer (dog breed)"
@@ -91,10 +79,6 @@
     "mastiff": {
       "title": "English Mastiff"
     },
-    "moodle": {
-      "title": null,
-      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
-    },
     "murray-river-retriever": {
       "title": null,
       "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
@@ -148,18 +132,6 @@
     },
     "schnauzer": {
       "title": "Standard Schnauzer"
-    },
-    "schnoodle": {
-      "title": null,
-      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
-    },
-    "sheepadoodle": {
-      "title": null,
-      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
-    },
-    "shih-poo": {
-      "title": null,
-      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
     },
     "shikoku": {
       "title": "Shikoku dog"

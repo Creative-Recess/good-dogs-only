@@ -13335,134 +13335,8 @@
    }
   },
   {
-   "id": "spoodle",
-   "dexNo": "B04",
-   "name": "Spoodle",
-   "groupId": "bonus",
-   "tier": "unofficial",
-   "forms": [],
-   "aliases": [
-    "Cockapoo",
-    "Cockerpoo",
-    "Cockerdoodle"
-   ],
-   "kind": "cross",
-   "parents": [
-    "Cocker Spaniel",
-    "Poodle"
-   ],
-   "traits": [
-    "Affectionate",
-    "Playful",
-    "Clever"
-   ],
-   "text": "A merry, curly cross of Cocker Spaniel and Poodle. Cuddly, fun-loving and easy to teach.",
-   "shape": {
-    "len": 22,
-    "h": 10,
-    "leg": 9,
-    "head": 8,
-    "snout": 5,
-    "ears": "long",
-    "tail": "plume",
-    "fluff": 1
-   },
-   "image": {
-    "grid": "/breeds/spoodle-12c7c655-grid.webp",
-    "detail": "/breeds/spoodle-12c7c655.webp",
-    "width": 1125,
-    "height": 1500,
-    "focus": [
-     0.55,
-     0.53
-    ],
-    "colours": {
-     "body": [
-      146,
-      137,
-      117
-     ],
-     "patch": [
-      205,
-      182,
-      175
-     ]
-    }
-   },
-   "credit": {
-    "author": "Lukebudworth",
-    "licence": "CC0",
-    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonard,_a_F1B_cockapoo_at_2_years_and_7_months.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
-   }
-  },
-  {
-   "id": "moodle",
-   "dexNo": "B05",
-   "name": "Moodle",
-   "groupId": "bonus",
-   "tier": "unofficial",
-   "forms": [],
-   "aliases": [
-    "Maltipoo",
-    "Maltepoo",
-    "Maltese Poodle"
-   ],
-   "kind": "cross",
-   "parents": [
-    "Maltese",
-    "Poodle"
-   ],
-   "traits": [
-    "Affectionate",
-    "Playful",
-    "Alert"
-   ],
-   "text": "A little fluffball crossing Maltese and Poodle. Loves a cuddle and a game, and may yap at visitors.",
-   "shape": {
-    "len": 18,
-    "h": 9,
-    "leg": 7,
-    "head": 7,
-    "snout": 4,
-    "ears": "long",
-    "tail": "plume",
-    "fluff": 1
-   },
-   "image": {
-    "grid": "/breeds/moodle-f260f374-grid.webp",
-    "detail": "/breeds/moodle-f260f374.webp",
-    "width": 1200,
-    "height": 939,
-    "focus": [
-     0.42,
-     0.5
-    ],
-    "colours": {
-     "body": [
-      51,
-      47,
-      17
-     ],
-     "patch": [
-      212,
-      179,
-      145
-     ]
-    }
-   },
-   "credit": {
-    "author": "Rhododendrites",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maltipoo_dog_(11995).jpg",
-    "changes": "Resized, and cropped to a square for the grid"
-   }
-  },
-  {
    "id": "maltese-x-shih-tzu",
-   "dexNo": "B06",
+   "dexNo": "B04",
    "name": "Maltese x Shih Tzu",
    "groupId": "bonus",
    "tier": "unofficial",
@@ -13526,378 +13400,8 @@
    }
   },
   {
-   "id": "schnoodle",
-   "dexNo": "B07",
-   "name": "Schnoodle",
-   "groupId": "bonus",
-   "tier": "unofficial",
-   "forms": [],
-   "aliases": [
-    "Schnauzer x Poodle"
-   ],
-   "kind": "cross",
-   "parents": [
-    "Schnauzer",
-    "Poodle"
-   ],
-   "traits": [
-    "Clever",
-    "Alert",
-    "Playful"
-   ],
-   "text": "A Schnauzer-Poodle cross that's bright and spirited. Makes a keen little watchdog and loves a game.",
-   "shape": {
-    "len": 21,
-    "h": 10,
-    "leg": 9,
-    "head": 8,
-    "snout": 5,
-    "ears": "floppy",
-    "tail": "plume",
-    "fluff": 0.9
-   },
-   "image": {
-    "grid": "/breeds/schnoodle-b494646a-grid.webp",
-    "detail": "/breeds/schnoodle-b494646a.webp",
-    "width": 1200,
-    "height": 900,
-    "focus": [
-     0.53,
-     0.5
-    ],
-    "colours": {
-     "body": [
-      177,
-      173,
-      174
-     ],
-     "patch": [
-      109,
-      88,
-      76
-     ]
-    }
-   },
-   "credit": {
-    "author": "Henryp013",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dog_schnoodle.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
-   }
-  },
-  {
-   "id": "bernedoodle",
-   "dexNo": "B08",
-   "name": "Bernedoodle",
-   "groupId": "bonus",
-   "tier": "unofficial",
-   "forms": [],
-   "aliases": [
-    "Bernese Poodle"
-   ],
-   "kind": "cross",
-   "parents": [
-    "Bernese Mountain Dog",
-    "Poodle"
-   ],
-   "traits": [
-    "Gentle",
-    "Affectionate",
-    "Playful"
-   ],
-   "text": "A big, soft teddy bear of a dog with a goofy side. Patient with kids and very people-focused.",
-   "shape": {
-    "len": 31,
-    "h": 13,
-    "leg": 12,
-    "head": 10,
-    "snout": 5,
-    "ears": "long",
-    "tail": "plume",
-    "fluff": 1
-   },
-   "image": {
-    "grid": "/breeds/bernedoodle-b5e929a2-grid.webp",
-    "detail": "/breeds/bernedoodle-b5e929a2.webp",
-    "width": 1125,
-    "height": 1500,
-    "focus": [
-     0.5,
-     0.18
-    ],
-    "colours": {
-     "body": [
-      20,
-      21,
-      22
-     ],
-     "patch": [
-      104,
-      86,
-      73
-     ]
-    }
-   },
-   "credit": {
-    "author": "Missvain",
-    "licence": "CC BY 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Laurent-Perrier_Pop-Up_in_Sonoma_-_Sarah_Stierch_06.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
-   }
-  },
-  {
-   "id": "sheepadoodle",
-   "dexNo": "B09",
-   "name": "Sheepadoodle",
-   "groupId": "bonus",
-   "tier": "unofficial",
-   "forms": [],
-   "aliases": [
-    "Sheepdoodle"
-   ],
-   "kind": "cross",
-   "parents": [
-    "Old English Sheepdog",
-    "Poodle"
-   ],
-   "traits": [
-    "Playful",
-    "Friendly",
-    "Energetic"
-   ],
-   "text": "A shaggy, fun-loving cross of Old English Sheepdog and Poodle. Stays puppyish for years and needs plenty of exercise.",
-   "shape": {
-    "len": 30,
-    "h": 13,
-    "leg": 12,
-    "head": 10,
-    "snout": 5,
-    "ears": "floppy",
-    "tail": "plume",
-    "fluff": 1
-   },
-   "image": {
-    "grid": "/breeds/sheepadoodle-97bd8005-grid.webp",
-    "detail": "/breeds/sheepadoodle-97bd8005.webp",
-    "width": 1125,
-    "height": 1500,
-    "focus": [
-     0.5,
-     0.2
-    ],
-    "colours": {
-     "body": [
-      48,
-      49,
-      49
-     ],
-     "patch": [
-      172,
-      147,
-      114
-     ]
-    }
-   },
-   "credit": {
-    "author": "Hallereese",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pebbles_the_Sheepadoodle.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
-   }
-  },
-  {
-   "id": "bordoodle",
-   "dexNo": "B10",
-   "name": "Bordoodle",
-   "groupId": "bonus",
-   "tier": "unofficial",
-   "forms": [],
-   "aliases": [
-    "Borderdoodle",
-    "Border Doodle"
-   ],
-   "kind": "cross",
-   "parents": [
-    "Border Collie",
-    "Poodle"
-   ],
-   "traits": [
-    "Clever",
-    "Energetic",
-    "Affectionate"
-   ],
-   "text": "A Border Collie-Poodle mix that's very smart and full of beans. Needs a busy owner and loves its family.",
-   "shape": {
-    "len": 26,
-    "h": 11,
-    "leg": 11,
-    "head": 8,
-    "snout": 6,
-    "ears": "floppy",
-    "tail": "plume",
-    "fluff": 0.9
-   },
-   "image": {
-    "grid": "/breeds/bordoodle-f75c313c-grid.webp",
-    "detail": "/breeds/bordoodle-f75c313c.webp",
-    "width": 1000,
-    "height": 1500,
-    "focus": [
-     0.5,
-     0.17
-    ],
-    "colours": {
-     "body": [
-      10,
-      9,
-      9
-     ],
-     "patch": [
-      177,
-      176,
-      176
-     ]
-    }
-   },
-   "credit": {
-    "author": "Allboutdogs321",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bordoodle,_Australian.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
-   }
-  },
-  {
-   "id": "aussiedoodle",
-   "dexNo": "B11",
-   "name": "Aussiedoodle",
-   "groupId": "bonus",
-   "tier": "unofficial",
-   "forms": [],
-   "aliases": [
-    "Aussiepoo",
-    "Aussie Doodle"
-   ],
-   "kind": "cross",
-   "parents": [
-    "Australian Shepherd",
-    "Poodle"
-   ],
-   "traits": [
-    "Clever",
-    "Energetic",
-    "Trainable"
-   ],
-   "text": "A switched-on mix of Australian Shepherd and Poodle. Thrives on training, games and a job to do.",
-   "shape": {
-    "len": 25,
-    "h": 11,
-    "leg": 11,
-    "head": 8,
-    "snout": 5,
-    "ears": "floppy",
-    "tail": "plume",
-    "fluff": 0.9
-   },
-   "image": {
-    "grid": "/breeds/aussiedoodle-dda0ffe1-grid.webp",
-    "detail": "/breeds/aussiedoodle-dda0ffe1.webp",
-    "width": 1200,
-    "height": 900,
-    "focus": [
-     0.5,
-     0.5
-    ],
-    "colours": {
-     "body": [
-      145,
-      142,
-      142
-     ],
-     "patch": [
-      79,
-      78,
-      80
-     ]
-    }
-   },
-   "credit": {
-    "author": "F. D. Richards from Clinton, MI",
-    "licence": "CC BY-SA 2.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thor,_2021_(51256377380).jpg",
-    "changes": "Resized, and cropped to a square for the grid"
-   }
-  },
-  {
-   "id": "shih-poo",
-   "dexNo": "B12",
-   "name": "Shih-poo",
-   "groupId": "bonus",
-   "tier": "unofficial",
-   "forms": [],
-   "aliases": [
-    "Shihpoo",
-    "Shoodle",
-    "Pooshi"
-   ],
-   "kind": "cross",
-   "parents": [
-    "Shih Tzu",
-    "Poodle"
-   ],
-   "traits": [
-    "Affectionate",
-    "Playful",
-    "Friendly"
-   ],
-   "text": "A small, cuddly Shih Tzu-Poodle cross. Sociable and cheerful, happiest when it's with its people.",
-   "shape": {
-    "len": 18,
-    "h": 9,
-    "leg": 6,
-    "head": 7,
-    "snout": 3,
-    "ears": "long",
-    "tail": "plume",
-    "fluff": 1
-   },
-   "image": {
-    "grid": "/breeds/shih-poo-4133ea52-grid.webp",
-    "detail": "/breeds/shih-poo-4133ea52.webp",
-    "width": 1200,
-    "height": 960,
-    "focus": [
-     0.53,
-     0.5
-    ],
-    "colours": {
-     "body": [
-      208,
-      207,
-      208
-     ],
-     "patch": [
-      112,
-      113,
-      112
-     ]
-    }
-   },
-   "credit": {
-    "author": "Maryland GovPics",
-    "licence": "CC BY 2.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Annapolis_St._Patrick%27s_Day_Parade_(53595594074).jpg",
-    "changes": "Resized, and cropped to a square for the grid"
-   }
-  },
-  {
    "id": "cavachon",
-   "dexNo": "B13",
+   "dexNo": "B05",
    "name": "Cavachon",
    "groupId": "bonus",
    "tier": "unofficial",
@@ -13958,7 +13462,7 @@
   },
   {
    "id": "pugalier",
-   "dexNo": "B14",
+   "dexNo": "B06",
    "name": "Pugalier",
    "groupId": "bonus",
    "tier": "unofficial",
@@ -14020,7 +13524,7 @@
   },
   {
    "id": "puggle",
-   "dexNo": "B15",
+   "dexNo": "B07",
    "name": "Puggle",
    "groupId": "bonus",
    "tier": "unofficial",
@@ -14080,7 +13584,7 @@
   },
   {
    "id": "jug",
-   "dexNo": "B16",
+   "dexNo": "B08",
    "name": "Jug",
    "groupId": "bonus",
    "tier": "unofficial",
@@ -14141,7 +13645,7 @@
   },
   {
    "id": "miniature-fox-terrier",
-   "dexNo": "B17",
+   "dexNo": "B09",
    "name": "Miniature Fox Terrier",
    "groupId": "bonus",
    "tier": "unofficial",
@@ -14200,7 +13704,7 @@
   },
   {
    "id": "koolie",
-   "dexNo": "B18",
+   "dexNo": "B10",
    "name": "Koolie",
    "groupId": "bonus",
    "tier": "unofficial",
@@ -14259,7 +13763,7 @@
   },
   {
    "id": "american-bully",
-   "dexNo": "B19",
+   "dexNo": "B11",
    "name": "American Bully",
    "groupId": "bonus",
    "tier": "unofficial",
@@ -14318,7 +13822,7 @@
   },
   {
    "id": "bull-arab",
-   "dexNo": "B20",
+   "dexNo": "B12",
    "name": "Bull Arab",
    "groupId": "bonus",
    "tier": "unofficial",

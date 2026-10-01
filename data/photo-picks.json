@@ -161,16 +161,6 @@
       "by": "justin",
       "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
     },
-    "aussiedoodle": {
-      "file": "File:Thor, 2021 (51256377380).jpg",
-      "focus": [
-        0.5,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "grey merle-ish wavy adult, head and forequarters only"
-    },
     "australasian-bosdog": {
       "file": null,
       "external": {
@@ -531,16 +521,6 @@
         "note": "whole dog three-quarter, fits square; tile 1 also good"
       }
     },
-    "bernedoodle": {
-      "file": "File:2019 Laurent-Perrier Pop-Up in Sonoma - Sarah Stierch 06.jpg",
-      "focus": [
-        0.5,
-        0.18
-      ],
-      "by": "claude-review",
-      "confidence": "high",
-      "note": "black, tan and white curly adult sitting"
-    },
     "bernese-mountain-dog": {
       "file": null,
       "external": {
@@ -710,16 +690,6 @@
         "confidence": "high",
         "note": "whole dog lying, otter head clear, dark studio"
       }
-    },
-    "bordoodle": {
-      "file": "File:Bordoodle, Australian.jpg",
-      "focus": [
-        0.5,
-        0.17
-      ],
-      "by": "claude-review",
-      "confidence": "high",
-      "note": "adult sitting, studio shot, whole body"
     },
     "borzoi": {
       "file": null,
@@ -2736,17 +2706,6 @@
         "note": "black and tan, side view, whole body, natural setting"
       }
     },
-    "moodle": {
-      "file": "File:Maltipoo dog (11995).jpg",
-      "focus": [
-        0.42,
-        0.5
-      ],
-      "by": "claude",
-      "confidence": "high",
-      "note": "Old pick was a square photo of a lying dog whose head/paws cropped in the frame (and medium confidence on the breed). New: Rhododendrites (Prospect Park 2024), apricot adult maltipoo standing three-quarter in harness, landscape, sharp; whole dog with room in both crops. Alternative if a white one is preferred: File:Maltipoo-Moodle.jpg (white maltipoo lying on grass, also landscape).",
-      "previous": "File:말티즈와 푸들.jpg"
-    },
     "mudi": {
       "file": "File:Mudibrown1.jpg",
       "focus": [
@@ -3590,16 +3549,6 @@
         "note": "black-silver, crisp side profile, natural tail"
       }
     },
-    "schnoodle": {
-      "file": "File:Dog schnoodle.jpg",
-      "focus": [
-        0.53,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "high",
-      "note": "wavy grey schnoodle standing in snow, whole body"
-    },
     "scottish-terrier": {
       "file": null,
       "external": {
@@ -3650,16 +3599,6 @@
         "note": "fawn adult standing three-quarter, wrinkles visible"
       }
     },
-    "sheepadoodle": {
-      "file": "File:Pebbles the Sheepadoodle.jpg",
-      "focus": [
-        0.5,
-        0.2
-      ],
-      "by": "claude-review",
-      "confidence": "medium",
-      "note": "young dog (all real options young); rest are Dorgis"
-    },
     "shetland-sheepdog": {
       "file": null,
       "external": {
@@ -3689,16 +3628,6 @@
         "confidence": "high",
         "note": "red shiba, whole-body side view, curled tail"
       }
-    },
-    "shih-poo": {
-      "file": "File:Annapolis St. Patrick's Day Parade (53595594074).jpg",
-      "focus": [
-        0.53,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "high",
-      "note": "grey curly adult standing side view, whole body"
     },
     "shih-tzu": {
       "file": null,
@@ -3839,16 +3768,6 @@
         "confidence": "high",
         "note": "whole dog side view, handler legs behind"
       }
-    },
-    "spoodle": {
-      "file": "File:Leonard, a F1B cockapoo at 2 years and 7 months.jpg",
-      "focus": [
-        0.55,
-        0.53
-      ],
-      "by": "claude-review",
-      "confidence": "high",
-      "note": "F1B cockapoo adult sitting, whole body, harness"
     },
     "st-bernard": {
       "file": null,

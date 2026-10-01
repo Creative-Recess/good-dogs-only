@@ -10,9 +10,9 @@ const publicPath = (p: string) => new URL(`../public${p}`, import.meta.url)
 const NO_PHOTO: string[] = []
 
 describe('src/data/breeds.json', () => {
-  it('ships all 247 entries with unique ids', () => {
-    expect(breeds).toHaveLength(247)
-    expect(new Set(breeds.map((b) => b.id)).size).toBe(247)
+  it('ships all 239 entries with unique ids', () => {
+    expect(breeds).toHaveLength(239)
+    expect(new Set(breeds.map((b) => b.id)).size).toBe(239)
   })
 
   it('has a photo for every entry except the known gaps', () => {
