@@ -487,7 +487,7 @@
         dogColours(b).then((c) => (dog.colours = c))
         this.dogs.push(dog)
       }
-      this.hint.textContent = `${this.dogs.length} dogs in the park · tap one to visit`
+      this.hint.textContent = `${this.dogs.length} dogs`
     }
     tap(e) {
       const r = this.cv.getBoundingClientRect()
@@ -558,7 +558,7 @@
       for (const d of [...this.dogs].sort((a, z) => a.y - z.y)) this.drawDog(x, d)
       const [tint, label] = this.tint()
       if (tint) { x.fillStyle = tint; x.fillRect(0, 0, this.w, this.h) }
-      this.hint.textContent = `${this.dogs.length} dogs · ${label} · tap one to visit`
+      this.hint.textContent = `${this.dogs.length} dogs · ${label}`
       requestAnimationFrame(this.loop)
     }
   }
