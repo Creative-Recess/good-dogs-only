@@ -1,4 +1,4 @@
-// Help: about the app, its theme, how to add it to the Home Screen, and saving or restoring a backup.
+// The Help window's contents: about the app, its theme, how to add it to the Home Screen, and saving or restoring a backup.
 import { useRef } from 'react'
 import { groupById, TOTAL } from '../data/catalogue.ts'
 import { exportBackup, importBackup, markBackedUp } from '../lib/backup.ts'
@@ -11,7 +11,7 @@ import { useDialog } from './dialogs.ts'
 /** Running from the Home Screen icon rather than a Safari tab. */
 const standalone = () => matchMedia('(display-mode: standalone)').matches || (navigator as { standalone?: boolean }).standalone === true
 
-export function HelpTab({ lastBackup }: { lastBackup: string | null }) {
+export function HelpWindowBody({ lastBackup }: { lastBackup: string | null }) {
   const ask = useDialog()
   const theme = useTheme()
   const fileRef = useRef<HTMLInputElement>(null)

@@ -32,6 +32,9 @@ select.nz { background-size: 24px 100% !important; background-position: right ce
 .main .title-bar, .props .title-bar { padding: 3px 3px 3px 4px; }
 .title-bar-controls button { min-width: 21px !important; min-height: 19px !important; background-position: center !important; }
 .title-bar-controls { display: flex; gap: 2px; flex: none; }
+/* The ? comes first, as on Windows 98 dialogs. */
+.title-bar-controls button.help { order: -1; }
+.helpwin { z-index: 29; }
 .main > .window-body { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 3px; gap: 4px; }
 .title-bar-text { display: flex; align-items: center; gap: 4px; min-width: 0; }
 .title-bar-text svg { width: 14px; height: 14px; flex: none; }

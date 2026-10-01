@@ -12,7 +12,7 @@ export default defineConfig({
     trace: 'retain-on-failure',
   },
   // The whole suite runs once per theme; each project starts with its theme saved on the "phone".
-  projects: (['aqua', 'glass', 'win98'] as const).map((theme) => ({
+  projects: (['glass', 'aqua', 'win98'] as const).map((theme) => ({
     name: theme,
     use: {
       ...devices['iPhone 17'],

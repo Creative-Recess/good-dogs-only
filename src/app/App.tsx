@@ -1,6 +1,5 @@
-// Good Dogs Only: one full-screen window with its screens, plus the breed window on top.
-// Windows 98 has four tabs, Help included. The Aqua themes have a toolbar of three, with Help behind the
-// round ? in the title bar, in a window of its own.
+// Good Dogs Only: one full-screen window with three screens (tabs in Windows 98, a toolbar in the Aqua themes),
+// plus the breed window on top. Help is behind the ? in the title bar, in a window of its own.
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { breedById } from '../data/catalogue.ts'
@@ -15,17 +14,16 @@ import { BreedsTab, type BreedsFilter } from './BreedsTab.tsx'
 import { BreedWindow, type Folds } from './BreedWindow.tsx'
 import { Dialog } from './dialog.tsx'
 import { DialogContext, type DialogSpec } from './dialogs.ts'
-import { HelpTab } from './HelpTab.tsx'
+import { HelpWindowBody } from './HelpWindowBody.tsx'
 import { Launch } from './Launch.tsx'
 import { ParkView } from './ParkView.tsx'
 import { ProgressTab } from './ProgressTab.tsx'
 
-type Tab = 'breeds' | 'park' | 'progress' | 'help'
+type Tab = 'breeds' | 'park' | 'progress'
 const TABS: { id: Tab; label: string; icon: IconName }[] = [
   { id: 'breeds', label: 'Dogdex', icon: 'tbDogdex' },
   { id: 'park', label: 'Park', icon: 'tbPark' },
   { id: 'progress', label: 'Progress', icon: 'tbProgress' },
-  { id: 'help', label: 'Help', icon: 'tbHelp' },
 ]
 
 export default function App() {
@@ -43,20 +41,7 @@ export default function App() {
   const [folds, setFolds] = useState<Folds>({ temperament: true, varieties: true, status: true })
   const theme = useTheme()
   const aqua = isAquaFamily(theme)
-  const tabs = aqua ? TABS.filter((t) => t.id !== 'help') : TABS
 
-  // Changing theme from Help keeps you in Help: the Windows 98 tab becomes the Aqua window, and back.
-  const [lastTheme, setLastTheme] = useState(theme)
-  if (theme !== lastTheme) {
-    setLastTheme(theme)
-    if (aqua && tab === 'help') {
-      setTab('breeds')
-      setHelpOpen(true)
-    } else if (!aqua && helpOpen) {
-      setHelpOpen(false)
-      setTab('help')
-    }
-  }
   const panelRef = useRef<HTMLDivElement>(null)
 
   const showTab = (t: Tab) => {
@@ -98,22 +83,20 @@ export default function App() {
               <div className="title-bar-controls">
                 <button aria-label="Minimize" title="Screensaver" onClick={() => setSaver(true)} />
                 <button aria-label="Close" onClick={close} />
-                {aqua && (
-                  <button
-                    className="help"
-                    aria-label="Help"
-                    onClick={() => {
-                      setDetail(null)
-                      setHelpOpen(true)
-                    }}
-                  />
-                )}
+                <button
+                  className="help"
+                  aria-label="Help"
+                  onClick={() => {
+                    setDetail(null)
+                    setHelpOpen(true)
+                  }}
+                />
               </div>
             </div>
             <div className="window-body">
               <section className="tabs">
                 <menu role="tablist" aria-label="Screens">
-                  {tabs.map((t) => (
+                  {TABS.map((t) => (
                     <li role="tab" key={t.id} aria-selected={tab === t.id} aria-controls="panel" onClick={() => showTab(t.id)}>
                       <button type="button">
                         {aqua && <Icon name={t.icon} />}
@@ -136,22 +119,24 @@ export default function App() {
                         }}
                       />
                     )}
-                    {tab === 'help' && <HelpTab lastBackup={lastBackup} />}
                   </div>
                 </div>
               </section>
             </div>
           </div>
-          {aqua && helpOpen && (
+          {helpOpen && (
             <div className="window props helpwin" role="dialog" aria-label="Help">
               <div className="title-bar">
-                <div className="title-bar-text">Good Dogs Only Help</div>
+                <div className="title-bar-text">
+                  {!aqua && <Icon name="bigPaw" />}
+                  Good Dogs Only Help
+                </div>
                 <div className="title-bar-controls">
                   <button aria-label="Close" onClick={() => setHelpOpen(false)} />
                 </div>
               </div>
               <div className="window-body">
-                <HelpTab lastBackup={lastBackup} />
+                <HelpWindowBody lastBackup={lastBackup} />
               </div>
             </div>
           )}

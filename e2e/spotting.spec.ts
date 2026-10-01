@@ -52,3 +52,18 @@ test('Show: Spotted and Unseen split the grid', async ({ page }) => {
   await page.getByText('Unseen', { exact: true }).click()
   await expect(page.locator('.icons .icon')).toHaveCount(238)
 })
+
+test('the breed photo keeps its full shape once the breed is spotted', async ({ page }) => {
+  await openBreed(page, 'Australian Silky Terrier')
+  // The visible frame around the photo, which is what gets squashed (the image inside keeps its shape but is cut off).
+  const frame = page.getByRole('dialog').locator('.photo-frame')
+  const ratio = async () => {
+    const box = (await frame.boundingBox())!
+    return box.width / box.height
+  }
+  expect(await ratio()).toBeLessThan(1.6)
+  await page.getByRole('button', { name: 'Spotted', exact: true }).click()
+  await page.getByRole('alertdialog').getByRole('button', { name: 'OK' }).click()
+  await expect(page.getByText('Spotted!')).toBeVisible()
+  expect(await ratio()).toBeLessThan(1.6)
+})

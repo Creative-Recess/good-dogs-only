@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test'
 import { launch, openHelp } from './helpers.ts'
 
-const THEMES = { aqua: 'Aqua', glass: 'Aqua Glass', win98: 'Windows 98' } as const
+const THEMES = { glass: 'Aqua Glass', aqua: 'Aqua', win98: 'Windows 98' } as const
 
 test('the Theme setting switches the look straight away, keeps you in Help, and is remembered', async ({ page }, info) => {
   const start = info.project.name as keyof typeof THEMES
@@ -11,7 +11,7 @@ test('the Theme setting switches the look straight away, keeps you in Help, and 
   await expect(page.getByRole('radio', { name: THEMES[start], exact: true })).toBeChecked()
   await page.getByText(THEMES[next], { exact: true }).click()
   await expect(page.locator('html')).toHaveAttribute('data-theme', next)
-  await expect(page.locator('meta[name="theme-color"]')).toHaveAttribute('content', next === 'win98' ? '#008080' : '#dcdcdc')
+  await expect(page.locator('meta[name="theme-color"]')).toHaveAttribute('content', next === 'win98' ? '#008080' : '#dcdcdc') // next is win98 or aqua
   // Still in Help, now in the other theme's form of it.
   await expect(page.getByRole('radio', { name: THEMES[next], exact: true })).toBeChecked()
   await page.reload()

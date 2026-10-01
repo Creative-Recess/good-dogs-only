@@ -8,10 +8,10 @@ describe('readSavedTheme', () => {
   it('uses the saved theme', () => {
     expect(readSavedTheme(storage('win98'))).toBe('win98')
   })
-  it('falls back to Aqua when nothing valid is saved', () => {
-    expect(DEFAULT_THEME).toBe('aqua')
-    expect(readSavedTheme(storage(null))).toBe('aqua')
-    expect(readSavedTheme(storage('beos'))).toBe('aqua')
-    expect(readSavedTheme({ getItem: () => { throw new Error('blocked') } })).toBe('aqua')
+  it('falls back to Aqua Glass when nothing valid is saved', () => {
+    expect(DEFAULT_THEME).toBe('glass')
+    expect(readSavedTheme(storage(null))).toBe('glass')
+    expect(readSavedTheme(storage('beos'))).toBe('glass')
+    expect(readSavedTheme({ getItem: () => { throw new Error('blocked') } })).toBe('glass')
   })
 })

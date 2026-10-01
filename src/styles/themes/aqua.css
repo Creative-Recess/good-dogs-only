@@ -136,6 +136,9 @@
 
   /* The breed window: a Get Info style panel. */
   .props { position: absolute; inset: 0; z-index: 30; display: flex; flex-direction: column; }
+  /* Each section keeps its full height. Without this, once the page is long enough to scroll, the photo frame
+     (which clips its rounded corners, so the grid treats it as squashable) gets squeezed to make room. */
+  .props > .window-body { grid-auto-rows: max-content; }
   .props > .window-body { flex: 1; min-height: 0; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; margin: 0; padding: 8px 8px 20px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 9px; align-content: start; }
   .photo-frame { position: relative; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.2); background: #fff; }
   .photo-frame img { display: block; width: 100%; height: auto; aspect-ratio: 770 / 540; object-fit: cover; }
