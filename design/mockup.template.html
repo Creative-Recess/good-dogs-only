@@ -832,9 +832,9 @@
           <h2 class="d-name">${esc(b.name)}</h2>
           ${sub.map((x) => `<p class="d-sub">${x}</p>`).join('')}
           ${b.temperament ? `<div class="temper"><h3>Temperament</h3><div class="traits">${b.temperament.traits.map((t) => `<span>${esc(t)}</span>`).join('')}</div><p>${esc(b.temperament.text)}</p></div>` : ''}
+          ${b.ankcUrl ? `<a class="ankc" href="${esc(b.ankcUrl)}" target="_blank" rel="noopener"><span>See the official standard</span>${icons.ext}</a>` : ''}
           ${b.forms.length ? `<div class="forms">${b.forms.map((f) => `<span>${esc(f)}</span>`).join('')}</div>` : ''}
           <div class="catch">${catchBlock}</div>
-          ${b.ankcUrl ? `<a class="ankc" href="${esc(b.ankcUrl)}" target="_blank" rel="noopener"><span>See the official standard<small>Photo and breed standard on Dogs Australia</small></span>${icons.ext}</a>` : ''}
         </div>`
     }
 
