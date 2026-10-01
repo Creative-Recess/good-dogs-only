@@ -43,6 +43,8 @@ export type Breed = {
   /** Display number: "001"-"227" for official breeds in group order, "B01"... for the bonus section. */
   dexNo: string
   name: string
+  /** Shorter official name for grid tiles, when the full name is too long. */
+  shortName?: string
   groupId: GroupId
   tier: 'ankc' | 'unofficial'
   /** Exact Dogs Australia name, when the display name differs. */

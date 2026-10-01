@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { searchBreeds } from '../src/lib/search.ts'
+import shortNames from '../data/short-names.json' with { type: 'json' }
 import { buildBreedList, groups, orphanDetailKeys } from './lib/dataset.ts'
 
 const breeds = buildBreedList()
@@ -45,6 +46,11 @@ describe('buildBreedList', () => {
       'Laekenois',
       'Malinois',
     ])
+  })
+
+  it('has short names only for breeds that exist, and only shorter ones', () => {
+    for (const b of breeds.filter((x) => x.shortName)) expect(b.shortName!.length, b.id).toBeLessThan(b.name.length)
+    expect(breeds.filter((b) => b.shortName)).toHaveLength(Object.keys(shortNames.names).length)
   })
 
   it('has curated details only for breeds that exist', () => {

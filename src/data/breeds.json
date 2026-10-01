@@ -181,6 +181,7 @@
     "Cav"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cavalier-King-Charles-Spaniel",
+   "shortName": "Cavalier King Charles",
    "image": {
     "grid": "/breeds/cavalier-king-charles-spaniel-532c3e45-grid.webp",
     "detail": "/breeds/cavalier-king-charles-spaniel-532c3e45.webp",
@@ -208,6 +209,7 @@
     "Long Hair Chihuahua"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chihuahua-(Long-Coat)",
+   "shortName": "Chihuahua (Long)",
    "image": {
     "grid": "/breeds/chihuahua-long-coat-72f9e6a0-grid.webp",
     "detail": "/breeds/chihuahua-long-coat-72f9e6a0.webp",
@@ -235,6 +237,7 @@
     "Short Hair Chihuahua"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chihuahua-(Smooth-Coat)",
+   "shortName": "Chihuahua (Smooth)",
    "image": {
     "grid": "/breeds/chihuahua-smooth-coat-415bc840-grid.webp",
     "detail": "/breeds/chihuahua-smooth-coat-415bc840.webp",
@@ -261,6 +264,7 @@
     "Chinese Crested"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chinese-Crested-Dog",
+   "shortName": "Chinese Crested",
    "image": {
     "grid": "/breeds/chinese-crested-dog-cfde53de-grid.webp",
     "detail": "/breeds/chinese-crested-dog-cfde53de.webp",
@@ -315,6 +319,7 @@
     "Toy Manchester Terrier"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/English-Toy-Terrier-(Black-&-Tan)",
+   "shortName": "English Toy Terrier",
    "image": {
     "grid": "/breeds/english-toy-terrier-black-and-tan-b5d7e016-grid.webp",
     "detail": "/breeds/english-toy-terrier-black-and-tan-b5d7e016.webp",
@@ -443,6 +448,7 @@
     "English Toy Spaniel"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/King-Charles-Spaniel",
+   "shortName": "King Charles",
    "image": {
     "grid": "/breeds/king-charles-spaniel-fa02f1c2-grid.webp",
     "detail": "/breeds/king-charles-spaniel-fa02f1c2.webp",
@@ -470,6 +476,7 @@
     "Little Lion Dog"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Lowchen-(Little-Lion-Dog)",
+   "shortName": "Lowchen",
    "image": {
     "grid": "/breeds/lowchen-little-lion-dog-134b5ce2-grid.webp",
     "detail": "/breeds/lowchen-little-lion-dog-134b5ce2.webp",
@@ -674,6 +681,7 @@
     "Russkiy Toy"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Russian-Toy-(Russkiy-Toy)-(Long-Haired)",
+   "shortName": "Russian Toy (Long)",
    "image": {
     "grid": "/breeds/russian-toy-long-haired-577b3430-grid.webp",
     "detail": "/breeds/russian-toy-long-haired-577b3430.webp",
@@ -701,6 +709,7 @@
     "Russkiy Toy"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Russian-Toy-(Russkiy-Toy)-(Smooth-Haired)",
+   "shortName": "Russian Toy (Smooth)",
    "image": {
     "grid": "/breeds/russian-toy-smooth-haired-d097b61f-grid.webp",
     "detail": "/breeds/russian-toy-smooth-haired-d097b61f.webp",
@@ -801,6 +810,7 @@
    "forms": [],
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/American-Hairless-Terrier",
+   "shortName": "American Hairless",
    "image": {
     "grid": "/breeds/american-hairless-terrier-1f318ea2-grid.webp",
     "detail": "/breeds/american-hairless-terrier-1f318ea2.webp",
@@ -828,6 +838,7 @@
     "Am Staff"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/American-Staffordshire-Terrier",
+   "shortName": "American Staffordshire",
    "image": {
     "grid": "/breeds/american-staffordshire-terrier-4778e963-grid.webp",
     "detail": "/breeds/american-staffordshire-terrier-4778e963.webp",
@@ -1029,6 +1040,7 @@
     "Dandie"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dandie-Dinmont-Terrier",
+   "shortName": "Dandie Dinmont",
    "image": {
     "grid": "/breeds/dandie-dinmont-terrier-eb62d808-grid.webp",
     "detail": "/breeds/dandie-dinmont-terrier-eb62d808.webp",
@@ -1108,6 +1120,7 @@
     "Jagdterrier"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Hunting-Terrier",
+   "shortName": "German Hunting",
    "image": {
     "grid": "/breeds/german-hunting-terrier-c8b82740-grid.webp",
     "detail": "/breeds/german-hunting-terrier-c8b82740.webp",
@@ -1135,6 +1148,7 @@
     "Glen"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Glen-Of-Imaal-Terrier",
+   "shortName": "Glen of Imaal",
    "image": {
     "grid": "/breeds/glen-of-imaal-terrier-293a5fb5-grid.webp",
     "detail": "/breeds/glen-of-imaal-terrier-293a5fb5.webp",
@@ -1335,6 +1349,7 @@
     "Parson Jack Russell"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Parson-Russell-Terrier",
+   "shortName": "Parson Russell",
    "image": {
     "grid": "/breeds/parson-russell-terrier-55f1f5c5-grid.webp",
     "detail": "/breeds/parson-russell-terrier-55f1f5c5.webp",
@@ -1436,6 +1451,7 @@
     "Wheatie"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Soft-Coated-Wheaten-Terrier",
+   "shortName": "Wheaten Terrier",
    "image": {
     "grid": "/breeds/soft-coated-wheaten-terrier-e8376603-grid.webp",
     "detail": "/breeds/soft-coated-wheaten-terrier-e8376603.webp",
@@ -1540,6 +1556,7 @@
     "Westie"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/West-Highland-White-Terrier",
+   "shortName": "West Highland",
    "image": {
     "grid": "/breeds/west-highland-white-terrier-de30e149-grid.webp",
     "detail": "/breeds/west-highland-white-terrier-de30e149.webp",
@@ -1616,6 +1633,7 @@
     "Chessie"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Chesapeake-Bay-Retriever",
+   "shortName": "Chesapeake Bay",
    "image": {
     "grid": "/breeds/chesapeake-bay-retriever-41b6ff52-grid.webp",
     "detail": "/breeds/chesapeake-bay-retriever-41b6ff52.webp",
@@ -1694,6 +1712,7 @@
     "American Cocker"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Cocker-Spaniel-(American)",
+   "shortName": "American Cocker",
    "image": {
     "grid": "/breeds/cocker-spaniel-american-c2104e1e-grid.webp",
     "detail": "/breeds/cocker-spaniel-american-c2104e1e.webp",
@@ -1720,6 +1739,7 @@
     "Curly"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Curly-Coated-Retriever",
+   "shortName": "Curly Coated",
    "image": {
     "grid": "/breeds/curly-coated-retriever-a7dbb0ef-grid.webp",
     "detail": "/breeds/curly-coated-retriever-a7dbb0ef.webp",
@@ -1771,6 +1791,7 @@
     "Springer Spaniel"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/English-Springer-Spaniel",
+   "shortName": "English Springer",
    "image": {
     "grid": "/breeds/english-springer-spaniel-0aa1e856-grid.webp",
     "detail": "/breeds/english-springer-spaniel-0aa1e856.webp",
@@ -1848,6 +1869,7 @@
     "GSP"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Shorthaired-Pointer",
+   "shortName": "German Shorthaired",
    "image": {
     "grid": "/breeds/german-shorthaired-pointer-ec1cc2d6-grid.webp",
     "detail": "/breeds/german-shorthaired-pointer-ec1cc2d6.webp",
@@ -1874,6 +1896,7 @@
     "GWP"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Wirehaired-Pointer",
+   "shortName": "German Wirehaired",
    "image": {
     "grid": "/breeds/german-wirehaired-pointer-4628e207-grid.webp",
     "detail": "/breeds/german-wirehaired-pointer-4628e207.webp",
@@ -1974,6 +1997,7 @@
     "Wirehaired Vizsla"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Hungarian-Wirehaired-Vizsla",
+   "shortName": "Wirehaired Vizsla",
    "image": {
     "grid": "/breeds/hungarian-wirehaired-vizsla-c2754e8d-grid.webp",
     "detail": "/breeds/hungarian-wirehaired-vizsla-c2754e8d.webp",
@@ -1998,6 +2022,7 @@
    "forms": [],
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Irish-Red-and-White-Setter",
+   "shortName": "Irish Red & White",
    "image": {
     "grid": "/breeds/irish-red-and-white-setter-24346cb2-grid.webp",
     "detail": "/breeds/irish-red-and-white-setter-24346cb2.webp",
@@ -2179,6 +2204,7 @@
     "MRR"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Murray-River-Retriever",
+   "shortName": "Murray River",
    "image": {
     "grid": "/breeds/murray-river-retriever-9018e822-grid.webp",
     "detail": "/breeds/murray-river-retriever-9018e822.webp",
@@ -2205,6 +2231,7 @@
     "Toller"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Nova-Scotia-Duck-Tolling-Retriever",
+   "shortName": "Nova Scotia",
    "image": {
     "grid": "/breeds/nova-scotia-duck-tolling-retriever-bc115695-grid.webp",
     "detail": "/breeds/nova-scotia-duck-tolling-retriever-bc115695.webp",
@@ -2361,6 +2388,7 @@
     "Welshie"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Welsh-Springer-Spaniel",
+   "shortName": "Welsh Springer",
    "image": {
     "grid": "/breeds/welsh-springer-spaniel-626cb3b9-grid.webp",
     "detail": "/breeds/welsh-springer-spaniel-626cb3b9.webp",
@@ -2387,6 +2415,7 @@
     "Slovakian Rough-haired Pointer"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Wirehaired-Slovakian-Pointer",
+   "shortName": "Slovakian Pointer",
    "image": {
     "grid": "/breeds/wirehaired-slovakian-pointer-bad466b1-grid.webp",
     "detail": "/breeds/wirehaired-slovakian-pointer-bad466b1.webp",
@@ -2486,6 +2515,7 @@
     "Fauve"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Basset-Fauve-De-Bretagne",
+   "shortName": "Basset Fauve",
    "image": {
     "grid": "/breeds/basset-fauve-de-bretagne-6fa24627-grid.webp",
     "detail": "/breeds/basset-fauve-de-bretagne-6fa24627.webp",
@@ -2536,6 +2566,7 @@
     "Bavarian Mountain Hound"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bavarian-Mountain-Scent-Hound",
+   "shortName": "Bavarian Mountain",
    "image": {
     "grid": "/breeds/bavarian-mountain-scent-hound-f5a882b4-grid.webp",
     "detail": "/breeds/bavarian-mountain-scent-hound-f5a882b4.webp",
@@ -2586,6 +2617,7 @@
     "Coonhound"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Black-and-Tan-Coonhound",
+   "shortName": "Black & Tan Coonhound",
    "image": {
     "grid": "/breeds/black-and-tan-coonhound-0f99e237-grid.webp",
     "detail": "/breeds/black-and-tan-coonhound-0f99e237.webp",
@@ -2826,6 +2858,7 @@
     "GBGV"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Grand-Basset-Griffon-Vendeen",
+   "shortName": "Grand Basset Griffon",
    "image": {
     "grid": "/breeds/grand-basset-griffon-vendeen-3bf0ab10-grid.webp",
     "detail": "/breeds/grand-basset-griffon-vendeen-3bf0ab10.webp",
@@ -3026,6 +3059,7 @@
     "PBGV"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Petit-Basset-Griffon-Vendeen",
+   "shortName": "Petit Basset Griffon",
    "image": {
     "grid": "/breeds/petit-basset-griffon-vendeen-f25450da-grid.webp",
     "detail": "/breeds/petit-basset-griffon-vendeen-f25450da.webp",
@@ -3350,6 +3384,7 @@
     "Stumpy Tail Heeler"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Australian-Stumpy-Tail-Cattle-Dog",
+   "shortName": "Stumpy Tail Cattle Dog",
    "image": {
     "grid": "/breeds/australian-stumpy-tail-cattle-dog-af36578f-grid.webp",
     "detail": "/breeds/australian-stumpy-tail-cattle-dog-af36578f.webp",
@@ -3400,6 +3435,7 @@
    "forms": [],
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Beauceron-(Berger-de-Beauce)",
+   "shortName": "Beauceron",
    "image": {
     "grid": "/breeds/beauceron-berger-de-beauce-7c04facf-grid.webp",
     "detail": "/breeds/beauceron-berger-de-beauce-7c04facf.webp",
@@ -3437,6 +3473,7 @@
     "Laekenois"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Belgian-Shepherd-Dog-(Groenendael,-Tervueren,-Laekenois,-Malinois)",
+   "shortName": "Belgian Shepherd",
    "image": {
     "grid": "/breeds/belgian-shepherd-dog-cf383ad1-grid.webp",
     "detail": "/breeds/belgian-shepherd-dog-cf383ad1.webp",
@@ -3461,6 +3498,7 @@
    "forms": [],
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bergamasco-Shepherd-Dog",
+   "shortName": "Bergamasco",
    "image": {
     "grid": "/breeds/bergamasco-shepherd-dog-dc8068fa-grid.webp",
     "detail": "/breeds/bergamasco-shepherd-dog-dc8068fa.webp",
@@ -3640,6 +3678,7 @@
     "Hollandse Herder"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Dutch-Shepherd-Dog",
+   "shortName": "Dutch Shepherd",
    "image": {
     "grid": "/breeds/dutch-shepherd-dog-40fda461-grid.webp",
     "detail": "/breeds/dutch-shepherd-dog-40fda461.webp",
@@ -3694,6 +3733,7 @@
     "GSD"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Shepherd-Dog",
+   "shortName": "German Shepherd",
    "image": {
     "grid": "/breeds/german-shepherd-dog-61c1d5e2-grid.webp",
     "detail": "/breeds/german-shepherd-dog-61c1d5e2.webp",
@@ -3722,6 +3762,7 @@
     "Alsatian"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/German-Shepherd-Dog-(Long-Stock-Coat)",
+   "shortName": "German Shepherd (Long)",
    "image": {
     "grid": "/breeds/german-shepherd-dog-long-stock-coat-f9a74abc-grid.webp",
     "detail": "/breeds/german-shepherd-dog-long-stock-coat-f9a74abc.webp",
@@ -3848,6 +3889,7 @@
     "Mini Australian Shepherd"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Miniature-American-Shepherd",
+   "shortName": "Miniature American",
    "image": {
     "grid": "/breeds/miniature-american-shepherd-197554dc-grid.webp",
     "detail": "/breeds/miniature-american-shepherd-197554dc.webp",
@@ -3949,6 +3991,7 @@
     "PON"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Polish-Lowland-Sheepdog",
+   "shortName": "Polish Lowland",
    "image": {
     "grid": "/breeds/polish-lowland-sheepdog-79b4634a-grid.webp",
     "detail": "/breeds/polish-lowland-sheepdog-79b4634a.webp",
@@ -4021,6 +4064,7 @@
    "forms": [],
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pyrenean-Sheepdog-Longhaired",
+   "shortName": "Pyrenean Sheepdog",
    "image": {
     "grid": "/breeds/pyrenean-sheepdog-longhaired-f43a88d8-grid.webp",
     "detail": "/breeds/pyrenean-sheepdog-longhaired-f43a88d8.webp",
@@ -4121,6 +4165,7 @@
    "forms": [],
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Tatra-Shepherd-Dog",
+   "shortName": "Tatra Shepherd",
    "image": {
     "grid": "/breeds/tatra-shepherd-dog-c4e63a3b-grid.webp",
     "detail": "/breeds/tatra-shepherd-dog-c4e63a3b.webp",
@@ -4202,6 +4247,7 @@
     "Berger Blanc Suisse"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/White-Swiss-Shepherd-Dog",
+   "shortName": "White Swiss Shepherd",
    "image": {
     "grid": "/breeds/white-swiss-shepherd-dog-33e3da48-grid.webp",
     "detail": "/breeds/white-swiss-shepherd-dog-33e3da48.webp",
@@ -4307,6 +4353,7 @@
     "Anatolian"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Anatolian-Shepherd-Dog",
+   "shortName": "Anatolian Shepherd",
    "image": {
     "grid": "/breeds/anatolian-shepherd-dog-b66e797f-grid.webp",
     "detail": "/breeds/anatolian-shepherd-dog-b66e797f.webp",
@@ -4334,6 +4381,7 @@
     "Bernese"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Bernese-Mountain-Dog",
+   "shortName": "Bernese Mountain",
    "image": {
     "grid": "/breeds/bernese-mountain-dog-bb53d78f-grid.webp",
     "detail": "/breeds/bernese-mountain-dog-bb53d78f.webp",
@@ -4459,6 +4507,7 @@
     "Caucasian Ovcharka"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Caucasian-Shepherd-Dog",
+   "shortName": "Caucasian Shepherd",
    "image": {
     "grid": "/breeds/caucasian-shepherd-dog-bcbdd52d-grid.webp",
     "detail": "/breeds/caucasian-shepherd-dog-bcbdd52d.webp",
@@ -4485,6 +4534,7 @@
     "Alabai"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Central-Asian-Shepherd-Dog",
+   "shortName": "Central Asian Shepherd",
    "image": {
     "grid": "/breeds/central-asian-shepherd-dog-a5dbb34a-grid.webp",
     "detail": "/breeds/central-asian-shepherd-dog-a5dbb34a.webp",
@@ -4564,6 +4614,7 @@
    "forms": [],
    "aliases": [],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Estrela-Mountain-Dog",
+   "shortName": "Estrela Mountain",
    "image": {
     "grid": "/breeds/estrela-mountain-dog-7855b706-grid.webp",
     "detail": "/breeds/estrela-mountain-dog-7855b706.webp",
@@ -4614,6 +4665,7 @@
     "Swissy"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Great-Swiss-Mountain-Dog",
+   "shortName": "Great Swiss Mountain",
    "image": {
     "grid": "/breeds/great-swiss-mountain-dog-ddd71452-grid.webp",
     "detail": "/breeds/great-swiss-mountain-dog-ddd71452.webp",
@@ -4639,6 +4691,7 @@
     "Kangal"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Kangal-Shepherd-Dog",
+   "shortName": "Kangal Shepherd",
    "image": {
     "grid": "/breeds/kangal-shepherd-dog-165ef2b6-grid.webp",
     "detail": "/breeds/kangal-shepherd-dog-165ef2b6.webp",
@@ -4665,6 +4718,7 @@
     "Landseer ECT"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Landseer-(European-Continental-Type)",
+   "shortName": "Landseer",
    "image": {
     "grid": "/breeds/landseer-european-continental-type-a09dd5ef-grid.webp",
     "detail": "/breeds/landseer-european-continental-type-a09dd5ef.webp",
@@ -4848,6 +4902,7 @@
     "Pyr"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Pyrenean-Mountain-Dog",
+   "shortName": "Pyrenean Mountain",
    "image": {
     "grid": "/breeds/pyrenean-mountain-dog-e8ee29d8-grid.webp",
     "detail": "/breeds/pyrenean-mountain-dog-e8ee29d8.webp",
@@ -4902,6 +4957,7 @@
     "BRT"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Russian-Black-Terrier",
+   "shortName": "Russian Black",
    "image": {
     "grid": "/breeds/russian-black-terrier-473c1a28-grid.webp",
     "detail": "/breeds/russian-black-terrier-473c1a28.webp",
@@ -5235,6 +5291,7 @@
     "Sarplaninac"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Yugoslavian-Shepherd-Dog---Sharplanina",
+   "shortName": "Sharplanina",
    "image": {
     "grid": "/breeds/yugoslavian-shepherd-dog-sharplanina-ff98295d-grid.webp",
     "detail": "/breeds/yugoslavian-shepherd-dog-sharplanina-ff98295d.webp",
@@ -5619,6 +5676,7 @@
     "Inca Orchid"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Peruvian-Hairless-Dog-(Large)",
+   "shortName": "Peruvian (Large)",
    "image": {
     "grid": "/breeds/peruvian-hairless-dog-large-5d370d56-grid.webp",
     "detail": "/breeds/peruvian-hairless-dog-large-5d370d56.webp",
@@ -5645,6 +5703,7 @@
     "Inca Orchid"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Peruvian-Hairless-Dog-(Medium)",
+   "shortName": "Peruvian (Medium)",
    "image": {
     "grid": "/breeds/peruvian-hairless-dog-medium-4cedfc5f-grid.webp",
     "detail": "/breeds/peruvian-hairless-dog-medium-4cedfc5f.webp",
@@ -5671,6 +5730,7 @@
     "Inca Orchid"
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Peruvian-Hairless-Dog-(Small)",
+   "shortName": "Peruvian (Small)",
    "image": {
     "grid": "/breeds/peruvian-hairless-dog-small-9ab4e8b7-grid.webp",
     "detail": "/breeds/peruvian-hairless-dog-small-9ab4e8b7.webp",

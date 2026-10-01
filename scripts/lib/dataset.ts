@@ -2,6 +2,7 @@
 import ankc from '../../data/ankc-breeds.json' with { type: 'json' }
 import details from '../../data/breed-details.json' with { type: 'json' }
 import groupsFile from '../../data/groups.json' with { type: 'json' }
+import shortNames from '../../data/short-names.json' with { type: 'json' }
 import unofficial from '../../data/unofficial-breeds.json' with { type: 'json' }
 import type { Breed, Group, GroupId } from '../../src/data/types.ts'
 import { slugify } from './ankc.ts'
@@ -57,7 +58,8 @@ export function buildBreedList(): Breed[] {
     ...('about' in b && { about: b.about }),
   }))
 
-  return [...official, ...bonus]
+  const short: Record<string, string> = shortNames.names
+  return [...official, ...bonus].map((b) => (short[b.id] ? { ...b, shortName: short[b.id] } : b))
 }
 
 /** Keys in breed-details.json that don't match an official breed name (e.g. after Dogs Australia renames one). */

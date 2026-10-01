@@ -141,7 +141,7 @@
   .icon .pic { width: 64px; height: 64px; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; padding: 2px; background: #fff; }
   .icon img { width: 100%; height: 100%; display: block; object-fit: cover; }
   .icon:not(.is-caught) img { filter: grayscale(1) contrast(0.92) brightness(1.04); opacity: 0.72; }
-  .icon .label { font-size: 10px; line-height: 1.2; padding: 1px 2px; max-width: 100%; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  .icon .label { font-size: 10px; line-height: 1.2; padding: 1px 2px; max-width: 100%; display: -webkit-box; -webkit-line-clamp: 2; hyphens: auto; -webkit-hyphens: auto; -webkit-box-orient: vertical; overflow: hidden; }
   .icon:not(.is-caught) .label { color: #444; }
   .icon:focus .label, .icon:hover .label { background: var(--navy); color: var(--white); outline: 1px dotted #ffff7f; }
   .icon .no { position: absolute; top: 5px; left: calc(50% - 30px); background: var(--g); color: #fff; font-size: 9px; line-height: 1; padding: 2px 3px; box-shadow: 1px 1px #000; }
@@ -721,6 +721,10 @@
       const sorted = [...list].sort((x, y) => x.dexNo.localeCompare(y.dexNo, 'en', { numeric: true }))
       const html = sorted.length ? `<div class="icons">${sorted.map((b) => this.icon(b)).join('')}</div>` : ''
       results.innerHTML = (html || `<div class="empty">Nothing here yet. Get to the park!</div>`) + `<p class="sample-note">Mockup sample: ${breeds.length} of ${DATA.totalEntries} entries</p>`
+      // The odd long word (e.g. "Staffordshire") is wider than a tile: shrink just that label until it fits in two lines.
+      requestAnimationFrame(() => results.querySelectorAll('.icon .label').forEach((l) => {
+        for (let size = 10; size > 7.5 && (l.scrollWidth > l.clientWidth + 1 || l.scrollHeight > l.clientHeight + 1); size -= 0.5) l.style.fontSize = `${size}px`
+      }))
     }
 
     icon(b) {
@@ -729,7 +733,7 @@
         <span class="pic"><img src="${b.img.grid}" alt=""></span>
         <span class="no">${b.dexNo}</span>
         ${c ? `<span class="tick" aria-label="Spotted">${icons.tick}</span>` : ''}
-        <span class="label">${esc(b.name)}</span>
+        <span class="label" lang="en">${esc(b.shortName ?? b.name)}</span>
       </button>`
     }
 
