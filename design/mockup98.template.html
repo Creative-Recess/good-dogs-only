@@ -619,7 +619,7 @@
       let seed = 7; const R = () => ((seed = (seed * 16807) % 2147483647) / 2147483647)
       const sea = h * SEA, shore = h * SHORE
       const g = x.createLinearGradient(0, 0, 0, sea); g.addColorStop(0, '#9fd0f5'); g.addColorStop(1, '#e4f2f7'); x.fillStyle = g; x.fillRect(0, 0, w, sea + 1)
-      blob(x, w * 0.84, h * 0.09, 20, '#ffe27a'); blob(x, w * 0.84, h * 0.09, 28, 'rgba(255,226,122,0.25)')
+      blob(x, w * 0.88, h * 0.06, 12, '#ffe27a'); blob(x, w * 0.88, h * 0.06, 17, 'rgba(255,226,122,0.25)')
       // Harbour Bridge, hazy in the distance (left)
       const bx = w * 0.04, bw = w * 0.36, deck = sea - 6, arch = deck - 26
       x.strokeStyle = '#9fb0bf'; x.fillStyle = '#9fb0bf'; x.lineWidth = 2
