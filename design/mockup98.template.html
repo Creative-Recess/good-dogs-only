@@ -335,7 +335,9 @@
   const persist = () => { try { localStorage.setItem(KEY, JSON.stringify(caught)) } catch {} }
   const pad = (n) => String(n).padStart(2, '0')
   const todayIso = () => { const d = new Date(); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}` }
-  const fmt = (iso) => new Date(`${iso}T00:00:00`).toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' })
+  // Fixed three-letter months (the en-AU locale gives "Sept").
+  const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+  const fmt = (iso, withYear = true) => { const [y, m, d] = iso.split('-').map(Number); return `${d} ${MONTHS[m - 1]}${withYear ? ` ${y}` : ''}` }
   const caughtIn = (gid) => breeds.filter((b) => b.groupId === gid && caught[b.id]).length
   const spottedCount = () => breeds.filter((b) => caught[b.id]).length
 
@@ -551,7 +553,6 @@
       if (b.parents) rows.push(['Cross of', `${esc(b.parents[0])} x ${esc(b.parents[1])}`])
       const status = c
         ? `<div class="caught-line">${icons.eyes}<span><b>Spotted!</b>First spotted ${esc(fmt(c.date))}</span></div>
-           <div class="field-row-stacked"><label for="d98-${this.uid}-${b.id}">Date seen:</label><input id="d98-${this.uid}-${b.id}" class="nz" type="date" data-role="date" data-id="${b.id}" value="${c.date}" max="${todayIso()}"></div>
            <div class="field-row-stacked"><label for="n98-${this.uid}-${b.id}">Note:</label><textarea id="n98-${this.uid}-${b.id}" class="nz nz-area" rows="2" data-role="note" data-id="${b.id}" placeholder="Where, what colour, the dog's name...">${esc(c.note || '')}</textarea></div>
            <button type="button" data-act="undo" data-id="${b.id}">Undo</button>`
         : `<button type="button" class="catch-btn default" data-act="catch" data-id="${b.id}">${icons.eyes}Spotted</button>`
@@ -599,7 +600,7 @@
         <p style="margin:10px 0 4px"><b>Recently spotted</b></p>
         <div class="sunken-panel"><table class="interactive">
           <colgroup><col><col style="width:64px"></colgroup><thead><tr><th>Breed</th><th>Date</th></tr></thead>
-          <tbody>${recent.map((b) => `<tr class="recent-row" data-act="open" data-id="${b.id}"><td><img src="${b.img.grid}" alt="">${esc(b.name)}</td><td>${esc(new Date(`${caught[b.id].date}T00:00:00`).toLocaleDateString('en-AU', { day: 'numeric', month: 'short' }))}</td></tr>`).join('')}</tbody>
+          <tbody>${recent.map((b) => `<tr class="recent-row" data-act="open" data-id="${b.id}"><td><img src="${b.img.grid}" alt="">${esc(b.name)}</td><td>${esc(fmt(caught[b.id].date, false))}</td></tr>`).join('')}</tbody>
         </table></div>`
       if (this.s.tab === 'progress') fillBars(this.panels.progress)
     }
