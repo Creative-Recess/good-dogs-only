@@ -106,6 +106,11 @@
   .tabs .park-panel { overflow: hidden; padding: 0; }
   .tabs .park-panel > .park-body { margin: 2px; height: calc(100% - 4px); position: relative; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; padding: 2px; }
   .park-body canvas { display: block; width: 100%; height: 100%; image-rendering: pixelated; image-rendering: crisp-edges; cursor: pointer; }
+  .saver { position: absolute; inset: 0; z-index: 75; background: #000; cursor: pointer; }
+  .saver[hidden] { display: none; }
+  .saver-body { position: absolute; inset: 0; }
+  .saver-body canvas { display: block; width: 100%; height: 100%; image-rendering: pixelated; image-rendering: crisp-edges; }
+  .saver .park-hint { display: none; }
   .park-hint { position: absolute; left: 6px; top: 6px; padding: 2px 5px; background: var(--silver); box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff; font-size: 10px; pointer-events: none; }
   .status-bar { flex: none; margin: 0 1px 1px; }
   .status-bar-field { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: center; font-variant-numeric: tabular-nums; }
@@ -414,16 +419,17 @@
   }
 
   class Park {
-    constructor(phone, body) {
+    constructor(phone, body, opts = {}) {
       this.phone = phone
       this.body = body
+      this.saver = !!opts.saver
       body.innerHTML = '<canvas aria-label="Dog park"></canvas><div class="park-hint"></div>'
       this.cv = body.querySelector('canvas')
       this.ctx = this.cv.getContext('2d')
       this.hint = body.querySelector('.park-hint')
       this.dogs = []
       this.loop = this.loop.bind(this)
-      this.cv.addEventListener('click', (e) => this.tap(e))
+      if (!this.saver) this.cv.addEventListener('click', (e) => this.tap(e))
       this.still = matchMedia('(prefers-reduced-motion: reduce)').matches
     }
     start() {
@@ -594,6 +600,7 @@
             </div>
             <div class="window props" hidden></div>
             <div class="modal" hidden></div>
+            <div class="saver" hidden data-act="saver-exit"><div class="saver-body"></div></div>
             <div class="boot" hidden data-act="launch">
               <div class="logo">${icons.bigPaw}<span class="word">Good Dogs Only</span></div>
               <div class="progress-indicator segmented" hidden><span class="progress-indicator-bar" style="width:0"></span></div>
@@ -624,7 +631,8 @@
       if (act === 'go-group') { this.s.group = t.dataset.group; this.s.filter = 'all'; this.q('[data-role="group"]').value = this.s.group; this.showTab('dex'); this.refresh() }
       if (act === 'backup') this.dialog('Save Backup', 'In the app, this opens the iPhone share sheet so you can save your spots to Files or iCloud Drive.', 'info')
       if (act === 'restore') this.dialog('Restore Backup', 'In the app, this lets you pick a backup file. Spots are merged, so nothing is lost.', 'info')
-      if (act === 'joke-min') this.dialog('Good Dogs Only', 'Good Dogs Only cannot be minimised while there are dogs in the park.', 'warn')
+      if (act === 'joke-min') this.screensaver()
+      if (act === 'saver-exit') this.exitSaver()
       if (act === 'dialog-ok') this.q('.modal').hidden = true
       if (act === 'shutdown') this.splash()
       if (act === 'launch') this.launch()
@@ -656,6 +664,15 @@
       m.hidden = false
       m.querySelector('.default').focus()
     }
+    // Minimise = screensaver: the park, full screen, until you tap.
+    screensaver() {
+      const sv = this.q('.saver')
+      sv.hidden = false
+      this.saverPark ??= new Park(this, sv.querySelector('.saver-body'), { saver: true })
+      this.saverPark.start()
+    }
+    exitSaver() { this.q('.saver').hidden = true; this.saverPark?.stop() }
+
     // Launch screen: logo and "Tap to launch"; a tap runs the loading bar, then opens the app.
     splash() {
       const b = this.q('.boot')
