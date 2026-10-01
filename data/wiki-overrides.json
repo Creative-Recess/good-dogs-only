@@ -1,0 +1,180 @@
+{
+  "about": "Wikipedia titles for entries whose display name is not the article title, keyed by dex id. title null = no article; note explains.",
+  "breeds": {
+    "akita": {
+      "title": "Akita (dog breed)",
+      "note": "Dogs Australia's Akita is the American type; Wikipedia merged American Akita into this article."
+    },
+    "akita-japanese": {
+      "title": "Akita (dog breed)"
+    },
+    "aussiedoodle": {
+      "title": null,
+      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
+    },
+    "australasian-bosdog": {
+      "title": null,
+      "note": "No article and no free photos anywhere (checked Oct 2026)."
+    },
+    "bavarian-mountain-scent-hound": {
+      "title": "Bavarian Mountain Hound"
+    },
+    "beauceron-berger-de-beauce": {
+      "title": "Beauceron"
+    },
+    "bernedoodle": {
+      "title": null,
+      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
+    },
+    "bolognese": {
+      "title": "Bolognese (dog breed)"
+    },
+    "bordoodle": {
+      "title": null,
+      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
+    },
+    "boxer": {
+      "title": "Boxer (dog breed)"
+    },
+    "british-bulldog": {
+      "title": "Bulldog"
+    },
+    "brittany": {
+      "title": "Brittany Spaniel"
+    },
+    "cavachon": {
+      "title": null,
+      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
+    },
+    "chihuahua-long-coat": {
+      "title": "Chihuahua (dog breed)"
+    },
+    "chihuahua-smooth-coat": {
+      "title": "Chihuahua (dog breed)"
+    },
+    "cocker-spaniel-american": {
+      "title": "American Cocker Spaniel"
+    },
+    "dalmatian": {
+      "title": "Dalmatian dog"
+    },
+    "foxhound": {
+      "title": "English Foxhound",
+      "note": "Dogs Australia's Foxhound is the English Foxhound."
+    },
+    "german-shepherd-dog-long-stock-coat": {
+      "title": "German Shepherd"
+    },
+    "harrier": {
+      "title": "Harrier (dog breed)"
+    },
+    "havanese": {
+      "title": "Havanese dog"
+    },
+    "jug": {
+      "title": null,
+      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
+    },
+    "landseer-european-continental-type": {
+      "title": "Landseer (dog breed)"
+    },
+    "lowchen-little-lion-dog": {
+      "title": "Löwchen"
+    },
+    "maltese": {
+      "title": "Maltese dog"
+    },
+    "maltese-x-shih-tzu": {
+      "title": null,
+      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
+    },
+    "mastiff": {
+      "title": "English Mastiff"
+    },
+    "moodle": {
+      "title": null,
+      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
+    },
+    "murray-river-retriever": {
+      "title": null,
+      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
+    },
+    "newfoundland": {
+      "title": "Newfoundland dog"
+    },
+    "papillon": {
+      "title": "Continental Toy Spaniel",
+      "note": "Wikipedia covers the Papillon under its FCI name."
+    },
+    "peruvian-hairless-dog-large": {
+      "title": "Peruvian Hairless Dog"
+    },
+    "peruvian-hairless-dog-medium": {
+      "title": "Peruvian Hairless Dog"
+    },
+    "peruvian-hairless-dog-small": {
+      "title": "Peruvian Hairless Dog"
+    },
+    "pointer": {
+      "title": "Pointer (dog breed)"
+    },
+    "pomeranian": {
+      "title": "Pomeranian dog"
+    },
+    "pugalier": {
+      "title": null,
+      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
+    },
+    "puli": {
+      "title": "Puli dog"
+    },
+    "pumi": {
+      "title": "Pumi dog"
+    },
+    "pyrenean-sheepdog-longhaired": {
+      "title": "Pyrenean Sheepdog"
+    },
+    "rabbit-dachshund": {
+      "title": "Dachshund"
+    },
+    "russian-toy-long-haired": {
+      "title": "Russian Toy"
+    },
+    "russian-toy-smooth-haired": {
+      "title": "Russian Toy"
+    },
+    "samoyed": {
+      "title": "Samoyed dog"
+    },
+    "schnauzer": {
+      "title": "Standard Schnauzer"
+    },
+    "schnoodle": {
+      "title": null,
+      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
+    },
+    "sheepadoodle": {
+      "title": null,
+      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
+    },
+    "shih-poo": {
+      "title": null,
+      "note": "No article of its own on English Wikipedia; photos come straight from Wikimedia Commons."
+    },
+    "shikoku": {
+      "title": "Shikoku dog"
+    },
+    "st-bernard": {
+      "title": "St. Bernard (dog breed)"
+    },
+    "weimaraner-longhair": {
+      "title": "Weimaraner"
+    },
+    "wirehaired-slovakian-pointer": {
+      "title": "Slovak Rough-haired Pointer"
+    },
+    "yugoslavian-shepherd-dog-sharplanina": {
+      "title": "Šarplaninac"
+    }
+  }
+}
