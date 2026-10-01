@@ -37,6 +37,7 @@ const DEMO_CAUGHT: Record<string, { date: string; note?: string }> = {
 
 const root = new URL('../', import.meta.url)
 const readJson = async <T>(p: string): Promise<T> => JSON.parse(await readFile(new URL(p, root), 'utf8')) as T
+const temperament = (await readJson<{ breeds: Record<string, { traits: string[]; text: string }> }>('data/temperament.json')).breeds
 const picks = (await readJson<{ picks: Record<string, PhotoPick> }>('data/photo-picks.json')).picks
 const pools: Record<string, Candidate[]>[] = [await readJson('.cache/photo-candidates.json')]
 if (existsSync(new URL('.cache/photo-candidates.r1.json', root))) pools.push(await readJson('.cache/photo-candidates.r1.json'))
@@ -80,6 +81,7 @@ for (const id of SAMPLE) {
   sample.push({
     ...b,
     focus: [fx, fy],
+    temperament: temperament[id] ?? null,
     img: { grid: dataUri(grid), detail: dataUri(detail), w: detailOut.info.width, h: detailOut.info.height },
     credit: {
       author: plainText(c.artistHtml) || plainText(c.credit) || 'Unknown author',

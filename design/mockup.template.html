@@ -389,6 +389,11 @@
   .d-name { margin: -6px 0 0; font: 800 32px/1.02 var(--font-display); letter-spacing: -0.025em; text-wrap: balance; }
   .d-sub { margin: -6px 0 0; font-size: 14px; color: var(--muted); line-height: 1.45; }
   .d-sub b { color: var(--ink); font-weight: 500; }
+  .temper { display: grid; gap: 8px; }
+  .temper h3 { margin: 0; font: 500 12px var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .traits { display: flex; flex-wrap: wrap; gap: 6px; }
+  .traits span { font-size: 13px; font-weight: 500; padding: 5px 10px; border-radius: 999px; background: color-mix(in srgb, var(--g) 14%, var(--surface)); color: var(--ink); }
+  .temper p { margin: 0; font-size: 15px; line-height: 1.5; }
   .forms { display: flex; flex-wrap: wrap; gap: 6px; }
   .forms span { font-size: 12.5px; padding: 4px 9px; border-radius: 6px; background: var(--surface-2); }
   .catch { background: var(--surface); border-radius: 18px; padding: 16px; box-shadow: var(--shadow); display: grid; gap: 12px; }
@@ -563,7 +568,7 @@
   </div>
 </header>
 <main class="phones" id="phones"></main>
-<p class="board-foot">Photos: Wikimedia Commons, credited on each breed page (tap the i on the photo). Breed list and groups: Dogs Australia. Mockup only, so catches here are saved in this browser and nowhere else.</p>
+<p class="board-foot">Photos: Wikimedia Commons (tap the i on a breed photo for who took it). Breed list and groups: Dogs Australia. Mockup only, so catches here are saved in this browser and nowhere else.</p>
 
 <script>const DATA = __DOGDEX_DATA__;</script>
 <script>
@@ -826,6 +831,7 @@
           <span class="group-chip">${esc(g.name)}</span>
           <h2 class="d-name">${esc(b.name)}</h2>
           ${sub.map((x) => `<p class="d-sub">${x}</p>`).join('')}
+          ${b.temperament ? `<div class="temper"><h3>Temperament</h3><div class="traits">${b.temperament.traits.map((t) => `<span>${esc(t)}</span>`).join('')}</div><p>${esc(b.temperament.text)}</p></div>` : ''}
           ${b.forms.length ? `<div class="forms">${b.forms.map((f) => `<span>${esc(f)}</span>`).join('')}</div>` : ''}
           <div class="catch">${catchBlock}</div>
           ${b.ankcUrl ? `<a class="ankc" href="${esc(b.ankcUrl)}" target="_blank" rel="noopener"><span>See the official standard<small>Photo and breed standard on Dogs Australia</small></span>${icons.ext}</a>` : ''}
@@ -874,13 +880,6 @@
         <div class="m-card">
           <h3>About</h3>
           <p>The official list is the ${officialTotal} breeds recognised by Dogs Australia, in its 7 groups (checked 1 Oct 2026), plus ${group.bonus.total} popular bonus dogs it doesn't recognise. Photos come from Wikimedia Commons.</p>
-        </div>
-        <div class="m-card">
-          <h3>Photo credits</h3>
-          <ul class="credits">${breeds
-            .slice(0, 6)
-            .map((b) => `<li><b>${esc(b.name)}</b>: ${esc(b.credit.author)}, <a href="${esc(b.credit.sourceUrl)}" target="_blank" rel="noopener">${esc(b.credit.licence)}</a></li>`)
-            .join('')}<li>...and one for every photo in the app.</li></ul>
         </div>`
     }
   }

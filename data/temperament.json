@@ -1,0 +1,33 @@
+{
+  "about": "Short temperament notes in our own words (not copied from any breed standard), keyed by dex id. traits: three words; text: one or two sentences.",
+  "breeds": {
+    "pug": { "traits": ["Charming", "Clownish", "Easygoing"], "text": "A sociable lap dog that loves people and attention. Snores, snuffles and rarely wants a long run." },
+    "chihuahua-smooth-coat": { "traits": ["Bold", "Loyal", "Alert"], "text": "Tiny but confident, often bonding closely with one person. Quick to bark at strangers." },
+    "italian-greyhound": { "traits": ["Gentle", "Sensitive", "Playful"], "text": "A slim, affectionate sighthound that loves warmth and a sprint. Can be shy with strangers." },
+    "cavalier-king-charles-spaniel": { "traits": ["Affectionate", "Gentle", "Adaptable"], "text": "Friendly with everyone, dogs included. Happy on the couch or on a walk." },
+    "jack-russell-terrier": { "traits": ["Energetic", "Fearless", "Clever"], "text": "Small, tireless and always busy. Loves chasing and digging, and needs plenty to do." },
+    "staffordshire-bull-terrier": { "traits": ["Affectionate", "Courageous", "Playful"], "text": "Muscular but soft-hearted, famously devoted to its family. Full of energy and keen on a game." },
+    "west-highland-white-terrier": { "traits": ["Cheerful", "Confident", "Curious"], "text": "A bright little terrier with a big personality. Independent, but happy to be in the thick of things." },
+    "bull-terrier": { "traits": ["Playful", "Mischievous", "Loyal"], "text": "A comic, strong-willed dog that loves people. Needs firm, fun training and lots of exercise." },
+    "labrador-retriever": { "traits": ["Friendly", "Eager", "Outgoing"], "text": "Gentle, food-motivated and keen to please. Loves water, fetch and nearly everyone it meets." },
+    "golden-retriever": { "traits": ["Kind", "Reliable", "Trusting"], "text": "Patient and friendly, great with children. Thrives on company and a daily retrieve." },
+    "cocker-spaniel": { "traits": ["Merry", "Affectionate", "Busy"], "text": "A happy, tail-wagging gundog that loves to sniff and explore. Gentle and keen to please." },
+    "hungarian-vizsla": { "traits": ["Affectionate", "Energetic", "Sensitive"], "text": "Known as a velcro dog: it sticks close to its people. Needs lots of running every day." },
+    "whippet": { "traits": ["Gentle", "Calm", "Quick"], "text": "Calm and cuddly at home, a sprinter in the park. Quiet and polite with other dogs." },
+    "rhodesian-ridgeback": { "traits": ["Dignified", "Loyal", "Independent"], "text": "Calm and reserved with strangers, devoted at home. Strong and athletic, with a mind of its own." },
+    "dachshund": { "traits": ["Clever", "Lively", "Stubborn"], "text": "Brave and curious, with a big bark for its size. Loves to burrow, sniff and be with its people." },
+    "beagle": { "traits": ["Merry", "Friendly", "Curious"], "text": "A sociable pack hound led by its nose. Food-mad and vocal, with a famous baying howl." },
+    "australian-cattle-dog": { "traits": ["Alert", "Loyal", "Tireless"], "text": "Smart, tough and protective of its people. Bred to work all day, so it needs a job and lots of exercise." },
+    "border-collie": { "traits": ["Intelligent", "Intense", "Energetic"], "text": "Often called the smartest breed. Needs daily work, play or training to stay happy." },
+    "german-shepherd-dog": { "traits": ["Confident", "Loyal", "Courageous"], "text": "Steady, protective and very trainable. Bonds closely with its family and is wary of strangers." },
+    "boxer": { "traits": ["Playful", "Patient", "Bright"], "text": "Bouncy and fun-loving, a great family dog. Stays puppyish for years and loves a romp." },
+    "bernese-mountain-dog": { "traits": ["Good-natured", "Calm", "Gentle"], "text": "A gentle giant that's devoted to its family. Easygoing at home and loves cool weather." },
+    "schnauzer-miniature": { "traits": ["Alert", "Spirited", "Friendly"], "text": "Bright and chatty, a keen watchdog. Small, sturdy and happy to join any activity." },
+    "french-bulldog": { "traits": ["Easygoing", "Playful", "Adaptable"], "text": "A cheerful companion that's happy in an apartment. Needs only short walks and dislikes the heat." },
+    "dalmatian": { "traits": ["Outgoing", "Energetic", "Sensitive"], "text": "Lively and athletic, bred to run with carriages. Needs plenty of exercise and company." },
+    "british-bulldog": { "traits": ["Docile", "Friendly", "Determined"], "text": "Calm, kind and a little stubborn. Prefers short strolls and a comfy spot over long runs." },
+    "cavoodle": { "traits": ["Affectionate", "Playful", "Gentle"], "text": "Usually sweet and sociable like a Cavalier, and clever like a Poodle. A popular family and apartment dog." },
+    "groodle": { "traits": ["Friendly", "Energetic", "Clever"], "text": "Often has a Golden Retriever's friendliness and a Poodle's brains. Needs good daily exercise." },
+    "miniature-fox-terrier": { "traits": ["Lively", "Alert", "Loyal"], "text": "A quick, keen little dog bred to catch rats. Affectionate at home and always on the lookout." }
+  }
+}
