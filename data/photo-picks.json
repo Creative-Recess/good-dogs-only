@@ -1698,24 +1698,19 @@
       "note": "classic coated Peke on table, face and coat clear"
     },
     "peruvian-hairless-dog-large": {
-      "file": "File:Chien du pérou variété nue.jpg",
-      "focus": [
-        0.54,
-        0.5
-      ],
-      "by": "claude-review",
-      "confidence": "high",
-      "note": "described as large size; copper, standing side view"
-    },
-    "peruvian-hairless-dog-medium": {
-      "file": "File:11-Peruvian Hairless Dog-nX-10.jpg",
+      "file": "File:Peruvian hairless large.JPG",
       "focus": [
         0.52,
         0.5
       ],
       "by": "claude-review",
-      "confidence": "low",
-      "note": "correct breed, lying side view; size variety unverifiable"
+      "confidence": "high",
+      "note": "Labelled large; whole dog standing on a rock. Replaces the photo Justin moved to Medium"
+    },
+    "peruvian-hairless-dog-medium": {
+      "file": "File:Chien du pérou variété nue.jpg",
+      "by": "justin",
+      "note": "Chosen by Justin on the review page (moved from Large)"
     },
     "peruvian-hairless-dog-small": {
       "file": "File:Chien peruvien.jpg",

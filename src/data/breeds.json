@@ -3,42 +3,42 @@
   {
    "id": "toys",
    "name": "Toys",
-   "description": "Small companion breeds bred to be lap dogs, like the Cavalier, Pug and Maltese."
+   "description": "Small companion breeds bred to be lap dogs."
   },
   {
    "id": "terriers",
    "name": "Terriers",
-   "description": "Feisty, energetic dogs first bred to hunt vermin, like the Jack Russell, Staffy and Westie."
+   "description": "Feisty, energetic dogs first bred to hunt vermin."
   },
   {
    "id": "gundogs",
    "name": "Gundogs",
-   "description": "Bred to find and retrieve game for hunters, like the Labrador, Golden Retriever and spaniels."
+   "description": "Bred to find and retrieve game for hunters."
   },
   {
    "id": "hounds",
    "name": "Hounds",
-   "description": "Hunters by scent or sight, like the Beagle, Dachshund, Greyhound and Whippet."
+   "description": "Hunters by scent or sight."
   },
   {
    "id": "working-dogs",
    "name": "Working Dogs",
-   "description": "The herding and droving breeds, like the Border Collie, Kelpie and Cattle Dog."
+   "description": "The herding and droving breeds."
   },
   {
    "id": "utility",
    "name": "Utility",
-   "description": "Guarding, sledding and other jobs, like the Rottweiler, Boxer and Siberian Husky."
+   "description": "Guarding, sledding and other jobs."
   },
   {
    "id": "non-sporting",
    "name": "Non Sporting",
-   "description": "Companion breeds that don't fit elsewhere, like the Poodle, French Bulldog and Great Dane."
+   "description": "Companion breeds that don't fit elsewhere."
   },
   {
    "id": "bonus",
    "name": "Bonus",
-   "description": "Popular dogs that Dogs Australia doesn't recognise, like the Cavoodle, Groodle and Mini Foxie."
+   "description": "Popular dogs that Dogs Australia doesn't recognise."
   }
  ],
  "breeds": [
@@ -5398,16 +5398,16 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Peruvian-Hairless-Dog-(Large)",
    "image": {
-    "grid": "/breeds/peruvian-hairless-dog-large-37359b19-grid.webp",
-    "detail": "/breeds/peruvian-hairless-dog-large-37359b19.webp",
+    "grid": "/breeds/peruvian-hairless-dog-large-5d370d56-grid.webp",
+    "detail": "/breeds/peruvian-hairless-dog-large-5d370d56.webp",
     "width": 1200,
-    "height": 995
+    "height": 900
    },
    "credit": {
-    "author": "Luna capreza",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chien_du_p%C3%A9rou_vari%C3%A9t%C3%A9_nue.jpg",
+    "author": "Jablct",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peruvian_hairless_large.JPG",
     "changes": "Resized, and cropped to a square for the grid"
    }
   },
@@ -5424,16 +5424,16 @@
    ],
    "ankcUrl": "https://dogsaustralia.org.au/members/breeds/breed-standards/Peruvian-Hairless-Dog-(Medium)",
    "image": {
-    "grid": "/breeds/peruvian-hairless-dog-medium-69aaf6f8-grid.webp",
-    "detail": "/breeds/peruvian-hairless-dog-medium-69aaf6f8.webp",
+    "grid": "/breeds/peruvian-hairless-dog-medium-4cedfc5f-grid.webp",
+    "detail": "/breeds/peruvian-hairless-dog-medium-4cedfc5f.webp",
     "width": 1200,
-    "height": 800
+    "height": 995
    },
    "credit": {
-    "author": "PsamatheM",
+    "author": "Luna capreza",
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:11-Peruvian_Hairless_Dog-nX-10.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chien_du_p%C3%A9rou_vari%C3%A9t%C3%A9_nue.jpg",
     "changes": "Resized, and cropped to a square for the grid"
    }
   },
