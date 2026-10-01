@@ -185,7 +185,7 @@
   .progress-indicator.segmented > .progress-indicator-bar { width: 0; transition: width 0.6s steps(12); }
   .progress-indicator.small { height: 14px; padding: 2px; flex: 1; min-width: 0; }
   .group-list { padding: 2px; display: grid; }
-  .g-row { all: unset; box-sizing: border-box; display: grid; gap: 3px; padding: 4px 4px 5px; cursor: pointer; }
+  .g-row { all: unset; box-sizing: border-box; display: grid; padding: 6px 4px; cursor: pointer; }
   .g-row + .g-row { border-top: 1px solid #dfdfdf; }
   .g-row:hover, .g-row:focus { background: #e8e8f8; }
   .g-top { display: flex; justify-content: space-between; gap: 6px; font-size: 10.5px; }
@@ -587,11 +587,11 @@
       const recent = breeds.filter((b) => caught[b.id]).sort((a, b) => caught[b.id].date.localeCompare(caught[a.id].date)).slice(0, 6)
       this.panels.progress.innerHTML = `
         <div class="big-progress">
-          <span class="figure">${n} of ${officialTotal} official breeds caught</span>
+          <span class="figure">${n} of ${officialTotal} breeds</span>
           ${bar(n / officialTotal)}
           <span>Plus ${caughtIn('bonus')} of ${group.bonus.total} bonus dogs</span>
         </div>
-        <div class="sunken-panel group-list">${groups.map((g) => { const k = caughtIn(g.id); return `<button type="button" class="g-row" data-act="go-group" data-group="${g.id}"><span class="g-top"><span><span class="swatch" style="display:inline-block;vertical-align:-1px;margin-right:5px;background:${groupColour[g.id]}"></span>${esc(g.name)}</span><span>${k}/${g.total} &middot; ${pct(k / g.total)}</span></span><div class="progress-indicator segmented small"><span class="progress-indicator-bar" data-w="${Math.max((k / g.total) * 100, k ? 3 : 0)}"></span></div></button>` }).join('')}</div>
+        <div class="sunken-panel group-list">${groups.map((g) => { const k = caughtIn(g.id); return `<button type="button" class="g-row" data-act="go-group" data-group="${g.id}"><span class="g-top"><span><span class="swatch" style="display:inline-block;vertical-align:-1px;margin-right:5px;background:${groupColour[g.id]}"></span>${esc(g.name)}</span><span>${k}/${g.total} &middot; ${pct(k / g.total)}</span></span></button>` }).join('')}</div>
         <p style="margin:10px 0 4px"><b>Recent catches</b></p>
         <div class="sunken-panel"><table class="interactive">
           <colgroup><col><col style="width:64px"></colgroup><thead><tr><th>Breed</th><th>Date</th></tr></thead>
