@@ -159,7 +159,8 @@
   .props-table td { padding: 2px 0; overflow-wrap: anywhere; }
   .props fieldset, .tabs fieldset { min-width: 0; }
   .sunken-panel table { table-layout: fixed; }
-  .sunken-panel td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .sunken-panel td { overflow-wrap: anywhere; }
+  .sunken-panel td:last-child { white-space: nowrap; }
   .sunken-panel { overflow-x: hidden !important; }
   hr.etched { border: 0; border-top: 1px solid var(--dark); border-bottom: 1px solid var(--white); margin: 0; }
   .temper p, .desc { margin: 0; font: 11px/1.55 var(--body-font); }
@@ -183,6 +184,13 @@
   .big-progress .figure { font: bold 13px var(--pixel); }
   .progress-indicator.segmented > .progress-indicator-bar { width: 0; transition: width 0.6s steps(12); }
   .progress-indicator.small { height: 14px; padding: 2px; flex: 1; min-width: 0; }
+  .group-list { padding: 2px; display: grid; }
+  .g-row { all: unset; box-sizing: border-box; display: grid; gap: 3px; padding: 4px 4px 5px; cursor: pointer; }
+  .g-row + .g-row { border-top: 1px solid #dfdfdf; }
+  .g-row:hover, .g-row:focus { background: #e8e8f8; }
+  .g-top { display: flex; justify-content: space-between; gap: 6px; font-size: 10.5px; }
+  .g-top > span:last-child { white-space: nowrap; }
+  .g-row .progress-indicator.small { height: 10px; padding: 1px; }
   .bar-row { display: flex; align-items: center; gap: 4px; }
   .bar-row .pct { width: 28px; text-align: right; font-size: 10px; flex: none; }
   .pct-in { position: absolute; inset: 0; display: grid; place-items: center; font-weight: bold; font-size: 12px; color: #fff; mix-blend-mode: difference; }
@@ -583,13 +591,10 @@
           ${bar(n / officialTotal)}
           <span>Plus ${caughtIn('bonus')} of ${group.bonus.total} bonus dogs</span>
         </div>
-        <div class="sunken-panel"><table class="interactive">
-          <colgroup><col style="width:42%"><col style="width:20%"><col style="width:38%"></colgroup><thead><tr><th>Group</th><th>Caught</th><th>Progress</th></tr></thead>
-          <tbody>${groups.map((g) => `<tr data-act="go-group" data-group="${g.id}"><td><span class="swatch" style="display:inline-block;vertical-align:-1px;margin-right:4px;background:${groupColour[g.id]}"></span>${esc(g.name)}</td><td>${caughtIn(g.id)} / ${g.total}</td><td>${bar(caughtIn(g.id) / g.total, true)}</td></tr>`).join('')}</tbody>
-        </table></div>
+        <div class="sunken-panel group-list">${groups.map((g) => { const k = caughtIn(g.id); return `<button type="button" class="g-row" data-act="go-group" data-group="${g.id}"><span class="g-top"><span><span class="swatch" style="display:inline-block;vertical-align:-1px;margin-right:5px;background:${groupColour[g.id]}"></span>${esc(g.name)}</span><span>${k}/${g.total} &middot; ${pct(k / g.total)}</span></span><div class="progress-indicator segmented small"><span class="progress-indicator-bar" data-w="${Math.max((k / g.total) * 100, k ? 3 : 0)}"></span></div></button>` }).join('')}</div>
         <p style="margin:10px 0 4px"><b>Recent catches</b></p>
         <div class="sunken-panel"><table class="interactive">
-          <thead><tr><th>Breed</th><th>Date</th></tr></thead>
+          <colgroup><col><col style="width:64px"></colgroup><thead><tr><th>Breed</th><th>Date</th></tr></thead>
           <tbody>${recent.map((b) => `<tr class="recent-row" data-act="open" data-id="${b.id}"><td><img src="${b.img.grid}" alt="">${esc(b.name)}</td><td>${esc(new Date(`${caught[b.id].date}T00:00:00`).toLocaleDateString('en-AU', { day: 'numeric', month: 'short' }))}</td></tr>`).join('')}</tbody>
         </table></div>`
       if (this.s.tab === 'progress') fillBars(this.panels.progress)
