@@ -13,10 +13,13 @@
     --white: #ffffff;
     --dark: #808080;
     --tooltip: #ffffe1;
-    --body-font: 'Pixelated MS Sans Serif', Tahoma, Arial, sans-serif;
-    --pixel: 'Pixelated MS Sans Serif', Tahoma, Arial, sans-serif;
+    /* One smooth period face everywhere (Verdana ships on iPhone, Mac and Windows) instead of the pixel font. */
+    --body-font: Verdana, Tahoma, Geneva, sans-serif;
+    --pixel: Verdana, Tahoma, Geneva, sans-serif;
   }
   * { box-sizing: border-box; }
+  body, button, input, select, textarea, label, legend, table, .title-bar-text { font-family: var(--pixel) !important; }
+  .title-bar-text { font-weight: bold; }
   html, body { background: var(--desktop); }
   body {
     margin: 0;
@@ -61,10 +64,14 @@
     flex-direction: column;
     background: var(--desktop);
     font-family: var(--pixel);
-    font-size: 11px;
+    font-size: 10.5px;
   }
-  .app98 .top-gap { height: 36px; flex: none; }
-  .main { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 0 3px 12px; }
+  .app98 .top-gap { height: 36px; flex: none; background: linear-gradient(90deg, navy, #1084d0); }
+  /* Maximised: the window is the whole screen, so no outer bevel or gaps. */
+  .main, .props { box-shadow: none; padding: 0; }
+  .main { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 0; }
+  .main .title-bar, .props .title-bar { padding: 3px 4px 3px 6px; }
+  .main .status-bar { margin: 0; padding: 2px 2px 14px; }
   .main > .window-body { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 3px; gap: 4px; }
   .title-bar-text { display: flex; align-items: center; gap: 4px; }
   .title-bar-text svg { width: 14px; height: 14px; flex: none; }
@@ -118,9 +125,9 @@
   .sample-note { text-align: center; color: #333; margin: 2px 0 6px; font-size: 10px; }
 
   /* Properties window (breed page) */
-  .props { position: absolute; inset: 36px 3px 3px; z-index: 30; display: flex; flex-direction: column; }
+  .props { position: absolute; inset: 36px 0 0; z-index: 30; display: flex; flex-direction: column; }
   .props[hidden] { display: none; }
-  .props > .window-body { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 3px; padding: 4px 4px 8px; display: grid; gap: 8px; align-content: start; }
+  .props > .window-body { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 0; padding-bottom: 20px !important; padding: 4px 4px 8px; display: grid; gap: 8px; align-content: start; }
   .photo-frame { position: relative; padding: 3px; background: #fff; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; }
   .photo-frame img { display: block; width: 100%; height: auto; max-height: 230px; object-fit: cover; }
   .photo-frame .credit-btn { position: absolute; right: 7px; bottom: 7px; min-width: 0; min-height: 0; width: 22px; height: 22px; padding: 0; display: grid; place-items: center; }
@@ -201,8 +208,9 @@
     .phone { width: 100%; height: calc(100dvh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); border: 0; border-radius: 0; box-shadow: none; }
     .notch { display: none; }
     .app98 .top-gap { height: 4px; }
-    .props { top: 4px; }
-    .main { margin-bottom: calc(3px + env(safe-area-inset-bottom, 0px) / 1.5); }
+    .props { top: 0; }
+    .app98 .top-gap { height: 0; }
+    .main .status-bar { padding-bottom: calc(2px + env(safe-area-inset-bottom, 0px) / 1.5); }
   }
   @media (prefers-reduced-motion: reduce) {
     .progress-indicator.segmented > .progress-indicator-bar { transition: none; }
