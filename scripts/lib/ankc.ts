@@ -40,7 +40,7 @@ export function parseGroupPage(html: string): AnkcGroupPage {
 export function slugify(name: string): string {
   return name
     .normalize('NFKD')
-    .replace(/[̀-ͯ]/g, '')
+    .replace(/\p{M}/gu, '') // drop accents left over by NFKD
     .toLowerCase()
     .replace(/&/g, ' and ')
     .replace(/[^a-z0-9]+/g, '-')

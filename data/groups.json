@@ -1,0 +1,53 @@
+{
+  "about": "Dex sections in display order. ankcGroupId links the 7 official groups to data/ankc-breeds.json; the bonus section holds data/unofficial-breeds.json.",
+  "groups": [
+    {
+      "id": "toys",
+      "ankcGroupId": 1,
+      "name": "Toys",
+      "description": "Small companion breeds bred to be lap dogs, like the Cavalier, Pug and Maltese."
+    },
+    {
+      "id": "terriers",
+      "ankcGroupId": 2,
+      "name": "Terriers",
+      "description": "Feisty, energetic dogs first bred to hunt vermin, like the Jack Russell, Staffy and Westie."
+    },
+    {
+      "id": "gundogs",
+      "ankcGroupId": 3,
+      "name": "Gundogs",
+      "description": "Bred to find and retrieve game for hunters, like the Labrador, Golden Retriever and spaniels."
+    },
+    {
+      "id": "hounds",
+      "ankcGroupId": 4,
+      "name": "Hounds",
+      "description": "Hunters by scent or sight, like the Beagle, Dachshund, Greyhound and Whippet."
+    },
+    {
+      "id": "working-dogs",
+      "ankcGroupId": 5,
+      "name": "Working Dogs",
+      "description": "The herding and droving breeds, like the Border Collie, Kelpie and Cattle Dog."
+    },
+    {
+      "id": "utility",
+      "ankcGroupId": 6,
+      "name": "Utility",
+      "description": "Guarding, sledding and other jobs, like the Rottweiler, Boxer and Siberian Husky."
+    },
+    {
+      "id": "non-sporting",
+      "ankcGroupId": 7,
+      "name": "Non Sporting",
+      "description": "Companion breeds that don't fit elsewhere, like the Poodle, French Bulldog and Great Dane."
+    },
+    {
+      "id": "bonus",
+      "ankcGroupId": null,
+      "name": "Bonus",
+      "description": "Popular dogs that Dogs Australia doesn't recognise, like the Cavoodle, Groodle and Mini Foxie."
+    }
+  ]
+}
