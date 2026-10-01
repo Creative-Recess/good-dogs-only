@@ -81,7 +81,7 @@ export function BreedWindow({ breed: b, spotted, spottedCount, onClose, folds, o
             {b.ankcUrl && (
               <p>
                 <a className="standard-link" href={b.ankcUrl} target="_blank" rel="noopener">
-                  Official breed standard (Dogs Australia)
+                  Official breed standard
                 </a>
               </p>
             )}

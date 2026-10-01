@@ -45,7 +45,7 @@ test('shows a breed with its photo, group, temperament and text', async ({ page 
   await expect(w.locator('.photo-strip')).toContainText('Terriers')
   await expect(w.locator('.photo-strip')).toContainText(`#${dexNo('Staffordshire Bull Terrier')}`)
   await expect(w.getByText('Also called Staffy')).toBeVisible()
-  await expect(w.getByRole('link', { name: 'Official breed standard (Dogs Australia)' })).toHaveAttribute('href', /dogsaustralia\.org\.au/)
+  await expect(w.getByRole('link', { name: 'Official breed standard' })).toHaveAttribute('href', /dogsaustralia\.org\.au/)
   await expect(w.locator('.chip')).toHaveCount(3)
   await expect(w.locator('.textbox')).not.toBeEmpty()
   await w.getByRole('button', { name: 'Close' }).click()
