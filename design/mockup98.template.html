@@ -252,10 +252,7 @@
   .boot .word sup { font: bold 16px var(--pixel); color: #ffcc00; vertical-align: 0.3em; }
   .boot .sub { font: 11px var(--pixel); color: #aaa; }
   .boot .progress-indicator { width: 180px; height: 18px; background: #c0c0c0; }
-  .safe { position: absolute; inset: 0; z-index: 80; background: #000; display: grid; place-items: center; text-align: center; cursor: pointer; }
-  .safe[hidden] { display: none; }
-  .safe p { font: bold 16px/1.5 var(--pixel); color: #ff8c00; margin: 0; padding: 20px; }
-  .safe small { display: block; margin-top: 18px; font: 11px var(--pixel); color: #888; }
+  .boot .progress-indicator[hidden] { display: block !important; visibility: hidden; }
 
   /* Phone: the page becomes the app itself, full screen */
   @media (max-width: 560px) {
@@ -597,12 +594,11 @@
             </div>
             <div class="window props" hidden></div>
             <div class="modal" hidden></div>
-            <div class="boot" hidden data-act="boot-skip">
+            <div class="boot" hidden data-act="launch">
               <div class="logo">${icons.bigPaw}<span class="word">Good Dogs Only</span></div>
-              <div class="progress-indicator segmented"><span class="progress-indicator-bar" style="width:0"></span></div>
-              <span class="sub">Starting Good Dogs Only... (tap to skip)</span>
+              <div class="progress-indicator segmented" hidden><span class="progress-indicator-bar" style="width:0"></span></div>
+              <span class="sub">Tap to launch</span>
             </div>
-            <div class="safe" hidden data-act="wake"><p>It's now safe to go to the park.<small>Tap anywhere to start Good Dogs Only again</small></p></div>
           </div>
         </div>`
       this.q = (sel) => host.querySelector(sel)
@@ -630,9 +626,8 @@
       if (act === 'restore') this.dialog('Restore Backup', 'In the app, this lets you pick a backup file. Spots are merged, so nothing is lost.', 'info')
       if (act === 'joke-min') this.dialog('Good Dogs Only', 'Good Dogs Only cannot be minimised while there are dogs in the park.', 'warn')
       if (act === 'dialog-ok') this.q('.modal').hidden = true
-      if (act === 'shutdown') this.q('.safe').hidden = false
-      if (act === 'wake') { this.q('.safe').hidden = true; this.boot() }
-      if (act === 'boot-skip') this.q('.boot').hidden = true
+      if (act === 'shutdown') this.splash()
+      if (act === 'launch') this.launch()
     }
     onInput(e) {
       if (e.target.matches('[data-role="q"]')) { this.s.q = e.target.value; this.refreshResults() }
@@ -661,15 +656,26 @@
       m.hidden = false
       m.querySelector('.default').focus()
     }
-    boot() {
+    // Launch screen: logo and "Tap to launch"; a tap runs the loading bar, then opens the app.
+    splash() {
       const b = this.q('.boot')
+      b.querySelector('.progress-indicator').hidden = true
+      b.querySelector('.sub').textContent = 'Tap to launch'
+      b.dataset.loading = ''
       b.hidden = false
-      const barEl = b.querySelector('.progress-indicator-bar')
+    }
+    launch() {
+      const b = this.q('.boot')
+      if (b.dataset.loading) return
+      b.dataset.loading = '1'
+      const meter = b.querySelector('.progress-indicator'), barEl = meter.querySelector('.progress-indicator-bar')
+      b.querySelector('.sub').textContent = 'Starting Good Dogs Only...'
+      meter.hidden = false
       barEl.style.transition = 'none'
       barEl.style.width = '0'
-      requestAnimationFrame(() => requestAnimationFrame(() => { barEl.style.transition = 'width 1.6s steps(10)'; barEl.style.width = '100%' }))
-      clearTimeout(this.bootTimer)
-      this.bootTimer = setTimeout(() => (b.hidden = true), 2000)
+      const quick = matchMedia('(prefers-reduced-motion: reduce)').matches
+      requestAnimationFrame(() => requestAnimationFrame(() => { barEl.style.transition = quick ? 'none' : 'width 1.4s steps(10)'; barEl.style.width = '100%' }))
+      setTimeout(() => (b.hidden = true), quick ? 150 : 1700)
     }
 
     refresh() {
@@ -858,6 +864,6 @@
   // Boot screen once per visit, on the first (phone-sized) instance.
   let booted = false
   try { booted = sessionStorage.getItem('dogdex98-booted') === '1'; sessionStorage.setItem('dogdex98-booted', '1') } catch {}
-  if (!booted && !matchMedia('(prefers-reduced-motion: reduce)').matches) phones[0].boot()
+  if (!booted) phones[0].splash()
 })()
 </script>
