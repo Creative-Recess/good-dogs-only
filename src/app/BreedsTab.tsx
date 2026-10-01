@@ -68,12 +68,14 @@ export function BreedsTab({ filter, onFilter, spots, onOpen }: Props) {
       </div>
       <fieldset className="show">
         <legend>Show</legend>
-        {(['all', 'spotted', 'unseen'] as const).map((value) => (
-          <div className="field-row" key={value}>
-            <input id={`show-${value}`} type="radio" name="show" value={value} checked={filter.show === value} onChange={() => set({ show: value })} />
-            <label htmlFor={`show-${value}`}>{value === 'all' ? 'All' : value === 'spotted' ? 'Spotted' : 'Unseen'}</label>
-          </div>
-        ))}
+        <div className="show-row">
+          {(['all', 'spotted', 'unseen'] as const).map((value) => (
+            <div className="field-row" key={value}>
+              <input id={`show-${value}`} type="radio" name="show" value={value} checked={filter.show === value} onChange={() => set({ show: value })} />
+              <label htmlFor={`show-${value}`}>{value === 'all' ? 'All' : value === 'spotted' ? 'Spotted' : 'Unseen'}</label>
+            </div>
+          ))}
+        </div>
       </fieldset>
       {list.length ? (
         <div className="icons">

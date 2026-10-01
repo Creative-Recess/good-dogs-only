@@ -1,10 +1,14 @@
-// Windows 98 message boxes. The last button is the default (the safe choice) and gets focus.
+// Message boxes: a Windows 98 dialog, or an Aqua sheet that drops from the title bar with the app icon (or the dog)
+// and a bold title. The last button is the default (the safe choice) and gets focus.
 import { useEffect, useRef } from 'react'
+import { useTheme } from '../theme/store.ts'
+import { isAquaFamily } from '../theme/themes.ts'
 import type { DialogSpec } from './dialogs.ts'
 import { Icon } from '../ui/icons.tsx'
 
 
 export function Dialog({ spec, onClose }: { spec: DialogSpec; onClose: () => void }) {
+  const aqua = isAquaFamily(useTheme())
   const buttons = spec.buttons ?? [{ label: 'OK' }]
   const defaultRef = useRef<HTMLButtonElement>(null)
   useEffect(() => defaultRef.current?.focus(), [spec])
@@ -18,11 +22,21 @@ export function Dialog({ spec, onClose }: { spec: DialogSpec; onClose: () => voi
           </div>
         </div>
         <div className="window-body">
-          <div className="msg">
-            {spec.icon === 'warn' && <Icon name="warn" />}
-            {spec.icon === 'info' && <Icon name="infoBig" />}
-            <span id="dialog-text">{spec.text}</span>
-          </div>
+          {aqua ? (
+            <div className="msg">
+              {spec.photo ? <img className="sheet-photo" src={spec.photo} alt="" /> : <Icon name={spec.icon === 'warn' ? 'warn' : 'bigPaw'} />}
+              <span>
+                <b>{spec.title}</b>
+                <span id="dialog-text">{spec.text}</span>
+              </span>
+            </div>
+          ) : (
+            <div className="msg">
+              {spec.icon === 'warn' && <Icon name="warn" />}
+              {spec.icon === 'info' && <Icon name="infoBig" />}
+              <span id="dialog-text">{spec.text}</span>
+            </div>
+          )}
           <div className="btns">
             {buttons.map((b, i) => {
               const isDefault = i === buttons.length - 1

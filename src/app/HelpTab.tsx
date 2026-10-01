@@ -1,8 +1,10 @@
-// Help: about the app, how to add it to the Home Screen, and saving or restoring a backup.
+// Help: about the app, its theme, how to add it to the Home Screen, and saving or restoring a backup.
 import { useRef } from 'react'
 import { groupById, TOTAL } from '../data/catalogue.ts'
 import { exportBackup, importBackup, markBackedUp } from '../lib/backup.ts'
 import { formatDay } from '../lib/dates.ts'
+import { setTheme, useTheme } from '../theme/store.ts'
+import { THEMES } from '../theme/themes.ts'
 import { Icon } from '../ui/icons.tsx'
 import { useDialog } from './dialogs.ts'
 
@@ -11,6 +13,7 @@ const standalone = () => matchMedia('(display-mode: standalone)').matches || (na
 
 export function HelpTab({ lastBackup }: { lastBackup: string | null }) {
   const ask = useDialog()
+  const theme = useTheme()
   const fileRef = useRef<HTMLInputElement>(null)
   const bonus = groupById.get('bonus')?.total ?? 0
 
@@ -59,6 +62,17 @@ export function HelpTab({ lastBackup }: { lastBackup: string | null }) {
         <p>
           {TOTAL} breeds: all {TOTAL - bonus} recognised by Dogs Australia (checked 1 Oct 2026), plus {bonus} popular dogs it doesn't, in their own Bonus group.
         </p>
+      </fieldset>
+      <fieldset className="panel-box">
+        <legend>Theme</legend>
+        <div className="stack theme-list">
+          {THEMES.map((t) => (
+            <div className="field-row" key={t.id}>
+              <input id={`theme-${t.id}`} type="radio" name="theme" value={t.id} checked={theme === t.id} onChange={() => setTheme(t.id)} />
+              <label htmlFor={`theme-${t.id}`}>{t.label}</label>
+            </div>
+          ))}
+        </div>
       </fieldset>
       <fieldset className="panel-box">
         <legend>Add to Home Screen</legend>

@@ -1,12 +1,18 @@
-// Good Dogs Only: one full-screen Windows 98 window with four tabs, plus the breed window on top.
+// Good Dogs Only: one full-screen window with its screens, plus the breed window on top.
+// Windows 98 has four tabs, Help included. The Aqua themes have a toolbar of three, with Help behind the
+// round ? in the title bar, in a window of its own.
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { breedById } from '../data/catalogue.ts'
 import { LAST_BACKUP } from '../lib/backup.ts'
 import { db, toSpots } from '../lib/sightings.ts'
+import { useTheme } from '../theme/store.ts'
+import { isAquaFamily } from '../theme/themes.ts'
 import { Icon } from '../ui/icons.tsx'
+import { AquaIconDefs } from '../ui/icons/AquaIconDefs.tsx'
+import type { IconName } from '../ui/icons/types.ts'
 import { BreedsTab, type BreedsFilter } from './BreedsTab.tsx'
-import { BreedWindow } from './BreedWindow.tsx'
+import { BreedWindow, type Folds } from './BreedWindow.tsx'
 import { Dialog } from './dialog.tsx'
 import { DialogContext, type DialogSpec } from './dialogs.ts'
 import { HelpTab } from './HelpTab.tsx'
@@ -15,11 +21,11 @@ import { ParkView } from './ParkView.tsx'
 import { ProgressTab } from './ProgressTab.tsx'
 
 type Tab = 'breeds' | 'park' | 'progress' | 'help'
-const TABS: { id: Tab; label: string }[] = [
-  { id: 'breeds', label: 'Dogdex' },
-  { id: 'park', label: 'Park' },
-  { id: 'progress', label: 'Progress' },
-  { id: 'help', label: 'Help' },
+const TABS: { id: Tab; label: string; icon: IconName }[] = [
+  { id: 'breeds', label: 'Dogdex', icon: 'tbDogdex' },
+  { id: 'park', label: 'Park', icon: 'tbPark' },
+  { id: 'progress', label: 'Progress', icon: 'tbProgress' },
+  { id: 'help', label: 'Help', icon: 'tbHelp' },
 ]
 
 export default function App() {
@@ -33,10 +39,29 @@ export default function App() {
   const [detail, setDetail] = useState<string | null>(null)
   const [dialog, setDialog] = useState<DialogSpec | null>(null)
   const [saver, setSaver] = useState(false)
+  const [helpOpen, setHelpOpen] = useState(false)
+  const [folds, setFolds] = useState<Folds>({ temperament: true, varieties: true, status: true })
+  const theme = useTheme()
+  const aqua = isAquaFamily(theme)
+  const tabs = aqua ? TABS.filter((t) => t.id !== 'help') : TABS
+
+  // Changing theme from Help keeps you in Help: the Windows 98 tab becomes the Aqua window, and back.
+  const [lastTheme, setLastTheme] = useState(theme)
+  if (theme !== lastTheme) {
+    setLastTheme(theme)
+    if (aqua && tab === 'help') {
+      setTab('breeds')
+      setHelpOpen(true)
+    } else if (!aqua && helpOpen) {
+      setHelpOpen(false)
+      setTab('help')
+    }
+  }
   const panelRef = useRef<HTMLDivElement>(null)
 
   const showTab = (t: Tab) => {
     setDetail(null)
+    setHelpOpen(false)
     setTab(t)
     if (panelRef.current) panelRef.current.scrollTop = 0
   }
@@ -49,6 +74,7 @@ export default function App() {
   const close = () => {
     setLaunched(false)
     setDetail(null)
+    setHelpOpen(false)
     setTab('breeds')
   }
   const breed = detail ? breedById.get(detail) : undefined
@@ -60,25 +86,39 @@ export default function App() {
 
   return (
     <DialogContext.Provider value={setDialog}>
+      {aqua && <AquaIconDefs />}
       <div className="stage">
         <div className="app">
           <div className="window main">
             <div className="title-bar">
               <div className="title-bar-text">
-                <Icon name="bigPaw" />
+                {!aqua && <Icon name="bigPaw" />}
                 Good Dogs Only
               </div>
               <div className="title-bar-controls">
                 <button aria-label="Minimize" title="Screensaver" onClick={() => setSaver(true)} />
                 <button aria-label="Close" onClick={close} />
+                {aqua && (
+                  <button
+                    className="help"
+                    aria-label="Help"
+                    onClick={() => {
+                      setDetail(null)
+                      setHelpOpen(true)
+                    }}
+                  />
+                )}
               </div>
             </div>
             <div className="window-body">
               <section className="tabs">
                 <menu role="tablist" aria-label="Screens">
-                  {TABS.map((t) => (
+                  {tabs.map((t) => (
                     <li role="tab" key={t.id} aria-selected={tab === t.id} aria-controls="panel" onClick={() => showTab(t.id)}>
-                      <button type="button">{t.label}</button>
+                      <button type="button">
+                        {aqua && <Icon name={t.icon} />}
+                        <span>{t.label}</span>
+                      </button>
                     </li>
                   ))}
                 </menu>
@@ -102,7 +142,20 @@ export default function App() {
               </section>
             </div>
           </div>
-          {breed && <BreedWindow key={breed.id} breed={breed} spotted={spots.get(breed.id)} spottedCount={spots.size} onClose={() => setDetail(null)} />}
+          {aqua && helpOpen && (
+            <div className="window props helpwin" role="dialog" aria-label="Help">
+              <div className="title-bar">
+                <div className="title-bar-text">Good Dogs Only Help</div>
+                <div className="title-bar-controls">
+                  <button aria-label="Close" onClick={() => setHelpOpen(false)} />
+                </div>
+              </div>
+              <div className="window-body">
+                <HelpTab lastBackup={lastBackup} />
+              </div>
+            </div>
+          )}
+          {breed && <BreedWindow key={breed.id} breed={breed} spotted={spots.get(breed.id)} spottedCount={spots.size} onClose={() => setDetail(null)} folds={folds} onFolds={setFolds} />}
           {dialog && <Dialog spec={dialog} onClose={() => setDialog(null)} />}
           {/* Minimise: the Park as a screensaver, full screen, until you tap. */}
           {saver && (

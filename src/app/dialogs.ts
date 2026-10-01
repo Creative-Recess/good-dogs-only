@@ -5,6 +5,8 @@ export type DialogSpec = {
   title: string
   text: string
   icon?: 'warn' | 'info'
+  /** A photo to show in place of the icon (Aqua sheets). */
+  photo?: string
   buttons?: { label: string; onClick?: () => void }[]
 }
 

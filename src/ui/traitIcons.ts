@@ -1,5 +1,5 @@
 import type { Trait } from '../data/types.ts'
-import type { IconName } from './icons.tsx'
+import type { IconName } from './icons/types.ts'
 
 /** One icon per trait in the fixed list of 16. */
 export const TRAIT_ICON: Record<Trait, IconName> = {

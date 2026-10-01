@@ -65,6 +65,7 @@ fieldset { min-width: 0; }
 .show { display: flex; gap: 10px; margin: 0 0 8px; padding: 6px 8px 8px; }
 .show legend { padding: 0 3px; }
 .show .field-row { margin: 0; }
+.show-row { display: flex; gap: 10px; }
 .swatch { width: 9px; height: 9px; box-shadow: inset -1px -1px #000, inset 1px 1px #fff; flex: none; display: inline-block; }
 .icons { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px 6px; }
 .icon {
@@ -149,6 +150,8 @@ fieldset { min-width: 0; }
 .panel-box p, .panel-box ol { margin: 0 0 8px; font-size: 11px; line-height: 1.55; }
 .panel-box ol { padding-left: 18px; }
 .stack { display: grid; gap: 6px; }
+/* 98.css already spaces consecutive field rows. */
+.theme-list { gap: 0; }
 .warn { display: flex; align-items: center; gap: 6px; font-size: 11px; margin-bottom: 8px; }
 .warn svg { width: 22px; height: 22px; flex: none; }
 
