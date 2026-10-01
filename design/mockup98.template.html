@@ -626,7 +626,8 @@
       if (act === 'open') this.openProps(t.dataset.id)
       if (act === 'close-props') this.closeProps()
       if (act === 'catch') catchBreed(t.dataset.id, this)
-      if (act === 'undo') { delete caught[t.dataset.id]; persist(); refreshAll() }
+      if (act === 'undo') this.dialog('Unsee', `Remove ${byId[t.dataset.id].name} from your spotted breeds? Its note will be deleted too.`, 'warn', [['Yes', 'unsee-yes', t.dataset.id], ['No', 'dialog-ok']])
+      if (act === 'unsee-yes') { this.q('.modal').hidden = true; delete caught[t.dataset.id]; persist(); refreshAll() }
       if (act === 'clear') { this.s.q = ''; const input = this.q('[data-role="q"]'); input.value = ''; input.focus(); this.refreshResults() }
       if (act === 'go-group') { this.s.group = t.dataset.group; this.s.filter = 'all'; this.q('[data-role="group"]').value = this.s.group; this.showTab('dex'); this.refresh() }
       if (act === 'backup') this.dialog('Save Backup', 'In the app, this opens the iPhone share sheet so you can save your spots to Files or iCloud Drive.', 'info')
@@ -655,11 +656,12 @@
       fillBars(this.panels[tab])
       if (tab === 'park') { this.park ??= new Park(this, this.panels.park); this.park.start() } else this.park?.stop()
     }
-    dialog(title, text, kind) {
+    // buttons: [label, act, id?]; the last one is the default (the safe choice).
+    dialog(title, text, kind, buttons = [['OK', 'dialog-ok']]) {
       const m = this.q('.modal')
       m.innerHTML = `<div class="window dialog" role="alertdialog" aria-label="${esc(title)}">
         <div class="title-bar"><div class="title-bar-text">${esc(title)}</div><div class="title-bar-controls"><button aria-label="Close" data-act="dialog-ok"></button></div></div>
-        <div class="window-body"><div class="msg">${kind === 'none' ? '' : kind === 'warn' ? icons.warn : icons.infoBig}<span>${esc(text)}</span></div><div class="btns"><button type="button" class="default" data-act="dialog-ok">OK</button></div></div>
+        <div class="window-body"><div class="msg">${kind === 'none' ? '' : kind === 'warn' ? icons.warn : icons.infoBig}<span>${esc(text)}</span></div><div class="btns">${buttons.map(([label, act, id], i) => `<button type="button"${i === buttons.length - 1 ? ' class="default"' : ''} data-act="${act}"${id ? ` data-id="${id}"` : ''}>${label}</button>`).join('')}</div></div>
       </div>`
       m.hidden = false
       m.querySelector('.default').focus()
@@ -785,7 +787,7 @@
       const status = c
         ? `<div class="caught-line">${icons.eyes}<span><b>Spotted!</b>First spotted ${esc(fmt(c.date))}</span></div>
            <div class="field-row-stacked"><label for="n98-${this.uid}-${b.id}">Note:</label><textarea id="n98-${this.uid}-${b.id}" class="nz nz-area" rows="2" data-role="note" data-id="${b.id}" placeholder="Where, what colour, the dog's name...">${esc(c.note || '')}</textarea></div>
-           <button type="button" data-act="undo" data-id="${b.id}">Undo</button>`
+           <button type="button" data-act="undo" data-id="${b.id}">Unsee</button>`
         : `<button type="button" class="catch-btn default" data-act="catch" data-id="${b.id}">${icons.eyes}Spotted</button>`
       const p = this.q('.props')
       p.innerHTML = `
