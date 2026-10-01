@@ -1,4 +1,4 @@
-<title>Dogdex 98</title>
+<title>Good Dogs Only 98</title>
 <style>
 /*__98CSS__*/
 </style>
@@ -69,11 +69,11 @@
     font-family: var(--pixel);
     font-size: 10.5px;
   }
-  .app98 .top-gap { height: 36px; flex: none; background: linear-gradient(90deg, navy, #1084d0); }
+  .app98 .top-gap { height: 40px; flex: none; }
   /* Maximised: the window is the whole screen, so no outer bevel or gaps. */
-  .main, .props { box-shadow: none; padding: 0; }
+  .main, .props { padding: 3px; }
   .main { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 0; }
-  .main .title-bar, .props .title-bar { padding: 3px 4px 3px 6px; }
+  .main .title-bar, .props .title-bar { padding: 3px 3px 3px 4px; }
   .main .status-bar, .props .status-bar { margin: 0; padding: 2px 2px 14px; flex: none; }
   .main > .window-body { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 3px; gap: 4px; }
   .title-bar-text { display: flex; align-items: center; gap: 4px; }
@@ -88,7 +88,12 @@
   .tabs { flex: 1; min-height: 0; display: flex; flex-direction: column; }
   .tabs menu[role="tablist"] { margin: 0; flex: none; }
   .tabs menu[role="tablist"] li { padding: 4px 10px; cursor: pointer; }
-  .tabs .panel { overflow-x: hidden; flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 0; background: var(--silver); }
+  .tabs menu[role="tablist"] { margin: 0; flex: none; padding-left: 3px; }
+  .tabs menu[role="tablist"] li { cursor: pointer; }
+  .tabs menu[role="tablist"] li { flex: none; padding: 3px 10px !important; }
+  .tabs menu[role="tablist"] li a { padding: 0; display: block; color: inherit; text-decoration: none; }
+  .tabs menu[role="tablist"] { display: flex; }
+  .tabs .panel { overflow-x: hidden; flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 0; }
   .tabs .panel > .window-body { margin: 6px; }
   .tabs .panel[hidden] { display: none; }
   .status-bar { flex: none; margin: 0 1px 1px; }
@@ -134,7 +139,7 @@
   .sample-note { text-align: center; color: #333; margin: 2px 0 6px; font-size: 10px; }
 
   /* Properties window (breed page) */
-  .props { position: absolute; inset: 36px 0 0; z-index: 30; display: flex; flex-direction: column; }
+  .props { position: absolute; inset: 40px 0 0; z-index: 30; display: flex; flex-direction: column; }
   .props[hidden] { display: none; }
   .props > .window-body { grid-template-columns: minmax(0, 1fr); overflow-x: hidden; flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin: 0; padding-bottom: 20px !important; padding: 4px 4px 8px; display: grid; gap: 8px; align-content: start; }
   .photo-frame { position: relative; padding: 3px; background: #fff; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; }
@@ -265,7 +270,7 @@
     <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
   </div>
   <div class="window-body">
-    <p>DOGDEX 98 - the Windows 98 version of the Dogdex mockup.</p>
+    <p>GOOD DOGS ONLY - the Windows 98 version of the mockup.</p>
     <p>Tap anything: it works like the app, with 28 sample breeds and some example spots. Switch screens with Dex, Progress and Help at the top. Spot a dog, then try the X.</p>
     <p>To suggest a change, leave a comment on the part you mean, then tell Claude in chat.</p>
   </div>
@@ -367,19 +372,19 @@
             <div class="top-gap"></div>
             <div class="window main">
               <div class="title-bar">
-                <div class="title-bar-text">${icons.dog}Dogdex.exe</div>
+                <div class="title-bar-text">${icons.dog}GoodDogs.exe</div>
                 <div class="title-bar-controls"><button aria-label="Minimize" data-act="joke-min"></button><button aria-label="Maximize"></button><button aria-label="Close" data-act="shutdown"></button></div>
               </div>
-              <nav class="menubar" aria-label="Screens">
-                <button type="button" data-act="tab" data-tab="dex"><u>D</u>ex</button>
-                <button type="button" data-act="tab" data-tab="progress"><u>P</u>rogress</button>
-                <button type="button" data-act="tab" data-tab="more"><u>H</u>elp</button>
-              </nav>
               <div class="window-body">
                 <section class="tabs">
-                  <div class="panel sunken-panel" data-panel="dex"><div class="window-body"></div></div>
-                  <div class="panel sunken-panel" data-panel="progress" hidden><div class="window-body"></div></div>
-                  <div class="panel sunken-panel" data-panel="more" hidden><div class="window-body"></div></div>
+                  <menu role="tablist" aria-label="Screens">
+                    <li role="tab" data-act="tab" data-tab="dex"><a>Dex</a></li>
+                    <li role="tab" data-act="tab" data-tab="progress"><a>Progress</a></li>
+                    <li role="tab" data-act="tab" data-tab="more"><a>Help</a></li>
+                  </menu>
+                  <div class="window panel" role="tabpanel" data-panel="dex"><div class="window-body"></div></div>
+                  <div class="window panel" role="tabpanel" data-panel="progress" hidden><div class="window-body"></div></div>
+                  <div class="window panel" role="tabpanel" data-panel="more" hidden><div class="window-body"></div></div>
                 </section>
               </div>
               <div class="status-bar"><p class="status-bar-field" data-status="count"></p><p class="status-bar-field" data-status="bonus"></p></div>
@@ -387,11 +392,11 @@
             <div class="window props" hidden></div>
             <div class="modal" hidden></div>
             <div class="boot" hidden data-act="boot-skip">
-              <div class="logo">${icons.bigPaw}<span class="word">Dogdex<sup>98</sup></span></div>
+              <div class="logo">${icons.bigPaw}<span class="word">Good Dogs Only<sup>98</sup></span></div>
               <div class="progress-indicator segmented"><span class="progress-indicator-bar" style="width:0"></span></div>
-              <span class="sub">Starting Dogdex... (tap to skip)</span>
+              <span class="sub">Starting Good Dogs Only... (tap to skip)</span>
             </div>
-            <div class="safe" hidden data-act="wake"><p>It's now safe to go to the park.<small>Tap anywhere to start Dogdex again</small></p></div>
+            <div class="safe" hidden data-act="wake"><p>It's now safe to go to the park.<small>Tap anywhere to start Good Dogs Only again</small></p></div>
           </div>
         </div>`
       this.q = (sel) => host.querySelector(sel)
@@ -418,7 +423,7 @@
       if (act === 'go-group') { this.s.group = t.dataset.group; this.s.filter = 'all'; this.q('[data-role="group"]').value = this.s.group; this.showTab('dex'); this.refresh() }
       if (act === 'backup') this.dialog('Save Backup', 'In the app, this opens the iPhone share sheet so you can save your spots to Files or iCloud Drive.', 'info')
       if (act === 'restore') this.dialog('Restore Backup', 'In the app, this lets you pick a backup file. Spots are merged, so nothing is lost.', 'info')
-      if (act === 'joke-min') this.dialog('Dogdex', 'Dogdex cannot be minimised while there are dogs in the park.', 'warn')
+      if (act === 'joke-min') this.dialog('Good Dogs Only', 'Good Dogs Only cannot be minimised while there are dogs in the park.', 'warn')
       if (act === 'dialog-ok') this.q('.modal').hidden = true
       if (act === 'shutdown') this.q('.safe').hidden = false
       if (act === 'wake') { this.q('.safe').hidden = true; this.boot() }
@@ -437,7 +442,7 @@
     showTab(tab) {
       this.s.tab = tab
       this.host.querySelectorAll('[data-panel]').forEach((p) => (p.hidden = p.dataset.panel !== tab))
-      this.host.querySelectorAll('.menubar > button').forEach((t) => (t.dataset.tab === tab ? t.setAttribute('aria-current', 'page') : t.removeAttribute('aria-current')))
+      this.host.querySelectorAll('[role="tab"]').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === tab)))
       this.panels[tab].parentElement.scrollTop = 0
       fillBars(this.panels[tab])
     }
@@ -485,7 +490,7 @@
         <fieldset class="show"><legend>Show</legend>
           <div class="field-row"><input id="fa-${this.uid}" type="radio" name="f-${this.uid}" value="all" data-role="filter" checked><label for="fa-${this.uid}">All</label></div>
           <div class="field-row"><input id="fc-${this.uid}" type="radio" name="f-${this.uid}" value="caught" data-role="filter"><label for="fc-${this.uid}">Spotted</label></div>
-          <div class="field-row"><input id="ft-${this.uid}" type="radio" name="f-${this.uid}" value="todo" data-role="filter"><label for="ft-${this.uid}">Still to find</label></div>
+          <div class="field-row"><input id="ft-${this.uid}" type="radio" name="f-${this.uid}" value="todo" data-role="filter"><label for="ft-${this.uid}">Not yet</label></div>
         </fieldset>
         <div class="results"></div>`
     }
@@ -504,7 +509,7 @@
         const found = search(list, s.q)
         results.innerHTML = found.length
           ? `<div class="icons">${found.map((b) => this.icon(b)).join('')}</div>`
-          : `<div class="empty">Dogdex cannot find <b>${esc(s.q)}</b>.<br>Try a nickname like "staffy", "heeler" or "sausage dog".</div>`
+          : `<div class="empty">Good Dogs Only cannot find <b>${esc(s.q)}</b>.<br>Try a nickname like "staffy", "heeler" or "sausage dog".</div>`
         return
       }
       const shown = s.group === 'all' ? groups : [group[s.group]]
@@ -613,11 +618,11 @@
     renderMore() {
       this.panels.more.innerHTML = `
         <fieldset class="panel-box" id="about-${this.uid}"><legend>About</legend>
-          <div class="about-head">${icons.bigPaw}<span><b>Dogdex 98</b><span>Version 1.0 (mockup)</span></span></div>
+          <div class="about-head">${icons.bigPaw}<span><b>Good Dogs Only 98</b><span>Version 1.0 (mockup)</span></span></div>
           <p>The official list is the ${officialTotal} breeds recognised by Dogs Australia, in its 7 groups (checked 1 Oct 2026), plus ${group.bonus.total} popular bonus breeds it doesn't recognise. Photos come from Wikimedia Commons.</p>
         </fieldset>
         <fieldset class="panel-box" id="home-${this.uid}"><legend>Add to Home Screen</legend>
-          <ol><li>Open Dogdex in <b>Safari</b></li><li>Tap <b>Share</b>, then <b>Add to Home Screen</b></li><li>Open it from the new icon. It runs full screen, like an app.</li></ol>
+          <ol><li>Open Good Dogs Only in <b>Safari</b></li><li>Tap <b>Share</b>, then <b>Add to Home Screen</b></li><li>Open it from the new icon. It runs full screen, like an app.</li></ol>
         </fieldset>
         <fieldset class="panel-box" id="backup-${this.uid}"><legend>Backup</legend>
           <p>Your spots are saved on this phone only. Save a backup now and then so a lost or new phone doesn't mean a lost dex.</p>
@@ -632,7 +637,7 @@
     persist()
     refreshAll()
     const b = byId[id]
-    from.dialog('Dogdex', `You spotted a ${b.name}! That's ${officialCaught()} of ${officialTotal} official breeds${b.tier === 'unofficial' ? `, plus ${caughtIn('bonus')} bonus` : ''}.`, 'info')
+    from.dialog('Good Dogs Only', `You spotted a ${b.name}! That's ${officialCaught()} of ${officialTotal} official breeds${b.tier === 'unofficial' ? `, plus ${caughtIn('bonus')} bonus` : ''}.`, 'info')
   }
   function refreshAll() { phones.forEach((p) => p.refresh()) }
 
