@@ -38,6 +38,7 @@ const DEMO_CAUGHT: Record<string, { date: string; note?: string }> = {
 const root = new URL('../', import.meta.url)
 const readJson = async <T>(p: string): Promise<T> => JSON.parse(await readFile(new URL(p, root), 'utf8')) as T
 const temperament = (await readJson<{ breeds: Record<string, { traits: string[]; text: string }> }>('data/temperament.json')).breeds
+const traitsData = (await readJson<{ breeds: Record<string, { traits: string[]; text?: string }> }>('data/traits.json')).breeds
 const picks = (await readJson<{ picks: Record<string, PhotoPick> }>('data/photo-picks.json')).picks
 const dataUri = (buf: Buffer) => `data:image/webp;base64,${buf.toString('base64')}`
 
@@ -57,7 +58,8 @@ for (const id of SAMPLE) {
   sample.push({
     ...b,
     focus: picks[id]?.focus ?? [0.5, 0.5],
-    temperament: temperament[id] ?? null,
+    // Traits from the approved list (data/traits.json); our own one-line text where written.
+    temperament: { traits: traitsData[b.officialName ?? b.name].traits, text: temperament[id]?.text ?? traitsData[b.officialName ?? b.name].text ?? '' },
     img: { grid: dataUri(grid), tiny: dataUri(grid), detail: dataUri(detailOut.data), w: detailOut.info.width, h: detailOut.info.height },
     credit: built.credit,
   })
