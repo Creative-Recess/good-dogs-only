@@ -1,11 +1,10 @@
 // Draws the app icons from the paw logo: the Home Screen icon, manifest icons and the favicon.
 // Usage: node scripts/make-icons.ts
-import { readFile, writeFile } from 'node:fs/promises'
+import { writeFile } from 'node:fs/promises'
 import sharp from 'sharp'
+import { WIN98_ICONS } from '../src/ui/icons/win98.ts'
 
-const source = await readFile(new URL('../src/ui/icons.tsx', import.meta.url), 'utf8')
-const paw = /bigPaw: \{ size: 28, d: '(.*?)' \}/.exec(source)?.[1]
-if (!paw) throw new Error('bigPaw not found in src/ui/icons.tsx')
+const paw = WIN98_ICONS.bigPaw.d
 
 /** The paw, centred on the Windows 98 desktop teal. `inset` leaves room for iOS and Android masks. */
 const icon = (inset: number) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" shape-rendering="crispEdges">

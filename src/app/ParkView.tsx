@@ -20,11 +20,13 @@ export function ParkView({ spots, onOpen, caption = true }: Props) {
     const park = new Park(canvasRef.current!, { onTap: onOpen ? (id) => openRef.current?.(id) : undefined, onCaption: setText })
     parkRef.current = park
     park.start()
-    // A handle for the E2E tests, which need to find a dog to tap.
-    ;(window as { goodDogsPark?: Park }).goodDogsPark = park
+    // A handle for the E2E tests (browsers under automation only), which need to find a dog to tap.
+    const handle = window as { goodDogsPark?: Park }
+    if (navigator.webdriver) handle.goodDogsPark = park
     return () => {
       park.destroy()
       parkRef.current = null
+      if (handle.goodDogsPark === park) delete handle.goodDogsPark
     }
     // The Park is created once per mount; taps go through openRef.
     // eslint-disable-next-line react-hooks/exhaustive-deps

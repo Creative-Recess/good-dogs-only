@@ -8,6 +8,9 @@ export const TOTAL = breeds.length
 export const breedById = new Map(breeds.map((b) => [b.id, b]))
 export const groupById = new Map(groups.map((g) => [g.id, g]))
 
+/** How many breeds in a group are in `spotted`. */
+export const spottedInGroup = (groupId: string, spotted: { has: (id: string) => boolean }) => breeds.filter((b) => b.groupId === groupId && spotted.has(b.id)).length
+
 /** Group colours in the Windows 16-colour spirit. */
 export const GROUP_COLOUR: Record<GroupId, string> = {
   toys: '#c00080',

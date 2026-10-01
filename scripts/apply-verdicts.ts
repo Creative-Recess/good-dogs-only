@@ -13,7 +13,7 @@ const index = await readJson<Record<string, { tiles: { n: number; file: string }
 const picksPath = new URL('../data/photo-picks.json', import.meta.url)
 const doc = existsSync(picksPath)
   ? await readJson<{ about: string; picks: Record<string, PhotoPick> }>(picksPath)
-  : { about: 'Chosen Wikimedia Commons photo per dex entry. focus = [x, y] fractions of the photo to centre the square grid crop on. by: who chose it.', picks: {} }
+  : { about: 'Chosen photo per dex entry: a Wikimedia Commons file, or an external photo (Dogs Australia breed pages). focus = [x, y] fractions of the photo to centre the crops on. by: who chose it.', picks: {} }
 
 let applied = 0
 for (const f of verdictFiles) {

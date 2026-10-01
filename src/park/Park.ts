@@ -1,11 +1,13 @@
 // The Park: an animated Rushcutters Bay with one storybook dog per spotted breed.
 // Framework-free, so it can run in the Park tab and in the screensaver alike.
 import type { Breed } from '../data/types.ts'
-import { drawDog, type Dog } from './dog.ts'
+import { DEFAULT_COLOURS, drawDog, type Dog } from './dog.ts'
 import { BOTTOM, drawBackground, drawFig, drawWater, FIGS, SHADE_SPOT, timeOfDay, TOP } from './scene.ts'
 
 /** At most this many dogs are out at once; with more spotted, dogs take turns, walking off and on. */
-export const MAX_HERE = 20
+const MAX_HERE = 20
+/** How far above its feet a dog's middle is, for tapping it. */
+const TAP_RISE = 14
 /** How many of the most recently spotted breeds are always out when the Park opens. */
 const ALWAYS_OUT = 3
 
@@ -33,6 +35,8 @@ export class Park {
   private dpr = 1
   private bg: HTMLCanvasElement | null = null
   private running = false
+  /** The pending animation frame, so there's only ever one loop. */
+  private frame = 0
   private last = 0
   private swapIn = 8
   private caption = ''
@@ -61,6 +65,8 @@ export class Park {
     const ids = new Set(spotted.map((b) => b.id))
     this.spotted = spotted
     this.dogs = this.dogs.filter((d) => ids.has(d.breed.id))
+    // Nobody chases a dog that's gone home.
+    for (const d of this.dogs) if (d.friend && !this.dogs.includes(d.friend)) d.friend = null
     const here = new Set(this.dogs.map((d) => d.breed.id))
     if (first) {
       const newest = newestFirst.slice(0, ALWAYS_OUT).filter((id) => ids.has(id))
@@ -88,11 +94,13 @@ export class Park {
     this.running = true
     this.last = performance.now()
     if (this.still) this.render(this.last)
-    else requestAnimationFrame(this.loop)
+    else if (!this.frame) this.frame = requestAnimationFrame(this.loop)
   }
 
   stop() {
     this.running = false
+    cancelAnimationFrame(this.frame)
+    this.frame = 0
   }
 
   destroy() {
@@ -110,12 +118,12 @@ export class Park {
   /** Where a dog is drawn, as a fraction of the canvas (for the E2E tests to tap it). */
   whereIs(breedId: string): { x: number; y: number } | null {
     const d = this.dogs.find((x) => x.breed.id === breedId)
-    return d && this.w ? { x: d.x / this.w, y: (d.y - 14 * d.scale) / this.h } : null
+    return d && this.w ? { x: d.x / this.w, y: (d.y - TAP_RISE * d.scale) / this.h } : null
   }
 
   private onVisibility = () => {
-    if (document.hidden) this.running = false
-    else if (!this.running) this.start()
+    if (document.hidden) this.stop()
+    else this.start()
   }
 
   private onClick = (e: MouseEvent) => {
@@ -125,7 +133,7 @@ export class Park {
     let best: Dog | null = null
     let bestDistance = 36
     for (const d of this.dogs) {
-      const distance = Math.hypot(px - d.x, py - (d.y - 14 * d.scale))
+      const distance = Math.hypot(px - d.x, py - (d.y - TAP_RISE * d.scale))
       if (distance < bestDistance) {
         best = d
         bestDistance = distance
@@ -167,8 +175,8 @@ export class Park {
     return {
       breed,
       shape: breed.shape,
-      body: breed.image?.colours.body ?? [170, 120, 70],
-      patch: breed.image?.colours.patch ?? [240, 230, 210],
+      body: breed.image?.colours.body ?? DEFAULT_COLOURS.body,
+      patch: breed.image?.colours.patch ?? DEFAULT_COLOURS.patch,
       seed: n * 1.7 + 0.3,
       x,
       y,
@@ -238,6 +246,7 @@ export class Park {
   private update(dt: number) {
     this.rotate(dt)
     this.dogs = this.dogs.filter((d) => !(d.leaving && (d.x < -35 || d.x > this.w + 35)))
+    for (const d of this.dogs) if (d.friend && !this.dogs.includes(d.friend)) d.friend = null
     for (const d of this.dogs) {
       d.timer -= dt
       d.hop = Math.max(0, d.hop - dt * 1.6)
@@ -327,11 +336,12 @@ export class Park {
   }
 
   private loop = (now: number) => {
+    this.frame = 0
     if (!this.running) return
     const dt = Math.min(0.05, (now - this.last) / 1000)
     this.last = now
     this.update(dt)
     this.render(now)
-    requestAnimationFrame(this.loop)
+    this.frame = requestAnimationFrame(this.loop)
   }
 }

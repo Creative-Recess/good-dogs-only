@@ -1,10 +1,10 @@
 // Backup files: every sighting (including unseen ones, so an old backup can't undo a later Unsee).
 // Restoring merges by sighting id and the newest change wins, so restoring the same file twice is harmless.
 import { todayIso } from './dates.ts'
-import { db, type Sighting } from './sightings.ts'
+import { db, toSpots, type Sighting } from './sightings.ts'
 
-export const BACKUP_APP = 'good-dogs-only'
-export const BACKUP_VERSION = 1
+const BACKUP_APP = 'good-dogs-only'
+const BACKUP_VERSION = 1
 export type BackupFile = { app: typeof BACKUP_APP; version: number; exportedAt: string; sightings: Sighting[] }
 
 const isString = (v: unknown): v is string => typeof v === 'string'
@@ -41,11 +41,14 @@ export function sightingsToMerge(existing: Sighting[], incoming: Sighting[]): Si
   })
 }
 
-export async function exportBackup(): Promise<{ file: File; count: number }> {
-  const sightings = await db.sightings.toArray()
-  const body: BackupFile = { app: BACKUP_APP, version: BACKUP_VERSION, exportedAt: new Date().toISOString(), sightings }
-  const file = new File([JSON.stringify(body, null, 1)], `good-dogs-only-backup-${todayIso()}.json`, { type: 'application/json' })
-  return { file, count: sightings.filter((s) => !s.deletedAt).length }
+/**
+ * The backup file for these sightings, and how many breeds it holds. Synchronous on purpose: iOS only opens the
+ * share sheet straight from a tap, so the file has to be ready the moment Save Backup is pressed.
+ */
+export function backupFile(sightings: Sighting[], now = new Date()): { file: File; count: number } {
+  const body: BackupFile = { app: BACKUP_APP, version: BACKUP_VERSION, exportedAt: now.toISOString(), sightings }
+  const file = new File([JSON.stringify(body, null, 1)], `good-dogs-only-backup-${todayIso(now)}.json`, { type: 'application/json' })
+  return { file, count: toSpots(sightings).size }
 }
 
 export async function importBackup(text: string): Promise<number> {

@@ -26,8 +26,8 @@ test('each spotted breed appears in the Park, and tapping it opens the breed', a
 
 test('Minimise shows the Park as a screensaver until you tap', async ({ page }) => {
   await launch(page)
-  await page.getByRole('button', { name: 'Minimize' }).click()
-  const saver = page.getByRole('button', { name: /Screensaver/ })
+  await page.getByRole('button', { name: 'Screensaver', exact: true }).click()
+  const saver = page.getByRole('button', { name: 'Screensaver. Tap to return.' })
   await expect(saver).toBeVisible()
   await saver.click()
   await expect(saver).toBeHidden()

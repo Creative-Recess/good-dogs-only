@@ -3,7 +3,6 @@
 @layer theme {
 @scope (:root[data-theme="aqua"], :root[data-theme="glass"]) {
 
-  /* Aqua: early Mac OS X. Pinstriped windows, gel buttons, traffic lights, candy-striped progress. One theme, by design. */
   :scope {
     color-scheme: light;
     --desktop-1: #1d5fb8;
@@ -17,7 +16,6 @@
     --selection: #3875d7;
     --field-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.35), 0 0 0 1px #8e8e8e;
   }
-  * { box-sizing: border-box; }
   /* iPhone Safari zooms into any field under 16px. Fields use 16px text, scaled back down to 11px,
      with negative margins so the layout keeps the scaled size. */
   .nz { font-size: 16px !important; width: 145.4545% !important; height: 31px !important; transform: scale(0.6875); transform-origin: 0 0; margin: 0 -45.4545% -9.6875px 0 !important; }
@@ -57,30 +55,25 @@
   .title-bar-controls { display: flex; gap: 7px; align-items: center; flex: 1; }
   .title-bar-controls button { all: unset; width: 13px; height: 13px; border-radius: 50%; cursor: pointer; position: relative; box-shadow: inset 0 0 0 0.5px rgba(0, 0, 0, 0.45), 0 1px 1px rgba(255, 255, 255, 0.6); }
   .title-bar-controls button::after { content: ''; position: absolute; left: 3px; right: 3px; top: 1px; height: 5px; border-radius: 50%; background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.1)); }
-  .title-bar-controls button[aria-label="Close"] { order: 1; background: radial-gradient(circle at 50% 75%, #ff9a8a, #e0443a 55%, #a3221b); }
-  .title-bar-controls button[aria-label="Minimize"] { order: 2; background: radial-gradient(circle at 50% 75%, #ffe58a, #f0b21e 55%, #b07a0a); }
-  .title-bar-controls button[aria-label="Maximize"] { order: 3; background: radial-gradient(circle at 50% 75%, #b6f39a, #4cbf2f 55%, #2a7d18); }
+  .title-bar-controls button.close { order: 1; background: radial-gradient(circle at 50% 75%, #ff9a8a, #e0443a 55%, #a3221b); }
+  .title-bar-controls button.minimize { order: 2; background: radial-gradient(circle at 50% 75%, #ffe58a, #f0b21e 55%, #b07a0a); }
   /* The ? help button sits on the right, round and white like Aqua's help buttons. */
   .title-bar-controls button.help { order: 9; margin-left: auto; width: 17px; height: 17px; background: var(--white-gel); box-shadow: inset 0 0 0 1px #8a8a8a, 0 1px 1px rgba(0, 0, 0, 0.15); }
   .title-bar-controls button.help::after { content: '?'; inset: 0; height: auto; background: none; display: grid; place-items: center; font: bold 11px var(--font); color: #2a2a2a; }
 
-  /* Tabs: a centred segmented control sitting on the top edge of a recessed box. */
+  /* The toolbar, System Preferences style: an icon and label per screen, the current one in a pressed-in well. */
   .tabs { flex: 1; min-height: 0; display: flex; flex-direction: column; position: relative; }
-  .tabs menu[role="tablist"] { display: flex; justify-content: center; margin: 2px 0 -11px; padding: 0; list-style: none; position: relative; z-index: 2; }
-  .tabs menu[role="tablist"] li { cursor: pointer; padding: 3px 0; min-width: 62px; text-align: center; font-size: 11px; background: var(--white-gel); box-shadow: inset 0 0 0 1px #8b8b8b; margin-left: -1px; text-shadow: 0 1px 0 #fff; }
-  .tabs menu[role="tablist"] li:first-child { border-radius: 11px 0 0 11px; margin-left: 0; }
-  .tabs menu[role="tablist"] li:last-child { border-radius: 0 11px 11px 0; }
-  .tabs menu[role="tablist"] li[aria-selected="true"] { background: var(--blue-gel); color: #fff; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35); box-shadow: inset 0 0 0 1px #2c5f9e; position: relative; z-index: 1; }
-  .tabs menu[role="tablist"] li button { all: unset; display: block; color: inherit; padding: 0 6px; cursor: pointer; }
-  .tabs .panel { flex: 1; min-height: 0; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; margin: 0 0 6px; padding-top: 14px; background: rgba(0, 0, 0, 0.045); border-radius: 6px; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 0, 0, 0.18); }
-  .tabs .panel.window { box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 0, 0, 0.18); }
-  .tabs .panel > .window-body { margin: 6px 8px 10px; }
-  .tabs .park-panel { overflow: hidden; padding: 14px 0 0; }
-  .tabs .park-panel > .park-body { margin: 0 4px 4px; height: calc(100% - 4px); position: relative; border-radius: 4px; overflow: hidden; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3); }
-  .park-view { position: relative; width: 100%; height: 100%; }
-  .park-view canvas { display: block; width: 100%; height: 100%; cursor: pointer; }
-  .saver { position: absolute; inset: 0; z-index: 75; background: #000; cursor: pointer; }
-  .saver .park-hint { display: none; }
+  .tabs menu[role="tablist"] { display: flex; justify-content: space-around; margin: 0; padding: 3px 4px 5px; gap: 0; list-style: none; position: relative; z-index: 2; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.05) 100%), repeating-linear-gradient(180deg, #e6e6e6 0 1px, #d9d9d9 1px 2px); border-bottom: 1px solid #8f8f8f; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); }
+  .tabs menu[role="tablist"] li { cursor: pointer; flex: 1 1 0; min-width: 0; margin: 0 2px; padding: 3px 0 2px; border-radius: 6px; text-align: center; font-size: 11px; color: #1a1a1a; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.85); outline: none; }
+  .tabs menu[role="tablist"] li[aria-selected="true"] { position: relative; z-index: 1; background: rgba(0, 0, 0, 0.13); box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.7); color: #000; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); }
+  .tabs menu[role="tablist"] li:focus-visible { box-shadow: 0 0 0 3px rgba(80, 150, 240, 0.65); }
+  .tabs menu[role="tablist"] li .tab-label { display: grid; justify-items: center; gap: 1px; width: 100%; color: inherit; }
+  .tabs menu[role="tablist"] li svg { width: 30px; height: 30px; filter: drop-shadow(0 1.5px 1.5px rgba(0, 0, 0, 0.3)); }
+  .tabs menu[role="tablist"] li span span { font-size: 10px; }
+  .tabs .panel, .tabs .panel.window { flex: 1; min-height: 0; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; margin: 0; padding: 0; border-radius: 0; background: none; box-shadow: none; }
+  .tabs .panel > .window-body { margin: 10px 8px 12px; }
+  .tabs .park-panel { overflow: hidden; }
+  .tabs .park-panel > .park-body { margin: 6px; height: calc(100% - 12px); position: relative; border-radius: 4px; overflow: hidden; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3); }
   .park-hint { position: absolute; left: 6px; top: 6px; padding: 2px 9px; border-radius: 10px; background: rgba(255, 255, 255, 0.82); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); font-size: 10px; pointer-events: none; font-variant-numeric: tabular-nums; }
 
   /* Gel buttons. The default button is blue and gently pulses, like Aqua's. */
@@ -88,8 +81,8 @@
   button:active { background: linear-gradient(180deg, #e2e2e2, #c9c9c9 50%, #bdbdbd 52%, #d0d0d0); }
   button.default { background: var(--blue-gel); box-shadow: inset 0 0 0 1px #20508f, 0 1px 1px rgba(0, 0, 0, 0.2); animation: aqua-pulse 1.6s ease-in-out infinite; }
   /* Text fields and the Group popup */
-  input[type="text"], textarea { font: 11px var(--font); background: #fff; border: 0; border-radius: 0; box-shadow: var(--field-shadow); padding: 3px 5px; outline: none; }
-  input[type="text"]:focus, textarea:focus { box-shadow: var(--field-shadow), 0 0 0 3px rgba(80, 150, 240, 0.65); }
+  textarea { font: 11px var(--font); background: #fff; border: 0; border-radius: 0; box-shadow: var(--field-shadow); padding: 3px 5px; outline: none; }
+  input[type="search"]:focus, textarea:focus { box-shadow: var(--field-shadow), 0 0 0 3px rgba(80, 150, 240, 0.65); }
   textarea { resize: none; width: 100%; }
   select { -webkit-appearance: none; appearance: none; font: 11px var(--font); border: 0; border-radius: 5px; padding: 3px 26px 3px 8px; background: linear-gradient(90deg, transparent calc(100% - 20px), #3a86e2 calc(100% - 20px)) , var(--white-gel); box-shadow: inset 0 0 0 1px #7d7d7d, 0 1px 1px rgba(0, 0, 0, 0.15); position: relative; }
   select.nz { background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='14'%3E%3Cpath d='M5 1l4 4.5H1zM5 13L1 8.5h8z' fill='%23fff'/%3E%3C/svg%3E") no-repeat right 9px center / 10px 14px, linear-gradient(90deg, transparent calc(100% - 29px), rgba(0, 0, 0, 0.3) calc(100% - 29px), rgba(0, 0, 0, 0.3) calc(100% - 28px), transparent calc(100% - 28px)), linear-gradient(180deg, #a9d2ff, #3f8de6 50%, #2a73d1 52%, #6fb2f5) no-repeat right center / 28px 100%, var(--white-gel); border-radius: 7px; padding-right: 36px; }
@@ -111,6 +104,10 @@
   .find input, .find select { min-width: 0; }
   .find select { grid-column: 2 / 4; }
   /* Find is an Aqua search field: rounded, a magnifying glass on the left, and a small grey cancel button inside on the right once you've typed. */
+  /* Find is a search field: Safari draws its own bezel around those (the partly black edge), so switch that off
+     and draw the Aqua field edge evenly all the way round. */
+  .find input { -webkit-appearance: none; appearance: none; border: 0; box-shadow: var(--field-shadow); outline: none; }
+  .find input::-webkit-search-decoration, .find input::-webkit-search-cancel-button { -webkit-appearance: none; display: none; }
   .find input { grid-column: 2 / 4; grid-row: 1; border-radius: 15px; padding-left: 26px; padding-right: 28px; background: #fff url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Ccircle cx='5.8' cy='5.8' r='4.3' fill='none' stroke='%23666' stroke-width='1.6'/%3E%3Cpath d='M9 9l4 4' stroke='%23666' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat 9px center / 14px 14px; }
   .find .x { grid-column: 3; grid-row: 1; justify-self: end; margin-right: 4px; min-width: 0; min-height: 0; width: 14px; height: 14px; padding: 0; border-radius: 50%; font-size: 0; position: relative; z-index: 1; background: #a2a2a2; box-shadow: none; animation: none; }
   .find .x::after { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath d='M4.5 4.5l5 5M9.5 4.5l-5 5' stroke='%23fff' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E") center / 14px 14px; }
@@ -125,8 +122,6 @@
   /* The dex number sits on the photo, centred along its bottom edge. */
   .icon .pic { position: relative; width: 66px; height: 66px; padding: 0; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.15); background: #fff; }
   .icon img { width: 100%; height: 100%; display: block; object-fit: cover; }
-  /* Unseen: a dark dog with a glowing rim in an Aqua-blue spotlight. */
-  .icon { --sil-bg: radial-gradient(circle at 50% 42%, #9fd2ff 0%, #3d8be6 50%, #134a9e 100%); --sil-fill: #0c1730; --sil-rim: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px rgba(170, 215, 255, 0.95)); }
   .icon .label { font-size: 10px; line-height: 1.25; padding: 1px 5px; border-radius: 7px; max-width: 100%; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
   .icon:not(.is-spotted) .label { color: #555; }
   .icon:focus-visible .label, .icon:active .label { background: var(--selection); color: #fff; }
@@ -140,13 +135,14 @@
   .props { position: absolute; inset: 0; z-index: 30; display: flex; flex-direction: column; }
   /* Each section keeps its full height. Without this, once the page is long enough to scroll, the photo frame
      (which clips its rounded corners, so the grid treats it as squashable) gets squeezed to make room. */
-  .props > .window-body { grid-auto-rows: max-content; }
-  .props > .window-body { flex: 1; min-height: 0; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; margin: 0; padding: 8px 8px 20px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 9px; align-content: start; }
+  .props > .window-body { grid-auto-rows: max-content; flex: 1; min-height: 0; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; margin: 0; padding: 8px 8px 20px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 9px; align-content: start; }
   .photo-frame { position: relative; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.2); background: #fff; }
   .photo-frame img { display: block; width: 100%; height: auto; aspect-ratio: 770 / 540; object-fit: cover; }
   .photo-strip { position: absolute; left: 0; right: 0; bottom: 0; display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 4px 8px; background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.62)); color: #fff; font-size: 11px; font-weight: bold; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
   .photo-strip > span:first-child { display: flex; align-items: center; gap: 5px; }
   .title-block p { margin: 0; font-size: 11px; color: #333; }
+  .title-block .standard-link { color: #1f5fc4; text-decoration: none; }
+  .title-block .standard-link::after { content: " \2197"; }
   .box { margin: 0; padding: 8px; }
   .chips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px 4px; }
   .chip { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; font-size: 10px; line-height: 1.2; min-width: 0; overflow-wrap: break-word; }
@@ -193,8 +189,6 @@
   .panel-box p, .panel-box ol { margin: 0 0 8px; font-size: 11px; line-height: 1.55; }
   .panel-box ol { padding-left: 18px; }
   .stack { display: grid; gap: 7px; }
-  .appearance { display: grid; gap: 7px; }
-  .appearance .field-row label { font-size: 11px; }
   .warn { display: flex; align-items: center; gap: 7px; font-size: 11px; margin-bottom: 8px; }
   .warn svg { width: 24px; height: 24px; flex: none; }
 
@@ -216,20 +210,11 @@
   .boot .word { font-size: 20px; font-weight: bold; line-height: 1; color: #3a3a3a; text-shadow: 0 1px 0 #fff; }
   .boot .sub { font-size: 11px; color: #555; }
 
-  /* ---------- Idea 1: a System Preferences style toolbar instead of tabs ---------- */
+  /* The window body runs edge to edge under the toolbar. */
   .main .title-bar { border-bottom: 0; }
   .main > .window-body { padding: 0; }
-  .tabs menu[role="tablist"] { justify-content: space-around; margin: 0; padding: 3px 4px 5px; gap: 0; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.05) 100%), repeating-linear-gradient(180deg, #e6e6e6 0 1px, #d9d9d9 1px 2px); border-bottom: 1px solid #8f8f8f; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); }
-  .tabs menu[role="tablist"] li, .tabs menu[role="tablist"] li:first-child, .tabs menu[role="tablist"] li:last-child { min-width: 0; flex: 1 1 0; margin: 0 2px; padding: 3px 0 2px; border-radius: 6px; background: none; box-shadow: none; color: #1a1a1a; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.85); }
-  .tabs menu[role="tablist"] li[aria-selected="true"] { background: rgba(0, 0, 0, 0.13); box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.7); color: #000; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); }
-  .tabs menu[role="tablist"] li button { display: grid; justify-items: center; gap: 1px; padding: 0; width: 100%; }
-  .tabs menu[role="tablist"] li svg { width: 30px; height: 30px; filter: drop-shadow(0 1.5px 1.5px rgba(0, 0, 0, 0.3)); }
-  .tabs menu[role="tablist"] li span { font-size: 10px; }
-  .tabs .panel, .tabs .panel.window { margin: 0; padding-top: 0; border-radius: 0; background: none; box-shadow: none; }
-  .tabs .panel > .window-body { margin: 10px 8px 12px; }
-  .tabs .park-panel > .park-body { margin: 6px; height: calc(100% - 12px); }
 
-  /* ---------- Idea 2: fold-away sections on the breed page, like Get Info ---------- */
+  /* Fold-away sections on the breed page, like a Get Info window. */
   .fold { border-radius: 5px; background: rgba(0, 0, 0, 0.035); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.17); }
   .fold summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 6px; padding: 6px 8px; font-size: 11px; font-weight: bold; color: #1a1a1a; -webkit-user-select: none; user-select: none; }
   .fold summary::-webkit-details-marker { display: none; }
@@ -242,18 +227,14 @@
   .section-title { margin: 12px 0 5px; font-size: 11px; font-weight: bold; }
   .recent-empty { padding: 8px; font-size: 11px; color: var(--muted); margin: 0; }
 
-  /* ---------- Idea 3: the dog itself in the Spotted sheet ---------- */
+  /* The Spotted sheet shows the dog itself. */
   .dialog .msg .sheet-photo { width: 48px; height: 48px; flex: none; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.15); }
 
-  /* ---------- Idea 4: the Mac OS X spinning gear while it starts ---------- */
-  .gear { position: relative; width: 26px; height: 26px; }
-  .gear { display: block; }
+  /* The Mac OS X spinning gear while it starts. */
+  .gear { display: block; position: relative; width: 26px; height: 26px; }
   .gear.waiting { visibility: hidden; }
   .gear i { position: absolute; left: 11.75px; top: 0; width: 2.5px; height: 7.5px; border-radius: 1.25px; background: #4a4a4a; transform-origin: 1.25px 13px; transform: rotate(calc(var(--i) * 30deg)); animation: aqua-gear 1s linear infinite; animation-delay: calc((var(--i) - 12) * 1s / 12); opacity: 0.15; }
 
-
-  /* Help: a window of its own, behind the round ? on the right of the title bar. */
-  .helpwin { z-index: 29; }
 
   @media (prefers-reduced-motion: reduce) {
     .progress-indicator-bar, button.default, .dialog, .gear i { animation: none; transition: none; }

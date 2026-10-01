@@ -1,7 +1,7 @@
 // Good Dogs Only: one full-screen window with three screens (tabs in Windows 98, a toolbar in the Aqua themes),
 // plus the breed window on top. Help is behind the ? in the title bar, in a window of its own.
 import { useLiveQuery } from 'dexie-react-hooks'
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type KeyboardEvent } from 'react'
 import { breedById } from '../data/catalogue.ts'
 import { LAST_BACKUP } from '../lib/backup.ts'
 import { db, toSpots } from '../lib/sightings.ts'
@@ -14,7 +14,7 @@ import { BreedsTab, type BreedsFilter } from './BreedsTab.tsx'
 import { BreedWindow, type Folds } from './BreedWindow.tsx'
 import { Dialog } from './dialog.tsx'
 import { DialogContext, type DialogSpec } from './dialogs.ts'
-import { HelpWindowBody } from './HelpWindowBody.tsx'
+import { HelpWindow } from './HelpWindow.tsx'
 import { Launch } from './Launch.tsx'
 import { ParkView } from './ParkView.tsx'
 import { ProgressTab } from './ProgressTab.tsx'
@@ -29,7 +29,8 @@ const TABS: { id: Tab; label: string; icon: IconName }[] = [
 export default function App() {
   const sightings = useLiveQuery(() => db.sightings.toArray(), [])
   const lastBackup = useLiveQuery(async () => (await db.meta.get(LAST_BACKUP))?.value ?? null, [], null)
-  const spots = useMemo(() => toSpots(sightings ?? []), [sightings])
+  // Only breeds the app knows: a backup from a newer list could mention others.
+  const spots = useMemo(() => toSpots((sightings ?? []).filter((s) => breedById.has(s.breedId))), [sightings])
 
   const [launched, setLaunched] = useState(false)
   const [tab, setTab] = useState<Tab>('breeds')
@@ -48,7 +49,19 @@ export default function App() {
     setDetail(null)
     setHelpOpen(false)
     setTab(t)
-    if (panelRef.current) panelRef.current.scrollTop = 0
+  }
+  // Arrow keys move between tabs, as in any tab bar.
+  const onTabKey = (e: KeyboardEvent, i: number) => {
+    const next = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: TABS.length - 1 }[e.key]
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault()
+      showTab(TABS[i].id)
+    } else if (next !== undefined) {
+      e.preventDefault()
+      const t = TABS[(next + TABS.length) % TABS.length]
+      showTab(t.id)
+      document.getElementById(`tab-${t.id}`)?.focus()
+    }
   }
   const onFilter = (f: BreedsFilter) => {
     if (f.group !== filter.group && panelRef.current) panelRef.current.scrollTop = 0
@@ -81,8 +94,9 @@ export default function App() {
                 Good Dogs Only
               </div>
               <div className="title-bar-controls">
-                <button aria-label="Minimize" title="Screensaver" onClick={() => setSaver(true)} />
-                <button aria-label="Close" onClick={close} />
+                {/* The yellow (or _) button opens the Park as a screensaver. */}
+                <button className="minimize" aria-label="Screensaver" onClick={() => setSaver(true)} />
+                <button className="close" aria-label="Close" onClick={close} />
                 <button
                   className="help"
                   aria-label="Help"
@@ -96,12 +110,21 @@ export default function App() {
             <div className="window-body">
               <section className="tabs">
                 <menu role="tablist" aria-label="Screens">
-                  {TABS.map((t) => (
-                    <li role="tab" key={t.id} aria-selected={tab === t.id} aria-controls="panel" onClick={() => showTab(t.id)}>
-                      <button type="button">
+                  {TABS.map((t, i) => (
+                    <li
+                      role="tab"
+                      key={t.id}
+                      id={`tab-${t.id}`}
+                      aria-selected={tab === t.id}
+                      aria-controls="panel"
+                      tabIndex={tab === t.id ? 0 : -1}
+                      onClick={() => showTab(t.id)}
+                      onKeyDown={(e) => onTabKey(e, i)}
+                    >
+                      <span className="tab-label">
                         {aqua && <Icon name={t.icon} />}
                         <span>{t.label}</span>
-                      </button>
+                      </span>
                     </li>
                   ))}
                 </menu>
@@ -124,22 +147,7 @@ export default function App() {
               </section>
             </div>
           </div>
-          {helpOpen && (
-            <div className="window props helpwin" role="dialog" aria-label="Help">
-              <div className="title-bar">
-                <div className="title-bar-text">
-                  {!aqua && <Icon name="bigPaw" />}
-                  Good Dogs Only Help
-                </div>
-                <div className="title-bar-controls">
-                  <button aria-label="Close" onClick={() => setHelpOpen(false)} />
-                </div>
-              </div>
-              <div className="window-body">
-                <HelpWindowBody lastBackup={lastBackup} />
-              </div>
-            </div>
-          )}
+          {helpOpen && <HelpWindow lastBackup={lastBackup} sightings={sightings ?? []} onClose={() => setHelpOpen(false)} />}
           {breed && <BreedWindow key={breed.id} breed={breed} spotted={spots.get(breed.id)} spottedCount={spots.size} onClose={() => setDetail(null)} folds={folds} onFolds={setFolds} />}
           {dialog && <Dialog spec={dialog} onClose={() => setDialog(null)} />}
           {/* Minimise: the Park as a screensaver, full screen, until you tap. */}

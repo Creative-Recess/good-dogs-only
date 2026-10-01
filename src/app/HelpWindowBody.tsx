@@ -1,8 +1,9 @@
 // The Help window's contents: about the app, its theme, how to add it to the Home Screen, and saving or restoring a backup.
 import { useRef } from 'react'
 import { groupById, TOTAL } from '../data/catalogue.ts'
-import { exportBackup, importBackup, markBackedUp } from '../lib/backup.ts'
+import { backupFile, importBackup, markBackedUp } from '../lib/backup.ts'
 import { formatDay } from '../lib/dates.ts'
+import type { Sighting } from '../lib/sightings.ts'
 import { setTheme, useTheme } from '../theme/store.ts'
 import { THEMES } from '../theme/themes.ts'
 import { Icon } from '../ui/icons.tsx'
@@ -11,14 +12,15 @@ import { useDialog } from './dialogs.ts'
 /** Running from the Home Screen icon rather than a Safari tab. */
 const standalone = () => matchMedia('(display-mode: standalone)').matches || (navigator as { standalone?: boolean }).standalone === true
 
-export function HelpWindowBody({ lastBackup }: { lastBackup: string | null }) {
+export function HelpWindowBody({ lastBackup, sightings }: { lastBackup: string | null; sightings: Sighting[] }) {
   const ask = useDialog()
   const theme = useTheme()
   const fileRef = useRef<HTMLInputElement>(null)
   const bonus = groupById.get('bonus')?.total ?? 0
 
   const save = async () => {
-    const { file, count } = await exportBackup()
+    // Built synchronously so the share sheet opens straight from the tap (iOS requires it).
+    const { file, count } = backupFile(sightings)
     try {
       if (navigator.canShare?.({ files: [file] })) await navigator.share({ files: [file], title: 'Good Dogs Only backup' })
       else {
@@ -36,7 +38,7 @@ export function HelpWindowBody({ lastBackup }: { lastBackup: string | null }) {
       return
     }
     await markBackedUp()
-    ask({ title: 'Save Backup', text: `Backup saved with ${count} ${count === 1 ? 'spot' : 'spots'}.`, icon: 'info' })
+    ask({ title: 'Save Backup', text: `Backup saved with ${count} ${count === 1 ? 'breed' : 'breeds'}.`, icon: 'info' })
   }
 
   const restore = async (file: File) => {

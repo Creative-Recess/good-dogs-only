@@ -1,13 +1,13 @@
-// Breeds: find by name or nickname, filter by group and by spotted, in a grid of photo tiles.
+// Dogdex: find by name or nickname, filter by group and by spotted, in a grid of photo tiles.
 import { useMemo, useRef } from 'react'
-import { breeds, GROUP_COLOUR, groups } from '../data/catalogue.ts'
+import { breeds, GROUP_COLOUR, groups, spottedInGroup } from '../data/catalogue.ts'
 import type { Breed } from '../data/types.ts'
 import { searchBreeds } from '../lib/search.ts'
 import type { Spot } from '../lib/sightings.ts'
 import { Icon } from '../ui/icons.tsx'
 import { useShrinkToFit } from '../ui/useShrinkToFit.ts'
 
-export type Show = 'all' | 'spotted' | 'unseen'
+type Show = 'all' | 'spotted' | 'unseen'
 export type BreedsFilter = { q: string; group: string; show: Show }
 
 type Props = {
@@ -61,7 +61,7 @@ export function BreedsTab({ filter, onFilter, spots, onOpen }: Props) {
           <option value="all">All</option>
           {groups.map((g) => (
             <option key={g.id} value={g.id}>
-              {g.name} ({breeds.filter((b) => b.groupId === g.id && spots.has(b.id)).length}/{g.total})
+              {g.name} ({spottedInGroup(g.id, spots)}/{g.total})
             </option>
           ))}
         </select>

@@ -6,7 +6,7 @@ import { existsSync } from 'node:fs'
 import { mkdir } from 'node:fs/promises'
 import sharp from 'sharp'
 
-export const MASK_SIZE = 256
+const MASK_SIZE = 256
 
 /** Makes `out` (a mask WebP) for each grid photo that doesn't have one yet. */
 export async function makeMasks(jobs: { grid: string; out: string }[], cacheDir: string): Promise<void> {

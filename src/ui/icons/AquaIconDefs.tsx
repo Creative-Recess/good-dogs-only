@@ -19,7 +19,6 @@ export function AquaIconDefs() {
         {vertical('aq-paw', [['0', '#8fd0ff'], ['0.5', '#2f86e6'], ['1', '#155bb8']])}
         {vertical('aq-pawshine', [['0', '#fff', 0.95], ['1', '#fff', 0]])}
         {vertical('aq-warn', [['0', '#fff07a'], ['1', '#f0a800']])}
-        {vertical('aq-buoy', [['0', '#ff8a80'], ['1', '#c41a14']])}
         <radialGradient id="aq-eyeball" cx="0.5" cy="0.3" r="0.8">
           <stop offset="0" stopColor="#fff" />
           <stop offset="1" stopColor="#d6dbe3" />

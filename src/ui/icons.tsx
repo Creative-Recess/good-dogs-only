@@ -5,16 +5,14 @@ import { AQUA_ICONS } from './icons/aqua.ts'
 import type { IconName } from './icons/types.ts'
 import { WIN98_ICONS } from './icons/win98.ts'
 
-export function Icon({ name, label }: { name: IconName; label?: string }) {
+export function Icon({ name }: { name: IconName }) {
   const aqua = isAquaFamily(useTheme())
   const { size, d } = (aqua ? AQUA_ICONS : WIN98_ICONS)[name]
   return (
     <svg
       viewBox={`0 0 ${size} ${size}`}
       shapeRendering={aqua ? undefined : 'crispEdges'}
-      role={label ? 'img' : undefined}
-      aria-label={label}
-      aria-hidden={label ? undefined : true}
+      aria-hidden="true"
       // Static, hand-written SVG shapes from icons/ only.
       dangerouslySetInnerHTML={{ __html: d }}
     />

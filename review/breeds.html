@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Good Dogs Only breed review</title>
+    <link rel="stylesheet" href="../src/styles/layers.css" />
+    <link rel="stylesheet" href="../src/styles/base.css" />
+    <link rel="stylesheet" href="./breeds.css" />
+    <!-- Dev-only page (not part of the app build): every breed's photo, silhouettes and Park dog. Run `pnpm review`. -->
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Breed review</h1>
+        <p>
+          Every breed as the app shows it: the grid photo and the breed-page crop, the silhouette for each theme (shown until it's spotted), and its
+          Park dog. Drawn live from <code>src/data/breeds.json</code> and the app's own code, so it's always current. Breeds marked
+          <span class="flag">Check</span> have something worth a look.
+        </p>
+        <div class="controls">
+          <input id="q" type="search" placeholder="Find a breed" autocomplete="off" />
+          <select id="group"></select>
+          <label><input id="flagged" type="checkbox" /> Only ones to check</label>
+          <span id="count"></span>
+        </div>
+      </header>
+      <div id="list"></div>
+    </main>
+    <script type="module" src="./breeds.ts"></script>
+  </body>
+</html>

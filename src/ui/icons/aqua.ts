@@ -26,16 +26,19 @@ export const ORBS: Record<string, [string, string]> = {
   progress: ['#ffd27a', '#d27a00'],
 }
 
+/** The app logo: a glossy blue gel paw. */
+const PAW = {
+  size: 64,
+  d: '<g stroke="rgba(10,40,100,0.55)" stroke-width="1.2" fill="url(#aq-paw)"><ellipse cx="14" cy="27" rx="6.5" ry="8.5" transform="rotate(-20 14 27)"/><ellipse cx="25" cy="15" rx="6.5" ry="9"/><ellipse cx="39" cy="15" rx="6.5" ry="9"/><ellipse cx="50" cy="27" rx="6.5" ry="8.5" transform="rotate(20 50 27)"/><path d="M32 30c9 0 17 9 17 17 0 7-5 10-10 10-3 0-5-2-7-2s-4 2-7 2c-5 0-10-3-10-10 0-8 8-17 17-17z"/></g><g fill="url(#aq-pawshine)"><ellipse cx="13" cy="23" rx="3.5" ry="4" transform="rotate(-20 13 23)"/><ellipse cx="25" cy="10.5" rx="3.6" ry="4.2"/><ellipse cx="39" cy="10.5" rx="3.6" ry="4.2"/><ellipse cx="51" cy="23" rx="3.5" ry="4" transform="rotate(20 51 23)"/><ellipse cx="32" cy="37" rx="11" ry="5.5"/></g>',
+}
+
 const orb = (id: keyof typeof ORBS, glyph: string) => ({
   size: 32,
   d: `<circle cx="16" cy="16" r="15" fill="url(#aq-${id})" stroke="rgba(0,0,0,0.35)" stroke-width="0.8"/><g fill="#fff">${glyph}</g><ellipse cx="16" cy="9.5" rx="10.5" ry="6.5" fill="url(#aq-shine)"/>`,
 })
 
 export const AQUA_ICONS = {
-  bigPaw: {
-    size: 64,
-    d: '<g stroke="rgba(10,40,100,0.55)" stroke-width="1.2" fill="url(#aq-paw)"><ellipse cx="14" cy="27" rx="6.5" ry="8.5" transform="rotate(-20 14 27)"/><ellipse cx="25" cy="15" rx="6.5" ry="9"/><ellipse cx="39" cy="15" rx="6.5" ry="9"/><ellipse cx="50" cy="27" rx="6.5" ry="8.5" transform="rotate(20 50 27)"/><path d="M32 30c9 0 17 9 17 17 0 7-5 10-10 10-3 0-5-2-7-2s-4 2-7 2c-5 0-10-3-10-10 0-8 8-17 17-17z"/></g><g fill="url(#aq-pawshine)"><ellipse cx="13" cy="23" rx="3.5" ry="4" transform="rotate(-20 13 23)"/><ellipse cx="25" cy="10.5" rx="3.6" ry="4.2"/><ellipse cx="39" cy="10.5" rx="3.6" ry="4.2"/><ellipse cx="51" cy="23" rx="3.5" ry="4" transform="rotate(20 51 23)"/><ellipse cx="32" cy="37" rx="11" ry="5.5"/></g>',
-  },
+  bigPaw: PAW,
   eyes: {
     size: 32,
     d: '<g stroke="#333" stroke-width="1"><ellipse cx="10" cy="16" rx="7.5" ry="10" fill="url(#aq-eyeball)"/><ellipse cx="22.5" cy="16" rx="7.5" ry="10" fill="url(#aq-eyeball)"/></g><circle cx="12" cy="18" r="3.6" fill="#1b2a44"/><circle cx="24.5" cy="18" r="3.6" fill="#1b2a44"/><circle cx="13.2" cy="16.6" r="1.2" fill="#fff"/><circle cx="25.7" cy="16.6" r="1.2" fill="#fff"/>',
@@ -45,7 +48,8 @@ export const AQUA_ICONS = {
     size: 32,
     d: '<path d="M16 2.5c1 0 1.7.5 2.2 1.4l12.4 22.6c.9 1.7-.3 3.5-2.2 3.5H3.6c-1.9 0-3.1-1.8-2.2-3.5L13.8 3.9c.5-.9 1.2-1.4 2.2-1.4z" fill="url(#aq-warn)" stroke="#9a6a00" stroke-width="1"/><rect x="14.4" y="10" width="3.2" height="11" rx="1.6" fill="#3a2a00"/><circle cx="16" cy="25" r="1.9" fill="#3a2a00"/>',
   },
-  infoBig: { size: 0, d: '' }, // replaced below: Aqua alerts show the app icon
+  // Aqua message boxes show the app icon rather than an info icon.
+  infoBig: PAW,
   disk: {
     size: 32,
     d: '<rect x="4" y="4" width="24" height="24" rx="3" fill="url(#aq-cap)" stroke="rgba(0,0,0,0.4)" stroke-width="0.8"/><rect x="9" y="4" width="14" height="9" rx="1" fill="#d8dde6"/><rect x="18" y="5.5" width="3" height="6" fill="#4a5a78"/><rect x="8" y="17" width="16" height="9" rx="1" fill="#fff"/><ellipse cx="16" cy="9" rx="11" ry="5" fill="url(#aq-shine)"/>',
@@ -69,10 +73,5 @@ export const AQUA_ICONS = {
   tbDogdex: orb('dogdex', '<rect x="8" y="8" width="7" height="7" rx="1.6"/><rect x="17" y="8" width="7" height="7" rx="1.6"/><rect x="8" y="17" width="7" height="7" rx="1.6"/><rect x="17" y="17" width="7" height="7" rx="1.6"/>'),
   tbPark: orb('park', '<circle cx="16" cy="12.5" r="6.5"/><circle cx="11.5" cy="15" r="4"/><circle cx="20.5" cy="15" r="4"/><rect x="14.8" y="17" width="2.4" height="8" rx="1"/>'),
   tbProgress: orb('progress', '<rect x="8" y="17" width="4" height="8" rx="1"/><rect x="14" y="12" width="4" height="13" rx="1"/><rect x="20" y="8" width="4" height="17" rx="1"/>'),
-  tbHelp: {
-    size: 32,
-    d: '<circle cx="16" cy="16" r="14.5" fill="#fafafa" stroke="rgba(0,0,0,0.35)" stroke-width="0.8"/><path d="M16 1.5a14.5 14.5 0 0 1 10.25 4.25L21.3 10.7A7.5 7.5 0 0 0 16 8.5zM30.5 16a14.5 14.5 0 0 1-4.25 10.25L21.3 21.3A7.5 7.5 0 0 0 23.5 16zM16 30.5a14.5 14.5 0 0 1-10.25-4.25L10.7 21.3A7.5 7.5 0 0 0 16 23.5zM1.5 16a14.5 14.5 0 0 1 4.25-10.25L10.7 10.7A7.5 7.5 0 0 0 8.5 16z" fill="url(#aq-buoy)"/><circle cx="16" cy="16" r="7.5" fill="none" stroke="rgba(0,0,0,0.25)" stroke-width="0.8"/><ellipse cx="16" cy="8.5" rx="10" ry="6" fill="url(#aq-shine)"/>',
-  },
 } satisfies IconSet
-AQUA_ICONS.infoBig = AQUA_ICONS.bigPaw
 

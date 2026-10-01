@@ -1,6 +1,6 @@
 import { writeFile } from 'node:fs/promises'
 import { expect, test } from '@playwright/test'
-import { launch, leaveHelp, openHelp, spotBreed } from './helpers.ts'
+import { TOTAL, launch, leaveHelp, openHelp, spotBreed } from './helpers.ts'
 
 test('a backup restores every spot after the phone is wiped', async ({ page }, testInfo) => {
   // Stand in for the iPhone share sheet: keep the file it was given.
@@ -16,7 +16,7 @@ test('a backup restores every spot after the phone is wiped', async ({ page }, t
   await expect(page.getByText('Last backup: never')).toBeVisible()
 
   await page.getByRole('button', { name: 'Save Backup...' }).click()
-  await expect(page.getByRole('alertdialog')).toContainText('Backup saved with 2 spots.')
+  await expect(page.getByRole('alertdialog')).toContainText('Backup saved with 2 breeds.')
   await page.getByRole('alertdialog').getByRole('button', { name: 'OK' }).click()
   await expect(page.getByText(/Last backup: \d/)).toBeVisible()
   const shared = await page.evaluate(() => (window as unknown as { shared: string }).shared)
@@ -37,7 +37,7 @@ test('a backup restores every spot after the phone is wiped', async ({ page }, t
   await page.reload()
   await launch(page)
   await page.getByRole('tab', { name: 'Progress' }).click()
-  await expect(page.getByText('0 of 239 breeds')).toBeVisible()
+  await expect(page.getByText(`0 of ${TOTAL} breeds`)).toBeVisible()
   await openHelp(page)
   await page.getByTestId('restore-file').setInputFiles(file)
   await expect(page.getByRole('alertdialog')).toContainText('Backup restored.')
@@ -49,7 +49,7 @@ test('a backup restores every spot after the phone is wiped', async ({ page }, t
   await page.getByRole('alertdialog').getByRole('button', { name: 'OK' }).click()
   await leaveHelp(page)
   await page.getByRole('tab', { name: 'Progress' }).click()
-  await expect(page.getByText('2 of 239 breeds')).toBeVisible()
+  await expect(page.getByText(`2 of ${TOTAL} breeds`)).toBeVisible()
 })
 
 test('restoring a file that is not a backup says so', async ({ page }) => {

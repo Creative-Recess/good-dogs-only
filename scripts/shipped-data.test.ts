@@ -6,7 +6,7 @@ import { isAllowedLicence } from './lib/licences.ts'
 
 const breeds = shipped.breeds as Breed[]
 const publicPath = (p: string) => new URL(`../public${p}`, import.meta.url)
-/** Entries with no free photo anywhere; the app shows a "no photo yet" placeholder. */
+/** Entries allowed to ship without a photo (none today). */
 const NO_PHOTO: string[] = []
 
 describe('src/data/breeds.json', () => {
@@ -37,7 +37,7 @@ describe('src/data/breeds.json', () => {
       const c = b.credit!
       expect(c.author, b.id).toBeTruthy()
       if (c.restricted) {
-        // Justin's call (1 Oct 2026): Dogs Australia photos for the weakest Commons picks, credited to them.
+        // Justin's call (1 Oct 2026): Dogs Australia's own breed photos wherever they have one, credited to them.
         expect(c.sourceUrl, b.id).toMatch(/^https:\/\/dogsaustralia\.org\.au\/BrowseBreed\//)
       } else {
         expect(isAllowedLicence(c.licence), `${b.id}: ${c.licence}`).toBe(true)

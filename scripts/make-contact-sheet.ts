@@ -69,7 +69,7 @@ const html = `<!doctype html><meta charset="utf-8"><title>Good Dogs Only photo r
   <button type="button" data-tab="dodgy" aria-selected="false">A bit dodgy <span></span></button>
   <button type="button" data-tab="all" aria-selected="false">All <span></span></button>
 </nav>
-<p class="tab-help" data-for="review">My weakest picks, plus the one breed with no free photo at all. These most need your eye.</p>
+<p class="tab-help" data-for="review">My weakest picks. These most need your eye.</p>
 <p class="tab-help" data-for="dodgy" hidden>Usable, but each has a flaw (lying down, handler in shot, low resolution). The note on each card says what.</p>
 <p class="tab-help" data-for="all" hidden>Every breed, in dex order.</p>
 <p class="intro">The big image on each card is the square crop the app will show. If you prefer one of the alternatives, click it (click again to undo). When you're done, copy the text at the bottom and paste it back to Claude. For a crop that cuts off the dog, just say which breed.</p>

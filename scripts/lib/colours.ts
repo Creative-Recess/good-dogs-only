@@ -3,8 +3,7 @@
 // and the most common clearly different one as the patch.
 import sharp from 'sharp'
 import type { Rgb } from '../../src/data/types.ts'
-
-const FALLBACK: { body: Rgb; patch: Rgb } = { body: [170, 120, 70], patch: [240, 230, 210] }
+import { DEFAULT_COLOURS as FALLBACK } from '../../src/park/dog.ts'
 
 export function pickColours(pixels: Iterable<Rgb>): { body: Rgb; patch: Rgb } {
   const counts = new Map<string, { n: number; r: number; g: number; b: number }>()

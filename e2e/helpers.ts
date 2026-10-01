@@ -1,4 +1,11 @@
 import { expect, type Page } from '@playwright/test'
+import data from '../src/data/breeds.json' with { type: 'json' }
+
+/** Counts from the shipped data, so the tests don't need changing when the breed list does. */
+export const TOTAL = data.breeds.length
+export const inGroup = (groupId: string) => data.breeds.filter((b) => b.groupId === groupId).length
+export const dexNo = (name: string) => data.breeds.find((b) => b.name === name)!.dexNo
+export const LAST_DEX = data.breeds.at(-1)!.dexNo
 
 /** Opens the app past the launch screen, ready on the Dogdex tab. */
 export async function launch(page: Page) {

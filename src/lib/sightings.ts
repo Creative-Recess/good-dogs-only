@@ -62,6 +62,8 @@ export async function unsee(breedId: string): Promise<void> {
     if (!s.deletedAt) {
       s.deletedAt = t
       s.updatedAt = t
+      // The note goes too, as the Unsee message says (it would otherwise live on in backups).
+      delete s.note
     }
   })
 }

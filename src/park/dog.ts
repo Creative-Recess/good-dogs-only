@@ -1,6 +1,9 @@
 // One storybook dog: side-on, drawn with its breed's proportions (data/dog-shapes.json) and its photo's colours.
 import type { Breed, DogShape, Rgb } from '../data/types.ts'
 
+/** For a breed without a photo to take colours from: a tan dog with a cream patch. */
+export const DEFAULT_COLOURS: { body: Rgb; patch: Rgb } = { body: [170, 120, 70], patch: [240, 230, 210] }
+
 export type DogState = 'idle' | 'walk' | 'run' | 'sit'
 
 export type Dog = {

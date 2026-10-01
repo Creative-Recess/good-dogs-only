@@ -1,4 +1,5 @@
 // Windows 98 icons: pixel art on a 16px grid like the originals (bigPaw is the app logo, on 28px).
+// The tb* toolbar icons aren't drawn (Windows 98 has text tabs); they're here because every set draws every icon.
 import type { IconSet } from './types.ts'
 
 export const WIN98_ICONS = {
@@ -27,5 +28,4 @@ export const WIN98_ICONS = {
   tbDogdex: { size: 16, d: '<rect x="1" y="3" width="3" height="7" fill="#6b3a1a"/><rect x="12" y="3" width="3" height="7" fill="#6b3a1a"/><rect x="4" y="2" width="8" height="10" fill="#d08c42"/><rect x="3" y="4" width="10" height="6" fill="#d08c42"/><rect x="5" y="8" width="6" height="5" fill="#fff"/><rect x="6" y="13" width="4" height="1" fill="#fff"/><rect x="5" y="5" width="2" height="2" fill="#000"/><rect x="9" y="5" width="2" height="2" fill="#000"/><rect x="7" y="8" width="2" height="2" fill="#000"/><rect x="7" y="11" width="2" height="2" fill="#ff7090"/>' },
   tbPark: { size: 16, d: '<rect x="7" y="11" width="2" height="4" fill="#804000"/><rect x="4" y="3" width="8" height="8" fill="#008000"/><rect x="2" y="5" width="12" height="5" fill="#008000"/><rect x="5" y="4" width="3" height="2" fill="#40c040"/>' },
   tbProgress: { size: 16, d: '<rect x="4" y="2" width="8" height="7" fill="#ffcc00" stroke="#806000"/><rect x="1" y="3" width="3" height="3" fill="none" stroke="#806000"/><rect x="12" y="3" width="3" height="3" fill="none" stroke="#806000"/><rect x="7" y="9" width="2" height="3" fill="#806000"/><rect x="4" y="12" width="8" height="2" fill="#806000"/>' },
-  tbHelp: { size: 16, d: '<rect x="1" y="1" width="14" height="14" fill="#ffffe1" stroke="#000"/><rect x="6" y="3" width="4" height="2" fill="#000080"/><rect x="10" y="5" width="2" height="3" fill="#000080"/><rect x="8" y="8" width="2" height="2" fill="#000080"/><rect x="8" y="11" width="2" height="2" fill="#000080"/>' },
 } satisfies IconSet

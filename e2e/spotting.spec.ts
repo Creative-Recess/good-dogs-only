@@ -1,12 +1,12 @@
 import { expect, test } from '@playwright/test'
-import { launch, openBreed, spotBreed } from './helpers.ts'
+import { TOTAL, inGroup, launch, openBreed, spotBreed } from './helpers.ts'
 
 test.beforeEach(async ({ page }) => launch(page))
 
 test('spotting a breed sticks after closing the app and reopening it', async ({ page }) => {
   await openBreed(page, 'Labrador Retriever')
   await page.getByRole('button', { name: 'Spotted', exact: true }).click()
-  await expect(page.getByRole('alertdialog')).toContainText("That's 1 of 239 breeds.")
+  await expect(page.getByRole('alertdialog')).toContainText(`That's 1 of ${TOTAL} breeds.`)
   await page.getByRole('alertdialog').getByRole('button', { name: 'OK' }).click()
   const w = page.getByRole('dialog', { name: 'Labrador Retriever' })
   await expect(w.getByText('Spotted!')).toBeVisible()
@@ -24,8 +24,8 @@ test('spotting a breed sticks after closing the app and reopening it', async ({ 
   await expect(page.getByLabel('Note:')).toHaveValue('Chocolate, called Bear')
   await page.getByRole('dialog').getByRole('button', { name: 'Close' }).click()
   await page.getByRole('tab', { name: 'Progress' }).click()
-  await expect(page.getByText('1 of 239 breeds')).toBeVisible()
-  await expect(page.getByRole('button', { name: /Gundogs\s*1\/33/ })).toBeVisible()
+  await expect(page.getByText(`1 of ${TOTAL} breeds`)).toBeVisible()
+  await expect(page.getByRole('button', { name: new RegExp(`Gundogs\\s*1/${inGroup('gundogs')}`) })).toBeVisible()
   await expect(page.getByRole('row', { name: /Labrador Retriever/ })).toBeVisible()
 })
 
@@ -50,7 +50,7 @@ test('Show: Spotted and Unseen split the grid', async ({ page }) => {
   await page.getByText('Spotted', { exact: true }).click()
   await expect(page.locator('.icons .icon')).toHaveCount(1)
   await page.getByText('Unseen', { exact: true }).click()
-  await expect(page.locator('.icons .icon')).toHaveCount(238)
+  await expect(page.locator('.icons .icon')).toHaveCount(TOTAL - 1)
 })
 
 test('the breed photo keeps its full shape once the breed is spotted', async ({ page }) => {
@@ -66,4 +66,24 @@ test('the breed photo keeps its full shape once the breed is spotted', async ({ 
   await page.getByRole('alertdialog').getByRole('button', { name: 'OK' }).click()
   await expect(page.getByText('Spotted!')).toBeVisible()
   expect(await ratio()).toBeLessThan(1.6)
+})
+
+test('Escape closes the top window first: the sheet, then the breed window', async ({ page }) => {
+  await openBreed(page, 'Beagle')
+  await page.getByRole('button', { name: 'Spotted', exact: true }).click()
+  await expect(page.getByRole('alertdialog')).toBeVisible()
+  await page.keyboard.press('Escape')
+  await expect(page.getByRole('alertdialog')).toBeHidden()
+  await expect(page.getByRole('dialog', { name: 'Beagle' })).toBeVisible()
+  await page.keyboard.press('Escape')
+  await expect(page.getByRole('dialog', { name: 'Beagle' })).toBeHidden()
+})
+
+test('a note is saved after typing stops, and is kept when the window closes straight away', async ({ page }) => {
+  await spotBreed(page, 'Whippet')
+  await openBreed(page, 'Whippet')
+  await page.getByLabel('Note:').fill('Grey, very fast')
+  await page.getByRole('dialog').getByRole('button', { name: 'Close' }).click()
+  await openBreed(page, 'Whippet')
+  await expect(page.getByLabel('Note:')).toHaveValue('Grey, very fast')
 })

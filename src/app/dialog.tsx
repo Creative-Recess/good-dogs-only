@@ -5,20 +5,22 @@ import { useTheme } from '../theme/store.ts'
 import { isAquaFamily } from '../theme/themes.ts'
 import type { DialogSpec } from './dialogs.ts'
 import { Icon } from '../ui/icons.tsx'
-
+import { useModal } from '../ui/useModal.ts'
 
 export function Dialog({ spec, onClose }: { spec: DialogSpec; onClose: () => void }) {
   const aqua = isAquaFamily(useTheme())
   const buttons = spec.buttons ?? [{ label: 'OK' }]
   const defaultRef = useRef<HTMLButtonElement>(null)
   useEffect(() => defaultRef.current?.focus(), [spec])
+  const boxRef = useRef<HTMLDivElement>(null)
+  useModal(boxRef, onClose)
   return (
     <div className="modal">
-      <div className="window dialog" role="alertdialog" aria-modal="true" aria-labelledby="dialog-title" aria-describedby="dialog-text">
+      <div className="window dialog" role="alertdialog" aria-modal="true" aria-labelledby="dialog-title" aria-describedby="dialog-text" ref={boxRef} tabIndex={-1}>
         <div className="title-bar">
           <div className="title-bar-text" id="dialog-title">{spec.title}</div>
           <div className="title-bar-controls">
-            <button aria-label="Close" onClick={onClose} />
+            <button className="close" aria-label="Close" onClick={onClose} />
           </div>
         </div>
         <div className="window-body">

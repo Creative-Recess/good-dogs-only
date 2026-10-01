@@ -1,4 +1,4 @@
-// Any screen can show a Windows 98 message box through this context.
+// Any screen can show a message box (a Windows 98 dialog or an Aqua sheet) through this context.
 import { createContext, useContext } from 'react'
 
 export type DialogSpec = {

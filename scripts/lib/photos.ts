@@ -24,9 +24,11 @@ export type PhotoPick = {
   /** A photo from outside Commons that Justin chose (e.g. a Dogs Australia breed photo). */
   external?: { url: string; credit: string; sourceUrl: string }
   focus?: [number, number]
-  by: 'claude-review' | 'justin'
+  by: 'claude-review' | 'claude' | 'justin'
   confidence?: 'high' | 'medium' | 'low'
   note?: string
+  /** The file this pick replaced, kept for reference. */
+  previous?: string | null
 }
 
 /** A reviewer's choice on one sheet: tile number (or null for none), crop focus, confidence, short note. */

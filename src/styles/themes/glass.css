@@ -37,12 +37,9 @@
   .g-row:active, .g-row:focus { background: var(--selection); }
   .sunken-panel th { background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(236, 232, 229, 0.95)); }
   .progress-indicator-bar { background: linear-gradient(180deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0.08) 52%, rgba(255, 255, 255, 0.35)), repeating-linear-gradient(-45deg, #2c7ae0 0 6px, #8cc4f7 6px 12px); background-size: 100% 100%, 17px 17px; box-shadow: inset 0 0 0 1px rgba(20, 60, 130, 0.55); }
-  /* Unseen: a softer, frosted spotlight with a pale glow. */
-  .icon { --sil-bg: radial-gradient(circle at 50% 40%, #e4efff 0%, #9ec3f5 45%, #5b8bd6 100%); --sil-fill: #1a2a52; --sil-rim: drop-shadow(0 0 1px rgba(255, 255, 255, 0.95)) drop-shadow(0 0 4px rgba(255, 255, 255, 0.8)); }
   .icon:focus-visible .label, .icon:active .label { background: var(--selection); }
   @media (hover: hover) { .icon:hover .label { background: var(--selection); } }
   .park-hint { background: rgba(255, 255, 255, 0.6); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
-  /* Windows on top of other windows are frostier, so what's behind never competes with them. */
   /* Windows on top of other windows (breed, Help, sheets) are frosted over the wallpaper itself rather than over
      the screen beneath, so nothing behind them ever shows through their text. */
   .props.window, .dialog.window { background: linear-gradient(rgba(246, 248, 252, 0.9), rgba(246, 248, 252, 0.9)), var(--wallpaper); -webkit-backdrop-filter: none; backdrop-filter: none; }

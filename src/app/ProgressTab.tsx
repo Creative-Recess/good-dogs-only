@@ -1,5 +1,5 @@
 // Progress: the overall count, a row per group, and the most recent spots.
-import { breedById, breeds, GROUP_COLOUR, groups, TOTAL } from '../data/catalogue.ts'
+import { breedById, GROUP_COLOUR, groups, spottedInGroup, TOTAL } from '../data/catalogue.ts'
 import { formatDay } from '../lib/dates.ts'
 import { newestFirst, type Spot } from '../lib/sightings.ts'
 import { ProgressBar } from './ProgressBar.tsx'
@@ -19,7 +19,7 @@ export function ProgressTab({ spots, onGroup, onOpen }: Props) {
       </div>
       <div className="sunken-panel group-list">
         {groups.map((g) => {
-          const k = breeds.filter((b) => b.groupId === g.id && spots.has(b.id)).length
+          const k = spottedInGroup(g.id, spots)
           return (
             <button type="button" className="g-row" key={g.id} onClick={() => onGroup(g.id)}>
               <span className="g-top">
@@ -54,7 +54,14 @@ export function ProgressTab({ spots, onGroup, onOpen }: Props) {
                 const b = breedById.get(s.breedId)
                 if (!b) return null
                 return (
-                  <tr className="recent-row" key={s.breedId} onClick={() => onOpen(b.id)}>
+                  <tr
+                    className="recent-row"
+                    key={s.breedId}
+                    tabIndex={0}
+                    aria-label={`${b.name}, spotted ${formatDay(s.firstSeen)}`}
+                    onClick={() => onOpen(b.id)}
+                    onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && (e.preventDefault(), onOpen(b.id))}
+                  >
                     <td>
                       {b.image && <img src={b.image.grid} alt="" />}
                       {b.name}

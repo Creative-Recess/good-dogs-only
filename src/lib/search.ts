@@ -1,4 +1,4 @@
-// Relative import (not @/) because the Node-side data tests share this module.
+// Shared by the app and the Node-side data tests.
 import type { Breed } from '../data/types.ts'
 
 /** Lowercase, strip accents and punctuation: "Löwchen (Little Lion Dog)" -> "lowchen little lion dog". */
