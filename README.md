@@ -13,7 +13,7 @@ The original v1 plan, with the decisions made along the way, is archived outside
 
 - **Dogdex**: every breed in dex order, with Find (names and nicknames, e.g. "staffy", "sausage dog"), a Group filter and Show: All / Spotted / Unseen.
   Breeds you haven't spotted show as a "Who's that dog?" silhouette, tinted for each theme.
-- **Breed window**: photo, nicknames, a link to the official Dogs Australia standard, 3 temperament traits and a line of text, then Spotted (with the date and a note) or Unsee.
+- **Breed window**: photo, then a Profile: 3 temperament traits, a line about the breed and what it was bred for, then dex rows (nicknames, weight with a weight-class icon, lifespan, and the country it's from with its flag) and a link to the official Dogs Australia standard. Then Spotted (with the date and a note) or Unsee.
 - **Park**: an animated Rushcutters Bay with one dog per spotted breed (at most 20 out at once; they take turns). The yellow title-bar button opens it as a screensaver.
 - **Progress**: the overall count, a row per group, and the latest spots.
 - **Help** (the ? in the title bar): About, Theme, Add to Home Screen and Backup.
@@ -70,6 +70,7 @@ It's a dev page only: it isn't part of the app build.
 Hand-edited files in `data/`, merged by `scripts/lib/dataset.ts`:
 - `ankc-breeds.json` (scraped list), `breed-details.json` (display names, varieties, nicknames), `groups.json`, `unofficial-breeds.json`, `short-names.json` (grid labels)
 - `traits.json`: 3 temperament traits from a fixed list of 16, plus one line of text in our own words, per breed
+- `breed-facts.json`: typical weight and lifespan ranges, country of origin (ISO code, or GB-ENG / GB-SCT / GB-WLS) and one line on what the breed was bred to do, with the source checked; flags are drawn in `src/data/countries.ts`
 - `dog-shapes.json`: how each breed's Park dog is drawn: size (XS to XL), build, snout (1 to 5), ears, tail, coat type, and its colour and markings
 - `photo-picks.json`: which photo each breed uses (a Wikimedia Commons file, or Dogs Australia's own breed photo) and where to centre the crops
 - `wiki-map.json`, `wiki-overrides.json`, `photo-sources.json`: where to look for Commons photos
@@ -98,6 +99,7 @@ Downloads and other working files go in `.cache/` (not committed).
 ## Content and licensing
 
 - Breed names and group membership come from the Dogs Australia breed group pages; these are facts.
+- Breed facts (weight, lifespan, origin, original job) are facts checked against the AKC, The Kennel Club, the FCI or Wikipedia, written in our own words.
   The breed text is written in our own words, never copied from a breed standard.
 - Most breed photos are Dogs Australia's own (Justin's call for this private app), and the rest come from Wikimedia Commons.
   Credits are kept per photo in `src/data/breeds.json` but not shown in the app.

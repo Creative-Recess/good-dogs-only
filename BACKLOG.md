@@ -17,8 +17,6 @@ Nothing right now.
 - **Seen counts and places.** "Seen 5 times", and which park each spot was at.
 - **Badges.** Small achievements, e.g. finishing a group, 50 breeds, or every Terrier.
 - **"Which breed is this?"** Snap a photo and get a suggested breed. Needs a small backend holding an AI API key.
-- **Breed facts** (not decided yet). A short facts row on the breed page: height and weight range, country of origin, what it was bred for and typical lifespan.
-  These are facts, so they can come from Wikipedia and Wikidata and be written in our own words, like the breed text.
 
 ## Decided against
 

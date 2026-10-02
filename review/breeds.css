@@ -40,7 +40,9 @@ main > header p { margin: 4px 0 12px; color: var(--muted); max-width: 80ch; }
 .picks { display: flex; gap: 8px; position: sticky; bottom: 0; padding: 8px 0; background: var(--bg); }
 .picks textarea { flex: 1; font: 14px ui-monospace, monospace; padding: 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
 .picks button { font: inherit; padding: 8px 14px; border-radius: 8px; border: 0; background: var(--accent); color: #fff; cursor: pointer; }
-.about, .source { margin: 0; font-size: 13px; }
+.about, .source, .facts { margin: 0; font-size: 13px; }
+.facts b { color: var(--accent); }
+.facts.missing { color: var(--warn); }
 .about b { color: var(--accent); }
 .source { color: var(--muted); }
 .source a { color: var(--accent); }

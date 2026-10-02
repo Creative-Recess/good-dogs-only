@@ -40,6 +40,17 @@ export type DogShape = {
   mask: boolean
 }
 
+/** Breed facts (data/breed-facts.json): typical adult ranges, where the breed comes from and what it was first bred to do. */
+export type BreedFacts = {
+  kg: [number, number]
+  /** Years. */
+  life: [number, number]
+  /** Country of origin: an ISO 3166 code, or GB-ENG / GB-SCT / GB-WLS for one UK nation. */
+  origin: string
+  /** One line, e.g. "Bred to herd sheep in the hills along the Scottish-English border." */
+  job: string
+}
+
 export type Group = {
   id: GroupId
   name: string
@@ -98,6 +109,7 @@ export type Breed = {
   traits: Trait[]
   text: string
   shape: DogShape
+  facts?: BreedFacts
   image?: BreedImage
   credit?: PhotoCredit
 }

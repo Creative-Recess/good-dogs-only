@@ -20,7 +20,7 @@ export const ORBS: Record<string, [string, string]> = {
   cap: ['#8fb2ff', '#18348f'],
   house: ['#ff9f7a', '#b8340a'],
   compass: ['#8af0c8', '#0f8a5a'],
-  feather: ['#ffb3d6', '#c42a78'],
+  cloud: ['#bfe6ff', '#4a9ad8'],
   dogdex: ['#9fd2ff', '#1f63c4'],
   park: ['#a6ec86', '#2c8a1c'],
   progress: ['#ffd27a', '#d27a00'],
@@ -30,7 +30,7 @@ export const ORBS: Record<string, [string, string]> = {
   w4: ['#a9b4d6', '#3e4f86'],
   w5: ['#9aa0b4', '#353a52'],
   w6: ['#80848f', '#1c1e26'],
-  life: ['#ff9fc2', '#c4246a'],
+  clock: ['#f2f5fa', '#8592a8'],
 }
 
 /** The app logo: a glossy blue gel paw. */
@@ -44,12 +44,8 @@ const orb = (id: keyof typeof ORBS, glyph: string) => ({
   d: `<circle cx="16" cy="16" r="15" fill="url(#aq-${id})" stroke="rgba(0,0,0,0.35)" stroke-width="0.8"/><g fill="#fff">${glyph}</g><ellipse cx="16" cy="9.5" rx="10.5" ry="6.5" fill="url(#aq-shine)"/>`,
 })
 
-const flag = (art: string) => ({
-  size: 32,
-  d: `<g clip-path="url(#aq-clip)">${art}</g><circle cx="16" cy="16" r="15" fill="none" stroke="rgba(0,0,0,0.35)" stroke-width="0.8"/><ellipse cx="16" cy="9.5" rx="10.5" ry="6.5" fill="url(#aq-shine)" opacity="0.8"/>`,
-})
-const UNION = '<path d="M0 0L32 32M32 0L0 32" stroke="#fff" stroke-width="6"/><path d="M0 0L32 32M32 0L0 32" stroke="#c8102e" stroke-width="2"/><path d="M16 0v32M0 16h32" stroke="#fff" stroke-width="9"/><path d="M16 0v32M0 16h32" stroke="#c8102e" stroke-width="5"/>'
-const SHADE = 'stroke="rgba(0,0,0,0.3)" stroke-width="1.2" fill="none"'
+// The clock's twelve hour marks, longer at 12, 3, 6 and 9.
+const TICKS = Array.from({ length: 12 }, (_, i) => `<rect x="15.4" y="${i % 3 ? 7.4 : 6.8}" width="1.2" height="${i % 3 ? 1.6 : 2.6}" rx="0.5" fill="#3a4458" transform="rotate(${i * 30} 16 16)"/>`).join('')
 
 export const AQUA_ICONS = {
   bigPaw: PAW,
@@ -83,25 +79,20 @@ export const AQUA_ICONS = {
   tCap: orb('cap', '<path d="M4.5 13.5L16 8l11.5 5.5L16 19z"/><path d="M10 16.5v4.5c3.5 2.6 8.5 2.6 12 0v-4.5L16 19.4z"/>'),
   tHouse: orb('house', '<path d="M6.5 16L16 8l9.5 8h-2.7v8.5h-5v-5.5h-3.6v5.5h-5V16z"/>'),
   tCompass: orb('compass', '<path d="M16 6l3 10-3 10-3-10z"/><path d="M16 16l3 0-3 10-3-10z" fill="#bfe9d6"/>'),
-  tFeather: orb('feather', '<path d="M22.5 7C14 8 9.5 14 9.5 24c4-1 11.5-5 13-17z"/><path d="M9.5 24L19 12" stroke="#c42a78" stroke-width="1.2"/>'),
+  tCloud: orb('cloud', '<path d="M10.5 22.5a4.6 4.6 0 0 1-.4-9.2 6.3 6.3 0 0 1 12-1.4 5.3 5.3 0 0 1 .6 10.6z"/>'),
   tbDogdex: orb('dogdex', '<rect x="8" y="8" width="7" height="7" rx="1.6"/><rect x="17" y="8" width="7" height="7" rx="1.6"/><rect x="8" y="17" width="7" height="7" rx="1.6"/><rect x="17" y="17" width="7" height="7" rx="1.6"/>'),
   tbPark: orb('park', '<circle cx="16" cy="12.5" r="6.5"/><circle cx="11.5" cy="15" r="4"/><circle cx="20.5" cy="15" r="4"/><rect x="14.8" y="17" width="2.4" height="8" rx="1"/>'),
   tbProgress: orb('progress', '<rect x="8" y="17" width="4" height="8" rx="1"/><rect x="14" y="12" width="4" height="13" rx="1"/><rect x="20" y="8" width="4" height="17" rx="1"/>'),
-  fLife: orb('life', '<path d="M10 7h12M10 25h12" stroke="#fff" stroke-width="2"/><path d="M11 8c0 5 5 6 5 8s-5 3-5 8h10c0-5-5-6-5-8s5-3 5-8z"/>'),
-  wFeather: orb('w1', `<path d="M23 7C14 8 9 14 9 24c5-1 13-6 14-17z"/><path d="M8 25L19 11" ${SHADE}/>`),
+  // Lifespan: a white clock face on a silver bezel at 10:10, like the Mac clock.
+  fLife: {
+    size: 32,
+    d: `<circle cx="16" cy="16" r="15" fill="url(#aq-clock)" stroke="rgba(0,0,0,0.35)" stroke-width="0.8"/><circle cx="16" cy="16" r="11" fill="#fff" stroke="rgba(0,0,0,0.25)" stroke-width="0.8"/>${TICKS}<path d="M16 16L11.4 13.3" stroke="#1d2433" stroke-width="2.6" stroke-linecap="round"/><path d="M16 16L22.6 12.2" stroke="#1d2433" stroke-width="2" stroke-linecap="round"/><path d="M16 16l-3 6" stroke="#e0262a" stroke-width="1" stroke-linecap="round"/><circle cx="16" cy="16" r="1.4" fill="#e0262a"/><ellipse cx="16" cy="9.5" rx="10.5" ry="6.5" fill="url(#aq-shine)" opacity="0.7"/>`,
+  },
+  wFeather: orb('w1', `<path d="M23 7C14 8 9 14 9 24c5-1 13-6 14-17z"/><path d="M8 25L19 11" stroke="rgba(0,0,0,0.3)" stroke-width="1.2" fill="none"/>`),
   wLight: orb('w2', '<rect x="11" y="15" width="10" height="2.4" rx="1"/><rect x="8" y="11.5" width="3.5" height="9" rx="1.2"/><rect x="20.5" y="11.5" width="3.5" height="9" rx="1.2"/>'),
   wMiddle: orb('w3', '<path d="M12 16v-4a4 4 0 0 1 8 0v4" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="16" cy="19.5" r="6.5"/>'),
   wCruiser: orb('w4', '<rect x="5" y="15" width="22" height="2.2" rx="1"/><rect x="8.5" y="10" width="3.5" height="12" rx="1.2"/><rect x="20" y="10" width="3.5" height="12" rx="1.2"/>'),
   wHeavy: orb('w5', '<rect x="4" y="15" width="24" height="2.2" rx="1"/><rect x="6.5" y="8" width="3.5" height="16" rx="1.2"/><rect x="10.5" y="10.5" width="2.8" height="11" rx="1"/><rect x="18.7" y="10.5" width="2.8" height="11" rx="1"/><rect x="22" y="8" width="3.5" height="16" rx="1.2"/>'),
   wSuper: orb('w6', '<path d="M12.5 13a3.5 3.5 0 0 1 7 0" fill="none" stroke="#fff" stroke-width="2.2"/><path d="M10 13h12l4 11H6z"/><text x="16" y="22" font-size="6.5" font-weight="bold" font-family="Helvetica, Arial, sans-serif" text-anchor="middle" fill="#1c1e26">1T</text>'),
-  flagGB: flag(`<rect width="32" height="32" fill="#1f3f8f"/>${UNION}`),
-  flagDE: flag('<rect width="32" height="11" fill="#111"/><rect y="11" width="32" height="10" fill="#dd0000"/><rect y="21" width="32" height="11" fill="#ffce00"/>'),
-  flagSCT: flag('<rect width="32" height="32" fill="#0065bd"/><path d="M0 0L32 32M32 0L0 32" stroke="#fff" stroke-width="5"/>'),
-  flagFR: flag('<rect width="11" height="32" fill="#0055a4"/><rect x="11" width="10" height="32" fill="#fff"/><rect x="21" width="11" height="32" fill="#ef4135"/>'),
-  flagJP: flag('<rect width="32" height="32" fill="#fff"/><circle cx="16" cy="16" r="7" fill="#bc002d"/>'),
-  flagIE: flag('<rect width="11" height="32" fill="#169b62"/><rect x="11" width="10" height="32" fill="#fff"/><rect x="21" width="11" height="32" fill="#ff883e"/>'),
-  flagCH: flag('<rect width="32" height="32" fill="#da291c"/><path d="M13.5 8h5v5.5H24v5h-5.5V24h-5v-5.5H8v-5h5.5z" fill="#fff"/>'),
-  flagAU: flag(`<rect width="32" height="32" fill="#012169"/><g transform="scale(0.5)">${UNION}</g><g fill="#fff"><circle cx="8" cy="24" r="2.4"/><circle cx="24" cy="9" r="1.4"/><circle cx="20" cy="16" r="1.4"/><circle cx="27" cy="15" r="1.4"/><circle cx="24" cy="25" r="1.6"/></g>`),
-  flagUS: flag('<rect width="32" height="32" fill="#fff"/><g fill="#b22234"><rect width="32" height="2.5"/><rect y="5" width="32" height="2.5"/><rect y="10" width="32" height="2.5"/><rect y="15" width="32" height="2.5"/><rect y="20" width="32" height="2.5"/><rect y="25" width="32" height="2.5"/><rect y="30" width="32" height="2.5"/></g><rect width="15" height="17.5" fill="#3c3b6e"/><g fill="#fff"><circle cx="4" cy="4" r="1"/><circle cx="8" cy="4" r="1"/><circle cx="12" cy="4" r="1"/><circle cx="6" cy="8.5" r="1"/><circle cx="10" cy="8.5" r="1"/><circle cx="4" cy="13" r="1"/><circle cx="8" cy="13" r="1"/><circle cx="12" cy="13" r="1"/></g>'),
 } satisfies IconSet
 

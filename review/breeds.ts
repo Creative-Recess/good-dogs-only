@@ -5,6 +5,11 @@ import type { Breed } from '../src/data/types.ts'
 import { bodyOf, drawDog, type Dog, type DogState } from '../src/park/dog.ts'
 import { THEMES } from '../src/theme/themes.ts'
 import reviewed from './reviewed.json' with { type: 'json' }
+import factsFile from '../data/breed-facts.json' with { type: 'json' }
+import { countryName } from '../src/data/countries.ts'
+import { range, weightClass } from '../src/data/facts.ts'
+
+const factSources = factsFile.breeds as Record<string, { src?: string }>
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!)
 const $ = <T extends HTMLElement>(sel: string) => document.querySelector<T>(sel)!
@@ -66,6 +71,7 @@ function checks(b: Breed, m: MaskReport): string[] {
   if (m.edge > 0.45) out.push('dog runs off the edges of the grid crop')
   if (m.coverage < 0.05) out.push('dog is tiny in the grid crop')
   if (b.image && b.image.width < 640) out.push(`small photo (${b.image.width}px wide)`)
+  if (!b.facts) out.push('no breed facts')
   return out
 }
 
@@ -93,6 +99,14 @@ function drawParkDog(canvas: HTMLCanvasElement, b: Breed) {
   }
 }
 
+/** The breed's facts as the breed window shows them, with the weight class spelled out and the source to check against. */
+function factsLine(b: Breed): string {
+  const f = b.facts
+  if (!f) return '<p class="facts missing">No breed facts yet</p>'
+  const src = factSources[b.id]?.src
+  return `<p class="facts"><b>${range(f.kg)} kg</b> (${weightClass(f.kg).name}) · <b>${range(f.life)} yrs</b> · <b>${esc(countryName(f.origin))}</b> <code>${f.origin}</code> · ${esc(f.job)}${src ? ` · <a href="${esc(src)}" target="_blank" rel="noopener">source</a>` : ''}</p>`
+}
+
 function card(b: Breed): string {
   const g = groupById.get(b.groupId)!
   const [fx, fy] = b.image?.focus ?? [0.5, 0.5]
@@ -115,6 +129,7 @@ function card(b: Breed): string {
       <figure class="park"><canvas width="230" height="120" aria-label="Park dog"></canvas><figcaption>Park: ${s.size} · ${s.build.replace('_', ' ')} · snout ${s.snout} · ${s.ears} ears · ${s.tail} tail · ${s.coat} coat · ${s.colour}${s.markings === 'solid' ? '' : ` ${s.markings.replace('_', ' ')}`}${s.mask ? ' · mask' : ''}</figcaption></figure>
     </div>
     <p class="about"><b>${b.traits.map(esc).join(' · ')}</b> ${esc(b.text)}</p>
+    ${factsLine(b)}
     <p class="source">Photo: ${fromDA ? 'Dogs Australia' : esc(b.credit?.author ?? 'none')}${b.credit?.sourceUrl ? ` · <a href="${esc(b.credit.sourceUrl)}" target="_blank" rel="noopener">source</a>` : ''} · <code>${b.id}</code></p>
   </article>`
 }

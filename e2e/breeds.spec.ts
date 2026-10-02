@@ -38,16 +38,22 @@ test('filters by group', async ({ page }) => {
   await expect(tiles(page)).toHaveCount(inGroup('bonus'))
 })
 
-test('shows a breed with its photo, group, temperament and text', async ({ page }) => {
+test('shows a breed with its photo, group and profile', async ({ page }) => {
   await openBreed(page, 'Staffordshire Bull Terrier')
   const w = page.getByRole('dialog', { name: 'Staffordshire Bull Terrier' })
   await expect(w.getByRole('img', { name: 'Staffordshire Bull Terrier' })).toBeVisible()
   await expect(w.locator('.photo-strip')).toContainText('Terriers')
   await expect(w.locator('.photo-strip')).toContainText(`#${dexNo('Staffordshire Bull Terrier')}`)
-  await expect(w.getByText('Also called Staffy')).toBeVisible()
+  const rows = w.locator('.dex-facts')
+  await expect(rows.locator('div', { hasText: 'Also called' })).toContainText('Staffy')
+  await expect(rows.locator('div', { hasText: 'Weight' })).toContainText(/\d+–\d+ kg/)
+  await expect(rows.locator('div', { hasText: 'Lifespan' })).toContainText(/yrs/)
+  await expect(rows.locator('div', { hasText: 'From' })).toContainText('England')
   await expect(w.getByRole('link', { name: 'Official breed standard' })).toHaveAttribute('href', /dogsaustralia\.org\.au/)
   await expect(w.locator('.chip')).toHaveCount(3)
-  await expect(w.locator('.textbox')).not.toBeEmpty()
+  // The description, then what the breed was bred for.
+  await expect(w.locator('.textbox p')).toHaveCount(2)
+  await expect(w.locator('.textbox p').nth(1)).toContainText(/^Bred/)
   await w.getByRole('button', { name: 'Close' }).click()
   await expect(w).toBeHidden()
 })
@@ -74,5 +80,12 @@ test('the tabs work from the keyboard', async ({ page }) => {
 
 test('short nicknames that are part of the name still show', async ({ page }) => {
   await openBreed(page, 'Cavalier King Charles Spaniel')
-  await expect(page.getByRole('dialog').getByText('Also called Cavalier, Cav')).toBeVisible()
+  await expect(page.getByRole('dialog').locator('.dex-facts div', { hasText: 'Also called' })).toContainText('Cavalier, Cav')
+})
+
+test('leaves out the Also called row when a breed has no nicknames', async ({ page }) => {
+  await openBreed(page, 'Japanese Chin')
+  const rows = page.getByRole('dialog').locator('.dex-facts')
+  await expect(rows).toContainText('Weight')
+  await expect(rows).not.toContainText('Also called')
 })

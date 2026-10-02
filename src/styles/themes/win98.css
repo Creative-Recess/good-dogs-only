@@ -109,7 +109,9 @@ fieldset { min-width: 0; }
 /* Profile: temperament, then the dex rows and the standard link. */
 .profile .fold-body, fieldset.profile { display: grid; gap: 8px; justify-items: stretch; }
 .profile > .standard-link, .profile .fold-body > .standard-link { justify-self: start; font-size: 10.5px; }
-.textbox .cross { display: block; margin-top: 4px; opacity: 0.75; }
+.textbox p { margin: 0; }
+.textbox p + p { margin-top: 6px; }
+.textbox .cross { opacity: 0.75; }
 .dex-facts { margin: 0; display: grid; font-size: 11px; }
 .dex-facts > div { display: grid; grid-template-columns: 74px 1fr; align-items: center; gap: 8px; padding: 4px 2px; border-bottom: 1px solid #808080; }
 .dex-facts > div:last-child { border-bottom: 0; }

@@ -1,5 +1,5 @@
-// The breed window: photo, names, temperament and whether you've spotted it.
-import { useRef, useState } from 'react'
+// The breed window: photo, its profile (temperament, names and facts) and whether you've spotted it.
+import { useRef, useState, type ReactNode } from 'react'
 import { GROUP_COLOUR, groupById, TOTAL } from '../data/catalogue.ts'
 import type { Breed } from '../data/types.ts'
 import { formatDay } from '../lib/dates.ts'
@@ -12,8 +12,9 @@ import { useTheme } from '../theme/store.ts'
 import { isAquaFamily } from '../theme/themes.ts'
 import { useDialog } from './dialogs.ts'
 import { NoteField } from './NoteField.tsx'
-import { COUNTRY, FACTS, weightClass } from '../data/facts.ts'
-import type { IconName } from '../ui/icons/types.ts'
+import { countryName } from '../data/countries.ts'
+import { range, weightClass } from '../data/facts.ts'
+import { Flag } from '../ui/Flag.tsx'
 import { Section } from './Section.tsx'
 
 /** Which fold-away sections are open (Aqua). They stay as you left them as you move between breeds. */
@@ -35,17 +36,18 @@ export function BreedWindow({ breed: b, spotted, spottedCount, onClose, folds, o
   // Nicknames, short forms included (Cavalier, Bichon); only one that's simply the breed's name is left out.
   const aka = b.aliases.filter((a) => a.toLowerCase() !== b.name.toLowerCase()).slice(0, 4)
   const [fx, fy] = b.image?.focus ?? [0.5, 0.5]
+  // Bonus entries say what they are, under the description.
   const cross = b.parents ? `Cross of ${b.parents[0]} x ${b.parents[1]}. Not recognised by Dogs Australia.` : b.about ? `${b.about} Not recognised by Dogs Australia.` : null
-  const facts = FACTS[b.id]
+  const f = b.facts
   // Dex rows: a row is left out when there's nothing to show (no nicknames, no official name).
-  const rows: { label: string; value: string; icon?: IconName; title?: string }[] = [
+  const rows: { label: string; value: string; icon?: ReactNode; title?: string }[] = [
     ...(aka.length ? [{ label: 'Also called', value: aka.join(', ') }] : []),
     ...(b.officialName ? [{ label: 'Official name', value: b.officialName }] : []),
-    ...(facts
+    ...(f
       ? [
-          { label: 'Weight', value: `${facts.kg[0]}–${facts.kg[1]} kg`, icon: weightClass(facts.kg).icon, title: weightClass(facts.kg).name },
-          { label: 'Lifespan', value: facts.life, icon: 'fLife' as const },
-          { label: 'From', value: COUNTRY[facts.origin].short, icon: COUNTRY[facts.origin].icon, title: COUNTRY[facts.origin].name },
+          { label: 'Weight', value: `${range(f.kg)} kg`, icon: <Icon name={weightClass(f.kg).icon} />, title: weightClass(f.kg).name },
+          { label: 'Lifespan', value: `${range(f.life)} yrs`, icon: <Icon name="fLife" /> },
+          { label: 'From', value: countryName(f.origin), icon: <Flag code={f.origin} /> },
         ]
       : []),
   ]
@@ -102,9 +104,9 @@ export function BreedWindow({ breed: b, spotted, spottedCount, onClose, folds, o
             ))}
           </div>
           <div className="textbox">
-            {b.text}
-            {facts && ` ${facts.job}`}
-            {cross && <span className="cross">{cross}</span>}
+            <p>{b.text}</p>
+            {f && <p>{f.job}</p>}
+            {cross && <p className="cross">{cross}</p>}
           </div>
           {rows.length > 0 && (
             <dl className="dex-facts">
@@ -112,7 +114,7 @@ export function BreedWindow({ breed: b, spotted, spottedCount, onClose, folds, o
                 <div key={r.label}>
                   <dt>{r.label}</dt>
                   <dd title={r.title}>
-                    {r.icon && <Icon name={r.icon} />}
+                    {r.icon}
                     {r.value}
                   </dd>
                 </div>

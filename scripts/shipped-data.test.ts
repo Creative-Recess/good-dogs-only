@@ -2,6 +2,7 @@ import { existsSync, readdirSync, statSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import picksFile from '../data/photo-picks.json' with { type: 'json' }
 import shipped from '../src/data/breeds.json' with { type: 'json' }
+import { COUNTRIES } from '../src/data/countries.ts'
 import { TRAITS, type Breed } from '../src/data/types.ts'
 import { isAllowedLicence } from './lib/licences.ts'
 
@@ -11,6 +12,19 @@ const publicPath = (p: string) => new URL(`../public${p}`, import.meta.url)
 const NO_PHOTO: string[] = []
 
 describe('src/data/breeds.json', () => {
+  it('has breed facts for every breed, in sensible ranges', () => {
+    for (const b of breeds) {
+      const f = b.facts
+      expect(f, b.id).toBeDefined()
+      if (!f) continue
+      expect(f.kg[0] > 0 && f.kg[0] <= f.kg[1] && f.kg[1] <= 100, `${b.id} kg ${f.kg}`).toBe(true)
+      expect(f.life[0] >= 5 && f.life[0] <= f.life[1] && f.life[1] <= 22, `${b.id} life ${f.life}`).toBe(true)
+      expect(COUNTRIES[f.origin], `${b.id} origin ${f.origin} has no flag`).toBeDefined()
+      expect(f.job, b.id).toMatch(/^[A-Z].{10,110}\.$/)
+      expect(f.job, `${b.id}: no em or en dashes`).not.toMatch(/[\u2013\u2014]/)
+    }
+  })
+
   it('ships all 239 entries with unique ids', () => {
     expect(breeds).toHaveLength(239)
     expect(new Set(breeds.map((b) => b.id)).size).toBe(239)

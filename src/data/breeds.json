@@ -71,6 +71,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     3,
+     6
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "DE",
+    "job": "Bred to catch rats in kitchens and stables; the name means 'monkey terrier'."
+   },
    "image": {
     "grid": "/breeds/affenpinscher-3282fa8d-grid.webp",
     "detail": "/breeds/affenpinscher-3282fa8d.webp",
@@ -121,6 +133,18 @@
     "markings": "tan_points",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     4,
+     5
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "AU",
+    "job": "Bred in Australia as a companion, crossing Yorkshire and Australian Terriers."
+   },
    "image": {
     "grid": "/breeds/australian-silky-terrier-05526e96-grid.webp",
     "detail": "/breeds/australian-silky-terrier-05526e96.webp",
@@ -170,6 +194,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     5,
+     8
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "FR",
+    "job": "Bred as a cheerful lap dog, a favourite of French and Spanish nobility."
+   },
    "image": {
     "grid": "/breeds/bichon-frise-4f5a2e68-grid.webp",
     "detail": "/breeds/bichon-frise-4f5a2e68.webp",
@@ -217,6 +253,18 @@
     "markings": "tricolour",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     2,
+     3.5
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "DE",
+    "job": "Bred in Germany in 1984 as a companion, from tri-coloured Yorkshire Terriers."
+   },
    "image": {
     "grid": "/breeds/biewer-terrier-14d47bfe-grid.webp",
     "detail": "/breeds/biewer-terrier-14d47bfe.webp",
@@ -262,6 +310,18 @@
     "colour": "white",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     2.5,
+     4
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "IT",
+    "job": "Bred as a lap dog for nobles, named after the Italian city of Bologna."
    },
    "image": {
     "grid": "/breeds/bolognese-25881226-grid.webp",
@@ -314,6 +374,18 @@
     "markings": "parti",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     5,
+     8
+    ],
+    "life": [
+     10,
+     14
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred as a lap dog, recreating the toy spaniels seen in old royal portraits."
+   },
    "image": {
     "grid": "/breeds/cavalier-king-charles-spaniel-532c3e45-grid.webp",
     "detail": "/breeds/cavalier-king-charles-spaniel-532c3e45.webp",
@@ -364,6 +436,18 @@
     "colour": "gold",
     "markings": "white_markings",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     1.5,
+     3
+    ],
+    "life": [
+     12,
+     16
+    ],
+    "origin": "MX",
+    "job": "Bred as a companion, named after the Mexican state of Chihuahua."
    },
    "image": {
     "grid": "/breeds/chihuahua-long-coat-72f9e6a0-grid.webp",
@@ -416,6 +500,18 @@
     "markings": "tricolour",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     1.5,
+     3
+    ],
+    "life": [
+     12,
+     16
+    ],
+    "origin": "MX",
+    "job": "Bred as a companion, named after the Mexican state of Chihuahua."
+   },
    "image": {
     "grid": "/breeds/chihuahua-smooth-coat-415bc840-grid.webp",
     "detail": "/breeds/chihuahua-smooth-coat-415bc840.webp",
@@ -466,6 +562,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     3.5,
+     5.5
+    ],
+    "life": [
+     13,
+     16
+    ],
+    "origin": "CN",
+    "job": "Bred as a companion, and said to have hunted rats aboard trading ships."
+   },
    "image": {
     "grid": "/breeds/chinese-crested-dog-cfde53de-grid.webp",
     "detail": "/breeds/chinese-crested-dog-cfde53de.webp",
@@ -515,6 +623,18 @@
     "colour": "white",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     3.5,
+     6
+    ],
+    "life": [
+     14,
+     16
+    ],
+    "origin": "MG",
+    "job": "Bred as a companion in Madagascar; 'coton' means cotton, for its soft coat."
    },
    "image": {
     "grid": "/breeds/coton-de-tulear-4355755f-grid.webp",
@@ -567,6 +687,18 @@
     "markings": "tan_points",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     2.5,
+     4
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to catch rats, including in Victorian rat-pit contests."
+   },
    "image": {
     "grid": "/breeds/english-toy-terrier-black-and-tan-b5d7e016-grid.webp",
     "detail": "/breeds/english-toy-terrier-black-and-tan-b5d7e016.webp",
@@ -617,6 +749,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     3.5,
+     6
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "BE",
+    "job": "Bred to keep Brussels stables free of rats, later a pampered companion."
+   },
    "image": {
     "grid": "/breeds/griffon-bruxellois-d14ac772-grid.webp",
     "detail": "/breeds/griffon-bruxellois-d14ac772.webp",
@@ -663,6 +807,18 @@
     "colour": "cream",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     3,
+     6
+    ],
+    "life": [
+     14,
+     16
+    ],
+    "origin": "CU",
+    "job": "Bred as a companion for Cuban aristocrats; Cuba's national dog."
    },
    "image": {
     "grid": "/breeds/havanese-2854236e-grid.webp",
@@ -714,6 +870,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     3.5,
+     5
+    ],
+    "life": [
+     14,
+     15
+    ],
+    "origin": "IT",
+    "job": "Bred as a companion for nobles, a mini sighthound that may also have hunted."
+   },
    "image": {
     "grid": "/breeds/italian-greyhound-09379774-grid.webp",
     "detail": "/breeds/italian-greyhound-09379774.webp",
@@ -760,6 +928,18 @@
     "colour": "black",
     "markings": "parti",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     3,
+     5
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "JP",
+    "job": "Bred as a lap dog for Japanese nobility and the imperial court."
    },
    "image": {
     "grid": "/breeds/japanese-chin-141435c0-grid.webp",
@@ -810,6 +990,18 @@
     "colour": "black",
     "markings": "tricolour",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     3.5,
+     6.5
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred as a royal lap dog, named after King Charles II of England."
    },
    "image": {
     "grid": "/breeds/king-charles-spaniel-fa02f1c2-grid.webp",
@@ -862,6 +1054,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     4,
+     8
+    ],
+    "life": [
+     13,
+     15
+    ],
+    "origin": "FR",
+    "job": "Bred as a companion, clipped to look like a little lion; 'Lowchen' means little lion."
+   },
    "image": {
     "grid": "/breeds/lowchen-little-lion-dog-134b5ce2-grid.webp",
     "detail": "/breeds/lowchen-little-lion-dog-134b5ce2.webp",
@@ -908,6 +1112,18 @@
     "colour": "white",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     2,
+     4
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "IT",
+    "job": "Bred as a lap dog in the Mediterranean, prized by Roman and Greek nobles."
    },
    "image": {
     "grid": "/breeds/maltese-a6a0c1ce-grid.webp",
@@ -959,6 +1175,18 @@
     "markings": "tan_points",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     3.5,
+     5
+    ],
+    "life": [
+     12,
+     16
+    ],
+    "origin": "DE",
+    "job": "Bred to hunt rats in homes and stables; not a mini Dobermann, it is older."
+   },
    "image": {
     "grid": "/breeds/miniature-pinscher-45a34620-grid.webp",
     "detail": "/breeds/miniature-pinscher-45a34620.webp",
@@ -1005,6 +1233,18 @@
     "colour": "red",
     "markings": "parti",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     2.5,
+     4.5
+    ],
+    "life": [
+     14,
+     16
+    ],
+    "origin": "FR",
+    "job": "Bred as a lap dog for royals; 'papillon' is French for butterfly, after its ears."
    },
    "image": {
     "grid": "/breeds/papillon-f54e2f86-grid.webp",
@@ -1053,6 +1293,18 @@
     "colour": "fawn",
     "markings": "solid",
     "mask": true
+   },
+   "facts": {
+    "kg": [
+     3,
+     6.5
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "CN",
+    "job": "Bred as a palace companion for Chinese emperors in the Forbidden City."
    },
    "image": {
     "grid": "/breeds/pekingese-ffb17f00-grid.webp",
@@ -1103,6 +1355,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     1.5,
+     3
+    ],
+    "life": [
+     12,
+     16
+    ],
+    "origin": "DE",
+    "job": "Bred down from larger spitz sledding dogs into a companion, loved by Queen Victoria."
+   },
    "image": {
     "grid": "/breeds/pomeranian-06edc7f0-grid.webp",
     "detail": "/breeds/pomeranian-06edc7f0.webp",
@@ -1152,6 +1416,18 @@
     "markings": "tan_points",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     1.5,
+     3.5
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "CZ",
+    "job": "Bred to hunt rats in Czech royal courts and households."
+   },
    "image": {
     "grid": "/breeds/prague-ratter-cf02976d-grid.webp",
     "detail": "/breeds/prague-ratter-cf02976d.webp",
@@ -1198,6 +1474,18 @@
     "colour": "fawn",
     "markings": "solid",
     "mask": true
+   },
+   "facts": {
+    "kg": [
+     6,
+     8
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "CN",
+    "job": "Bred as a companion for Chinese emperors, later a favourite of Dutch royals."
    },
    "image": {
     "grid": "/breeds/pug-08a44871-grid.webp",
@@ -1250,6 +1538,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     1.5,
+     3
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "RU",
+    "job": "Bred as a companion and watchdog for Russian nobility, also catching rats."
+   },
    "image": {
     "grid": "/breeds/russian-toy-long-haired-577b3430-grid.webp",
     "detail": "/breeds/russian-toy-long-haired-577b3430.webp",
@@ -1301,6 +1601,18 @@
     "markings": "tan_points",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     1.5,
+     3
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "RU",
+    "job": "Bred as a companion and watchdog for Russian nobility, also catching rats."
+   },
    "image": {
     "grid": "/breeds/russian-toy-smooth-haired-d097b61f-grid.webp",
     "detail": "/breeds/russian-toy-smooth-haired-d097b61f.webp",
@@ -1349,6 +1661,18 @@
     "colour": "gold",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     4,
+     7
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "CN",
+    "job": "Bred as a companion and lookout, perched on Tibetan monastery walls."
    },
    "image": {
     "grid": "/breeds/tibetan-spaniel-0ddd1470-grid.webp",
@@ -1399,6 +1723,18 @@
     "markings": "tan_points",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     2,
+     3.5
+    ],
+    "life": [
+     11,
+     15
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to catch rats in Yorkshire's mills and coal mines."
+   },
    "image": {
     "grid": "/breeds/yorkshire-terrier-b5e3f21a-grid.webp",
     "detail": "/breeds/yorkshire-terrier-b5e3f21a.webp",
@@ -1445,6 +1781,18 @@
     "colour": "black",
     "markings": "saddle",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     20,
+     30
+    ],
+    "life": [
+     11,
+     14
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to hunt otters and rats in Yorkshire's Aire valley; the 'King of Terriers'."
    },
    "image": {
     "grid": "/breeds/airedale-terrier-6f63b1a8-grid.webp",
@@ -1493,6 +1841,18 @@
     "colour": "black",
     "markings": "spotted",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     3,
+     6
+    ],
+    "life": [
+     14,
+     16
+    ],
+    "origin": "US",
+    "job": "Bred from a hairless Rat Terrier pup born in Louisiana in 1972, as a ratter."
    },
    "image": {
     "grid": "/breeds/american-hairless-terrier-1f318ea2-grid.webp",
@@ -1545,6 +1905,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     18,
+     32
+    ],
+    "life": [
+     12,
+     16
+    ],
+    "origin": "US",
+    "job": "Bred as a farm dog and companion in the US, from English bull and terrier dogs."
+   },
    "image": {
     "grid": "/breeds/american-staffordshire-terrier-4778e963-grid.webp",
     "detail": "/breeds/american-staffordshire-terrier-4778e963.webp",
@@ -1594,6 +1966,18 @@
     "markings": "tan_points",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     5,
+     7
+    ],
+    "life": [
+     11,
+     15
+    ],
+    "origin": "AU",
+    "job": "Bred to kill snakes and rats on Australian farms and goldfields."
+   },
    "image": {
     "grid": "/breeds/australian-terrier-e474f649-grid.webp",
     "detail": "/breeds/australian-terrier-e474f649.webp",
@@ -1641,6 +2025,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     8,
+     10
+    ],
+    "life": [
+     11,
+     16
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to hunt rats and rabbits in Northumberland mining towns."
+   },
    "image": {
     "grid": "/breeds/bedlington-terrier-10e5ee56-grid.webp",
     "detail": "/breeds/bedlington-terrier-10e5ee56.webp",
@@ -1687,6 +2083,18 @@
     "colour": "red",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     5,
+     7
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB",
+    "job": "Bred to bolt foxes from their dens on the England-Scotland border."
    },
    "image": {
     "grid": "/breeds/border-terrier-6af785b0-grid.webp",
@@ -1736,6 +2144,18 @@
     "colour": "fawn",
     "markings": "brindle",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     22,
+     32
+    ],
+    "life": [
+     12,
+     13
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred as a fighting dog, then refined into the egg-headed 'white cavalier'."
    },
    "image": {
     "grid": "/breeds/bull-terrier-f6b97fa7-grid.webp",
@@ -1787,6 +2207,18 @@
     "markings": "tricolour",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     9,
+     15
+    ],
+    "life": [
+     11,
+     14
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred as a smaller Bull Terrier, originally for catching rats."
+   },
    "image": {
     "grid": "/breeds/bull-terrier-miniature-a75e369f-grid.webp",
     "detail": "/breeds/bull-terrier-miniature-a75e369f.webp",
@@ -1834,6 +2266,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     6,
+     8
+    ],
+    "life": [
+     13,
+     15
+    ],
+    "origin": "GB-SCT",
+    "job": "Bred to hunt foxes and vermin among the stone cairns of the Scottish Highlands."
+   },
    "image": {
     "grid": "/breeds/cairn-terrier-0e8500e9-grid.webp",
     "detail": "/breeds/cairn-terrier-0e8500e9.webp",
@@ -1880,6 +2324,18 @@
     "colour": "blue",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     6,
+     10
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "CZ",
+    "job": "Bred to hunt foxes and badgers in burrows; Czech for 'Bohemian terrier'."
    },
    "image": {
     "grid": "/breeds/cesky-terrier-1c5289e1-grid.webp",
@@ -1931,6 +2387,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     8,
+     11
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB-SCT",
+    "job": "Bred to hunt otters and badgers; named after a character in a Walter Scott novel."
+   },
    "image": {
     "grid": "/breeds/dandie-dinmont-terrier-eb62d808-grid.webp",
     "detail": "/breeds/dandie-dinmont-terrier-eb62d808.webp",
@@ -1979,6 +2447,18 @@
     "colour": "black",
     "markings": "parti",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     7,
+     9
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to bolt foxes from their dens during English fox hunts."
    },
    "image": {
     "grid": "/breeds/fox-terrier-smooth-1e77b192-grid.webp",
@@ -2030,6 +2510,18 @@
     "markings": "tricolour",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     7,
+     9
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to bolt foxes from their dens during English fox hunts."
+   },
    "image": {
     "grid": "/breeds/fox-terrier-wire-25d8d374-grid.webp",
     "detail": "/breeds/fox-terrier-wire-25d8d374.webp",
@@ -2079,6 +2571,18 @@
     "colour": "black",
     "markings": "tan_points",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     7,
+     10
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "DE",
+    "job": "Bred as an all-round hunter of foxes, badgers and boar; also called Jagdterrier."
    },
    "image": {
     "grid": "/breeds/german-hunting-terrier-c8b82740-grid.webp",
@@ -2131,6 +2635,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     14,
+     16
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "IE",
+    "job": "Bred to hunt badgers and vermin in Ireland's Glen of Imaal, County Wicklow."
+   },
    "image": {
     "grid": "/breeds/glen-of-imaal-terrier-293a5fb5-grid.webp",
     "detail": "/breeds/glen-of-imaal-terrier-293a5fb5.webp",
@@ -2177,6 +2693,18 @@
     "colour": "red",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     11,
+     12
+    ],
+    "life": [
+     13,
+     15
+    ],
+    "origin": "IE",
+    "job": "Bred as an all-round farm dog, ratter and guard in Ireland."
    },
    "image": {
     "grid": "/breeds/irish-terrier-3f72b98c-grid.webp",
@@ -2229,6 +2757,18 @@
     "markings": "parti",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     5,
+     6
+    ],
+    "life": [
+     13,
+     16
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to bolt foxes; named after Parson John Russell, refined in Australia."
+   },
    "image": {
     "grid": "/breeds/jack-russell-terrier-8af78a68-grid.webp",
     "detail": "/breeds/jack-russell-terrier-8af78a68.webp",
@@ -2278,6 +2818,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     15,
+     18
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "IE",
+    "job": "Bred as an Irish farm dog to hunt vermin, herd and guard."
+   },
    "image": {
     "grid": "/breeds/kerry-blue-terrier-112dbe49-grid.webp",
     "detail": "/breeds/kerry-blue-terrier-112dbe49.webp",
@@ -2324,6 +2876,18 @@
     "colour": "black",
     "markings": "saddle",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     7,
+     8
+    ],
+    "life": [
+     12,
+     16
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to hunt foxes that raided sheep in England's Lake District."
    },
    "image": {
     "grid": "/breeds/lakeland-terrier-21effd00-grid.webp",
@@ -2372,6 +2936,18 @@
     "markings": "tan_points",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     5,
+     10
+    ],
+    "life": [
+     15,
+     17
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to kill rats in Manchester, including in rat-pit contests."
+   },
    "image": {
     "grid": "/breeds/manchester-terrier-ded36e9a-grid.webp",
     "detail": "/breeds/manchester-terrier-ded36e9a.webp",
@@ -2419,6 +2995,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     5,
+     6
+    ],
+    "life": [
+     12,
+     16
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to hunt rats and bolt foxes in East Anglia; ears fold over, unlike the Norwich."
+   },
    "image": {
     "grid": "/breeds/norfolk-terrier-f3a6675f-grid.webp",
     "detail": "/breeds/norfolk-terrier-f3a6675f.webp",
@@ -2465,6 +3053,18 @@
     "colour": "red",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     5,
+     6
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to hunt rats on farms in East Anglia; ears prick up, unlike the Norfolk."
    },
    "image": {
     "grid": "/breeds/norwich-terrier-e8d3df92-grid.webp",
@@ -2516,6 +3116,18 @@
     "markings": "parti",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     6,
+     8
+    ],
+    "life": [
+     13,
+     15
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to run with foxhounds and bolt foxes; named after Parson John Russell."
+   },
    "image": {
     "grid": "/breeds/parson-russell-terrier-55f1f5c5-grid.webp",
     "detail": "/breeds/parson-russell-terrier-55f1f5c5.webp",
@@ -2566,6 +3178,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     8,
+     10
+    ],
+    "life": [
+     11,
+     13
+    ],
+    "origin": "GB-SCT",
+    "job": "Bred to hunt foxes, badgers and rats in the Scottish Highlands."
+   },
    "image": {
     "grid": "/breeds/scottish-terrier-6d334e1a-grid.webp",
     "detail": "/breeds/scottish-terrier-6d334e1a.webp",
@@ -2613,6 +3237,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     8,
+     11
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "GB-WLS",
+    "job": "Bred to hunt otters, badgers and foxes at Sealyham House in Wales."
+   },
    "image": {
     "grid": "/breeds/sealyham-terrier-c0f21a05-grid.webp",
     "detail": "/breeds/sealyham-terrier-c0f21a05.webp",
@@ -2659,6 +3295,18 @@
     "colour": "blue",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     11,
+     18
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB-SCT",
+    "job": "Bred to hunt foxes and otters on the Isle of Skye; Greyfriars Bobby was one."
    },
    "image": {
     "grid": "/breeds/skye-terrier-0213a1e9-grid.webp",
@@ -2709,6 +3357,18 @@
     "colour": "cream",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     14,
+     18
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "IE",
+    "job": "Bred as an Irish farm dog to hunt vermin, herd and guard."
    },
    "image": {
     "grid": "/breeds/soft-coated-wheaten-terrier-e8376603-grid.webp",
@@ -2761,6 +3421,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     11,
+     17
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred in Staffordshire from bulldogs and terriers, first as a fighting dog."
+   },
    "image": {
     "grid": "/breeds/staffordshire-bull-terrier-7aca928a-grid.webp",
     "detail": "/breeds/staffordshire-bull-terrier-7aca928a.webp",
@@ -2810,6 +3482,18 @@
     "markings": "parti",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     4,
+     6
+    ],
+    "life": [
+     12,
+     16
+    ],
+    "origin": "AU",
+    "job": "Bred as a ratter and family dog in rural Australia; once called the Mini Foxie."
+   },
    "image": {
     "grid": "/breeds/tenterfield-terrier-79cd7486-grid.webp",
     "detail": "/breeds/tenterfield-terrier-79cd7486.webp",
@@ -2856,6 +3540,18 @@
     "colour": "black",
     "markings": "saddle",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     9,
+     10
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB-WLS",
+    "job": "Bred to hunt foxes, badgers and otters in Wales."
    },
    "image": {
     "grid": "/breeds/welsh-terrier-08fc5b2a-grid.webp",
@@ -2907,6 +3603,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     7,
+     9
+    ],
+    "life": [
+     13,
+     15
+    ],
+    "origin": "GB-SCT",
+    "job": "Bred to hunt foxes and rats; bred white so hunters would not mistake it for a fox."
+   },
    "image": {
     "grid": "/breeds/west-highland-white-terrier-de30e149-grid.webp",
     "detail": "/breeds/west-highland-white-terrier-de30e149.webp",
@@ -2953,6 +3661,18 @@
     "colour": "red",
     "markings": "parti",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     25,
+     40
+    ],
+    "life": [
+     10,
+     14
+    ],
+    "origin": "IT",
+    "job": "Bred to point and retrieve game birds, one of Europe's oldest pointing breeds."
    },
    "image": {
     "grid": "/breeds/bracco-italiano-27fc9f86-grid.webp",
@@ -3002,6 +3722,18 @@
     "colour": "red",
     "markings": "parti",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     14,
+     18
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "FR",
+    "job": "Bred to point and retrieve game birds in the French region of Brittany."
    },
    "image": {
     "grid": "/breeds/brittany-322ded82-grid.webp",
@@ -3053,6 +3785,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     25,
+     36
+    ],
+    "life": [
+     10,
+     13
+    ],
+    "origin": "US",
+    "job": "Bred to retrieve ducks from the icy waters of Chesapeake Bay."
+   },
    "image": {
     "grid": "/breeds/chesapeake-bay-retriever-41b6ff52-grid.webp",
     "detail": "/breeds/chesapeake-bay-retriever-41b6ff52.webp",
@@ -3099,6 +3843,18 @@
     "colour": "white",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     25,
+     39
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to flush and retrieve game, named after Clumber Park in Nottinghamshire."
    },
    "image": {
     "grid": "/breeds/clumber-spaniel-d0a46750-grid.webp",
@@ -3149,6 +3905,18 @@
     "colour": "blue",
     "markings": "spotted",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     12,
+     15
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to flush woodcock for hunters, which is how the cocker got its name."
    },
    "image": {
     "grid": "/breeds/cocker-spaniel-1621cf3c-grid.webp",
@@ -3201,6 +3969,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     9,
+     14
+    ],
+    "life": [
+     10,
+     14
+    ],
+    "origin": "US",
+    "job": "Bred as a smaller American spaniel to flush quail and other small game birds."
+   },
    "image": {
     "grid": "/breeds/cocker-spaniel-american-c2104e1e-grid.webp",
     "detail": "/breeds/cocker-spaniel-american-c2104e1e.webp",
@@ -3251,6 +4031,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     27,
+     36
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to retrieve game on land and water, with a tight waterproof curly coat."
+   },
    "image": {
     "grid": "/breeds/curly-coated-retriever-a7dbb0ef-grid.webp",
     "detail": "/breeds/curly-coated-retriever-a7dbb0ef.webp",
@@ -3297,6 +4089,18 @@
     "colour": "chocolate",
     "markings": "spotted",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     25,
+     36
+    ],
+    "life": [
+     12,
+     13
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to find game birds and crouch, or \"set\", to show the hunter where they are."
    },
    "image": {
     "grid": "/breeds/english-setter-5345b4f3-grid.webp",
@@ -3349,6 +4153,18 @@
     "markings": "parti",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     20,
+     25
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to spring game birds into the air for the hunter, then retrieve them."
+   },
    "image": {
     "grid": "/breeds/english-springer-spaniel-0aa1e856-grid.webp",
     "detail": "/breeds/english-springer-spaniel-0aa1e856.webp",
@@ -3395,6 +4211,18 @@
     "colour": "chocolate",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     16,
+     23
+    ],
+    "life": [
+     12,
+     13
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to flush and retrieve game birds from thick cover."
    },
    "image": {
     "grid": "/breeds/field-spaniel-2365e30d-grid.webp",
@@ -3446,6 +4274,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     25,
+     36
+    ],
+    "life": [
+     8,
+     10
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred as a gamekeeper's dog to retrieve shot game on land and water."
+   },
    "image": {
     "grid": "/breeds/flat-coated-retriever-6c3c7f9f-grid.webp",
     "detail": "/breeds/flat-coated-retriever-6c3c7f9f.webp",
@@ -3495,6 +4335,18 @@
     "colour": "chocolate",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     20,
+     32
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "DE",
+    "job": "Bred as an all-round hunter to point, track and retrieve on land and water."
    },
    "image": {
     "grid": "/breeds/german-shorthaired-pointer-ec1cc2d6-grid.webp",
@@ -3546,6 +4398,18 @@
     "markings": "spotted",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     23,
+     32
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "DE",
+    "job": "Bred as a tough all-weather hunter to point and retrieve, with a wiry coat."
+   },
    "image": {
     "grid": "/breeds/german-wirehaired-pointer-4628e207-grid.webp",
     "detail": "/breeds/german-wirehaired-pointer-4628e207.webp",
@@ -3593,6 +4457,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     25,
+     34
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "GB-SCT",
+    "job": "Bred in the Scottish Highlands to retrieve shot waterfowl and game birds."
+   },
    "image": {
     "grid": "/breeds/golden-retriever-0e4a69e1-grid.webp",
     "detail": "/breeds/golden-retriever-0e4a69e1.webp",
@@ -3639,6 +4515,18 @@
     "colour": "black",
     "markings": "tan_points",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     20,
+     36
+    ],
+    "life": [
+     12,
+     13
+    ],
+    "origin": "GB-SCT",
+    "job": "Bred to find and point grouse, named after the Duke of Gordon's Scottish kennels."
    },
    "image": {
     "grid": "/breeds/gordon-setter-22617b64-grid.webp",
@@ -3688,6 +4576,18 @@
     "colour": "red",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     20,
+     30
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "HU",
+    "job": "Bred to point and retrieve game for Hungarian hunters on the open plains."
    },
    "image": {
     "grid": "/breeds/hungarian-vizsla-950c2a70-grid.webp",
@@ -3739,6 +4639,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     20,
+     30
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "HU",
+    "job": "Bred as a heavier-coated Vizsla for hunting in cold weather and icy water."
+   },
    "image": {
     "grid": "/breeds/hungarian-wirehaired-vizsla-c2754e8d-grid.webp",
     "detail": "/breeds/hungarian-wirehaired-vizsla-c2754e8d.webp",
@@ -3786,6 +4698,18 @@
     "colour": "red",
     "markings": "parti",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     25,
+     32
+    ],
+    "life": [
+     11,
+     13
+    ],
+    "origin": "IE",
+    "job": "Bred to find and point game birds, and is older than the solid red Irish Setter."
    },
    "image": {
     "grid": "/breeds/irish-red-and-white-setter-24346cb2-grid.webp",
@@ -3836,6 +4760,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     27,
+     32
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "IE",
+    "job": "Bred to find and point game birds across open Irish countryside."
+   },
    "image": {
     "grid": "/breeds/irish-setter-23cee8be-grid.webp",
     "detail": "/breeds/irish-setter-23cee8be.webp",
@@ -3884,6 +4820,18 @@
     "colour": "chocolate",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     20,
+     30
+    ],
+    "life": [
+     12,
+     13
+    ],
+    "origin": "IE",
+    "job": "Bred to retrieve ducks and other waterfowl from Irish bogs and rivers."
    },
    "image": {
     "grid": "/breeds/irish-water-spaniel-668fdd19-grid.webp",
@@ -3934,6 +4882,18 @@
     "markings": "spotted",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     29,
+     39
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "IT",
+    "job": "Bred to point and retrieve game in rough, thorny Italian scrubland."
+   },
    "image": {
     "grid": "/breeds/italian-spinone-a4f47cea-grid.webp",
     "detail": "/breeds/italian-spinone-a4f47cea.webp",
@@ -3982,6 +4942,18 @@
     "colour": "gold",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     25,
+     36
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "GB",
+    "job": "Bred to retrieve shot game, from fishermen's dogs brought over from Newfoundland."
    },
    "image": {
     "grid": "/breeds/labrador-retriever-0d6d043a-grid.webp",
@@ -4032,6 +5004,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     11,
+     16
+    ],
+    "life": [
+     15,
+     17
+    ],
+    "origin": "IT",
+    "job": "Bred as a water retriever in Romagna, now famous for sniffing out truffles."
+   },
    "image": {
     "grid": "/breeds/lagotto-romagnolo-03decbc6-grid.webp",
     "detail": "/breeds/lagotto-romagnolo-03decbc6.webp",
@@ -4078,6 +5062,18 @@
     "colour": "black",
     "markings": "spotted",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     23,
+     32
+    ],
+    "life": [
+     11,
+     13
+    ],
+    "origin": "DE",
+    "job": "Bred as an all-round hunter to point, track and retrieve game."
    },
    "image": {
     "grid": "/breeds/large-munsterlander-ecc7516a-grid.webp",
@@ -4130,6 +5126,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     15,
+     30
+    ],
+    "life": [
+     11,
+     15
+    ],
+    "origin": "AU",
+    "job": "Bred to retrieve ducks along the Murray River, Australia's only home-grown gundog."
+   },
    "image": {
     "grid": "/breeds/murray-river-retriever-ce6f8584-grid.webp",
     "detail": "/breeds/murray-river-retriever-ce6f8584.webp",
@@ -4180,6 +5188,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     16,
+     23
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "CA",
+    "job": "Bred to lure, or \"toll\", ducks within range by playing on the shore, then retrieve them."
+   },
    "image": {
     "grid": "/breeds/nova-scotia-duck-tolling-retriever-bc115695-grid.webp",
     "detail": "/breeds/nova-scotia-duck-tolling-retriever-bc115695.webp",
@@ -4228,6 +5248,18 @@
     "colour": "chocolate",
     "markings": "parti",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     20,
+     34
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to find game birds and freeze in a point to show the hunter where they are."
    },
    "image": {
     "grid": "/breeds/pointer-efeffce4-grid.webp",
@@ -4278,6 +5310,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     14,
+     22
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "ES",
+    "job": "Bred to herd livestock, help fishermen and retrieve from the water."
+   },
    "image": {
     "grid": "/breeds/spanish-water-dog-431f083f-grid.webp",
     "detail": "/breeds/spanish-water-dog-431f083f.webp",
@@ -4324,6 +5368,18 @@
     "colour": "chocolate",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     16,
+     23
+    ],
+    "life": [
+     13,
+     15
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to flush game in dense Sussex undergrowth, barking as it works."
    },
    "image": {
     "grid": "/breeds/sussex-spaniel-87102b9d-grid.webp",
@@ -4375,6 +5431,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     25,
+     40
+    ],
+    "life": [
+     10,
+     13
+    ],
+    "origin": "DE",
+    "job": "Bred for German nobles to hunt big game like boar and deer, nicknamed the grey ghost."
+   },
    "image": {
     "grid": "/breeds/weimaraner-0ed5c94b-grid.webp",
     "detail": "/breeds/weimaraner-0ed5c94b.webp",
@@ -4424,6 +5492,18 @@
     "colour": "blue",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     25,
+     40
+    ],
+    "life": [
+     10,
+     13
+    ],
+    "origin": "DE",
+    "job": "Bred as a versatile hunter like the shorthaired Weimaraner, with a long silky coat."
    },
    "image": {
     "grid": "/breeds/weimaraner-longhair-7c75ca6e-grid.webp",
@@ -4475,6 +5555,18 @@
     "markings": "parti",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     16,
+     25
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB-WLS",
+    "job": "Bred in Wales to flush and retrieve game birds."
+   },
    "image": {
     "grid": "/breeds/welsh-springer-spaniel-626cb3b9-grid.webp",
     "detail": "/breeds/welsh-springer-spaniel-626cb3b9.webp",
@@ -4525,6 +5617,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     25,
+     35
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "SK",
+    "job": "Bred as an all-round hunter to track, point and retrieve on land and water."
+   },
    "image": {
     "grid": "/breeds/wirehaired-slovakian-pointer-bad466b1-grid.webp",
     "detail": "/breeds/wirehaired-slovakian-pointer-bad466b1.webp",
@@ -4571,6 +5675,18 @@
     "colour": "cream",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     23,
+     27
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "AF",
+    "job": "Bred to chase hare, gazelle and other game across Afghan mountains and deserts."
    },
    "image": {
     "grid": "/breeds/afghan-hound-8fdae799-grid.webp",
@@ -4619,6 +5735,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     15,
+     25
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "ML",
+    "job": "Bred by Sahel nomads to hunt gazelle and hare and to guard their camps."
+   },
    "image": {
     "grid": "/breeds/azawakh-790f5d9c-grid.webp",
     "detail": "/breeds/azawakh-790f5d9c.webp",
@@ -4665,6 +5793,18 @@
     "colour": "red",
     "markings": "white_markings",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     9,
+     11
+    ],
+    "life": [
+     13,
+     14
+    ],
+    "origin": "CD",
+    "job": "Bred to drive game into hunters' nets in Central Africa, famous as the barkless dog."
    },
    "image": {
     "grid": "/breeds/basenji-e8b0e877-grid.webp",
@@ -4717,6 +5857,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     16,
+     18
+    ],
+    "life": [
+     11,
+     14
+    ],
+    "origin": "FR",
+    "job": "Bred in Brittany to hunt rabbit, hare and fox."
+   },
    "image": {
     "grid": "/breeds/basset-fauve-de-bretagne-6fa24627-grid.webp",
     "detail": "/breeds/basset-fauve-de-bretagne-6fa24627.webp",
@@ -4763,6 +5915,18 @@
     "colour": "red",
     "markings": "parti",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     20,
+     29
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "FR",
+    "job": "Bred to trail rabbit and hare by scent for hunters on foot."
    },
    "image": {
     "grid": "/breeds/basset-hound-aaed6ec9-grid.webp",
@@ -4814,6 +5978,18 @@
     "markings": "solid",
     "mask": true
    },
+   "facts": {
+    "kg": [
+     20,
+     30
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "DE",
+    "job": "Bred to track wounded deer by following blood trails through the mountains."
+   },
    "image": {
     "grid": "/breeds/bavarian-mountain-scent-hound-f5a882b4-grid.webp",
     "detail": "/breeds/bavarian-mountain-scent-hound-f5a882b4.webp",
@@ -4860,6 +6036,18 @@
     "colour": "black",
     "markings": "tricolour",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     9,
+     14
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to hunt hare and rabbit in packs, followed by hunters on foot."
    },
    "image": {
     "grid": "/breeds/beagle-c7aee472-grid.webp",
@@ -4911,6 +6099,18 @@
     "markings": "tan_points",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     29,
+     45
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "US",
+    "job": "Bred to trail raccoons at night and bay at the tree once they're cornered."
+   },
    "image": {
     "grid": "/breeds/black-and-tan-coonhound-0f99e237-grid.webp",
     "detail": "/breeds/black-and-tan-coonhound-0f99e237.webp",
@@ -4957,6 +6157,18 @@
     "colour": "red",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     36,
+     50
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "BE",
+    "job": "Bred by Belgian monks to trail deer and boar, now famous for tracking people."
    },
    "image": {
     "grid": "/breeds/bloodhound-e85c8800-grid.webp",
@@ -5005,6 +6217,18 @@
     "colour": "blue",
     "markings": "spotted",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     20,
+     36
+    ],
+    "life": [
+     11,
+     12
+    ],
+    "origin": "US",
+    "job": "Bred to trail and tree raccoons in the southern United States."
    },
    "image": {
     "grid": "/breeds/bluetick-coonhound-9fa83bed-grid.webp",
@@ -5055,6 +6279,18 @@
     "markings": "parti",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     27,
+     45
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "RU",
+    "job": "Bred by Russian nobles to chase down wolves, foxes and hare."
+   },
    "image": {
     "grid": "/breeds/borzoi-6836b06b-grid.webp",
     "detail": "/breeds/borzoi-6836b06b.webp",
@@ -5102,6 +6338,18 @@
     "colour": "red",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     8,
+     13
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "IT",
+    "job": "Bred in Sicily to hunt rabbits on the rocky slopes of Mount Etna."
    },
    "image": {
     "grid": "/breeds/cirneco-dell-etna-740b909d-grid.webp",
@@ -5165,6 +6413,18 @@
     "markings": "tan_points",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     7,
+     14
+    ],
+    "life": [
+     12,
+     16
+    ],
+    "origin": "DE",
+    "job": "Bred to dig into badger setts, and Dachs means badger in German."
+   },
    "image": {
     "grid": "/breeds/dachshund-477d9c4c-grid.webp",
     "detail": "/breeds/dachshund-477d9c4c.webp",
@@ -5214,6 +6474,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     34,
+     50
+    ],
+    "life": [
+     8,
+     11
+    ],
+    "origin": "GB-SCT",
+    "job": "Bred to hunt red deer by sight across the Scottish Highlands."
+   },
    "image": {
     "grid": "/breeds/deerhound-9f459ae4-grid.webp",
     "detail": "/breeds/deerhound-9f459ae4.webp",
@@ -5261,6 +6533,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     7,
+     13
+    ],
+    "life": [
+     13,
+     15
+    ],
+    "origin": "FI",
+    "job": "Bred to find game birds and bark to show where they are. Finland's national dog."
+   },
    "image": {
     "grid": "/breeds/finnish-spitz-bba171c3-grid.webp",
     "detail": "/breeds/finnish-spitz-bba171c3.webp",
@@ -5307,6 +6591,18 @@
     "colour": "black",
     "markings": "tricolour",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     27,
+     34
+    ],
+    "life": [
+     10,
+     13
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to hunt foxes in packs alongside riders on horseback."
    },
    "image": {
     "grid": "/breeds/foxhound-b3516ea9-grid.webp",
@@ -5358,6 +6654,18 @@
     "markings": "parti",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     18,
+     20
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "FR",
+    "job": "Bred to hunt hare across the rough, scrubby country of the Vendee."
+   },
    "image": {
     "grid": "/breeds/grand-basset-griffon-vendeen-3bf0ab10-grid.webp",
     "detail": "/breeds/grand-basset-griffon-vendeen-3bf0ab10.webp",
@@ -5404,6 +6712,18 @@
     "colour": "fawn",
     "markings": "brindle",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     27,
+     34
+    ],
+    "life": [
+     10,
+     13
+    ],
+    "origin": "GB",
+    "job": "Bred to course hare by sight, and is the fastest dog breed."
    },
    "image": {
     "grid": "/breeds/greyhound-cfdb8246-grid.webp",
@@ -5454,6 +6774,18 @@
     "markings": "tricolour",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     23,
+     27
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "SE",
+    "job": "Bred to hunt hare and fox, created by the founder of the Swedish Kennel Club."
+   },
    "image": {
     "grid": "/breeds/hamiltonstovare-dbc9e135-grid.webp",
     "detail": "/breeds/hamiltonstovare-dbc9e135.webp",
@@ -5501,6 +6833,18 @@
     "markings": "tricolour",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     20,
+     27
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to hunt hare in packs, with hunters following on foot."
+   },
    "image": {
     "grid": "/breeds/harrier-b5643e6e-grid.webp",
     "detail": "/breeds/harrier-b5643e6e.webp",
@@ -5547,6 +6891,18 @@
     "colour": "red",
     "markings": "parti",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     20,
+     25
+    ],
+    "life": [
+     11,
+     14
+    ],
+    "origin": "ES",
+    "job": "Bred on the Balearic Islands to hunt rabbits using sight, sound and scent."
    },
    "image": {
     "grid": "/breeds/ibizan-hound-6e35b3ae-grid.webp",
@@ -5597,6 +6953,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     48,
+     70
+    ],
+    "life": [
+     6,
+     8
+    ],
+    "origin": "IE",
+    "job": "Bred to hunt wolves and deer in Ireland, and is the tallest dog breed."
+   },
    "image": {
     "grid": "/breeds/irish-wolfhound-2ea006a1-grid.webp",
     "detail": "/breeds/irish-wolfhound-2ea006a1.webp",
@@ -5646,6 +7014,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     20,
+     25
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "NO",
+    "job": "Bred to track moose and hold them at bay by barking until the hunter arrives."
+   },
    "image": {
     "grid": "/breeds/norwegian-elkhound-4dd2dfae-grid.webp",
     "detail": "/breeds/norwegian-elkhound-4dd2dfae.webp",
@@ -5692,6 +7072,18 @@
     "colour": "blue",
     "markings": "saddle",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     30,
+     52
+    ],
+    "life": [
+     10,
+     13
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to hunt otters in rivers, with webbed feet and an oily waterproof coat."
    },
    "image": {
     "grid": "/breeds/otterhound-9d03fadc-grid.webp",
@@ -5743,6 +7135,18 @@
     "markings": "parti",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     14,
+     18
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "FR",
+    "job": "Bred to hunt rabbits through the thick brambles of the Vendee."
+   },
    "image": {
     "grid": "/breeds/petit-basset-griffon-vendeen-f25450da-grid.webp",
     "detail": "/breeds/petit-basset-griffon-vendeen-f25450da.webp",
@@ -5790,6 +7194,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     20,
+     25
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "MT",
+    "job": "Bred in Malta to hunt rabbits, and famously blushes when excited."
+   },
    "image": {
     "grid": "/breeds/pharaoh-hound-868f0ca1-grid.webp",
     "detail": "/breeds/pharaoh-hound-868f0ca1.webp",
@@ -5836,6 +7252,18 @@
     "colour": "white",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     25,
+     28
+    ],
+    "life": [
+     12,
+     13
+    ],
+    "origin": "FR",
+    "job": "Bred to hunt hare and deer in packs, named for its shiny porcelain-like coat."
    },
    "image": {
     "grid": "/breeds/porcelaine-6c45a7f1-grid.webp",
@@ -5894,6 +7322,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     16,
+     20
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "PT",
+    "job": "Bred to hunt rabbits in packs, and once sailed on ships as ratters."
+   },
    "image": {
     "grid": "/breeds/portuguese-podengo-055aa432-grid.webp",
     "detail": "/breeds/portuguese-podengo-055aa432.webp",
@@ -5950,6 +7390,18 @@
     "markings": "tan_points",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     3,
+     4
+    ],
+    "life": [
+     12,
+     16
+    ],
+    "origin": "DE",
+    "job": "Bred to chase rabbits down their burrows, hence its German name Kaninchen, meaning rabbit."
+   },
    "image": {
     "grid": "/breeds/rabbit-dachshund-82382be2-grid.webp",
     "detail": "/breeds/rabbit-dachshund-82382be2.webp",
@@ -5999,6 +7451,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     32,
+     41
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "ZA",
+    "job": "Bred to track and hold lions at bay for hunters in southern Africa."
+   },
    "image": {
     "grid": "/breeds/rhodesian-ridgeback-42f214f0-grid.webp",
     "detail": "/breeds/rhodesian-ridgeback-42f214f0.webp",
@@ -6045,6 +7509,18 @@
     "colour": "red",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     16,
+     29
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "IR",
+    "job": "Bred to chase gazelle and hare across the desert, an ancient sighthound of the Middle East."
    },
    "image": {
     "grid": "/breeds/saluki-c3d7b96c-grid.webp",
@@ -6093,6 +7569,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     18,
+     29
+    ],
+    "life": [
+     10,
+     15
+    ],
+    "origin": "MA",
+    "job": "Bred by Berber people to hunt gazelle, hare and jackal across North Africa."
+   },
    "image": {
     "grid": "/breeds/sloughi-6adb6859-grid.webp",
     "detail": "/breeds/sloughi-6adb6859.webp",
@@ -6139,6 +7627,18 @@
     "colour": "blue",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     11,
+     18
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to catch rabbits and race, once called the poor man's racehorse."
    },
    "image": {
     "grid": "/breeds/whippet-2912187e-grid.webp",
@@ -6193,6 +7693,18 @@
     "markings": "tan_points",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     15,
+     22
+    ],
+    "life": [
+     12,
+     16
+    ],
+    "origin": "AU",
+    "job": "Bred to drive cattle over long distances, with dingo in its family tree."
+   },
    "image": {
     "grid": "/breeds/australian-cattle-dog-39091f36-grid.webp",
     "detail": "/breeds/australian-cattle-dog-39091f36.webp",
@@ -6241,6 +7753,18 @@
     "colour": "black",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     14,
+     20
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "AU",
+    "job": "Bred to muster sheep on huge Aussie stations, famous for running across their backs."
    },
    "image": {
     "grid": "/breeds/australian-kelpie-15c5df2d-grid.webp",
@@ -6291,6 +7815,18 @@
     "colour": "blue",
     "markings": "merle",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     18,
+     30
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "US",
+    "job": "Bred to herd livestock on American ranches, despite the Aussie name."
    },
    "image": {
     "grid": "/breeds/australian-shepherd-825f6772-grid.webp",
@@ -6344,6 +7880,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     16,
+     23
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "AU",
+    "job": "Bred to work cattle in tough Australian conditions, born with a natural bobtail."
+   },
    "image": {
     "grid": "/breeds/australian-stumpy-tail-cattle-dog-af36578f-grid.webp",
     "detail": "/breeds/australian-stumpy-tail-cattle-dog-af36578f.webp",
@@ -6393,6 +7941,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     18,
+     27
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "GB-SCT",
+    "job": "Bred to herd sheep and cattle in the Scottish Highlands."
+   },
    "image": {
     "grid": "/breeds/bearded-collie-9d358d46-grid.webp",
     "detail": "/breeds/bearded-collie-9d358d46.webp",
@@ -6440,6 +8000,18 @@
     "colour": "blue",
     "markings": "merle",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     30,
+     45
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "FR",
+    "job": "Bred to herd and guard flocks on the plains of France, with double dewclaws on its back legs."
    },
    "image": {
     "grid": "/breeds/beauceron-berger-de-beauce-7c04facf-grid.webp",
@@ -6502,6 +8074,18 @@
     "markings": "solid",
     "mask": true
    },
+   "facts": {
+    "kg": [
+     20,
+     30
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "BE",
+    "job": "Bred to herd and guard sheep on Belgian farms."
+   },
    "image": {
     "grid": "/breeds/belgian-shepherd-dog-cf383ad1-grid.webp",
     "detail": "/breeds/belgian-shepherd-dog-cf383ad1.webp",
@@ -6550,6 +8134,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     26,
+     38
+    ],
+    "life": [
+     13,
+     15
+    ],
+    "origin": "IT",
+    "job": "Bred to herd sheep in the Italian Alps, its felted coat keeps out cold and wolves' teeth."
+   },
    "image": {
     "grid": "/breeds/bergamasco-shepherd-dog-dc8068fa-grid.webp",
     "detail": "/breeds/bergamasco-shepherd-dog-dc8068fa.webp",
@@ -6597,6 +8193,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     23,
+     32
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "FR",
+    "job": "Bred to herd sheep and cattle in the Picardy region of northern France."
+   },
    "image": {
     "grid": "/breeds/berger-picard-099aebcc-grid.webp",
     "detail": "/breeds/berger-picard-099aebcc.webp",
@@ -6643,6 +8251,18 @@
     "colour": "black",
     "markings": "white_markings",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     14,
+     20
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB",
+    "job": "Bred to herd sheep on the hills of the Anglo-Scottish border, using its famous intense eye."
    },
    "image": {
     "grid": "/breeds/border-collie-b236ae62-grid.webp",
@@ -6694,6 +8314,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     27,
+     40
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "BE",
+    "job": "Bred to drive cattle, pull carts and guard farms in Flanders. Bouvier means cowherd."
+   },
    "image": {
     "grid": "/breeds/bouvier-des-flandres-ee5addf4-grid.webp",
     "detail": "/breeds/bouvier-des-flandres-ee5addf4.webp",
@@ -6740,6 +8372,18 @@
     "colour": "black",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     25,
+     40
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "FR",
+    "job": "Bred to herd and guard sheep in France, and served as a messenger dog in WWI."
    },
    "image": {
     "grid": "/breeds/briard-baaf7cbc-grid.webp",
@@ -6791,6 +8435,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     18,
+     29
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "GB-SCT",
+    "job": "Bred to herd sheep in the Scottish Highlands, later made famous by Lassie."
+   },
    "image": {
     "grid": "/breeds/collie-rough-6ec48a97-grid.webp",
     "detail": "/breeds/collie-rough-6ec48a97.webp",
@@ -6839,6 +8495,18 @@
     "colour": "sable",
     "markings": "white_markings",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     18,
+     29
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "GB-SCT",
+    "job": "Bred to drive sheep and cattle to market in Scotland and northern England."
    },
    "image": {
     "grid": "/breeds/collie-smooth-8136246f-grid.webp",
@@ -6891,6 +8559,18 @@
     "markings": "brindle",
     "mask": true
    },
+   "facts": {
+    "kg": [
+     23,
+     32
+    ],
+    "life": [
+     11,
+     14
+    ],
+    "origin": "NL",
+    "job": "Bred as an all-round Dutch farm dog, herding sheep and keeping hens out of the veggie patch."
+   },
    "image": {
     "grid": "/breeds/dutch-shepherd-dog-40fda461-grid.webp",
     "detail": "/breeds/dutch-shepherd-dog-40fda461.webp",
@@ -6939,6 +8619,18 @@
     "colour": "black",
     "markings": "tricolour",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     15,
+     24
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "FI",
+    "job": "Bred by the Sami people of Lapland to herd reindeer."
    },
    "image": {
     "grid": "/breeds/finnish-lapphund-b3445ff8-grid.webp",
@@ -6992,6 +8684,18 @@
     "markings": "saddle",
     "mask": true
    },
+   "facts": {
+    "kg": [
+     22,
+     40
+    ],
+    "life": [
+     9,
+     13
+    ],
+    "origin": "DE",
+    "job": "Bred to herd and guard sheep in Germany, now a top police and service dog."
+   },
    "image": {
     "grid": "/breeds/german-shepherd-dog-61c1d5e2-grid.webp",
     "detail": "/breeds/german-shepherd-dog-61c1d5e2.webp",
@@ -7044,6 +8748,18 @@
     "markings": "saddle",
     "mask": true
    },
+   "facts": {
+    "kg": [
+     22,
+     40
+    ],
+    "life": [
+     9,
+     13
+    ],
+    "origin": "DE",
+    "job": "Bred to herd and guard sheep in Germany, this is the long-coated variety of the breed."
+   },
    "image": {
     "grid": "/breeds/german-shepherd-dog-long-stock-coat-f9a74abc-grid.webp",
     "detail": "/breeds/german-shepherd-dog-long-stock-coat-f9a74abc.webp",
@@ -7090,6 +8806,18 @@
     "colour": "gold",
     "markings": "white_markings",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     9,
+     14
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "IS",
+    "job": "Bred to herd sheep and ponies, and brought to Iceland by the Vikings."
    },
    "image": {
     "grid": "/breeds/icelandic-sheepdog-76d67b03-grid.webp",
@@ -7138,6 +8866,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     40,
+     60
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "HU",
+    "job": "Bred to guard sheep in Hungary, its white cords help it blend in with the flock."
+   },
    "image": {
     "grid": "/breeds/komondor-e05a5fe1-grid.webp",
     "detail": "/breeds/komondor-e05a5fe1.webp",
@@ -7184,6 +8924,18 @@
     "colour": "white",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     32,
+     52
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "HU",
+    "job": "Bred to guard livestock in Hungary, and once a favourite of Hungarian kings."
    },
    "image": {
     "grid": "/breeds/kuvasz-d4b40907-grid.webp",
@@ -7233,6 +8985,18 @@
     "colour": "white",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     30,
+     45
+    ],
+    "life": [
+     11,
+     13
+    ],
+    "origin": "IT",
+    "job": "Bred to guard sheep from wolves in central Italy, now used to protect penguins in Victoria."
    },
    "image": {
     "grid": "/breeds/maremma-sheepdog-f8e38099-grid.webp",
@@ -7286,6 +9050,18 @@
     "markings": "merle",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     9,
+     18
+    ],
+    "life": [
+     12,
+     13
+    ],
+    "origin": "US",
+    "job": "Bred in the US as a smaller herder of sheep and goats, scaled down from the Aussie Shepherd."
+   },
    "image": {
     "grid": "/breeds/miniature-american-shepherd-ee66e693-grid.webp",
     "detail": "/breeds/miniature-american-shepherd-ee66e693.webp",
@@ -7331,6 +9107,18 @@
     "colour": "chocolate",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     8,
+     13
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "HU",
+    "job": "Bred as an all-purpose Hungarian farm dog to herd sheep and cattle and catch vermin."
    },
    "image": {
     "grid": "/breeds/mudi-5b265de7-grid.webp",
@@ -7379,6 +9167,18 @@
     "colour": "cream",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     12,
+     18
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "NO",
+    "job": "Bred to herd and guard livestock on Norwegian farms. Bu means homestead."
    },
    "image": {
     "grid": "/breeds/norwegian-buhund-41f55b0b-grid.webp",
@@ -7430,6 +9230,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     27,
+     45
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to drive cattle and sheep to market in the west of England."
+   },
    "image": {
     "grid": "/breeds/old-english-sheepdog-a7f78ce3-grid.webp",
     "detail": "/breeds/old-english-sheepdog-a7f78ce3.webp",
@@ -7480,6 +9292,18 @@
     "markings": "parti",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     14,
+     23
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "PL",
+    "job": "Bred to herd and guard sheep on the plains of Poland."
+   },
    "image": {
     "grid": "/breeds/polish-lowland-sheepdog-79b4634a-grid.webp",
     "detail": "/breeds/polish-lowland-sheepdog-79b4634a.webp",
@@ -7527,6 +9351,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     10,
+     15
+    ],
+    "life": [
+     12,
+     16
+    ],
+    "origin": "HU",
+    "job": "Bred to herd sheep on the Hungarian plains, working alongside the bigger Komondor."
+   },
    "image": {
     "grid": "/breeds/puli-99a710d1-grid.webp",
     "detail": "/breeds/puli-99a710d1.webp",
@@ -7572,6 +9408,18 @@
     "colour": "blue",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     8,
+     15
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "HU",
+    "job": "Bred to herd sheep, cattle and pigs in Hungary's hilly pastures."
    },
    "image": {
     "grid": "/breeds/pumi-91a52532-grid.webp",
@@ -7619,6 +9467,18 @@
     "colour": "gold",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     8,
+     15
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "FR",
+    "job": "Bred to herd sheep in the French Pyrenees, often working alongside big guardian dogs."
    },
    "image": {
     "grid": "/breeds/pyrenean-sheepdog-longhaired-f43a88d8-grid.webp",
@@ -7669,6 +9529,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     6,
+     11
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "GB-SCT",
+    "job": "Bred to herd sheep and ponies on Scotland's Shetland Islands."
+   },
    "image": {
     "grid": "/breeds/shetland-sheepdog-aae70480-grid.webp",
     "detail": "/breeds/shetland-sheepdog-aae70480.webp",
@@ -7715,6 +9587,18 @@
     "colour": "black",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     15,
+     21
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "SE",
+    "job": "Bred by the Sami people to herd and guard reindeer in northern Sweden."
    },
    "image": {
     "grid": "/breeds/swedish-lapphund-cb134afd-grid.webp",
@@ -7765,6 +9649,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     9,
+     16
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "SE",
+    "job": "Bred to herd cattle on Swedish farms, a breed said to date back to the Vikings."
+   },
    "image": {
     "grid": "/breeds/swedish-vallhund-56f9da28-grid.webp",
     "detail": "/breeds/swedish-vallhund-56f9da28.webp",
@@ -7812,6 +9708,18 @@
     "colour": "white",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     36,
+     59
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "PL",
+    "job": "Bred to guard sheep from wolves and bears in Poland's Tatra Mountains."
    },
    "image": {
     "grid": "/breeds/tatra-shepherd-dog-c4e63a3b-grid.webp",
@@ -7863,6 +9771,18 @@
     "markings": "brindle",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     11,
+     17
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB-WLS",
+    "job": "Bred to drive cattle in Wales by nipping at their heels, staying low to dodge kicks."
+   },
    "image": {
     "grid": "/breeds/welsh-corgi-cardigan-1fded1aa-grid.webp",
     "detail": "/breeds/welsh-corgi-cardigan-1fded1aa.webp",
@@ -7912,6 +9832,18 @@
     "colour": "red",
     "markings": "white_markings",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     10,
+     14
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "GB-WLS",
+    "job": "Bred to herd cattle in Wales, and later a favourite of Queen Elizabeth II."
    },
    "image": {
     "grid": "/breeds/welsh-corgi-pembroke-c2fd4396-grid.webp",
@@ -7964,6 +9896,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     25,
+     40
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "CH",
+    "job": "Bred as a herding and guard dog from white German Shepherds, standardised in Switzerland."
+   },
    "image": {
     "grid": "/breeds/white-swiss-shepherd-dog-33e3da48-grid.webp",
     "detail": "/breeds/white-swiss-shepherd-dog-33e3da48.webp",
@@ -8012,6 +9956,18 @@
     "colour": "red",
     "markings": "parti",
     "mask": true
+   },
+   "facts": {
+    "kg": [
+     32,
+     59
+    ],
+    "life": [
+     10,
+     13
+    ],
+    "origin": "US",
+    "job": "Bred in America from Japanese Akitas as a big, powerful guard dog and companion."
    },
    "image": {
     "grid": "/breeds/akita-a0fac19d-grid.webp",
@@ -8063,6 +10019,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     23,
+     39
+    ],
+    "life": [
+     10,
+     14
+    ],
+    "origin": "JP",
+    "job": "Bred to hunt bear, boar and deer in the mountains of northern Japan."
+   },
    "image": {
     "grid": "/breeds/akita-japanese-d46b7a22-grid.webp",
     "detail": "/breeds/akita-japanese-d46b7a22.webp",
@@ -8111,6 +10079,18 @@
     "colour": "black",
     "markings": "white_markings",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     34,
+     39
+    ],
+    "life": [
+     10,
+     14
+    ],
+    "origin": "US",
+    "job": "Bred by the Mahlemut Inuit of Alaska to haul heavy sleds over long distances."
    },
    "image": {
     "grid": "/breeds/alaskan-malamute-36d1c565-grid.webp",
@@ -8161,6 +10141,18 @@
     "colour": "fawn",
     "markings": "solid",
     "mask": true
+   },
+   "facts": {
+    "kg": [
+     36,
+     68
+    ],
+    "life": [
+     11,
+     13
+    ],
+    "origin": "TR",
+    "job": "Bred to guard sheep and goats from wolves and bears on the Anatolian plateau of Turkey."
    },
    "image": {
     "grid": "/breeds/anatolian-shepherd-dog-b66e797f-grid.webp",
@@ -8213,6 +10205,18 @@
     "markings": "tricolour",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     32,
+     50
+    ],
+    "life": [
+     7,
+     10
+    ],
+    "origin": "CH",
+    "job": "Bred to pull milk carts, drive cattle and guard farms in the Swiss Alps."
+   },
    "image": {
     "grid": "/breeds/bernese-mountain-dog-bb53d78f-grid.webp",
     "detail": "/breeds/bernese-mountain-dog-bb53d78f.webp",
@@ -8259,6 +10263,18 @@
     "colour": "fawn",
     "markings": "white_markings",
     "mask": true
+   },
+   "facts": {
+    "kg": [
+     25,
+     32
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "DE",
+    "job": "Bred in Germany as a guard and working dog, named for how it spars with its front paws."
    },
    "image": {
     "grid": "/breeds/boxer-4a76a8d2-grid.webp",
@@ -8307,6 +10323,18 @@
     "markings": "solid",
     "mask": true
    },
+   "facts": {
+    "kg": [
+     45,
+     59
+    ],
+    "life": [
+     8,
+     10
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred to help English gamekeepers catch and pin poachers without biting them."
+   },
    "image": {
     "grid": "/breeds/bullmastiff-15bd5535-grid.webp",
     "detail": "/breeds/bullmastiff-15bd5535.webp",
@@ -8353,6 +10381,18 @@
     "colour": "white",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     18,
+     40
+    ],
+    "life": [
+     10,
+     15
+    ],
+    "origin": "CA",
+    "job": "Bred by the Inuit of the Canadian Arctic to pull sleds and help hunt seals and polar bears."
    },
    "image": {
     "grid": "/breeds/canadian-eskimo-dog-d145f0eb-grid.webp",
@@ -8404,6 +10444,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     40,
+     50
+    ],
+    "life": [
+     9,
+     12
+    ],
+    "origin": "IT",
+    "job": "Bred as an Italian farm guardian and hunter of wild boar. Its name means bodyguard dog."
+   },
    "image": {
     "grid": "/breeds/cane-corso-98d0532d-grid.webp",
     "detail": "/breeds/cane-corso-98d0532d.webp",
@@ -8454,6 +10506,18 @@
     "markings": "solid",
     "mask": true
    },
+   "facts": {
+    "kg": [
+     45,
+     70
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "RU",
+    "job": "Bred to guard flocks and homes from wolves and thieves in the Caucasus Mountains."
+   },
    "image": {
     "grid": "/breeds/caucasian-shepherd-dog-bcbdd52d-grid.webp",
     "detail": "/breeds/caucasian-shepherd-dog-bcbdd52d.webp",
@@ -8503,6 +10567,18 @@
     "colour": "cream",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     40,
+     65
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "RU",
+    "job": "Bred to guard livestock and nomad camps across the steppes of Central Asia."
    },
    "image": {
     "grid": "/breeds/central-asian-shepherd-dog-a5dbb34a-grid.webp",
@@ -8555,6 +10631,18 @@
     "markings": "tan_points",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     32,
+     45
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "DE",
+    "job": "Bred by German tax collector Louis Dobermann as a protection dog for his rounds."
+   },
    "image": {
     "grid": "/breeds/dobermann-0637cfa7-grid.webp",
     "detail": "/breeds/dobermann-0637cfa7.webp",
@@ -8605,6 +10693,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     45,
+     65
+    ],
+    "life": [
+     5,
+     8
+    ],
+    "origin": "FR",
+    "job": "Bred as a French guard dog and hauler, also used to hunt boar and guard vineyards."
+   },
    "image": {
     "grid": "/breeds/dogue-de-bordeaux-ff5e273d-grid.webp",
     "detail": "/breeds/dogue-de-bordeaux-ff5e273d.webp",
@@ -8653,6 +10753,18 @@
     "markings": "solid",
     "mask": true
    },
+   "facts": {
+    "kg": [
+     35,
+     60
+    ],
+    "life": [
+     10,
+     14
+    ],
+    "origin": "PT",
+    "job": "Bred to guard flocks from wolves in Portugal's Serra da Estrela mountains."
+   },
    "image": {
     "grid": "/breeds/estrela-mountain-dog-7855b706-grid.webp",
     "detail": "/breeds/estrela-mountain-dog-7855b706.webp",
@@ -8699,6 +10811,18 @@
     "colour": "black",
     "markings": "tan_points",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     11,
+     20
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "DE",
+    "job": "Bred to catch rats on German farms and in stables, an ancestor of the Dobermann."
    },
    "image": {
     "grid": "/breeds/german-pinscher-d07996d7-grid.webp",
@@ -8750,6 +10874,18 @@
     "markings": "tricolour",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     38,
+     64
+    ],
+    "life": [
+     8,
+     11
+    ],
+    "origin": "CH",
+    "job": "Bred to pull carts, drive cattle and guard farms in Switzerland, the largest Swiss mountain dog."
+   },
    "image": {
     "grid": "/breeds/great-swiss-mountain-dog-4c64b426-grid.webp",
     "detail": "/breeds/great-swiss-mountain-dog-4c64b426.webp",
@@ -8798,6 +10934,18 @@
     "colour": "fawn",
     "markings": "solid",
     "mask": true
+   },
+   "facts": {
+    "kg": [
+     40,
+     60
+    ],
+    "life": [
+     10,
+     13
+    ],
+    "origin": "TR",
+    "job": "Bred to guard sheep from wolves in the Sivas region of Turkey, named after the town of Kangal."
    },
    "image": {
     "grid": "/breeds/kangal-shepherd-dog-165ef2b6-grid.webp",
@@ -8849,6 +10997,18 @@
     "markings": "parti",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     45,
+     68
+    ],
+    "life": [
+     8,
+     10
+    ],
+    "origin": "DE",
+    "job": "Bred as a water rescue and working dog, named after painter Sir Edwin Landseer."
+   },
    "image": {
     "grid": "/breeds/landseer-european-continental-type-a09dd5ef-grid.webp",
     "detail": "/breeds/landseer-european-continental-type-a09dd5ef.webp",
@@ -8898,6 +11058,18 @@
     "markings": "solid",
     "mask": true
    },
+   "facts": {
+    "kg": [
+     41,
+     77
+    ],
+    "life": [
+     7,
+     9
+    ],
+    "origin": "DE",
+    "job": "Bred as a lion-like companion to match the lion on the crest of Leonberg, Germany."
+   },
    "image": {
     "grid": "/breeds/leonberger-5f43ce2f-grid.webp",
     "detail": "/breeds/leonberger-5f43ce2f.webp",
@@ -8946,6 +11118,18 @@
     "colour": "fawn",
     "markings": "brindle",
     "mask": true
+   },
+   "facts": {
+    "kg": [
+     55,
+     100
+    ],
+    "life": [
+     6,
+     10
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred as a giant estate guardian, keeping watch for poachers and intruders."
    },
    "image": {
     "grid": "/breeds/mastiff-f684d8e2-grid.webp",
@@ -8997,6 +11181,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     50,
+     70
+    ],
+    "life": [
+     7,
+     9
+    ],
+    "origin": "IT",
+    "job": "Bred to guard farms and estates around Naples, its wrinkles adding to the scary look."
+   },
    "image": {
     "grid": "/breeds/neapolitan-mastiff-db6b3fb3-grid.webp",
     "detail": "/breeds/neapolitan-mastiff-db6b3fb3.webp",
@@ -9045,6 +11241,18 @@
     "colour": "black",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     50,
+     70
+    ],
+    "life": [
+     9,
+     10
+    ],
+    "origin": "CA",
+    "job": "Bred to help fishermen haul nets and rescue people from icy water."
    },
    "image": {
     "grid": "/breeds/newfoundland-32d0817f-grid.webp",
@@ -9096,6 +11304,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     16,
+     25
+    ],
+    "life": [
+     11,
+     13
+    ],
+    "origin": "PT",
+    "job": "Bred to help fishermen herd fish into nets and swim messages between boats."
+   },
    "image": {
     "grid": "/breeds/portuguese-water-dog-d0ddfd91-grid.webp",
     "detail": "/breeds/portuguese-water-dog-d0ddfd91.webp",
@@ -9142,6 +11362,18 @@
     "colour": "gold",
     "markings": "parti",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     60,
+     80
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "ES",
+    "job": "Bred to guard sheep from wolves on long treks to Pyrenean summer pastures."
    },
    "image": {
     "grid": "/breeds/pyrenean-mastiff-a1c292f9-grid.webp",
@@ -9194,6 +11426,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     40,
+     60
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "FR",
+    "job": "Bred to guard sheep from wolves and bears high in the Pyrenees mountains."
+   },
    "image": {
     "grid": "/breeds/pyrenean-mountain-dog-e8ee29d8-grid.webp",
     "detail": "/breeds/pyrenean-mountain-dog-e8ee29d8.webp",
@@ -9243,6 +11487,18 @@
     "colour": "black",
     "markings": "tan_points",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     35,
+     60
+    ],
+    "life": [
+     9,
+     10
+    ],
+    "origin": "DE",
+    "job": "Bred to drive cattle to market and guard the money, from the German town of Rottweil."
    },
    "image": {
     "grid": "/breeds/rottweiler-aee1d0f4-grid.webp",
@@ -9295,6 +11551,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     45,
+     60
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "RU",
+    "job": "Bred by the Soviet army as a tough, all-weather military guard dog."
+   },
    "image": {
     "grid": "/breeds/russian-black-terrier-473c1a28-grid.webp",
     "detail": "/breeds/russian-black-terrier-473c1a28.webp",
@@ -9345,6 +11613,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     16,
+     30
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "RU",
+    "job": "Bred by the Samoyedic peoples of Siberia to herd reindeer and pull sleds."
+   },
    "image": {
     "grid": "/breeds/samoyed-b28f7acf-grid.webp",
     "detail": "/breeds/samoyed-b28f7acf.webp",
@@ -9394,6 +11674,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     14,
+     20
+    ],
+    "life": [
+     13,
+     16
+    ],
+    "origin": "DE",
+    "job": "Bred as a German farm dog to catch rats and guard the yard. Schnauze means snout."
+   },
    "image": {
     "grid": "/breeds/schnauzer-0389f1bf-grid.webp",
     "detail": "/breeds/schnauzer-0389f1bf.webp",
@@ -9442,6 +11734,18 @@
     "colour": "black",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     30,
+     45
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "DE",
+    "job": "Bred to drive cattle in Bavaria, later working as a guard and police dog."
    },
    "image": {
     "grid": "/breeds/schnauzer-giant-8a9c6780-grid.webp",
@@ -9493,6 +11797,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     5,
+     8
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "DE",
+    "job": "Bred as a smaller schnauzer for catching rats on German farms."
+   },
    "image": {
     "grid": "/breeds/schnauzer-miniature-221d5bd0-grid.webp",
     "detail": "/breeds/schnauzer-miniature-221d5bd0.webp",
@@ -9542,6 +11858,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     8,
+     11
+    ],
+    "life": [
+     13,
+     16
+    ],
+    "origin": "JP",
+    "job": "Bred to flush birds and small game through dense Japanese mountain brush."
+   },
    "image": {
     "grid": "/breeds/shiba-inu-21c50abb-grid.webp",
     "detail": "/breeds/shiba-inu-21c50abb.webp",
@@ -9588,6 +11916,18 @@
     "colour": "sable",
     "markings": "white_markings",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     15,
+     25
+    ],
+    "life": [
+     10,
+     13
+    ],
+    "origin": "JP",
+    "job": "Bred to hunt wild boar and deer in the mountains of Japan's Shikoku island."
    },
    "image": {
     "grid": "/breeds/shikoku-34351841-grid.webp",
@@ -9637,6 +11977,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     16,
+     27
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "RU",
+    "job": "Bred by the Chukchi people of Siberia to pull light sleds over long distances."
+   },
    "image": {
     "grid": "/breeds/siberian-husky-7fc9c9e5-grid.webp",
     "detail": "/breeds/siberian-husky-7fc9c9e5.webp",
@@ -9683,6 +12035,18 @@
     "colour": "gold",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     65,
+     100
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "ES",
+    "job": "Bred to guard flocks from wolves on Spain's long seasonal livestock drives."
    },
    "image": {
     "grid": "/breeds/spanish-mastiff-18f3f890-grid.webp",
@@ -9733,6 +12097,18 @@
     "markings": "parti",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     55,
+     80
+    ],
+    "life": [
+     8,
+     10
+    ],
+    "origin": "CH",
+    "job": "Bred by monks at the Great St Bernard Pass to find travellers lost in the snow."
+   },
    "image": {
     "grid": "/breeds/st-bernard-c9f42924-grid.webp",
     "detail": "/breeds/st-bernard-c9f42924.webp",
@@ -9780,6 +12156,18 @@
     "markings": "tan_points",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     40,
+     70
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "CN",
+    "job": "Bred to guard Himalayan villages, monasteries and livestock from predators."
+   },
    "image": {
     "grid": "/breeds/tibetan-mastiff-e1e905f8-grid.webp",
     "detail": "/breeds/tibetan-mastiff-e1e905f8.webp",
@@ -9826,6 +12214,18 @@
     "colour": "chocolate",
     "markings": "parti",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     28,
+     50
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "BA",
+    "job": "Bred to guard sheep in the Balkan mountains. Its name comes from tor, a sheep pen."
    },
    "image": {
     "grid": "/breeds/tornjak-81d477ab-grid.webp",
@@ -9875,6 +12275,18 @@
     "colour": "black",
     "markings": "parti",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     18,
+     25
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "RU",
+    "job": "Bred by the Yakut people of Siberia to pull sleds, hunt and herd reindeer."
    },
    "image": {
     "grid": "/breeds/yakutian-laika-822f602c-grid.webp",
@@ -9928,6 +12340,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     30,
+     45
+    ],
+    "life": [
+     11,
+     13
+    ],
+    "origin": "RS",
+    "job": "Bred to guard sheep and cattle from wolves in the Shar mountains of the Balkans."
+   },
    "image": {
     "grid": "/breeds/yugoslavian-shepherd-dog-sharplanina-ff98295d-grid.webp",
     "detail": "/breeds/yugoslavian-shepherd-dog-sharplanina-ff98295d.webp",
@@ -9976,6 +12400,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     26,
+     35
+    ],
+    "life": [
+     9,
+     12
+    ],
+    "origin": "AU",
+    "job": "Bred as a healthier, more athletic bulldog for family life in the Aussie heat."
+   },
    "image": {
     "grid": "/breeds/australasian-bosdog-b3ed281d-grid.webp",
     "detail": "/breeds/australasian-bosdog-b3ed281d.webp",
@@ -10022,6 +12458,18 @@
     "colour": "black",
     "markings": "white_markings",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     5,
+     11
+    ],
+    "life": [
+     11,
+     13
+    ],
+    "origin": "US",
+    "job": "Bred in Boston from bulldog and terrier crosses, soon refined into a city companion."
    },
    "image": {
     "grid": "/breeds/boston-terrier-ebe8ed11-grid.webp",
@@ -10073,6 +12521,18 @@
     "markings": "parti",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     18,
+     25
+    ],
+    "life": [
+     8,
+     10
+    ],
+    "origin": "GB-ENG",
+    "job": "Bred for the cruel sport of bull-baiting, then reshaped into a gentle companion."
+   },
    "image": {
     "grid": "/breeds/british-bulldog-f3067c8a-grid.webp",
     "detail": "/breeds/british-bulldog-f3067c8a.webp",
@@ -10119,6 +12579,18 @@
     "colour": "gold",
     "markings": "white_markings",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     16,
+     25
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "IL",
+    "job": "Bred from Middle Eastern desert dogs to guard camps and herd livestock."
    },
    "image": {
     "grid": "/breeds/canaan-dog-a7f85ab3-grid.webp",
@@ -10169,6 +12641,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     20,
+     32
+    ],
+    "life": [
+     8,
+     12
+    ],
+    "origin": "CN",
+    "job": "Bred in China as an all-purpose dog for guarding, hunting and pulling carts."
+   },
    "image": {
     "grid": "/breeds/chow-chow-cc38071e-grid.webp",
     "detail": "/breeds/chow-chow-cc38071e.webp",
@@ -10218,6 +12702,18 @@
     "markings": "spotted",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     20,
+     32
+    ],
+    "life": [
+     11,
+     13
+    ],
+    "origin": "HR",
+    "job": "Bred to run beside horse-drawn carriages and guard them, named after Dalmatia."
+   },
    "image": {
     "grid": "/breeds/dalmatian-834819f6-grid.webp",
     "detail": "/breeds/dalmatian-834819f6.webp",
@@ -10264,6 +12760,18 @@
     "colour": "red",
     "markings": "solid",
     "mask": true
+   },
+   "facts": {
+    "kg": [
+     18,
+     32
+    ],
+    "life": [
+     11,
+     13
+    ],
+    "origin": "DE",
+    "job": "Bred in 1960s Germany from Chow Chow, Wolfspitz and Samoyed as a family companion."
    },
    "image": {
     "grid": "/breeds/eurasier-5594b3aa-grid.webp",
@@ -10314,6 +12822,18 @@
     "colour": "fawn",
     "markings": "solid",
     "mask": true
+   },
+   "facts": {
+    "kg": [
+     8,
+     13
+    ],
+    "life": [
+     10,
+     12
+    ],
+    "origin": "FR",
+    "job": "Bred as a lap-sized companion from toy bulldogs taken to France by English lacemakers."
    },
    "image": {
     "grid": "/breeds/french-bulldog-9e0a0347-grid.webp",
@@ -10366,6 +12886,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     7,
+     12
+    ],
+    "life": [
+     13,
+     15
+    ],
+    "origin": "DE",
+    "job": "Bred as a farm and household watchdog, quick to bark at anything new."
+   },
    "image": {
     "grid": "/breeds/german-spitz-b3465eab-grid.webp",
     "detail": "/breeds/german-spitz-b3465eab.webp",
@@ -10415,6 +12947,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     50,
+     80
+    ],
+    "life": [
+     7,
+     10
+    ],
+    "origin": "DE",
+    "job": "Bred to hunt wild boar in Germany, later becoming a stately estate guardian."
+   },
    "image": {
     "grid": "/breeds/great-dane-a3dbdd6e-grid.webp",
     "detail": "/breeds/great-dane-a3dbdd6e.webp",
@@ -10462,6 +13006,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     5,
+     10
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "JP",
+    "job": "Bred in Japan as a small, snowy-white companion from other white spitz dogs."
+   },
    "image": {
     "grid": "/breeds/japanese-spitz-8a6623e4-grid.webp",
     "detail": "/breeds/japanese-spitz-8a6623e4.webp",
@@ -10508,6 +13064,18 @@
     "colour": "black",
     "markings": "white_markings",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     17,
+     28
+    ],
+    "life": [
+     11,
+     13
+    ],
+    "origin": "FI",
+    "job": "Bred to hunt big game like elk and bears in the forests of Finland."
    },
    "image": {
     "grid": "/breeds/karelian-bear-dog-0acb57c0-grid.webp",
@@ -10558,6 +13126,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     15,
+     20
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "NL",
+    "job": "Bred as a watchdog on Dutch river barges, keeping boats and cargo safe."
+   },
    "image": {
     "grid": "/breeds/keeshond-436c39ce-grid.webp",
     "detail": "/breeds/keeshond-436c39ce.webp",
@@ -10606,6 +13186,18 @@
     "colour": "cream",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     6,
+     8
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "CN",
+    "job": "Bred as an indoor sentinel for Tibetan monasteries, barking at strangers."
    },
    "image": {
     "grid": "/breeds/lhasa-apso-ee0bcc61-grid.webp",
@@ -10658,6 +13250,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     12,
+     25
+    ],
+    "life": [
+     11,
+     14
+    ],
+    "origin": "PE",
+    "job": "Bred as a companion and bed warmer in ancient Peru, prized since pre-Inca times."
+   },
    "image": {
     "grid": "/breeds/peruvian-hairless-dog-large-5d370d56-grid.webp",
     "detail": "/breeds/peruvian-hairless-dog-large-5d370d56.webp",
@@ -10707,6 +13311,18 @@
     "colour": "chocolate",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     8,
+     12
+    ],
+    "life": [
+     11,
+     14
+    ],
+    "origin": "PE",
+    "job": "Bred as a companion and bed warmer in ancient Peru, prized since pre-Inca times."
    },
    "image": {
     "grid": "/breeds/peruvian-hairless-dog-medium-4a849c91-grid.webp",
@@ -10758,6 +13374,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     4,
+     8
+    ],
+    "life": [
+     11,
+     14
+    ],
+    "origin": "PE",
+    "job": "Bred as a companion and bed warmer in ancient Peru, prized since pre-Inca times."
+   },
    "image": {
     "grid": "/breeds/peruvian-hairless-dog-small-9ab4e8b7-grid.webp",
     "detail": "/breeds/peruvian-hairless-dog-small-9ab4e8b7.webp",
@@ -10808,6 +13436,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     4.5,
+     7
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "FR",
+    "job": "Bred as a smaller poodle for companionship, circus tricks and truffle hunting."
+   },
    "image": {
     "grid": "/breeds/poodle-miniature-c3c595f8-grid.webp",
     "detail": "/breeds/poodle-miniature-c3c595f8.webp",
@@ -10856,6 +13496,18 @@
     "colour": "black",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     20,
+     32
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "FR",
+    "job": "Bred to retrieve ducks from water. Pudel is old German for splashing in puddles."
    },
    "image": {
     "grid": "/breeds/poodle-standard-731818b5-grid.webp",
@@ -10906,6 +13558,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     2,
+     4
+    ],
+    "life": [
+     12,
+     16
+    ],
+    "origin": "FR",
+    "job": "Bred down from larger poodles as a tiny companion and lap dog."
+   },
    "image": {
     "grid": "/breeds/poodle-toy-2c4797f9-grid.webp",
     "detail": "/breeds/poodle-toy-2c4797f9.webp",
@@ -10952,6 +13616,18 @@
     "colour": "black",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     4,
+     8
+    ],
+    "life": [
+     13,
+     15
+    ],
+    "origin": "BE",
+    "job": "Bred to guard Belgian canal barges and catch rats. Its name means little skipper."
    },
    "image": {
     "grid": "/breeds/schipperke-86c0a71c-grid.webp",
@@ -11003,6 +13679,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     18,
+     27
+    ],
+    "life": [
+     9,
+     11
+    ],
+    "origin": "CN",
+    "job": "Bred in southern China as an all-round farm dog for guarding, hunting and herding."
+   },
    "image": {
     "grid": "/breeds/shar-pei-74167ae9-grid.webp",
     "detail": "/breeds/shar-pei-74167ae9.webp",
@@ -11052,6 +13740,18 @@
     "markings": "parti",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     4,
+     7
+    ],
+    "life": [
+     12,
+     16
+    ],
+    "origin": "CN",
+    "job": "Bred as a palace lap dog for Chinese royalty. Shih Tzu means little lion."
+   },
    "image": {
     "grid": "/breeds/shih-tzu-7fde6546-grid.webp",
     "detail": "/breeds/shih-tzu-7fde6546.webp",
@@ -11098,6 +13798,18 @@
     "colour": "black",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     8,
+     14
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "CN",
+    "job": "Bred as a companion and lucky charm in Tibetan monasteries, also helping herders."
    },
    "image": {
     "grid": "/breeds/tibetan-terrier-e086c1d6-grid.webp",
@@ -11153,6 +13865,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     13,
+     25
+    ],
+    "life": [
+     13,
+     18
+    ],
+    "origin": "MX",
+    "job": "Bred by the Aztecs as a companion, healer and guide to the afterlife."
+   },
    "image": {
     "grid": "/breeds/xoloitzcuintle-5b91bc0f-grid.webp",
     "detail": "/breeds/xoloitzcuintle-5b91bc0f.webp",
@@ -11207,6 +13931,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     5,
+     10
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "AU",
+    "job": "Bred in Australia in the 1990s as a small, low-shedding family companion."
+   },
    "image": {
     "grid": "/breeds/cavoodle-1a060e3f-grid.webp",
     "detail": "/breeds/cavoodle-1a060e3f.webp",
@@ -11260,6 +13996,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     20,
+     35
+    ],
+    "life": [
+     10,
+     15
+    ],
+    "origin": "US",
+    "job": "Bred in the 1990s as a low-shedding, family-friendly take on the Golden Retriever."
+   },
    "image": {
     "grid": "/breeds/groodle-ce5d9029-grid.webp",
     "detail": "/breeds/groodle-ce5d9029.webp",
@@ -11312,6 +14060,18 @@
     "colour": "chocolate",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     20,
+     30
+    ],
+    "life": [
+     12,
+     14
+    ],
+    "origin": "AU",
+    "job": "Bred as a low-shedding guide dog for people with allergies."
    },
    "image": {
     "grid": "/breeds/labradoodle-90a062f8-grid.webp",
@@ -11369,6 +14129,18 @@
     "markings": "solid",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     3,
+     7
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "US",
+    "job": "Bred as a small, low-shedding lap dog with a soft, fluffy coat."
+   },
    "image": {
     "grid": "/breeds/maltese-x-shih-tzu-64467f67-grid.webp",
     "detail": "/breeds/maltese-x-shih-tzu-64467f67.webp",
@@ -11420,6 +14192,18 @@
     "colour": "white",
     "markings": "solid",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     5,
+     9
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "US",
+    "job": "Bred in the 1990s as a gentle, low-shedding companion for families."
    },
    "image": {
     "grid": "/breeds/cavachon-19ed5dcb-grid.webp",
@@ -11474,6 +14258,18 @@
     "markings": "solid",
     "mask": true
    },
+   "facts": {
+    "kg": [
+     6,
+     10
+    ],
+    "life": [
+     10,
+     14
+    ],
+    "origin": "US",
+    "job": "Bred as an affectionate companion, aiming for a longer snout than a Pug."
+   },
    "image": {
     "grid": "/breeds/pugalier-d34f65e9-grid.webp",
     "detail": "/breeds/pugalier-d34f65e9.webp",
@@ -11526,6 +14322,18 @@
     "colour": "fawn",
     "markings": "solid",
     "mask": true
+   },
+   "facts": {
+    "kg": [
+     7,
+     14
+    ],
+    "life": [
+     10,
+     15
+    ],
+    "origin": "US",
+    "job": "Bred in the US in the 1980s as a friendly companion with a longer snout than a Pug."
    },
    "image": {
     "grid": "/breeds/puggle-f67c2ccb-grid.webp",
@@ -11580,6 +14388,18 @@
     "markings": "solid",
     "mask": true
    },
+   "facts": {
+    "kg": [
+     5,
+     8
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "US",
+    "job": "Bred as a small, playful companion mixing Pug charm with terrier energy."
+   },
    "image": {
     "grid": "/breeds/jug-268982c4-grid.webp",
     "detail": "/breeds/jug-268982c4.webp",
@@ -11631,6 +14451,18 @@
     "markings": "parti",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     3.5,
+     6
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "AU",
+    "job": "Bred to hunt rats and rabbits on Australian farms. Fondly called the Mini Foxie."
+   },
    "image": {
     "grid": "/breeds/miniature-fox-terrier-bd6c7208-grid.webp",
     "detail": "/breeds/miniature-fox-terrier-bd6c7208.webp",
@@ -11680,6 +14512,18 @@
     "colour": "blue",
     "markings": "merle",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     15,
+     25
+    ],
+    "life": [
+     13,
+     16
+    ],
+    "origin": "AU",
+    "job": "Bred to muster sheep and cattle across Australia, valued for work over looks."
    },
    "image": {
     "grid": "/breeds/koolie-eb28c085-grid.webp",
@@ -11732,6 +14576,18 @@
     "markings": "white_markings",
     "mask": false
    },
+   "facts": {
+    "kg": [
+     25,
+     45
+    ],
+    "life": [
+     10,
+     13
+    ],
+    "origin": "US",
+    "job": "Bred in the 1990s US as a muscly, gentle companion from bull-type terriers."
+   },
    "image": {
     "grid": "/breeds/american-bully-d5f5b1b5-grid.webp",
     "detail": "/breeds/american-bully-d5f5b1b5.webp",
@@ -11780,6 +14636,18 @@
     "colour": "red",
     "markings": "parti",
     "mask": false
+   },
+   "facts": {
+    "kg": [
+     30,
+     45
+    ],
+    "life": [
+     12,
+     15
+    ],
+    "origin": "AU",
+    "job": "Bred in Queensland in the 1970s to find, chase and hold feral pigs."
    },
    "image": {
     "grid": "/breeds/bull-arab-f1b5cd94-grid.webp",

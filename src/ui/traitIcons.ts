@@ -5,5 +5,5 @@ import type { IconName } from './icons/types.ts'
 export const TRAIT_ICON: Record<Trait, IconName> = {
   Affectionate: 'tHeart', Brave: 'tShield', Playful: 'tBall', Clever: 'tBulb', Energetic: 'tBolt', Calm: 'tMoon',
   Friendly: 'tHand', Alert: 'tEye', 'Hard-working': 'tCrook', Loyal: 'tLock', Dignified: 'tCrown', Reserved: 'tDoor',
-  Trainable: 'tCap', Protective: 'tHouse', Independent: 'tCompass', Gentle: 'tFeather',
+  Trainable: 'tCap', Protective: 'tHouse', Independent: 'tCompass', Gentle: 'tCloud',
 }

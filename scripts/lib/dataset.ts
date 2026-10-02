@@ -1,12 +1,13 @@
 // Merges the official list, the curated details and the bonus list into one ordered breed list.
 import ankc from '../../data/ankc-breeds.json' with { type: 'json' }
 import details from '../../data/breed-details.json' with { type: 'json' }
+import factsFile from '../../data/breed-facts.json' with { type: 'json' }
 import groupsFile from '../../data/groups.json' with { type: 'json' }
 import shapes from '../../data/dog-shapes.json' with { type: 'json' }
 import shortNames from '../../data/short-names.json' with { type: 'json' }
 import traitsFile from '../../data/traits.json' with { type: 'json' }
 import unofficial from '../../data/unofficial-breeds.json' with { type: 'json' }
-import type { Breed, DogShape, Group, GroupId, Trait } from '../../src/data/types.ts'
+import type { Breed, BreedFacts, DogShape, Group, GroupId, Trait } from '../../src/data/types.ts'
 import { slugify } from './ankc.ts'
 
 type Details = { name?: string; forms?: string[]; aliases?: string[] }
@@ -66,6 +67,8 @@ export function buildBreedList(): Breed[] {
   const short: Record<string, string> = shortNames.names
   const traits: Record<string, { traits: string[]; text?: string }> = traitsFile.breeds
   const shapeById = shapes.breeds as Record<string, DogShape>
+  // JSON gives plain arrays, not pairs; scripts/shipped-data.test.ts checks every entry's shape.
+  const factsById = factsFile.breeds as unknown as Record<string, BreedFacts & { src?: string }>
   return [...official, ...bonus].map((b) => {
     const t = traits[b.officialName ?? b.name]
     return {
@@ -74,9 +77,13 @@ export function buildBreedList(): Breed[] {
       traits: (t?.traits ?? []) as Trait[],
       text: t?.text ?? '',
       shape: shapeById[b.id],
+      ...(factsById[b.id] && { facts: shipFacts(factsById[b.id]) }),
     }
   })
 }
+
+/** The facts the app shows: the source link stays in data/breed-facts.json for checking. */
+const shipFacts = ({ kg, life, origin, job }: BreedFacts): BreedFacts => ({ kg, life, origin, job })
 
 /** Keys in breed-details.json that don't match an official breed name (e.g. after Dogs Australia renames one). */
 export function orphanDetailKeys(): string[] {
