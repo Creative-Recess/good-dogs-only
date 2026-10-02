@@ -39,7 +39,7 @@ export default function App() {
   const [dialog, setDialog] = useState<DialogSpec | null>(null)
   const [saver, setSaver] = useState(false)
   const [helpOpen, setHelpOpen] = useState(false)
-  const [folds, setFolds] = useState<Folds>({ temperament: true, facts: true, varieties: true, status: true })
+  const [folds, setFolds] = useState<Folds>({ temperament: true, varieties: true, status: true })
   const theme = useTheme()
   const aqua = isAquaFamily(theme)
 

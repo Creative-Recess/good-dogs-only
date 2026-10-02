@@ -6,6 +6,8 @@ export type IconName =
   | 'tHeart' | 'tShield' | 'tBall' | 'tBulb' | 'tBolt' | 'tMoon'
   | 'tHand' | 'tEye' | 'tCrook' | 'tLock' | 'tCrown' | 'tDoor'
   | 'tCap' | 'tHouse' | 'tCompass' | 'tFeather' | 'tbDogdex' | 'tbPark'
-  | 'tbProgress' | 'fHeight' | 'fWeight' | 'fLife' | 'fOrigin'
+  | 'tbProgress' | 'fLife'
+  | 'wFeather' | 'wLight' | 'wMiddle' | 'wCruiser' | 'wHeavy' | 'wSuper'
+  | 'flagGB' | 'flagDE' | 'flagSCT' | 'flagFR' | 'flagJP' | 'flagIE' | 'flagCH' | 'flagAU' | 'flagUS'
 /** Every theme's icon set must draw every icon. */
 export type IconSet = Record<IconName, IconDef>
