@@ -2,7 +2,7 @@
 // automatic checks that point out what might need a better photo or shape. Uses the app's own data and drawing code.
 import { breeds, GROUP_COLOUR, groupById, groups } from '../src/data/catalogue.ts'
 import type { Breed } from '../src/data/types.ts'
-import { DEFAULT_COLOURS, drawDog, type Dog, type DogState } from '../src/park/dog.ts'
+import { bodyOf, drawDog, type Dog, type DogState } from '../src/park/dog.ts'
 import { THEMES } from '../src/theme/themes.ts'
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!)
@@ -77,12 +77,12 @@ function drawParkDog(canvas: HTMLCanvasElement, b: Breed) {
   x.fillStyle = '#86c35f'
   x.fillRect(0, 0, W, H)
   const dog = (state: DogState): Dog => ({
-    breed: b, shape: b.shape, body: b.image?.colours.body ?? DEFAULT_COLOURS.body, patch: b.image?.colours.patch ?? DEFAULT_COLOURS.patch,
+    breed: b, shape: b.shape,
     seed: 2, x: 0, y: 0, dir: 1, state, timer: 0, hop: 0, happy: state === 'idle' ? 1 : 0, scale: 1, tx: 0, ty: 0, toSpot: false, friend: null, leaving: false,
   })
   for (const [cx, state] of [[W * 0.28, 'idle'], [W * 0.74, 'sit']] as const) {
     x.save()
-    x.translate(cx - b.shape.len * 0.4, H - 16)
+    x.translate(cx - bodyOf(b.shape).len * 0.4, H - 16)
     x.scale(2, 2)
     drawDog(x, dog(state), 0)
     x.restore()
@@ -108,7 +108,7 @@ function card(b: Breed): string {
       <figure><span class="tile"><img src="${b.image?.grid}" alt="" loading="lazy"></span><figcaption>Grid</figcaption></figure>
       <figure class="wide"><span class="tile wide"><img src="${b.image?.detail}" alt="" loading="lazy" style="object-position:${fx * 100}% ${fy * 100}%"></span><figcaption>Breed page</figcaption></figure>
       ${sils}
-      <figure class="park"><canvas width="230" height="120" aria-label="Park dog"></canvas><figcaption>Park: len ${s.len} · legs ${s.leg} · snout ${s.snout} · ${s.ears} ears · ${s.tail} tail${s.fluff ? ` · fluff ${s.fluff}` : ''}</figcaption></figure>
+      <figure class="park"><canvas width="230" height="120" aria-label="Park dog"></canvas><figcaption>Park: ${s.size} · ${s.build.replace('_', ' ')} · snout ${s.snout} · ${s.ears} ears · ${s.tail} tail · ${s.coat} coat · ${s.colour}${s.markings === 'solid' ? '' : ` ${s.markings.replace('_', ' ')}`}${s.mask ? ' · mask' : ''}</figcaption></figure>
     </div>
     <p class="about"><b>${b.traits.map(esc).join(' · ')}</b> ${esc(b.text)}</p>
     <p class="source">Photo: ${fromDA ? 'Dogs Australia' : esc(b.credit?.author ?? 'none')}${b.credit?.sourceUrl ? ` · <a href="${esc(b.credit.sourceUrl)}" target="_blank" rel="noopener">source</a>` : ''} · <code>${b.id}</code></p>
@@ -157,3 +157,45 @@ function filter() {
 for (const id of ['#q', '#group', '#flagged']) $(id).addEventListener('input', filter)
 filter()
 document.body.dataset.ready = '1'
+
+// ---------- Photo options: candidates to choose between, when there are any ----------
+// Written by a photo search into .cache/photo-options/ (not committed): options.json plus <id>-<label>.jpg per option.
+type PhotoOption = { label: string; file: string; focus: [number, number]; licence: string; author: string; note: string }
+const OPTIONS_DIR = '/.cache/photo-options'
+
+async function showOptions() {
+  const res = await fetch(`${OPTIONS_DIR}/options.json`).catch(() => null)
+  // No options yet: the dev server answers with the app's page instead, so check it's really JSON.
+  if (!res?.ok || !res.headers.get('content-type')?.includes('json')) return
+  const options: Record<string, PhotoOption[]> = await res.json()
+  const chosen = new Map<string, string>()
+  const crops = (src: string, [fx, fy]: [number, number]) =>
+    `<span class="tile"><img src="${src}" alt="" style="object-position:${fx * 100}% ${fy * 100}%"></span><span class="tile wide"><img src="${src}" alt="" style="object-position:${fx * 100}% ${fy * 100}%"></span>`
+  $('#option-list').innerHTML = Object.entries(options)
+    .map(([id, opts]) => {
+      const b = breeds.find((x) => x.id === id)
+      if (!b) return ''
+      const current = `<label class="option"><input type="radio" name="opt-${id}" value="keep" checked><span class="crops">${crops(b.image!.detail, b.image!.focus)}</span><b>Keep current</b></label>`
+      const rest = opts
+        .map((o) => `<label class="option"><input type="radio" name="opt-${id}" value="${o.label}"><span class="crops">${crops(`${OPTIONS_DIR}/${id}-${o.label}.jpg`, o.focus)}</span><b>${o.label}</b><small>${esc(o.note)}</small><small>${esc(o.author)} · ${esc(o.licence)}</small></label>`)
+        .join('')
+      return `<article class="breed"><header><span class="dex" style="background:${GROUP_COLOUR[b.groupId]}">${b.dexNo}</span><h2>${esc(b.name)}</h2></header><div class="row">${current}${rest}</div></article>`
+    })
+    .join('')
+  $('#options').hidden = false
+  const update = () => {
+    $<HTMLTextAreaElement>('#picks').value = [...chosen].map(([id, label]) => `${breeds.find((b) => b.id === id)!.dexNo} ${label}`).join(', ')
+  }
+  $('#option-list').addEventListener('change', (e) => {
+    const input = e.target as HTMLInputElement
+    const id = input.name.replace('opt-', '')
+    if (input.value === 'keep') chosen.delete(id)
+    else chosen.set(id, input.value)
+    update()
+  })
+  $('#copy-picks').addEventListener('click', () => {
+    const box = $<HTMLTextAreaElement>('#picks')
+    navigator.clipboard?.writeText(box.value).catch(() => box.select())
+  })
+}
+void showOptions()

@@ -19,19 +19,25 @@ export type Trait = (typeof TRAITS)[number]
 
 export type Rgb = [number, number, number]
 
-/** Side-on cartoon proportions for the Park's drawn dog (data/dog-shapes.json). */
+export type Colour = 'black' | 'chocolate' | 'red' | 'gold' | 'cream' | 'white' | 'fawn' | 'blue' | 'silver' | 'sable'
+export type Markings = 'solid' | 'white_markings' | 'parti' | 'tan_points' | 'tricolour' | 'brindle' | 'merle' | 'spotted' | 'saddle'
+
+/** How the Park draws a breed (data/dog-shapes.json): a few plain descriptions rather than measurements. */
 export type DogShape = {
-  /** Body length; also sets overall size (Labrador 28). */
-  len: number
-  h: number
-  leg: number
-  head: number
-  /** Muzzle length: 1 flat-faced to 10 long. */
-  snout: number
+  /** By typical adult weight: XS under ~5 kg, S ~5-10, M ~10-25, L ~25-40, XL over ~40. */
+  size: 'XS' | 'S' | 'M' | 'L' | 'XL'
+  /** Body proportions, so dogs of one size still look different: a Dachshund is long_low, a Greyhound tall_lean. */
+  build: 'standard' | 'long_low' | 'tall_lean' | 'stocky'
+  /** Muzzle length: 1 flat (Pug) to 5 very long (Borzoi). */
+  snout: 1 | 2 | 3 | 4 | 5
   ears: 'floppy' | 'long' | 'pointy' | 'bat' | 'rose' | 'tipped'
   tail: 'straight' | 'plume' | 'curl' | 'stub' | 'up'
-  /** 0 smooth to 1 very fluffy. */
-  fluff?: number
+  coat: 'smooth' | 'wiry' | 'feathered' | 'long' | 'fluffy' | 'curly' | 'corded' | 'hairless'
+  colour: Colour
+  /** The pattern on top of the colour. parti and spotted are white dogs with patches or spots of the colour. */
+  markings: Markings
+  /** A dark face mask, like a Pug's or a Boxer's. */
+  mask: boolean
 }
 
 export type Group = {
@@ -51,8 +57,6 @@ export type BreedImage = {
   height: number
   /** Where the dog is in the detail photo (0-1), for cropping it into the 770:540 frame. */
   focus: [number, number]
-  /** Body and patch colours from the photo, for the Park's drawn dog. */
-  colours: { body: Rgb; patch: Rgb }
 }
 
 export type PhotoCredit = {

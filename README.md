@@ -68,11 +68,11 @@ It's a dev page only: it isn't part of the app build.
 Hand-edited files in `data/`, merged by `scripts/lib/dataset.ts`:
 - `ankc-breeds.json` (scraped list), `breed-details.json` (display names, varieties, nicknames), `groups.json`, `unofficial-breeds.json`, `short-names.json` (grid labels)
 - `traits.json`: 3 temperament traits from a fixed list of 16, plus one line of text in our own words, per breed
-- `dog-shapes.json`: each breed's proportions for its Park dog
+- `dog-shapes.json`: how each breed's Park dog is drawn: size (XS to XL), build, snout (1 to 5), ears, tail, coat type, and its colour and markings
 - `photo-picks.json`: which photo each breed uses (a Wikimedia Commons file, or Dogs Australia's own breed photo) and where to centre the crops
 - `wiki-map.json`, `wiki-overrides.json`, `photo-sources.json`: where to look for Commons photos
 
-`node scripts/build-data.ts` turns these into what the app ships: `src/data/breeds.json` and `public/breeds/` (a square grid photo, a breed-page photo and a silhouette mask per breed, plus the Park colours taken from each photo).
+`node scripts/build-data.ts` turns these into what the app ships: `src/data/breeds.json` and `public/breeds/` (a square grid photo, a breed-page photo and a silhouette mask per breed).
 Run it after changing any data file. It needs macOS: the silhouettes are cut out by Apple's Vision framework (`scripts/vision/mask.swift`, run through `swift`), once per photo.
 Downloads and other working files go in `.cache/` (not committed).
 

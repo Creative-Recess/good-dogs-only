@@ -61,14 +61,15 @@
    ],
    "text": "A monkey-faced little dog with a serious air about it. Fond of its family and fiercely loyal.",
    "shape": {
-    "len": 17,
-    "h": 9,
-    "leg": 6,
-    "head": 8,
+    "size": "XS",
+    "build": "standard",
     "snout": 2,
     "ears": "pointy",
     "tail": "up",
-    "fluff": 0.6
+    "coat": "wiry",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/affenpinscher-3282fa8d-grid.webp",
@@ -79,19 +80,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      45,
-      45,
-      46
-     ],
-     "patch": [
-      152,
-      135,
-      106
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -121,14 +110,15 @@
    ],
    "text": "A true terrier in a silky coat - keen, busy and quick to bark. Loving at home but has a stubborn streak.",
    "shape": {
-    "len": 19,
-    "h": 8,
-    "leg": 6,
-    "head": 7,
-    "snout": 5,
+    "size": "XS",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "up",
-    "fluff": 0.6
+    "coat": "long",
+    "colour": "blue",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/australian-silky-terrier-05526e96-grid.webp",
@@ -139,19 +129,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      142,
-      113,
-      79
-     ],
-     "patch": [
-      177,
-      171,
-      146
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -180,14 +158,15 @@
    ],
    "text": "Cheerful, bouncy and keen to meet everyone. A white powder puff that loves a game and a cuddle.",
    "shape": {
-    "len": 19,
-    "h": 10,
-    "leg": 7,
-    "head": 8,
+    "size": "S",
+    "build": "standard",
     "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 1
+    "coat": "curly",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/bichon-frise-4f5a2e68-grid.webp",
@@ -198,19 +177,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      207,
-      206,
-      210
-     ],
-     "patch": [
-      147,
-      145,
-      147
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -237,14 +204,15 @@
    ],
    "text": "Small, silky and full of fun. Sticks close to its people and loves a game followed by a cuddle.",
    "shape": {
-    "len": 18,
-    "h": 8,
-    "leg": 5,
-    "head": 7,
-    "snout": 4,
+    "size": "XS",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "plume",
-    "fluff": 0.7
+    "coat": "long",
+    "colour": "black",
+    "markings": "tricolour",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/biewer-terrier-14d47bfe-grid.webp",
@@ -255,19 +223,7 @@
     "focus": [
      0.54,
      0.5
-    ],
-    "colours": {
-     "body": [
-      212,
-      199,
-      179
-     ],
-     "patch": [
-      141,
-      113,
-      83
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Detlef Breiting",
@@ -293,14 +249,15 @@
    ],
    "text": "A quiet, laid-back little cloud of a dog. Sticks close to its family and loves a cuddle.",
    "shape": {
-    "len": 18,
-    "h": 9,
-    "leg": 6,
-    "head": 8,
+    "size": "XS",
+    "build": "standard",
     "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 1
+    "coat": "curly",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/bolognese-25881226-grid.webp",
@@ -311,19 +268,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      176,
-      176,
-      174
-     ],
-     "patch": [
-      114,
-      114,
-      108
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -354,14 +299,15 @@
    ],
    "text": "Friendly with everyone, dogs included. Happy on the couch or on a walk.",
    "shape": {
-    "len": 21,
-    "h": 10,
-    "leg": 8,
-    "head": 8,
-    "snout": 4,
+    "size": "S",
+    "build": "standard",
+    "snout": 2,
     "ears": "long",
     "tail": "plume",
-    "fluff": 0.4
+    "coat": "feathered",
+    "colour": "red",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/cavalier-king-charles-spaniel-532c3e45-grid.webp",
@@ -372,19 +318,7 @@
     "focus": [
      0.3,
      0.5
-    ],
-    "colours": {
-     "body": [
-      118,
-      115,
-      76
-     ],
-     "patch": [
-      245,
-      244,
-      239
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -415,14 +349,15 @@
    ],
    "text": "Tiny but full of spirit and quick to sound the alarm. Often bonds tightly with one favourite person.",
    "shape": {
-    "len": 16,
-    "h": 8,
-    "leg": 6,
-    "head": 8,
-    "snout": 3,
+    "size": "XS",
+    "build": "standard",
+    "snout": 2,
     "ears": "bat",
     "tail": "plume",
-    "fluff": 0.5
+    "coat": "feathered",
+    "colour": "gold",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/chihuahua-long-coat-72f9e6a0-grid.webp",
@@ -433,19 +368,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      172,
-      140,
-      118
-     ],
-     "patch": [
-      109,
-      111,
-      84
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -476,13 +399,15 @@
    ],
    "text": "Tiny but confident, often bonding closely with one person. Quick to bark at strangers.",
    "shape": {
-    "len": 16,
-    "h": 8,
-    "leg": 6,
-    "head": 8,
-    "snout": 3,
+    "size": "XS",
+    "build": "standard",
+    "snout": 2,
     "ears": "bat",
-    "tail": "curl"
+    "tail": "curl",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tricolour",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/chihuahua-smooth-coat-415bc840-grid.webp",
@@ -493,19 +418,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      42,
-      46,
-      51
-     ],
-     "patch": [
-      145,
-      142,
-      114
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -535,14 +448,15 @@
    ],
    "text": "A cheerful, gentle-natured companion that loves being close to its people. Happy to play, then snuggle.",
    "shape": {
-    "len": 18,
-    "h": 8,
-    "leg": 8,
-    "head": 7,
-    "snout": 5,
+    "size": "XS",
+    "build": "tall_lean",
+    "snout": 3,
     "ears": "bat",
     "tail": "straight",
-    "fluff": 0.2
+    "coat": "hairless",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/chinese-crested-dog-cfde53de-grid.webp",
@@ -553,19 +467,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      187,
-      178,
-      170
-     ],
-     "patch": [
-      230,
-      235,
-      237
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -595,14 +497,15 @@
    ],
    "text": "Sociable and easygoing with people and other dogs alike. Has a clownish, playful side.",
    "shape": {
-    "len": 19,
-    "h": 9,
-    "leg": 6,
-    "head": 8,
+    "size": "S",
+    "build": "standard",
     "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 1
+    "coat": "long",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/coton-de-tulear-4355755f-grid.webp",
@@ -613,19 +516,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      233,
-      243,
-      249
-     ],
-     "patch": [
-      168,
-      178,
-      182
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -656,13 +547,15 @@
    ],
    "text": "A small terrier with old ratting instincts. Keen-eyed, lively and bolder than its size suggests.",
    "shape": {
-    "len": 18,
-    "h": 8,
-    "leg": 8,
-    "head": 7,
-    "snout": 5,
+    "size": "XS",
+    "build": "standard",
+    "snout": 4,
     "ears": "pointy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/english-toy-terrier-black-and-tan-b5d7e016-grid.webp",
@@ -673,19 +566,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      145,
-      107,
-      79
-     ],
-     "patch": [
-      52,
-      46,
-      43
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -715,14 +596,15 @@
    ],
    "text": "Bearded, bright-eyed and busy, with an almost human expression. Clever, lively and watchful.",
    "shape": {
-    "len": 17,
-    "h": 9,
-    "leg": 6,
-    "head": 8,
+    "size": "XS",
+    "build": "standard",
     "snout": 1,
     "ears": "rose",
     "tail": "up",
-    "fluff": 0.4
+    "coat": "wiry",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/griffon-bruxellois-d14ac772-grid.webp",
@@ -733,19 +615,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      81,
-      46,
-      20
-     ],
-     "patch": [
-      175,
-      109,
-      47
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -772,14 +642,15 @@
    ],
    "text": "Sociable and happy-go-lucky, with a soft, silky coat. Quick to learn tricks and loves to play.",
    "shape": {
-    "len": 19,
-    "h": 9,
-    "leg": 6,
-    "head": 8,
+    "size": "S",
+    "build": "standard",
     "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.9
+    "coat": "long",
+    "colour": "cream",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/havanese-2854236e-grid.webp",
@@ -790,19 +661,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      184,
-      178,
-      172
-     ],
-     "patch": [
-      110,
-      90,
-      82
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -832,13 +691,15 @@
    ],
    "text": "A slim, affectionate sighthound that loves warmth and a sprint. Can be shy with strangers.",
    "shape": {
-    "len": 20,
-    "h": 8,
-    "leg": 11,
-    "head": 6,
-    "snout": 7,
+    "size": "XS",
+    "build": "tall_lean",
+    "snout": 5,
     "ears": "rose",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/italian-greyhound-09379774-grid.webp",
@@ -849,19 +710,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      250,
-      249,
-      237
-     ],
-     "patch": [
-      169,
-      75,
-      38
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -888,14 +737,15 @@
    ],
    "text": "Gentle and sweet-tempered, with a cat-like streak. Bright, friendly and happiest near its people.",
    "shape": {
-    "len": 17,
-    "h": 9,
-    "leg": 6,
-    "head": 8,
+    "size": "XS",
+    "build": "standard",
     "snout": 1,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.6
+    "coat": "long",
+    "colour": "black",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/japanese-chin-141435c0-grid.webp",
@@ -906,19 +756,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      21,
-      22,
-      20
-     ],
-     "patch": [
-      214,
-      214,
-      210
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -948,14 +786,15 @@
    ],
    "text": "Soft-natured and devoted at home, though a bit shy with new people. A quiet, loving lap dog.",
    "shape": {
-    "len": 19,
-    "h": 10,
-    "leg": 6,
-    "head": 8,
+    "size": "S",
+    "build": "standard",
     "snout": 1,
     "ears": "long",
     "tail": "plume",
-    "fluff": 0.5
+    "coat": "feathered",
+    "colour": "black",
+    "markings": "tricolour",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/king-charles-spaniel-fa02f1c2-grid.webp",
@@ -966,19 +805,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      145,
-      136,
-      113
-     ],
-     "patch": [
-      49,
-      42,
-      38
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1009,14 +836,15 @@
    ],
    "text": "Often clipped like a tiny lion. Bright, friendly and loving, it thrives on company and attention.",
    "shape": {
-    "len": 19,
-    "h": 9,
-    "leg": 7,
-    "head": 8,
+    "size": "S",
+    "build": "standard",
     "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.8
+    "coat": "long",
+    "colour": "silver",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/lowchen-little-lion-dog-134b5ce2-grid.webp",
@@ -1027,19 +855,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      144,
-      143,
-      145
-     ],
-     "patch": [
-      81,
-      80,
-      83
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1066,14 +882,15 @@
    ],
    "text": "Sweet natured and bright, thriving on company. Stays playful well into old age.",
    "shape": {
-    "len": 18,
-    "h": 8,
-    "leg": 5,
-    "head": 7,
+    "size": "XS",
+    "build": "standard",
     "snout": 3,
     "ears": "long",
     "tail": "plume",
-    "fluff": 0.8
+    "coat": "long",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/maltese-a6a0c1ce-grid.webp",
@@ -1084,19 +901,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      236,
-      233,
-      230
-     ],
-     "patch": [
-      179,
-      178,
-      173
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1126,13 +931,15 @@
    ],
    "text": "Small but fearless, strutting about like it owns the place. Lively, alert and always on the go.",
    "shape": {
-    "len": 17,
-    "h": 8,
-    "leg": 8,
-    "head": 7,
-    "snout": 5,
+    "size": "XS",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
-    "tail": "up"
+    "tail": "up",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/miniature-pinscher-45a34620-grid.webp",
@@ -1143,19 +950,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      79,
-      78,
-      79
-     ],
-     "patch": [
-      212,
-      212,
-      199
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1182,14 +977,15 @@
    ],
    "text": "Named for its butterfly ears. Sharp as a tack, lively and quick to learn, it shines at tricks and agility.",
    "shape": {
-    "len": 18,
-    "h": 8,
-    "leg": 7,
-    "head": 7,
-    "snout": 4,
+    "size": "XS",
+    "build": "standard",
+    "snout": 3,
     "ears": "bat",
     "tail": "plume",
-    "fluff": 0.6
+    "coat": "feathered",
+    "colour": "red",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/papillon-54d1b8b7-grid.webp",
@@ -1200,19 +996,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      231,
-      217,
-      207
-     ],
-     "patch": [
-      51,
-      40,
-      39
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1241,14 +1025,15 @@
    ],
    "text": "Bred for Chinese royalty and still acts the part. Brave and loyal, but keeps strangers at a distance.",
    "shape": {
-    "len": 19,
-    "h": 9,
-    "leg": 3,
-    "head": 9,
+    "size": "XS",
+    "build": "long_low",
     "snout": 1,
     "ears": "long",
     "tail": "plume",
-    "fluff": 0.9
+    "coat": "long",
+    "colour": "fawn",
+    "markings": "solid",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/pekingese-ffb17f00-grid.webp",
@@ -1259,19 +1044,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      172,
-      169,
-      145
-     ],
-     "patch": [
-      50,
-      49,
-      43
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1300,14 +1073,15 @@
    ],
    "text": "A bold, bubbly fluffball with plenty to say. Bright and keen to watch everything going on.",
    "shape": {
-    "len": 16,
-    "h": 9,
-    "leg": 5,
-    "head": 8,
+    "size": "XS",
+    "build": "standard",
     "snout": 2,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 1
+    "coat": "fluffy",
+    "colour": "sable",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/pomeranian-06edc7f0-grid.webp",
@@ -1318,19 +1092,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      180,
-      167,
-      146
-     ],
-     "patch": [
-      140,
-      120,
-      81
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1359,13 +1121,15 @@
    ],
    "text": "One of the smallest breeds around. Lively and alert, but loves curling up with its people after a busy day.",
    "shape": {
-    "len": 16,
-    "h": 7,
-    "leg": 7,
-    "head": 6,
-    "snout": 4,
+    "size": "XS",
+    "build": "standard",
+    "snout": 3,
     "ears": "bat",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/prague-ratter-cf02976d-grid.webp",
@@ -1376,19 +1140,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      182,
-      177,
-      117
-     ],
-     "patch": [
-      25,
-      24,
-      20
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1415,13 +1167,15 @@
    ],
    "text": "A sociable lap dog that loves people and attention. Snores, snuffles and rarely wants a long run.",
    "shape": {
-    "len": 19,
-    "h": 11,
-    "leg": 6,
-    "head": 10,
+    "size": "S",
+    "build": "stocky",
     "snout": 1,
     "ears": "rose",
-    "tail": "curl"
+    "tail": "curl",
+    "coat": "smooth",
+    "colour": "fawn",
+    "markings": "solid",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/pug-08a44871-grid.webp",
@@ -1432,19 +1186,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      213,
-      209,
-      205
-     ],
-     "patch": [
-      140,
-      141,
-      142
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1475,14 +1217,15 @@
    ],
    "text": "Cheerful, busy and curious about everything. Devoted to its owner and wary of strangers.",
    "shape": {
-    "len": 16,
-    "h": 7,
-    "leg": 8,
-    "head": 6,
-    "snout": 4,
+    "size": "XS",
+    "build": "tall_lean",
+    "snout": 3,
     "ears": "bat",
     "tail": "plume",
-    "fluff": 0.4
+    "coat": "feathered",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/russian-toy-long-haired-577b3430-grid.webp",
@@ -1493,19 +1236,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      78,
-      49,
-      25
-     ],
-     "patch": [
-      143,
-      105,
-      51
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1536,13 +1267,15 @@
    ],
    "text": "Tiny, leggy and lively, with a cheerful outlook. Forms a strong bond with its owner.",
    "shape": {
-    "len": 16,
-    "h": 7,
-    "leg": 8,
-    "head": 6,
-    "snout": 4,
+    "size": "XS",
+    "build": "tall_lean",
+    "snout": 3,
     "ears": "bat",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/russian-toy-smooth-haired-d097b61f-grid.webp",
@@ -1553,19 +1286,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      26,
-      23,
-      19
-     ],
-     "patch": [
-      106,
-      87,
-      72
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1594,14 +1315,15 @@
    ],
    "text": "Bright and self-assured, often keeping watch from a high perch. Aloof with strangers but loving with family.",
    "shape": {
-    "len": 19,
-    "h": 9,
-    "leg": 6,
-    "head": 8,
-    "snout": 3,
+    "size": "S",
+    "build": "standard",
+    "snout": 2,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.5
+    "coat": "feathered",
+    "colour": "gold",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/tibetan-spaniel-0ddd1470-grid.webp",
@@ -1612,19 +1334,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      113,
-      116,
-      111
-     ],
-     "patch": [
-      204,
-      207,
-      207
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1653,14 +1363,15 @@
    ],
    "text": "Big terrier attitude packed into a silky little body. Bright, busy and quick to sound the alarm.",
    "shape": {
-    "len": 17,
-    "h": 8,
-    "leg": 5,
-    "head": 7,
-    "snout": 4,
+    "size": "XS",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "up",
-    "fluff": 0.6
+    "coat": "long",
+    "colour": "blue",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/yorkshire-terrier-b5e3f21a-grid.webp",
@@ -1671,19 +1382,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      205,
-      176,
-      144
-     ],
-     "patch": [
-      26,
-      34,
-      39
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1710,14 +1409,15 @@
    ],
    "text": "The largest of the terriers. Friendly and confident, with a proud bearing and real courage.",
    "shape": {
-    "len": 28,
-    "h": 11,
-    "leg": 12,
-    "head": 9,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
     "tail": "up",
-    "fluff": 0.3
+    "coat": "wiry",
+    "colour": "black",
+    "markings": "saddle",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/airedale-terrier-6f63b1a8-grid.webp",
@@ -1728,19 +1428,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      204,
-      173,
-      141
-     ],
-     "patch": [
-      78,
-      75,
-      77
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1768,13 +1456,15 @@
    ],
    "text": "A lively, smart terrier that's mostly bald. Keen-eyed, playful and always ready for action.",
    "shape": {
-    "len": 21,
-    "h": 9,
-    "leg": 8,
-    "head": 7,
-    "snout": 5,
+    "size": "S",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "hairless",
+    "colour": "black",
+    "markings": "spotted",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/american-hairless-terrier-1f318ea2-grid.webp",
@@ -1785,19 +1475,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      20,
-      25,
-      18
-     ],
-     "patch": [
-      168,
-      150,
-      144
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1828,13 +1506,15 @@
    ],
    "text": "Confident and strong, but usually a softie with its people. Famous for courage and devotion.",
    "shape": {
-    "len": 26,
-    "h": 13,
-    "leg": 9,
-    "head": 11,
-    "snout": 5,
+    "size": "L",
+    "build": "stocky",
+    "snout": 3,
     "ears": "rose",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "blue",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/american-staffordshire-terrier-4778e963-grid.webp",
@@ -1845,19 +1525,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      145,
-      142,
-      110
-     ],
-     "patch": [
-      12,
-      9,
-      9
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1886,14 +1554,15 @@
    ],
    "text": "A tough little Aussie worker bred to deal with snakes and rats. Devoted and loving with its family.",
    "shape": {
-    "len": 21,
-    "h": 9,
-    "leg": 6,
-    "head": 8,
-    "snout": 5,
+    "size": "S",
+    "build": "long_low",
+    "snout": 3,
     "ears": "pointy",
     "tail": "up",
-    "fluff": 0.4
+    "coat": "wiry",
+    "colour": "blue",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/australian-terrier-e474f649-grid.webp",
@@ -1904,19 +1573,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      143,
-      104,
-      87
-     ],
-     "patch": [
-      49,
-      43,
-      49
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1943,14 +1600,15 @@
    ],
    "text": "Looks like a little lamb but has a terrier's pluck. Sweet with its people and happy to say hello.",
    "shape": {
-    "len": 24,
-    "h": 10,
-    "leg": 11,
-    "head": 7,
-    "snout": 7,
+    "size": "S",
+    "build": "tall_lean",
+    "snout": 4,
     "ears": "long",
     "tail": "straight",
-    "fluff": 0.8
+    "coat": "curly",
+    "colour": "silver",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/bedlington-terrier-10e5ee56-grid.webp",
@@ -1961,19 +1619,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      253,
-      253,
-      252
-     ],
-     "patch": [
-      184,
-      174,
-      168
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2000,14 +1646,15 @@
    ],
    "text": "A scruffy, otter-headed worker that's game for anything. Plenty of energy and grit for its size.",
    "shape": {
-    "len": 21,
-    "h": 9,
-    "leg": 8,
-    "head": 8,
-    "snout": 4,
+    "size": "S",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "up",
-    "fluff": 0.2
+    "coat": "wiry",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/border-terrier-6af785b0-grid.webp",
@@ -2018,19 +1665,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      206,
-      177,
-      145
-     ],
-     "patch": [
-      140,
-      114,
-      81
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2059,13 +1694,15 @@
    ],
    "text": "A comic, strong-willed dog that loves people. Needs firm, fun training and lots of exercise.",
    "shape": {
-    "len": 26,
-    "h": 13,
-    "leg": 9,
-    "head": 10,
-    "snout": 7,
+    "size": "L",
+    "build": "stocky",
+    "snout": 5,
     "ears": "pointy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "fawn",
+    "markings": "brindle",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/bull-terrier-f6b97fa7-grid.webp",
@@ -2076,19 +1713,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      146,
-      151,
-      85
-     ],
-     "patch": [
-      23,
-      25,
-      19
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2118,13 +1743,15 @@
    ],
    "text": "A fun-loving clown with a big personality in a compact body. Plucky and a bit stubborn.",
    "shape": {
-    "len": 21,
-    "h": 11,
-    "leg": 7,
-    "head": 9,
-    "snout": 6,
+    "size": "M",
+    "build": "stocky",
+    "snout": 5,
     "ears": "pointy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tricolour",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/bull-terrier-miniature-a75e369f-grid.webp",
@@ -2135,19 +1762,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      47,
-      47,
-      46
-     ],
-     "patch": [
-      100,
-      90,
-      84
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2174,14 +1789,15 @@
    ],
    "text": "A scrappy, cheerful little worker that's always up for adventure. Confident with a mind of its own.",
    "shape": {
-    "len": 20,
-    "h": 9,
-    "leg": 6,
-    "head": 8,
-    "snout": 4,
+    "size": "S",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "up",
-    "fluff": 0.4
+    "coat": "wiry",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/cairn-terrier-0e8500e9-grid.webp",
@@ -2192,19 +1808,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      87,
-      78,
-      76
-     ],
-     "patch": [
-      147,
-      137,
-      122
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2231,14 +1835,15 @@
    ],
    "text": "A laid-back terrier from Czechia with a long, low build. Easygoing, friendly and keen to please.",
    "shape": {
-    "len": 24,
-    "h": 9,
-    "leg": 6,
-    "head": 8,
-    "snout": 6,
+    "size": "S",
+    "build": "long_low",
+    "snout": 4,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.4
+    "coat": "long",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/cesky-terrier-1c5289e1-grid.webp",
@@ -2249,19 +1854,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      85,
-      81,
-      74
-     ],
-     "patch": [
-      144,
-      143,
-      142
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2291,14 +1884,15 @@
    ],
    "text": "Long and low, with a fluffy topknot. Thinks for itself but is a loving, clever companion.",
    "shape": {
-    "len": 25,
-    "h": 9,
-    "leg": 5,
-    "head": 9,
-    "snout": 4,
+    "size": "S",
+    "build": "long_low",
+    "snout": 3,
     "ears": "long",
     "tail": "straight",
-    "fluff": 0.4
+    "coat": "wiry",
+    "colour": "cream",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/dandie-dinmont-terrier-eb62d808-grid.webp",
@@ -2309,19 +1903,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      175,
-      172,
-      145
-     ],
-     "patch": [
-      230,
-      204,
-      182
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2350,13 +1932,15 @@
    ],
    "text": "Bred to bolt foxes and still keen as mustard. Sociable and bold, missing very little around it.",
    "shape": {
-    "len": 23,
-    "h": 10,
-    "leg": 10,
-    "head": 7,
-    "snout": 7,
+    "size": "S",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
-    "tail": "up"
+    "tail": "up",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/fox-terrier-smooth-1e77b192-grid.webp",
@@ -2367,19 +1951,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      242,
-      243,
-      243
-     ],
-     "patch": [
-      24,
-      24,
-      25
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2409,14 +1981,15 @@
    ],
    "text": "Wiry-coated and full of beans. Friendly and plucky, with ears pricked for anything happening nearby.",
    "shape": {
-    "len": 23,
-    "h": 10,
-    "leg": 10,
-    "head": 7,
-    "snout": 7,
+    "size": "S",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
     "tail": "up",
-    "fluff": 0.3
+    "coat": "wiry",
+    "colour": "black",
+    "markings": "tricolour",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/fox-terrier-wire-25d8d374-grid.webp",
@@ -2427,19 +2000,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      142,
-      138,
-      114
-     ],
-     "patch": [
-      184,
-      179,
-      174
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2469,14 +2030,15 @@
    ],
    "text": "An intense, fearless little hunting dog that lives to work. Needs lots to do and firm, consistent training.",
    "shape": {
-    "len": 22,
-    "h": 10,
-    "leg": 8,
-    "head": 8,
-    "snout": 6,
+    "size": "S",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "up",
-    "fluff": 0.2
+    "coat": "wiry",
+    "colour": "black",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/german-hunting-terrier-c8b82740-grid.webp",
@@ -2487,19 +2049,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      46,
-      47,
-      50
-     ],
-     "patch": [
-      112,
-      107,
-      112
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2530,14 +2080,15 @@
    ],
    "text": "A sturdy Irish terrier that's quieter than most. Gentle at home but gutsy and active outdoors.",
    "shape": {
-    "len": 23,
-    "h": 10,
-    "leg": 5,
-    "head": 9,
-    "snout": 5,
+    "size": "M",
+    "build": "long_low",
+    "snout": 3,
     "ears": "rose",
     "tail": "up",
-    "fluff": 0.3
+    "coat": "wiry",
+    "colour": "cream",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/glen-of-imaal-terrier-293a5fb5-grid.webp",
@@ -2548,19 +2099,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      246,
-      214,
-      168
-     ],
-     "patch": [
-      144,
-      112,
-      78
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2587,14 +2126,15 @@
    ],
    "text": "Bold and spirited with a reckless streak. Deeply devoted to its people, less patient with other dogs.",
    "shape": {
-    "len": 25,
-    "h": 10,
-    "leg": 11,
-    "head": 8,
-    "snout": 7,
+    "size": "M",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
     "tail": "up",
-    "fluff": 0.2
+    "coat": "wiry",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/irish-terrier-3f72b98c-grid.webp",
@@ -2605,19 +2145,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      104,
-      107,
-      110
-     ],
-     "patch": [
-      236,
-      214,
-      170
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2648,13 +2176,15 @@
    ],
    "text": "Small, tireless and always busy. Loves chasing and digging, and needs plenty to do.",
    "shape": {
-    "len": 22,
-    "h": 9,
-    "leg": 8,
-    "head": 7,
-    "snout": 6,
+    "size": "S",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
-    "tail": "up"
+    "tail": "up",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/jack-russell-terrier-8af78a68-grid.webp",
@@ -2665,19 +2195,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      251,
-      243,
-      241
-     ],
-     "patch": [
-      112,
-      114,
-      105
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2706,14 +2224,15 @@
    ],
    "text": "A strong, smart terrier with a determined attitude. Playful with family but keeps a watchful eye out.",
    "shape": {
-    "len": 26,
-    "h": 11,
-    "leg": 11,
-    "head": 8,
-    "snout": 7,
+    "size": "M",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
     "tail": "up",
-    "fluff": 0.7
+    "coat": "curly",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/kerry-blue-terrier-112dbe49-grid.webp",
@@ -2724,19 +2243,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      46,
-      43,
-      46
-     ],
-     "patch": [
-      109,
-      109,
-      117
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2763,14 +2270,15 @@
    ],
    "text": "Self-assured and spirited, with a proud little swagger. Friendly with people and brave to a fault.",
    "shape": {
-    "len": 21,
-    "h": 9,
-    "leg": 9,
-    "head": 7,
-    "snout": 6,
+    "size": "S",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
     "tail": "up",
-    "fluff": 0.3
+    "coat": "wiry",
+    "colour": "black",
+    "markings": "saddle",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/lakeland-terrier-21effd00-grid.webp",
@@ -2781,19 +2289,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      235,
-      206,
-      170
-     ],
-     "patch": [
-      109,
-      87,
-      76
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2820,13 +2316,15 @@
    ],
    "text": "Sleek and black and tan, once a champion ratter. Watchful and devoted, but cool with strangers.",
    "shape": {
-    "len": 23,
-    "h": 9,
-    "leg": 9,
-    "head": 7,
-    "snout": 7,
+    "size": "S",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/manchester-terrier-ded36e9a-grid.webp",
@@ -2837,19 +2335,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      22,
-      24,
-      21
-     ],
-     "patch": [
-      179,
-      171,
-      138
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2876,14 +2362,15 @@
    ],
    "text": "Small but fearless, with a sunny, lovable nature. Gets along well and rarely picks fights.",
    "shape": {
-    "len": 18,
-    "h": 8,
-    "leg": 5,
-    "head": 7,
-    "snout": 4,
+    "size": "S",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "up",
-    "fluff": 0.3
+    "coat": "wiry",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/norfolk-terrier-f3a6675f-grid.webp",
@@ -2894,19 +2381,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      145,
-      84,
-      46
-     ],
-     "patch": [
-      203,
-      147,
-      81
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2933,14 +2408,15 @@
    ],
    "text": "A tough little terrier that's always on the go. Happy, lovable and not one to start trouble.",
    "shape": {
-    "len": 18,
-    "h": 8,
-    "leg": 5,
-    "head": 7,
-    "snout": 4,
+    "size": "S",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "up",
-    "fluff": 0.3
+    "coat": "wiry",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/norwich-terrier-e8d3df92-grid.webp",
@@ -2951,19 +2427,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      144,
-      108,
-      80
-     ],
-     "patch": [
-      85,
-      78,
-      46
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2993,13 +2457,15 @@
    ],
    "text": "A busy, bold hunting terrier that loves a job to do. Friendly, tireless and needs plenty of exercise.",
    "shape": {
-    "len": 23,
-    "h": 10,
-    "leg": 10,
-    "head": 7,
-    "snout": 6,
+    "size": "S",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
-    "tail": "up"
+    "tail": "up",
+    "coat": "wiry",
+    "colour": "red",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/parson-russell-terrier-55f1f5c5-grid.webp",
@@ -3010,19 +2476,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      240,
-      242,
-      247
-     ],
-     "patch": [
-      178,
-      175,
-      180
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3052,14 +2506,15 @@
    ],
    "text": "Short-legged and serious, with a proud, independent air. Brave and deeply loyal to its own people.",
    "shape": {
-    "len": 21,
-    "h": 10,
-    "leg": 4,
-    "head": 9,
-    "snout": 6,
+    "size": "S",
+    "build": "long_low",
+    "snout": 4,
     "ears": "pointy",
     "tail": "up",
-    "fluff": 0.4
+    "coat": "wiry",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/scottish-terrier-6d334e1a-grid.webp",
@@ -3070,19 +2525,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      45,
-      46,
-      43
-     ],
-     "patch": [
-      97,
-      100,
-      78
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3109,14 +2552,15 @@
    ],
    "text": "A low, white Welsh terrier with a big beard. Bold and watchful, but friendly once it knows you.",
    "shape": {
-    "len": 22,
-    "h": 9,
-    "leg": 5,
-    "head": 8,
-    "snout": 6,
+    "size": "S",
+    "build": "long_low",
+    "snout": 4,
     "ears": "floppy",
     "tail": "up",
-    "fluff": 0.4
+    "coat": "wiry",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/sealyham-terrier-c0f21a05-grid.webp",
@@ -3127,19 +2571,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      152,
-      148,
-      143
-     ],
-     "patch": [
-      46,
-      42,
-      26
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3166,14 +2598,15 @@
    ],
    "text": "Elegant and steady, usually devoted to one special person. Cautious around people it doesn't know.",
    "shape": {
-    "len": 26,
-    "h": 8,
-    "leg": 4,
-    "head": 8,
-    "snout": 6,
+    "size": "M",
+    "build": "long_low",
+    "snout": 3,
     "ears": "pointy",
     "tail": "straight",
-    "fluff": 0.7
+    "coat": "long",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/skye-terrier-0213a1e9-grid.webp",
@@ -3184,19 +2617,7 @@
     "focus": [
      0.42,
      0.5
-    ],
-    "colours": {
-     "body": [
-      49,
-      49,
-      46
-     ],
-     "patch": [
-      142,
-      141,
-      143
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Pleple2000",
@@ -3226,14 +2647,15 @@
    ],
    "text": "Bouncy and affectionate, famous for its exuberant greetings. Loves people and has energy to burn.",
    "shape": {
-    "len": 25,
-    "h": 10,
-    "leg": 10,
-    "head": 8,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "up",
-    "fluff": 0.7
+    "coat": "long",
+    "colour": "cream",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/soft-coated-wheaten-terrier-e8376603-grid.webp",
@@ -3244,19 +2666,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      208,
-      180,
-      145
-     ],
-     "patch": [
-      146,
-      117,
-      85
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3287,13 +2697,15 @@
    ],
    "text": "Muscular but soft-hearted, famously devoted to its family. Full of energy and keen on a game.",
    "shape": {
-    "len": 24,
-    "h": 12,
-    "leg": 8,
-    "head": 10,
-    "snout": 5,
+    "size": "M",
+    "build": "stocky",
+    "snout": 3,
     "ears": "rose",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/staffordshire-bull-terrier-7aca928a-grid.webp",
@@ -3304,19 +2716,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      149,
-      119,
-      72
-     ],
-     "patch": [
-      38,
-      48,
-      48
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3345,13 +2745,15 @@
    ],
    "text": "A small Aussie terrier, watchful and plucky. Fiercely loyal to its family and fearless for its size.",
    "shape": {
-    "len": 20,
-    "h": 9,
-    "leg": 8,
-    "head": 7,
-    "snout": 5,
+    "size": "S",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
-    "tail": "up"
+    "tail": "up",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/tenterfield-terrier-79cd7486-grid.webp",
@@ -3362,19 +2764,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      214,
-      210,
-      199
-     ],
-     "patch": [
-      146,
-      142,
-      113
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3401,14 +2791,15 @@
    ],
    "text": "Cheerful and spirited, with a classic black and tan coat. Brave outdoors and loving at home.",
    "shape": {
-    "len": 22,
-    "h": 9,
-    "leg": 9,
-    "head": 7,
-    "snout": 7,
+    "size": "S",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
     "tail": "up",
-    "fluff": 0.3
+    "coat": "wiry",
+    "colour": "black",
+    "markings": "saddle",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/welsh-terrier-08fc5b2a-grid.webp",
@@ -3419,19 +2810,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      206,
-      171,
-      148
-     ],
-     "patch": [
-      77,
-      74,
-      82
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3461,14 +2840,15 @@
    ],
    "text": "A bright little terrier with a big personality. Independent, but happy to be in the thick of things.",
    "shape": {
-    "len": 20,
-    "h": 9,
-    "leg": 6,
-    "head": 8,
-    "snout": 4,
+    "size": "S",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "up",
-    "fluff": 0.5
+    "coat": "wiry",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/west-highland-white-terrier-de30e149-grid.webp",
@@ -3479,19 +2859,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      170,
-      172,
-      177
-     ],
-     "patch": [
-      114,
-      115,
-      109
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3518,13 +2886,15 @@
    ],
    "text": "An old Italian pointing dog with droopy ears and a gentle face. Calm at home and keen to work.",
    "shape": {
-    "len": 30,
-    "h": 13,
-    "leg": 12,
-    "head": 10,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/bracco-italiano-27fc9f86-grid.webp",
@@ -3535,19 +2905,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      206,
-      206,
-      51
-     ],
-     "patch": [
-      205,
-      198,
-      185
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3576,14 +2934,15 @@
    ],
    "text": "A lively, compact bird dog with heaps of stamina. Friendly, game and happiest with a job to do.",
    "shape": {
-    "len": 25,
-    "h": 11,
-    "leg": 11,
-    "head": 8,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "stub",
-    "fluff": 0.2
+    "coat": "feathered",
+    "colour": "red",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/brittany-322ded82-grid.webp",
@@ -3594,19 +2953,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      182,
-      176,
-      168
-     ],
-     "patch": [
-      144,
-      135,
-      121
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3636,14 +2983,15 @@
    ],
    "text": "A tough duck dog with an oily, wavy coat built for icy water. Devoted, protective and bolder than most retrievers.",
    "shape": {
-    "len": 29,
-    "h": 12,
-    "leg": 10,
-    "head": 9,
-    "snout": 7,
+    "size": "L",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.3
+    "coat": "smooth",
+    "colour": "chocolate",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/chesapeake-bay-retriever-41b6ff52-grid.webp",
@@ -3654,19 +3002,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      52,
-      40,
-      28
-     ],
-     "patch": [
-      115,
-      108,
-      77
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3693,14 +3029,15 @@
    ],
    "text": "A heavy, gentle spaniel that likes to take its time. Calm, friendly and quietly dignified.",
    "shape": {
-    "len": 30,
-    "h": 12,
-    "leg": 6,
-    "head": 10,
-    "snout": 6,
+    "size": "L",
+    "build": "long_low",
+    "snout": 3,
     "ears": "long",
     "tail": "straight",
-    "fluff": 0.2
+    "coat": "feathered",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/clumber-spaniel-d0a46750-grid.webp",
@@ -3711,19 +3048,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      174,
-      173,
-      175
-     ],
-     "patch": [
-      236,
-      234,
-      240
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3753,14 +3078,15 @@
    ],
    "text": "A happy, tail-wagging gundog that loves to sniff and explore. Gentle and keen to please.",
    "shape": {
-    "len": 23,
-    "h": 10,
-    "leg": 8,
-    "head": 8,
-    "snout": 5,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "long",
     "tail": "straight",
-    "fluff": 0.4
+    "coat": "feathered",
+    "colour": "blue",
+    "markings": "spotted",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/cocker-spaniel-1621cf3c-grid.webp",
@@ -3771,19 +3097,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      72,
-      75,
-      80
-     ],
-     "patch": [
-      139,
-      142,
-      148
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3814,14 +3128,15 @@
    ],
    "text": "A merry, sweet-natured little spaniel. Loves people and makes an easy family companion.",
    "shape": {
-    "len": 21,
-    "h": 10,
-    "leg": 8,
-    "head": 8,
-    "snout": 4,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "long",
     "tail": "straight",
-    "fluff": 0.6
+    "coat": "feathered",
+    "colour": "gold",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/cocker-spaniel-american-c2104e1e-grid.webp",
@@ -3832,19 +3147,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      247,
-      238,
-      235
-     ],
-     "patch": [
-      152,
-      106,
-      73
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3874,14 +3177,15 @@
    ],
    "text": "Covered in tight curls and built for water work. Confident and independent, with a proud bearing.",
    "shape": {
-    "len": 30,
-    "h": 12,
-    "leg": 12,
-    "head": 9,
-    "snout": 7,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.6
+    "coat": "curly",
+    "colour": "chocolate",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/curly-coated-retriever-a7dbb0ef-grid.webp",
@@ -3892,19 +3196,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      113,
-      72,
-      50
-     ],
-     "patch": [
-      204,
-      211,
-      109
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3931,14 +3223,15 @@
    ],
    "text": "A speckled, sweet-natured bird dog. Friendly and full of energy, it loves a good long run.",
    "shape": {
-    "len": 30,
-    "h": 12,
-    "leg": 12,
-    "head": 9,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
     "tail": "plume",
-    "fluff": 0.5
+    "coat": "feathered",
+    "colour": "chocolate",
+    "markings": "spotted",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/english-setter-5345b4f3-grid.webp",
@@ -3949,19 +3242,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      100,
-      87,
-      42
-     ],
-     "patch": [
-      172,
-      140,
-      116
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3992,14 +3273,15 @@
    ],
    "text": "Bred to flush game and loves to be busy. Friendly and eager to learn, it's never far from the action.",
    "shape": {
-    "len": 26,
-    "h": 11,
-    "leg": 10,
-    "head": 8,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "long",
     "tail": "straight",
-    "fluff": 0.4
+    "coat": "feathered",
+    "colour": "chocolate",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/english-springer-spaniel-0aa1e856-grid.webp",
@@ -4010,19 +3292,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      105,
-      73,
-      50
-     ],
-     "patch": [
-      18,
-      16,
-      18
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4049,14 +3319,15 @@
    ],
    "text": "Mellow at home but lively in the field. A thoughtful spaniel that likes to do things its own way.",
    "shape": {
-    "len": 27,
-    "h": 10,
-    "leg": 8,
-    "head": 8,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "long",
     "tail": "straight",
-    "fluff": 0.4
+    "coat": "feathered",
+    "colour": "chocolate",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/field-spaniel-2365e30d-grid.webp",
@@ -4067,19 +3338,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      42,
-      26,
-      19
-     ],
-     "patch": [
-      105,
-      75,
-      57
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4109,14 +3368,15 @@
    ],
    "text": "An optimistic, tail-wagging retriever that never really grows up. Loves everyone and has energy to burn.",
    "shape": {
-    "len": 29,
-    "h": 12,
-    "leg": 11,
-    "head": 9,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.4
+    "coat": "feathered",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/flat-coated-retriever-6c3c7f9f-grid.webp",
@@ -4127,19 +3387,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      18,
-      18,
-      21
-     ],
-     "patch": [
-      73,
-      70,
-      90
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4169,13 +3417,15 @@
    ],
    "text": "A versatile gundog with tonnes of stamina. Friendly and keen to work, it needs plenty of exercise every day.",
    "shape": {
-    "len": 29,
-    "h": 12,
-    "leg": 12,
-    "head": 9,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "chocolate",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/german-shorthaired-pointer-ec1cc2d6-grid.webp",
@@ -4186,19 +3436,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      180,
-      179,
-      145
-     ],
-     "patch": [
-      106,
-      80,
-      85
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4228,14 +3466,15 @@
    ],
    "text": "A tough, versatile hunting dog with energy to spare. Bonds closely with its family and can be wary of strangers.",
    "shape": {
-    "len": 29,
-    "h": 12,
-    "leg": 12,
-    "head": 9,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.3
+    "coat": "wiry",
+    "colour": "chocolate",
+    "markings": "spotted",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/german-wirehaired-pointer-4628e207-grid.webp",
@@ -4246,19 +3485,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      207,
-      207,
-      211
-     ],
-     "patch": [
-      50,
-      51,
-      39
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4285,14 +3512,15 @@
    ],
    "text": "Patient and friendly, great with children. Thrives on company and a daily retrieve.",
    "shape": {
-    "len": 28,
-    "h": 12,
-    "leg": 10,
-    "head": 9,
-    "snout": 7,
+    "size": "L",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.5
+    "coat": "feathered",
+    "colour": "gold",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/golden-retriever-0e4a69e1-grid.webp",
@@ -4303,19 +3531,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      202,
-      176,
-      137
-     ],
-     "patch": [
-      46,
-      41,
-      25
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4342,14 +3558,15 @@
    ],
    "text": "A striking black and tan setter from Scotland. Bright, friendly and bold, with loads of stamina.",
    "shape": {
-    "len": 30,
-    "h": 12,
-    "leg": 12,
-    "head": 9,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
     "tail": "plume",
-    "fluff": 0.5
+    "coat": "feathered",
+    "colour": "black",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/gordon-setter-22617b64-grid.webp",
@@ -4360,19 +3577,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      52,
-      47,
-      41
-     ],
-     "patch": [
-      109,
-      115,
-      55
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4401,13 +3606,15 @@
    ],
    "text": "Known as a velcro dog: it sticks close to its people. Needs lots of running every day.",
    "shape": {
-    "len": 28,
-    "h": 11,
-    "leg": 12,
-    "head": 8,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/hungarian-vizsla-950c2a70-grid.webp",
@@ -4418,19 +3625,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      145,
-      84,
-      53
-     ],
-     "patch": [
-      140,
-      148,
-      143
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4460,14 +3655,15 @@
    ],
    "text": "A bearded, rust-coloured hunting dog. Clever and dignified, but a real softie with its family.",
    "shape": {
-    "len": 28,
-    "h": 11,
-    "leg": 12,
-    "head": 8,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
     "tail": "straight",
-    "fluff": 0.3
+    "coat": "wiry",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/hungarian-wirehaired-vizsla-c2754e8d-grid.webp",
@@ -4478,19 +3674,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      20,
-      24,
-      19
-     ],
-     "patch": [
-      78,
-      78,
-      48
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4518,14 +3702,15 @@
    ],
    "text": "Sweet-natured and affectionate, with a patchy red and white coat. Friendly and keen to please.",
    "shape": {
-    "len": 30,
-    "h": 12,
-    "leg": 12,
-    "head": 8,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
     "tail": "plume",
-    "fluff": 0.4
+    "coat": "feathered",
+    "colour": "red",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/irish-red-and-white-setter-24346cb2-grid.webp",
@@ -4536,19 +3721,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      212,
-      211,
-      205
-     ],
-     "patch": [
-      18,
-      25,
-      17
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4577,14 +3750,15 @@
    ],
    "text": "A glamorous redhead with boundless energy. Outgoing, loving and fun to be around.",
    "shape": {
-    "len": 31,
-    "h": 11,
-    "leg": 13,
-    "head": 8,
-    "snout": 9,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
     "tail": "plume",
-    "fluff": 0.5
+    "coat": "feathered",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/irish-setter-23cee8be-grid.webp",
@@ -4595,19 +3769,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      111,
-      75,
-      51
-     ],
-     "patch": [
-      54,
-      38,
-      24
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4636,14 +3798,15 @@
    ],
    "text": "Curly-coated, with a distinctive rat-like tail. A playful clown with its family but wary of new faces.",
    "shape": {
-    "len": 28,
-    "h": 12,
-    "leg": 11,
-    "head": 9,
-    "snout": 7,
+    "size": "L",
+    "build": "standard",
+    "snout": 3,
     "ears": "long",
     "tail": "straight",
-    "fluff": 0.9
+    "coat": "curly",
+    "colour": "chocolate",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/irish-water-spaniel-668fdd19-grid.webp",
@@ -4654,19 +3817,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      77,
-      57,
-      54
-     ],
-     "patch": [
-      135,
-      105,
-      102
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4695,14 +3846,15 @@
    ],
    "text": "A shaggy, bearded hunting dog with a soft heart. Gentle, loyal and smarter than it looks.",
    "shape": {
-    "len": 30,
-    "h": 13,
-    "leg": 12,
-    "head": 10,
-    "snout": 7,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
     "tail": "straight",
-    "fluff": 0.4
+    "coat": "wiry",
+    "colour": "chocolate",
+    "markings": "spotted",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/italian-spinone-a4f47cea-grid.webp",
@@ -4713,19 +3865,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      207,
-      205,
-      208
-     ],
-     "patch": [
-      153,
-      145,
-      135
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4754,13 +3894,15 @@
    ],
    "text": "Gentle, food-motivated and keen to please. Loves water, fetch and nearly everyone it meets.",
    "shape": {
-    "len": 28,
-    "h": 12,
-    "leg": 10,
-    "head": 9,
-    "snout": 7,
+    "size": "L",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "gold",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/labrador-retriever-0d6d043a-grid.webp",
@@ -4771,19 +3913,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      108,
-      114,
-      85
-     ],
-     "patch": [
-      177,
-      170,
-      173
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4812,14 +3942,15 @@
    ],
    "text": "A curly Italian dog famous for sniffing out truffles. Loving, trainable and happiest when working.",
    "shape": {
-    "len": 23,
-    "h": 10,
-    "leg": 9,
-    "head": 8,
-    "snout": 5,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 1
+    "coat": "curly",
+    "colour": "chocolate",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/lagotto-romagnolo-03decbc6-grid.webp",
@@ -4830,19 +3961,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      74,
-      56,
-      39
-     ],
-     "patch": [
-      139,
-      112,
-      88
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4869,14 +3988,15 @@
    ],
    "text": "A black and white German hunting dog. Devoted to its people and happiest with a job to do.",
    "shape": {
-    "len": 29,
-    "h": 12,
-    "leg": 12,
-    "head": 9,
-    "snout": 7,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
     "tail": "plume",
-    "fluff": 0.5
+    "coat": "feathered",
+    "colour": "black",
+    "markings": "spotted",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/large-munsterlander-ecc7516a-grid.webp",
@@ -4887,19 +4007,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      116,
-      111,
-      107
-     ],
-     "patch": [
-      189,
-      198,
-      114
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4930,14 +4038,15 @@
    ],
    "text": "A curly, liver-coloured Aussie duck dog from the Murray. Bright, loyal and full of energy for a swim or a run.",
    "shape": {
-    "len": 26,
-    "h": 11,
-    "leg": 10,
-    "head": 8,
-    "snout": 7,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.5
+    "coat": "curly",
+    "colour": "chocolate",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/murray-river-retriever-9018e822-grid.webp",
@@ -4948,19 +4057,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      85,
-      77,
-      75
-     ],
-     "patch": [
-      136,
-      117,
-      118
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4990,14 +4087,15 @@
    ],
    "text": "The smallest retriever, bred to lure ducks with playful antics. Smart, keen and full of energy.",
    "shape": {
-    "len": 25,
-    "h": 10,
-    "leg": 9,
-    "head": 8,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.4
+    "coat": "feathered",
+    "colour": "red",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/nova-scotia-duck-tolling-retriever-bc115695-grid.webp",
@@ -5008,19 +4106,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      237,
-      245,
-      251
-     ],
-     "patch": [
-      80,
-      45,
-      19
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5049,13 +4135,15 @@
    ],
    "text": "Famous for freezing mid-step to point at game. Dignified and friendly, always scanning the horizon.",
    "shape": {
-    "len": 30,
-    "h": 12,
-    "leg": 13,
-    "head": 9,
-    "snout": 9,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "chocolate",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/pointer-efeffce4-grid.webp",
@@ -5066,19 +4154,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      142,
-      114,
-      77
-     ],
-     "patch": [
-      82,
-      75,
-      47
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5107,14 +4183,15 @@
    ],
    "text": "A woolly herding and water dog from Spain. Loyal and quick to learn, it loves a job to do.",
    "shape": {
-    "len": 24,
-    "h": 10,
-    "leg": 9,
-    "head": 8,
-    "snout": 5,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "stub",
-    "fluff": 1
+    "coat": "curly",
+    "colour": "chocolate",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/spanish-water-dog-431f083f-grid.webp",
@@ -5125,19 +4202,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      111,
-      87,
-      75
-     ],
-     "patch": [
-      53,
-      42,
-      38
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5164,14 +4229,15 @@
    ],
    "text": "A kindly, steady spaniel that's often vocal when working. Easygoing and relaxed at home.",
    "shape": {
-    "len": 28,
-    "h": 10,
-    "leg": 5,
-    "head": 9,
-    "snout": 5,
+    "size": "M",
+    "build": "long_low",
+    "snout": 3,
     "ears": "long",
     "tail": "straight",
-    "fluff": 0.3
+    "coat": "feathered",
+    "colour": "chocolate",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/sussex-spaniel-87102b9d-grid.webp",
@@ -5182,19 +4248,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      113,
-      89,
-      78
-     ],
-     "patch": [
-      51,
-      43,
-      25
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5224,13 +4278,15 @@
    ],
    "text": "The sleek silver-grey ghost of the dog park. Bursting with energy, loves to work and sticks close to its people.",
    "shape": {
-    "len": 30,
-    "h": 12,
-    "leg": 13,
-    "head": 9,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/weimaraner-0ed5c94b-grid.webp",
@@ -5241,19 +4297,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      54,
-      51,
-      43
-     ],
-     "patch": [
-      113,
-      109,
-      86
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5283,14 +4327,15 @@
    ],
    "text": "A rarer, feathery-coated version of the silver hunting dog. Energetic, loving and happiest with a job to do.",
    "shape": {
-    "len": 30,
-    "h": 12,
-    "leg": 13,
-    "head": 9,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.4
+    "coat": "feathered",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/weimaraner-longhair-7c75ca6e-grid.webp",
@@ -5301,19 +4346,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      52,
-      43,
-      39
-     ],
-     "patch": [
-      105,
-      107,
-      88
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5343,14 +4376,15 @@
    ],
    "text": "A merry, active spaniel with a kind nature. Tends to stick close to its own family.",
    "shape": {
-    "len": 25,
-    "h": 11,
-    "leg": 9,
-    "head": 8,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "long",
     "tail": "straight",
-    "fluff": 0.3
+    "coat": "feathered",
+    "colour": "red",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/welsh-springer-spaniel-626cb3b9-grid.webp",
@@ -5361,19 +4395,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      75,
-      45,
-      24
-     ],
-     "patch": [
-      149,
-      104,
-      88
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5403,14 +4425,15 @@
    ],
    "text": "A versatile working gundog for field, forest and water. Obedient, easy to train and attached to its handler.",
    "shape": {
-    "len": 30,
-    "h": 12,
-    "leg": 12,
-    "head": 9,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.3
+    "coat": "wiry",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/wirehaired-slovakian-pointer-bad466b1-grid.webp",
@@ -5421,19 +4444,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      107,
-      103,
-      88
-     ],
-     "patch": [
-      55,
-      49,
-      38
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5460,14 +4471,15 @@
    ],
    "text": "Elegant and aloof, seeming to look right through you. Thinks for itself and is not quick to obey.",
    "shape": {
-    "len": 31,
-    "h": 11,
-    "leg": 14,
-    "head": 8,
-    "snout": 9,
+    "size": "L",
+    "build": "tall_lean",
+    "snout": 5,
     "ears": "long",
     "tail": "straight",
-    "fluff": 0.9
+    "coat": "long",
+    "colour": "cream",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/afghan-hound-8fdae799-grid.webp",
@@ -5478,19 +4490,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      213,
-      214,
-      201
-     ],
-     "patch": [
-      173,
-      174,
-      149
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5517,13 +4517,15 @@
    ],
    "text": "A tall, ultra-lean sighthound from the Sahel. Gentle with family, aloof with strangers and very watchful.",
    "shape": {
-    "len": 28,
-    "h": 9,
-    "leg": 16,
-    "head": 7,
-    "snout": 9,
+    "size": "M",
+    "build": "tall_lean",
+    "snout": 5,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "gold",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/azawakh-790f5d9c-grid.webp",
@@ -5534,19 +4536,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      148,
-      148,
-      83
-     ],
-     "patch": [
-      228,
-      170,
-      115
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5573,13 +4563,15 @@
    ],
    "text": "The barkless dog, known to yodel instead. Clever and cat-like, with a strong mind of its own.",
    "shape": {
-    "len": 22,
-    "h": 9,
-    "leg": 10,
-    "head": 7,
-    "snout": 5,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
-    "tail": "curl"
+    "tail": "curl",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/basenji-e8b0e877-grid.webp",
@@ -5590,19 +4582,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      147,
-      104,
-      52
-     ],
-     "patch": [
-      205,
-      206,
-      199
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5633,14 +4613,15 @@
    ],
    "text": "A small, wiry, fawn hound from Brittany. Cheerful, loving and tireless on a scent trail.",
    "shape": {
-    "len": 24,
-    "h": 9,
-    "leg": 5,
-    "head": 8,
-    "snout": 5,
+    "size": "M",
+    "build": "long_low",
+    "snout": 3,
     "ears": "long",
     "tail": "straight",
-    "fluff": 0.3
+    "coat": "wiry",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/basset-fauve-de-bretagne-6fa24627-grid.webp",
@@ -5651,19 +4632,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      75,
-      44,
-      25
-     ],
-     "patch": [
-      140,
-      88,
-      48
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5690,13 +4659,15 @@
    ],
    "text": "Long ears, short legs and a nose that never quits. Laid-back and loving, with a famously stubborn streak.",
    "shape": {
-    "len": 34,
-    "h": 12,
-    "leg": 3,
-    "head": 10,
-    "snout": 7,
+    "size": "L",
+    "build": "long_low",
+    "snout": 4,
     "ears": "long",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/basset-hound-aaed6ec9-grid.webp",
@@ -5707,19 +4678,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      145,
-      143,
-      110
-     ],
-     "patch": [
-      244,
-      243,
-      238
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5749,13 +4708,15 @@
    ],
    "text": "A German tracking specialist. Calm and devoted to its owner, though reserved with strangers.",
    "shape": {
-    "len": 28,
-    "h": 11,
-    "leg": 9,
-    "head": 9,
-    "snout": 7,
+    "size": "M",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "solid",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/bavarian-mountain-scent-hound-f5a882b4-grid.webp",
@@ -5766,19 +4727,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      111,
-      86,
-      72
-     ],
-     "patch": [
-      152,
-      131,
-      112
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5805,13 +4754,15 @@
    ],
    "text": "A sociable pack hound led by its nose. Food-mad and vocal, with a famous baying howl.",
    "shape": {
-    "len": 23,
-    "h": 10,
-    "leg": 8,
-    "head": 8,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "long",
-    "tail": "up"
+    "tail": "up",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tricolour",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/beagle-c7aee472-grid.webp",
@@ -5822,19 +4773,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      44,
-      45,
-      53
-     ],
-     "patch": [
-      176,
-      137,
-      109
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5864,13 +4803,15 @@
    ],
    "text": "A big American scent hound with a booming bay. Easygoing with people, but focused on the trail.",
    "shape": {
-    "len": 31,
-    "h": 12,
-    "leg": 12,
-    "head": 10,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/black-and-tan-coonhound-0f99e237-grid.webp",
@@ -5881,19 +4822,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      83,
-      85,
-      73
-     ],
-     "patch": [
-      232,
-      235,
-      243
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5920,13 +4849,15 @@
    ],
    "text": "A gentle, soulful tracker with an unbeatable nose. Kind with people but will follow a scent anywhere.",
    "shape": {
-    "len": 34,
-    "h": 14,
-    "leg": 11,
-    "head": 11,
-    "snout": 8,
+    "size": "XL",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/bloodhound-3eb92ead-grid.webp",
@@ -5937,19 +4868,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      108,
-      81,
-      56
-     ],
-     "patch": [
-      173,
-      184,
-      179
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5978,13 +4897,15 @@
    ],
    "text": "An athletic, loud-voiced scent hound built for the trail. Friendly at home but its nose leads the way.",
    "shape": {
-    "len": 30,
-    "h": 12,
-    "leg": 12,
-    "head": 9,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "blue",
+    "markings": "spotted",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/bluetick-coonhound-9fa83bed-grid.webp",
@@ -5995,19 +4916,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      171,
-      173,
-      174
-     ],
-     "patch": [
-      40,
-      45,
-      46
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6036,14 +4945,15 @@
    ],
    "text": "A tall, elegant Russian sighthound bred to course wolves. Quiet and aloof, but quick off the mark.",
    "shape": {
-    "len": 33,
-    "h": 12,
-    "leg": 15,
-    "head": 8,
-    "snout": 10,
+    "size": "L",
+    "build": "tall_lean",
+    "snout": 5,
     "ears": "rose",
     "tail": "plume",
-    "fluff": 0.4
+    "coat": "long",
+    "colour": "gold",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/borzoi-6836b06b-grid.webp",
@@ -6054,19 +4964,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      217,
-      212,
-      202
-     ],
-     "patch": [
-      178,
-      167,
-      148
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6094,13 +4992,15 @@
    ],
    "text": "A sleek Sicilian hunting hound with big upright ears. Loving at home but thinks for itself.",
    "shape": {
-    "len": 22,
-    "h": 8,
-    "leg": 11,
-    "head": 7,
-    "snout": 7,
+    "size": "S",
+    "build": "tall_lean",
+    "snout": 4,
     "ears": "pointy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/cirneco-dell-etna-740b909d-grid.webp",
@@ -6111,19 +5011,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      181,
-      108,
-      74
-     ],
-     "patch": [
-      82,
-      83,
-      51
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6165,13 +5053,15 @@
    ],
    "text": "Brave and curious, with a big bark for its size. Loves to burrow, sniff and be with its people.",
    "shape": {
-    "len": 32,
-    "h": 9,
-    "leg": 4,
-    "head": 8,
-    "snout": 8,
+    "size": "S",
+    "build": "long_low",
+    "snout": 4,
     "ears": "long",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/dachshund-477d9c4c-grid.webp",
@@ -6182,19 +5072,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      20,
-      19,
-      18
-     ],
-     "patch": [
-      78,
-      77,
-      77
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6223,14 +5101,15 @@
    ],
    "text": "A huge, shaggy sighthound with a gentle soul. Calm and friendly, happy to lounge after a run.",
    "shape": {
-    "len": 34,
-    "h": 12,
-    "leg": 15,
-    "head": 8,
-    "snout": 9,
+    "size": "XL",
+    "build": "tall_lean",
+    "snout": 5,
     "ears": "rose",
     "tail": "straight",
-    "fluff": 0.4
+    "coat": "wiry",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/deerhound-9f459ae4-grid.webp",
@@ -6241,19 +5120,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      83,
-      83,
-      78
-     ],
-     "patch": [
-      147,
-      141,
-      140
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6280,14 +5147,15 @@
    ],
    "text": "A fox-red bird dog that barks to mark its quarry. Bold, energetic and fond of doing its own thing.",
    "shape": {
-    "len": 23,
-    "h": 10,
-    "leg": 9,
-    "head": 7,
-    "snout": 5,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.5
+    "coat": "fluffy",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/finnish-spitz-bba171c3-grid.webp",
@@ -6298,19 +5166,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      147,
-      141,
-      104
-     ],
-     "patch": [
-      146,
-      86,
-      39
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6337,13 +5193,15 @@
    ],
    "text": "A good-natured pack hound with huge stamina. Mild-mannered and easy with people and other dogs.",
    "shape": {
-    "len": 30,
-    "h": 12,
-    "leg": 12,
-    "head": 9,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
-    "tail": "up"
+    "tail": "up",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tricolour",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/foxhound-b3516ea9-grid.webp",
@@ -6354,19 +5212,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      48,
-      55,
-      47
-     ],
-     "patch": [
-      112,
-      110,
-      80
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6396,14 +5242,15 @@
    ],
    "text": "A rough-coated French scent hound with a lot of drive. Brave and tireless, with its own agenda.",
    "shape": {
-    "len": 28,
-    "h": 10,
-    "leg": 6,
-    "head": 8,
-    "snout": 6,
+    "size": "M",
+    "build": "long_low",
+    "snout": 3,
     "ears": "long",
     "tail": "up",
-    "fluff": 0.5
+    "coat": "wiry",
+    "colour": "gold",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/grand-basset-griffon-vendeen-3bf0ab10-grid.webp",
@@ -6414,19 +5261,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      215,
-      213,
-      207
-     ],
-     "patch": [
-      152,
-      136,
-      114
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6453,13 +5288,15 @@
    ],
    "text": "A gentle couch potato that loves a quick sprint. Affectionate, quiet and happy to snooze the day away.",
    "shape": {
-    "len": 32,
-    "h": 11,
-    "leg": 16,
-    "head": 8,
-    "snout": 9,
+    "size": "L",
+    "build": "tall_lean",
+    "snout": 5,
     "ears": "rose",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "fawn",
+    "markings": "brindle",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/greyhound-cfdb8246-grid.webp",
@@ -6470,19 +5307,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      109,
-      88,
-      74
-     ],
-     "patch": [
-      166,
-      152,
-      142
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6511,13 +5336,15 @@
    ],
    "text": "A handsome Swedish hound with a keen nose. Even-tempered and sociable, but loves to follow a scent.",
    "shape": {
-    "len": 28,
-    "h": 11,
-    "leg": 11,
-    "head": 9,
-    "snout": 7,
+    "size": "M",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tricolour",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/hamiltonstovare-dbc9e135-grid.webp",
@@ -6528,19 +5355,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      54,
-      50,
-      50
-     ],
-     "patch": [
-      145,
-      111,
-      79
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6567,13 +5382,15 @@
    ],
    "text": "Cheerful, sweet-natured pack hound that's great with people. Loves exploring and sniffing on long walks.",
    "shape": {
-    "len": 26,
-    "h": 11,
-    "leg": 10,
-    "head": 8,
-    "snout": 7,
+    "size": "M",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
-    "tail": "up"
+    "tail": "up",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tricolour",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/harrier-b5643e6e-grid.webp",
@@ -6584,19 +5401,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      211,
-      208,
-      204
-     ],
-     "patch": [
-      137,
-      134,
-      56
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6623,13 +5428,15 @@
    ],
    "text": "A leggy, big-eared hunter with a famous springy leap. Lively outdoors, elegant and aloof indoors.",
    "shape": {
-    "len": 28,
-    "h": 9,
-    "leg": 15,
-    "head": 7,
-    "snout": 9,
+    "size": "M",
+    "build": "tall_lean",
+    "snout": 5,
     "ears": "bat",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/ibizan-hound-6e35b3ae-grid.webp",
@@ -6640,19 +5447,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      150,
-      104,
-      51
-     ],
-     "patch": [
-      209,
-      206,
-      196
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6681,14 +5476,15 @@
    ],
    "text": "A towering giant with a soft heart. Quiet and gentle at home, despite its hunting heritage.",
    "shape": {
-    "len": 39,
-    "h": 14,
-    "leg": 16,
-    "head": 10,
-    "snout": 9,
+    "size": "XL",
+    "build": "tall_lean",
+    "snout": 4,
     "ears": "rose",
     "tail": "straight",
-    "fluff": 0.4
+    "coat": "wiry",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/irish-wolfhound-2ea006a1-grid.webp",
@@ -6699,19 +5495,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      83,
-      82,
-      79
-     ],
-     "patch": [
-      138,
-      137,
-      120
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6740,14 +5524,15 @@
    ],
    "text": "A sturdy grey spitz bred to hunt moose. Friendly and smart, but likes to make its own decisions.",
    "shape": {
-    "len": 24,
-    "h": 11,
-    "leg": 9,
-    "head": 8,
-    "snout": 5,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.6
+    "coat": "fluffy",
+    "colour": "silver",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/norwegian-elkhound-4dd2dfae-grid.webp",
@@ -6758,19 +5543,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      136,
-      118,
-      84
-     ],
-     "patch": [
-      179,
-      172,
-      140
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6797,14 +5570,15 @@
    ],
    "text": "A big, shaggy, amiable hound that loves water. Easygoing and clownish, with a booming voice.",
    "shape": {
-    "len": 32,
-    "h": 13,
-    "leg": 11,
-    "head": 10,
-    "snout": 7,
+    "size": "L",
+    "build": "standard",
+    "snout": 3,
     "ears": "long",
     "tail": "straight",
-    "fluff": 0.6
+    "coat": "wiry",
+    "colour": "blue",
+    "markings": "saddle",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/otterhound-9d03fadc-grid.webp",
@@ -6815,19 +5589,7 @@
     "focus": [
      0.3,
      0.5
-    ],
-    "colours": {
-     "body": [
-      114,
-      100,
-      91
-     ],
-     "patch": [
-      180,
-      143,
-      114
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6857,14 +5619,15 @@
    ],
    "text": "A shaggy, merry little French hound. Bold and busy on a scent, and happy to do things its own way.",
    "shape": {
-    "len": 22,
-    "h": 9,
-    "leg": 6,
-    "head": 8,
-    "snout": 5,
+    "size": "M",
+    "build": "long_low",
+    "snout": 3,
     "ears": "long",
     "tail": "up",
-    "fluff": 0.5
+    "coat": "wiry",
+    "colour": "gold",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/petit-basset-griffon-vendeen-f25450da-grid.webp",
@@ -6875,19 +5638,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      205,
-      197,
-      183
-     ],
-     "patch": [
-      169,
-      144,
-      115
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6914,13 +5665,15 @@
    ],
    "text": "A sleek, tan hound known to blush when excited. Sharp, alert and quick to spot movement.",
    "shape": {
-    "len": 27,
-    "h": 10,
-    "leg": 14,
-    "head": 7,
-    "snout": 9,
+    "size": "M",
+    "build": "tall_lean",
+    "snout": 5,
     "ears": "bat",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/pharaoh-hound-868f0ca1-grid.webp",
@@ -6931,19 +5684,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      80,
-      84,
-      42
-     ],
-     "patch": [
-      212,
-      133,
-      88
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6970,13 +5711,15 @@
    ],
    "text": "A sleek French pack hound bred to hunt hare. Gentle at home, but follows its nose its own way.",
    "shape": {
-    "len": 28,
-    "h": 11,
-    "leg": 12,
-    "head": 8,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/porcelaine-6c45a7f1-grid.webp",
@@ -6987,19 +5730,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      215,
-      211,
-      199
-     ],
-     "patch": [
-      178,
-      169,
-      147
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7036,13 +5767,15 @@
    ],
    "text": "A lively, intelligent hunting dog that comes in three sizes. Keen-eyed and makes a good watchdog.",
    "shape": {
-    "len": 24,
-    "h": 10,
-    "leg": 10,
-    "head": 7,
-    "snout": 6,
+    "size": "S",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
-    "tail": "up"
+    "tail": "up",
+    "coat": "smooth",
+    "colour": "gold",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/portuguese-podengo-055aa432-grid.webp",
@@ -7053,19 +5786,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      110,
-      117,
-      53
-     ],
-     "patch": [
-      185,
-      132,
-      88
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7101,13 +5822,15 @@
    ],
    "text": "The tiniest dachshund, but still a determined little hunter. Friendly and even-tempered, with plenty of pluck.",
    "shape": {
-    "len": 25,
-    "h": 7,
-    "leg": 3,
-    "head": 7,
-    "snout": 6,
+    "size": "XS",
+    "build": "long_low",
+    "snout": 4,
     "ears": "long",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "blue",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/rabbit-dachshund-82382be2-grid.webp",
@@ -7118,19 +5841,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      250,
-      249,
-      247
-     ],
-     "patch": [
-      83,
-      76,
-      75
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7159,13 +5870,15 @@
    ],
    "text": "Calm and reserved with strangers, devoted at home. Strong and athletic, with a mind of its own.",
    "shape": {
-    "len": 31,
-    "h": 13,
-    "leg": 12,
-    "head": 10,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/rhodesian-ridgeback-42f214f0-grid.webp",
@@ -7176,19 +5889,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      173,
-      122,
-      77
-     ],
-     "patch": [
-      114,
-      85,
-      42
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7215,14 +5916,15 @@
    ],
    "text": "Graceful and quiet, often aloof with strangers. A gentle soul with a strong urge to chase.",
    "shape": {
-    "len": 30,
-    "h": 10,
-    "leg": 15,
-    "head": 7,
-    "snout": 9,
+    "size": "M",
+    "build": "tall_lean",
+    "snout": 5,
     "ears": "long",
     "tail": "plume",
-    "fluff": 0.3
+    "coat": "feathered",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/saluki-c3d7b96c-grid.webp",
@@ -7233,19 +5935,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      143,
-      81,
-      38
-     ],
-     "patch": [
-      171,
-      148,
-      83
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7272,13 +5962,15 @@
    ],
    "text": "A graceful North African sighthound. Proud and reserved, but deeply devoted to its family.",
    "shape": {
-    "len": 29,
-    "h": 10,
-    "leg": 15,
-    "head": 7,
-    "snout": 9,
+    "size": "M",
+    "build": "tall_lean",
+    "snout": 5,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "gold",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/sloughi-6adb6859-grid.webp",
@@ -7289,19 +5981,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      106,
-      112,
-      56
-     ],
-     "patch": [
-      208,
-      170,
-      112
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7328,13 +6008,15 @@
    ],
    "text": "A gentle, loving couch potato at home. Flies like the wind when it gets the chance to run.",
    "shape": {
-    "len": 26,
-    "h": 9,
-    "leg": 13,
-    "head": 7,
-    "snout": 8,
+    "size": "M",
+    "build": "tall_lean",
+    "snout": 5,
     "ears": "rose",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/whippet-2912187e-grid.webp",
@@ -7345,19 +6027,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      112,
-      114,
-      110
-     ],
-     "patch": [
-      176,
-      175,
-      178
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7390,13 +6060,15 @@
    ],
    "text": "Smart, tough and protective of its people. Bred to work all day, so it needs a job and lots of exercise.",
    "shape": {
-    "len": 26,
-    "h": 11,
-    "leg": 10,
-    "head": 9,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "blue",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/australian-cattle-dog-39091f36-grid.webp",
@@ -7407,19 +6079,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      112,
-      119,
-      107
-     ],
-     "patch": [
-      57,
-      68,
-      75
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7448,13 +6108,15 @@
    ],
    "text": "The classic Aussie sheepdog with endless drive. Loyal, sharp-eyed and happiest with work to do.",
    "shape": {
-    "len": 26,
-    "h": 10,
-    "leg": 11,
-    "head": 8,
-    "snout": 7,
+    "size": "M",
+    "build": "standard",
+    "snout": 4,
     "ears": "pointy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/australian-kelpie-15c5df2d-grid.webp",
@@ -7465,19 +6127,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      25,
-      19,
-      15
-     ],
-     "patch": [
-      216,
-      183,
-      138
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7507,14 +6157,15 @@
    ],
    "text": "A brainy, tireless herder, often with striking merle coats and eyes. Needs plenty to keep it busy.",
    "shape": {
-    "len": 26,
-    "h": 11,
-    "leg": 10,
-    "head": 9,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "tipped",
     "tail": "stub",
-    "fluff": 0.6
+    "coat": "feathered",
+    "colour": "blue",
+    "markings": "merle",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/australian-shepherd-825f6772-grid.webp",
@@ -7525,19 +6176,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      113,
-      112,
-      109
-     ],
-     "patch": [
-      173,
-      172,
-      170
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7569,13 +6208,15 @@
    ],
    "text": "A lean Aussie cattle dog born with a stumpy tail. Watchful and quick to learn, devoted to family.",
    "shape": {
-    "len": 26,
-    "h": 11,
-    "leg": 11,
-    "head": 8,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
-    "tail": "stub"
+    "tail": "stub",
+    "coat": "smooth",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/australian-stumpy-tail-cattle-dog-af36578f-grid.webp",
@@ -7586,19 +6227,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      177,
-      174,
-      114
-     ],
-     "patch": [
-      106,
-      109,
-      116
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7627,14 +6256,15 @@
    ],
    "text": "A shaggy, bouncy herder with a happy-go-lucky streak. Bright and full of beans outdoors, then settles nicely at home.",
    "shape": {
-    "len": 28,
-    "h": 11,
-    "leg": 10,
-    "head": 9,
-    "snout": 5,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 1
+    "coat": "long",
+    "colour": "blue",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/bearded-collie-9d358d46-grid.webp",
@@ -7645,19 +6275,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      43,
-      41,
-      46
-     ],
-     "patch": [
-      171,
-      180,
-      183
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7685,13 +6303,15 @@
    ],
    "text": "A big, fearless French herder that's gentle with its family. Naturally wary of strangers and makes a serious guard dog.",
    "shape": {
-    "len": 32,
-    "h": 13,
-    "leg": 13,
-    "head": 10,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "blue",
+    "markings": "merle",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/beauceron-berger-de-beauce-7c04facf-grid.webp",
@@ -7702,19 +6322,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      47,
-      47,
-      39
-     ],
-     "patch": [
-      111,
-      107,
-      105
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7755,14 +6363,15 @@
    ],
    "text": "Sharp, watchful and always ready to work. Fiercely devoted to its family and needs plenty of exercise and a job to do.",
    "shape": {
-    "len": 29,
-    "h": 12,
-    "leg": 13,
-    "head": 9,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "pointy",
     "tail": "straight",
-    "fluff": 0.3
+    "coat": "smooth",
+    "colour": "fawn",
+    "markings": "solid",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/belgian-shepherd-dog-cf383ad1-grid.webp",
@@ -7773,19 +6382,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      147,
-      104,
-      55
-     ],
-     "patch": [
-      191,
-      155,
-      101
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7813,14 +6410,15 @@
    ],
    "text": "A patient Italian sheepdog in a coat of felted flocks. Bonds closely with its people and keeps a watchful eye on them.",
    "shape": {
-    "len": 30,
-    "h": 13,
-    "leg": 11,
-    "head": 10,
-    "snout": 6,
+    "size": "L",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 1
+    "coat": "corded",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/bergamasco-shepherd-dog-dc8068fa-grid.webp",
@@ -7831,19 +6429,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      141,
-      110,
-      80
-     ],
-     "patch": [
-      80,
-      73,
-      46
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7870,14 +6456,15 @@
    ],
    "text": "A scruffy French sheepdog with big upright ears. Even-tempered and quick to learn, with a brave, steady nature.",
    "shape": {
-    "len": 29,
-    "h": 12,
-    "leg": 12,
-    "head": 9,
-    "snout": 7,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "pointy",
     "tail": "straight",
-    "fluff": 0.4
+    "coat": "wiry",
+    "colour": "gold",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/berger-picard-099aebcc-grid.webp",
@@ -7888,19 +6475,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      141,
-      112,
-      81
-     ],
-     "patch": [
-      234,
-      214,
-      175
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7927,14 +6502,15 @@
    ],
    "text": "Often called the smartest breed. Needs daily work, play or training to stay happy.",
    "shape": {
-    "len": 27,
-    "h": 10,
-    "leg": 11,
-    "head": 8,
-    "snout": 7,
+    "size": "M",
+    "build": "standard",
+    "snout": 4,
     "ears": "tipped",
     "tail": "plume",
-    "fluff": 0.5
+    "coat": "feathered",
+    "colour": "black",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/border-collie-b236ae62-grid.webp",
@@ -7945,19 +6521,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      232,
-      233,
-      234
-     ],
-     "patch": [
-      17,
-      21,
-      21
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7987,14 +6551,15 @@
    ],
    "text": "A big, bearded Belgian farm dog built for herding and hauling. Smart and steady, happiest with a job to do.",
    "shape": {
-    "len": 30,
-    "h": 14,
-    "leg": 11,
-    "head": 11,
-    "snout": 6,
+    "size": "L",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.7
+    "coat": "wiry",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/bouvier-des-flandres-ee5addf4-grid.webp",
@@ -8005,19 +6570,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      136,
-      117,
-      110
-     ],
-     "patch": [
-      74,
-      57,
-      52
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8044,14 +6597,15 @@
    ],
    "text": "A bold, shaggy French herder with a long beard. Clever, lively and loyal, with a strong instinct to watch over its family.",
    "shape": {
-    "len": 31,
-    "h": 13,
-    "leg": 12,
-    "head": 10,
-    "snout": 6,
+    "size": "L",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.9
+    "coat": "long",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/briard-baaf7cbc-grid.webp",
@@ -8062,19 +6616,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      52,
-      46,
-      45
-     ],
-     "patch": [
-      109,
-      110,
-      86
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8104,14 +6646,15 @@
    ],
    "text": "The long-coated Lassie dog: graceful and devoted to its family. Bred for sheep work, so it still enjoys a job.",
    "shape": {
-    "len": 30,
-    "h": 12,
-    "leg": 12,
-    "head": 8,
-    "snout": 10,
+    "size": "L",
+    "build": "standard",
+    "snout": 5,
     "ears": "tipped",
     "tail": "plume",
-    "fluff": 0.9
+    "coat": "fluffy",
+    "colour": "sable",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/collie-rough-6ec48a97-grid.webp",
@@ -8122,19 +6665,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      111,
-      110,
-      112
-     ],
-     "patch": [
-      201,
-      203,
-      217
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8163,13 +6694,15 @@
    ],
    "text": "A short-coated collie that's cheerful and sociable. Smart and quick to learn, with a herding dog's love of work.",
    "shape": {
-    "len": 30,
-    "h": 12,
-    "leg": 12,
-    "head": 8,
-    "snout": 10,
+    "size": "L",
+    "build": "standard",
+    "snout": 5,
     "ears": "tipped",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "sable",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/collie-smooth-8136246f-grid.webp",
@@ -8180,19 +6713,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      149,
-      112,
-      109
-     ],
-     "patch": [
-      112,
-      78,
-      49
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8223,13 +6744,15 @@
    ],
    "text": "A brindle all-rounder that loves to work. Alert, eager and deeply loyal, it needs lots of exercise and mental challenge.",
    "shape": {
-    "len": 29,
-    "h": 12,
-    "leg": 12,
-    "head": 9,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "pointy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "gold",
+    "markings": "brindle",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/dutch-shepherd-dog-40fda461-grid.webp",
@@ -8240,19 +6763,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      145,
-      144,
-      149
-     ],
-     "patch": [
-      52,
-      50,
-      52
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8281,14 +6792,15 @@
    ],
    "text": "A fluffy reindeer herder from Lapland. Gentle and calm at home, but clever and brave when there's work to be done.",
    "shape": {
-    "len": 24,
-    "h": 11,
-    "leg": 9,
-    "head": 8,
-    "snout": 5,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.8
+    "coat": "fluffy",
+    "colour": "black",
+    "markings": "tricolour",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/finnish-lapphund-b3445ff8-grid.webp",
@@ -8299,19 +6811,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      14,
-      15,
-      17
-     ],
-     "patch": [
-      79,
-      77,
-      53
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8343,14 +6843,15 @@
    ],
    "text": "Steady, protective and very trainable. Bonds closely with its family and is wary of strangers.",
    "shape": {
-    "len": 32,
-    "h": 13,
-    "leg": 12,
-    "head": 10,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "pointy",
     "tail": "plume",
-    "fluff": 0.2
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "saddle",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/german-shepherd-dog-61c1d5e2-grid.webp",
@@ -8361,19 +6862,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      50,
-      55,
-      45
-     ],
-     "patch": [
-      138,
-      116,
-      80
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8405,14 +6894,15 @@
    ],
    "text": "A fluffier German Shepherd with the same steady, self-assured nature. Easy to train and keen to watch over its family.",
    "shape": {
-    "len": 32,
-    "h": 13,
-    "leg": 12,
-    "head": 10,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "pointy",
     "tail": "plume",
-    "fluff": 0.6
+    "coat": "feathered",
+    "colour": "black",
+    "markings": "saddle",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/german-shepherd-dog-long-stock-coat-f9a74abc-grid.webp",
@@ -8423,19 +6913,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      44,
-      44,
-      39
-     ],
-     "patch": [
-      248,
-      249,
-      245
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8462,14 +6940,15 @@
    ],
    "text": "A cheerful spitz with a curly tail and a warm welcome for everyone. Keen, busy and happiest when it's on the move.",
    "shape": {
-    "len": 23,
-    "h": 10,
-    "leg": 9,
-    "head": 8,
-    "snout": 5,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.6
+    "coat": "fluffy",
+    "colour": "gold",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/icelandic-sheepdog-76d67b03-grid.webp",
@@ -8480,19 +6959,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      198,
-      168,
-      138
-     ],
-     "patch": [
-      168,
-      121,
-      75
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8519,14 +6986,15 @@
    ],
    "text": "Instantly recognisable by its long white cords. Bred to guard flocks alone, so it's brave, protective and wary of strangers.",
    "shape": {
-    "len": 34,
-    "h": 15,
-    "leg": 12,
-    "head": 11,
-    "snout": 5,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 1
+    "coat": "corded",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/komondor-e05a5fe1-grid.webp",
@@ -8537,19 +7005,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      77,
-      79,
-      75
-     ],
-     "patch": [
-      217,
-      209,
-      201
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8576,14 +7032,15 @@
    ],
    "text": "A large white Hungarian guardian with a noble bearing. Devoted to its own people and fearless when it senses a threat.",
    "shape": {
-    "len": 32,
-    "h": 14,
-    "leg": 13,
-    "head": 10,
-    "snout": 7,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.6
+    "coat": "fluffy",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/kuvasz-d4b40907-grid.webp",
@@ -8594,19 +7051,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      216,
-      203,
-      176
-     ],
-     "patch": [
-      247,
-      243,
-      235
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8635,14 +7080,15 @@
    ],
    "text": "A big white Italian flock guardian, used on Aussie farms to protect livestock. Calm, dignified and fiercely protective.",
    "shape": {
-    "len": 32,
-    "h": 14,
-    "leg": 13,
-    "head": 10,
-    "snout": 7,
+    "size": "L",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.7
+    "coat": "fluffy",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/maremma-sheepdog-f8e38099-grid.webp",
@@ -8653,19 +7099,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      169,
-      154,
-      140
-     ],
-     "patch": [
-      52,
-      53,
-      24
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8697,14 +7131,15 @@
    ],
    "text": "Like a pocket-sized Aussie Shepherd. Quick to learn, keen to work and closely bonded to its family.",
    "shape": {
-    "len": 21,
-    "h": 10,
-    "leg": 8,
-    "head": 8,
-    "snout": 5,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "tipped",
     "tail": "stub",
-    "fluff": 0.6
+    "coat": "feathered",
+    "colour": "red",
+    "markings": "merle",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/miniature-american-shepherd-ee66e693-grid.webp",
@@ -8715,19 +7150,7 @@
     "focus": [
      0.45,
      0.5
-    ],
-    "colours": {
-     "body": [
-      181,
-      175,
-      174
-     ],
-     "patch": [
-      84,
-      82,
-      72
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Jugabe3b",
@@ -8753,14 +7176,15 @@
    ],
    "text": "A rare, wavy-coated Hungarian herder. Watchful, full of energy and bold, it thrives on activity and dog sports.",
    "shape": {
-    "len": 22,
-    "h": 9,
-    "leg": 10,
-    "head": 7,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "straight",
-    "fluff": 0.5
+    "coat": "curly",
+    "colour": "chocolate",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/mudi-5b265de7-grid.webp",
@@ -8771,19 +7195,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      45,
-      19,
-      10
-     ],
-     "patch": [
-      187,
-      196,
-      206
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Canarian",
@@ -8811,14 +7223,15 @@
    ],
    "text": "A sturdy Nordic farm dog with a curled tail. Lively, cheerful and watchful, and quick to bark at anything new.",
    "shape": {
-    "len": 23,
-    "h": 10,
-    "leg": 9,
-    "head": 8,
-    "snout": 5,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.3
+    "coat": "smooth",
+    "colour": "cream",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/norwegian-buhund-41f55b0b-grid.webp",
@@ -8829,19 +7242,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      233,
-      210,
-      176
-     ],
-     "patch": [
-      106,
-      112,
-      52
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8871,14 +7272,15 @@
    ],
    "text": "A shaggy, amiable big dog with a goofy streak. Easy-going at home but loves a romp, with a booming bark.",
    "shape": {
-    "len": 30,
-    "h": 14,
-    "leg": 10,
-    "head": 10,
-    "snout": 4,
+    "size": "L",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "stub",
-    "fluff": 1
+    "coat": "long",
+    "colour": "blue",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/old-english-sheepdog-a7f78ce3-grid.webp",
@@ -8889,19 +7291,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      143,
-      149,
-      138
-     ],
-     "patch": [
-      85,
-      85,
-      78
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8931,14 +7321,15 @@
    ],
    "text": "A shaggy, medium-sized herder with a sharp mind and a good memory. Watchful with strangers and very trainable.",
    "shape": {
-    "len": 25,
-    "h": 11,
-    "leg": 8,
-    "head": 9,
-    "snout": 4,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "stub",
-    "fluff": 1
+    "coat": "long",
+    "colour": "blue",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/polish-lowland-sheepdog-79b4634a-grid.webp",
@@ -8949,19 +7340,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      178,
-      177,
-      174
-     ],
-     "patch": [
-      235,
-      233,
-      235
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8988,14 +7367,15 @@
    ],
    "text": "Known for its dreadlock-like cords that bounce as it moves. A tireless worker, lively with family but reserved with strangers.",
    "shape": {
-    "len": 24,
-    "h": 10,
-    "leg": 9,
-    "head": 9,
-    "snout": 4,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "curl",
-    "fluff": 1
+    "coat": "corded",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/puli-a4c6cce3-grid.webp",
@@ -9006,19 +7386,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      28,
-      25,
-      22
-     ],
-     "patch": [
-      181,
-      168,
-      144
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9045,14 +7413,15 @@
    ],
    "text": "A curly-coated Hungarian herder with perky, tipped ears. Busy, bold and full of energy, it loves having a job to do.",
    "shape": {
-    "len": 22,
-    "h": 9,
-    "leg": 10,
-    "head": 7,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "tipped",
     "tail": "curl",
-    "fluff": 0.7
+    "coat": "curly",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/pumi-e7cd817a-grid.webp",
@@ -9063,19 +7432,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      178,
-      175,
-      174
-     ],
-     "patch": [
-      114,
-      111,
-      114
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9103,14 +7460,15 @@
    ],
    "text": "A small, scruffy mountain herder from the Pyrenees. Quick-witted and courageous, and very devoted to its person.",
    "shape": {
-    "len": 22,
-    "h": 9,
-    "leg": 9,
-    "head": 7,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "tipped",
     "tail": "straight",
-    "fluff": 0.6
+    "coat": "long",
+    "colour": "gold",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/pyrenean-sheepdog-longhaired-f43a88d8-grid.webp",
@@ -9121,19 +7479,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      143,
-      134,
-      109
-     ],
-     "patch": [
-      103,
-      81,
-      58
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9162,14 +7508,15 @@
    ],
    "text": "Looks like a mini Rough Collie. Gentle and loving with family, quick to learn, but often shy with strangers.",
    "shape": {
-    "len": 22,
-    "h": 9,
-    "leg": 9,
-    "head": 7,
-    "snout": 8,
+    "size": "S",
+    "build": "standard",
+    "snout": 4,
     "ears": "tipped",
     "tail": "plume",
-    "fluff": 0.9
+    "coat": "fluffy",
+    "colour": "sable",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/shetland-sheepdog-aae70480-grid.webp",
@@ -9180,19 +7527,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      207,
-      151,
-      76
-     ],
-     "patch": [
-      221,
-      217,
-      198
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9219,14 +7554,15 @@
    ],
    "text": "A fluffy, usually black spitz once used to herd reindeer. Hard-working, keen to learn and full of stamina.",
    "shape": {
-    "len": 23,
-    "h": 10,
-    "leg": 9,
-    "head": 8,
-    "snout": 5,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.7
+    "coat": "fluffy",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/swedish-lapphund-cb134afd-grid.webp",
@@ -9237,19 +7573,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      49,
-      41,
-      24
-     ],
-     "patch": [
-      139,
-      108,
-      48
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9278,14 +7602,15 @@
    ],
    "text": "A short-legged Viking cattle dog with a wolfish coat. Cheerful and friendly, always watching what's going on.",
    "shape": {
-    "len": 25,
-    "h": 10,
-    "leg": 5,
-    "head": 8,
-    "snout": 6,
+    "size": "M",
+    "build": "long_low",
+    "snout": 3,
     "ears": "pointy",
     "tail": "stub",
-    "fluff": 0.2
+    "coat": "smooth",
+    "colour": "silver",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/swedish-vallhund-56f9da28-grid.webp",
@@ -9296,19 +7621,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      50,
-      44,
-      48
-     ],
-     "patch": [
-      139,
-      119,
-      106
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9336,14 +7649,15 @@
    ],
    "text": "A big white Polish mountain guardian. Calm and sensible by nature, but always alert to anything unusual on its patch.",
    "shape": {
-    "len": 33,
-    "h": 14,
-    "leg": 13,
-    "head": 10,
-    "snout": 7,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.7
+    "coat": "fluffy",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/tatra-shepherd-dog-c4e63a3b-grid.webp",
@@ -9354,19 +7668,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      177,
-      173,
-      171
-     ],
-     "patch": [
-      51,
-      52,
-      45
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9396,14 +7698,15 @@
    ],
    "text": "The corgi with the long, bushy tail. A steady, clever cattle herder that keeps a watchful eye on everything.",
    "shape": {
-    "len": 30,
-    "h": 10,
-    "leg": 4,
-    "head": 9,
-    "snout": 6,
+    "size": "M",
+    "build": "long_low",
+    "snout": 3,
     "ears": "bat",
     "tail": "straight",
-    "fluff": 0.3
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "brindle",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/welsh-corgi-cardigan-1fded1aa-grid.webp",
@@ -9414,19 +7717,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      85,
-      73,
-      72
-     ],
-     "patch": [
-      141,
-      145,
-      113
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9456,14 +7747,15 @@
    ],
    "text": "A short-legged herder with a big personality. Outgoing and bold, and quick to sound off when something's up.",
    "shape": {
-    "len": 27,
-    "h": 10,
-    "leg": 4,
-    "head": 9,
-    "snout": 6,
+    "size": "M",
+    "build": "long_low",
+    "snout": 3,
     "ears": "bat",
     "tail": "stub",
-    "fluff": 0.3
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/welsh-corgi-pembroke-c2fd4396-grid.webp",
@@ -9474,19 +7766,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      147,
-      106,
-      42
-     ],
-     "patch": [
-      165,
-      147,
-      107
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9517,14 +7797,15 @@
    ],
    "text": "A white shepherd with a softer nature than many of its cousins. Active and alert outdoors, gentle and calm at home.",
    "shape": {
-    "len": 32,
-    "h": 13,
-    "leg": 13,
-    "head": 10,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "pointy",
     "tail": "plume",
-    "fluff": 0.5
+    "coat": "fluffy",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/white-swiss-shepherd-dog-33e3da48-grid.webp",
@@ -9535,19 +7816,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      211,
-      207,
-      208
-     ],
-     "patch": [
-      149,
-      148,
-      142
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9576,14 +7845,15 @@
    ],
    "text": "A powerful Japanese dog with a curled tail and a quiet, noble manner. Loyal to family but aloof with strangers and other dogs.",
    "shape": {
-    "len": 32,
-    "h": 14,
-    "leg": 13,
-    "head": 11,
-    "snout": 6,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.5
+    "coat": "fluffy",
+    "colour": "red",
+    "markings": "parti",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/akita-a0fac19d-grid.webp",
@@ -9594,19 +7864,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      245,
-      245,
-      242
-     ],
-     "patch": [
-      83,
-      73,
-      50
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9636,14 +7894,15 @@
    ],
    "text": "A powerful, composed Japanese breed that's deeply devoted to its family. Carries itself with quiet dignity.",
    "shape": {
-    "len": 30,
-    "h": 13,
-    "leg": 13,
-    "head": 10,
-    "snout": 6,
+    "size": "L",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.4
+    "coat": "fluffy",
+    "colour": "red",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/akita-japanese-d46b7a22-grid.webp",
@@ -9654,19 +7913,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      242,
-      208,
-      172
-     ],
-     "patch": [
-      144,
-      144,
-      114
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9695,14 +7942,15 @@
    ],
    "text": "A big, strong Arctic sled dog with a friendly, outgoing nature. Loves its people, though it can be a handful to train.",
    "shape": {
-    "len": 33,
-    "h": 14,
-    "leg": 12,
-    "head": 11,
-    "snout": 6,
+    "size": "L",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.7
+    "coat": "fluffy",
+    "colour": "black",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/alaskan-malamute-36d1c565-grid.webp",
@@ -9713,19 +7961,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      50,
-      47,
-      47
-     ],
-     "patch": [
-      240,
-      242,
-      241
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9755,14 +7991,15 @@
    ],
    "text": "A large Turkish flock guardian, steady and self-assured. Quietly watchful and built for long days on the job.",
    "shape": {
-    "len": 35,
-    "h": 14,
-    "leg": 14,
-    "head": 11,
-    "snout": 7,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.2
+    "coat": "smooth",
+    "colour": "fawn",
+    "markings": "solid",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/anatolian-shepherd-dog-b66e797f-grid.webp",
@@ -9773,19 +8010,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      116,
-      114,
-      80
-     ],
-     "patch": [
-      177,
-      169,
-      144
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9816,14 +8041,15 @@
    ],
    "text": "A gentle giant that's devoted to its family. Easygoing at home and loves cool weather.",
    "shape": {
-    "len": 34,
-    "h": 15,
-    "leg": 12,
-    "head": 11,
-    "snout": 6,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.7
+    "coat": "long",
+    "colour": "black",
+    "markings": "tricolour",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/bernese-mountain-dog-bb53d78f-grid.webp",
@@ -9834,19 +8060,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      21,
-      14,
-      15
-     ],
-     "patch": [
-      112,
-      103,
-      83
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9873,13 +8087,15 @@
    ],
    "text": "Bouncy and fun-loving, a great family dog. Stays puppyish for years and loves a romp.",
    "shape": {
-    "len": 28,
-    "h": 13,
-    "leg": 12,
-    "head": 10,
-    "snout": 3,
+    "size": "L",
+    "build": "standard",
+    "snout": 2,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "fawn",
+    "markings": "white_markings",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/boxer-4a76a8d2-grid.webp",
@@ -9890,19 +8106,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      206,
-      111,
-      42
-     ],
-     "patch": [
-      253,
-      199,
-      15
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9929,13 +8133,15 @@
    ],
    "text": "Bred to help gamekeepers catch poachers. Big and loyal, it stays alert but usually prefers a short walk and a long nap.",
    "shape": {
-    "len": 33,
-    "h": 15,
-    "leg": 11,
-    "head": 12,
-    "snout": 4,
+    "size": "XL",
+    "build": "stocky",
+    "snout": 2,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "fawn",
+    "markings": "solid",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/bullmastiff-15bd5535-grid.webp",
@@ -9946,19 +8152,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      116,
-      83,
-      49
-     ],
-     "patch": [
-      214,
-      180,
-      138
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9985,14 +8179,15 @@
    ],
    "text": "A rugged Arctic sled dog bred to haul in harsh conditions. Hard-working, but gentle and affectionate with its people.",
    "shape": {
-    "len": 30,
-    "h": 13,
-    "leg": 11,
-    "head": 10,
-    "snout": 6,
+    "size": "L",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.7
+    "coat": "fluffy",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/canadian-eskimo-dog-d145f0eb-grid.webp",
@@ -10003,19 +8198,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      182,
-      181,
-      171
-     ],
-     "patch": [
-      45,
-      44,
-      40
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10045,13 +8228,15 @@
    ],
    "text": "A muscular Italian guardian that needs firm, consistent training and an active life. Loves to have a job to do.",
    "shape": {
-    "len": 34,
-    "h": 15,
-    "leg": 13,
-    "head": 12,
-    "snout": 5,
+    "size": "XL",
+    "build": "stocky",
+    "snout": 2,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/cane-corso-98d0532d-grid.webp",
@@ -10062,19 +8247,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      17,
-      20,
-      15
-     ],
-     "patch": [
-      80,
-      81,
-      77
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10104,14 +8277,15 @@
    ],
    "text": "A massive, thick-coated livestock guardian. Calm and dignified most of the time, but quick to act if it senses a threat.",
    "shape": {
-    "len": 36,
-    "h": 16,
-    "leg": 13,
-    "head": 12,
-    "snout": 6,
+    "size": "XL",
+    "build": "stocky",
+    "snout": 3,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.8
+    "coat": "fluffy",
+    "colour": "silver",
+    "markings": "solid",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/caucasian-shepherd-dog-bcbdd52d-grid.webp",
@@ -10122,19 +8296,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      111,
-      106,
-      87
-     ],
-     "patch": [
-      54,
-      52,
-      39
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10164,14 +8326,15 @@
    ],
    "text": "An ancient, giant flock guardian with a calm, self-assured nature. Independent and thinks for itself, so not for beginners.",
    "shape": {
-    "len": 36,
-    "h": 15,
-    "leg": 13,
-    "head": 12,
-    "snout": 6,
+    "size": "XL",
+    "build": "stocky",
+    "snout": 3,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.3
+    "coat": "smooth",
+    "colour": "cream",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/central-asian-shepherd-dog-a5dbb34a-grid.webp",
@@ -10182,19 +8345,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      79,
-      77,
-      44
-     ],
-     "patch": [
-      141,
-      115,
-      83
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10225,13 +8376,15 @@
    ],
    "text": "Sleek, athletic and sharp as a tack. Fearless and watchful, yet often a real softie with its own family.",
    "shape": {
-    "len": 30,
-    "h": 12,
-    "leg": 14,
-    "head": 9,
-    "snout": 9,
+    "size": "L",
+    "build": "tall_lean",
+    "snout": 4,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/dobermann-0637cfa7-grid.webp",
@@ -10242,19 +8395,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      44,
-      44,
-      39
-     ],
-     "patch": [
-      173,
-      177,
-      116
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10284,13 +8425,15 @@
    ],
    "text": "A huge-headed French mastiff with a big heart. Calm and loving at home, and naturally protective of its family.",
    "shape": {
-    "len": 33,
-    "h": 15,
-    "leg": 10,
-    "head": 12,
-    "snout": 3,
+    "size": "XL",
+    "build": "stocky",
+    "snout": 2,
     "ears": "rose",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/dogue-de-bordeaux-ff5e273d-grid.webp",
@@ -10301,19 +8444,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      110,
-      78,
-      54
-     ],
-     "patch": [
-      174,
-      134,
-      114
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10341,14 +8472,15 @@
    ],
    "text": "A large Portuguese guardian from the Estrela mountains. Loving and loyal with family, but protective of its territory.",
    "shape": {
-    "len": 34,
-    "h": 14,
-    "leg": 13,
-    "head": 11,
-    "snout": 7,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "rose",
     "tail": "plume",
-    "fluff": 0.6
+    "coat": "fluffy",
+    "colour": "fawn",
+    "markings": "solid",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/estrela-mountain-dog-7855b706-grid.webp",
@@ -10359,19 +8491,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      172,
-      150,
-      139
-     ],
-     "patch": [
-      82,
-      81,
-      74
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10398,13 +8518,15 @@
    ],
    "text": "A sleek, medium-sized ratter with plenty of zip. Watchful and lively, and friendly once it knows you.",
    "shape": {
-    "len": 24,
-    "h": 10,
-    "leg": 11,
-    "head": 8,
-    "snout": 7,
+    "size": "M",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/german-pinscher-d07996d7-grid.webp",
@@ -10415,19 +8537,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      43,
-      47,
-      44
-     ],
-     "patch": [
-      119,
-      118,
-      88
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10457,13 +8567,15 @@
    ],
    "text": "A big tricolour Swiss farm dog bred to pull carts and guard. Confident and watchful, with a stately presence.",
    "shape": {
-    "len": 35,
-    "h": 15,
-    "leg": 13,
-    "head": 11,
-    "snout": 7,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tricolour",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/great-swiss-mountain-dog-4c64b426-grid.webp",
@@ -10474,19 +8586,7 @@
     "focus": [
      0.42,
      0.5
-    ],
-    "colours": {
-     "body": [
-      49,
-      49,
-      41
-     ],
-     "patch": [
-      237,
-      217,
-      168
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "KIKKUZZO88",
@@ -10515,13 +8615,15 @@
    ],
    "text": "A powerful Turkish guardian with a black mask, bred to protect sheep from wolves. Calm and composed, but fearless.",
    "shape": {
-    "len": 36,
-    "h": 15,
-    "leg": 14,
-    "head": 12,
-    "snout": 7,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
-    "tail": "curl"
+    "tail": "curl",
+    "coat": "smooth",
+    "colour": "fawn",
+    "markings": "solid",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/kangal-shepherd-dog-165ef2b6-grid.webp",
@@ -10532,19 +8634,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      242,
-      207,
-      178
-     ],
-     "patch": [
-      179,
-      166,
-      148
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10574,14 +8664,15 @@
    ],
    "text": "A tall black-and-white cousin of the Newfoundland. Sweet-natured and patient, and usually a strong swimmer.",
    "shape": {
-    "len": 36,
-    "h": 15,
-    "leg": 13,
-    "head": 12,
-    "snout": 6,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.6
+    "coat": "long",
+    "colour": "black",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/landseer-european-continental-type-a09dd5ef-grid.webp",
@@ -10592,19 +8683,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      214,
-      213,
-      205
-     ],
-     "patch": [
-      171,
-      172,
-      152
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10633,14 +8712,15 @@
    ],
    "text": "A gentle giant with a lion-like mane. Friendly with everyone and playful, yet carries itself with quiet dignity.",
    "shape": {
-    "len": 37,
-    "h": 15,
-    "leg": 13,
-    "head": 12,
-    "snout": 6,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.8
+    "coat": "fluffy",
+    "colour": "sable",
+    "markings": "solid",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/leonberger-5f43ce2f-grid.webp",
@@ -10651,19 +8731,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      238,
-      209,
-      174
-     ],
-     "patch": [
-      84,
-      79,
-      49
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10692,13 +8760,15 @@
    ],
    "text": "One of the heaviest breeds around. Calm and gentle, very affectionate with family and happy to lean on your legs.",
    "shape": {
-    "len": 38,
-    "h": 16,
-    "leg": 12,
-    "head": 12,
-    "snout": 4,
+    "size": "XL",
+    "build": "stocky",
+    "snout": 2,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "fawn",
+    "markings": "brindle",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/mastiff-f684d8e2-grid.webp",
@@ -10709,19 +8779,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      136,
-      110,
-      85
-     ],
-     "patch": [
-      83,
-      72,
-      54
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10751,13 +8809,15 @@
    ],
    "text": "Famous for its loose, heavy wrinkles and jowls. Calm and devoted at home, and a serious guardian of its family.",
    "shape": {
-    "len": 38,
-    "h": 16,
-    "leg": 11,
-    "head": 12,
-    "snout": 4,
+    "size": "XL",
+    "build": "stocky",
+    "snout": 2,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/neapolitan-mastiff-db6b3fb3-grid.webp",
@@ -10768,19 +8828,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      150,
-      143,
-      143
-     ],
-     "patch": [
-      88,
-      84,
-      71
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10809,14 +8857,15 @@
    ],
    "text": "A huge, soft-hearted water dog with lifesaving roots. Famously patient with kids and devoted to its people.",
    "shape": {
-    "len": 37,
-    "h": 16,
-    "leg": 12,
-    "head": 12,
-    "snout": 5,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.7
+    "coat": "long",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/newfoundland-32d0817f-grid.webp",
@@ -10827,19 +8876,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      75,
-      77,
-      80
-     ],
-     "patch": [
-      205,
-      176,
-      146
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10869,14 +8906,15 @@
    ],
    "text": "A curly-coated fisherman's helper that loves a swim. Full of energy, quick to learn, with a mind of its own.",
    "shape": {
-    "len": 25,
-    "h": 11,
-    "leg": 9,
-    "head": 9,
-    "snout": 5,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.9
+    "coat": "curly",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/portuguese-water-dog-d0ddfd91-grid.webp",
@@ -10887,19 +8925,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      80,
-      79,
-      79
-     ],
-     "patch": [
-      16,
-      17,
-      17
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10926,14 +8952,15 @@
    ],
    "text": "A huge Spanish guardian with a gentle face. Calm and friendly with family, carrying its size with quiet dignity.",
    "shape": {
-    "len": 38,
-    "h": 16,
-    "leg": 13,
-    "head": 12,
-    "snout": 6,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.6
+    "coat": "fluffy",
+    "colour": "gold",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/pyrenean-mastiff-a1c292f9-grid.webp",
@@ -10944,19 +8971,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      243,
-      239,
-      235
-     ],
-     "patch": [
-      143,
-      142,
-      114
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10987,14 +9002,15 @@
    ],
    "text": "A big white guardian that's quietly confident. Relaxed most of the time, but serious about protecting its patch.",
    "shape": {
-    "len": 37,
-    "h": 15,
-    "leg": 13,
-    "head": 12,
-    "snout": 6,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.8
+    "coat": "fluffy",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/pyrenean-mountain-dog-e8ee29d8-grid.webp",
@@ -11005,19 +9021,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      203,
-      212,
-      210
-     ],
-     "patch": [
-      78,
-      86,
-      69
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -11047,13 +9051,15 @@
    ],
    "text": "A strong, confident guardian that's calm and steady when well raised. Loyal to its family and responds well to training.",
    "shape": {
-    "len": 32,
-    "h": 14,
-    "leg": 11,
-    "head": 11,
-    "snout": 6,
+    "size": "XL",
+    "build": "stocky",
+    "snout": 3,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/rottweiler-aee1d0f4-grid.webp",
@@ -11064,19 +9070,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      11,
-      13,
-      17
-     ],
-     "patch": [
-      116,
-      108,
-      105
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -11107,14 +9101,15 @@
    ],
    "text": "Not really a terrier but a big, bearded working dog bred as a guard. Self-assured, lively and friendly with its people.",
    "shape": {
-    "len": 33,
-    "h": 14,
-    "leg": 12,
-    "head": 11,
-    "snout": 6,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.7
+    "coat": "wiry",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/russian-black-terrier-473c1a28-grid.webp",
@@ -11125,19 +9120,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      43,
-      42,
-      48
-     ],
-     "patch": [
-      146,
-      134,
-      119
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -11167,14 +9150,15 @@
    ],
    "text": "A fluffy white sled dog with a trademark smile. Smart, lively and famously affectionate towards everyone.",
    "shape": {
-    "len": 28,
-    "h": 12,
-    "leg": 10,
-    "head": 9,
-    "snout": 5,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 1
+    "coat": "fluffy",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/samoyed-b28f7acf-grid.webp",
@@ -11185,19 +9169,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      171,
-      176,
-      180
-     ],
-     "patch": [
-      239,
-      241,
-      244
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -11226,14 +9198,15 @@
    ],
    "text": "A bearded, medium-sized farm dog with bushy eyebrows. Lively, watchful and clever, it makes a keen little guard dog.",
    "shape": {
-    "len": 25,
-    "h": 11,
-    "leg": 10,
-    "head": 9,
-    "snout": 7,
+    "size": "M",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.3
+    "coat": "wiry",
+    "colour": "silver",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/schnauzer-0389f1bf-grid.webp",
@@ -11244,19 +9217,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      176,
-      173,
-      170
-     ],
-     "patch": [
-      82,
-      86,
-      103
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -11285,14 +9246,15 @@
    ],
    "text": "The biggest of the schnauzers, originally a cattle and guard dog. Bold, tireless and needs plenty of work and exercise.",
    "shape": {
-    "len": 32,
-    "h": 14,
-    "leg": 13,
-    "head": 11,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.3
+    "coat": "wiry",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/schnauzer-giant-8a9c6780-grid.webp",
@@ -11303,19 +9265,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      45,
-      49,
-      47
-     ],
-     "patch": [
-      106,
-      111,
-      76
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -11345,14 +9295,15 @@
    ],
    "text": "Bright and chatty, a keen watchdog. Small, sturdy and happy to join any activity.",
    "shape": {
-    "len": 20,
-    "h": 9,
-    "leg": 7,
-    "head": 7,
-    "snout": 6,
+    "size": "S",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
     "tail": "up",
-    "fluff": 0.3
+    "coat": "wiry",
+    "colour": "silver",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/schnauzer-miniature-221d5bd0-grid.webp",
@@ -11363,19 +9314,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      110,
-      112,
-      114
-     ],
-     "patch": [
-      239,
-      241,
-      244
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -11404,14 +9343,15 @@
    ],
    "text": "A small, fox-like Japanese hunter with a curled tail. Alert and loyal, but famously independent and cat-like.",
    "shape": {
-    "len": 22,
-    "h": 10,
-    "leg": 9,
-    "head": 8,
-    "snout": 5,
+    "size": "S",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.3
+    "coat": "fluffy",
+    "colour": "red",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/shiba-inu-21c50abb-grid.webp",
@@ -11422,19 +9362,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      185,
-      174,
-      138
-     ],
-     "patch": [
-      85,
-      78,
-      46
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -11461,14 +9389,15 @@
    ],
    "text": "A rare Japanese hunting dog with a wolfish look. Energetic and alert, with plenty of stamina for long outings.",
    "shape": {
-    "len": 24,
-    "h": 10,
-    "leg": 10,
-    "head": 8,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.3
+    "coat": "fluffy",
+    "colour": "sable",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/shikoku-34351841-grid.webp",
@@ -11479,19 +9408,7 @@
     "focus": [
      0.4,
      0.7
-    ],
-    "colours": {
-     "body": [
-      215,
-      205,
-      184
-     ],
-     "patch": [
-      115,
-      104,
-      80
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Canarian",
@@ -11519,14 +9436,15 @@
    ],
    "text": "A sled dog with striking eyes and a love of running. Friendly to all, but needs lots of exercise and loves to talk.",
    "shape": {
-    "len": 28,
-    "h": 11,
-    "leg": 11,
-    "head": 9,
-    "snout": 7,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "plume",
-    "fluff": 0.6
+    "coat": "fluffy",
+    "colour": "black",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/siberian-husky-7fc9c9e5-grid.webp",
@@ -11537,19 +9455,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      51,
-      48,
-      44
-     ],
-     "patch": [
-      109,
-      108,
-      115
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -11576,14 +9482,15 @@
    ],
    "text": "A giant, easygoing Spanish livestock guardian. Calm and affectionate with family, and protective of its home.",
    "shape": {
-    "len": 39,
-    "h": 16,
-    "leg": 13,
-    "head": 12,
-    "snout": 6,
+    "size": "XL",
+    "build": "stocky",
+    "snout": 3,
     "ears": "floppy",
     "tail": "straight",
-    "fluff": 0.2
+    "coat": "smooth",
+    "colour": "gold",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/spanish-mastiff-18f3f890-grid.webp",
@@ -11594,19 +9501,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      147,
-      113,
-      75
-     ],
-     "patch": [
-      200,
-      156,
-      112
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -11635,14 +9530,15 @@
    ],
    "text": "The famous Alpine rescue dog. A big, friendly softie that's calm indoors and still enjoys a good romp outside.",
    "shape": {
-    "len": 38,
-    "h": 16,
-    "leg": 12,
-    "head": 12,
-    "snout": 5,
+    "size": "XL",
+    "build": "stocky",
+    "snout": 2,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.6
+    "coat": "feathered",
+    "colour": "red",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/st-bernard-c9f42924-grid.webp",
@@ -11653,19 +9549,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      137,
-      119,
-      107
-     ],
-     "patch": [
-      245,
-      240,
-      236
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -11692,14 +9576,15 @@
    ],
    "text": "A massive, heavily maned guardian from the Himalayas. Calm and aloof with strangers, and very protective of its home.",
    "shape": {
-    "len": 35,
-    "h": 15,
-    "leg": 12,
-    "head": 12,
-    "snout": 5,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "curl",
-    "fluff": 1
+    "coat": "fluffy",
+    "colour": "black",
+    "markings": "tan_points",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/tibetan-mastiff-e1e905f8-grid.webp",
@@ -11710,19 +9595,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      21,
-      16,
-      17
-     ],
-     "patch": [
-      209,
-      209,
-      208
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -11749,14 +9622,15 @@
    ],
    "text": "A large mountain guardian from the Balkans. Calm and devoted with family, and protective of its flock and home.",
    "shape": {
-    "len": 33,
-    "h": 14,
-    "leg": 12,
-    "head": 11,
-    "snout": 6,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.7
+    "coat": "fluffy",
+    "colour": "chocolate",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/tornjak-81d477ab-grid.webp",
@@ -11767,19 +9641,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      239,
-      234,
-      208
-     ],
-     "patch": [
-      108,
-      81,
-      46
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -11808,14 +9670,15 @@
    ],
    "text": "A striking Siberian sled and hunting dog. Lively and friendly with people, with a bold, hardy spirit.",
    "shape": {
-    "len": 26,
-    "h": 11,
-    "leg": 10,
-    "head": 8,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.6
+    "coat": "fluffy",
+    "colour": "black",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/yakutian-laika-822f602c-grid.webp",
@@ -11826,19 +9689,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      81,
-      79,
-      79
-     ],
-     "patch": [
-      16,
-      15,
-      15
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -11870,14 +9721,15 @@
    ],
    "text": "A hefty Balkan flock guardian with an even temper. Fiercely devoted to its owner and watchful of strangers.",
    "shape": {
-    "len": 34,
-    "h": 14,
-    "leg": 12,
-    "head": 11,
-    "snout": 6,
+    "size": "XL",
+    "build": "standard",
+    "snout": 3,
     "ears": "floppy",
     "tail": "plume",
-    "fluff": 0.7
+    "coat": "fluffy",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/yugoslavian-shepherd-dog-sharplanina-ff98295d-grid.webp",
@@ -11888,19 +9740,7 @@
     "focus": [
      0.44,
      0.5
-    ],
-    "colours": {
-     "body": [
-      48,
-      43,
-      44
-     ],
-     "patch": [
-      205,
-      202,
-      146
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Sakal33",
@@ -11928,13 +9768,15 @@
    ],
    "text": "An Aussie-developed bulldog breed, stocky and strong. Loyal and affectionate, and friendly with people of all ages.",
    "shape": {
-    "len": 26,
-    "h": 13,
-    "leg": 9,
-    "head": 11,
-    "snout": 3,
+    "size": "L",
+    "build": "stocky",
+    "snout": 2,
     "ears": "rose",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "fawn",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/australasian-bosdog-b3ed281d-grid.webp",
@@ -11945,19 +9787,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      206,
-      186,
-      148
-     ],
-     "patch": [
-      107,
-      103,
-      89
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -11984,13 +9814,15 @@
    ],
    "text": "Dapper in its tuxedo markings. A bright, friendly little dog with plenty of bounce and a playful sense of fun.",
    "shape": {
-    "len": 19,
-    "h": 10,
-    "leg": 8,
-    "head": 9,
+    "size": "S",
+    "build": "standard",
     "snout": 2,
     "ears": "bat",
-    "tail": "stub"
+    "tail": "stub",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/boston-terrier-ebe8ed11-grid.webp",
@@ -12001,19 +9833,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      18,
-      16,
-      17
-     ],
-     "patch": [
-      81,
-      79,
-      74
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -12043,13 +9863,15 @@
    ],
    "text": "Stocky and determined-looking, but usually a kind, easy-going couch companion. Loyal and courageous at heart.",
    "shape": {
-    "len": 25,
-    "h": 13,
-    "leg": 6,
-    "head": 11,
+    "size": "M",
+    "build": "stocky",
     "snout": 1,
     "ears": "rose",
-    "tail": "straight"
+    "tail": "stub",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/british-bulldog-f3067c8a-grid.webp",
@@ -12060,19 +9882,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      14,
-      16,
-      12
-     ],
-     "patch": [
-      151,
-      103,
-      53
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -12099,14 +9909,15 @@
    ],
    "text": "An ancient desert dog from the Middle East. Alert and quick to sound the alarm, loyal to family and friendly once settled.",
    "shape": {
-    "len": 25,
-    "h": 11,
-    "leg": 11,
-    "head": 8,
-    "snout": 7,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.3
+    "coat": "smooth",
+    "colour": "gold",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/canaan-dog-a7f85ab3-grid.webp",
@@ -12117,19 +9928,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      114,
-      113,
-      84
-     ],
-     "patch": [
-      195,
-      145,
-      105
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -12158,14 +9957,15 @@
    ],
    "text": "A lion-like dog with a blue-black tongue. Proud and loyal to its family, but aloof and reserved with strangers.",
    "shape": {
-    "len": 26,
-    "h": 13,
-    "leg": 9,
-    "head": 10,
-    "snout": 3,
+    "size": "M",
+    "build": "stocky",
+    "snout": 2,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 1
+    "coat": "fluffy",
+    "colour": "gold",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/chow-chow-cc38071e-grid.webp",
@@ -12176,19 +9976,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      241,
-      233,
-      212
-     ],
-     "patch": [
-      144,
-      110,
-      55
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -12217,13 +10005,15 @@
    ],
    "text": "The spotty carriage dog, built for endurance and needing plenty of exercise. Outgoing and sociable with a proud bearing.",
    "shape": {
-    "len": 29,
-    "h": 12,
-    "leg": 12,
-    "head": 9,
-    "snout": 8,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "spotted",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/dalmatian-834819f6-grid.webp",
@@ -12234,19 +10024,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      111,
-      113,
-      112
-     ],
-     "patch": [
-      170,
-      154,
-      136
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -12273,14 +10051,15 @@
    ],
    "text": "A fluffy, even-tempered spitz-type companion. Calm and watchful, close with family but reserved with strangers.",
    "shape": {
-    "len": 26,
-    "h": 11,
-    "leg": 10,
-    "head": 9,
-    "snout": 5,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.8
+    "coat": "fluffy",
+    "colour": "red",
+    "markings": "solid",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/eurasier-5594b3aa-grid.webp",
@@ -12291,19 +10070,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      109,
-      76,
-      48
-     ],
-     "patch": [
-      176,
-      139,
-      112
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -12333,13 +10100,15 @@
    ],
    "text": "A cheerful companion that's happy in an apartment. Needs only short walks and dislikes the heat.",
    "shape": {
-    "len": 19,
-    "h": 11,
-    "leg": 7,
-    "head": 10,
-    "snout": 2,
+    "size": "S",
+    "build": "stocky",
+    "snout": 1,
     "ears": "bat",
-    "tail": "stub"
+    "tail": "stub",
+    "coat": "smooth",
+    "colour": "fawn",
+    "markings": "solid",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/french-bulldog-9e0a0347-grid.webp",
@@ -12350,19 +10119,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      177,
-      177,
-      178
-     ],
-     "patch": [
-      74,
-      76,
-      83
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -12393,14 +10150,15 @@
    ],
    "text": "A fluffy, fox-faced spitz with a curled tail. Bright, friendly and lively, it loves being part of the action.",
    "shape": {
-    "len": 18,
-    "h": 9,
-    "leg": 6,
-    "head": 7,
-    "snout": 3,
+    "size": "S",
+    "build": "standard",
+    "snout": 2,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 1
+    "coat": "fluffy",
+    "colour": "sable",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/german-spitz-b3465eab-grid.webp",
@@ -12411,19 +10169,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      172,
-      113,
-      77
-     ],
-     "patch": [
-      234,
-      173,
-      102
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -12452,13 +10198,15 @@
    ],
    "text": "A towering dog with a gentle, friendly nature. Watchful at the door, but carries itself with real elegance.",
    "shape": {
-    "len": 40,
-    "h": 14,
-    "leg": 16,
-    "head": 11,
-    "snout": 9,
+    "size": "XL",
+    "build": "tall_lean",
+    "snout": 4,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/great-dane-a3dbdd6e-grid.webp",
@@ -12469,19 +10217,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      84,
-      81,
-      77
-     ],
-     "patch": [
-      142,
-      141,
-      142
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -12508,14 +10244,15 @@
    ],
    "text": "A fluffy white companion with a big smile. Loving with family, bright and quick to let you know someone's coming.",
    "shape": {
-    "len": 21,
-    "h": 9,
-    "leg": 7,
-    "head": 7,
-    "snout": 4,
+    "size": "S",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 1
+    "coat": "fluffy",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/japanese-spitz-8a6623e4-grid.webp",
@@ -12526,19 +10263,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      237,
-      237,
-      234
-     ],
-     "patch": [
-      179,
-      179,
-      177
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -12565,14 +10290,15 @@
    ],
    "text": "A bold black-and-white Finnish hunting dog, bred to face down bears. Brave, tireless and self-assured.",
    "shape": {
-    "len": 26,
-    "h": 11,
-    "leg": 10,
-    "head": 9,
-    "snout": 6,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 0.3
+    "coat": "smooth",
+    "colour": "black",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/karelian-bear-dog-0acb57c0-grid.webp",
@@ -12583,19 +10309,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      15,
-      14,
-      15
-     ],
-     "patch": [
-      199,
-      199,
-      184
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -12624,14 +10338,15 @@
    ],
    "text": "A fluffy Dutch barge dog with spectacle-like markings. Friendly and loving with family, and quick to sound the alarm.",
    "shape": {
-    "len": 23,
-    "h": 11,
-    "leg": 8,
-    "head": 9,
-    "snout": 4,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "curl",
-    "fluff": 1
+    "coat": "fluffy",
+    "colour": "silver",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/keeshond-436c39ce-grid.webp",
@@ -12642,19 +10357,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      143,
-      142,
-      144
-     ],
-     "patch": [
-      80,
-      79,
-      85
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -12683,14 +10386,15 @@
    ],
    "text": "A small Tibetan watchdog with a long coat. A clown with family, but self-assured and wary of strangers.",
    "shape": {
-    "len": 21,
-    "h": 9,
-    "leg": 5,
-    "head": 8,
+    "size": "S",
+    "build": "standard",
     "snout": 2,
     "ears": "long",
     "tail": "plume",
-    "fluff": 1
+    "coat": "long",
+    "colour": "cream",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/lhasa-apso-ee0bcc61-grid.webp",
@@ -12701,19 +10405,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      229,
-      209,
-      180
-     ],
-     "patch": [
-      172,
-      149,
-      112
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -12744,13 +10436,15 @@
    ],
    "text": "A sleek, mostly hairless dog with ancient Peruvian roots. Graceful and lively, and affectionate with its family.",
    "shape": {
-    "len": 27,
-    "h": 10,
-    "leg": 13,
-    "head": 8,
-    "snout": 8,
+    "size": "M",
+    "build": "tall_lean",
+    "snout": 4,
     "ears": "bat",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "hairless",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/peruvian-hairless-dog-large-5d370d56-grid.webp",
@@ -12761,19 +10455,7 @@
     "focus": [
      0.52,
      0.5
-    ],
-    "colours": {
-     "body": [
-      143,
-      143,
-      115
-     ],
-     "patch": [
-      47,
-      49,
-      44
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Jablct",
@@ -12803,13 +10485,15 @@
    ],
    "text": "An elegant, mostly hairless dog from Peru. Loving at home, lively and quick, and wary of people it doesn't know.",
    "shape": {
-    "len": 23,
-    "h": 9,
-    "leg": 11,
-    "head": 7,
-    "snout": 7,
+    "size": "S",
+    "build": "tall_lean",
+    "snout": 4,
     "ears": "bat",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "hairless",
+    "colour": "chocolate",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/peruvian-hairless-dog-medium-4a849c91-grid.webp",
@@ -12820,19 +10504,7 @@
     "focus": [
      0.85,
      0.58
-    ],
-    "colours": {
-     "body": [
-      18,
-      18,
-      13
-     ],
-     "patch": [
-      215,
-      176,
-      168
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Luna capreza",
@@ -12862,13 +10534,15 @@
    ],
    "text": "A small, sleek hairless dog with ancient Peruvian roots. Affectionate with its people and a keen little watchdog.",
    "shape": {
-    "len": 19,
-    "h": 8,
-    "leg": 9,
-    "head": 6,
-    "snout": 6,
+    "size": "XS",
+    "build": "tall_lean",
+    "snout": 4,
     "ears": "bat",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "hairless",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/peruvian-hairless-dog-small-9ab4e8b7-grid.webp",
@@ -12879,19 +10553,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      140,
-      108,
-      79
-     ],
-     "patch": [
-      81,
-      52,
-      39
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -12921,14 +10583,15 @@
    ],
    "text": "A mid-sized poodle that's bright, active and proud. Learns quickly and enjoys tricks and dog sports.",
    "shape": {
-    "len": 20,
-    "h": 9,
-    "leg": 9,
-    "head": 7,
-    "snout": 7,
+    "size": "S",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
     "tail": "up",
-    "fluff": 1
+    "coat": "curly",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/poodle-miniature-c3c595f8-grid.webp",
@@ -12939,19 +10602,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      233,
-      236,
-      239
-     ],
-     "patch": [
-      176,
-      179,
-      172
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -12980,14 +10631,15 @@
    ],
    "text": "The original poodle, bred to retrieve from water. Very smart and athletic, yet calm and well-mannered at home.",
    "shape": {
-    "len": 28,
-    "h": 11,
-    "leg": 14,
-    "head": 9,
-    "snout": 8,
+    "size": "L",
+    "build": "tall_lean",
+    "snout": 4,
     "ears": "long",
     "tail": "up",
-    "fluff": 1
+    "coat": "curly",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/poodle-standard-731818b5-grid.webp",
@@ -12998,19 +10650,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      40,
-      44,
-      55
-     ],
-     "patch": [
-      111,
-      108,
-      107
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -13039,14 +10679,15 @@
    ],
    "text": "A tiny, bright poodle that loves being close to its people. Quick to learn and full of fun.",
    "shape": {
-    "len": 17,
-    "h": 8,
-    "leg": 8,
-    "head": 6,
-    "snout": 6,
+    "size": "XS",
+    "build": "standard",
+    "snout": 4,
     "ears": "long",
     "tail": "up",
-    "fluff": 1
+    "coat": "curly",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/poodle-toy-2c4797f9-grid.webp",
@@ -13057,19 +10698,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      47,
-      46,
-      47
-     ],
-     "patch": [
-      116,
-      112,
-      112
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -13096,14 +10725,15 @@
    ],
    "text": "A small black Belgian barge dog with a fox-like face. Clever, curious and loyal, it loves to keep watch.",
    "shape": {
-    "len": 20,
-    "h": 9,
-    "leg": 6,
-    "head": 8,
-    "snout": 5,
+    "size": "S",
+    "build": "standard",
+    "snout": 3,
     "ears": "pointy",
     "tail": "stub",
-    "fluff": 0.5
+    "coat": "fluffy",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/schipperke-86c0a71c-grid.webp",
@@ -13114,19 +10744,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      117,
-      125,
-      107
-     ],
-     "patch": [
-      217,
-      226,
-      151
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -13156,13 +10774,15 @@
    ],
    "text": "Instantly known by its deep wrinkles and hippo-like muzzle. Calm and independent, but affectionate with its own family.",
    "shape": {
-    "len": 25,
-    "h": 12,
-    "leg": 9,
-    "head": 10,
-    "snout": 3,
+    "size": "M",
+    "build": "stocky",
+    "snout": 2,
     "ears": "rose",
-    "tail": "curl"
+    "tail": "curl",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/shar-pei-74167ae9-grid.webp",
@@ -13173,19 +10793,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      184,
-      170,
-      137
-     ],
-     "patch": [
-      118,
-      73,
-      42
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -13214,14 +10822,15 @@
    ],
    "text": "A little lion dog with a flowing coat. Friendly and outgoing with a cheeky independent streak, made for companionship.",
    "shape": {
-    "len": 20,
-    "h": 9,
-    "leg": 5,
-    "head": 8,
-    "snout": 1,
+    "size": "S",
+    "build": "standard",
+    "snout": 2,
     "ears": "long",
     "tail": "plume",
-    "fluff": 1
+    "coat": "long",
+    "colour": "gold",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/shih-tzu-7fde6546-grid.webp",
@@ -13232,19 +10841,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      207,
-      182,
-      119
-     ],
-     "patch": [
-      241,
-      242,
-      240
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -13271,14 +10868,15 @@
    ],
    "text": "Not a true terrier but a shaggy Himalayan companion. Friendly and clever, and watchful of newcomers.",
    "shape": {
-    "len": 22,
-    "h": 10,
-    "leg": 9,
-    "head": 8,
-    "snout": 4,
+    "size": "M",
+    "build": "standard",
+    "snout": 3,
     "ears": "long",
     "tail": "plume",
-    "fluff": 1
+    "coat": "long",
+    "colour": "black",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/tibetan-terrier-e086c1d6-grid.webp",
@@ -13289,19 +10887,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      41,
-      43,
-      50
-     ],
-     "patch": [
-      149,
-      142,
-      114
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -13335,13 +10921,15 @@
    ],
    "text": "The ancient hairless dog of Mexico, in three sizes. Calm and friendly at home, and alert to anything new.",
    "shape": {
-    "len": 26,
-    "h": 10,
-    "leg": 12,
-    "head": 8,
-    "snout": 8,
+    "size": "M",
+    "build": "tall_lean",
+    "snout": 4,
     "ears": "bat",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "hairless",
+    "colour": "blue",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/xoloitzcuintle-5b91bc0f-grid.webp",
@@ -13352,19 +10940,7 @@
     "focus": [
      0.5,
      0.5
-    ],
-    "colours": {
-     "body": [
-      138,
-      109,
-      109
-     ],
-     "patch": [
-      175,
-      150,
-      167
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Dogs Australia",
@@ -13398,14 +10974,15 @@
    ],
    "text": "A small, curly companion mixing Cavalier sweetness with Poodle brains. Loves people and usually gets on with everyone.",
    "shape": {
-    "len": 20,
-    "h": 10,
-    "leg": 8,
-    "head": 8,
-    "snout": 4,
+    "size": "S",
+    "build": "standard",
+    "snout": 3,
     "ears": "long",
     "tail": "plume",
-    "fluff": 1
+    "coat": "curly",
+    "colour": "gold",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/cavoodle-1a060e3f-grid.webp",
@@ -13416,19 +10993,7 @@
     "focus": [
      0.5,
      0.75
-    ],
-    "colours": {
-     "body": [
-      110,
-      81,
-      52
-     ],
-     "patch": [
-      59,
-      41,
-      14
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Rhododendrites",
@@ -13461,14 +11026,15 @@
    ],
    "text": "A big, bouncy family dog mixing Golden Retriever warmth with Poodle smarts. Sociable and keen to play.",
    "shape": {
-    "len": 27,
-    "h": 12,
-    "leg": 11,
-    "head": 9,
-    "snout": 5,
+    "size": "L",
+    "build": "standard",
+    "snout": 3,
     "ears": "long",
     "tail": "plume",
-    "fluff": 1
+    "coat": "curly",
+    "colour": "red",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/groodle-ce5d9029-grid.webp",
@@ -13479,19 +11045,7 @@
     "focus": [
      0.52,
      0.7
-    ],
-    "colours": {
-     "body": [
-      142,
-      106,
-      82
-     ],
-     "patch": [
-      182,
-      149,
-      133
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Gullpavon",
@@ -13524,14 +11078,15 @@
    ],
    "text": "Bred in Australia as a guide dog cross. Sociable, quick to learn and usually gentle with kids.",
    "shape": {
-    "len": 27,
-    "h": 12,
-    "leg": 11,
-    "head": 9,
-    "snout": 5,
+    "size": "L",
+    "build": "standard",
+    "snout": 3,
     "ears": "long",
     "tail": "plume",
-    "fluff": 1
+    "coat": "curly",
+    "colour": "chocolate",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/labradoodle-90a062f8-grid.webp",
@@ -13542,19 +11097,7 @@
     "focus": [
      0.58,
      0.5
-    ],
-    "colours": {
-     "body": [
-      47,
-      44,
-      49
-     ],
-     "patch": [
-      144,
-      151,
-      164
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Anton Porsche",
@@ -13590,14 +11133,15 @@
    ],
    "text": "A small, soft-coated lap dog that sticks close to its people. Usually easy-going, with short bursts of play.",
    "shape": {
-    "len": 18,
-    "h": 9,
-    "leg": 5,
-    "head": 7,
+    "size": "XS",
+    "build": "standard",
     "snout": 2,
     "ears": "long",
     "tail": "plume",
-    "fluff": 0.9
+    "coat": "long",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/maltese-x-shih-tzu-64467f67-grid.webp",
@@ -13608,19 +11152,7 @@
     "focus": [
      0.55,
      0.5
-    ],
-    "colours": {
-     "body": [
-      149,
-      147,
-      138
-     ],
-     "patch": [
-      203,
-      208,
-      208
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "W.carter",
@@ -13652,14 +11184,15 @@
    ],
    "text": "A soft, fluffy Cavalier-Bichon mix made for companionship. Sweet-natured and up for a gentle game.",
    "shape": {
-    "len": 19,
-    "h": 10,
-    "leg": 7,
-    "head": 8,
+    "size": "S",
+    "build": "standard",
     "snout": 3,
     "ears": "long",
     "tail": "plume",
-    "fluff": 0.9
+    "coat": "curly",
+    "colour": "white",
+    "markings": "solid",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/cavachon-19ed5dcb-grid.webp",
@@ -13670,19 +11203,7 @@
     "focus": [
      0.48,
      0.55
-    ],
-    "colours": {
-     "body": [
-      149,
-      145,
-      139
-     ],
-     "patch": [
-      54,
-      38,
-      26
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Inkiw at English Wikipedia",
@@ -13715,14 +11236,15 @@
    ],
    "text": "A Pug-Cavalier cross with a squishy face and a loving nature. Playful in short bursts, then happy to snooze.",
    "shape": {
-    "len": 20,
-    "h": 10,
-    "leg": 7,
-    "head": 9,
+    "size": "S",
+    "build": "standard",
     "snout": 2,
     "ears": "floppy",
     "tail": "curl",
-    "fluff": 0.2
+    "coat": "smooth",
+    "colour": "fawn",
+    "markings": "solid",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/pugalier-0765c42d-grid.webp",
@@ -13733,19 +11255,7 @@
     "focus": [
      0.7,
      0.45
-    ],
-    "colours": {
-     "body": [
-      252,
-      232,
-      208
-     ],
-     "patch": [
-      75,
-      48,
-      45
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "No machine-readable author provided. Casliber assumed (based on copyright claims).",
@@ -13777,13 +11287,15 @@
    ],
    "text": "A Beagle-Pug mix with a wrinkly face and a curious nose. Social and fun, with more get-up-and-go than a Pug.",
    "shape": {
-    "len": 22,
-    "h": 10,
-    "leg": 8,
-    "head": 9,
-    "snout": 4,
+    "size": "S",
+    "build": "standard",
+    "snout": 2,
     "ears": "floppy",
-    "tail": "curl"
+    "tail": "curl",
+    "coat": "smooth",
+    "colour": "fawn",
+    "markings": "solid",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/puggle-f67c2ccb-grid.webp",
@@ -13794,19 +11306,7 @@
     "focus": [
      0.53,
      0.5
-    ],
-    "colours": {
-     "body": [
-      120,
-      111,
-      76
-     ],
-     "patch": [
-      202,
-      154,
-      108
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "FaithlessAngel",
@@ -13839,13 +11339,15 @@
    ],
    "text": "A Jack Russell-Pug cross that's feisty and fun. Loves cuddles but has terrier energy to burn.",
    "shape": {
-    "len": 20,
-    "h": 9,
-    "leg": 7,
-    "head": 8,
-    "snout": 3,
+    "size": "S",
+    "build": "standard",
+    "snout": 2,
     "ears": "floppy",
-    "tail": "curl"
+    "tail": "curl",
+    "coat": "smooth",
+    "colour": "fawn",
+    "markings": "solid",
+    "mask": true
    },
    "image": {
     "grid": "/breeds/jug-268982c4-grid.webp",
@@ -13856,19 +11358,7 @@
     "focus": [
      0.43,
      0.5
-    ],
-    "colours": {
-     "body": [
-      184,
-      183,
-      182
-     ],
-     "patch": [
-      21,
-      22,
-      22
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Unknown author (see source page)",
@@ -13899,13 +11389,15 @@
    ],
    "text": "A small, speedy Aussie ratter with a short, smooth coat. Bright and devoted, but will chase anything small.",
    "shape": {
-    "len": 19,
-    "h": 8,
-    "leg": 8,
-    "head": 7,
-    "snout": 6,
+    "size": "XS",
+    "build": "standard",
+    "snout": 4,
     "ears": "pointy",
-    "tail": "up"
+    "tail": "up",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/miniature-fox-terrier-bd6c7208-grid.webp",
@@ -13916,19 +11408,7 @@
     "focus": [
      0.49,
      0.5
-    ],
-    "colours": {
-     "body": [
-      148,
-      134,
-      113
-     ],
-     "patch": [
-      79,
-      82,
-      74
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Mruserbox1",
@@ -13958,14 +11438,15 @@
    ],
    "text": "An Australian working sheepdog, often merle. Eager to please and devoted to its handler, needing plenty to do.",
    "shape": {
-    "len": 26,
-    "h": 10,
-    "leg": 11,
-    "head": 8,
-    "snout": 7,
+    "size": "M",
+    "build": "standard",
+    "snout": 4,
     "ears": "pointy",
     "tail": "straight",
-    "fluff": 0.2
+    "coat": "smooth",
+    "colour": "blue",
+    "markings": "merle",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/koolie-eb28c085-grid.webp",
@@ -13976,19 +11457,7 @@
     "focus": [
      0.6,
      0.5
-    ],
-    "colours": {
-     "body": [
-      42,
-      46,
-      44
-     ],
-     "patch": [
-      108,
-      109,
-      112
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Koolie",
@@ -14019,13 +11488,15 @@
    ],
    "text": "A muscly, compact bully breed that's usually a big softie at home. Confident and loves games like tug.",
    "shape": {
-    "len": 25,
-    "h": 13,
-    "leg": 7,
-    "head": 11,
-    "snout": 3,
+    "size": "L",
+    "build": "stocky",
+    "snout": 2,
     "ears": "rose",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "blue",
+    "markings": "white_markings",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/american-bully-d5f5b1b5-grid.webp",
@@ -14036,19 +11507,7 @@
     "focus": [
      0.55,
      0.5
-    ],
-    "colours": {
-     "body": [
-      113,
-      108,
-      103
-     ],
-     "patch": [
-      206,
-      197,
-      186
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Juan. botti",
@@ -14077,13 +11536,15 @@
    ],
    "text": "An Australian pig-hunting dog that's placid and kind at home. Very driven when working and can be strong-willed.",
    "shape": {
-    "len": 31,
-    "h": 13,
-    "leg": 13,
-    "head": 10,
-    "snout": 7,
+    "size": "L",
+    "build": "standard",
+    "snout": 4,
     "ears": "floppy",
-    "tail": "straight"
+    "tail": "straight",
+    "coat": "smooth",
+    "colour": "red",
+    "markings": "parti",
+    "mask": false
    },
    "image": {
     "grid": "/breeds/bull-arab-f1b5cd94-grid.webp",
@@ -14094,19 +11555,7 @@
     "focus": [
      0.5,
      0.55
-    ],
-    "colours": {
-     "body": [
-      204,
-      173,
-      115
-     ],
-     "patch": [
-      142,
-      109,
-      76
-     ]
-    }
+    ]
    },
    "credit": {
     "author": "Wa.railfan",

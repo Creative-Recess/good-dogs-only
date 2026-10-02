@@ -6,7 +6,6 @@ import { createHash } from 'node:crypto'
 import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
 import sharp from 'sharp'
 import type { Breed, PhotoCredit } from '../src/data/types.ts'
-import { photoColours } from './lib/colours.ts'
 import { buildBreedList, groups } from './lib/dataset.ts'
 import { cachedDownload } from './lib/downloads.ts'
 import { makeMasks } from './lib/masks.ts'
@@ -117,10 +116,9 @@ for (const b of buildBreedList()) {
   written.add(gridName).add(detailName).add(maskName)
   maskJobs.push({ grid: new URL(gridName, outDir).pathname, out: new URL(maskName, outDir).pathname })
 
-  const colours = await photoColours(new URL(gridName, outDir).pathname)
   breeds.push({
     ...b,
-    image: { grid: `/breeds/${gridName}`, detail: `/breeds/${detailName}`, mask: `/breeds/${maskName}`, width: detail.width, height: detail.height, focus: [fx, fy], colours },
+    image: { grid: `/breeds/${gridName}`, detail: `/breeds/${detailName}`, mask: `/breeds/${maskName}`, width: detail.width, height: detail.height, focus: [fx, fy] },
     credit,
   })
 }

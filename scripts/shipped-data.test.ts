@@ -68,25 +68,23 @@ describe('src/data/breeds.json', () => {
     }
   })
 
-  it('gives every entry a Park shape within the drawable ranges', () => {
-    const inRange = (v: number, lo: number, hi: number) => Number.isInteger(v) && v >= lo && v <= hi
+  it('gives every entry a Park dog description from the fixed lists', () => {
     for (const b of breeds) {
       const s = b.shape
       expect(s, b.id).toBeTruthy()
-      expect(inRange(s.len, 14, 42) && inRange(s.h, 6, 17) && inRange(s.leg, 3, 17) && inRange(s.head, 5, 13) && inRange(s.snout, 1, 11), b.id).toBe(true)
+      expect(['XS', 'S', 'M', 'L', 'XL'], b.id).toContain(s.size)
+      expect(['standard', 'long_low', 'tall_lean', 'stocky'], b.id).toContain(s.build)
+      expect([1, 2, 3, 4, 5], b.id).toContain(s.snout)
       expect(['floppy', 'long', 'pointy', 'bat', 'rose', 'tipped'], b.id).toContain(s.ears)
       expect(['straight', 'plume', 'curl', 'stub', 'up'], b.id).toContain(s.tail)
-      expect(s.fluff ?? 0, b.id).toBeGreaterThanOrEqual(0)
-      expect(s.fluff ?? 0, b.id).toBeLessThanOrEqual(1)
+      expect(['smooth', 'wiry', 'feathered', 'long', 'fluffy', 'curly', 'corded', 'hairless'], b.id).toContain(s.coat)
+      expect(['black', 'chocolate', 'red', 'gold', 'cream', 'white', 'fawn', 'blue', 'silver', 'sable'], b.id).toContain(s.colour)
+      expect(['solid', 'white_markings', 'parti', 'tan_points', 'tricolour', 'brindle', 'merle', 'spotted', 'saddle'], b.id).toContain(s.markings)
+      expect(typeof s.mask, b.id).toBe('boolean')
     }
   })
 
-  it('gives every photo a crop focus and Park colours', () => {
-    const rgb = (c: number[]) => c.length === 3 && c.every((v) => Number.isInteger(v) && v >= 0 && v <= 255)
-    for (const b of breeds.filter((x) => x.image)) {
-      const { focus, colours } = b.image!
-      expect(focus.every((v) => v >= 0 && v <= 1), b.id).toBe(true)
-      expect(rgb(colours.body) && rgb(colours.patch), b.id).toBe(true)
-    }
+  it('gives every photo a crop focus', () => {
+    for (const b of breeds.filter((x) => x.image)) expect(b.image!.focus.every((v) => v >= 0 && v <= 1), b.id).toBe(true)
   })
 })

@@ -1,7 +1,7 @@
 // The Park: an animated Rushcutters Bay with one storybook dog per spotted breed.
 // Framework-free, so it can run in the Park tab and in the screensaver alike.
 import type { Breed } from '../data/types.ts'
-import { DEFAULT_COLOURS, drawDog, type Dog } from './dog.ts'
+import { drawDog, type Dog } from './dog.ts'
 import { BOTTOM, drawBackground, drawFig, drawWater, FIGS, SHADE_SPOT, timeOfDay, TOP } from './scene.ts'
 
 /** At most this many dogs are out at once; with more spotted, dogs take turns, walking off and on. */
@@ -175,8 +175,6 @@ export class Park {
     return {
       breed,
       shape: breed.shape,
-      body: breed.image?.colours.body ?? DEFAULT_COLOURS.body,
-      patch: breed.image?.colours.patch ?? DEFAULT_COLOURS.patch,
       seed: n * 1.7 + 0.3,
       x,
       y,
