@@ -121,7 +121,7 @@ function HomeScreenSteps() {
     <ol>
       {platform === 'ios' && (
         <li>
-          Tap <b>Share</b> (in Chrome or Edge, it's in the <b>...</b> menu), then <b>Add to Home Screen</b>
+          Tap <b>Share</b>, then <b>Add to Home Screen</b>
         </li>
       )}
       {platform === 'android' && (
