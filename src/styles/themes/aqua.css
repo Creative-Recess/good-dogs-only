@@ -149,6 +149,9 @@
   .title-block .standard-link::after { content: " \2197"; }
   .box { margin: 0; padding: 8px; }
   .chips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px 4px; }
+  .chips.facts { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .chips.facts b { font-size: 10px; }
+  .chips.facts small { font-size: 9px; opacity: 0.7; }
   .chip { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; font-size: 10px; line-height: 1.2; min-width: 0; overflow-wrap: break-word; }
   .chip-icon { width: 30px; height: 30px; flex: none; display: grid; place-items: center; }
   .chip-icon svg { width: 30px; height: 30px; filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, 0.35)); }

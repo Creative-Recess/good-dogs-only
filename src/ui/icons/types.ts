@@ -6,6 +6,6 @@ export type IconName =
   | 'tHeart' | 'tShield' | 'tBall' | 'tBulb' | 'tBolt' | 'tMoon'
   | 'tHand' | 'tEye' | 'tCrook' | 'tLock' | 'tCrown' | 'tDoor'
   | 'tCap' | 'tHouse' | 'tCompass' | 'tFeather' | 'tbDogdex' | 'tbPark'
-  | 'tbProgress'
+  | 'tbProgress' | 'fHeight' | 'fWeight' | 'fLife' | 'fOrigin'
 /** Every theme's icon set must draw every icon. */
 export type IconSet = Record<IconName, IconDef>

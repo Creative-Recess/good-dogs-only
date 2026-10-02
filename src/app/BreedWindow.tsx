@@ -12,10 +12,11 @@ import { useTheme } from '../theme/store.ts'
 import { isAquaFamily } from '../theme/themes.ts'
 import { useDialog } from './dialogs.ts'
 import { NoteField } from './NoteField.tsx'
+import { FACTS } from '../data/facts.ts'
 import { Section } from './Section.tsx'
 
 /** Which fold-away sections are open (Aqua). They stay as you left them as you move between breeds. */
-export type Folds = { temperament: boolean; varieties: boolean; status: boolean }
+export type Folds = { temperament: boolean; facts: boolean; varieties: boolean; status: boolean }
 
 type Props = { breed: Breed; spotted: Spot | undefined; spottedCount: number; onClose: () => void; folds: Folds; onFolds: (f: Folds) => void }
 
@@ -106,6 +107,22 @@ export function BreedWindow({ breed: b, spotted, spottedCount, onClose, folds, o
           {aqua && <div className="textbox">{b.text}</div>}
         </Section>
         {!aqua && <div className="textbox">{b.text}</div>}
+        {FACTS[b.id] && (
+          <Section title="Breed facts" className="box" {...fold('facts')}>
+            <div className="chips facts" lang="en">
+              {([['fHeight', FACTS[b.id].height, 'Height'], ['fWeight', FACTS[b.id].weight, 'Weight'], ['fLife', FACTS[b.id].life, 'Lifespan'], ['fOrigin', FACTS[b.id].origin, 'From']] as const).map(([icon, value, label]) => (
+                <span className="chip" key={label}>
+                  <span className="chip-icon">
+                    <Icon name={icon} />
+                  </span>
+                  <b>{value}</b>
+                  <small>{label}</small>
+                </span>
+              ))}
+            </div>
+            <div className="textbox">{FACTS[b.id].job}</div>
+          </Section>
+        )}
         {b.forms.length > 0 && (
           <Section title="Varieties" {...fold('varieties')}>
             <div className="forms">

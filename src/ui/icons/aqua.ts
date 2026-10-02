@@ -24,6 +24,10 @@ export const ORBS: Record<string, [string, string]> = {
   dogdex: ['#9fd2ff', '#1f63c4'],
   park: ['#a6ec86', '#2c8a1c'],
   progress: ['#ffd27a', '#d27a00'],
+  height: ['#9fe3ff', '#1a7fb8'],
+  weight: ['#c9c9d6', '#55556e'],
+  life: ['#ff9fc2', '#c4246a'],
+  origin: ['#8fe6a8', '#1d8a52'],
 }
 
 /** The app logo: a glossy blue gel paw. */
@@ -73,5 +77,9 @@ export const AQUA_ICONS = {
   tbDogdex: orb('dogdex', '<rect x="8" y="8" width="7" height="7" rx="1.6"/><rect x="17" y="8" width="7" height="7" rx="1.6"/><rect x="8" y="17" width="7" height="7" rx="1.6"/><rect x="17" y="17" width="7" height="7" rx="1.6"/>'),
   tbPark: orb('park', '<circle cx="16" cy="12.5" r="6.5"/><circle cx="11.5" cy="15" r="4"/><circle cx="20.5" cy="15" r="4"/><rect x="14.8" y="17" width="2.4" height="8" rx="1"/>'),
   tbProgress: orb('progress', '<rect x="8" y="17" width="4" height="8" rx="1"/><rect x="14" y="12" width="4" height="13" rx="1"/><rect x="20" y="8" width="4" height="17" rx="1"/>'),
+  fHeight: orb('height', '<rect x="13" y="6" width="6" height="20" rx="1"/><path d="M13 9h3M13 13h4M13 17h3M13 21h4" stroke="#1a7fb8" stroke-width="1.2"/>'),
+  fWeight: orb('weight', '<path d="M11 13h10l3 11H8z"/><circle cx="16" cy="10" r="3" fill="none" stroke="#fff" stroke-width="2"/>'),
+  fLife: orb('life', '<path d="M10 7h12M10 25h12" stroke="#fff" stroke-width="2"/><path d="M11 8c0 5 5 6 5 8s-5 3-5 8h10c0-5-5-6-5-8s5-3 5-8z"/>'),
+  fOrigin: orb('origin', '<circle cx="16" cy="16" r="8.5" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M7.5 16h17M16 7.5c-3.5 3-3.5 14 0 17M16 7.5c3.5 3 3.5 14 0 17" fill="none" stroke="#fff" stroke-width="1.4"/>'),
 } satisfies IconSet
 

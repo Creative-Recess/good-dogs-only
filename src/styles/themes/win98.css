@@ -107,6 +107,9 @@ fieldset { min-width: 0; }
 .title-block .standard-link { color: #0000ee; }
 .box { margin: 0; padding: 6px 6px 8px; }
 .chips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px 4px; }
+.chips.facts { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.chips.facts b { font-size: 10px; }
+.chips.facts small { font-size: 9px; opacity: 0.7; }
 .chip { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 3px; font-size: 10px; line-height: 1.2; min-width: 0; overflow-wrap: break-word; }
 .chip-icon { width: 24px; height: 24px; flex: none; display: grid; place-items: center; background: var(--silver); box-shadow: var(--raised); }
 .chip-icon svg { width: 16px; height: 16px; }
