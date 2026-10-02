@@ -186,7 +186,7 @@ async function showOptions() {
     .map(([id, opts]) => {
       const b = breeds.find((x) => x.id === id)
       if (!b) return ''
-      const current = `<label class="option"><input type="radio" name="opt-${id}" value="keep" checked><span class="crops">${crops(b.image!.detail, b.image!.focus)}</span><b>Keep current</b></label>`
+      const current = `<label class="option"><input type="radio" name="opt-${id}" value="keep"><span class="crops">${crops(b.image!.detail, b.image!.focus)}</span><b>Keep current</b></label>`
       const rest = opts
         .map((o) => `<label class="option"><input type="radio" name="opt-${id}" value="${o.label}"><span class="crops">${crops(`${OPTIONS_DIR}/${id}-${o.label}.jpg`, o.focus)}</span><b>${o.label}</b><small>${esc(o.note)}</small><small>${esc(o.author)} · ${esc(o.licence)}</small></label>`)
         .join('')
@@ -200,8 +200,7 @@ async function showOptions() {
   $('#option-list').addEventListener('change', (e) => {
     const input = e.target as HTMLInputElement
     const id = input.name.replace('opt-', '')
-    if (input.value === 'keep') chosen.delete(id)
-    else chosen.set(id, input.value)
+    chosen.set(id, input.value)
     update()
   })
   $('#copy-picks').addEventListener('click', () => {
