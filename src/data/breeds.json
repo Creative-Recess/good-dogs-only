@@ -11475,23 +11475,24 @@
     "mask": true
    },
    "image": {
-    "grid": "/breeds/pugalier-a0bdfc6d-grid.webp",
-    "detail": "/breeds/pugalier-a0bdfc6d.webp",
-    "mask": "/breeds/pugalier-a0bdfc6d-mask.webp",
-    "width": 1125,
-    "height": 1500,
+    "grid": "/breeds/pugalier-d34f65e9-grid.webp",
+    "detail": "/breeds/pugalier-d34f65e9.webp",
+    "mask": "/breeds/pugalier-d34f65e9-mask.webp",
+    "width": 1200,
+    "height": 800,
     "focus": [
-     0.47,
-     0.33
+     0.45,
+     0.42
     ],
     "dogs": 1
    },
    "credit": {
-    "author": ".mw-parser-output .template-designermadsen-source{border:1px solid #a2a9b1;background-color:#f8f9fa;display:grid;padd...",
-    "licence": "CC BY-SA 2.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brown_White_Dog_Sitting_Aldi_Denmark_002.jpg",
-    "changes": "Resized, and cropped to a square for the grid"
+    "author": "Select a Dog Breed",
+    "licence": "Copyright Select a Dog Breed",
+    "licenceUrl": null,
+    "sourceUrl": "https://www.selectadogbreed.com/media/1784/pugalier_adult.jpg",
+    "changes": "Resized, and cropped to a square for the grid",
+    "restricted": true
    }
   },
   {

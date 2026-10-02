@@ -66,7 +66,9 @@ for (const b of buildBreedList()) {
   let local: string
   let credit: PhotoCredit
   if (pick.external) {
-    local = await cachedDownload(pick.external.url, originals, '.img')
+    local = pick.external.saved
+      ? new URL(`../data/photos/${pick.external.saved}`, import.meta.url).pathname
+      : await cachedDownload(pick.external.url, originals, '.img')
     credit = {
       author: pick.external.credit,
       licence: `Copyright ${pick.external.credit}`,

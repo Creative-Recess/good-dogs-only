@@ -1,5 +1,6 @@
 import { existsSync, readdirSync, statSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
+import picksFile from '../data/photo-picks.json' with { type: 'json' }
 import shipped from '../src/data/breeds.json' with { type: 'json' }
 import { TRAITS, type Breed } from '../src/data/types.ts'
 import { isAllowedLicence } from './lib/licences.ts'
@@ -38,7 +39,9 @@ describe('src/data/breeds.json', () => {
       expect(c.author, b.id).toBeTruthy()
       if (c.restricted) {
         // Justin's call (1 Oct 2026): Dogs Australia's own breed photos wherever they have one, credited to them.
-        expect(c.sourceUrl, b.id).toMatch(/^https:\/\/dogsaustralia\.org\.au\/BrowseBreed\//)
+        // Other non-Commons photos only where Justin chose them himself.
+        const byJustin = (picksFile.picks as Record<string, { by: string }>)[b.id]?.by === 'justin'
+        if (!byJustin) expect(c.sourceUrl, b.id).toMatch(/^https:\/\/dogsaustralia\.org\.au\/BrowseBreed\//)
       } else {
         expect(isAllowedLicence(c.licence), `${b.id}: ${c.licence}`).toBe(true)
         expect(c.sourceUrl, b.id).toMatch(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/)

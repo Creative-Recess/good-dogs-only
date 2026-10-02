@@ -3202,15 +3202,21 @@
       }
     },
     "pugalier": {
-      "file": "File:Brown White Dog Sitting Aldi Denmark 002.jpg",
+      "file": null,
+      "external": {
+        "url": "https://www.selectadogbreed.com/media/1784/pugalier_adult.jpg",
+        "credit": "Select a Dog Breed",
+        "sourceUrl": "https://www.selectadogbreed.com/media/1784/pugalier_adult.jpg",
+        "saved": "pugalier.jpg"
+      },
       "focus": [
-        0.47,
-        0.33
+        0.45,
+        0.42
       ],
       "by": "justin",
       "confidence": "high",
-      "note": "Same dog and caveat as A (unconfirmed pug cross, not labelled Pugalier), portrait version, closer and facing the camera. Portrait, so the landscape crop trims the front paws.",
-      "previous": "File:Pugalier bunbury2 email.jpg"
+      "note": "Justin's pick: fawn adult, head and shoulders.",
+      "previous": "File:Brown White Dog Sitting Aldi Denmark 002.jpg"
     },
     "puggle": {
       "file": "File:Puggle Naya 12 Monate stehend.jpg",

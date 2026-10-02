@@ -22,7 +22,11 @@ export type Candidate = {
 export type PhotoPick = {
   file: string | null
   /** A photo from outside Commons that Justin chose (e.g. a Dogs Australia breed photo). */
-  external?: { url: string; credit: string; sourceUrl: string }
+  /**
+   * A photo from outside Commons that Justin chose (e.g. a Dogs Australia breed photo). `saved` is a copy kept in
+   * data/photos/ for sites that don't allow downloads; otherwise the build downloads `url`.
+   */
+  external?: { url: string; credit: string; sourceUrl: string; saved?: string }
   focus?: [number, number]
   by: 'claude-review' | 'claude' | 'justin'
   confidence?: 'high' | 'medium' | 'low'
