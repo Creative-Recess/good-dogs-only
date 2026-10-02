@@ -91,7 +91,7 @@ Downloads and other working files go in `.cache/` (not committed).
 5. `node scripts/apply-verdicts.ts <round> <verdicts.json>`: the chosen tiles into `data/photo-picks.json`.
 6. `node scripts/build-data.ts`, then `node scripts/make-contact-sheet.ts` for a review page of picks and alternatives.
 
-`node scripts/fetch-ankc-temperament.ts` reads the standards' temperament lines into `.cache/` for analysis only; `node scripts/make-icons.ts` redraws the Home Screen icons from the paw logo.
+`node scripts/fetch-ankc-temperament.ts` reads the standards' temperament lines into `.cache/` for analysis only; `node scripts/make-icons.ts` redraws the pixel dog face used for the browser tab and Home Screen icons.
 
 ## Content and licensing
 
