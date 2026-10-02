@@ -3,8 +3,9 @@ import { expect, test } from '@playwright/test'
 import { TOTAL, launch, leaveHelp, openHelp, spotBreed } from './helpers.ts'
 
 test('a backup restores every spot after the phone is wiped', async ({ page }, testInfo) => {
-  // Stand in for the iPhone share sheet: keep the file it was given.
+  // Stand in for the phone's share sheet (iPhone or Android): keep the file it was given.
   await page.addInitScript(() => {
+    navigator.canShare = () => true
     navigator.share = async (data?: ShareData) => {
       ;(window as unknown as { shared: string }).shared = await data!.files![0].text()
     }

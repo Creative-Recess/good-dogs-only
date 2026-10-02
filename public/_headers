@@ -1,12 +1,14 @@
-# Cache headers, applied by Cloudflare's static assets. Everything sits behind the site password, so caching is
-# private (the phone keeps copies; shared caches don't).
+# Cache headers, applied by Cloudflare's static assets.
 # Breed photos and built assets have content hashes in their names, so they never change.
 /breeds/*
-  Cache-Control: private, max-age=31536000, immutable
+  Cache-Control: public, max-age=31536000, immutable
 /assets/*
-  Cache-Control: private, max-age=31536000, immutable
+  Cache-Control: public, max-age=31536000, immutable
 # The page itself is always checked, so an update shows up on the next open.
 /
   Cache-Control: no-cache
 /index.html
   Cache-Control: no-cache
+# Shared by link with friends and family only: ask search engines not to list it.
+/*
+  X-Robots-Tag: noindex, nofollow

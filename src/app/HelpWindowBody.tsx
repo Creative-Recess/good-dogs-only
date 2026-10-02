@@ -3,6 +3,7 @@ import { useRef } from 'react'
 import { groupById, TOTAL } from '../data/catalogue.ts'
 import { backupFile, importBackup, markBackedUp } from '../lib/backup.ts'
 import { formatDay } from '../lib/dates.ts'
+import { currentPlatform } from '../lib/platform.ts'
 import type { Sighting } from '../lib/sightings.ts'
 import { setTheme, useTheme } from '../theme/store.ts'
 import { THEMES } from '../theme/themes.ts'
@@ -78,15 +79,7 @@ export function HelpWindowBody({ lastBackup, sightings }: { lastBackup: string |
         {standalone() ? (
           <p>Done: you're using Good Dogs Only from your Home Screen.</p>
         ) : (
-          <ol>
-            <li>
-              Open Good Dogs Only in <b>Safari</b>
-            </li>
-            <li>
-              Tap <b>Share</b>, then <b>Add to Home Screen</b>
-            </li>
-            <li>Open it from the new icon. It runs full screen, like an app.</li>
-          </ol>
+          <HomeScreenSteps />
         )}
       </fieldset>
       <fieldset className="panel-box">
@@ -118,5 +111,30 @@ export function HelpWindowBody({ lastBackup, sightings }: { lastBackup: string |
         </div>
       </fieldset>
     </>
+  )
+}
+
+/** How to add the app to the Home Screen on this kind of phone. */
+function HomeScreenSteps() {
+  const platform = currentPlatform()
+  return (
+    <ol>
+      {platform === 'ios' && (
+        <li>
+          Tap <b>Share</b> (in Chrome or Edge, it's in the <b>...</b> menu), then <b>Add to Home Screen</b>
+        </li>
+      )}
+      {platform === 'android' && (
+        <li>
+          Open the browser menu <b>⋮</b>, then <b>Add to Home screen</b> or <b>Install app</b>
+        </li>
+      )}
+      {platform === 'other' && (
+        <li>
+          On a phone, use the browser's <b>Add to Home Screen</b>. On a computer, look for <b>Install</b> in the address bar or browser menu
+        </li>
+      )}
+      <li>Open it from the new icon. It runs full screen, like an app.</li>
+    </ol>
   )
 }

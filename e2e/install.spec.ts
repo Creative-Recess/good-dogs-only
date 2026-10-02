@@ -16,7 +16,7 @@ test('serves a valid manifest and icons for the Home Screen', async ({ page, req
   await expect(page.locator('meta[name="apple-mobile-web-app-capable"]')).toHaveAttribute('content', 'yes')
 })
 
-test('Help shows how to add it to the Home Screen when opened in Safari', async ({ page }) => {
+test('Help shows how to add it to the Home Screen on this phone', async ({ page }) => {
   await page.goto('/')
   await page.getByRole('button', { name: /Tap to launch/ }).click()
   await openHelp(page)

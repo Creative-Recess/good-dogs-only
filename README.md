@@ -29,7 +29,7 @@ The full plan lives outside this repo at `personal/task-plans/dog-breed-dex.md` 
   Backups (`src/lib/backup.ts`) merge by sighting, newest change wins.
 - The Park is a framework-free canvas engine in `src/park/` (scene, dog drawing, behaviour).
 - Vitest for unit and data tests, Playwright (WebKit, iPhone 17 profile) for E2E tests.
-- Hosted on Cloudflare Workers: `worker/` asks for the site password first (a sign-in page on the app's own address, so it works in the Home Screen app), then serves the built app from `dist/`. `public/_headers` sets the caching.
+- Hosted on Cloudflare Workers as static files; `public/_headers` sets the caching.
 
 ## Scripts
 
@@ -50,12 +50,11 @@ The screenshot baselines are recorded on macOS (`*-darwin.png`); another OS woul
 
 ## Hosting
 
-The app is a Cloudflare Worker (`wrangler.jsonc`, `worker/`) on the free plan.
-Every request needs the site password; signing in once keeps you signed in for a year on that phone, and changing the password signs everyone out.
+Live at https://dogdex.gooddogsonly.workers.dev, on Cloudflare Workers' free plan as static files (`wrangler.jsonc`), shared by link with friends and family.
+There's no password; `public/robots.txt`, a `noindex` header and a `noindex` meta tag ask search engines not to list it.
 
-- First time: `pnpm exec wrangler login`, then `pnpm run deploy`, then `pnpm exec wrangler secret put SITE_PASSWORD` to set the password.
-- After that, `pnpm run deploy` puts the latest version live. The phones pick it up the next time the app is opened.
-- To try the live setup locally: put `SITE_PASSWORD="..."` in `.dev.vars` (not committed), `pnpm build`, then `pnpm exec wrangler dev`.
+- `pnpm run deploy` builds and puts the latest version live (first time on a new Mac: `pnpm exec wrangler login`). The phones pick it up the next time the app is opened.
+- Spots are saved per web address, so keep this address: moving the app means a backup and restore on each phone.
 
 ## Breed review page
 
@@ -100,5 +99,5 @@ Downloads and other working files go in `.cache/` (not committed).
   The breed text is written in our own words, never copied from a breed standard.
 - Most breed photos are Dogs Australia's own (Justin's call for this private app), and the rest come from Wikimedia Commons.
   Credits are kept per photo in `src/data/breeds.json` but not shown in the app.
-  Because of the Dogs Australia photos, this repo stays private and the site should sit behind a password.
+  The repo stays private. The site has no password (Justin's call, 2 Oct 2026), so anyone with the link can see the photos; search engines are asked not to list it.
 - The earlier HTML mockups and prototypes were removed; they're kept in git history under the tag `mockups-final`.

@@ -1,10 +1,10 @@
 import { expect, test } from '@playwright/test'
-import { launch, openHelp } from './helpers.ts'
+import { launch, openHelp, startTheme } from './helpers.ts'
 
 const THEMES = { glass: 'Aqua Glass', aqua: 'Aqua', win98: 'Windows 98' } as const
 
 test('the Theme setting switches the look straight away, keeps you in Help, and is remembered', async ({ page }, info) => {
-  const start = info.project.name as keyof typeof THEMES
+  const start = startTheme(info)
   const next = start === 'win98' ? 'aqua' : 'win98'
   await launch(page)
   await openHelp(page)
@@ -24,11 +24,11 @@ test('the saved theme is on the page before anything draws', async ({ page }, in
     atFirstPaint = await page.evaluate(() => document.documentElement.dataset.theme ?? null)
   })
   await page.goto('/')
-  await expect.poll(() => atFirstPaint).toBe(info.project.name)
+  await expect.poll(() => atFirstPaint).toBe(startTheme(info))
 })
 
 test('Windows 98 styles never reach the Aqua themes', async ({ page }, info) => {
-  test.skip(info.project.name === 'win98', 'Aqua themes only')
+  test.skip(startTheme(info) === 'win98', 'Aqua themes only')
   await launch(page)
   const fieldsetBorder = await page.locator('fieldset.show').evaluate((e) => getComputedStyle(e).borderImageSource)
   expect(fieldsetBorder).toBe('none')

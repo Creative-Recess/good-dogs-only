@@ -1,4 +1,4 @@
-import { expect, type Page } from '@playwright/test'
+import { expect, type Page, type TestInfo } from '@playwright/test'
 import data from '../src/data/breeds.json' with { type: 'json' }
 
 /** Counts from the shipped data, so the tests don't need changing when the breed list does. */
@@ -44,3 +44,6 @@ export async function leaveHelp(page: Page) {
   const window = page.getByRole('dialog', { name: 'Help' })
   if (await window.isVisible()) await window.getByRole('button', { name: 'Close' }).click()
 }
+
+/** The theme a test run starts in: each iPhone project is named after its theme; Android uses the default. */
+export const startTheme = (info: TestInfo) => (info.project.name === 'android' ? 'glass' : info.project.name) as 'glass' | 'aqua' | 'win98'
