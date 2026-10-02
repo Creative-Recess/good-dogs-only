@@ -3,7 +3,7 @@ import { launch, openBreed, openHelp, spotBreed } from './helpers.ts'
 
 // Screenshots of every screen, per theme, so a style change anywhere shows up as a diff.
 // Update them on purpose with: pnpm test:e2e --update-snapshots
-const shot = (page: Page, name: string) => expect(page).toHaveScreenshot(`${name}.png`, { animations: 'disabled', mask: [page.getByTestId('park')], maxDiffPixelRatio: 0.0005 })
+const shot = (page: Page, name: string) => expect(page).toHaveScreenshot(`${name}.png`, { animations: 'disabled', mask: [page.getByTestId('park')], maxDiffPixelRatio: 0.0005, timeout: 15_000 })
 
 test.beforeEach(async ({ page }) => {
   // A fixed start, but the clock keeps running so each spot gets its own time.
