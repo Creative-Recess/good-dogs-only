@@ -55,6 +55,8 @@ export type BreedImage = {
   mask: string
   width: number
   height: number
+  /** How many dogs Apple Vision counts in the photo (-1 if it couldn't tell). */
+  dogs?: number
   /** Where the dog is in the detail photo (0-1), for cropping it into the 770:540 frame. */
   focus: [number, number]
 }

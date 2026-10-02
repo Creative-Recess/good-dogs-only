@@ -57,7 +57,9 @@ async function readMask(url: string): Promise<MaskReport> {
 
 function checks(b: Breed, m: MaskReport): string[] {
   const out: string[] = []
-  if (m.dogs > 1) out.push(`${m.dogs} dogs in the photo, so the silhouette is a blob`)
+  const inPhoto = b.image?.dogs ?? 0
+  if (inPhoto >= 2) out.push(`${inPhoto} dogs in the photo`)
+  else if (m.dogs > 1) out.push(`${m.dogs} dogs in the silhouette, so it's a blob`)
   if (m.coverage > 0.6) out.push('silhouette fills most of the square (background may be included)')
   if (m.edge > 0.45) out.push('dog runs off the edges of the grid crop')
   if (m.coverage < 0.05) out.push('dog is tiny in the grid crop')
@@ -97,7 +99,7 @@ function card(b: Breed): string {
   const sils = THEMES.map(
     (t) => `<figure><span class="tile"><span class="sil" data-tint="${t.id}"><span class="sil-glow"><span class="sil-dog" style="--mask:url(${b.image?.mask})"></span></span></span></span><figcaption>${t.label}</figcaption></figure>`,
   ).join('')
-  return `<article class="breed" id="${b.id}" data-group="${b.groupId}" data-name="${esc(`${b.name} ${b.aliases.join(' ')} ${b.dexNo}`.toLowerCase())}">
+  return `<article class="breed" id="${b.id}" data-group="${b.groupId}" data-source="${fromDA ? 'da' : 'other'}" data-name="${esc(`${b.name} ${b.aliases.join(' ')} ${b.dexNo}`.toLowerCase())}">
     <header>
       <span class="dex" style="background:${GROUP_COLOUR[b.groupId]}">${b.dexNo}</span>
       <h2>${esc(b.name)}</h2>
@@ -146,15 +148,16 @@ function filter() {
   const q = $<HTMLInputElement>('#q').value.trim().toLowerCase()
   const group = $<HTMLSelectElement>('#group').value
   const onlyFlagged = $<HTMLInputElement>('#flagged').checked
+  const source = $<HTMLSelectElement>('#source').value
   let shown = 0
   for (const el of list.querySelectorAll<HTMLElement>('.breed')) {
-    const show = (!q || el.dataset.name!.includes(q)) && (group === 'all' || el.dataset.group === group) && (!onlyFlagged || flagged.has(el.id))
+    const show = (!q || el.dataset.name!.includes(q)) && (group === 'all' || el.dataset.group === group) && (!onlyFlagged || flagged.has(el.id)) && (source === 'all' || el.dataset.source === source)
     el.hidden = !show
     if (show) shown++
   }
   $('#count').textContent = `${shown} of ${breeds.length} breeds · ${flagged.size} to check`
 }
-for (const id of ['#q', '#group', '#flagged']) $(id).addEventListener('input', filter)
+for (const id of ['#q', '#group', '#source', '#flagged']) $(id).addEventListener('input', filter)
 filter()
 document.body.dataset.ready = '1'
 

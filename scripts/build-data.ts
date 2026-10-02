@@ -8,6 +8,7 @@ import sharp from 'sharp'
 import type { Breed, PhotoCredit } from '../src/data/types.ts'
 import { buildBreedList, groups } from './lib/dataset.ts'
 import { cachedDownload } from './lib/downloads.ts'
+import { countDogs } from './lib/dog-counts.ts'
 import { makeMasks } from './lib/masks.ts'
 import { politeFetchJson } from './lib/http.ts'
 import { isAllowedLicence } from './lib/licences.ts'
@@ -126,7 +127,11 @@ for (const b of buildBreedList()) {
 // 3. The dog's shape for each photo (for unseen breeds' silhouettes), made once and kept.
 await makeMasks(maskJobs, new URL('../.cache/masks', import.meta.url).pathname)
 
-// 4. Remove images from earlier builds that are no longer used, then write the data file.
+// 4. How many dogs are in each photo (the review page flags photos with more than one).
+const counts = await countDogs(breeds.flatMap((b) => (b.image ? [new URL(`../public${b.image.detail}`, import.meta.url).pathname] : [])), new URL('../.cache/dog-counts.json', import.meta.url).pathname)
+for (const b of breeds) if (b.image) b.image.dogs = counts.get(new URL(`../public${b.image.detail}`, import.meta.url).pathname)
+
+// 5. Remove images from earlier builds that are no longer used, then write the data file.
 for (const f of await readdir(outDir)) if (!written.has(f)) await rm(new URL(f, outDir))
 await writeFile(new URL('../src/data/breeds.json', import.meta.url), JSON.stringify({ groups, breeds }, null, 1) + '\n')
 const withPhoto = breeds.filter((b) => b.image).length

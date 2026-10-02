@@ -80,7 +80,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -129,7 +130,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -177,7 +179,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -223,7 +226,8 @@
     "focus": [
      0.54,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Detlef Breiting",
@@ -268,7 +272,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -318,7 +323,8 @@
     "focus": [
      0.3,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -368,7 +374,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -418,7 +425,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -467,7 +475,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -516,7 +525,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -566,7 +576,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -615,7 +626,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -661,7 +673,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -710,7 +723,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -756,7 +770,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -805,7 +820,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -855,7 +871,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -901,7 +918,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -950,7 +968,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -988,23 +1007,23 @@
     "mask": false
    },
    "image": {
-    "grid": "/breeds/papillon-54d1b8b7-grid.webp",
-    "detail": "/breeds/papillon-54d1b8b7.webp",
-    "mask": "/breeds/papillon-54d1b8b7-mask.webp",
-    "width": 770,
-    "height": 540,
+    "grid": "/breeds/papillon-f54e2f86-grid.webp",
+    "detail": "/breeds/papillon-f54e2f86.webp",
+    "mask": "/breeds/papillon-f54e2f86-mask.webp",
+    "width": 1200,
+    "height": 937,
     "focus": [
-     0.5,
-     0.5
-    ]
+     0.45,
+     0.48
+    ],
+    "dogs": 1
    },
    "credit": {
-    "author": "Dogs Australia",
-    "licence": "Copyright Dogs Australia",
-    "licenceUrl": null,
-    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/55/",
-    "changes": "Resized, and cropped to a square for the grid",
-    "restricted": true
+    "author": "Gvdmoort",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Outdoor_Continental_Toy_Spaniel_Papillon.jpeg",
+    "changes": "Resized, and cropped to a square for the grid"
    }
   },
   {
@@ -1044,7 +1063,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1092,7 +1112,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1140,7 +1161,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1186,7 +1208,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1236,7 +1259,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1286,7 +1310,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1334,7 +1359,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1382,7 +1408,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1428,7 +1455,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1475,7 +1503,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1525,7 +1554,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1573,7 +1603,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1619,7 +1650,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1665,7 +1697,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 2
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1713,7 +1746,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1762,7 +1796,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1808,7 +1843,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1854,7 +1890,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1903,7 +1940,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -1951,7 +1989,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2000,7 +2039,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2049,7 +2089,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2099,7 +2140,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 3
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2145,7 +2187,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2195,7 +2238,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2243,7 +2287,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2289,7 +2334,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2335,7 +2381,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 2
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2381,7 +2428,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2427,7 +2475,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 3
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2476,7 +2525,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2525,7 +2575,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2571,7 +2622,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2617,7 +2669,8 @@
     "focus": [
      0.42,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Pleple2000",
@@ -2666,7 +2719,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 3
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2716,7 +2770,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2764,7 +2819,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2810,7 +2866,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2859,7 +2916,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2905,7 +2963,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -2953,7 +3012,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3002,7 +3062,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3048,7 +3109,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3097,7 +3159,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3147,7 +3210,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3196,7 +3260,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3242,7 +3307,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3292,7 +3358,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 2
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3338,7 +3405,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3387,7 +3455,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3436,7 +3505,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3485,7 +3555,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3531,7 +3602,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3577,7 +3649,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3625,7 +3698,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3674,7 +3748,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3721,7 +3796,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3769,7 +3845,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3817,7 +3894,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3865,7 +3943,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3913,7 +3992,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -3961,7 +4041,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 2
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4007,7 +4088,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4057,7 +4139,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4106,7 +4189,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4154,7 +4238,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 5
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4202,7 +4287,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4248,7 +4334,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4297,7 +4384,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4346,7 +4434,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4395,7 +4484,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4444,7 +4534,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4490,7 +4581,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4536,7 +4628,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4582,7 +4675,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4632,7 +4726,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4678,7 +4773,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4727,7 +4823,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4773,7 +4870,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4822,7 +4920,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4860,23 +4959,23 @@
     "mask": false
    },
    "image": {
-    "grid": "/breeds/bloodhound-3eb92ead-grid.webp",
-    "detail": "/breeds/bloodhound-3eb92ead.webp",
-    "mask": "/breeds/bloodhound-3eb92ead-mask.webp",
-    "width": 770,
-    "height": 540,
+    "grid": "/breeds/bloodhound-e85c8800-grid.webp",
+    "detail": "/breeds/bloodhound-e85c8800.webp",
+    "mask": "/breeds/bloodhound-e85c8800-mask.webp",
+    "width": 1200,
+    "height": 850,
     "focus": [
-     0.5,
-     0.5
-    ]
+     0.51,
+     0.51
+    ],
+    "dogs": 1
    },
    "credit": {
-    "author": "Dogs Australia",
-    "licence": "Copyright Dogs Australia",
+    "author": "Cleanboot ( talk ) ( Uploads )",
+    "licence": "Public domain",
     "licenceUrl": null,
-    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/106/",
-    "changes": "Resized, and cropped to a square for the grid",
-    "restricted": true
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bloodhound_black_and_tan.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
    }
   },
   {
@@ -4916,7 +5015,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -4964,7 +5064,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 2
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5011,7 +5112,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5072,7 +5174,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 2
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5120,7 +5223,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 2
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5166,7 +5270,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5212,7 +5317,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5261,7 +5367,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5307,7 +5414,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5355,7 +5463,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5401,7 +5510,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5447,7 +5557,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5495,7 +5606,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5543,7 +5655,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5589,7 +5702,8 @@
     "focus": [
      0.3,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5638,7 +5752,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5684,7 +5799,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5730,7 +5846,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5786,7 +5903,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5841,7 +5959,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5889,7 +6008,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5935,7 +6055,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -5981,7 +6102,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6027,7 +6149,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6079,7 +6202,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6127,7 +6251,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6176,7 +6301,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6227,7 +6353,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6275,7 +6402,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6322,7 +6450,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6382,7 +6511,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6429,7 +6559,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6475,7 +6606,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6521,7 +6653,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6570,7 +6703,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6616,7 +6750,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6665,7 +6800,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 3
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6713,7 +6849,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6763,7 +6900,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6811,7 +6949,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 2
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6862,7 +7001,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6913,7 +7053,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -6959,7 +7100,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7005,7 +7147,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7051,7 +7194,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7099,7 +7243,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7150,7 +7295,8 @@
     "focus": [
      0.45,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Jugabe3b",
@@ -7195,7 +7341,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Canarian",
@@ -7242,7 +7389,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7291,7 +7439,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 2
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7340,7 +7489,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7378,23 +7528,23 @@
     "mask": false
    },
    "image": {
-    "grid": "/breeds/puli-a4c6cce3-grid.webp",
-    "detail": "/breeds/puli-a4c6cce3.webp",
-    "mask": "/breeds/puli-a4c6cce3-mask.webp",
-    "width": 770,
-    "height": 540,
+    "grid": "/breeds/puli-99a710d1-grid.webp",
+    "detail": "/breeds/puli-99a710d1.webp",
+    "mask": "/breeds/puli-99a710d1-mask.webp",
+    "width": 1200,
+    "height": 866,
     "focus": [
-     0.5,
+     0.49,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
-    "author": "Dogs Australia",
-    "licence": "Copyright Dogs Australia",
-    "licenceUrl": null,
-    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/127/",
-    "changes": "Resized, and cropped to a square for the grid",
-    "restricted": true
+    "author": "Puli1989",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Csalfa_Sommer_07_10_A.jpg",
+    "changes": "Resized, and cropped to a square for the grid"
    }
   },
   {
@@ -7424,23 +7574,23 @@
     "mask": false
    },
    "image": {
-    "grid": "/breeds/pumi-e7cd817a-grid.webp",
-    "detail": "/breeds/pumi-e7cd817a.webp",
-    "mask": "/breeds/pumi-e7cd817a-mask.webp",
-    "width": 770,
-    "height": 540,
+    "grid": "/breeds/pumi-91a52532-grid.webp",
+    "detail": "/breeds/pumi-91a52532.webp",
+    "mask": "/breeds/pumi-91a52532-mask.webp",
+    "width": 1200,
+    "height": 818,
     "focus": [
-     0.5,
-     0.5
-    ]
+     0.38,
+     0.53
+    ],
+    "dogs": 0
    },
    "credit": {
-    "author": "Dogs Australia",
-    "licence": "Copyright Dogs Australia",
-    "licenceUrl": null,
-    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/126/",
-    "changes": "Resized, and cropped to a square for the grid",
-    "restricted": true
+    "author": "Schenda",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schenda_27.08.12_(30).jpg",
+    "changes": "Resized, and cropped to a square for the grid"
    }
   },
   {
@@ -7479,7 +7629,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7527,7 +7678,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7573,7 +7725,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7621,7 +7774,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7668,7 +7822,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7717,7 +7872,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7766,7 +7922,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7816,7 +7973,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7864,7 +8022,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7913,7 +8072,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -7961,7 +8121,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8010,7 +8171,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8060,7 +8222,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8106,7 +8269,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8152,7 +8316,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 7
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8198,7 +8363,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8247,7 +8413,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8296,7 +8463,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8345,7 +8513,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8395,7 +8564,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8444,7 +8614,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8491,7 +8662,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8537,7 +8709,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8586,7 +8759,8 @@
     "focus": [
      0.42,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "KIKKUZZO88",
@@ -8634,7 +8808,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8683,7 +8858,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8731,7 +8907,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8779,7 +8956,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8828,7 +9006,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8876,7 +9055,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8925,7 +9105,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -8971,7 +9152,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9021,7 +9203,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9070,7 +9253,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9120,7 +9304,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9169,7 +9354,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9217,7 +9403,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9265,7 +9452,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9314,7 +9502,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 2
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9362,7 +9551,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 2
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9408,7 +9598,8 @@
     "focus": [
      0.4,
      0.7
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Canarian",
@@ -9455,7 +9646,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9501,7 +9693,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 3
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9549,7 +9742,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9595,7 +9789,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9641,7 +9836,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9689,7 +9885,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 2
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9740,7 +9937,8 @@
     "focus": [
      0.44,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Sakal33",
@@ -9787,7 +9985,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9833,7 +10032,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9882,7 +10082,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9928,7 +10129,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -9976,7 +10178,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 3
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10024,7 +10227,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10070,7 +10274,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10119,7 +10324,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 3
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10169,7 +10375,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10217,7 +10424,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10263,7 +10471,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10309,7 +10518,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10357,7 +10567,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10405,7 +10616,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10455,7 +10667,8 @@
     "focus": [
      0.52,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Jablct",
@@ -10504,7 +10717,8 @@
     "focus": [
      0.85,
      0.58
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Luna capreza",
@@ -10553,7 +10767,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10602,7 +10817,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10650,7 +10866,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10698,7 +10915,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10744,7 +10962,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10793,7 +11012,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10841,7 +11061,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10887,7 +11108,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10940,7 +11162,8 @@
     "focus": [
      0.5,
      0.5
-    ]
+    ],
+    "dogs": 0
    },
    "credit": {
     "author": "Dogs Australia",
@@ -10993,7 +11216,8 @@
     "focus": [
      0.5,
      0.75
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Rhododendrites",
@@ -11045,7 +11269,8 @@
     "focus": [
      0.52,
      0.7
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Gullpavon",
@@ -11097,7 +11322,8 @@
     "focus": [
      0.58,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Anton Porsche",
@@ -11152,7 +11378,8 @@
     "focus": [
      0.55,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "W.carter",
@@ -11203,7 +11430,8 @@
     "focus": [
      0.48,
      0.55
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Inkiw at English Wikipedia",
@@ -11247,21 +11475,22 @@
     "mask": true
    },
    "image": {
-    "grid": "/breeds/pugalier-0765c42d-grid.webp",
-    "detail": "/breeds/pugalier-0765c42d.webp",
-    "mask": "/breeds/pugalier-0765c42d-mask.webp",
-    "width": 497,
-    "height": 502,
+    "grid": "/breeds/pugalier-a0bdfc6d-grid.webp",
+    "detail": "/breeds/pugalier-a0bdfc6d.webp",
+    "mask": "/breeds/pugalier-a0bdfc6d-mask.webp",
+    "width": 1125,
+    "height": 1500,
     "focus": [
-     0.7,
-     0.45
-    ]
+     0.47,
+     0.33
+    ],
+    "dogs": 1
    },
    "credit": {
-    "author": "No machine-readable author provided. Casliber assumed (based on copyright claims).",
-    "licence": "Public domain",
-    "licenceUrl": null,
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pugalier_bunbury2_email.jpg",
+    "author": ".mw-parser-output .template-designermadsen-source{border:1px solid #a2a9b1;background-color:#f8f9fa;display:grid;padd...",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brown_White_Dog_Sitting_Aldi_Denmark_002.jpg",
     "changes": "Resized, and cropped to a square for the grid"
    }
   },
@@ -11306,7 +11535,8 @@
     "focus": [
      0.53,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "FaithlessAngel",
@@ -11358,7 +11588,8 @@
     "focus": [
      0.43,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Unknown author (see source page)",
@@ -11408,7 +11639,8 @@
     "focus": [
      0.49,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Mruserbox1",
@@ -11457,7 +11689,8 @@
     "focus": [
      0.6,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Koolie",
@@ -11507,7 +11740,8 @@
     "focus": [
      0.55,
      0.5
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Juan. botti",
@@ -11555,7 +11789,8 @@
     "focus": [
      0.5,
      0.55
-    ]
+    ],
+    "dogs": 1
    },
    "credit": {
     "author": "Wa.railfan",
