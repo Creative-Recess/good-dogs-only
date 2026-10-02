@@ -2,7 +2,7 @@
 // Deploy with: pnpm run deploy  (builds first; plain "pnpm deploy" is a different, built-in pnpm command). The password is a secret: pnpm exec wrangler secret put SITE_PASSWORD
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "good-dogs-only",
+  "name": "dogdex",
   "main": "worker/index.ts",
   "compatibility_date": "2026-09-01",
   "assets": {
