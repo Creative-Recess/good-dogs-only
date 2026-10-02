@@ -6,7 +6,8 @@ The list is every Dogs Australia (ANKC) breed standard (227) plus a Bonus group 
 It's a home-screen web app: open it in Safari on an iPhone, tap Share, then "Add to Home Screen".
 Sightings are stored on the phone only (IndexedDB), with a backup file you can save and restore from Help.
 
-The full plan lives outside this repo at `personal/task-plans/dog-breed-dex.md` in Justin's AI workspace.
+Ideas for what's next are in [BACKLOG.md](BACKLOG.md).
+The original v1 plan, with the decisions made along the way, is archived outside this repo at `personal/task-plans/archive/dog-breed-dex.md` in Justin's AI workspace.
 
 ## What's in the app
 
