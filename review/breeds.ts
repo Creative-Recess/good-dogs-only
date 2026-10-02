@@ -59,6 +59,7 @@ function checks(b: Breed, m: MaskReport): string[] {
   const out: string[] = []
   const inPhoto = b.image?.dogs ?? 0
   if (inPhoto >= 2) out.push(`${inPhoto} dogs in the photo`)
+  else if (b.image?.dogs === 0) out.push("Vision couldn't find a dog in the photo (a close-up or busy background?)")
   else if (m.dogs > 1) out.push(`${m.dogs} dogs in the silhouette, so it's a blob`)
   if (m.coverage > 0.6) out.push('silhouette fills most of the square (background may be included)')
   if (m.edge > 0.45) out.push('dog runs off the edges of the grid crop')
