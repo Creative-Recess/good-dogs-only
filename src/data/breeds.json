@@ -4131,22 +4131,22 @@
     "mask": false
    },
    "image": {
-    "grid": "/breeds/murray-river-retriever-9018e822-grid.webp",
-    "detail": "/breeds/murray-river-retriever-9018e822.webp",
-    "mask": "/breeds/murray-river-retriever-9018e822-mask.webp",
-    "width": 770,
-    "height": 540,
+    "grid": "/breeds/murray-river-retriever-ce6f8584-grid.webp",
+    "detail": "/breeds/murray-river-retriever-ce6f8584.webp",
+    "mask": "/breeds/murray-river-retriever-ce6f8584-mask.webp",
+    "width": 1143,
+    "height": 900,
     "focus": [
-     0.5,
-     0.5
+     0.52,
+     0.55
     ],
     "dogs": 1
    },
    "credit": {
-    "author": "Dogs Australia",
-    "licence": "Copyright Dogs Australia",
+    "author": "Jane Dogs",
+    "licence": "Copyright Jane Dogs",
     "licenceUrl": null,
-    "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/249/",
+    "sourceUrl": "https://janedogs.com/img/asset/YXNzZXRzL0d1bmRvZ3MvV2F0ZXItRG9ncy9NdXJyYXktZmlyc3QtY2hhbXBpb24uanBn/Murray-first-champion.jpg",
     "changes": "Resized, and cropped to a square for the grid",
     "restricted": true
    }

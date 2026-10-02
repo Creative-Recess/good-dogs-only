@@ -2710,12 +2710,19 @@
     "murray-river-retriever": {
       "file": null,
       "external": {
-        "url": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Muray%20river%20retriever%20breed%20profile%20cover%20image%20.png",
-        "credit": "Dogs Australia",
-        "sourceUrl": "https://dogsaustralia.org.au/BrowseBreed/browse-a-breed/249/"
+        "url": "https://janedogs.com/img/asset/YXNzZXRzL0d1bmRvZ3MvV2F0ZXItRG9ncy9NdXJyYXktZmlyc3QtY2hhbXBpb24uanBn/Murray-first-champion.jpg",
+        "credit": "Jane Dogs",
+        "sourceUrl": "https://janedogs.com/img/asset/YXNzZXRzL0d1bmRvZ3MvV2F0ZXItRG9ncy9NdXJyYXktZmlyc3QtY2hhbXBpb24uanBn/Murray-first-champion.jpg",
+        "saved": "murray-river-retriever.webp"
       },
+      "focus": [
+        0.52,
+        0.55
+      ],
       "by": "justin",
-      "note": "Dogs Australia breed photo, chosen by Justin to replace a weak Commons pick (1 Oct 2026)"
+      "confidence": "high",
+      "note": "Justin's pick: liver adult standing side-on at a show, whole dog.",
+      "previous": "https://dogsaustralia.org.au/media/img/BrowseAllBreed//Muray%20river%20retriever%20breed%20profile%20cover%20image%20.png"
     },
     "neapolitan-mastiff": {
       "file": null,
