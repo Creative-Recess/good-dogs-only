@@ -2,7 +2,8 @@
 // Framework-free, so it can run in the Park tab and in the screensaver alike.
 import type { Breed } from '../data/types.ts'
 import { drawDog, type Dog } from './dog.ts'
-import { BOTTOM, drawBackground, drawFig, drawWater, FIGS, SHADE_SPOT, timeOfDay, TOP } from './scene.ts'
+import { BOTTOM, drawBackground, drawFig, drawWater, FIGS, LOOKS, SHADE_SPOT, TOP } from './scene.ts'
+import { PHASE_LABEL, phaseAt, type Phase } from './sun.ts'
 
 /** At most this many dogs are out at once; with more spotted, dogs take turns, walking off and on. */
 const MAX_HERE = 20
@@ -33,7 +34,12 @@ export class Park {
   private w = 0
   private h = 0
   private dpr = 1
-  private bg: HTMLCanvasElement | null = null
+  private bg: { scene: HTMLCanvasElement; lights: HTMLCanvasElement } | null = null
+  /** The time of day the background was drawn for; checked every few seconds. */
+  private phase: Phase = phaseAt(new Date())
+  private phaseCheckedAt = 0
+  /** Dogs, figs and boats are drawn here first, so the time of day's wash covers them and not the sky. */
+  private actors = document.createElement('canvas')
   private running = false
   /** The pending animation frame, so there's only ever one loop. */
   private frame = 0
@@ -154,7 +160,10 @@ export class Park {
     this.canvas.width = Math.round(w * this.dpr)
     this.canvas.height = Math.round(h * this.dpr)
     this.ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0)
-    this.bg = drawBackground(w, h, this.dpr)
+    this.actors.width = this.canvas.width
+    this.actors.height = this.canvas.height
+    this.actors.getContext('2d')!.setTransform(this.dpr, 0, 0, this.dpr, 0, 0)
+    this.bg = drawBackground(w, h, this.dpr, LOOKS[this.phase])
     this.dogs.forEach((d, n) => {
       if (oldW && oldH) {
         d.x *= w / oldW
@@ -304,26 +313,43 @@ export class Park {
   private render(now: number) {
     if (!this.w || !this.bg) return
     const t = now / 1000
+    // The time of day follows the real sun over the park; redraw the background when it moves on.
+    if (now - this.phaseCheckedAt > 5000 || !this.phaseCheckedAt) {
+      this.phaseCheckedAt = now
+      const phase = phaseAt(new Date())
+      if (phase !== this.phase) {
+        this.phase = phase
+        this.bg = drawBackground(this.w, this.h, this.dpr, LOOKS[phase])
+      }
+    }
+    const look = LOOKS[this.phase]
     const x = this.ctx
-    x.drawImage(this.bg, 0, 0, this.w, this.h)
-    drawWater(x, this.w, this.h, t)
+    x.drawImage(this.bg.scene, 0, 0, this.w, this.h)
+    // Boats, figs and dogs on their own layer, then the time of day's wash over just them.
+    const a = this.actors.getContext('2d')!
+    a.clearRect(0, 0, this.w, this.h)
+    drawWater(a, this.w, this.h, t)
     // Dogs and figs in depth order, so a dog can walk behind a tree. Further away = smaller.
     for (const d of this.dogs) d.scale = 0.72 + 0.5 * ((d.y / this.h - TOP) / (BOTTOM - TOP))
     const things = [
       ...this.dogs.map((d) => ({ y: d.y, draw: () => {
-        x.save()
-        x.translate(d.x, d.y)
-        drawDog(x, d, t)
-        x.restore()
+        a.save()
+        a.translate(d.x, d.y)
+        drawDog(a, d, t)
+        a.restore()
       } })),
-      ...FIGS.map(([fx, fy, k]) => ({ y: this.h * fy, draw: () => drawFig(x, this.w * fx, this.h * fy, k) })),
+      ...FIGS.map(([fx, fy, k]) => ({ y: this.h * fy, draw: () => drawFig(a, this.w * fx, this.h * fy, k, look.shadow) })),
     ]
-    for (const o of things.sort((a, z) => a.y - z.y)) o.draw()
-    const { tint, label } = timeOfDay()
-    if (tint) {
-      x.fillStyle = tint
-      x.fillRect(0, 0, this.w, this.h)
+    for (const o of things.sort((p, z) => p.y - z.y)) o.draw()
+    if (look.wash) {
+      a.globalCompositeOperation = 'source-atop'
+      a.fillStyle = look.wash
+      a.fillRect(0, 0, this.w, this.h)
+      a.globalCompositeOperation = 'source-over'
     }
+    x.drawImage(this.actors, 0, 0, this.w, this.h)
+    if (look.lights) x.drawImage(this.bg.lights, 0, 0, this.w, this.h)
+    const label = PHASE_LABEL[this.phase]
     const here = this.dogsHere.length
     const n = this.spotted.length
     const caption = n === 0 ? `No dogs yet · ${label}` : `${n > here ? `${here} of ${n}` : n} ${n === 1 ? 'dog' : 'dogs'} · ${label}`

@@ -10,7 +10,7 @@ test('each spotted breed appears in the Park, and tapping it opens the breed', a
   await page.getByRole('tab', { name: 'Dogdex' }).click()
   await spotBreed(page, 'Dalmatian')
   await page.getByRole('tab', { name: 'Park' }).click()
-  await expect(page.locator('.park-hint')).toHaveText(/^1 dog · (Daytime|Dawn|Golden hour|Night)$/)
+  await expect(page.locator('.park-hint')).toHaveText(/^1 dog · (Night|Dawn|Sunrise|Daytime|Golden hour|Dusk)$/)
 
   // Hold the dog still while we tap it.
   const box = (await page.getByTestId('park').boundingBox())!
