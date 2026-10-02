@@ -61,6 +61,7 @@ There's no password; `public/robots.txt`, a `noindex` header and a `noindex` met
 `pnpm review` opens `review/breeds.html`: every breed's grid photo and breed-page crop, its silhouette in each theme, its Park dog, its traits and text, and where the photo came from.
 It's drawn live from the shipped data and the app's own code, so it always shows what the app shows.
 It also flags breeds worth a look (several dogs in one photo, a silhouette that includes background, a dog cut off by the crop, a small photo); tick "Only ones to check" to see just those.
+Breeds already looked at are listed in `review/reviewed.json` and show as "Checked" instead.
 It's a dev page only: it isn't part of the app build.
 
 ## Data

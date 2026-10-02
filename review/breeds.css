@@ -20,6 +20,8 @@ main > header p { margin: 4px 0 12px; color: var(--muted); max-width: 80ch; }
 .flags { display: contents; }
 .flag { background: var(--warn-bg); color: var(--warn); font-size: 12px; font-weight: 700; padding: 1px 8px; border-radius: 999px; }
 .why { color: var(--warn); font-size: 12px; }
+.flag.done { background: var(--line); color: var(--muted); }
+.why.done { color: var(--muted); }
 .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start; }
 .row figure { margin: 0; display: grid; gap: 4px; justify-items: center; }
 .row figcaption { font-size: 11px; color: var(--muted); text-align: center; max-width: 230px; }

@@ -4,6 +4,7 @@ import { breeds, GROUP_COLOUR, groupById, groups } from '../src/data/catalogue.t
 import type { Breed } from '../src/data/types.ts'
 import { bodyOf, drawDog, type Dog, type DogState } from '../src/park/dog.ts'
 import { THEMES } from '../src/theme/themes.ts'
+import reviewed from './reviewed.json' with { type: 'json' }
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!)
 const $ = <T extends HTMLElement>(sel: string) => document.querySelector<T>(sel)!
@@ -140,6 +141,12 @@ await Promise.all(
     if (!b.image) return
     const found = checks(b, await readMask(b.image.mask))
     if (!found.length) return
+    // Already looked at (review/reviewed.json): show what was decided instead of asking again.
+    const decided = (reviewed.breeds as Record<string, string>)[b.id]
+    if (decided) {
+      $(`#${CSS.escape(b.id)} .flags`).innerHTML = `<span class="flag done" title="${esc(found.join('; '))}">Checked</span><span class="why done">${esc(decided)}</span>`
+      return
+    }
     flagged.add(b.id)
     $(`#${CSS.escape(b.id)} .flags`).innerHTML = `<span class="flag" title="${esc(found.join('; '))}">Check</span><span class="why">${esc(found.join('; '))}</span>`
   }),
