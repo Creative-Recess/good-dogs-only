@@ -30,7 +30,7 @@
       linear-gradient(160deg, var(--desktop-2), var(--desktop-1) 55%, #0d3c86);
     /* iOS has no fixed backgrounds, so don't let the gradient repeat below a short page; fill with its last colour. */
     background-repeat: no-repeat;
-    background-color: #0d3c86;
+    background-color: #e9e9e9; /* any strip below the app matches the window */
   }
 
   .app {

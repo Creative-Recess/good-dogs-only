@@ -17,12 +17,15 @@ export function useShrinkToFit(ref: RefObject<HTMLElement | null>, max: number, 
     const range = document.createRange()
     range.selectNodeContents(el)
     const css = getComputedStyle(el)
+    const oneLine = css.whiteSpace === 'nowrap'
     const padding = parseFloat(css.paddingLeft) + parseFloat(css.paddingRight)
     const overflows = () => {
       // The room inside the padding, in on-screen pixels (the app is scaled, so convert with the element's own scale).
       const scale = el.getBoundingClientRect().width / (el.offsetWidth || 1)
       const room = (el.clientWidth - padding) * scale
-      return range.getBoundingClientRect().width > room + 0.25 || el.scrollWidth > el.clientWidth + 1 || el.scrollHeight > el.clientHeight + 1
+      // The text-width check is only for one-line text; wrapped text is measured by its height.
+      const tooWide = oneLine ? range.getBoundingClientRect().width > room + 0.25 : false
+      return tooWide || el.scrollWidth > el.clientWidth + 1 || el.scrollHeight > el.clientHeight + 1
     }
     let size = max
     el.style.fontSize = `${size}px`

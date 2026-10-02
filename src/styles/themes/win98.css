@@ -15,7 +15,7 @@
   --raised: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
 }
 body *, body { font-family: var(--font) !important; -webkit-font-smoothing: antialiased !important; -moz-osx-font-smoothing: grayscale !important; }
-:scope, body { background: var(--desktop); color: var(--ink); }
+:scope, body { background: var(--silver); color: var(--ink); } /* any strip below the app matches the window */
 .title-bar-text { font-weight: bold; }
 
 /* iPhone Safari zooms into any field under 16px. Fields use 16px text, scaled back down to the 98 size
