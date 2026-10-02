@@ -28,6 +28,8 @@ select.nz { background-size: 24px 100% !important; background-position: right ce
 
 /* ---------- Windows ---------- */
 .main, .props { padding: 3px; }
+/* The window runs to the bottom edge of the screen; its contents stop above the iPhone's home bar. */
+.main, .props { padding-bottom: calc(3px + env(safe-area-inset-bottom, 0px) / 1.5); }
 .main { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 0; }
 .main .title-bar, .props .title-bar { padding: 3px 3px 3px 4px; }
 .title-bar-controls button { min-width: 21px !important; min-height: 19px !important; background-position: center !important; }

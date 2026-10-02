@@ -13,7 +13,7 @@
       linear-gradient(178deg, transparent 0 74%, rgba(255, 200, 130, 0.45) 80%, transparent 86%),
       linear-gradient(180deg, #9cc0e6 0%, #d6e2ec 16%, #8fb0d8 34%, #4f7fbf 46%, #6f97c9 66%, #3d68a8 84%, #284f8c 100%);
   }
-  :scope, body { background: var(--wallpaper); background-attachment: fixed; }
+  :scope, body { background: var(--wallpaper) no-repeat; background-color: #284f8c; }
   .app { background: var(--wallpaper); }
   .window { background: var(--glass); -webkit-backdrop-filter: blur(22px) saturate(1.6); backdrop-filter: blur(22px) saturate(1.6); border-radius: 10px 10px 0 0; box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 12px 32px rgba(20, 40, 80, 0.3); }
   .title-bar { background: linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.05)); border-bottom: 1px solid rgba(0, 0, 0, 0.1); border-radius: 10px 10px 0 0; height: 24px; }

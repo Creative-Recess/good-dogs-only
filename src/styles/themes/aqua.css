@@ -28,7 +28,9 @@
       radial-gradient(120% 60% at 20% 15%, rgba(255, 255, 255, 0.28), transparent 60%),
       radial-gradient(90% 50% at 85% 75%, rgba(140, 200, 255, 0.5), transparent 70%),
       linear-gradient(160deg, var(--desktop-2), var(--desktop-1) 55%, #0d3c86);
-    background-attachment: fixed;
+    /* iOS has no fixed backgrounds, so don't let the gradient repeat below a short page; fill with its last colour. */
+    background-repeat: no-repeat;
+    background-color: #0d3c86;
   }
 
   .app {
@@ -40,6 +42,8 @@
   /* Windows: pinstriped, rounded top corners, soft drop shadow. */
   .window { background: var(--pinstripe); border-radius: 6px 6px 0 0; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35), 0 6px 18px rgba(0, 0, 0, 0.35); }
   .main { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 0; }
+  /* Windows run to the bottom edge of the screen; their contents stop above the iPhone's home bar. */
+  .main, .props { padding-bottom: calc(env(safe-area-inset-bottom, 0px) / 1.5); }
   .main > .window-body { flex: 1; min-height: 0; display: flex; flex-direction: column; margin: 0; padding: 6px 6px 0; gap: 4px; }
   .title-bar {
     position: relative; display: flex; align-items: center; height: 22px; padding: 0 8px; flex: none;
