@@ -19,6 +19,6 @@ export default defineConfig({
   // Safari 17.4 is the first with CSS @scope, which the themes rely on.
   build: { chunkSizeWarningLimit: 800, target: ['safari17.4', 'es2022'], cssTarget: ['safari17.4'] },
   test: {
-    include: ['src/**/*.test.ts', 'scripts/**/*.test.ts'],
+    include: ['src/**/*.test.ts', 'scripts/**/*.test.ts', 'worker/**/*.test.ts'],
   },
 })

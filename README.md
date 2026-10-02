@@ -29,7 +29,7 @@ The full plan lives outside this repo at `personal/task-plans/dog-breed-dex.md` 
   Backups (`src/lib/backup.ts`) merge by sighting, newest change wins.
 - The Park is a framework-free canvas engine in `src/park/` (scene, dog drawing, behaviour).
 - Vitest for unit and data tests, Playwright (WebKit, iPhone 17 profile) for E2E tests.
-- Static hosting, provider still to choose (`public/_headers` sets cache rules for Cloudflare or Netlify).
+- Hosted on Cloudflare Workers: `worker/` asks for the site password first (a sign-in page on the app's own address, so it works in the Home Screen app), then serves the built app from `dist/`. `public/_headers` sets the caching.
 
 ## Scripts
 
@@ -43,9 +43,19 @@ The full plan lives outside this repo at `personal/task-plans/dog-breed-dex.md` 
 | `pnpm test` | Unit and data tests (Vitest) |
 | `pnpm test:e2e` | E2E tests in WebKit with iPhone emulation, once per theme, including screenshot comparisons (builds and serves the app first) |
 | `pnpm test:e2e --update-snapshots` | Accept new screenshots after an intended look change (review them first) |
+| `pnpm run deploy` | Build and put it live on Cloudflare |
 
 First-time setup for E2E: `pnpm exec playwright install webkit`.
 The screenshot baselines are recorded on macOS (`*-darwin.png`); another OS would need its own.
+
+## Hosting
+
+The app is a Cloudflare Worker (`wrangler.jsonc`, `worker/`) on the free plan.
+Every request needs the site password; signing in once keeps you signed in for a year on that phone, and changing the password signs everyone out.
+
+- First time: `pnpm exec wrangler login`, then `pnpm run deploy`, then `pnpm exec wrangler secret put SITE_PASSWORD` to set the password.
+- After that, `pnpm run deploy` puts the latest version live. The phones pick it up the next time the app is opened.
+- To try the live setup locally: put `SITE_PASSWORD="..."` in `.dev.vars` (not committed), `pnpm build`, then `pnpm exec wrangler dev`.
 
 ## Breed review page
 

@@ -29,3 +29,7 @@ test-results
 
 # Regenerable caches (photo candidates, downloaded originals)
 .cache
+
+# Local Cloudflare secrets (wrangler dev)
+.dev.vars*
+.wrangler

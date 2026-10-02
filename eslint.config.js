@@ -21,7 +21,7 @@ export default defineConfig([
   },
   {
     // The data pipeline, configs and E2E tests run in Node.
-    files: ['scripts/**/*.ts', 'e2e/**/*.ts', '*.config.ts'],
+    files: ['scripts/**/*.ts', 'e2e/**/*.ts', 'worker/**/*.ts', '*.config.ts'],
     languageOptions: {
       globals: globals.node,
     },
