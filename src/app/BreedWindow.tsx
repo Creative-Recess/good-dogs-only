@@ -13,21 +13,13 @@ import { isAquaFamily } from '../theme/themes.ts'
 import { useDialog } from './dialogs.ts'
 import { NoteField } from './NoteField.tsx'
 import { COUNTRY, FACTS, weightClass } from '../data/facts.ts'
+import type { IconName } from '../ui/icons/types.ts'
 import { Section } from './Section.tsx'
 
 /** Which fold-away sections are open (Aqua). They stay as you left them as you move between breeds. */
 export type Folds = { temperament: boolean; varieties: boolean; status: boolean }
 
 type Props = { breed: Breed; spotted: Spot | undefined; spottedCount: number; onClose: () => void; folds: Folds; onFolds: (f: Folds) => void }
-
-function readMock(): 'a' | 'b' | 'c' {
-  try {
-    const v = localStorage.getItem('good-dogs-only.factsMock')
-    return v === 'b' || v === 'c' ? v : 'a'
-  } catch {
-    return 'a'
-  }
-}
 
 export function BreedWindow({ breed: b, spotted, spottedCount, onClose, folds, onFolds }: Props) {
   const ask = useDialog()
@@ -43,18 +35,20 @@ export function BreedWindow({ breed: b, spotted, spottedCount, onClose, folds, o
   // Nicknames, short forms included (Cavalier, Bichon); only one that's simply the breed's name is left out.
   const aka = b.aliases.filter((a) => a.toLowerCase() !== b.name.toLowerCase()).slice(0, 4)
   const [fx, fy] = b.image?.focus ?? [0.5, 0.5]
-  const mock = readMock()
-  const names = aka
   const cross = b.parents ? `Cross of ${b.parents[0]} x ${b.parents[1]}. Not recognised by Dogs Australia.` : b.about ? `${b.about} Not recognised by Dogs Australia.` : null
   const facts = FACTS[b.id]
-  const wc = facts && weightClass(facts.kg)
-  const factList = facts
-    ? ([
-        [wc.icon, wc.name, 'Weight', `${facts.kg[0]}–${facts.kg[1]} kg`],
-        ['fLife', facts.life, 'Lifespan', undefined],
-        [COUNTRY[facts.origin].icon, COUNTRY[facts.origin].short, 'From', undefined],
-      ] as const)
-    : []
+  // Dex rows: a row is left out when there's nothing to show (no nicknames, no official name).
+  const rows: { label: string; value: string; icon?: IconName; title?: string }[] = [
+    ...(aka.length ? [{ label: 'Also called', value: aka.join(', ') }] : []),
+    ...(b.officialName ? [{ label: 'Official name', value: b.officialName }] : []),
+    ...(facts
+      ? [
+          { label: 'Weight', value: `${facts.kg[0]}–${facts.kg[1]} kg`, icon: weightClass(facts.kg).icon, title: weightClass(facts.kg).name },
+          { label: 'Lifespan', value: facts.life, icon: 'fLife' as const },
+          { label: 'From', value: COUNTRY[facts.origin].short, icon: COUNTRY[facts.origin].icon, title: COUNTRY[facts.origin].name },
+        ]
+      : []),
+  ]
 
   const onSpot = async () => {
     // Ignore a double tap while the first one is saving.
@@ -96,28 +90,7 @@ export function BreedWindow({ breed: b, spotted, spottedCount, onClose, folds, o
             <span>#{b.dexNo}</span>
           </span>
         </div>
-        {/* MOCK: three ways to combine temperament, breed facts and the names/standard link. Pick with localStorage good-dogs-only.factsMock = a | b | c. */}
-        {mock === 'c' && names.length > 0 && (
-          <div className="name-plate">
-            {aka.length > 0 && <span>Also called {aka.join(', ')}</span>}
-            {b.ankcUrl && (
-              <a className="standard-link" href={b.ankcUrl} target="_blank" rel="noopener">
-                Breed standard
-              </a>
-            )}
-          </div>
-        )}
-        <Section title="Profile" className={`box profile profile-${mock}`} {...fold('temperament')}>
-          {mock === 'c' && facts && (
-            <div className="stat-strip" lang="en">
-              {factList.map(([icon, value, label, more]) => (
-                <span key={label} title={label}>
-                  <Icon name={icon} />
-                  {more ?? value}
-                </span>
-              ))}
-            </div>
-          )}
+        <Section title="Profile" className="box profile" {...fold('temperament')}>
           <div className="chips" lang="en">
             {b.traits.map((t) => (
               <span className="chip" key={t}>
@@ -128,54 +101,28 @@ export function BreedWindow({ breed: b, spotted, spottedCount, onClose, folds, o
               </span>
             ))}
           </div>
-          {mock === 'a' && facts && (
-            <div className="chips facts" lang="en">
-              {factList.map(([icon, value, label, more]) => (
-                <span className="chip" key={label}>
-                  <span className="chip-icon">
-                    <Icon name={icon} />
-                  </span>
-                  <b>{value}</b>
-                  <small>{more ?? label}</small>
-                </span>
-              ))}
-            </div>
-          )}
           <div className="textbox">
             {b.text}
             {facts && ` ${facts.job}`}
             {cross && <span className="cross">{cross}</span>}
           </div>
-          {mock === 'b' && (
+          {rows.length > 0 && (
             <dl className="dex-facts">
-              {aka.length > 0 && (
-                <div>
-                  <dt>Also called</dt>
-                  <dd>{aka.join(', ')}</dd>
+              {rows.map((r) => (
+                <div key={r.label}>
+                  <dt>{r.label}</dt>
+                  <dd title={r.title}>
+                    {r.icon && <Icon name={r.icon} />}
+                    {r.value}
+                  </dd>
                 </div>
-              )}
-              {facts &&
-                factList.map(([icon, value, label, more]) => (
-                  <div key={label}>
-                    <dt>{label}</dt>
-                    <dd>
-                      <Icon name={icon} />
-                      {value}
-                      {more && <small>{more}</small>}
-                    </dd>
-                  </div>
-                ))}
+              ))}
             </dl>
           )}
-          {mock !== 'c' && (names.length > 0 || b.ankcUrl) && (
-            <div className="profile-foot">
-              {mock === 'a' && names.length > 0 && <span>Also called {aka.join(', ')}</span>}
-              {b.ankcUrl && (
-                <a className="standard-link" href={b.ankcUrl} target="_blank" rel="noopener">
-                  Official breed standard
-                </a>
-              )}
-            </div>
+          {b.ankcUrl && (
+            <a className="standard-link" href={b.ankcUrl} target="_blank" rel="noopener">
+              Official breed standard
+            </a>
           )}
         </Section>
         {b.forms.length > 0 && (

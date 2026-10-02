@@ -30,6 +30,7 @@ export const weightClass = ([lo, hi]: [number, number]) => WEIGHT_CLASSES.find((
 export const FACTS: Record<string, BreedFacts> = {
   affenpinscher: { kg: [3, 6], life: '12–15 yrs', origin: 'DE', job: 'Bred to catch rats and mice in German kitchens and stables. "Affe" is German for monkey.' },
   'labrador-retriever': { kg: [25, 36], life: '10–12 yrs', origin: 'GB', job: 'Bred to fetch ducks and game birds from the water for hunters.' },
+  'japanese-chin': { kg: [2, 4], life: '10–12 yrs', origin: 'JP', job: 'Bred as a lap dog for the Japanese imperial court and nobility.' },
   dachshund: { kg: [7, 15], life: '12–16 yrs', origin: 'DE', job: 'Bred to follow badgers down their burrows. "Dachs" is German for badger.' },
   'border-collie': { kg: [14, 20], life: '12–15 yrs', origin: 'GB', job: 'Bred to herd sheep in the hills along the Scottish–English border.' },
 }
