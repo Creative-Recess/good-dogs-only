@@ -14,7 +14,7 @@ The original v1 plan, with the decisions made along the way, is archived outside
 - **Dogdex**: every breed in dex order, with Find (names and nicknames, e.g. "staffy", "sausage dog"), a Group filter and Show: All / Spotted / Unseen.
   Breeds you haven't spotted show as a "Who's that dog?" silhouette, tinted for each theme.
 - **Breed window**: photo, then a Profile: 3 temperament traits, a line about the breed and what it was bred for, then dex rows (nicknames, weight with a weight-class icon, lifespan, and the country it's from with its flag) and a link to the official Dogs Australia standard. Then Spotted (with the date and a note) or Unsee.
-- **Park**: an animated Rushcutters Bay with one dog per spotted breed (at most 20 out at once; they take turns). The yellow title-bar button opens it as a screensaver.
+- **Park**: an animated Rushcutters Bay with one dog per spotted breed (at most 20 out at once; they take turns). It follows the real sun over the park (`src/park/sun.ts`): Dawn, Sunrise, Daytime, Golden hour, Dusk and Night, each with its own sky and light, and the city, Opera House, Bridge and path lamps lit after dark. The yellow title-bar button opens it as a screensaver.
 - **Progress**: the overall count, a row per group, and the latest spots.
 - **Help** (the ? in the title bar): About, Theme, Add to Home Screen and Backup.
 - **Themes**: Aqua Glass (the default), Aqua and Windows 98.
