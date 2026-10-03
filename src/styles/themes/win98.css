@@ -93,6 +93,7 @@ fieldset { min-width: 0; }
 .icon .tick { position: absolute; top: 3px; right: calc(50% - 34px); width: 15px; height: 15px; background: #fff; box-shadow: var(--sunken); display: grid; place-items: center; }
 .icon .tick svg { width: 9px; height: 9px; }
 .empty { padding: 20px 6px; text-align: center; font-size: 11px; line-height: 1.6; }
+.empty button { margin-top: 8px; }
 
 /* ---------- Breed window ---------- */
 .props { position: absolute; inset: 0; z-index: 30; display: flex; flex-direction: column; }
@@ -107,16 +108,17 @@ fieldset { min-width: 0; }
 .box { margin: 0; padding: 6px 6px 8px; }
 .chips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px 4px; }
 /* Profile: temperament, then the dex rows and the standard link. */
-.profile .fold-body, fieldset.profile { display: grid; gap: 8px; justify-items: stretch; }
-.profile > .standard-link, .profile .fold-body > .standard-link { justify-self: start; font-size: 10.5px; }
+fieldset.profile { display: grid; gap: 8px; }
+.profile > .standard-link { justify-self: start; font-size: 10.5px; }
 .textbox p { margin: 0; }
 .textbox p + p { margin-top: 6px; }
 .textbox .cross { opacity: 0.75; }
 .dex-facts { margin: 0; display: grid; font-size: 11px; }
 .dex-facts > div { display: grid; grid-template-columns: 74px 1fr; align-items: center; gap: 8px; padding: 4px 2px; border-bottom: 1px solid #808080; }
 .dex-facts > div:last-child { border-bottom: 0; }
-.dex-facts dt { color: #555; }
-.dex-facts dd { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-weight: bold; }
+.dex-facts dt { color: #333; }
+.dex-facts dd { margin: 0; display: flex; align-items: center; gap: 6px; font-weight: bold; min-width: 0; }
+.dex-facts dd > span { flex: 1; min-width: 0; overflow-wrap: break-word; }
 .dex-facts dd svg { width: 18px; height: 18px; flex: none; }
 .chip { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 3px; font-size: 10px; line-height: 1.2; min-width: 0; overflow-wrap: break-word; }
 .chip-icon { width: 24px; height: 24px; flex: none; display: grid; place-items: center; background: var(--silver); box-shadow: var(--raised); }

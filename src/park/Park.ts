@@ -34,7 +34,9 @@ export class Park {
   private w = 0
   private h = 0
   private dpr = 1
-  private bg: { scene: HTMLCanvasElement; lights: HTMLCanvasElement } | null = null
+  private bg: { scene: HTMLCanvasElement; lights: HTMLCanvasElement | null } | null = null
+  /** With reduced motion there's no animation loop, so the picture is redrawn now and then for the time of day. */
+  private stillTimer = 0
   /** The time of day the background was drawn for; checked every few seconds. */
   private phase: Phase = phaseAt(new Date())
   private phaseCheckedAt = 0
@@ -91,6 +93,8 @@ export class Park {
         d.hop = 1
       }
       while (this.dogs.filter((d) => !d.leaving).length > MAX_HERE) this.leave(this.dogs.find((d) => !d.leaving)!)
+      // An unseen dog that was out leaves a gap: another spotted breed comes out to fill it.
+      this.topUp()
     }
     this.render(performance.now())
   }
@@ -99,14 +103,17 @@ export class Park {
     if (this.running || document.hidden) return
     this.running = true
     this.last = performance.now()
-    if (this.still) this.render(this.last)
-    else if (!this.frame) this.frame = requestAnimationFrame(this.loop)
+    if (this.still) {
+      this.render(this.last)
+      this.stillTimer = window.setInterval(() => this.render(performance.now()), 30_000)
+    } else if (!this.frame) this.frame = requestAnimationFrame(this.loop)
   }
 
   stop() {
     this.running = false
     cancelAnimationFrame(this.frame)
     this.frame = 0
+    clearInterval(this.stillTimer)
   }
 
   destroy() {
@@ -114,6 +121,20 @@ export class Park {
     this.resizer.disconnect()
     this.canvas.removeEventListener('click', this.onClick)
     document.removeEventListener('visibilitychange', this.onVisibility)
+    // iOS counts canvas memory until it's collected; zero-size canvases free it straight away.
+    this.release()
+    this.actors.width = this.actors.height = 0
+  }
+
+  /** Lets go of the background canvases' memory. */
+  private release() {
+    for (const c of [this.bg?.scene, this.bg?.lights]) if (c) c.width = c.height = 0
+    this.bg = null
+  }
+
+  private redrawBackground() {
+    this.release()
+    this.bg = drawBackground(this.w, this.h, this.dpr, LOOKS[this.phase])
   }
 
   /** The breeds out in the park (not counting any on their way home). */
@@ -151,10 +172,11 @@ export class Park {
   private resize() {
     const w = this.canvas.clientWidth
     const h = this.canvas.clientHeight
-    if (!w || !h) return
+    const dpr = Math.min(2, devicePixelRatio || 1)
+    if (!w || !h || (w === this.w && h === this.h && dpr === this.dpr && this.bg)) return
     const oldW = this.w
     const oldH = this.h
-    this.dpr = Math.min(2, devicePixelRatio || 1)
+    this.dpr = dpr
     this.w = w
     this.h = h
     this.canvas.width = Math.round(w * this.dpr)
@@ -163,13 +185,15 @@ export class Park {
     this.actors.width = this.canvas.width
     this.actors.height = this.canvas.height
     this.actors.getContext('2d')!.setTransform(this.dpr, 0, 0, this.dpr, 0, 0)
-    this.bg = drawBackground(w, h, this.dpr, LOOKS[this.phase])
+    this.redrawBackground()
     this.dogs.forEach((d, n) => {
       if (oldW && oldH) {
         d.x *= w / oldW
         d.y *= h / oldH
         d.tx *= w / oldW
         d.ty *= h / oldH
+        // A dog on its way home still has to get right off the (new) edge, or it would stop just inside it.
+        if (d.leaving) d.tx = d.x < w / 2 ? -40 : w + 40
       } else {
         // Placed before the canvas had a size: spread them out now.
         d.x = d.tx = w * (0.12 + ((n * 0.37) % 0.76))
@@ -210,11 +234,22 @@ export class Park {
     d.ty = d.y
     d.timer = 20
     d.dir = fromLeft ? 1 : -1
+    // With reduced motion it can't walk in, so it's simply there.
+    if (this.still) {
+      d.x = d.tx
+      d.state = 'idle'
+    }
     this.dogs.push(d)
     return d
   }
 
   private leave(d: Dog) {
+    // Nothing walks with reduced motion, so a dog going home just goes.
+    if (this.still) {
+      this.dogs = this.dogs.filter((x) => x !== d)
+      for (const x of this.dogs) if (x.friend === d) x.friend = null
+      return
+    }
     d.leaving = true
     d.state = 'walk'
     d.tx = d.x < this.w / 2 ? -40 : this.w + 40
@@ -223,6 +258,13 @@ export class Park {
   }
 
   /** Every so often, when there are more spotted breeds than fit, one dog heads home and another arrives. */
+  /** Brings out more spotted breeds while there's room (after an Unsee, say). */
+  private topUp() {
+    const here = new Set(this.dogs.map((d) => d.breed.id))
+    const out = shuffle(this.spotted.filter((b) => !here.has(b.id)))
+    while (out.length && this.dogs.filter((d) => !d.leaving).length < MAX_HERE) this.enter(out.pop()!)
+  }
+
   private rotate(dt: number) {
     if (this.spotted.length <= MAX_HERE) return
     this.swapIn -= dt
@@ -319,7 +361,7 @@ export class Park {
       const phase = phaseAt(new Date())
       if (phase !== this.phase) {
         this.phase = phase
-        this.bg = drawBackground(this.w, this.h, this.dpr, LOOKS[phase])
+        this.redrawBackground()
       }
     }
     const look = LOOKS[this.phase]
@@ -348,7 +390,7 @@ export class Park {
       a.globalCompositeOperation = 'source-over'
     }
     x.drawImage(this.actors, 0, 0, this.w, this.h)
-    if (look.lights) x.drawImage(this.bg.lights, 0, 0, this.w, this.h)
+    if (this.bg.lights) x.drawImage(this.bg.lights, 0, 0, this.w, this.h)
     const label = PHASE_LABEL[this.phase]
     const here = this.dogsHere.length
     const n = this.spotted.length

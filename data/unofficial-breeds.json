@@ -101,7 +101,6 @@
     {
       "name": "Miniature Fox Terrier",
       "kind": "breed",
-      "about": "An Australian breed descended from Fox Terriers, kept as a ratter and companion.",
       "aliases": [
         "Mini Foxie",
         "Mini Fox Terrier",
@@ -111,7 +110,6 @@
     {
       "name": "Koolie",
       "kind": "breed",
-      "about": "An Australian working sheepdog, often merle, with its own breed club rather than Dogs Australia recognition.",
       "aliases": [
         "German Koolie",
         "Australian Koolie"
@@ -120,7 +118,6 @@
     {
       "name": "American Bully",
       "kind": "breed",
-      "about": "A muscular companion breed developed in the US in the 1990s from bull-type terriers.",
       "aliases": [
         "Bully",
         "Pocket Bully",
@@ -130,7 +127,6 @@
     {
       "name": "Bull Arab",
       "kind": "breed",
-      "about": "An Australian pig-hunting dog developed from bull terrier, pointer and sighthound lines.",
       "aliases": [
         "Australian Bull Arab"
       ]

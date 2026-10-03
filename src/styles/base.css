@@ -12,12 +12,11 @@ body { -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%;
 .sil { position: relative; display: block; width: 100%; height: 100%; background: var(--sil-bg); }
 .sil-glow { position: absolute; inset: 0; filter: var(--sil-rim); }
 .sil-dog { position: absolute; inset: 0; background: var(--sil-fill); -webkit-mask: var(--mask) center / 100% 100% no-repeat; mask: var(--mask) center / 100% 100% no-repeat; }
-/* Shared by every theme: the Park's canvas and the screensaver, and the Help window sitting under the breed window. */
+/* Shared by every theme: the Park's canvas and the screensaver. */
 .park-view { position: relative; width: 100%; height: 100%; }
 .park-view canvas { display: block; width: 100%; height: 100%; cursor: pointer; touch-action: manipulation; }
 .saver { position: absolute; inset: 0; z-index: 75; background: #000; cursor: pointer; }
 .saver .park-hint { display: none; }
-.helpwin { z-index: 29; }
 .error-screen { position: fixed; inset: 0; display: grid; place-content: center; gap: 10px; padding: 24px; text-align: center; font: 16px/1.5 -apple-system, system-ui, sans-serif; background: #f2f2f2; color: #222; }
 .error-screen p { margin: 0; max-width: 32ch; }
 
@@ -35,7 +34,7 @@ body { -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%;
 }
 /* On a big screen, show the app at phone size in the middle of the desktop. */
 @media (min-width: 600px) {
-  .stage { top: 24px; bottom: 24px; left: 50%; right: auto; width: 402px; margin-left: -201px; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6); }
+  .stage { top: 24px; bottom: 24px; min-height: 0; left: 50%; right: auto; width: 402px; margin-left: -201px; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6); }
 }
 /* The app is drawn at desktop pixel sizes, then scaled up for thumbs (each theme sets --s). */
 .app {

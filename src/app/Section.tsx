@@ -23,7 +23,7 @@ export function Section({ title, hint, open, onToggle, className, children }: Pr
       </fieldset>
     )
   return (
-    <details className="fold" open={open} onToggle={(e) => onToggle(e.currentTarget.open)}>
+    <details className={className ? `fold ${className}` : 'fold'} open={open} onToggle={(e) => onToggle(e.currentTarget.open)}>
       <summary>
         {title}
         {hint && <span className="fold-hint">{hint}</span>}

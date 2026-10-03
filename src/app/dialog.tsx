@@ -10,10 +10,11 @@ import { useModal } from '../ui/useModal.ts'
 export function Dialog({ spec, onClose }: { spec: DialogSpec; onClose: () => void }) {
   const aqua = isAquaFamily(useTheme())
   const buttons = spec.buttons ?? [{ label: 'OK' }]
+  const boxRef = useRef<HTMLDivElement>(null)
+  // First, so it remembers what had focus before the dialog (to give it back on close), not the dialog's own button.
+  useModal(boxRef, onClose)
   const defaultRef = useRef<HTMLButtonElement>(null)
   useEffect(() => defaultRef.current?.focus(), [spec])
-  const boxRef = useRef<HTMLDivElement>(null)
-  useModal(boxRef, onClose)
   return (
     <div className="modal">
       <div className="window dialog" role="alertdialog" aria-modal="true" aria-labelledby="dialog-title" aria-describedby="dialog-text" ref={boxRef} tabIndex={-1}>

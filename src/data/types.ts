@@ -104,7 +104,6 @@ export type Breed = {
   /** Bonus entries: a designer cross or an unrecognised breed. */
   kind?: 'cross' | 'breed'
   parents?: string[]
-  about?: string
   /** 3 traits from TRAITS, and one line in our own words. */
   traits: Trait[]
   text: string

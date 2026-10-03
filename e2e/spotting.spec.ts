@@ -87,3 +87,17 @@ test('a note is saved after typing stops, and is kept when the window closes str
   await openBreed(page, 'Whippet')
   await expect(page.getByLabel('Note:')).toHaveValue('Grey, very fast')
 })
+
+test('closing a message box gives focus back to the button that opened it', async ({ page }) => {
+  await spotBreed(page, 'Pug')
+  await openBreed(page, 'Pug')
+  // From the keyboard (Safari doesn't focus a button you tap, so there's nothing to give back to then).
+  const unsee = page.getByRole('button', { name: 'Unsee' })
+  await unsee.focus()
+  await page.keyboard.press('Enter')
+  await expect(page.getByRole('alertdialog')).toBeVisible()
+  await page.keyboard.press('Escape')
+  await expect(page.getByRole('alertdialog')).toBeHidden()
+  await expect(unsee).toBeFocused()
+})
+

@@ -12,3 +12,6 @@ export type DialogSpec = {
 
 export const DialogContext = createContext<(d: DialogSpec) => void>(() => {})
 export const useDialog = () => useContext(DialogContext)
+
+/** When the phone's storage refuses a change (full, or cleared while the app was open). */
+export const SAVE_FAILED = "That couldn't be saved on this phone. Please try again."

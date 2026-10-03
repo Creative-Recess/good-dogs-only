@@ -74,7 +74,7 @@ const layer = (w: number, h: number, dpr: number) => {
  * Everything that doesn't move, drawn once per size and time of day: `scene` is the park in that light, and `lights`
  * (drawn over the dogs) is what glows in the dark: windows, lamps, the Opera House and the Bridge.
  */
-export function drawBackground(w: number, h: number, dpr: number, look: Look): { scene: HTMLCanvasElement; lights: HTMLCanvasElement } {
+export function drawBackground(w: number, h: number, dpr: number, look: Look): { scene: HTMLCanvasElement; lights: HTMLCanvasElement | null } {
   const { c, x } = layer(w, h, dpr)
   let seed = 7
   const R = () => (seed = (seed * 16807) % 2147483647) / 2147483647
@@ -231,7 +231,7 @@ export function drawBackground(w: number, h: number, dpr: number, look: Look): {
   x.globalCompositeOperation = 'destination-over'
   drawSky(x, w, h, look)
   x.globalCompositeOperation = 'source-over'
-  return { scene: c, lights: drawLights(w, h, dpr, look) }
+  return { scene: c, lights: look.lights ? drawLights(w, h, dpr, look) : null }
 }
 
 function drawSky(x: Ctx, w: number, h: number, look: Look) {
@@ -268,7 +268,6 @@ function drawSky(x: Ctx, w: number, h: number, look: Look) {
 /** What glows after dark, on its own layer so it sits over the dimmed dogs. */
 function drawLights(w: number, h: number, dpr: number, look: Look): HTMLCanvasElement {
   const { c, x } = layer(w, h, dpr)
-  if (!look.lights) return c
   const sea = h * SEA
   const k = w / 400
   let seed = 23

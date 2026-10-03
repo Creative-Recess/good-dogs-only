@@ -89,3 +89,12 @@ test('leaves out the Also called row when a breed has no nicknames', async ({ pa
   await expect(rows).toContainText('Weight')
   await expect(rows).not.toContainText('Also called')
 })
+
+test('a search hidden by the group filter offers to search all breeds', async ({ page }) => {
+  await page.getByLabel('Group:').selectOption('toys')
+  await page.getByLabel('Find:').fill('staffy')
+  await expect(page.locator('.empty')).toContainText('No staffy here')
+  await page.getByRole('button', { name: 'Search all breeds' }).click()
+  await expect(tiles(page).first()).toContainText('Staffordshire Bull Terrier')
+})
+

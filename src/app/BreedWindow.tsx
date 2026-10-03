@@ -10,7 +10,7 @@ import { useModal } from '../ui/useModal.ts'
 import { useShrinkToFit } from '../ui/useShrinkToFit.ts'
 import { useTheme } from '../theme/store.ts'
 import { isAquaFamily } from '../theme/themes.ts'
-import { useDialog } from './dialogs.ts'
+import { SAVE_FAILED, useDialog } from './dialogs.ts'
 import { NoteField } from './NoteField.tsx'
 import { countryName } from '../data/countries.ts'
 import { range, weightClass } from '../data/facts.ts'
@@ -37,7 +37,7 @@ export function BreedWindow({ breed: b, spotted, spottedCount, onClose, folds, o
   const aka = b.aliases.filter((a) => a.toLowerCase() !== b.name.toLowerCase()).slice(0, 4)
   const [fx, fy] = b.image?.focus ?? [0.5, 0.5]
   // Bonus entries say what they are, under the description.
-  const cross = b.parents ? `Cross of ${b.parents[0]} x ${b.parents[1]}. Not recognised by Dogs Australia.` : b.about ? `${b.about} Not recognised by Dogs Australia.` : null
+  const cross = b.parents ? `A cross of the ${b.parents[0]} and the ${b.parents[1]}. Not recognised by Dogs Australia.` : b.tier === 'unofficial' ? 'Not recognised by Dogs Australia.' : null
   const f = b.facts
   // Dex rows: a row is left out when there's nothing to show (no nicknames, no official name).
   const rows: { label: string; value: string; icon?: ReactNode; title?: string }[] = [
@@ -56,8 +56,14 @@ export function BreedWindow({ breed: b, spotted, spottedCount, onClose, folds, o
     // Ignore a double tap while the first one is saving.
     if (saving) return
     setSaving(true)
-    await spot(b.id)
-    setSaving(false)
+    try {
+      await spot(b.id)
+    } catch {
+      ask({ title: 'Spotted', text: SAVE_FAILED, icon: 'warn' })
+      return
+    } finally {
+      setSaving(false)
+    }
     // Aqua's sheet shows the dog itself; Windows 98's message box keeps it plain.
     if (aqua) ask({ title: `${b.name} spotted`, text: `That's ${spottedCount + 1} of ${TOTAL} breeds.`, photo: b.image?.grid })
     else ask({ title: 'Spotted', text: `That's ${spottedCount + 1} of ${TOTAL} breeds.` })
@@ -65,9 +71,9 @@ export function BreedWindow({ breed: b, spotted, spottedCount, onClose, folds, o
   const onUnsee = () =>
     ask({
       title: 'Unsee',
-      text: `Remove ${b.name} from your spotted breeds? Its note will be deleted too.`,
+      text: `Remove ${b.name} from your spotted breeds? Any note on it will be deleted too.`,
       icon: 'warn',
-      buttons: [{ label: 'Yes', onClick: () => void unsee(b.id) }, { label: 'No' }],
+      buttons: [{ label: 'Yes', onClick: () => void unsee(b.id).catch(() => ask({ title: 'Unsee', text: SAVE_FAILED, icon: 'warn' })) }, { label: 'No' }],
     })
 
   return (
@@ -115,7 +121,7 @@ export function BreedWindow({ breed: b, spotted, spottedCount, onClose, folds, o
                   <dt>{r.label}</dt>
                   <dd title={r.title}>
                     {r.icon}
-                    {r.value}
+                    <span>{r.value}</span>
                   </dd>
                 </div>
               ))}

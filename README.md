@@ -79,6 +79,8 @@ Hand-edited files in `data/`, merged by `scripts/lib/dataset.ts`:
 - `dog-shapes.json`: how each breed's Park dog is drawn: size (XS to XL), build, snout (1 to 5), ears, tail, coat type, and its colour and markings
 - `photo-picks.json`: which photo each breed uses (a Wikimedia Commons file, or Dogs Australia's own breed photo) and where to centre the crops
 - `wiki-map.json`, `wiki-overrides.json`, `photo-sources.json`: where to look for Commons photos
+- `shipped-ids.json`: every breed id that has ever shipped.
+  Spots are saved by id and the id comes from the breed's name, so a test fails if a rename would change one; add new breeds' ids here when they ship.
 
 `node scripts/build-data.ts` turns these into what the app ships: `src/data/breeds.json` and `public/breeds/` (a square grid photo, a breed-page photo and a silhouette mask per breed).
 Run it after changing any data file. It needs macOS: the silhouettes are cut out by Apple's Vision framework (`scripts/vision/mask.swift`, run through `swift`), once per photo.

@@ -61,7 +61,6 @@ export function buildBreedList(): Breed[] {
     aliases: b.aliases,
     kind: b.kind as 'cross' | 'breed',
     ...('parents' in b && { parents: b.parents }),
-    ...('about' in b && { about: b.about }),
   }))
 
   const short: Record<string, string> = shortNames.names

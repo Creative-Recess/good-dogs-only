@@ -1,7 +1,7 @@
 // The Help window's contents: about the app, its theme, how to add it to the Home Screen, and saving or restoring a backup.
 import { useRef } from 'react'
 import { groupById, TOTAL } from '../data/catalogue.ts'
-import { backupFile, importBackup, markBackedUp } from '../lib/backup.ts'
+import { backupFile, importBackup, markBackedUp, MAX_BACKUP_BYTES } from '../lib/backup.ts'
 import { formatDay } from '../lib/dates.ts'
 import { currentPlatform } from '../lib/platform.ts'
 import type { Sighting } from '../lib/sightings.ts'
@@ -13,13 +13,15 @@ import { useDialog } from './dialogs.ts'
 /** Running from the Home Screen icon rather than a Safari tab. */
 const standalone = () => matchMedia('(display-mode: standalone)').matches || (navigator as { standalone?: boolean }).standalone === true
 
-export function HelpWindowBody({ lastBackup, sightings }: { lastBackup: string | null; sightings: Sighting[] }) {
+/** `sightings` is undefined until they've loaded, so a backup is never saved empty by mistake. */
+export function HelpWindowBody({ lastBackup, sightings }: { lastBackup: string | null; sightings: Sighting[] | undefined }) {
   const ask = useDialog()
   const theme = useTheme()
   const fileRef = useRef<HTMLInputElement>(null)
   const bonus = groupById.get('bonus')?.total ?? 0
 
   const save = async () => {
+    if (!sightings) return
     // Built synchronously so the share sheet opens straight from the tap (iOS requires it).
     const { file, count } = backupFile(sightings)
     try {
@@ -38,11 +40,16 @@ export function HelpWindowBody({ lastBackup, sightings }: { lastBackup: string |
       ask({ title: 'Save Backup', text: "The backup couldn't be saved. Please try again.", icon: 'warn' })
       return
     }
-    await markBackedUp()
+    // The file is saved either way; if the date can't be recorded, the next Help visit just says "never".
+    await markBackedUp().catch(() => {})
     ask({ title: 'Save Backup', text: `Backup saved with ${count} ${count === 1 ? 'breed' : 'breeds'}.`, icon: 'info' })
   }
 
   const restore = async (file: File) => {
+    if (file.size > MAX_BACKUP_BYTES) {
+      ask({ title: 'Restore Backup', text: "That file is too big to be a Good Dogs Only backup.", icon: 'warn' })
+      return
+    }
     try {
       const changed = await importBackup(await file.text())
       ask({ title: 'Restore Backup', text: changed ? 'Backup restored. Your spots are merged, so nothing is lost.' : 'Everything in that backup is already here.', icon: 'info' })
@@ -84,13 +91,13 @@ export function HelpWindowBody({ lastBackup, sightings }: { lastBackup: string |
       </fieldset>
       <fieldset className="panel-box">
         <legend>Backup</legend>
-        <p>Save a backup now and then so a lost or new phone doesn't mean a lost dex.</p>
+        <p>Save a backup now and then so a lost or new phone doesn't mean a lost Dogdex.</p>
         <div className="warn">
           <Icon name={lastBackup ? 'disk' : 'warn'} />
           <span>Last backup: {lastBackup ? formatDay(lastBackup) : 'never'}</span>
         </div>
         <div className="stack">
-          <button type="button" className="default" onClick={() => void save()}>
+          <button type="button" className="default" onClick={() => void save()} disabled={!sightings}>
             Save Backup...
           </button>
           <button type="button" onClick={() => fileRef.current?.click()}>
@@ -121,17 +128,17 @@ function HomeScreenSteps() {
     <ol>
       {platform === 'ios' && (
         <li>
-          Tap <b>Share</b>, then <b>Add to Home Screen</b>
+          Tap <b>Share</b>, then <b>Add to Home Screen</b>.
         </li>
       )}
       {platform === 'android' && (
         <li>
-          Open the browser menu <b>⋮</b>, then <b>Add to Home screen</b> or <b>Install app</b>
+          Open the browser menu <b>⋮</b>, then <b>Add to Home screen</b> or <b>Install app</b>.
         </li>
       )}
       {platform === 'other' && (
         <li>
-          On a phone, use the browser's <b>Add to Home Screen</b>. On a computer, look for <b>Install</b> in the address bar or browser menu
+          On a phone, use the browser's <b>Add to Home Screen</b>. On a computer, look for <b>Install</b> in the address bar or browser menu.
         </li>
       )}
       <li>Open it from the new icon. It runs full screen, like an app.</li>

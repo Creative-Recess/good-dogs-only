@@ -147,7 +147,7 @@ export default function App() {
               </section>
             </div>
           </div>
-          {helpOpen && <HelpWindow lastBackup={lastBackup} sightings={sightings ?? []} onClose={() => setHelpOpen(false)} />}
+          {helpOpen && <HelpWindow lastBackup={lastBackup} sightings={sightings} onClose={() => setHelpOpen(false)} />}
           {breed && <BreedWindow key={breed.id} breed={breed} spotted={spots.get(breed.id)} spottedCount={spots.size} onClose={() => setDetail(null)} folds={folds} onFolds={setFolds} />}
           {dialog && <Dialog spec={dialog} onClose={() => setDialog(null)} />}
           {/* Minimise: the Park as a screensaver, full screen, until you tap. */}

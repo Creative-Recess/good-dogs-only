@@ -83,6 +83,15 @@ export function BreedsTab({ filter, onFilter, spots, onOpen }: Props) {
             <BreedTile key={b.id} breed={b} spotted={spots.has(b.id)} onOpen={onOpen} />
           ))}
         </div>
+      ) : filter.q.trim() && (filter.group !== 'all' || filter.show !== 'all') ? (
+        // The group or Show filter may be hiding it.
+        <div className="empty">
+          No <b>{filter.q.trim()}</b> here.
+          <br />
+          <button type="button" onClick={() => set({ group: 'all', show: 'all' })}>
+            Search all breeds
+          </button>
+        </div>
       ) : filter.q.trim() ? (
         <div className="empty">
           Good Dogs Only cannot find <b>{filter.q.trim()}</b>.

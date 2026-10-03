@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { searchBreeds } from '../src/lib/search.ts'
 import shortNames from '../data/short-names.json' with { type: 'json' }
+import shipped from '../data/shipped-ids.json' with { type: 'json' }
 import { buildBreedList, groups, orphanDetailKeys } from './lib/dataset.ts'
 
 const breeds = buildBreedList()
@@ -16,6 +17,13 @@ describe('buildBreedList', () => {
     expect(new Set(breeds.map((b) => b.id)).size).toBe(breeds.length)
     expect(new Set(breeds.map((b) => b.dexNo)).size).toBe(breeds.length)
     for (const b of breeds) expect(b.id).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/)
+  })
+
+  it("keeps every breed id that has ever shipped, so nobody's spots disappear", () => {
+    // A renamed breed gets a new id from its new name. Phones store spots by id, so that would hide them.
+    // If this fails after a rename, keep the old id for that breed (data/breed-details.json) rather than editing the list.
+    const ids = new Set(breeds.map((b) => b.id))
+    expect(shipped.ids.filter((id) => !ids.has(id))).toEqual([])
   })
 
   it('numbers official breeds in group blocks, A-Z within each group', () => {

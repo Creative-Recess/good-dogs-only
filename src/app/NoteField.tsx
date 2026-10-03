@@ -2,15 +2,17 @@
 // rather than on every keystroke, which would redraw every tile in the grid each time.
 import { useEffect, useRef } from 'react'
 import { setNote } from '../lib/sightings.ts'
+import { SAVE_FAILED, useDialog } from './dialogs.ts'
 
 const PAUSE_MS = 400
 
 export function NoteField({ sightingId, note }: { sightingId: string; note: string }) {
+  const ask = useDialog()
   const pending = useRef<string | null>(null)
   const timer = useRef(0)
   const flush = () => {
     clearTimeout(timer.current)
-    if (pending.current !== null) void setNote(sightingId, pending.current)
+    if (pending.current !== null) void setNote(sightingId, pending.current).catch(() => ask({ title: 'Note', text: SAVE_FAILED, icon: 'warn' }))
     pending.current = null
   }
   // Save anything still waiting when the window closes.

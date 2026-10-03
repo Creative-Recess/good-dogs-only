@@ -81,7 +81,7 @@
      15
     ],
     "origin": "DE",
-    "job": "Bred to catch rats in kitchens and stables; the name means 'monkey terrier'."
+    "job": "Bred to catch rats in kitchens and stables. The name means 'monkey terrier'."
    },
    "image": {
     "grid": "/breeds/affenpinscher-3282fa8d-grid.webp",
@@ -121,7 +121,7 @@
     "Energetic",
     "Independent"
    ],
-   "text": "A true terrier in a silky coat - keen, busy and quick to bark. Loving at home but has a stubborn streak.",
+   "text": "A true terrier in a silky coat: keen, busy and quick to bark. Loving at home but has a stubborn streak.",
    "shape": {
     "size": "XS",
     "build": "standard",
@@ -634,7 +634,7 @@
      16
     ],
     "origin": "MG",
-    "job": "Bred as a companion in Madagascar; 'coton' means cotton, for its soft coat."
+    "job": "Bred as a companion in Madagascar. Coton is French for cotton, after its soft coat."
    },
    "image": {
     "grid": "/breeds/coton-de-tulear-4355755f-grid.webp",
@@ -818,7 +818,7 @@
      16
     ],
     "origin": "CU",
-    "job": "Bred as a companion for Cuban aristocrats; Cuba's national dog."
+    "job": "Bred as a companion for Cuban aristocrats. It's Cuba's national dog."
    },
    "image": {
     "grid": "/breeds/havanese-2854236e-grid.webp",
@@ -1064,7 +1064,7 @@
      15
     ],
     "origin": "FR",
-    "job": "Bred as a companion, clipped to look like a little lion; 'Lowchen' means little lion."
+    "job": "Bred as a companion, clipped to look like a little lion. Lowchen means little lion."
    },
    "image": {
     "grid": "/breeds/lowchen-little-lion-dog-134b5ce2-grid.webp",
@@ -1101,7 +1101,7 @@
     "Clever",
     "Playful"
    ],
-   "text": "Sweet natured and bright, thriving on company. Stays playful well into old age.",
+   "text": "Sweet-natured and bright, thriving on company. Stays playful well into old age.",
    "shape": {
     "size": "XS",
     "build": "standard",
@@ -1185,7 +1185,7 @@
      16
     ],
     "origin": "DE",
-    "job": "Bred to hunt rats in homes and stables; not a mini Dobermann, it is older."
+    "job": "Bred to hunt rats in homes and stables. It's not a mini Dobermann but an older breed."
    },
    "image": {
     "grid": "/breeds/miniature-pinscher-45a34620-grid.webp",
@@ -1222,7 +1222,7 @@
     "Trainable",
     "Energetic"
    ],
-   "text": "Named for its butterfly ears. Sharp as a tack, lively and quick to learn, it shines at tricks and agility.",
+   "text": "A dainty toy with big, fringed ears. Sharp as a tack, lively and quick to learn, it shines at tricks and agility.",
    "shape": {
     "size": "XS",
     "build": "standard",
@@ -1244,7 +1244,7 @@
      16
     ],
     "origin": "FR",
-    "job": "Bred as a lap dog for royals; 'papillon' is French for butterfly, after its ears."
+    "job": "Bred as a lap dog for royals. Papillon is French for butterfly, after its ears."
    },
    "image": {
     "grid": "/breeds/papillon-f54e2f86-grid.webp",
@@ -1792,7 +1792,7 @@
      14
     ],
     "origin": "GB-ENG",
-    "job": "Bred to hunt otters and rats in Yorkshire's Aire valley; the 'King of Terriers'."
+    "job": "Bred to hunt otters and rats in Yorkshire's Aire valley. Known as the 'King of Terriers'."
    },
    "image": {
     "grid": "/breeds/airedale-terrier-6f63b1a8-grid.webp",
@@ -1954,7 +1954,7 @@
     "Loyal",
     "Affectionate"
    ],
-   "text": "A tough little Aussie worker bred to deal with snakes and rats. Devoted and loving with its family.",
+   "text": "A tough, scruffy little Aussie with a big-dog attitude. Devoted and loving with its family.",
    "shape": {
     "size": "S",
     "build": "long_low",
@@ -2335,7 +2335,7 @@
      15
     ],
     "origin": "CZ",
-    "job": "Bred to hunt foxes and badgers in burrows; Czech for 'Bohemian terrier'."
+    "job": "Bred to hunt foxes and badgers in burrows. Its name is Czech for 'Bohemian terrier'."
    },
    "image": {
     "grid": "/breeds/cesky-terrier-1c5289e1-grid.webp",
@@ -2397,7 +2397,7 @@
      15
     ],
     "origin": "GB-SCT",
-    "job": "Bred to hunt otters and badgers; named after a character in a Walter Scott novel."
+    "job": "Bred to hunt otters and badgers. It's named after a character in a Walter Scott novel."
    },
    "image": {
     "grid": "/breeds/dandie-dinmont-terrier-eb62d808-grid.webp",
@@ -2582,7 +2582,7 @@
      14
     ],
     "origin": "DE",
-    "job": "Bred as an all-round hunter of foxes, badgers and boar; also called Jagdterrier."
+    "job": "Bred as an all-round hunter of foxes, badgers and boar. Also called Jagdterrier."
    },
    "image": {
     "grid": "/breeds/german-hunting-terrier-c8b82740-grid.webp",
@@ -2767,7 +2767,7 @@
      16
     ],
     "origin": "GB-ENG",
-    "job": "Bred to bolt foxes; named after Parson John Russell, refined in Australia."
+    "job": "Bred in England to bolt foxes, then refined in Australia. Named after Parson John Russell."
    },
    "image": {
     "grid": "/breeds/jack-russell-terrier-8af78a68-grid.webp",
@@ -3005,7 +3005,7 @@
      16
     ],
     "origin": "GB-ENG",
-    "job": "Bred to hunt rats and bolt foxes in East Anglia; ears fold over, unlike the Norwich."
+    "job": "Bred to hunt rats and bolt foxes in East Anglia. Its ears fold over, unlike the Norwich's."
    },
    "image": {
     "grid": "/breeds/norfolk-terrier-f3a6675f-grid.webp",
@@ -3064,7 +3064,7 @@
      15
     ],
     "origin": "GB-ENG",
-    "job": "Bred to hunt rats on farms in East Anglia; ears prick up, unlike the Norfolk."
+    "job": "Bred to hunt rats on farms in East Anglia. Its ears prick up, unlike the Norfolk's."
    },
    "image": {
     "grid": "/breeds/norwich-terrier-e8d3df92-grid.webp",
@@ -3126,7 +3126,7 @@
      15
     ],
     "origin": "GB-ENG",
-    "job": "Bred to run with foxhounds and bolt foxes; named after Parson John Russell."
+    "job": "Bred to run with foxhounds and bolt foxes. Named after Parson John Russell."
    },
    "image": {
     "grid": "/breeds/parson-russell-terrier-55f1f5c5-grid.webp",
@@ -3306,7 +3306,7 @@
      15
     ],
     "origin": "GB-SCT",
-    "job": "Bred to hunt foxes and otters on the Isle of Skye; Greyfriars Bobby was one."
+    "job": "Bred to hunt foxes and otters on the Isle of Skye. Greyfriars Bobby was one."
    },
    "image": {
     "grid": "/breeds/skye-terrier-0213a1e9-grid.webp",
@@ -3492,7 +3492,7 @@
      16
     ],
     "origin": "AU",
-    "job": "Bred as a ratter and family dog in rural Australia; once called the Mini Foxie."
+    "job": "Bred as a ratter and family dog in rural Australia. Once called the Mini Foxie."
    },
    "image": {
     "grid": "/breeds/tenterfield-terrier-79cd7486-grid.webp",
@@ -3613,7 +3613,7 @@
      15
     ],
     "origin": "GB-SCT",
-    "job": "Bred to hunt foxes and rats; bred white so hunters would not mistake it for a fox."
+    "job": "Bred to hunt foxes and rats. It's white so hunters wouldn't mistake it for a fox."
    },
    "image": {
     "grid": "/breeds/west-highland-white-terrier-de30e149-grid.webp",
@@ -4100,7 +4100,7 @@
      13
     ],
     "origin": "GB-ENG",
-    "job": "Bred to find game birds and crouch, or \"set\", to show the hunter where they are."
+    "job": "Bred to find game birds and crouch, or 'set', to show the hunter where they are."
    },
    "image": {
     "grid": "/breeds/english-setter-5345b4f3-grid.webp",
@@ -4141,7 +4141,7 @@
     "Trainable",
     "Energetic"
    ],
-   "text": "Bred to flush game and loves to be busy. Friendly and eager to learn, it's never far from the action.",
+   "text": "A merry, busy spaniel that loves to be on the go. Friendly and eager to learn, it's never far from the action.",
    "shape": {
     "size": "M",
     "build": "standard",
@@ -4504,7 +4504,7 @@
     "Brave",
     "Clever"
    ],
-   "text": "A striking black and tan setter from Scotland. Bright, friendly and bold, with loads of stamina.",
+   "text": "A striking black-and-tan setter. Bright, friendly and bold, with loads of stamina.",
    "shape": {
     "size": "L",
     "build": "standard",
@@ -4709,7 +4709,7 @@
      13
     ],
     "origin": "IE",
-    "job": "Bred to find and point game birds, and is older than the solid red Irish Setter."
+    "job": "Bred to find and point game birds. It's older than the solid red Irish Setter."
    },
    "image": {
     "grid": "/breeds/irish-red-and-white-setter-24346cb2-grid.webp",
@@ -4992,7 +4992,7 @@
     "Affectionate",
     "Trainable"
    ],
-   "text": "A curly Italian dog famous for sniffing out truffles. Loving, trainable and happiest when working.",
+   "text": "A curly-coated, teddy bear of a dog with a brilliant nose. Loving, trainable and happiest when working.",
    "shape": {
     "size": "M",
     "build": "standard",
@@ -5051,7 +5051,7 @@
     "Affectionate",
     "Hard-working"
    ],
-   "text": "A black and white German hunting dog. Devoted to its people and happiest with a job to do.",
+   "text": "A black-and-white hunting dog with a feathered coat. Devoted to its people and happiest with a job to do.",
    "shape": {
     "size": "L",
     "build": "standard",
@@ -5176,7 +5176,7 @@
     "Clever",
     "Energetic"
    ],
-   "text": "The smallest retriever, bred to lure ducks with playful antics. Smart, keen and full of energy.",
+   "text": "The smallest retriever, with a fox-red coat and white flashes. Smart, keen and full of energy.",
    "shape": {
     "size": "M",
     "build": "standard",
@@ -5198,7 +5198,7 @@
      14
     ],
     "origin": "CA",
-    "job": "Bred to lure, or \"toll\", ducks within range by playing on the shore, then retrieve them."
+    "job": "Bred to lure, or 'toll', ducks within range by playing on the shore, then retrieve them."
    },
    "image": {
     "grid": "/breeds/nova-scotia-duck-tolling-retriever-bc115695-grid.webp",
@@ -5782,7 +5782,7 @@
     "Independent",
     "Affectionate"
    ],
-   "text": "The barkless dog, known to yodel instead. Clever and cat-like, with a strong mind of its own.",
+   "text": "A sleek little hound that yodels instead of barking. Clever and cat-like, with a strong mind of its own.",
    "shape": {
     "size": "M",
     "build": "standard",
@@ -6267,7 +6267,7 @@
     "Calm",
     "Reserved"
    ],
-   "text": "A tall, elegant Russian sighthound bred to course wolves. Quiet and aloof, but quick off the mark.",
+   "text": "A tall, elegant sighthound with a silky coat. Quiet and aloof, but quick off the mark.",
    "shape": {
     "size": "L",
     "build": "tall_lean",
@@ -6423,7 +6423,7 @@
      16
     ],
     "origin": "DE",
-    "job": "Bred to dig into badger setts, and Dachs means badger in German."
+    "job": "Bred to dig into badger setts. Dachs is German for badger."
    },
    "image": {
     "grid": "/breeds/dachshund-477d9c4c-grid.webp",
@@ -6543,7 +6543,7 @@
      15
     ],
     "origin": "FI",
-    "job": "Bred to find game birds and bark to show where they are. Finland's national dog."
+    "job": "Bred to find game birds and bark to show where they are. It's Finland's national dog."
    },
    "image": {
     "grid": "/breeds/finnish-spitz-bba171c3-grid.webp",
@@ -6723,7 +6723,7 @@
      13
     ],
     "origin": "GB",
-    "job": "Bred to course hare by sight, and is the fastest dog breed."
+    "job": "Bred to course hare by sight. It's the fastest dog breed."
    },
    "image": {
     "grid": "/breeds/greyhound-cfdb8246-grid.webp",
@@ -6821,7 +6821,7 @@
     "Energetic",
     "Playful"
    ],
-   "text": "Cheerful, sweet-natured pack hound that's great with people. Loves exploring and sniffing on long walks.",
+   "text": "A cheerful, sweet-natured pack hound that's great with people. Loves exploring and sniffing on long walks.",
    "shape": {
     "size": "M",
     "build": "standard",
@@ -6963,7 +6963,7 @@
      8
     ],
     "origin": "IE",
-    "job": "Bred to hunt wolves and deer in Ireland, and is the tallest dog breed."
+    "job": "Bred to hunt wolves and deer in Ireland. It's the tallest dog breed."
    },
    "image": {
     "grid": "/breeds/irish-wolfhound-2ea006a1-grid.webp",
@@ -7182,7 +7182,7 @@
     "Hard-working",
     "Clever"
    ],
-   "text": "A sleek, tan hound known to blush when excited. Sharp, alert and quick to spot movement.",
+   "text": "A sleek, tan hound with big upright ears. Sharp, alert and quick to spot movement.",
    "shape": {
     "size": "M",
     "build": "tall_lean",
@@ -7400,7 +7400,7 @@
      16
     ],
     "origin": "DE",
-    "job": "Bred to chase rabbits down their burrows, hence its German name Kaninchen, meaning rabbit."
+    "job": "Bred to chase rabbits down their burrows. Its German name, Kaninchendackel, means 'rabbit dachshund'."
    },
    "image": {
     "grid": "/breeds/rabbit-dachshund-82382be2-grid.webp",
@@ -8144,7 +8144,7 @@
      15
     ],
     "origin": "IT",
-    "job": "Bred to herd sheep in the Italian Alps, its felted coat keeps out cold and wolves' teeth."
+    "job": "Bred to herd sheep in the Italian Alps. Its felted coat keeps out the cold and wolves' teeth."
    },
    "image": {
     "grid": "/breeds/bergamasco-shepherd-dog-dc8068fa-grid.webp",
@@ -8758,7 +8758,7 @@
      13
     ],
     "origin": "DE",
-    "job": "Bred to herd and guard sheep in Germany, this is the long-coated variety of the breed."
+    "job": "Bred to herd and guard sheep in Germany. This is the long-coated variety."
    },
    "image": {
     "grid": "/breeds/german-shepherd-dog-long-stock-coat-f9a74abc-grid.webp",
@@ -8876,7 +8876,7 @@
      12
     ],
     "origin": "HU",
-    "job": "Bred to guard sheep in Hungary, its white cords help it blend in with the flock."
+    "job": "Bred to guard sheep in Hungary. Its white cords help it blend in with the flock."
    },
    "image": {
     "grid": "/breeds/komondor-e05a5fe1-grid.webp",
@@ -9945,7 +9945,7 @@
     "Brave",
     "Reserved"
    ],
-   "text": "A powerful Japanese dog with a curled tail and a quiet, noble manner. Loyal to family but aloof with strangers and other dogs.",
+   "text": "A powerful, bear-headed dog with a curled tail and a quiet, noble manner. Loyal to family but aloof with strangers and other dogs.",
    "shape": {
     "size": "XL",
     "build": "standard",
@@ -10311,7 +10311,7 @@
     "Protective",
     "Loyal"
    ],
-   "text": "Bred to help gamekeepers catch poachers. Big and loyal, it stays alert but usually prefers a short walk and a long nap.",
+   "text": "A big, powerful guardian with a soft side. Loyal and alert, but usually prefers a short walk and a long nap.",
    "shape": {
     "size": "XL",
     "build": "stocky",
@@ -10923,7 +10923,7 @@
     "Calm",
     "Brave"
    ],
-   "text": "A powerful Turkish guardian with a black mask, bred to protect sheep from wolves. Calm and composed, but fearless.",
+   "text": "A powerful guardian with a black mask and a curled tail. Calm and composed, but fearless when it counts.",
    "shape": {
     "size": "XL",
     "build": "standard",
@@ -12509,7 +12509,7 @@
     "Loyal",
     "Calm"
    ],
-   "text": "Stocky and determined-looking, but usually a kind, easy-going couch companion. Loyal and courageous at heart.",
+   "text": "Stocky and determined-looking, but usually a kind, easygoing couch companion. Loyal and courageous at heart.",
    "shape": {
     "size": "M",
     "build": "stocky",
@@ -13053,7 +13053,7 @@
     "Hard-working",
     "Dignified"
    ],
-   "text": "A bold black-and-white Finnish hunting dog, bred to face down bears. Brave, tireless and self-assured.",
+   "text": "A bold black-and-white spitz. Brave, tireless and self-assured, and wary of other dogs.",
    "shape": {
     "size": "M",
     "build": "standard",
@@ -13075,7 +13075,7 @@
      13
     ],
     "origin": "FI",
-    "job": "Bred to hunt big game like elk and bears in the forests of Finland."
+    "job": "Bred to hunt big game like moose and bears in the forests of Finland."
    },
    "image": {
     "grid": "/breeds/karelian-bear-dog-0acb57c0-grid.webp",
@@ -13485,7 +13485,7 @@
     "Clever",
     "Calm"
    ],
-   "text": "The original poodle, bred to retrieve from water. Very smart and athletic, yet calm and well-mannered at home.",
+   "text": "The original, biggest poodle. Very smart and athletic, yet calm and well-mannered at home.",
    "shape": {
     "size": "L",
     "build": "tall_lean",
@@ -13728,7 +13728,7 @@
     "Independent",
     "Affectionate"
    ],
-   "text": "A little lion dog with a flowing coat. Friendly and outgoing with a cheeky independent streak, made for companionship.",
+   "text": "A little lion dog with a flowing coat. Friendly and outgoing with a cheeky, independent streak, made for companionship.",
    "shape": {
     "size": "S",
     "build": "standard",
@@ -14049,7 +14049,7 @@
     "Clever",
     "Gentle"
    ],
-   "text": "Bred in Australia as a guide dog cross. Sociable, quick to learn and usually gentle with kids.",
+   "text": "A curly, friendly family dog. Sociable, quick to learn and usually gentle with kids.",
    "shape": {
     "size": "L",
     "build": "standard",
@@ -14117,7 +14117,7 @@
     "Calm",
     "Playful"
    ],
-   "text": "A small, soft-coated lap dog that sticks close to its people. Usually easy-going, with short bursts of play.",
+   "text": "A small, soft-coated lap dog that sticks close to its people. Usually easygoing, with short bursts of play.",
    "shape": {
     "size": "XS",
     "build": "standard",
@@ -14181,7 +14181,7 @@
     "Gentle",
     "Playful"
    ],
-   "text": "A soft, fluffy Cavalier-Bichon mix made for companionship. Sweet-natured and up for a gentle game.",
+   "text": "A soft, fluffy Cavalier-Bichon cross made for companionship. Sweet-natured and up for a gentle game.",
    "shape": {
     "size": "S",
     "build": "standard",
@@ -14311,7 +14311,7 @@
     "Friendly",
     "Energetic"
    ],
-   "text": "A Beagle-Pug mix with a wrinkly face and a curious nose. Social and fun, with more get-up-and-go than a Pug.",
+   "text": "A Beagle-Pug cross with a wrinkly face and a curious nose. Social and fun, with more get-up-and-go than a Pug.",
    "shape": {
     "size": "S",
     "build": "standard",
@@ -14433,7 +14433,6 @@
     "Foxie"
    ],
    "kind": "breed",
-   "about": "An Australian breed descended from Fox Terriers, kept as a ratter and companion.",
    "traits": [
     "Energetic",
     "Alert",
@@ -14495,13 +14494,12 @@
     "Australian Koolie"
    ],
    "kind": "breed",
-   "about": "An Australian working sheepdog, often merle, with its own breed club rather than Dogs Australia recognition.",
    "traits": [
     "Hard-working",
     "Loyal",
     "Trainable"
    ],
-   "text": "An Australian working sheepdog, often merle. Eager to please and devoted to its handler, needing plenty to do.",
+   "text": "An Australian working sheepdog, often merle. Eager to please and devoted to its handler, and needs plenty to do.",
    "shape": {
     "size": "M",
     "build": "standard",
@@ -14558,7 +14556,6 @@
     "XL Bully"
    ],
    "kind": "breed",
-   "about": "A muscular companion breed developed in the US in the 1990s from bull-type terriers.",
    "traits": [
     "Affectionate",
     "Brave",
@@ -14586,7 +14583,7 @@
      13
     ],
     "origin": "US",
-    "job": "Bred in the 1990s US as a muscly, gentle companion from bull-type terriers."
+    "job": "Bred in the US in the 1990s as a muscly, gentle companion from bull-type terriers."
    },
    "image": {
     "grid": "/breeds/american-bully-d5f5b1b5-grid.webp",
@@ -14619,7 +14616,6 @@
     "Australian Bull Arab"
    ],
    "kind": "breed",
-   "about": "An Australian pig-hunting dog developed from bull terrier, pointer and sighthound lines.",
    "traits": [
     "Loyal",
     "Calm",

@@ -7,7 +7,7 @@ import { Icon } from '../ui/icons.tsx'
 import { useModal } from '../ui/useModal.ts'
 import { HelpWindowBody } from './HelpWindowBody.tsx'
 
-type Props = { lastBackup: string | null; sightings: Sighting[]; onClose: () => void }
+type Props = { lastBackup: string | null; sightings: Sighting[] | undefined; onClose: () => void }
 
 export function HelpWindow({ lastBackup, sightings, onClose }: Props) {
   const aqua = isAquaFamily(useTheme())
