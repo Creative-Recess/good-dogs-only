@@ -13,8 +13,11 @@ The original v1 plan, with the decisions made along the way, is archived outside
 
 - **Dogdex**: every breed in dex order, with Find (names and nicknames, e.g. "staffy", "sausage dog"), a Group filter and Show: All / Spotted / Unseen.
   Breeds you haven't spotted show as a "Who's that dog?" silhouette, tinted for each theme.
-- **Breed window**: photo, then a Profile: 3 temperament traits, a line about the breed and what it was bred for, then dex rows (nicknames, weight with a weight-class icon, lifespan, and the country it's from with its flag) and a link to the official Dogs Australia standard. Then Spotted (with the date and a note) or Unsee.
-- **Park**: an animated Rushcutters Bay with one dog per spotted breed (at most 20 out at once; they take turns). It follows the real sun over the park (`src/park/sun.ts`): Dawn, Sunrise, Daytime, Golden hour, Dusk and Night, each with its own sky and light, and the city, Opera House, Bridge and path lamps lit after dark. The yellow title-bar button opens it as a screensaver.
+- **Breed window**: photo, then a Profile: 3 temperament traits, a line about the breed and one on what it was bred for, then dex rows (nicknames, weight with a weight-class icon, lifespan, and the country it's from with its flag) and a link to the official Dogs Australia standard.
+  Then Spotted (with the date and a note) or Unsee.
+- **Park**: an animated Rushcutters Bay with one dog per spotted breed (at most 20 out at once; they take turns).
+  It follows the real sun over the park: Dawn, Sunrise, Daytime, Golden hour, Dusk and Night, each with its own sky and light, and the city, Opera House, Bridge and path lamps lit after dark.
+  The yellow title-bar button opens it as a screensaver.
 - **Progress**: the overall count, a row per group, and the latest spots.
 - **Help** (the ? in the title bar): About, Theme, Add to Home Screen and Backup.
 - **Themes**: Aqua Glass (the default), Aqua and Windows 98.
@@ -29,6 +32,8 @@ The original v1 plan, with the decisions made along the way, is archived outside
 - Dexie.js over IndexedDB for sightings (`src/lib/sightings.ts`); Unsee keeps a deleted marker so an older backup can't bring a dog back.
   Backups (`src/lib/backup.ts`) merge by sighting, newest change wins.
 - The Park is a framework-free canvas engine in `src/park/` (scene, dog drawing, behaviour).
+  Its time of day comes from the sun's height over Rushcutters Bay (`src/park/sun.ts`), worked out from the phone's clock with no location needed: twilight is the sun up to 6° below the horizon, and Sunrise and Golden hour are the sun up to 6° above it.
+  Each time of day's look is one entry in `LOOKS` in `src/park/scene.ts`; the scene and its lights are redrawn only when the time of day changes.
 - Vitest for unit and data tests, Playwright (WebKit, iPhone 17 profile) for E2E tests.
 - Hosted on Cloudflare Workers as static files; `public/_headers` sets the caching.
 
@@ -59,9 +64,9 @@ There's no password; `public/robots.txt`, a `noindex` header and a `noindex` met
 
 ## Breed review page
 
-`pnpm review` opens `review/breeds.html`: every breed's grid photo and breed-page crop, its silhouette in each theme, its Park dog, its traits and text, and where the photo came from.
+`pnpm review` opens `review/breeds.html`: every breed's grid photo and breed-page crop, its silhouette in each theme, its Park dog, its traits and text, its breed facts (with the weight class spelled out and a link to the source), and where the photo came from.
 It's drawn live from the shipped data and the app's own code, so it always shows what the app shows.
-It also flags breeds worth a look (several dogs in one photo, a silhouette that includes background, a dog cut off by the crop, a small photo); tick "Only ones to check" to see just those.
+It also flags breeds worth a look (several dogs in one photo, a silhouette that includes background, a dog cut off by the crop, a small photo, missing breed facts); tick "Only ones to check" to see just those.
 Breeds already looked at are listed in `review/reviewed.json` and show as "Checked" instead.
 It's a dev page only: it isn't part of the app build.
 
@@ -85,6 +90,13 @@ Downloads and other working files go in `.cache/` (not committed).
 2. Run `node scripts/build-data.ts`, then `pnpm test` (the data tests check every breed has its files).
 3. Check it with `pnpm review`.
 
+### Changing a breed's facts
+
+1. Edit its entry in `data/breed-facts.json`: `kg` and `life` as [low, high], `origin` as a country code, `job` as one sentence (no em or en dashes), and `src` for where you checked it.
+   A new country also needs a flag in `src/data/countries.ts` (drawn on a 30x20 grid; the data tests fail without one).
+2. Run `node scripts/build-data.ts`, then `pnpm test`.
+3. Check it with `pnpm review`, or on the breed's page in `pnpm dev`.
+
 ### The photo pipeline (how the picks were made)
 
 1. `node scripts/fetch-ankc.ts`: the Dogs Australia breed list into `data/ankc-breeds.json`.
@@ -99,8 +111,9 @@ Downloads and other working files go in `.cache/` (not committed).
 ## Content and licensing
 
 - Breed names and group membership come from the Dogs Australia breed group pages; these are facts.
-- Breed facts (weight, lifespan, origin, original job) are facts checked against the AKC, The Kennel Club, the FCI or Wikipedia, written in our own words.
   The breed text is written in our own words, never copied from a breed standard.
+- Breed facts (weight, lifespan, origin, original job) were researched in Oct 2026 against the AKC, The Kennel Club, the FCI and Wikipedia, and written in our own words.
+  The rare breeds were checked against those sources one by one; many common breeds' figures are typical published ranges that weren't each re-checked, so fix any that look off.
 - Most breed photos are Dogs Australia's own (Justin's call for this private app), and the rest come from Wikimedia Commons.
   Credits are kept per photo in `src/data/breeds.json` but not shown in the app.
   The repo stays private. The site has no password (Justin's call, 2 Oct 2026), so anyone with the link can see the photos; search engines are asked not to list it.
