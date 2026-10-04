@@ -25,7 +25,9 @@ test('spotting a breed sticks after closing the app and reopening it', async ({ 
   await page.getByRole('dialog').getByRole('button', { name: 'Close' }).click()
   await page.getByRole('tab', { name: 'Progress' }).click()
   await expect(page.getByText(`1 of ${TOTAL} breeds`)).toBeVisible()
-  await expect(page.getByRole('button', { name: new RegExp(`Gundogs\\s*1/${inGroup('gundogs')}`) })).toBeVisible()
+  // Each group shows a percentage, with the count for screen readers.
+  const gundogs = page.getByRole('button', { name: `Gundogs: 1 of ${inGroup('gundogs')} spotted, ${Math.round(100 / inGroup('gundogs'))}%` })
+  await expect(gundogs).toContainText(`${Math.round(100 / inGroup('gundogs'))}%`)
   await expect(page.getByRole('row', { name: /Labrador Retriever/ })).toBeVisible()
 })
 
@@ -99,5 +101,16 @@ test('closing a message box gives focus back to the button that opened it', asyn
   await page.keyboard.press('Escape')
   await expect(page.getByRole('alertdialog')).toBeHidden()
   await expect(unsee).toBeFocused()
+})
+
+test('every tenth breed spotted sets off the bone confetti', async ({ page }) => {
+  const names = ['Pug', 'Beagle', 'Boxer', 'Dalmatian', 'Whippet', 'Samoyed', 'Basenji', 'Borzoi', 'Puli']
+  for (const name of names) await spotBreed(page, name)
+  await expect(page.locator('.confetti')).toHaveCount(0)
+  await openBreed(page, 'Pumi')
+  await page.getByRole('button', { name: 'Spotted', exact: true }).click()
+  await expect(page.locator('.confetti .bone').first()).toBeVisible()
+  // It tidies itself away once the bones have fallen.
+  await expect(page.locator('.confetti')).toHaveCount(0, { timeout: 6000 })
 })
 

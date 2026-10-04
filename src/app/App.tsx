@@ -13,6 +13,8 @@ import type { IconName } from '../ui/icons/types.ts'
 import { BreedsTab, type BreedsFilter } from './BreedsTab.tsx'
 import { BreedWindow, type Folds } from './BreedWindow.tsx'
 import { Dialog } from './dialog.tsx'
+import { CelebrateContext } from './celebrate.ts'
+import { Confetti } from './Confetti.tsx'
 import { DialogContext, type DialogSpec } from './dialogs.ts'
 import { HelpWindow } from './HelpWindow.tsx'
 import { Launch } from './Launch.tsx'
@@ -37,6 +39,12 @@ export default function App() {
   const [filter, setFilter] = useState<BreedsFilter>({ q: '', group: 'all', show: 'all' })
   const [detail, setDetail] = useState<string | null>(null)
   const [dialog, setDialog] = useState<DialogSpec | null>(null)
+  // Bone confetti: a new number each time restarts it. Skipped for anyone who has asked for less motion.
+  const [confetti, setConfetti] = useState(0)
+  const celebrate = useCallback(() => {
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) setConfetti((n) => n + 1)
+  }, [])
+  const endConfetti = useCallback(() => setConfetti(0), [])
   const [saver, setSaver] = useState(false)
   const [helpOpen, setHelpOpen] = useState(false)
   const [folds, setFolds] = useState<Folds>({ temperament: true, varieties: true, status: true })
@@ -84,6 +92,7 @@ export default function App() {
 
   return (
     <DialogContext.Provider value={setDialog}>
+      <CelebrateContext.Provider value={celebrate}>
       {aqua && <AquaIconDefs />}
       <div className="stage">
         <div className="app">
@@ -150,6 +159,7 @@ export default function App() {
           {helpOpen && <HelpWindow lastBackup={lastBackup} sightings={sightings} onClose={() => setHelpOpen(false)} />}
           {breed && <BreedWindow key={breed.id} breed={breed} spotted={spots.get(breed.id)} spottedCount={spots.size} onClose={() => setDetail(null)} folds={folds} onFolds={setFolds} />}
           {dialog && <Dialog spec={dialog} onClose={() => setDialog(null)} />}
+          {confetti > 0 && <Confetti key={confetti} onDone={endConfetti} />}
           {/* Minimise: the Park as a screensaver, full screen, until you tap. */}
           {saver && (
             <div className="saver" role="button" aria-label="Screensaver. Tap to return." tabIndex={0} onClick={() => setSaver(false)} onKeyDown={() => setSaver(false)}>
@@ -159,6 +169,7 @@ export default function App() {
           {!launched && <Launch onDone={onLaunched} />}
         </div>
       </div>
+      </CelebrateContext.Provider>
     </DialogContext.Provider>
   )
 }

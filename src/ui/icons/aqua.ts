@@ -24,6 +24,7 @@ export const ORBS: Record<string, [string, string]> = {
   dogdex: ['#9fd2ff', '#1f63c4'],
   park: ['#a6ec86', '#2c8a1c'],
   progress: ['#ffd27a', '#d27a00'],
+  bone: ['#fffaf0', '#e2c891'],
   w1: ['#d9f2ff', '#5fb0e0'],
   w2: ['#b8e6ff', '#3a8fd0'],
   w3: ['#9fc8ff', '#2f6fc4'],
@@ -80,7 +81,12 @@ export const AQUA_ICONS = {
   tHouse: orb('house', '<path d="M6.5 16L16 8l9.5 8h-2.7v8.5h-5v-5.5h-3.6v5.5h-5V16z"/>'),
   tCompass: orb('compass', '<path d="M16 6l3 10-3 10-3-10z"/><path d="M16 16l3 0-3 10-3-10z" fill="#bfe9d6"/>'),
   tCloud: orb('cloud', '<path d="M10.5 22.5a4.6 4.6 0 0 1-.4-9.2 6.3 6.3 0 0 1 12-1.4 5.3 5.3 0 0 1 .6 10.6z"/>'),
-  tbDogdex: orb('dogdex', '<rect x="8" y="8" width="7" height="7" rx="1.6"/><rect x="17" y="8" width="7" height="7" rx="1.6"/><rect x="8" y="17" width="7" height="7" rx="1.6"/><rect x="17" y="17" width="7" height="7" rx="1.6"/>'),
+  tbDogdex: orb('dogdex', '<ellipse cx="9.8" cy="13.6" rx="2.3" ry="2.9" transform="rotate(-24 9.8 13.6)"/><ellipse cx="13.8" cy="9.4" rx="2.3" ry="3"/><ellipse cx="18.2" cy="9.4" rx="2.3" ry="3"/><ellipse cx="22.2" cy="13.6" rx="2.3" ry="2.9" transform="rotate(24 22.2 13.6)"/><path d="M16 14.6c3.1 0 5.8 3.1 5.8 5.8 0 2.3-1.6 3.5-3.3 3.5-1.1 0-1.7-.7-2.5-.7s-1.4.7-2.5.7c-1.7 0-3.3-1.2-3.3-3.5 0-2.7 2.7-5.8 5.8-5.8z"/>'),
+  // Confetti for every tenth breed spotted: a glossy cream bone.
+  bone: {
+    size: 32,
+    d: '<g fill="url(#aq-bone)"><circle cx="7.5" cy="12" r="4.2"/><circle cx="7.5" cy="20" r="4.2"/><circle cx="24.5" cy="12" r="4.2"/><circle cx="24.5" cy="20" r="4.2"/><rect x="7" y="12.2" width="18" height="7.6" rx="1"/></g><rect x="9" y="13.2" width="14" height="2" rx="1" fill="#fff" opacity="0.7"/>',
+  },
   tbPark: orb('park', '<circle cx="16" cy="12.5" r="6.5"/><circle cx="11.5" cy="15" r="4"/><circle cx="20.5" cy="15" r="4"/><rect x="14.8" y="17" width="2.4" height="8" rx="1"/>'),
   tbProgress: orb('progress', '<rect x="8" y="17" width="4" height="8" rx="1"/><rect x="14" y="12" width="4" height="13" rx="1"/><rect x="20" y="8" width="4" height="17" rx="1"/>'),
   // Lifespan: a white clock face on a silver bezel at 10:10, like the Mac clock.

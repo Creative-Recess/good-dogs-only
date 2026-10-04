@@ -4,6 +4,9 @@ import { formatDay } from '../lib/dates.ts'
 import { newestFirst, type Spot } from '../lib/sightings.ts'
 import { ProgressBar } from './ProgressBar.tsx'
 
+/** Whole percent, but never 0% once one is spotted or 100% until they all are. */
+const percent = (k: number, total: number) => `${k === 0 ? 0 : k === total ? 100 : Math.min(99, Math.max(1, Math.round((k / total) * 100)))}%`
+
 type Props = { spots: Map<string, Spot>; onGroup: (groupId: string) => void; onOpen: (id: string) => void }
 
 export function ProgressTab({ spots, onGroup, onOpen }: Props) {
@@ -21,15 +24,13 @@ export function ProgressTab({ spots, onGroup, onOpen }: Props) {
         {groups.map((g) => {
           const k = spottedInGroup(g.id, spots)
           return (
-            <button type="button" className="g-row" key={g.id} onClick={() => onGroup(g.id)}>
+            <button type="button" className="g-row" key={g.id} onClick={() => onGroup(g.id)} aria-label={`${g.name}: ${k} of ${g.total} spotted, ${percent(k, g.total)}`}>
               <span className="g-top">
                 <span>
                   <span className="swatch" style={{ background: GROUP_COLOUR[g.id] }} />
                   {g.name}
                 </span>
-                <span>
-                  {k}/{g.total}
-                </span>
+                <span>{percent(k, g.total)}</span>
               </span>
             </button>
           )

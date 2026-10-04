@@ -18,7 +18,8 @@ The original v1 plan, with the decisions made along the way, is archived outside
 - **Park**: an animated Rushcutters Bay with one dog per spotted breed (at most 20 out at once; they take turns).
   It follows the real sun over the park: Dawn, Sunrise, Daytime, Golden hour, Dusk and Night, each with its own sky and light, and the city, Opera House, Bridge and path lamps lit after dark.
   The yellow title-bar button opens it as a screensaver.
-- **Progress**: the overall count, a row per group, and the latest spots.
+- **Progress**: the overall count, each group's percentage spotted, and the latest spots.
+- **Milestones**: every tenth breed spotted sets off a shower of dog bones (skipped with Reduce Motion on).
 - **Help** (the ? in the title bar): About, Theme, Add to Home Screen and Backup.
 - **Themes**: Aqua Glass (the default), Aqua and Windows 98.
 

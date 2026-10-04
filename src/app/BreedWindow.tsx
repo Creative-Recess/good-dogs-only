@@ -10,6 +10,7 @@ import { useModal } from '../ui/useModal.ts'
 import { useShrinkToFit } from '../ui/useShrinkToFit.ts'
 import { useTheme } from '../theme/store.ts'
 import { isAquaFamily } from '../theme/themes.ts'
+import { isMilestone, useCelebrate } from './celebrate.ts'
 import { SAVE_FAILED, useDialog } from './dialogs.ts'
 import { NoteField } from './NoteField.tsx'
 import { countryName } from '../data/countries.ts'
@@ -24,6 +25,7 @@ type Props = { breed: Breed; spotted: Spot | undefined; spottedCount: number; on
 
 export function BreedWindow({ breed: b, spotted, spottedCount, onClose, folds, onFolds }: Props) {
   const ask = useDialog()
+  const celebrate = useCelebrate()
   const aqua = isAquaFamily(useTheme())
   const fold = (key: keyof Folds) => ({ open: folds[key], onToggle: (open: boolean) => onFolds({ ...folds, [key]: open }) })
   const title = useRef<HTMLSpanElement>(null)
@@ -64,6 +66,7 @@ export function BreedWindow({ breed: b, spotted, spottedCount, onClose, folds, o
     } finally {
       setSaving(false)
     }
+    if (isMilestone(spottedCount + 1)) celebrate()
     // Aqua's sheet shows the dog itself; Windows 98's message box keeps it plain.
     if (aqua) ask({ title: `${b.name} spotted`, text: `That's ${spottedCount + 1} of ${TOTAL} breeds.`, photo: b.image?.grid })
     else ask({ title: 'Spotted', text: `That's ${spottedCount + 1} of ${TOTAL} breeds.` })
