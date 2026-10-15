@@ -60,7 +60,7 @@ The screenshot baselines are recorded on macOS (`*-darwin.png`); another OS woul
 Live at https://good-dogs-only.byrecess.com, on Cloudflare Workers' free plan as static files (`wrangler.jsonc`), shared by link with friends and family.
 There's no password; `public/robots.txt`, a `noindex` header and a `noindex` meta tag ask search engines not to list it.
 
-- Merging into `main` deploys it automatically (Cloudflare Workers Builds), and other branches get a preview link at `<branch>-good-dogs-only.gooddogsonly.workers.dev`, also posted on their PR.
+- Merging into `main` deploys it automatically (Cloudflare Workers Builds), and other branches get a preview link at `<branch>-good-dogs-only.byrecess.workers.dev`, also posted on their PR.
   The phones pick up a new version the next time the app is opened.
 - `pnpm run deploy` builds and deploys from your computer, only needed if the automatic deploy is broken (first time on a new Mac: `pnpm exec wrangler login`).
 - Spots are saved per web address, so keep this address: moving the app means a backup and restore on each phone.
