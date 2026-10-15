@@ -3,9 +3,9 @@
 // Live at https://good-dogs-only.byrecess.com
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "dogdex",
+  "name": "good-dogs-only",
   "compatibility_date": "2026-09-01",
-  // The old address stays up so phones can still open it to save a backup, and for preview links.
+  // Keep the workers.dev address and per-version preview links, for checking changes before they go live.
   "workers_dev": true,
   "preview_urls": true,
   "routes": [

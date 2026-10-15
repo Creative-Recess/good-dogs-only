@@ -63,7 +63,7 @@ There's no password; `public/robots.txt`, a `noindex` header and a `noindex` met
 - Merging into `main` deploys it automatically (Cloudflare Workers Builds), and other branches get a preview link on their PR. The phones pick up a new version the next time the app is opened.
 - `pnpm run deploy` builds and deploys from your computer, only needed if the automatic deploy is broken (first time on a new Mac: `pnpm exec wrangler login`).
 - Spots are saved per web address, so keep this address: moving the app means a backup and restore on each phone.
-- It moved here from https://dogdex.gooddogsonly.workers.dev on 15 Oct 2026. The old address still works, so a phone that missed the move can open it, save a backup from Help, and restore it on the new address.
+- It moved here from https://dogdex.gooddogsonly.workers.dev on 15 Oct 2026, and that address no longer works (the Worker is now called `good-dogs-only`).
 
 ## Breed review page
 
