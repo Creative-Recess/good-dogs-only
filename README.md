@@ -50,7 +50,7 @@ The original v1 plan, with the decisions made along the way, is archived outside
 | `pnpm test` | Unit and data tests (Vitest) |
 | `pnpm test:e2e` | E2E tests in WebKit with iPhone emulation, once per theme, including screenshot comparisons (builds and serves the app first) |
 | `pnpm test:e2e --update-snapshots` | Accept new screenshots after an intended look change (review them first) |
-| `pnpm run deploy` | Build and put it live on Cloudflare |
+| `pnpm run deploy` | Build and deploy from your computer (only if the automatic deploy is broken; see Hosting) |
 
 First-time setup for E2E: `pnpm exec playwright install webkit`.
 The screenshot baselines are recorded on macOS (`*-darwin.png`); another OS would need its own.
@@ -60,7 +60,8 @@ The screenshot baselines are recorded on macOS (`*-darwin.png`); another OS woul
 Live at https://good-dogs-only.byrecess.com, on Cloudflare Workers' free plan as static files (`wrangler.jsonc`), shared by link with friends and family.
 There's no password; `public/robots.txt`, a `noindex` header and a `noindex` meta tag ask search engines not to list it.
 
-- Merging into `main` deploys it automatically (Cloudflare Workers Builds), and other branches get a preview link on their PR. The phones pick up a new version the next time the app is opened.
+- Merging into `main` deploys it automatically (Cloudflare Workers Builds), and other branches get a preview link at `<branch>-good-dogs-only.gooddogsonly.workers.dev`, also posted on their PR.
+  The phones pick up a new version the next time the app is opened.
 - `pnpm run deploy` builds and deploys from your computer, only needed if the automatic deploy is broken (first time on a new Mac: `pnpm exec wrangler login`).
 - Spots are saved per web address, so keep this address: moving the app means a backup and restore on each phone.
 - It moved here from https://dogdex.gooddogsonly.workers.dev on 15 Oct 2026, and that address no longer works (the Worker is now called `good-dogs-only`).
