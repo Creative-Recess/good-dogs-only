@@ -57,11 +57,13 @@ The screenshot baselines are recorded on macOS (`*-darwin.png`); another OS woul
 
 ## Hosting
 
-Live at https://dogdex.gooddogsonly.workers.dev, on Cloudflare Workers' free plan as static files (`wrangler.jsonc`), shared by link with friends and family.
+Live at https://good-dogs-only.byrecess.com, on Cloudflare Workers' free plan as static files (`wrangler.jsonc`), shared by link with friends and family.
 There's no password; `public/robots.txt`, a `noindex` header and a `noindex` meta tag ask search engines not to list it.
 
-- `pnpm run deploy` builds and puts the latest version live (first time on a new Mac: `pnpm exec wrangler login`). The phones pick it up the next time the app is opened.
+- Merging into `main` deploys it automatically (Cloudflare Workers Builds), and other branches get a preview link on their PR. The phones pick up a new version the next time the app is opened.
+- `pnpm run deploy` builds and deploys from your computer, only needed if the automatic deploy is broken (first time on a new Mac: `pnpm exec wrangler login`).
 - Spots are saved per web address, so keep this address: moving the app means a backup and restore on each phone.
+- It moved here from https://dogdex.gooddogsonly.workers.dev on 15 Oct 2026. The old address still works, so a phone that missed the move can open it, save a backup from Help, and restore it on the new address.
 
 ## Breed review page
 
