@@ -53,19 +53,10 @@ Ideas for what's next are in [BACKLOG.md](BACKLOG.md).
 | `pnpm test` | Unit and data tests (Vitest) |
 | `pnpm test:e2e` | E2E tests in WebKit with iPhone emulation, once per theme, including screenshot comparisons (builds and serves the app first) |
 | `pnpm test:e2e --update-snapshots` | Accept new screenshots after an intended look change (review them first) |
-| `pnpm run deploy` | Build and deploy to Cloudflare Workers (see Hosting) |
+| `pnpm run deploy` | Build and deploy to Cloudflare Workers |
 
 First-time setup for E2E: `pnpm exec playwright install webkit`.
 The screenshot baselines are recorded on macOS (`*-darwin.png`); another OS would need its own.
-
-## Hosting
-
-Live at https://good-dogs-only.byrecess.com, on Cloudflare Workers as static files (`wrangler.jsonc`).
-`public/robots.txt`, a `noindex` header and a `noindex` meta tag ask search engines not to list it.
-
-- `pnpm run deploy` builds it and deploys it to your own Cloudflare account (first time: `pnpm exec wrangler login`).
-  Phones pick up a new version the next time the app is opened.
-- Spots are saved per web address, so keep the address once people are using it: moving the app means a backup and restore on each phone.
 
 ## Breed review page
 
