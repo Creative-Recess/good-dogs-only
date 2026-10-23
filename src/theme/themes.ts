@@ -1,4 +1,5 @@
 // The themes Good Dogs Only can wear, in the order the Theme setting lists them.
+// themeColor is also the colour of the iPhone status bar; index.html repeats it to set it before the first paint.
 export const THEMES = [
   { id: 'glass', label: 'Aqua Glass', themeColor: '#e9eef5' },
   { id: 'aqua', label: 'Aqua', themeColor: '#dcdcdc' },
