@@ -104,6 +104,7 @@ test('closing a message box gives focus back to the button that opened it', asyn
 })
 
 test('every tenth breed spotted sets off the bone confetti', async ({ page }) => {
+  test.slow() // spots ten breeds, which can pass 30s when the whole suite is running at once
   const names = ['Pug', 'Beagle', 'Boxer', 'Dalmatian', 'Whippet', 'Samoyed', 'Basenji', 'Borzoi', 'Puli']
   for (const name of names) await spotBreed(page, name)
   await expect(page.locator('.confetti')).toHaveCount(0)

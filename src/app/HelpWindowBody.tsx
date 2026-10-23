@@ -3,15 +3,13 @@ import { useRef } from 'react'
 import { groupById, TOTAL } from '../data/catalogue.ts'
 import { backupFile, importBackup, markBackedUp, MAX_BACKUP_BYTES } from '../lib/backup.ts'
 import { formatDay } from '../lib/dates.ts'
-import { currentPlatform } from '../lib/platform.ts'
+import { currentBrowser, currentPlatform, isStandalone } from '../lib/platform.ts'
 import type { Sighting } from '../lib/sightings.ts'
 import { setTheme, useTheme } from '../theme/store.ts'
 import { THEMES } from '../theme/themes.ts'
 import { Icon } from '../ui/icons.tsx'
 import { useDialog } from './dialogs.ts'
-
-/** Running from the Home Screen icon rather than a Safari tab. */
-const standalone = () => matchMedia('(display-mode: standalone)').matches || (navigator as { standalone?: boolean }).standalone === true
+import { HomeScreenSteps } from './HomeScreenSteps.tsx'
 
 /** `sightings` is undefined until they've loaded, so a backup is never saved empty by mistake. */
 export function HelpWindowBody({ lastBackup, sightings }: { lastBackup: string | null; sightings: Sighting[] | undefined }) {
@@ -83,10 +81,10 @@ export function HelpWindowBody({ lastBackup, sightings }: { lastBackup: string |
       </fieldset>
       <fieldset className="panel-box">
         <legend>Add to Home Screen</legend>
-        {standalone() ? (
+        {isStandalone() ? (
           <p>Done: you're using Good Dogs Only from your Home Screen.</p>
         ) : (
-          <HomeScreenSteps />
+          <HomeScreenSteps platform={currentPlatform()} browser={currentBrowser()} />
         )}
       </fieldset>
       <fieldset className="panel-box">
@@ -118,30 +116,5 @@ export function HelpWindowBody({ lastBackup, sightings }: { lastBackup: string |
         </div>
       </fieldset>
     </>
-  )
-}
-
-/** How to add the app to the Home Screen on this kind of phone. */
-function HomeScreenSteps() {
-  const platform = currentPlatform()
-  return (
-    <ol>
-      {platform === 'ios' && (
-        <li>
-          Tap <b>Share</b>, then <b>Add to Home Screen</b>.
-        </li>
-      )}
-      {platform === 'android' && (
-        <li>
-          Open the browser menu <b>⋮</b>, then <b>Add to Home screen</b> or <b>Install app</b>.
-        </li>
-      )}
-      {platform === 'other' && (
-        <li>
-          On a phone, use the browser's <b>Add to Home Screen</b>. On a computer, look for <b>Install</b> in the address bar or browser menu.
-        </li>
-      )}
-      <li>Open it from the new icon. It runs full screen, like an app.</li>
-    </ol>
   )
 }

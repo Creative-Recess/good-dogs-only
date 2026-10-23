@@ -1,8 +1,20 @@
 import { defineConfig, devices } from '@playwright/test'
 
 // E2E tests run in WebKit with iPhone emulation, the closest match to Safari on iOS.
-/** Starts the browser with a theme already chosen on the "phone". */
-const withTheme = (theme: string) => ({ cookies: [], origins: [{ origin: 'http://localhost:4173', localStorage: [{ name: 'good-dogs-only.theme', value: theme }] }] })
+/** Starts the browser with a theme already chosen on the "phone", and the Add to Home Screen prompt turned off
+ *  (install.spec.ts turns it back on to test it). */
+const withTheme = (theme: string) => ({
+  cookies: [],
+  origins: [
+    {
+      origin: 'http://localhost:4173',
+      localStorage: [
+        { name: 'good-dogs-only.theme', value: theme },
+        { name: 'good-dogs-only.home-screen-prompt', value: 'off' },
+      ],
+    },
+  ],
+})
 
 export default defineConfig({
   testDir: './e2e',
