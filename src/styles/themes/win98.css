@@ -177,7 +177,7 @@ fieldset.profile { display: grid; gap: 8px; }
 .dialog .msg svg { width: 32px; height: 32px; flex: none; }
 .dialog .btns { display: flex; justify-content: center; gap: 6px; }
 /* The Add to Home Screen prompt: a wider dialog with steps and a warning. */
-.modal.homescreen-modal { background: rgba(0, 0, 0, 0.4); } /* blocks the app until it's closed */
+.modal.homescreen-modal { z-index: 85; background: rgba(0, 0, 0, 0.4); } /* blocks the app until it's closed */
 .dialog.homescreen { width: 250px; }
 .dialog.homescreen ol { margin: 0; padding-left: 18px; font-size: 11px; line-height: 1.5; }
 .dialog.homescreen li + li { margin-top: 3px; }

@@ -18,6 +18,12 @@ describe('browserOf', () => {
     expect(browserOf(`${iphone} Version/27.0 Mobile/15E148 Safari/604.1`, 'ios')).toBe('safari')
     expect(browserOf(`${iphone} CriOS/141.0 Mobile/15E148 Safari/604.1`, 'ios')).toBe('ios-other')
     expect(browserOf(`${iphone} FxiOS/145.0 Mobile/15E148 Safari/605.1.15`, 'ios')).toBe('ios-other')
+    // Brave, DuckDuckGo and Opera copy Safari's user agent, adding only their name (or nothing, for Brave at times).
+    const safari = `${iphone} Version/26.5 Mobile/15E148 Safari/604.1`
+    expect(browserOf(`${safari} Brave`, 'ios')).toBe('ios-other')
+    expect(browserOf(safari, 'ios', true)).toBe('ios-other')
+    expect(browserOf(`${safari} Ddg/26.5`, 'ios')).toBe('ios-other')
+    expect(browserOf(`${safari} OPT/5.3.0`, 'ios')).toBe('ios-other')
   })
   it("spots an app's own browser, which can't add to the Home Screen", () => {
     expect(browserOf(`${iphone} Mobile/15E148 Instagram 400.0.0`, 'ios')).toBe('in-app')

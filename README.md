@@ -21,8 +21,8 @@ The original v1 plan, with the decisions made along the way, is archived outside
 - **Progress**: the overall count, each group's percentage spotted, and the latest spots.
 - **Milestones**: every tenth breed spotted sets off a shower of dog bones (skipped with Reduce Motion on).
 - **Help** (the ? in the title bar): About, Theme, Add to Home Screen and Backup.
-- **Add to Home Screen prompt**: opened in a phone's browser, the app shows how to add it every visit, blocking the app until closed (`src/app/HomeScreenPrompt.tsx`).
-  iPhone gets Safari's steps, or Copy Link to open it in Safari from another browser or an app's own browser.
+- **Add to Home Screen prompt**: opened in a phone's browser, the app shows how to add it every visit, straight away over the launch screen and blocking the app until closed (`src/app/HomeScreenPrompt.tsx`).
+  iPhone gets Safari's steps, or Copy Link to open it in Safari from any other browser (Brave, DuckDuckGo and Opera included, which copy Safari's user agent) or an app's own browser.
   Android gets Chrome's Install button when Chrome offers one (steps otherwise), or Open App when Chrome says it's already installed (`related_applications` in the manifest); an iPhone can't tell.
   Add `?homescreen=safari`, `ios-other`, `in-app`, `android` or `android-installed` to any link to see a version.
 - **Themes**: Aqua Glass (the default), Aqua and Windows 98.

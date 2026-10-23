@@ -24,10 +24,9 @@ test('Help shows how to add it to the Home Screen on this phone', async ({ page 
   await expect(help.getByText(info.project.name === 'android' ? 'Install app' : 'View More')).toBeVisible()
 })
 
-test("opened in a phone's browser, it shows how to add it to the Home Screen, blocking the app, every visit", async ({ page }, info) => {
+test("opened in a phone's browser, it shows how to add it to the Home Screen straight away, blocking the app, every visit", async ({ page }, info) => {
   await page.addInitScript(() => localStorage.removeItem('good-dogs-only.home-screen-prompt')) // the tests turn it off
   await page.goto('/')
-  await page.getByRole('button', { name: /Tap to launch/ }).click()
   const prompt = page.getByRole('alertdialog', { name: 'Add to Home Screen' })
   await expect(prompt).toBeVisible()
   await expect(prompt.getByText(info.project.name === 'android' ? 'Install app' : 'View More')).toBeVisible()
@@ -37,27 +36,27 @@ test("opened in a phone's browser, it shows how to add it to the Home Screen, bl
   const screen = page.viewportSize()!
   expect(Math.abs(box.y + box.height / 2 - screen.height / 2)).toBeLessThan(40)
   await expect(prompt.locator('.btns button')).toHaveCount(1)
-  // A tap on the app behind it does nothing.
-  const progress = (await page.getByRole('tab', { name: 'Progress' }).boundingBox())!
-  await page.mouse.click(progress.x + progress.width / 2, progress.y + progress.height / 2)
+  // It's over the launch screen, and a tap outside it doesn't launch the app.
+  await page.mouse.click(screen.width / 2, screen.height - 20)
   await expect(prompt).toBeVisible()
-  await expect(page.getByRole('tab', { name: 'Dogdex' })).toHaveAttribute('aria-selected', 'true')
+  await expect(page.getByText('Tap to launch')).toBeVisible()
   await prompt.getByRole('button', { name: 'OK' }).click()
   await expect(prompt).toBeHidden()
+  await page.getByRole('button', { name: /Tap to launch/ }).click()
+  await expect(page.getByRole('tab', { name: 'Dogdex' })).toBeVisible()
   // Next visit, it asks again.
   await page.reload()
-  await page.getByRole('button', { name: /Tap to launch/ }).click()
   await expect(prompt).toBeVisible()
 })
 
 test('when the app is already installed, it offers to open it, or Close to stay in the browser', async ({ page }) => {
   await page.goto('/?homescreen=android-installed')
-  await page.getByRole('button', { name: /Tap to launch/ }).click()
   const prompt = page.getByRole('alertdialog', { name: 'Open the App' })
   await expect(prompt.getByRole('button', { name: 'Open App' })).toBeFocused()
   await expect(prompt.getByText('View More')).toHaveCount(0)
   await prompt.locator('.btns').getByRole('button', { name: 'Close' }).click() // not Windows 98's title bar X
   await expect(prompt).toBeHidden()
+  await page.getByRole('button', { name: /Tap to launch/ }).click()
   await page.getByRole('tab', { name: 'Progress' }).click()
   await expect(page.getByRole('tab', { name: 'Progress' })).toHaveAttribute('aria-selected', 'true')
 })
@@ -66,9 +65,8 @@ test("on an iPhone outside Safari, it sends you to Safari with the link copied",
   test.skip(browserName !== 'webkit', 'clipboard permissions differ by engine')
   await context.grantPermissions(['clipboard-read', 'clipboard-write']).catch(() => {})
   await page.goto('/?homescreen=ios-other')
-  await page.getByRole('button', { name: /Tap to launch/ }).click()
   const prompt = page.getByRole('alertdialog', { name: 'Open in Safari' })
-  await expect(prompt.getByText('can only be added to your Home Screen from Safari')).toBeVisible()
+  await expect(prompt.getByText('To add Good Dogs Only to your Home Screen, open it in Safari.')).toBeVisible()
   await prompt.getByRole('button', { name: 'Copy Link' }).click()
   await expect(prompt.getByRole('button', { name: 'Copied' })).toBeVisible()
   await prompt.locator('.btns').getByRole('button', { name: 'Close' }).click()

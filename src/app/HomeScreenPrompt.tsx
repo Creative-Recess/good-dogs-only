@@ -1,5 +1,5 @@
-// Opened in a phone's browser rather than from the Home Screen, the app explains how to add it, every time, once the
-// launch screen has gone: a message box (Aqua or Windows 98, like the others) in the middle of the screen, over a
+// Opened in a phone's browser rather than from the Home Screen, the app explains how to add it, every time, over the
+// launch screen: a message box (Aqua or Windows 98, like the others) in the middle of the screen, over a
 // shade that blocks the app until it's closed. When an Android phone already has the app, it offers to open it there
 // instead.
 // Preview any version with ?homescreen=safari, ios-other, in-app, android or android-installed.
@@ -19,7 +19,8 @@ export function HomeScreenPrompt({ where, onClose }: { where: Where; onClose: ()
   useEffect(() => defaultRef.current?.focus(), [where.installed])
   // Android: open the installed app; or Chrome's own install sheet when it offers one; or written steps.
   const installable = !where.installed && where.platform === 'android' && canInstall()
-  // iPhone: only Safari adds it properly, so another browser or an app's own browser is sent to Safari first.
+  // iPhone: Safari is the one browser we give steps for (Brave and apps' own browsers can't add it at all), so any
+  // other browser is sent to Safari first.
   // A page can't open Safari itself, so it copies the link to paste there.
   const needsSafari = where.platform === 'ios' && where.browser !== 'safari'
   const [copied, setCopied] = useState(false)
@@ -55,7 +56,7 @@ export function HomeScreenPrompt({ where, onClose }: { where: Where; onClose: ()
             <>
               {needsSafari ? (
                 <>
-                  <p className="why">Good Dogs Only can only be added to your Home Screen from Safari.</p>
+                  <p className="why">To add Good Dogs Only to your Home Screen, open it in Safari.</p>
                   <ol>
                     <li>
                       Tap <b>Copy Link</b>.

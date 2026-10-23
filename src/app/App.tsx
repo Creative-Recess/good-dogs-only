@@ -49,7 +49,7 @@ export default function App() {
   const endConfetti = useCallback(() => setConfetti(0), [])
   const [saver, setSaver] = useState(false)
   const [helpOpen, setHelpOpen] = useState(false)
-  // Opened in a phone's browser: how to add it to the Home Screen, once the launch screen has gone, or, when an
+  // Opened in a phone's browser: how to add it to the Home Screen, straight away over the launch screen, or, when an
   // Android phone already has it installed, a way to open it there.
   const [homeScreen, setHomeScreen] = useState(homeScreenPromptFor)
   useEffect(() => {
@@ -171,7 +171,7 @@ export default function App() {
           </div>
           {helpOpen && <HelpWindow lastBackup={lastBackup} sightings={sightings} onClose={() => setHelpOpen(false)} />}
           {breed && <BreedWindow key={breed.id} breed={breed} spotted={spots.get(breed.id)} spottedCount={spots.size} onClose={() => setDetail(null)} folds={folds} onFolds={setFolds} />}
-          {launched && homeScreen && !dialog && <HomeScreenPrompt where={homeScreen} onClose={() => setHomeScreen(null)} />}
+          {homeScreen && !dialog && <HomeScreenPrompt where={homeScreen} onClose={() => setHomeScreen(null)} />}
           {dialog && <Dialog spec={dialog} onClose={() => setDialog(null)} />}
           {confetti > 0 && <Confetti key={confetti} onDone={endConfetti} />}
           {/* Minimise: the Park as a screensaver, full screen, until you tap. */}
