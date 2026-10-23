@@ -222,6 +222,11 @@
   .dialog .msg b { display: block; font-size: 12px; margin-bottom: 3px; }
   .dialog .btns { display: flex; justify-content: flex-end; gap: 8px; }
   .dialog .btns button { min-width: 64px; }
+  /* The Add to Home Screen prompt: a wider sheet with steps and a warning. */
+  .dialog.homescreen { width: 250px; }
+  .dialog.homescreen ol { margin: 0; padding-left: 18px; font-size: 11px; line-height: 1.5; }
+  .dialog.homescreen li + li { margin-top: 4px; }
+  .dialog.homescreen .warn { align-items: flex-start; margin: 0; line-height: 1.45; }
 
   /* Launch screen: light grey, like the Mac OS X start-up screen. */
   .boot { all: unset; position: absolute; inset: 0; z-index: 70; background: radial-gradient(circle at 50% 42%, #f4f4f4, #c9c9c9 85%); display: grid; place-items: center; align-content: center; gap: 22px; color: #333; cursor: pointer; }

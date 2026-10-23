@@ -176,6 +176,11 @@ fieldset.profile { display: grid; gap: 8px; }
 .dialog .msg { display: flex; gap: 10px; align-items: flex-start; font-size: 11px; line-height: 1.5; }
 .dialog .msg svg { width: 32px; height: 32px; flex: none; }
 .dialog .btns { display: flex; justify-content: center; gap: 6px; }
+/* The Add to Home Screen prompt: a wider dialog with steps and a warning. */
+.dialog.homescreen { width: 250px; }
+.dialog.homescreen ol { margin: 0; padding-left: 18px; font-size: 11px; line-height: 1.5; }
+.dialog.homescreen li + li { margin-top: 3px; }
+.dialog.homescreen .warn { align-items: flex-start; margin: 0; line-height: 1.45; }
 .boot { all: unset; position: absolute; inset: 0; z-index: 70; background: #000; display: grid; place-items: center; align-content: center; gap: 18px; color: #fff; cursor: pointer; }
 .boot .logo { display: flex; align-items: center; gap: 10px; }
 .boot .logo svg { width: 48px; height: 48px; }
