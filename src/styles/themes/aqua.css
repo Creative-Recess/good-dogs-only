@@ -222,11 +222,17 @@
   .dialog .msg b { display: block; font-size: 12px; margin-bottom: 3px; }
   .dialog .btns { display: flex; justify-content: flex-end; gap: 8px; }
   .dialog .btns button { min-width: 64px; }
-  /* The Add to Home Screen prompt: a wider sheet with steps and a warning. */
-  .dialog.homescreen { width: 250px; }
+  /* The Add to Home Screen prompt: a wider alert with steps and a warning, in the middle of the screen over a shade
+     that blocks the app (an alert window rather than a sheet, so it fades in instead of sliding down). */
+  .modal.homescreen-modal { align-items: center; padding: 0 6px; background: rgba(12, 22, 40, 0.45); animation: homescreen-shade 0.2s ease-out; }
+  .dialog.homescreen { width: 250px; border-radius: 8px; animation: homescreen-alert 0.2s ease-out; }
+  @keyframes homescreen-shade { from { opacity: 0; } }
+  @keyframes homescreen-alert { from { opacity: 0; transform: scale(0.94); } }
   .dialog.homescreen ol { margin: 0; padding-left: 18px; font-size: 11px; line-height: 1.5; }
   .dialog.homescreen li + li { margin-top: 4px; }
   .dialog.homescreen .warn { align-items: flex-start; margin: 0; line-height: 1.45; }
+  .dialog.homescreen .msg.head { align-items: center; }
+  .dialog.homescreen .msg.head b { margin: 0; font-size: 13px; }
 
   /* Launch screen: light grey, like the Mac OS X start-up screen. */
   .boot { all: unset; position: absolute; inset: 0; z-index: 70; background: radial-gradient(circle at 50% 42%, #f4f4f4, #c9c9c9 85%); display: grid; place-items: center; align-content: center; gap: 22px; color: #333; cursor: pointer; }
@@ -262,7 +268,7 @@
 
 
   @media (prefers-reduced-motion: reduce) {
-    .progress-indicator-bar, button.default, .dialog, .gear i { animation: none; transition: none; }
+    .progress-indicator-bar, button.default, .dialog, .gear i, .modal.homescreen-modal, .dialog.homescreen { animation: none; transition: none; }
   }
 }
 @keyframes aqua-pulse { 50% { filter: brightness(1.12) saturate(0.85); } }

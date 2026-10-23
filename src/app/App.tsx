@@ -4,7 +4,7 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { useCallback, useEffect, useMemo, useRef, useState, type KeyboardEvent } from 'react'
 import { breedById } from '../data/catalogue.ts'
 import { LAST_BACKUP } from '../lib/backup.ts'
-import { homeScreenPromptFor } from '../lib/homeScreen.ts'
+import { homeScreenPromptFor, isInstalled } from '../lib/homeScreen.ts'
 import { db, toSpots } from '../lib/sightings.ts'
 import { useTheme } from '../theme/store.ts'
 import { isAquaFamily } from '../theme/themes.ts'
@@ -49,8 +49,17 @@ export default function App() {
   const endConfetti = useCallback(() => setConfetti(0), [])
   const [saver, setSaver] = useState(false)
   const [helpOpen, setHelpOpen] = useState(false)
-  // Opened in a phone's browser: how to add it to the Home Screen, once the launch screen has gone.
+  // Opened in a phone's browser: how to add it to the Home Screen, once the launch screen has gone, or, when an
+  // Android phone already has it installed, a way to open it there.
   const [homeScreen, setHomeScreen] = useState(homeScreenPromptFor)
+  useEffect(() => {
+    if (homeScreen?.platform !== 'android') return
+    void isInstalled().then((installed) => {
+      if (installed) setHomeScreen((w) => w && { ...w, installed: true })
+    })
+    // Checked once, as the app opens.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
   const [folds, setFolds] = useState<Folds>({ temperament: true, varieties: true, status: true })
   const theme = useTheme()
   const aqua = isAquaFamily(theme)
@@ -162,7 +171,7 @@ export default function App() {
           </div>
           {helpOpen && <HelpWindow lastBackup={lastBackup} sightings={sightings} onClose={() => setHelpOpen(false)} />}
           {breed && <BreedWindow key={breed.id} breed={breed} spotted={spots.get(breed.id)} spottedCount={spots.size} onClose={() => setDetail(null)} folds={folds} onFolds={setFolds} />}
-          {launched && homeScreen && !dialog && <HomeScreenPrompt where={homeScreen} spotted={spots.size} onClose={() => setHomeScreen(null)} />}
+          {launched && homeScreen && !dialog && <HomeScreenPrompt where={homeScreen} onClose={() => setHomeScreen(null)} />}
           {dialog && <Dialog spec={dialog} onClose={() => setDialog(null)} />}
           {confetti > 0 && <Confetti key={confetti} onDone={endConfetti} />}
           {/* Minimise: the Park as a screensaver, full screen, until you tap. */}

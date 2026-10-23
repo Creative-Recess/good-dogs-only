@@ -22,28 +22,44 @@ test('Help shows how to add it to the Home Screen on this phone', async ({ page 
   await openHelp(page)
   const help = page.getByRole('group', { name: 'Add to Home Screen' })
   await expect(help.getByText(info.project.name === 'android' ? 'Install app' : 'View More')).toBeVisible()
-  await expect(help.getByText('Open it from the new icon.', { exact: false })).toBeVisible()
 })
 
-test("opened in a phone's browser, it shows how to add it to the Home Screen until Don't Show Again", async ({ page }, info) => {
-  await page.addInitScript(() => {
-    // Turn the prompt back on for this test's first visit only (the reload below must see Don't Show Again).
-    if (!sessionStorage.getItem('tested')) localStorage.removeItem('good-dogs-only.home-screen-prompt')
-    sessionStorage.setItem('tested', '1')
-  })
+test("opened in a phone's browser, it shows how to add it to the Home Screen, blocking the app, every visit", async ({ page }, info) => {
+  await page.addInitScript(() => localStorage.removeItem('good-dogs-only.home-screen-prompt')) // the tests turn it off
   await page.goto('/')
   await page.getByRole('button', { name: /Tap to launch/ }).click()
   const prompt = page.getByRole('alertdialog', { name: 'Add to Home Screen' })
   await expect(prompt).toBeVisible()
   await expect(prompt.getByText(info.project.name === 'android' ? 'Install app' : 'View More')).toBeVisible()
-  // Only an iPhone keeps the Home Screen app's spots apart from the browser's.
-  await expect(prompt.getByText("don't move across to the app")).toHaveCount(info.project.name === 'android' ? 0 : 1)
-  await prompt.getByRole('button', { name: "Don't Show Again" }).click()
+  await expect(prompt.getByText('save data and work like a normal app store app')).toBeVisible()
+  // In the middle of the screen, with OK the only way on.
+  const box = (await prompt.boundingBox())!
+  const screen = page.viewportSize()!
+  expect(Math.abs(box.y + box.height / 2 - screen.height / 2)).toBeLessThan(40)
+  await expect(prompt.locator('.btns button')).toHaveCount(1)
+  // A tap on the app behind it does nothing.
+  const progress = (await page.getByRole('tab', { name: 'Progress' }).boundingBox())!
+  await page.mouse.click(progress.x + progress.width / 2, progress.y + progress.height / 2)
+  await expect(prompt).toBeVisible()
+  await expect(page.getByRole('tab', { name: 'Dogdex' })).toHaveAttribute('aria-selected', 'true')
+  await prompt.getByRole('button', { name: 'OK' }).click()
   await expect(prompt).toBeHidden()
+  // Next visit, it asks again.
   await page.reload()
   await page.getByRole('button', { name: /Tap to launch/ }).click()
-  await expect(page.getByRole('tab', { name: 'Dogdex' })).toBeVisible()
+  await expect(prompt).toBeVisible()
+})
+
+test('when the app is already installed, it offers to open it, or Close to stay in the browser', async ({ page }) => {
+  await page.goto('/?homescreen=android-installed')
+  await page.getByRole('button', { name: /Tap to launch/ }).click()
+  const prompt = page.getByRole('alertdialog', { name: 'Open the App' })
+  await expect(prompt.getByRole('button', { name: 'Open App' })).toBeFocused()
+  await expect(prompt.getByText('View More')).toHaveCount(0)
+  await prompt.locator('.btns').getByRole('button', { name: 'Close' }).click() // not Windows 98's title bar X
   await expect(prompt).toBeHidden()
+  await page.getByRole('tab', { name: 'Progress' }).click()
+  await expect(page.getByRole('tab', { name: 'Progress' })).toHaveAttribute('aria-selected', 'true')
 })
 
 test('the prompt stays out of the way on a computer', async ({ browser }) => {

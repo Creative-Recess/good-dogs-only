@@ -10,7 +10,7 @@ const withTheme = (theme: string) => ({
       origin: 'http://localhost:4173',
       localStorage: [
         { name: 'good-dogs-only.theme', value: theme },
-        { name: 'good-dogs-only.home-screen-prompt', value: 'dismissed' },
+        { name: 'good-dogs-only.home-screen-prompt', value: 'off' },
       ],
     },
   ],
