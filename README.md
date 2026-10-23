@@ -126,5 +126,6 @@ Downloads and other working files go in `.cache/` (not committed).
   The rare breeds were checked against those sources one by one; many common breeds' figures are typical published ranges that weren't each re-checked, so fix any that look off.
 - Most breed photos are Dogs Australia's own (Justin's call for this private app), and the rest come from Wikimedia Commons.
   Credits are kept per photo in `src/data/breeds.json` but not shown in the app.
-  The repo stays private. The site has no password (Justin's call, 2 Oct 2026), so anyone with the link can see the photos; search engines are asked not to list it.
+  The repo is public (Justin's call, 23 Oct 2026), photos included. The site has no password (Justin's call, 2 Oct 2026); search engines are asked not to list it.
+- The code and our own writing are MIT licensed ([LICENSE](LICENSE)); the breed photos are not ours to license, so they aren't covered.
 - The earlier HTML mockups and prototypes were removed; they're kept in git history under the tag `mockups-final`.
