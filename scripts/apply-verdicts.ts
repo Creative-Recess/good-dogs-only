@@ -1,5 +1,5 @@
 // Turns reviewers' tile choices into file picks in data/photo-picks.json, using the round's sheet index.
-// Never overwrites a pick Justin made. Reports any photo picked for two entries.
+// Never overwrites a pick made by hand. Reports any photo picked for two entries.
 // Usage: node scripts/apply-verdicts.ts <round> <verdicts.json> [more.json ...]
 import { existsSync } from 'node:fs'
 import { readFile, writeFile } from 'node:fs/promises'

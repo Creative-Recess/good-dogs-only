@@ -9,7 +9,7 @@ Nothing right now.
 
 ## Ideas
 
-- **Share spots with Rosie.** One shared collection across phones, or each keeps their own and you can compare progress.
+- **Share spots with friends.** One shared collection across phones, or each keeps their own and you can compare progress.
   Needs a small backend: Cloudflare D1 (a database on the account the app already uses) with a sync from each phone.
   The sightings data was designed for this: every spot has its own id and timestamps, and Unsee is a soft delete, so merging is safe.
 - **Your own photo of each dog.** Take a photo when you mark a breed Spotted, shown on its breed page and in Recently spotted.

@@ -21,9 +21,9 @@ export type Candidate = {
 /** The chosen photo for one dex entry (data/photo-picks.json). focus: dog centre as [x, y] fractions, for the square crop. */
 export type PhotoPick = {
   file: string | null
-  /** A photo from outside Commons that Justin chose (e.g. a Dogs Australia breed photo). */
+  /** A photo from outside Commons chosen by hand (e.g. a Dogs Australia breed photo). */
   /**
-   * A photo from outside Commons that Justin chose (e.g. a Dogs Australia breed photo). `saved` is a copy kept in
+   * A photo from outside Commons chosen by hand (e.g. a Dogs Australia breed photo). `saved` is a copy kept in
    * data/photos/ for sites that don't allow downloads; otherwise the build downloads `url`.
    */
   external?: { url: string; credit: string; sourceUrl: string; saved?: string }
