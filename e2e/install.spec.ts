@@ -62,6 +62,19 @@ test('when the app is already installed, it offers to open it, or Close to stay 
   await expect(page.getByRole('tab', { name: 'Progress' })).toHaveAttribute('aria-selected', 'true')
 })
 
+test("on an iPhone outside Safari, it sends you to Safari with the link copied", async ({ page, context, browserName }) => {
+  test.skip(browserName !== 'webkit', 'clipboard permissions differ by engine')
+  await context.grantPermissions(['clipboard-read', 'clipboard-write']).catch(() => {})
+  await page.goto('/?homescreen=ios-other')
+  await page.getByRole('button', { name: /Tap to launch/ }).click()
+  const prompt = page.getByRole('alertdialog', { name: 'Open in Safari' })
+  await expect(prompt.getByText('can only be added to your Home Screen from Safari')).toBeVisible()
+  await prompt.getByRole('button', { name: 'Copy Link' }).click()
+  await expect(prompt.getByRole('button', { name: 'Copied' })).toBeVisible()
+  await prompt.locator('.btns').getByRole('button', { name: 'Close' }).click()
+  await expect(prompt).toBeHidden()
+})
+
 test('the prompt stays out of the way on a computer', async ({ browser }) => {
   const page = await browser.newPage({ viewport: { width: 1280, height: 800 } })
   await page.goto('/')

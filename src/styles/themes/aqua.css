@@ -230,8 +230,7 @@
   @keyframes homescreen-alert { from { opacity: 0; transform: scale(0.94); } }
   .dialog.homescreen ol { margin: 0; padding-left: 18px; font-size: 11px; line-height: 1.5; }
   .dialog.homescreen li + li { margin-top: 4px; }
-  .dialog.homescreen .warn { align-items: flex-start; gap: 12px; margin: 0; line-height: 1.45; }
-  .dialog.homescreen .warn svg { width: 40px; height: 26px; } /* the paw's column, so the text lines up with the title */
+  .dialog.homescreen .why { margin: 0; font-size: 11px; line-height: 1.5; }
   .dialog.homescreen .msg.head { align-items: center; }
   .dialog.homescreen .msg.head b { margin: 0; font-size: 13px; }
 

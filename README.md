@@ -3,7 +3,7 @@
 A Pokedex-style phone app for ticking off the dog breeds you spot at the park, dressed as an old desktop program.
 The list is every Dogs Australia (ANKC) breed standard (227) plus a Bonus group of 12 common unofficial breeds and crosses, 239 in all.
 
-It's a home-screen web app: open it in Safari on an iPhone, tap Share, then "Add to Home Screen".
+It's a home-screen web app: open it in Safari on an iPhone, tap ••• next to the address bar, then Share, View More and "Add to Home Screen".
 Sightings are stored on the phone only (IndexedDB), with a backup file you can save and restore from Help.
 
 Ideas for what's next are in [BACKLOG.md](BACKLOG.md).
@@ -21,6 +21,10 @@ The original v1 plan, with the decisions made along the way, is archived outside
 - **Progress**: the overall count, each group's percentage spotted, and the latest spots.
 - **Milestones**: every tenth breed spotted sets off a shower of dog bones (skipped with Reduce Motion on).
 - **Help** (the ? in the title bar): About, Theme, Add to Home Screen and Backup.
+- **Add to Home Screen prompt**: opened in a phone's browser, the app shows how to add it every visit, blocking the app until closed (`src/app/HomeScreenPrompt.tsx`).
+  iPhone gets Safari's steps, or Copy Link to open it in Safari from another browser or an app's own browser.
+  Android gets Chrome's Install button when Chrome offers one (steps otherwise), or Open App when Chrome says it's already installed (`related_applications` in the manifest); an iPhone can't tell.
+  Add `?homescreen=safari`, `ios-other`, `in-app`, `android` or `android-installed` to any link to see a version.
 - **Themes**: Aqua Glass (the default), Aqua and Windows 98.
 
 ## Stack
