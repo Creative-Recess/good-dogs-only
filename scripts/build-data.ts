@@ -62,7 +62,7 @@ for (const b of buildBreedList()) {
     continue
   }
 
-  // Where the photo comes from: a Wikimedia Commons file (licence-checked), or a page Justin chose (Dogs Australia).
+  // Where the photo comes from: a Wikimedia Commons file (licence-checked), or a page chosen by hand (Dogs Australia).
   let local: string
   let credit: PhotoCredit
   if (pick.external) {

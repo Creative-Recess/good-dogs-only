@@ -1,5 +1,5 @@
 // Shared HTTP helpers for the data scripts. Wikimedia requires a descriptive User-Agent with contact details.
-export const USER_AGENT = `GoodDogsOnly/0.1 (https://github.com/justinlew25; personal non-commercial project) Node.js/${process.versions.node}`
+export const USER_AGENT = `GoodDogsOnly/0.1 (https://github.com/Creative-Recess/good-dogs-only) Node.js/${process.versions.node}`
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
 

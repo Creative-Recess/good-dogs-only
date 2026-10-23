@@ -7,7 +7,6 @@ It's a home-screen web app: open it in Safari on an iPhone, tap ••• next t
 Sightings are stored on the phone only (IndexedDB), with a backup file you can save and restore from Help.
 
 Ideas for what's next are in [BACKLOG.md](BACKLOG.md).
-The original v1 plan, with the decisions made along the way, is archived outside this repo at `personal/task-plans/archive/dog-breed-dex.md` in Justin's AI workspace.
 
 ## What's in the app
 
@@ -54,21 +53,19 @@ The original v1 plan, with the decisions made along the way, is archived outside
 | `pnpm test` | Unit and data tests (Vitest) |
 | `pnpm test:e2e` | E2E tests in WebKit with iPhone emulation, once per theme, including screenshot comparisons (builds and serves the app first) |
 | `pnpm test:e2e --update-snapshots` | Accept new screenshots after an intended look change (review them first) |
-| `pnpm run deploy` | Build and deploy from your computer (only if the automatic deploy is broken; see Hosting) |
+| `pnpm run deploy` | Build and deploy to Cloudflare Workers (see Hosting) |
 
 First-time setup for E2E: `pnpm exec playwright install webkit`.
 The screenshot baselines are recorded on macOS (`*-darwin.png`); another OS would need its own.
 
 ## Hosting
 
-Live at https://good-dogs-only.byrecess.com, on Cloudflare Workers' free plan as static files (`wrangler.jsonc`), shared by link with friends and family.
-There's no password; `public/robots.txt`, a `noindex` header and a `noindex` meta tag ask search engines not to list it.
+Live at https://good-dogs-only.byrecess.com, on Cloudflare Workers as static files (`wrangler.jsonc`).
+`public/robots.txt`, a `noindex` header and a `noindex` meta tag ask search engines not to list it.
 
-- Merging into `main` deploys it automatically (Cloudflare Workers Builds), and other branches get a preview link at `<branch>-good-dogs-only.byrecess.workers.dev`, also posted on their PR.
-  The phones pick up a new version the next time the app is opened.
-- `pnpm run deploy` builds and deploys from your computer, only needed if the automatic deploy is broken (first time on a new Mac: `pnpm exec wrangler login`).
-- Spots are saved per web address, so keep this address: moving the app means a backup and restore on each phone.
-- It moved here from https://dogdex.gooddogsonly.workers.dev on 15 Oct 2026, and that address no longer works (the Worker is now called `good-dogs-only`).
+- `pnpm run deploy` builds it and deploys it to your own Cloudflare account (first time: `pnpm exec wrangler login`).
+  Phones pick up a new version the next time the app is opened.
+- Spots are saved per web address, so keep the address once people are using it: moving the app means a backup and restore on each phone.
 
 ## Breed review page
 
@@ -124,8 +121,7 @@ Downloads and other working files go in `.cache/` (not committed).
   The breed text is written in our own words, never copied from a breed standard.
 - Breed facts (weight, lifespan, origin, original job) were researched in Oct 2026 against the AKC, The Kennel Club, the FCI and Wikipedia, and written in our own words.
   The rare breeds were checked against those sources one by one; many common breeds' figures are typical published ranges that weren't each re-checked, so fix any that look off.
-- Most breed photos are Dogs Australia's own (Justin's call for this private app), and the rest come from Wikimedia Commons.
+- Most breed photos are Dogs Australia's own, and the rest come from Wikimedia Commons.
   Credits are kept per photo in `src/data/breeds.json` but not shown in the app.
-  The repo is public (Justin's call, 23 Oct 2026), photos included. The site has no password (Justin's call, 2 Oct 2026); search engines are asked not to list it.
 - The code and our own writing are MIT licensed ([LICENSE](LICENSE)); the breed photos are not ours to license, so they aren't covered.
 - The earlier HTML mockups and prototypes were removed; they're kept in git history under the tag `mockups-final`.

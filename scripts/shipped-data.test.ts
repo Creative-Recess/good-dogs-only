@@ -52,8 +52,8 @@ describe('src/data/breeds.json', () => {
       const c = b.credit!
       expect(c.author, b.id).toBeTruthy()
       if (c.restricted) {
-        // Justin's call (1 Oct 2026): Dogs Australia's own breed photos wherever they have one, credited to them.
-        // Other non-Commons photos only where Justin chose them himself.
+        // Dogs Australia's own breed photos wherever they have one, credited to them.
+        // Other non-Commons photos only where they were chosen by hand.
         const byJustin = (picksFile.picks as Record<string, { by: string }>)[b.id]?.by === 'justin'
         if (!byJustin) expect(c.sourceUrl, b.id).toMatch(/^https:\/\/dogsaustralia\.org\.au\/BrowseBreed\//)
       } else {

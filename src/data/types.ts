@@ -80,7 +80,7 @@ export type PhotoCredit = {
   sourceUrl: string
   /** How we changed it, for licence compliance, e.g. "resized and cropped". */
   changes: string
-  /** Not openly licensed: used at Justin's discretion for this private app (Dogs Australia photos). */
+  /** Not openly licensed (Dogs Australia photos), so not covered by this repo's licence. */
   restricted?: boolean
 }
 
