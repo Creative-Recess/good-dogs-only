@@ -1,4 +1,4 @@
-// Message boxes: a Windows 98 dialog, or an Aqua sheet that drops from the title bar with the app icon (or the dog)
+// Message boxes: a Windows 98 dialog, or an Aqua alert in the middle of the screen with the app icon (or the dog)
 // and a bold title. The last button is the default (the safe choice) and gets focus.
 import { useEffect, useRef } from 'react'
 import { useTheme } from '../theme/store.ts'
@@ -27,7 +27,7 @@ export function Dialog({ spec, onClose }: { spec: DialogSpec; onClose: () => voi
         <div className="window-body">
           {aqua ? (
             <div className="msg">
-              {spec.photo ? <img className="sheet-photo" src={spec.photo} alt="" /> : <Icon name={spec.icon === 'warn' ? 'warn' : 'bigPaw'} />}
+              {spec.photo ? <img className="alert-photo" src={spec.photo} alt="" /> : <Icon name={spec.icon === 'warn' ? 'warn' : 'bigPaw'} />}
               <span>
                 <b>{spec.title}</b>
                 <span id="dialog-text">{spec.text}</span>

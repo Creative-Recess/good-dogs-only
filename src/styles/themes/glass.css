@@ -40,11 +40,11 @@
   .icon:focus-visible .label, .icon:active .label { background: var(--selection); }
   @media (hover: hover) { .icon:hover .label { background: var(--selection); } }
   .park-hint { background: rgba(255, 255, 255, 0.6); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
-  /* Windows on top of other windows (breed, Help, sheets) are frosted over the wallpaper itself rather than over
+  /* Windows on top of other windows (breed, Help, alerts) are frosted over the wallpaper itself rather than over
      the screen beneath, so nothing behind them ever shows through their text. */
   .props.window, .dialog.window { background: linear-gradient(rgba(246, 248, 252, 0.9), rgba(246, 248, 252, 0.9)), var(--wallpaper); -webkit-backdrop-filter: none; backdrop-filter: none; }
   .props .title-bar { background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.25)); }
-  .dialog { border-radius: 0 0 10px 10px; }
+  .dialog { border-radius: 10px; }
   /* Launch screen: a frosted panel floating over the wallpaper. */
   .boot { background: var(--wallpaper); }
   .boot .logo { padding: 22px 30px 18px; border-radius: 16px; background: rgba(255, 255, 255, 0.5); -webkit-backdrop-filter: blur(18px) saturate(1.5); backdrop-filter: blur(18px) saturate(1.5); box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.2), 0 10px 30px rgba(20, 40, 80, 0.25); }

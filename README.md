@@ -18,7 +18,7 @@ Ideas for what's next are in [BACKLOG.md](BACKLOG.md).
   It follows the real sun over the park: Dawn, Sunrise, Daytime, Golden hour, Dusk and Night, each with its own sky and light, and the city, Opera House, Bridge and path lamps lit after dark.
   The yellow title-bar button opens it as a screensaver.
 - **Progress**: the overall count, each group's percentage spotted, and the latest spots.
-- **Milestones**: every tenth breed spotted sets off a shower of dog bones (skipped with Reduce Motion on).
+- **Milestones**: every fifth breed spotted sets off a shower of dog bones (skipped with Reduce Motion on).
 - **Help** (the ? in the title bar): About, Theme, Add to Home Screen and Backup.
 - **Add to Home Screen prompt**: opened in a phone's browser, the app shows how to add it every visit, straight away over the launch screen and blocking the app until closed (`src/app/HomeScreenPrompt.tsx`).
   iPhone gets Safari's steps, or Copy Link to open it in Safari from any other browser (Brave, DuckDuckGo and Opera included, which copy Safari's user agent) or an app's own browser.
@@ -32,7 +32,7 @@ Ideas for what's next are in [BACKLOG.md](BACKLOG.md).
   Windows 98 builds on 98.css (vendored in `src/vendor/98css`).
 - Themes: the choice is `<html data-theme>`, saved in localStorage (`src/theme/`), and a tiny script in `index.html` sets it before the first paint so the wrong theme never flashes.
   Each theme's CSS sits in a cascade layer inside an `@scope` for that theme (needs Safari 17.4 or later); a Vite plugin (`scripts/lib/scope-css.ts`) fences 98.css in to Windows 98 the same way, so no theme's styles reach another.
-  Components that differ by theme (title bar, toolbar or tabs, fold-away sections, sheets, the launch screen, icons in `src/ui/icons/`) read `useTheme()`.
+  Components that differ by theme (title bar, toolbar or tabs, fold-away sections, alerts, the launch screen, icons in `src/ui/icons/`) read `useTheme()`.
 - Dexie.js over IndexedDB for sightings (`src/lib/sightings.ts`); Unsee keeps a deleted marker so an older backup can't bring a dog back.
   Backups (`src/lib/backup.ts`) merge by sighting, newest change wins.
 - The Park is a framework-free canvas engine in `src/park/` (scene, dog drawing, behaviour).
