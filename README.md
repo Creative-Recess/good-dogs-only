@@ -32,7 +32,7 @@ Ideas for what's next are in [BACKLOG.md](BACKLOG.md).
   Windows 98 builds on 98.css (vendored in `src/vendor/98css`).
 - Themes: the choice is `<html data-theme>`, saved in localStorage (`src/theme/`), and a tiny script in `index.html` sets it before the first paint so the wrong theme never flashes.
   Each theme's CSS sits in a cascade layer inside an `@scope` for that theme (needs Safari 17.4 or later); a Vite plugin (`scripts/lib/scope-css.ts`) fences 98.css in to Windows 98 the same way, so no theme's styles reach another.
-  Components that differ by theme (title bar, toolbar or tabs, fold-away sections, sheets, the launch screen, icons in `src/ui/icons/`) read `useTheme()`.
+  Components that differ by theme (title bar, toolbar or tabs, fold-away sections, alerts, the launch screen, icons in `src/ui/icons/`) read `useTheme()`.
 - Dexie.js over IndexedDB for sightings (`src/lib/sightings.ts`); Unsee keeps a deleted marker so an older backup can't bring a dog back.
   Backups (`src/lib/backup.ts`) merge by sighting, newest change wins.
 - The Park is a framework-free canvas engine in `src/park/` (scene, dog drawing, behaviour).

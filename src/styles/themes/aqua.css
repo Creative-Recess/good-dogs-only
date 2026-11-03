@@ -1,5 +1,5 @@
 /* Aqua and Aqua Glass: early Mac OS X. Pinstriped windows, gel buttons, traffic lights, a System Preferences style
-   toolbar, Get Info style fold-away sections, sheets, and the spinning gear. Aqua Glass adds glass.css on top. */
+   toolbar, Get Info style fold-away sections, alerts, and the spinning gear. Aqua Glass adds glass.css on top. */
 @layer theme {
 @scope (:root[data-theme="aqua"], :root[data-theme="glass"]) {
 
@@ -212,9 +212,9 @@
   .warn { display: flex; align-items: center; gap: 7px; font-size: 11px; margin-bottom: 8px; }
   .warn svg { width: 24px; height: 24px; flex: none; }
 
-  /* Dialogs are Aqua sheets: they slide down out of the title bar. */
-  .modal { position: absolute; inset: 0; z-index: 60; display: flex; justify-content: center; align-items: flex-start; padding-top: 22px; }
-  .dialog { width: 240px; border-radius: 0 0 6px 6px; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35), 0 10px 24px rgba(0, 0, 0, 0.45); animation: aqua-sheet 0.28s ease-out; }
+  /* Dialogs are Aqua alerts: they fade in, in the middle of the screen. */
+  .modal { position: absolute; inset: 0; z-index: 60; display: flex; justify-content: center; align-items: center; }
+  .dialog { width: 240px; border-radius: 8px; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35), 0 10px 24px rgba(0, 0, 0, 0.45); animation: aqua-alert 0.2s ease-out; }
   .dialog .title-bar { display: none; }
   .dialog .window-body { display: grid; gap: 14px; padding: 14px 14px 12px; }
   .dialog .msg { display: flex; gap: 12px; align-items: flex-start; font-size: 11px; line-height: 1.5; }
@@ -222,12 +222,11 @@
   .dialog .msg b { display: block; font-size: 12px; margin-bottom: 3px; }
   .dialog .btns { display: flex; justify-content: flex-end; gap: 8px; }
   .dialog .btns button { min-width: 64px; }
-  /* The Add to Home Screen prompt: a wider alert with steps and a warning, in the middle of the screen over a shade
-     that blocks the app (an alert window rather than a sheet, so it fades in instead of sliding down). */
-  .modal.homescreen-modal { z-index: 85; align-items: center; padding: 0 6px; background: rgba(12, 22, 40, 0.45); animation: homescreen-shade 0.2s ease-out; }
-  .dialog.homescreen { width: 250px; border-radius: 8px; animation: homescreen-alert 0.2s ease-out; }
+  /* The Add to Home Screen prompt: a wider alert with steps and a warning, over a shade that blocks the app. */
+  .modal.homescreen-modal { z-index: 85; padding: 0 6px; background: rgba(12, 22, 40, 0.45); animation: homescreen-shade 0.2s ease-out; }
+  .dialog.homescreen { width: 250px; }
   @keyframes homescreen-shade { from { opacity: 0; } }
-  @keyframes homescreen-alert { from { opacity: 0; transform: scale(0.94); } }
+  @keyframes aqua-alert { from { opacity: 0; transform: scale(0.94); } }
   .dialog.homescreen ol { margin: 0; padding-left: 18px; font-size: 11px; line-height: 1.5; }
   .dialog.homescreen li + li { margin-top: 4px; }
   .dialog.homescreen .why { margin: 0; font-size: 11px; line-height: 1.5; }
@@ -258,8 +257,8 @@
   .section-title { margin: 12px 0 5px; font-size: 11px; font-weight: bold; }
   .recent-empty { padding: 8px; font-size: 11px; color: var(--muted); margin: 0; }
 
-  /* The Spotted sheet shows the dog itself. */
-  .dialog .msg .sheet-photo { width: 48px; height: 48px; flex: none; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.15); }
+  /* The Spotted alert shows the dog itself. */
+  .dialog .msg .alert-photo { width: 48px; height: 48px; flex: none; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.15); }
 
   /* The Mac OS X spinning gear while it starts. */
   .gear { display: block; position: relative; width: 26px; height: 26px; }
@@ -268,11 +267,10 @@
 
 
   @media (prefers-reduced-motion: reduce) {
-    .progress-indicator-bar, button.default, .dialog, .gear i, .modal.homescreen-modal, .dialog.homescreen { animation: none; transition: none; }
+    .progress-indicator-bar, button.default, .dialog, .gear i, .modal.homescreen-modal { animation: none; transition: none; }
   }
 }
 @keyframes aqua-pulse { 50% { filter: brightness(1.12) saturate(0.85); } }
 @keyframes aqua-candy { to { background-position: 0 0, 17px 0; } }
-@keyframes aqua-sheet { from { transform: translateY(-110%); } }
 @keyframes aqua-gear { 0% { opacity: 1; } 100% { opacity: 0.15; } }
 }
