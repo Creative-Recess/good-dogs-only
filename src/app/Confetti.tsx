@@ -1,4 +1,4 @@
-// A shower of dog bones over the whole app, for every tenth breed spotted. Purely decoration: it can't be tapped,
+// A shower of dog bones over the whole app, for every fifth breed spotted. Purely decoration: it can't be tapped,
 // it tidies itself away when the last bone has fallen, and with reduced motion it doesn't happen at all.
 import { useEffect, useState, type CSSProperties } from 'react'
 import { Icon } from '../ui/icons.tsx'

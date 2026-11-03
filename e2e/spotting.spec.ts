@@ -103,12 +103,11 @@ test('closing a message box gives focus back to the button that opened it', asyn
   await expect(unsee).toBeFocused()
 })
 
-test('every tenth breed spotted sets off the bone confetti', async ({ page }) => {
-  test.slow() // spots ten breeds, which can pass 30s when the whole suite is running at once
-  const names = ['Pug', 'Beagle', 'Boxer', 'Dalmatian', 'Whippet', 'Samoyed', 'Basenji', 'Borzoi', 'Puli']
+test('every fifth breed spotted sets off the bone confetti', async ({ page }) => {
+  const names = ['Pug', 'Beagle', 'Boxer', 'Dalmatian']
   for (const name of names) await spotBreed(page, name)
   await expect(page.locator('.confetti')).toHaveCount(0)
-  await openBreed(page, 'Pumi')
+  await openBreed(page, 'Whippet')
   await page.getByRole('button', { name: 'Spotted', exact: true }).click()
   await expect(page.locator('.confetti .bone').first()).toBeVisible()
   // It tidies itself away once the bones have fallen.
