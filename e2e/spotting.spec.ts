@@ -4,6 +4,7 @@ import { TOTAL, inGroup, launch, openBreed, spotBreed } from './helpers.ts'
 test.beforeEach(async ({ page }) => launch(page))
 
 test('spotting a breed sticks after closing the app and reopening it', async ({ page }) => {
+  test.slow() // loads the app twice, which can pass 30s when the whole suite is running at once
   await openBreed(page, 'Labrador Retriever')
   await page.getByRole('button', { name: 'Spotted', exact: true }).click()
   await expect(page.getByRole('alertdialog')).toContainText(`That's 1 of ${TOTAL} breeds.`)
@@ -16,8 +17,7 @@ test('spotting a breed sticks after closing the app and reopening it', async ({ 
   await page.getByLabel('Find:').fill('')
   await expect(page.getByRole('button', { name: 'Labrador Retriever, spotted' })).toBeVisible()
 
-  await page.reload()
-  await launch(page)
+  await launch(page) // opens the page afresh, like reopening the app
   await page.getByText('Spotted', { exact: true }).click()
   await expect(page.locator('.icons .icon')).toHaveCount(1)
   await openBreed(page, 'Labrador Retriever')

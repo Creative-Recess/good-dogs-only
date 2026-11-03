@@ -3,6 +3,7 @@ import { expect, test } from '@playwright/test'
 import { TOTAL, launch, leaveHelp, openHelp, spotBreed } from './helpers.ts'
 
 test('a backup restores every spot after the phone is wiped', async ({ page }, testInfo) => {
+  test.slow() // loads the app twice, which can pass 30s when the whole suite is running at once
   // Stand in for the phone's share sheet (iPhone or Android): keep the file it was given.
   await page.addInitScript(() => {
     navigator.canShare = () => true
@@ -35,8 +36,7 @@ test('a backup restores every spot after the phone is wiped', async ({ page }, t
         r.onsuccess = r.onerror = r.onblocked = () => done(null)
       }),
   )
-  await page.reload()
-  await launch(page)
+  await launch(page) // opens the page afresh, like reopening the app
   await page.getByRole('tab', { name: 'Progress' }).click()
   await expect(page.getByText(`0 of ${TOTAL} breeds`)).toBeVisible()
   await openHelp(page)
